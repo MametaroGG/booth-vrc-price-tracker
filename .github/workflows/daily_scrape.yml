@@ -2,7 +2,7 @@ name: Daily Scrape
 
 on:
   schedule:
-    - cron: '0 15 * * *' # JST 00:00 (UTC 15:00)
+    - cron: '0 15,21,3,9 * * *' # JST 00:00, 06:00, 12:00, 18:00
   workflow_dispatch:
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node_version: '20'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install

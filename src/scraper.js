@@ -12,6 +12,8 @@ const DATA_DIR = path.join(__dirname, '..', 'data');
 const TODAY = new Date().toISOString().split('T')[0];
 const MAX_PAGES = 3333; // BOOTH's search limit
 const DELAY_MS = 1500;
+const MAX_EXECUTION_TIME_MS = 5 * 60 * 60 * 1000; // 5 hours
+const STATE_FILE = path.join(DATA_DIR, 'crawl_state.json');
 
 async function scrapeSearchPage(url) {
     try {
@@ -121,19 +123,53 @@ async function saveProductData(product) {
     fs.writeFileSync(filePath, JSON.stringify(result, null, 2));
 }
 
+function loadState() {
+    if (fs.existsSync(STATE_FILE)) {
+        try {
+            return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+        } catch (e) {
+            console.error('Failed to load state file:', e);
+        }
+    }
+    return { urlIndex: 0, page: 1 };
+}
+
+function saveState(urlIndex, page) {
+    fs.writeFileSync(STATE_FILE, JSON.stringify({ urlIndex, page }, null, 2));
+}
+
 async function main() {
     if (!fs.existsSync(DATA_DIR)) {
         fs.mkdirSync(DATA_DIR, { recursive: true });
     }
 
     const processedIds = new Set();
+    const startTime = Date.now();
+    let state = loadState();
 
-    for (const baseUrl of SEARCH_URLS) {
-        console.log(`Starting crawl for: ${baseUrl}`);
-        for (let page = 1; page <= MAX_PAGES; page++) {
+    console.log(`Resuming from URL Index: ${state.urlIndex}, Page: ${state.page}`);
+
+    for (let uIdx = state.urlIndex; uIdx < SEARCH_URLS.length; uIdx++) {
+        const baseUrl = SEARCH_URLS[uIdx];
+        console.log(`Starting crawl for URL [${uIdx}]: ${baseUrl}`);
+
+        // Start from saved page if resuming, otherwise page 1
+        const startPage = (uIdx === state.urlIndex) ? state.page : 1;
+
+        for (let page = startPage; page <= MAX_PAGES; page++) {
+            // Check time limit
+            if (Date.now() - startTime > MAX_EXECUTION_TIME_MS) {
+                console.log('[Time Limit] Execution time limit reached (5 hours). Saving state and stopping safely.');
+                saveState(uIdx, page);
+                return;
+            }
+
             const url = `${baseUrl}&page=${page}`;
             const ids = await scrapeSearchPage(url);
-            if (ids.length === 0) break;
+            if (ids.length === 0) {
+                console.log(`No more items found at page ${page}. Moving to next category.`);
+                break;
+            }
 
             for (const id of ids) {
                 if (processedIds.has(id)) continue;
@@ -149,12 +185,18 @@ async function main() {
                 await new Promise(resolve => setTimeout(resolve, 1000));
             }
 
+            // Save state after every successful page crawl
+            saveState(uIdx, page + 1);
+
             // Small delay between search pages
             await new Promise(resolve => setTimeout(resolve, 2000));
         }
     }
 
-    console.log('Scraping completed.');
+    console.log('Scraping completed. Clearing state.');
+    if (fs.existsSync(STATE_FILE)) {
+        fs.unlinkSync(STATE_FILE);
+    }
 }
 
 main();
