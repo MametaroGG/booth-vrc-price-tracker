@@ -1,33 +1,77 @@
 // content.js
 (async function () {
-    const productId = window.location.pathname.split('/').pop();
-    if (!productId || isNaN(productId)) return;
+    console.log('[BOOTH Price Tracker] Script initialized for ID:', window.location.pathname);
+    const pathSegments = window.location.pathname.split('/');
+    const itemsIndex = pathSegments.indexOf('items');
+    const productId = itemsIndex !== -1 ? pathSegments[itemsIndex + 1] : null;
+    console.log('[BOOTH Price Tracker] Extracted Product ID:', productId);
+    if (!productId || isNaN(productId)) {
+        console.log('[BOOTH Price Tracker] Invalid Product ID, stopping.');
+        return;
+    }
 
     // Sharding: Use first 3 characters of ID for directory structure
-    const shard = productId.substring(0, 3);
+    const shard = productId.toString().substring(0, 3);
     const GITHUB_PAGES_URL = `https://MametaroGG.github.io/booth-vrc-price-tracker/data/${shard}/${productId}.json`;
 
+    function isTargetProduct() {
+        // Tag check (checking links that contain VRChat)
+        const tagLinks = Array.from(document.querySelectorAll('a[href*="tags%5B%5D="]'));
+        const hasVrcTag = tagLinks.some(a => a.textContent.toLowerCase().includes('vrchat')) ||
+            document.body.innerText.includes('VRChat') ||
+            document.body.innerText.includes('VRCHAT');
+
+        // Category check
+        const breadcrumbs = Array.from(document.querySelectorAll('a[href*="/browse/"]'))
+            .map(a => a.textContent.trim());
+        const isTargetCategory = breadcrumbs.some(c => c.includes('3Dモデル') || c.includes('ソフトウェア・ハードウェア') || c.includes('3D Character') || c.includes('Software'));
+
+        const isVrcRelated = hasVrcTag || document.body.innerText.includes('VRChat') || document.body.innerText.includes('VRCHAT');
+
+        return isVrcRelated;
+    }
+
     async function fetchPriceHistory() {
+        const target = isTargetProduct();
         try {
             const response = await fetch(GITHUB_PAGES_URL);
             if (!response.ok) {
-                // Return dummy data for first-time verification if no real data exists yet
-                console.log('[BOOTH Price Tracker] No real data found yet, showing demo data.');
-                return [
-                    { "date": "2026-01-01", "price": 5000, "is_sale": false },
-                    { "date": "2026-01-05", "price": 4500, "is_sale": true },
-                    { "date": "2026-01-10", "price": 5000, "is_sale": false },
-                    { "date": "2026-01-15", "price": 3500, "is_sale": true }
-                ];
+                if (target) {
+                    console.log('[BOOTH Price Tracker] Target product found, showing demo data.');
+                    return {
+                        isDemo: true,
+                        data: {
+                            "PC版": [
+                                { "date": "2026-01-01", "price": 6000, "is_sale": false },
+                                { "date": "2026-01-15", "price": 5000, "is_sale": true }
+                            ],
+                            "Quest版/Mobile版": [
+                                { "date": "2026-01-01", "price": 2000, "is_sale": false },
+                                { "date": "2026-01-15", "price": 2000, "is_sale": false }
+                            ]
+                        }
+                    };
+                }
+                return null;
             }
-            return await response.json();
+            const json = await response.json();
+            // Handle both old and new formats (new has .variations)
+            return {
+                isDemo: false,
+                data: json.variations || { "標準価格": json }
+            };
         } catch (e) {
             console.error('[BOOTH Price Tracker] Failed to fetch history:', e);
             return null;
         }
     }
 
-    function injectTracker(data) {
+    function injectTracker(result) {
+        console.log('[BOOTH Price Tracker] Injecting tracker. isDemo:', result.isDemo);
+        const variations = result.data;
+        const isDemo = result.isDemo;
+        let currentRange = 'all';
+
         // Find price elements on the page
         const priceElements = document.querySelectorAll('.variation-price');
         if (priceElements.length === 0) return;
@@ -36,14 +80,50 @@
         const container = document.createElement('div');
         container.className = 'booth-price-tracker-container';
 
-        const title = document.createElement('div');
-        title.className = 'booth-price-tracker-title';
-        title.innerHTML = '📈 価格推移 (Price History)';
-        container.appendChild(title);
+        const titleArea = document.createElement('div');
+        titleArea.className = 'booth-price-tracker-title';
+        titleArea.innerHTML = isDemo
+            ? '<span>📈 価格推移 <small style="color: #999; font-weight: normal;">(収集待ち: デモ表示)</small></span>'
+            : '<span>📈 価格推移</span>';
+
+        const selector = document.createElement('div');
+        selector.className = 'booth-price-range-selector';
+
+        const ranges = [
+            { label: '1日', value: 1 },
+            { label: '5日', value: 5 },
+            { label: '1月', value: 30 },
+            { label: '6月', value: 180 },
+            { label: '年初', value: 'ytd' },
+            { label: '1年', value: 365 },
+            { label: '5年', value: 1825 },
+            { label: '最大', value: 'all' }
+        ];
 
         const canvas = document.createElement('canvas');
         canvas.className = 'booth-price-tracker-canvas';
         container.appendChild(canvas);
+
+        const legendArea = document.createElement('div');
+        legendArea.className = 'booth-price-legend';
+        legendArea.style.cssText = 'display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; font-size: 11px; color: #666;';
+        container.appendChild(legendArea);
+
+        ranges.forEach(r => {
+            const btn = document.createElement('button');
+            btn.className = 'booth-price-range-btn' + (r.value === currentRange ? ' active' : '');
+            btn.textContent = r.label;
+            btn.onclick = () => {
+                currentRange = r.value;
+                container.querySelectorAll('.booth-price-range-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                drawChart(canvas, variations, currentRange, legendArea);
+            };
+            selector.appendChild(btn);
+        });
+
+        titleArea.appendChild(selector);
+        container.appendChild(titleArea);
 
         // Inject into the first variation or a prominent place
         const target = document.querySelector('.item-detail, .variations');
@@ -53,95 +133,188 @@
             priceElements[0].closest('li')?.appendChild(container) || document.body.appendChild(container);
         }
 
-        drawChart(canvas, data);
-
-        // Check for sale
-        const latestInfo = data[data.length - 1];
-        const prices = data.map(d => d.price);
-        const avgPrice = prices.reduce((a, b) => a + b, 0) / prices.length;
-
-        if (latestInfo.price < avgPrice) {
-            priceElements.forEach(el => {
-                const badge = document.createElement('span');
-                badge.className = 'booth-sale-badge';
-                badge.textContent = 'SALE?';
-                el.appendChild(badge);
-            });
-        }
+        drawChart(canvas, variations, currentRange, legendArea);
     }
 
-    function drawChart(canvas, data) {
+    const COLORS = ['#fc4d50', '#4a90e2', '#7fb800', '#f5a623', '#9013fe', '#bd10e0'];
+
+    function drawChart(canvas, variations, range, legendArea) {
         const ctx = canvas.getContext('2d');
         const containerWidth = canvas.clientWidth || 300;
         const containerHeight = canvas.clientHeight || 150;
         canvas.width = containerWidth * window.devicePixelRatio;
         canvas.height = containerHeight * window.devicePixelRatio;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
 
-        const prices = data.map(d => d.price);
-        const minPrice = Math.min(...prices);
-        const maxPrice = Math.max(...prices);
-        const padding = 20;
+        const now = new Date();
+        const filteredVars = {};
+        let allPoints = [];
 
-        const chartHeight = containerHeight - padding * 2;
+        Object.keys(variations).forEach(vName => {
+            let data = variations[vName];
+            if (range !== 'all') {
+                let cutoff = new Date();
+                if (range === 'ytd') {
+                    cutoff = new Date(now.getFullYear(), 0, 1);
+                } else {
+                    cutoff.setDate(now.getDate() - range);
+                }
+                data = data.filter(d => new Date(d.date) >= cutoff);
+            }
+            if (data.length > 0) {
+                filteredVars[vName] = data;
+                allPoints = allPoints.concat(data);
+            }
+        });
+
+        if (allPoints.length === 0) {
+            ctx.fillStyle = '#999';
+            ctx.font = '12px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('データがありません', containerWidth / 2, containerHeight / 2);
+            return;
+        }
+
+        const prices = allPoints.map(d => d.price);
+        const minPrice = Math.min(...prices) * 0.95;
+        const maxPrice = Math.max(...prices) * 1.05;
+        const padding = 35;
+        const bottomPadding = 30;
+
+        const chartHeight = containerHeight - padding - bottomPadding;
         const chartWidth = containerWidth - padding * 2;
 
-        const getY = (price) => {
-            if (maxPrice === minPrice) return containerHeight / 2;
-            return containerHeight - padding - ((price - minPrice) / (maxPrice - minPrice)) * chartHeight;
+        const allDates = [...new Set(allPoints.map(d => d.date))].sort();
+        const startDate = new Date(allDates[0]);
+        const endDate = new Date(allDates[allDates.length - 1]);
+        const timeRange = (endDate - startDate) || 1;
+
+        const getX = (dateStr) => {
+            if (timeRange === 1) return padding + chartWidth / 2;
+            const d = new Date(dateStr);
+            return padding + ((d - startDate) / timeRange) * chartWidth;
         };
 
-        const getX = (index) => {
-            if (data.length <= 1) return containerWidth / 2;
-            return padding + (index / (data.length - 1)) * chartWidth;
+        const getY = (price) => {
+            if (maxPrice === minPrice) return padding + chartHeight / 2;
+            return padding + chartHeight - ((price - minPrice) / (maxPrice - minPrice)) * chartHeight;
         };
 
         // Draw background lines
         ctx.strokeStyle = '#f0f0f0';
         ctx.lineWidth = 1;
         ctx.beginPath();
-        ctx.moveTo(padding, getY(minPrice));
-        ctx.lineTo(padding + chartWidth, getY(minPrice));
+        ctx.moveTo(padding, getY(minPrice / 0.95));
+        ctx.lineTo(padding + chartWidth, getY(minPrice / 0.95));
         ctx.stroke();
         ctx.beginPath();
-        ctx.moveTo(padding, getY(maxPrice));
-        ctx.lineTo(padding + chartWidth, getY(maxPrice));
+        ctx.moveTo(padding, getY(maxPrice / 1.05));
+        ctx.lineTo(padding + chartWidth, getY(maxPrice / 1.05));
         ctx.stroke();
 
-        // Draw labels
         ctx.fillStyle = '#999';
-        ctx.font = '10px sans-serif';
-        ctx.fillText(`¥${minPrice.toLocaleString()}`, 0, getY(minPrice));
-        ctx.fillText(`¥${maxPrice.toLocaleString()}`, 0, getY(maxPrice));
+        ctx.font = '9px sans-serif';
+        ctx.textAlign = 'left';
+        ctx.fillText(`¥${Math.round(minPrice / 0.95).toLocaleString()}`, 0, getY(minPrice / 0.95));
+        ctx.fillText(`¥${Math.round(maxPrice / 1.05).toLocaleString()}`, 0, getY(maxPrice / 1.05));
 
-        // Draw line
-        ctx.beginPath();
-        ctx.strokeStyle = '#fc4d50';
-        ctx.lineWidth = 2;
-        ctx.lineJoin = 'round';
-        ctx.lineCap = 'round';
+        ctx.textAlign = 'left';
+        ctx.fillText(allDates[0].replace(/-/g, '/'), padding, containerHeight - 10);
+        if (allDates.length > 1) {
+            ctx.textAlign = 'right';
+            ctx.fillText(allDates[allDates.length - 1].replace(/-/g, '/'), padding + chartWidth, containerHeight - 10);
+        }
 
-        data.forEach((d, i) => {
-            const x = getX(i);
-            const y = getY(d.price);
-            if (i === 0) ctx.moveTo(x, y);
-            else ctx.lineTo(x, y);
-        });
-        ctx.stroke();
+        if (legendArea) legendArea.innerHTML = '';
+        const pointsToHover = [];
 
-        // Dots
-        data.forEach((d, i) => {
-            const x = getX(i);
-            const y = getY(d.price);
-            ctx.fillStyle = '#fc4d50';
+        Object.keys(filteredVars).forEach((vName, idx) => {
+            const data = filteredVars[vName];
+            const color = COLORS[idx % COLORS.length];
+
+            if (legendArea) {
+                const item = document.createElement('div');
+                item.style.cssText = 'display: flex; align-items: center; gap: 4px;';
+                item.innerHTML = `<span style="width: 8px; height: 8px; background: ${color}; border-radius: 50%;"></span><span>${vName}</span>`;
+                legendArea.appendChild(item);
+            }
+
             ctx.beginPath();
-            ctx.arc(x, y, 3, 0, Math.PI * 2);
-            ctx.fill();
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2;
+            ctx.lineJoin = 'round';
+            data.forEach((d, i) => {
+                const x = getX(d.date);
+                const y = getY(d.price);
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+                pointsToHover.push({ x, y, data: d, vName, color });
+            });
+            ctx.stroke();
+
+            data.forEach(d => {
+                ctx.fillStyle = color;
+                ctx.beginPath();
+                ctx.arc(getX(d.date), getY(d.price), 2.5, 0, Math.PI * 2);
+                ctx.fill();
+            });
         });
+
+        let tooltip = canvas.parentElement.querySelector('.booth-chart-tooltip');
+        if (!tooltip) {
+            tooltip = document.createElement('div');
+            tooltip.className = 'booth-chart-tooltip';
+            canvas.parentElement.appendChild(tooltip);
+        }
+
+        if (!canvas.dataset.hasListener) {
+            canvas.addEventListener('mousemove', (e) => {
+                const rect = canvas.getBoundingClientRect();
+                const mx = e.clientX - rect.left;
+                const my = e.clientY - rect.top;
+
+                let hoveredPoint = null;
+                let minDist = 20;
+
+                pointsToHover.forEach(p => {
+                    const dx = mx - p.x;
+                    const dy = my - p.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < minDist) {
+                        minDist = dist;
+                        hoveredPoint = p;
+                    }
+                });
+
+                if (hoveredPoint) {
+                    tooltip.style.display = 'block';
+                    tooltip.style.left = `${canvas.offsetLeft + hoveredPoint.x}px`;
+                    tooltip.style.top = `${canvas.offsetTop + hoveredPoint.y - 5}px`;
+                    tooltip.style.borderLeft = `3px solid ${hoveredPoint.color}`;
+                    const dateStr = hoveredPoint.data.date.replace(/-/g, '/');
+                    tooltip.innerHTML = `<strong>${hoveredPoint.vName}</strong><br>${dateStr}<br>¥${hoveredPoint.data.price.toLocaleString()}`;
+                } else {
+                    tooltip.style.display = 'none';
+                }
+            });
+
+            canvas.addEventListener('mouseleave', () => tooltip.style.display = 'none');
+            canvas.dataset.hasListener = 'true';
+        }
     }
 
-    const history = await fetchPriceHistory();
-    if (history && history.length > 0) {
-        injectTracker(history);
+    async function main(retryCount = 0) {
+        const result = await fetchPriceHistory();
+        if (result && result.data && Object.keys(result.data).length > 0) {
+            injectTracker(result);
+        } else if (retryCount < 3) {
+            console.log(`[BOOTH Price Tracker] No data/target found, retrying... (${retryCount + 1}/3)`);
+            setTimeout(() => main(retryCount + 1), 1000);
+        } else {
+            console.log('[BOOTH Price Tracker] Giving up after 3 retries.');
+        }
     }
+
+    main();
 })();

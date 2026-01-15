@@ -13,77 +13,112 @@ const TODAY = new Date().toISOString().split('T')[0];
 const MAX_PAGES = 3333; // BOOTH's search limit
 const DELAY_MS = 1500;
 
-async function scrapePage(url) {
+async function scrapeSearchPage(url) {
     try {
-        console.log(`Scraping: ${url}`);
+        console.log(`Scraping Search: ${url}`);
         const response = await axios.get(url, {
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
             }
         });
         const $ = cheerio.load(response.data);
-        const products = [];
+        const productIds = [];
 
         $('.item-card').each((i, el) => {
-            const productId = $(el).attr('data-product-id');
-            const priceText = $(el).find('.price').text().replace(/[^\d]/g, '');
-            const price = parseInt(priceText, 10);
-            const isSale = $(el).find('.price').hasClass('is-sale') || $(el).find('.on-sale').length > 0;
-            const name = $(el).find('.item-card__title').text().trim();
-
-            if (productId && !isNaN(price)) {
-                products.push({
-                    id: productId,
-                    name: name,
-                    price: price,
-                    is_sale: isSale
-                });
-            }
+            const id = $(el).attr('data-product-id');
+            if (id) productIds.push(id);
         });
 
-        return products;
+        return productIds;
     } catch (error) {
-        console.error(`Error scraping ${url}:`, error.message);
+        console.error(`Error scraping search ${url}:`, error.message);
         return [];
     }
 }
 
+async function scrapeProductDetails(productId) {
+    const url = `https://booth.pm/ja/items/${productId}`;
+    try {
+        const response = await axios.get(url, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
+        });
+        const $ = cheerio.load(response.data);
+        const name = $('.item-detail__title').text().trim();
+        const variations = [];
+
+        // Variation logic: find prices and variation group
+        $('.variation-card').each((i, el) => {
+            const vName = $(el).find('.variation-name').text().trim() || 'default';
+            const price = parseInt($(el).find('.price').text().replace(/[^\d]/g, ''), 10);
+            const isSale = $(el).find('.price').hasClass('is-sale');
+            if (!isNaN(price)) {
+                variations.push({ name: vName, price, isSale });
+            }
+        });
+
+        // Fallback for single variation pages
+        if (variations.length === 0) {
+            const price = parseInt($('.item-detail__price .price').text().replace(/[^\d]/g, ''), 10);
+            const isSale = $('.item-detail__price .price').hasClass('is-sale');
+            if (!isNaN(price)) {
+                variations.push({ name: 'default', price, isSale });
+            }
+        }
+
+        return { id: productId, name, variations };
+    } catch (error) {
+        console.error(`Error scraping item ${productId}:`, error.message);
+        return null;
+    }
+}
+
 async function saveProductData(product) {
-    // Sharding: Use first 3 characters of ID for directory structure (e.g., data/123/123456.json)
-    const shardDir = path.join(DATA_DIR, product.id.substring(0, 3));
+    const shard = product.id.toString().substring(0, 3);
+    const shardDir = path.join(DATA_DIR, shard);
     if (!fs.existsSync(shardDir)) {
         fs.mkdirSync(shardDir, { recursive: true });
     }
 
     const filePath = path.join(shardDir, `${product.id}.json`);
-    let history = [];
+    let result = {
+        id: product.id,
+        name: product.name,
+        variations: {}
+    };
 
     if (fs.existsSync(filePath)) {
         try {
-            history = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+            result = JSON.parse(fs.readFileSync(filePath, 'utf8'));
         } catch (e) {
-            console.error(`Error parsing existing data for ${product.id}:`, e.message);
+            console.error(`Error parsing existing data for ${product.id}`);
         }
     }
 
-    // Check if entry for today already exists
-    const existingEntryIndex = history.findIndex(entry => entry.date === TODAY);
-    const newEntry = {
-        date: TODAY,
-        price: product.price,
-        is_sale: product.is_sale
-    };
+    // Update each variation
+    product.variations.forEach(v => {
+        if (!result.variations[v.name]) {
+            result.variations[v.name] = [];
+        }
 
-    if (existingEntryIndex !== -1) {
-        history[existingEntryIndex] = newEntry;
-    } else {
-        history.push(newEntry);
-    }
+        const history = result.variations[v.name];
+        const existingEntryIndex = history.findIndex(entry => entry.date === TODAY);
+        const newEntry = {
+            date: TODAY,
+            price: v.price,
+            is_sale: v.isSale
+        };
 
-    // Keep history sorted by date
-    history.sort((a, b) => a.date.localeCompare(b.date));
+        if (existingEntryIndex !== -1) {
+            history[existingEntryIndex] = newEntry;
+        } else {
+            history.push(newEntry);
+        }
+        history.sort((a, b) => a.date.localeCompare(b.date));
+    });
 
-    fs.writeFileSync(filePath, JSON.stringify(history, null, 2));
+    fs.writeFileSync(filePath, JSON.stringify(result, null, 2));
 }
 
 async function main() {
@@ -91,32 +126,32 @@ async function main() {
         fs.mkdirSync(DATA_DIR, { recursive: true });
     }
 
-    const allProducts = new Map();
+    const processedIds = new Set();
 
     for (const baseUrl of SEARCH_URLS) {
         console.log(`Starting crawl for: ${baseUrl}`);
         for (let page = 1; page <= MAX_PAGES; page++) {
             const url = `${baseUrl}&page=${page}`;
-            const products = await scrapePage(url);
-            if (products.length === 0) {
-                console.log(`No more products found on page ${page}. Moving to next category.`);
-                break;
+            const ids = await scrapeSearchPage(url);
+            if (ids.length === 0) break;
+
+            for (const id of ids) {
+                if (processedIds.has(id)) continue;
+
+                const details = await scrapeProductDetails(id);
+                if (details) {
+                    await saveProductData(details);
+                    console.log(`Saved: [${id}] ${details.name} (${details.variations.length} vars)`);
+                }
+                processedIds.add(id);
+
+                // Be polite, wait for 1 second between items
+                await new Promise(resolve => setTimeout(resolve, 1000));
             }
 
-            console.log(`Found ${products.length} products on page ${page}.`);
-            for (const product of products) {
-                await saveProductData(product);
-            }
-
-            // Add a small delay to be polite
-            await new Promise(resolve => setTimeout(resolve, DELAY_MS));
+            // Small delay between search pages
+            await new Promise(resolve => setTimeout(resolve, 2000));
         }
-    }
-
-    console.log(`Total unique products found: ${allProducts.size}`);
-
-    for (const product of allProducts.values()) {
-        await saveProductData(product);
     }
 
     console.log('Scraping completed.');

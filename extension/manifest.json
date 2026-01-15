@@ -7,14 +7,17 @@
         "storage"
     ],
     "host_permissions": [
-        "https://booth.pm/*",
+        "*://booth.pm/*/items/*",
+        "*://*.booth.pm/*/items/*",
+        "*://*.booth.pm/items/*",
         "https://MametaroGG.github.io/*"
     ],
     "content_scripts": [
         {
             "matches": [
-                "https://booth.pm/ja/items/*",
-                "https://booth.pm/en/items/*"
+                "*://booth.pm/*/items/*",
+                "*://*.booth.pm/*/items/*",
+                "*://*.booth.pm/items/*"
             ],
             "js": [
                 "content.js"
