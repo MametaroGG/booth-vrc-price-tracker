@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "BOOTH VRChat Price Tracker",
+    "version": "1.0.0",
+    "description": "BOOTHのVRChat関連商品の価格推移を表示します",
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "https://booth.pm/*",
+        "https://MametaroGG.github.io/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://booth.pm/ja/items/*",
+                "https://booth.pm/en/items/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "content.css"
+            ]
+        }
+    ],
+    "icons": {
+        "48": "icon48.png"
+    }
+}
