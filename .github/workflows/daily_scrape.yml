@@ -29,6 +29,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/*.json
+          git add data/
           git commit -m "chore: update product data [$(date +'%Y-%m-%d')]" || exit 0
           git push
