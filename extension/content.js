@@ -41,11 +41,11 @@
                     return {
                         isDemo: true,
                         data: {
-                            "PC版": [
+                            "商品1": [
                                 { "date": "2026-01-01", "price": 6000, "is_sale": false },
                                 { "date": "2026-01-15", "price": 5000, "is_sale": true }
                             ],
-                            "Quest版/Mobile版": [
+                            "商品2": [
                                 { "date": "2026-01-01", "price": 2000, "is_sale": false },
                                 { "date": "2026-01-15", "price": 2000, "is_sale": false }
                             ]
