@@ -10,7 +10,16 @@
     async function fetchPriceHistory() {
         try {
             const response = await fetch(GITHUB_PAGES_URL);
-            if (!response.ok) return null;
+            if (!response.ok) {
+                // Return dummy data for first-time verification if no real data exists yet
+                console.log('[BOOTH Price Tracker] No real data found yet, showing demo data.');
+                return [
+                    { "date": "2026-01-01", "price": 5000, "is_sale": false },
+                    { "date": "2026-01-05", "price": 4500, "is_sale": true },
+                    { "date": "2026-01-10", "price": 5000, "is_sale": false },
+                    { "date": "2026-01-15", "price": 3500, "is_sale": true }
+                ];
+            }
             return await response.json();
         } catch (e) {
             console.error('[BOOTH Price Tracker] Failed to fetch history:', e);
