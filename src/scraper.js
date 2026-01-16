@@ -103,6 +103,10 @@ async function saveProductData(product) {
             const existing = JSON.parse(fs.readFileSync(filePath, 'utf8'));
             if (existing && typeof existing === 'object') {
                 result = existing;
+                // [Self-Healing] Update name if it's missing or empty
+                if (product.name && (!result.name || result.name.trim() === "")) {
+                    result.name = product.name;
+                }
             }
         } catch (e) {
             console.error(`Error parsing existing data for ${product.id}`);
