@@ -47,23 +47,31 @@ async function scrapeProductDetails(productId) {
             }
         });
         const $ = cheerio.load(response.data);
-        const name = $('.item-detail__title').text().trim();
+
+        // New selector: h2 is the title
+        const name = $('h2').first().text().trim();
         const variations = [];
 
-        // Variation logic: find prices and variation group
-        $('.variation-card').each((i, el) => {
+        // New selectors: .variation-item, .variation-name, .variation-price
+        $('.variation-item').each((i, el) => {
             const vName = $(el).find('.variation-name').text().trim() || 'default';
-            const price = parseInt($(el).find('.price').text().replace(/[^\d]/g, ''), 10);
-            const isSale = $(el).find('.price').hasClass('is-sale');
+            const priceText = $(el).find('.variation-price, .price, .text-20.font-bold').text();
+            const price = parseInt(priceText.replace(/[^\d]/g, ''), 10);
+
+            // Check for sale class or indicator
+            const isSale = $(el).find('.price, .variation-price').hasClass('is-sale') ||
+                $(el).find('.is-sale').length > 0;
+
             if (!isNaN(price)) {
                 variations.push({ name: vName, price, isSale });
             }
         });
 
-        // Fallback for single variation pages
+        // Fallback for older or different layouts if any
         if (variations.length === 0) {
-            const price = parseInt($('.item-detail__price .price').text().replace(/[^\d]/g, ''), 10);
-            const isSale = $('.item-detail__price .price').hasClass('is-sale');
+            const priceText = $('.item-detail__price .price, .price, .text-20.font-bold').first().text();
+            const price = parseInt(priceText.replace(/[^\d]/g, ''), 10);
+            const isSale = $('.price').hasClass('is-sale') || $('.is-sale').length > 0;
             if (!isNaN(price)) {
                 variations.push({ name: 'default', price, isSale });
             }
