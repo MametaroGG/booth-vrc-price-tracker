@@ -100,10 +100,17 @@ async function saveProductData(product) {
 
     if (fs.existsSync(filePath)) {
         try {
-            result = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+            const existing = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+            if (existing && typeof existing === 'object') {
+                result = existing;
+            }
         } catch (e) {
             console.error(`Error parsing existing data for ${product.id}`);
         }
+    }
+
+    if (!result.variations) {
+        result.variations = {};
     }
 
     // Update each variation
