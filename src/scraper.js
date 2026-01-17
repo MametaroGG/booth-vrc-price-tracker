@@ -190,17 +190,24 @@ async function main() {
                 break;
             }
 
-            for (const id of ids) {
-                if (processedIds.has(id)) continue;
+            // Parallel processing in batches
+            const CONCURRENCY = 5;
+            for (let i = 0; i < ids.length; i += CONCURRENCY) {
+                const chunk = ids.slice(i, i + CONCURRENCY);
+                const promises = chunk.map(async (id) => {
+                    if (processedIds.has(id)) return;
 
-                const details = await scrapeProductDetails(id);
-                if (details) {
-                    await saveProductData(details);
-                    console.log(`Saved: [${id}] ${details.name} (${details.variations.length} vars)`);
-                }
-                processedIds.add(id);
+                    const details = await scrapeProductDetails(id);
+                    if (details) {
+                        await saveProductData(details);
+                        console.log(`Saved: [${id}] ${details.name} (${details.variations.length} vars)`);
+                    }
+                    processedIds.add(id);
+                });
 
-                // Be polite, wait for 1 second between items
+                await Promise.all(promises);
+
+                // Reduced delay for faster processing
                 await new Promise(resolve => setTimeout(resolve, 1000));
             }
 
