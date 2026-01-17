@@ -15,20 +15,20 @@
     const GITHUB_PAGES_URL = `https://MametaroGG.github.io/booth-vrc-price-tracker/data/${shard}/${productId}.json`;
 
     function isTargetProduct() {
-        // Tag check (checking links that contain VRChat)
-        const tagLinks = Array.from(document.querySelectorAll('a[href*="tags%5B%5D="]'));
-        const hasVrcTag = tagLinks.some(a => a.textContent.toLowerCase().includes('vrchat')) ||
-            document.body.innerText.includes('VRChat') ||
-            document.body.innerText.includes('VRCHAT');
+        // Tag check: specific tag links
+        const tagLinks = Array.from(document.querySelectorAll('a[href*="tags"]'));
+        const hasVrcTag = tagLinks.some(a => {
+            const text = a.textContent.trim().toLowerCase();
+            return text === 'vrchat' || text === 'vrchat想定';
+        });
 
-        // Category check
-        const breadcrumbs = Array.from(document.querySelectorAll('a[href*="/browse/"]'))
-            .map(a => a.textContent.trim());
-        const isTargetCategory = breadcrumbs.some(c => c.includes('3Dモデル') || c.includes('ソフトウェア・ハードウェア') || c.includes('3D Character') || c.includes('Software'));
+        // Title check: h2 usually contains the title
+        const title = document.querySelector('h2')?.innerText.toLowerCase() || '';
+        const hasVrcTitle = title.includes('vrchat') || title.includes('vrc');
 
-        const isVrcRelated = hasVrcTag || document.body.innerText.includes('VRChat') || document.body.innerText.includes('VRCHAT');
-
-        return isVrcRelated;
+        // Combined stricter check: Must have explicit Tag OR Title mentioning VRChat.
+        // Removed broad document.body check to avoid false positives from footers/ads.
+        return hasVrcTag || hasVrcTitle;
     }
 
     async function fetchPriceHistory() {
