@@ -6,6 +6,9 @@
     "permissions": [
         "storage"
     ],
+    "background": {
+        "service_worker": "background.js"
+    },
     "host_permissions": [
         "*://booth.pm/*/items/*",
         "*://*.booth.pm/*/items/*",

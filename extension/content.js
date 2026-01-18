@@ -34,10 +34,24 @@
     async function fetchPriceHistory() {
         const target = isTargetProduct();
         try {
-            const response = await fetch(GITHUB_PAGES_URL);
-            if (!response.ok) {
+            // Using sendMessage to bypass CORS/CSP issues in content script
+            const result = await new Promise((resolve) => {
+                chrome.runtime.sendMessage(
+                    { type: 'FETCH_PRICE_HISTORY', url: GITHUB_PAGES_URL },
+                    (response) => {
+                        if (chrome.runtime.lastError) {
+                            console.error('[BOOTH Price Tracker] Message error:', chrome.runtime.lastError);
+                            resolve({ success: false });
+                        } else {
+                            resolve(response);
+                        }
+                    }
+                );
+            });
+
+            if (!result || !result.success) {
                 if (target) {
-                    console.log('[BOOTH Price Tracker] Target product found, showing demo data.');
+                    console.log('[BOOTH Price Tracker] Target product found but fetch failed, showing demo data.');
                     return {
                         isDemo: true,
                         data: {
@@ -54,14 +68,15 @@
                 }
                 return null;
             }
-            const json = await response.json();
+
+            const json = result.data;
             // Handle both old and new formats (new has .variations)
             return {
                 isDemo: false,
                 data: json.variations || { "標準価格": json }
             };
         } catch (e) {
-            console.error('[BOOTH Price Tracker] Failed to fetch history:', e);
+            console.error('[BOOTH Price Tracker] fetchPriceHistory exception:', e);
             return null;
         }
     }
