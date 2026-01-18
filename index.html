@@ -4,149 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOOTH Price Tracker | Backend Service</title>
+    <title>BOOTH Price Tracker for VRChat | Backend Service</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
     <style>
         :root {
             --primary: #fc4d50;
-            --secondary: #4a90e2;
-            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
-            --glass: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.1);
+            --success: #4ade80;
+            --text-main: #f1f5f9;
+            --text-sub: #94a3b8;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --card-border: #334155;
         }
 
         body {
-            font-family: 'Outfit', sans-serif;
-            background: var(--bg-gradient);
-            color: white;
+            font-family: 'Outfit', -apple-system, blinkmacsystemfont, "Segoe UI", roboto, helvetica, arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            overflow: hidden;
-        }
-
-        /* Animated background glow */
-        body::before {
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: var(--primary);
-            filter: blur(150px);
-            opacity: 0.2;
-            top: 20%;
-            left: 20%;
-            z-index: -1;
-            animation: move 20s infinite alternate;
-        }
-
-        body::after {
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: var(--secondary);
-            filter: blur(150px);
-            opacity: 0.2;
-            bottom: 20%;
-            right: 20%;
-            z-index: -1;
-            animation: move 25s infinite alternate-reverse;
-        }
-
-        @keyframes move {
-            from {
-                transform: translate(0, 0);
-            }
-
-            to {
-                transform: translate(100px, 100px);
-            }
         }
 
         .container {
             text-align: center;
-            padding: 3rem;
-            background: var(--glass);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            border-radius: 24px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            max-width: 500px;
+            padding: 3rem 2rem;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+            max-width: 440px;
             width: 90%;
-            animation: fadeIn 1s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            border: 1px solid var(--card-border);
         }
 
         .icon-box {
             width: 80px;
             height: 80px;
             margin: 0 auto 1.5rem;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 40px;
-            border: 1px solid var(--glass-border);
+            overflow: hidden;
+            border-radius: 16px;
+        }
+
+        .icon-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         h1 {
-            font-size: 2rem;
-            margin: 0 0 1rem;
-            background: linear-gradient(to right, #fff, #94a3b8);
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 0 0 0.75rem;
+            background: linear-gradient(to bottom, #fff, #cbd5e1);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            letter-spacing: -0.025em;
         }
 
         .status-badge {
             display: inline-flex;
             align-items: center;
-            padding: 0.5rem 1rem;
-            background: rgba(34, 197, 94, 0.1);
+            padding: 0.4rem 0.9rem;
+            background: rgba(74, 222, 128, 0.1);
             color: #4ade80;
-            border-radius: 9999px;
-            font-size: 0.875rem;
+            border-radius: 99px;
+            font-size: 0.8rem;
             font-weight: 700;
             margin-bottom: 2rem;
-            border: 1px solid rgba(34, 197, 94, 0.2);
+            border: 1px solid rgba(74, 222, 128, 0.2);
         }
 
         .pulse {
             width: 8px;
             height: 8px;
-            background: #4ade80;
+            background: var(--success);
             border-radius: 50%;
             margin-right: 8px;
-            box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
-            animation: pulse 2s infinite;
+            box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4);
+            animation: pulse-animation 2.5s infinite;
         }
 
-        @keyframes pulse {
+        @keyframes pulse-animation {
             0% {
                 transform: scale(0.95);
-                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4);
             }
 
             70% {
                 transform: scale(1);
-                box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
+                box-shadow: 0 0 0 8px rgba(74, 222, 128, 0);
             }
 
             100% {
@@ -157,33 +111,36 @@
 
         p {
             line-height: 1.6;
-            color: #94a3b8;
-            margin-bottom: 2rem;
+            color: var(--text-sub);
+            margin: 0 0 2.5rem;
+            font-size: 0.95rem;
         }
 
         .footer-note {
             font-size: 0.75rem;
             color: #64748b;
-            padding-top: 2rem;
-            border-top: 1px solid var(--glass-border);
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--card-border);
         }
 
         a {
-            color: var(--secondary);
+            color: #3b82f6;
             text-decoration: none;
-            transition: opacity 0.2s;
+            font-weight: 600;
         }
 
         a:hover {
-            opacity: 0.8;
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="icon-box">📈</div>
-        <h1>BOOTH Price Tracker</h1>
+        <div class="icon-box">
+            <img src="assets/favicon.png" alt="Logo">
+        </div>
+        <h1>BOOTH Price Tracker for VRChat</h1>
 
         <div class="status-badge">
             <span class="pulse"></span>
@@ -191,8 +148,8 @@
         </div>
 
         <p>
-            GitHub Actionsによって継続的な価格収集が実行されています。<br>
-            このページは拡張機能向けのデータハブとして機能しています。
+            GitHub Actionsによって価格情報が継続的に収集されています。<br>
+            このページは拡張機能向けのデータハブです。
         </p>
 
         <div class="footer-note">

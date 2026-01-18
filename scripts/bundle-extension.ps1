@@ -1,4 +1,4 @@
-# BOOTH Price Tracker - Extension Bundler
+# BOOTH Price Tracker for VRChat - Extension Bundler
 $SourceDir = "extension"
 $OutputDir = "dist"
 $ZipFile = "booth-vrc-price-tracker-v1.0.0.zip"
@@ -36,7 +36,8 @@ foreach ($file in $FilesToInclude) {
     if (Test-Path "$SourceDir\$file") {
         Copy-Item "$SourceDir\$file" "$TempDir\$file"
         Write-Host "  Included: $file"
-    } else {
+    }
+    else {
         Write-Warning "  Missing: $file (skipped)"
     }
 }
