@@ -109,6 +109,26 @@
         legendArea.style.cssText = 'display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; font-size: 11px; color: #666;';
         container.appendChild(legendArea);
 
+        const allVarNames = Object.keys(variations);
+        allVarNames.forEach((vName, idx) => {
+            const color = COLORS[idx % COLORS.length];
+            const item = document.createElement('div');
+            item.style.cssText = 'display: flex; align-items: center; gap: 4px; cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background 0.2s;';
+            item.innerHTML = `<span style="width: 8px; height: 8px; background: ${color}; border-radius: 50%;"></span><span>${vName}</span>`;
+
+            // Hover Interaction: Highlight specific variation
+            item.onmouseenter = () => {
+                item.style.background = '#f0f0f0';
+                drawChart(canvas, variations, currentRange, vName);
+            };
+            item.onmouseleave = () => {
+                item.style.background = 'transparent';
+                drawChart(canvas, variations, currentRange, null);
+            };
+
+            legendArea.appendChild(item);
+        });
+
         ranges.forEach(r => {
             const btn = document.createElement('button');
             btn.className = 'booth-price-range-btn' + (r.value === currentRange ? ' active' : '');
@@ -117,7 +137,7 @@
                 currentRange = r.value;
                 container.querySelectorAll('.booth-price-range-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                drawChart(canvas, variations, currentRange, legendArea);
+                drawChart(canvas, variations, currentRange, null);
             };
             selector.appendChild(btn);
         });
@@ -133,12 +153,12 @@
             priceElements[0].closest('li')?.appendChild(container) || document.body.appendChild(container);
         }
 
-        drawChart(canvas, variations, currentRange, legendArea);
+        drawChart(canvas, variations, currentRange, null);
     }
 
     const COLORS = ['#fc4d50', '#4a90e2', '#7fb800', '#f5a623', '#9013fe', '#bd10e0'];
 
-    function drawChart(canvas, variations, range, legendArea) {
+    function drawChart(canvas, variations, range, highlightName) {
         const ctx = canvas.getContext('2d');
         const containerWidth = canvas.clientWidth || 300;
         const containerHeight = canvas.clientHeight || 150;
@@ -226,23 +246,30 @@
             ctx.fillText(allDates[allDates.length - 1].replace(/-/g, '/'), padding + chartWidth, containerHeight - 10);
         }
 
-        if (legendArea) legendArea.innerHTML = '';
         const pointsToHover = [];
+        const allVarNames = Object.keys(variations); // Stable order for colors based on full data set
 
-        Object.keys(filteredVars).forEach((vName, idx) => {
+        Object.keys(filteredVars).forEach((vName) => {
             const data = filteredVars[vName];
-            const color = COLORS[idx % COLORS.length];
+            const colorIndex = allVarNames.indexOf(vName);
+            const color = COLORS[colorIndex % COLORS.length];
 
-            if (legendArea) {
-                const item = document.createElement('div');
-                item.style.cssText = 'display: flex; align-items: center; gap: 4px;';
-                item.innerHTML = `<span style="width: 8px; height: 8px; background: ${color}; border-radius: 50%;"></span><span>${vName}</span>`;
-                legendArea.appendChild(item);
+            // Determine visibility/emphasis
+            let alpha = 0.8;
+            let lineWidth = 2;
+            if (highlightName) {
+                if (vName === highlightName) {
+                    alpha = 1.0;
+                    lineWidth = 3; // Emphasize
+                } else {
+                    alpha = 0.1; // Dim others
+                }
             }
 
+            ctx.globalAlpha = alpha;
             ctx.beginPath();
             ctx.strokeStyle = color;
-            ctx.lineWidth = 2;
+            ctx.lineWidth = lineWidth;
             ctx.lineJoin = 'round';
             data.forEach((d, i) => {
                 const x = getX(d.date);
@@ -256,9 +283,10 @@
             data.forEach(d => {
                 ctx.fillStyle = color;
                 ctx.beginPath();
-                ctx.arc(getX(d.date), getY(d.price), 2.5, 0, Math.PI * 2);
+                ctx.arc(getX(d.date), getY(d.price), highlightName === vName ? 4 : 2.5, 0, Math.PI * 2);
                 ctx.fill();
             });
+            ctx.globalAlpha = 1.0;
         });
 
         let tooltip = canvas.parentElement.querySelector('.booth-chart-tooltip');
