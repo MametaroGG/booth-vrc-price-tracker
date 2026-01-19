@@ -309,7 +309,7 @@
                     alpha = 1.0;
                     lineWidth = 3; // Emphasize
                 } else {
-                    alpha = 0.1; // Dim others
+                    return; // Strictly hide others
                 }
             }
 
