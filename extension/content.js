@@ -336,7 +336,10 @@
                     tooltip.style.top = `${canvas.offsetTop + hoveredPoint.y - 5}px`;
                     tooltip.style.borderLeft = `3px solid ${hoveredPoint.color}`;
                     const dateStr = hoveredPoint.data.date.replace(/-/g, '/');
-                    tooltip.innerHTML = `<strong>${hoveredPoint.vName}</strong><br>${dateStr}<br>¥${hoveredPoint.data.price.toLocaleString()}`;
+                    const saleBadge = hoveredPoint.data.is_sale
+                        ? '<span style="background:#ff3838; color:white; padding:1px 4px; border-radius:3px; font-size:10px; margin-left:5px; font-weight:bold; vertical-align: middle;">SALE</span>'
+                        : '';
+                    tooltip.innerHTML = `<strong>${hoveredPoint.vName}</strong>${saleBadge}<br>${dateStr}<br>¥${hoveredPoint.data.price.toLocaleString()}`;
                 } else {
                     tooltip.style.display = 'none';
                 }
