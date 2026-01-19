@@ -9,7 +9,12 @@ const SEARCH_URLS = [
 ];
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
-const TODAY = new Date().toISOString().split('T')[0];
+const TODAY = new Intl.DateTimeFormat('ja-JP', {
+    timeZone: 'Asia/Tokyo',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+}).format(new Date()).replace(/\//g, '-');
 const MAX_PAGES = 3333; // BOOTH's search limit
 const DELAY_MS = 1500;
 const MAX_EXECUTION_TIME_MS = 5 * 60 * 60 * 1000; // 5 hours

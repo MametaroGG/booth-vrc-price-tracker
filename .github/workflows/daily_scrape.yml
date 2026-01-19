@@ -12,6 +12,8 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Tokyo
     permissions:
       contents: write
     steps:
