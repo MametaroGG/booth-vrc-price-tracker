@@ -82,7 +82,11 @@ async function scrapeProductDetails(productId) {
             }
         }
 
-        return { id: productId, name, variations };
+        // Detect sale keywords in title
+        const saleKeywords = ['sale', 'セール', '割引', '期間限定', 'off'];
+        const hasSaleKeyword = saleKeywords.some(k => name.toLowerCase().includes(k));
+
+        return { id: productId, name, variations, hasSaleKeyword };
     } catch (error) {
         console.error(`Error scraping item ${productId}:`, error.message);
         return null;
@@ -130,10 +134,18 @@ async function saveProductData(product) {
 
         const history = result.variations[v.name];
         const existingEntryIndex = history.findIndex(entry => entry.date === TODAY);
+
+        // Price drop heuristic
+        const lastValidEntry = [...history].reverse().find(entry => entry.date !== TODAY);
+        let isSaleFinal = v.isSale || product.hasSaleKeyword;
+        if (!isSaleFinal && lastValidEntry && v.price < lastValidEntry.price) {
+            isSaleFinal = true;
+        }
+
         const newEntry = {
             date: TODAY,
             price: v.price,
-            is_sale: v.isSale
+            is_sale: isSaleFinal
         };
 
         if (existingEntryIndex !== -1) {
