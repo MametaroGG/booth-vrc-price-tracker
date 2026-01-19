@@ -12,7 +12,7 @@
 
     // Sharding: Use first 3 characters of ID for directory structure
     const shard = productId.toString().substring(0, 3);
-    const GITHUB_PAGES_URL = `https://MametaroGG.github.io/booth-vrc-price-tracker/data/${shard}/${productId}.json?t=${new Date().getTime()}`;
+    const GITHUB_PAGES_URL = `https://mametarogg.github.io/booth-vrc-price-tracker/data/${shard}/${productId}.json?t=${new Date().getTime()}`;
 
     function isTargetProduct() {
         // Tag check: specific tag links
