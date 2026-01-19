@@ -125,242 +125,276 @@
         container.appendChild(legendArea);
 
         const allVarNames = Object.keys(variations);
+        // Initialize all as active
+        const activeVariations = new Set(allVarNames);
+
+        // Map to keep track of legend items to update styles
+        const legendItems = {};
+
         allVarNames.forEach((vName, idx) => {
             const color = COLORS[idx % COLORS.length];
             const item = document.createElement('div');
-            item.style.cssText = 'display: flex; align-items: center; gap: 4px; cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: background 0.2s;';
+            item.style.cssText = 'display: flex; align-items: center; gap: 4px; cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: opacity 0.2s, background 0.2s; user-select: none;';
             item.innerHTML = `<span style="width: 8px; height: 8px; background: ${color}; border-radius: 50%;"></span><span>${vName}</span>`;
 
-            // Hover Interaction: Highlight specific variation
+            // Helper to update style based on active state
+            const updateStyle = () => {
+                item.style.opacity = activeVariations.has(vName) ? '1.0' : '0.4';
+                item.style.textDecoration = activeVariations.has(vName) ? 'none' : 'line-through';
+            };
+
+            // Click Interaction: Toggle visibility
+            item.onclick = () => {
+                if (activeVariations.has(vName)) {
+                    activeVariations.delete(vName);
+                } else {
+                    activeVariations.add(vName);
+                }
+                updateStyle();
+                // Redraw with current active set
+                drawChart(canvas, variations, currentRange, null, activeVariations);
+            };
+
+            // Hover Interaction: Highlight specific variation TEMPORARILY
             item.onmouseenter = () => {
+                if (!activeVariations.has(vName)) return; // Don't highlight if hidden
                 item.style.background = '#f0f0f0';
-                drawChart(canvas, variations, currentRange, vName);
+                drawChart(canvas, variations, currentRange, vName, activeVariations);
             };
             item.onmouseleave = () => {
                 item.style.background = 'transparent';
-                drawChart(canvas, variations, currentRange, null);
+                drawChart(canvas, variations, currentRange, null, activeVariations);
             };
 
+            updateStyle();
+            legendItems[vName] = item;
             legendArea.appendChild(item);
         });
 
-        ranges.forEach(r => {
-            const btn = document.createElement('button');
-            btn.className = 'booth-price-range-btn' + (r.value === currentRange ? ' active' : '');
-            btn.textContent = r.label;
-            btn.onclick = () => {
-                currentRange = r.value;
-                container.querySelectorAll('.booth-price-range-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                drawChart(canvas, variations, currentRange, null);
-            };
-            selector.appendChild(btn);
-        });
+        // Pass initial active set
+        drawChart(canvas, variations, currentRange, null, activeVariations);
+    } // End of injectTracker (adjusted to remove old drawChart call at end)
 
-        titleArea.appendChild(selector);
-        container.appendChild(titleArea);
+    ranges.forEach(r => {
+        const btn = document.createElement('button');
+        btn.className = 'booth-price-range-btn' + (r.value === currentRange ? ' active' : '');
+        btn.textContent = r.label;
+        btn.onclick = () => {
+            currentRange = r.value;
+            container.querySelectorAll('.booth-price-range-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            drawChart(canvas, variations, currentRange, null);
+        };
+        selector.appendChild(btn);
+    });
 
-        // Inject into the first variation or a prominent place
-        const target = document.querySelector('.item-detail, .variations');
-        if (target) {
-            target.prepend(container);
-        } else {
-            priceElements[0].closest('li')?.appendChild(container) || document.body.appendChild(container);
-        }
+    titleArea.appendChild(selector);
+    container.appendChild(titleArea);
 
-        drawChart(canvas, variations, currentRange, null);
+    // Inject into the first variation or a prominent place
+    const target = document.querySelector('.item-detail, .variations');
+    if (target) {
+        target.prepend(container);
+    } else {
+        priceElements[0].closest('li')?.appendChild(container) || document.body.appendChild(container);
     }
+
+    drawChart(canvas, variations, currentRange, null);
+}
 
     const COLORS = ['#fc4d50', '#4a90e2', '#7fb800', '#f5a623', '#9013fe', '#bd10e0'];
 
-    function drawChart(canvas, variations, range, highlightName) {
-        const ctx = canvas.getContext('2d');
-        const containerWidth = canvas.clientWidth || 300;
-        const containerHeight = canvas.clientHeight || 150;
-        canvas.width = containerWidth * window.devicePixelRatio;
-        canvas.height = containerHeight * window.devicePixelRatio;
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+function drawChart(canvas, variations, range, highlightName, activeVariations = null) {
+    const ctx = canvas.getContext('2d');
+    const containerWidth = canvas.clientWidth || 300;
+    const containerHeight = canvas.clientHeight || 150;
+    canvas.width = containerWidth * window.devicePixelRatio;
+    canvas.height = containerHeight * window.devicePixelRatio;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
 
-        const now = new Date();
-        const filteredVars = {};
-        let allPoints = [];
+    const now = new Date();
+    const filteredVars = {};
+    let allPoints = [];
 
-        Object.keys(variations).forEach(vName => {
-            let data = variations[vName];
-            if (range !== 'all') {
-                let cutoff = new Date();
-                if (range === 'ytd') {
-                    cutoff = new Date(now.getFullYear(), 0, 1);
-                } else {
-                    cutoff.setDate(now.getDate() - range);
-                }
-                data = data.filter(d => new Date(d.date) >= cutoff);
+    Object.keys(variations).forEach(vName => {
+        // Skip if not active (and active set is provided)
+        if (activeVariations && !activeVariations.has(vName)) return;
+
+        let data = variations[vName];
+        if (range !== 'all') {
+            let cutoff = new Date();
+            if (range === 'ytd') {
+                cutoff = new Date(now.getFullYear(), 0, 1);
+            } else {
+                cutoff.setDate(now.getDate() - range);
             }
-            if (data.length > 0) {
-                filteredVars[vName] = data;
-                allPoints = allPoints.concat(data);
-            }
-        });
-
-        if (allPoints.length === 0) {
-            ctx.fillStyle = '#999';
-            ctx.font = '12px sans-serif';
-            ctx.textAlign = 'center';
-            ctx.fillText('データがありません', containerWidth / 2, containerHeight / 2);
-            return;
+            data = data.filter(d => new Date(d.date) >= cutoff);
         }
+        if (data.length > 0) {
+            filteredVars[vName] = data;
+            allPoints = allPoints.concat(data);
+        }
+    });
 
-        const prices = allPoints.map(d => d.price);
-        const minPrice = Math.min(...prices) * 0.95;
-        const maxPrice = Math.max(...prices) * 1.05;
-        const padding = 35;
-        const bottomPadding = 30;
-
-        const chartHeight = containerHeight - padding - bottomPadding;
-        const chartWidth = containerWidth - padding * 2;
-
-        const allDates = [...new Set(allPoints.map(d => d.date))].sort();
-        const startDate = new Date(allDates[0]);
-        const endDate = new Date(allDates[allDates.length - 1]);
-        const timeRange = (endDate - startDate) || 1;
-
-        const getX = (dateStr) => {
-            if (timeRange === 1) return padding + chartWidth / 2;
-            const d = new Date(dateStr);
-            return padding + ((d - startDate) / timeRange) * chartWidth;
-        };
-
-        const getY = (price) => {
-            if (maxPrice === minPrice) return padding + chartHeight / 2;
-            return padding + chartHeight - ((price - minPrice) / (maxPrice - minPrice)) * chartHeight;
-        };
-
-        // Draw background lines
-        ctx.strokeStyle = '#f0f0f0';
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.moveTo(padding, getY(minPrice / 0.95));
-        ctx.lineTo(padding + chartWidth, getY(minPrice / 0.95));
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(padding, getY(maxPrice / 1.05));
-        ctx.lineTo(padding + chartWidth, getY(maxPrice / 1.05));
-        ctx.stroke();
-
+    if (allPoints.length === 0) {
         ctx.fillStyle = '#999';
-        ctx.font = '9px sans-serif';
-        ctx.textAlign = 'left';
-        ctx.fillText(`¥${Math.round(minPrice / 0.95).toLocaleString()}`, 0, getY(minPrice / 0.95));
-        ctx.fillText(`¥${Math.round(maxPrice / 1.05).toLocaleString()}`, 0, getY(maxPrice / 1.05));
+        ctx.font = '12px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText('データがありません', containerWidth / 2, containerHeight / 2);
+        return;
+    }
 
-        ctx.textAlign = 'left';
-        ctx.fillText(allDates[0].replace(/-/g, '/'), padding, containerHeight - 10);
-        if (allDates.length > 1) {
-            ctx.textAlign = 'right';
-            ctx.fillText(allDates[allDates.length - 1].replace(/-/g, '/'), padding + chartWidth, containerHeight - 10);
+    const prices = allPoints.map(d => d.price);
+    const minPrice = Math.min(...prices) * 0.95;
+    const maxPrice = Math.max(...prices) * 1.05;
+    const padding = 35;
+    const bottomPadding = 30;
+
+    const chartHeight = containerHeight - padding - bottomPadding;
+    const chartWidth = containerWidth - padding * 2;
+
+    const allDates = [...new Set(allPoints.map(d => d.date))].sort();
+    const startDate = new Date(allDates[0]);
+    const endDate = new Date(allDates[allDates.length - 1]);
+    const timeRange = (endDate - startDate) || 1;
+
+    const getX = (dateStr) => {
+        if (timeRange === 1) return padding + chartWidth / 2;
+        const d = new Date(dateStr);
+        return padding + ((d - startDate) / timeRange) * chartWidth;
+    };
+
+    const getY = (price) => {
+        if (maxPrice === minPrice) return padding + chartHeight / 2;
+        return padding + chartHeight - ((price - minPrice) / (maxPrice - minPrice)) * chartHeight;
+    };
+
+    // Draw background lines
+    ctx.strokeStyle = '#f0f0f0';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(padding, getY(minPrice / 0.95));
+    ctx.lineTo(padding + chartWidth, getY(minPrice / 0.95));
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(padding, getY(maxPrice / 1.05));
+    ctx.lineTo(padding + chartWidth, getY(maxPrice / 1.05));
+    ctx.stroke();
+
+    ctx.fillStyle = '#999';
+    ctx.font = '9px sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText(`¥${Math.round(minPrice / 0.95).toLocaleString()}`, 0, getY(minPrice / 0.95));
+    ctx.fillText(`¥${Math.round(maxPrice / 1.05).toLocaleString()}`, 0, getY(maxPrice / 1.05));
+
+    ctx.textAlign = 'left';
+    ctx.fillText(allDates[0].replace(/-/g, '/'), padding, containerHeight - 10);
+    if (allDates.length > 1) {
+        ctx.textAlign = 'right';
+        ctx.fillText(allDates[allDates.length - 1].replace(/-/g, '/'), padding + chartWidth, containerHeight - 10);
+    }
+
+    const pointsToHover = [];
+    const allVarNames = Object.keys(variations); // Stable order for colors based on full data set
+
+    Object.keys(filteredVars).forEach((vName) => {
+        const data = filteredVars[vName];
+        const colorIndex = allVarNames.indexOf(vName);
+        const color = COLORS[colorIndex % COLORS.length];
+
+        // Determine visibility/emphasis
+        let alpha = 0.8;
+        let lineWidth = 2;
+        if (highlightName) {
+            if (vName === highlightName) {
+                alpha = 1.0;
+                lineWidth = 3; // Emphasize
+            } else {
+                alpha = 0.1; // Dim others
+            }
         }
 
-        const pointsToHover = [];
-        const allVarNames = Object.keys(variations); // Stable order for colors based on full data set
+        ctx.globalAlpha = alpha;
+        ctx.beginPath();
+        ctx.strokeStyle = color;
+        ctx.lineWidth = lineWidth;
+        ctx.lineJoin = 'round';
+        data.forEach((d, i) => {
+            const x = getX(d.date);
+            const y = getY(d.price);
+            if (i === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+            pointsToHover.push({ x, y, data: d, vName, color });
+        });
+        ctx.stroke();
 
-        Object.keys(filteredVars).forEach((vName) => {
-            const data = filteredVars[vName];
-            const colorIndex = allVarNames.indexOf(vName);
-            const color = COLORS[colorIndex % COLORS.length];
-
-            // Determine visibility/emphasis
-            let alpha = 0.8;
-            let lineWidth = 2;
-            if (highlightName) {
-                if (vName === highlightName) {
-                    alpha = 1.0;
-                    lineWidth = 3; // Emphasize
-                } else {
-                    alpha = 0.1; // Dim others
-                }
-            }
-
-            ctx.globalAlpha = alpha;
+        data.forEach(d => {
+            ctx.fillStyle = color;
             ctx.beginPath();
-            ctx.strokeStyle = color;
-            ctx.lineWidth = lineWidth;
-            ctx.lineJoin = 'round';
-            data.forEach((d, i) => {
-                const x = getX(d.date);
-                const y = getY(d.price);
-                if (i === 0) ctx.moveTo(x, y);
-                else ctx.lineTo(x, y);
-                pointsToHover.push({ x, y, data: d, vName, color });
-            });
-            ctx.stroke();
+            ctx.arc(getX(d.date), getY(d.price), highlightName === vName ? 4 : 2.5, 0, Math.PI * 2);
+            ctx.fill();
+        });
+        ctx.globalAlpha = 1.0;
+    });
 
-            data.forEach(d => {
-                ctx.fillStyle = color;
-                ctx.beginPath();
-                ctx.arc(getX(d.date), getY(d.price), highlightName === vName ? 4 : 2.5, 0, Math.PI * 2);
-                ctx.fill();
+    let tooltip = canvas.parentElement.querySelector('.booth-chart-tooltip');
+    if (!tooltip) {
+        tooltip = document.createElement('div');
+        tooltip.className = 'booth-chart-tooltip';
+        canvas.parentElement.appendChild(tooltip);
+    }
+
+    if (!canvas.dataset.hasListener) {
+        canvas.addEventListener('mousemove', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const mx = e.clientX - rect.left;
+            const my = e.clientY - rect.top;
+
+            let hoveredPoint = null;
+            let minDist = 20;
+
+            pointsToHover.forEach(p => {
+                const dx = mx - p.x;
+                const dy = my - p.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < minDist) {
+                    minDist = dist;
+                    hoveredPoint = p;
+                }
             });
-            ctx.globalAlpha = 1.0;
+
+            if (hoveredPoint) {
+                tooltip.style.display = 'block';
+                tooltip.style.left = `${canvas.offsetLeft + hoveredPoint.x}px`;
+                tooltip.style.top = `${canvas.offsetTop + hoveredPoint.y - 5}px`;
+                tooltip.style.borderLeft = `3px solid ${hoveredPoint.color}`;
+                const dateStr = hoveredPoint.data.date.replace(/-/g, '/');
+                const saleBadge = hoveredPoint.data.is_sale
+                    ? '<span style="background:#ff3838; color:white; padding:1px 4px; border-radius:3px; font-size:10px; margin-left:5px; font-weight:bold; vertical-align: middle;">SALE</span>'
+                    : '';
+                tooltip.innerHTML = `<strong>${hoveredPoint.vName}</strong>${saleBadge}<br>${dateStr}<br>¥${hoveredPoint.data.price.toLocaleString()}`;
+            } else {
+                tooltip.style.display = 'none';
+            }
         });
 
-        let tooltip = canvas.parentElement.querySelector('.booth-chart-tooltip');
-        if (!tooltip) {
-            tooltip = document.createElement('div');
-            tooltip.className = 'booth-chart-tooltip';
-            canvas.parentElement.appendChild(tooltip);
-        }
-
-        if (!canvas.dataset.hasListener) {
-            canvas.addEventListener('mousemove', (e) => {
-                const rect = canvas.getBoundingClientRect();
-                const mx = e.clientX - rect.left;
-                const my = e.clientY - rect.top;
-
-                let hoveredPoint = null;
-                let minDist = 20;
-
-                pointsToHover.forEach(p => {
-                    const dx = mx - p.x;
-                    const dy = my - p.y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-                    if (dist < minDist) {
-                        minDist = dist;
-                        hoveredPoint = p;
-                    }
-                });
-
-                if (hoveredPoint) {
-                    tooltip.style.display = 'block';
-                    tooltip.style.left = `${canvas.offsetLeft + hoveredPoint.x}px`;
-                    tooltip.style.top = `${canvas.offsetTop + hoveredPoint.y - 5}px`;
-                    tooltip.style.borderLeft = `3px solid ${hoveredPoint.color}`;
-                    const dateStr = hoveredPoint.data.date.replace(/-/g, '/');
-                    const saleBadge = hoveredPoint.data.is_sale
-                        ? '<span style="background:#ff3838; color:white; padding:1px 4px; border-radius:3px; font-size:10px; margin-left:5px; font-weight:bold; vertical-align: middle;">SALE</span>'
-                        : '';
-                    tooltip.innerHTML = `<strong>${hoveredPoint.vName}</strong>${saleBadge}<br>${dateStr}<br>¥${hoveredPoint.data.price.toLocaleString()}`;
-                } else {
-                    tooltip.style.display = 'none';
-                }
-            });
-
-            canvas.addEventListener('mouseleave', () => tooltip.style.display = 'none');
-            canvas.dataset.hasListener = 'true';
-        }
+        canvas.addEventListener('mouseleave', () => tooltip.style.display = 'none');
+        canvas.dataset.hasListener = 'true';
     }
+}
 
-    async function main(retryCount = 0) {
-        const result = await fetchPriceHistory();
-        if (result && result.data && Object.keys(result.data).length > 0) {
-            injectTracker(result);
-        } else if (retryCount < 3) {
-            console.log(`[BOOTH Price Tracker] No data/target found, retrying... (${retryCount + 1}/3)`);
-            setTimeout(() => main(retryCount + 1), 1000);
-        } else {
-            console.log('[BOOTH Price Tracker] Giving up after 3 retries.');
-        }
+async function main(retryCount = 0) {
+    const result = await fetchPriceHistory();
+    if (result && result.data && Object.keys(result.data).length > 0) {
+        injectTracker(result);
+    } else if (retryCount < 3) {
+        console.log(`[BOOTH Price Tracker] No data/target found, retrying... (${retryCount + 1}/3)`);
+        setTimeout(() => main(retryCount + 1), 1000);
+    } else {
+        console.log('[BOOTH Price Tracker] Giving up after 3 retries.');
     }
+}
 
-    main();
-})();
+main();
+}) ();
