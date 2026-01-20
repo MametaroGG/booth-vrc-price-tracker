@@ -343,6 +343,9 @@
             canvas.parentElement.appendChild(tooltip);
         }
 
+        // Attach current points to canvas for the event listener to access
+        canvas.pointsToHover = pointsToHover;
+
         if (!canvas.dataset.hasListener) {
             canvas.addEventListener('mousemove', (e) => {
                 const rect = canvas.getBoundingClientRect();
@@ -352,7 +355,10 @@
                 let hoveredPoint = null;
                 let minDist = 20;
 
-                pointsToHover.forEach(p => {
+                // Use the latest points attached to the canvas
+                const currentPoints = canvas.pointsToHover || [];
+
+                currentPoints.forEach(p => {
                     const dx = mx - p.x;
                     const dy = my - p.y;
                     const dist = Math.sqrt(dx * dx + dy * dy);
