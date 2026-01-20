@@ -1,12 +1,12 @@
 // content.js
 (async function () {
-    console.log('[BOOTH Price Tracker] Script initialized for ID:', window.location.pathname);
+    console.log('[Boopa] Script initialized for ID:', window.location.pathname);
     const pathSegments = window.location.pathname.split('/');
     const itemsIndex = pathSegments.indexOf('items');
     const productId = itemsIndex !== -1 ? pathSegments[itemsIndex + 1] : null;
-    console.log('[BOOTH Price Tracker] Extracted Product ID:', productId);
+    console.log('[Boopa] Extracted Product ID:', productId);
     if (!productId || isNaN(productId)) {
-        console.log('[BOOTH Price Tracker] Invalid Product ID, stopping.');
+        console.log('[Boopa] Invalid Product ID, stopping.');
         return;
     }
 
@@ -40,7 +40,7 @@
                     { type: 'FETCH_PRICE_HISTORY', url: GITHUB_PAGES_URL },
                     (response) => {
                         if (chrome.runtime.lastError) {
-                            console.error('[BOOTH Price Tracker] Message error:', chrome.runtime.lastError);
+                            console.error('[Boopa] Message error:', chrome.runtime.lastError);
                             resolve({ success: false });
                         } else {
                             resolve(response);
@@ -51,7 +51,7 @@
 
             if (!result || !result.success) {
                 if (target) {
-                    console.log('[BOOTH Price Tracker] Target product found but fetch failed, showing demo data.');
+                    console.log('[Boopa] Target product found but fetch failed, showing demo data.');
                     return {
                         isDemo: true,
                         data: {
@@ -76,13 +76,13 @@
                 data: json.variations || { "標準価格": json }
             };
         } catch (e) {
-            console.error('[BOOTH Price Tracker] fetchPriceHistory exception:', e);
+            console.error('[Boopa] fetchPriceHistory exception:', e);
             return null;
         }
     }
 
     function injectTracker(result) {
-        console.log('[BOOTH Price Tracker] Injecting tracker. isDemo:', result.isDemo);
+        console.log('[Boopa] Injecting tracker. isDemo:', result.isDemo);
         const variations = result.data;
         const isDemo = result.isDemo;
         let currentRange = 'all';
@@ -393,10 +393,10 @@
         if (result && result.data && Object.keys(result.data).length > 0) {
             injectTracker(result);
         } else if (retryCount < 3) {
-            console.log(`[BOOTH Price Tracker] No data/target found, retrying... (${retryCount + 1}/3)`);
+            console.log(`[Boopa] No data/target found, retrying... (${retryCount + 1}/3)`);
             setTimeout(() => main(retryCount + 1), 1000);
         } else {
-            console.log('[BOOTH Price Tracker] Giving up after 3 retries.');
+            console.log('[Boopa] Giving up after 3 retries.');
         }
     }
 
