@@ -1,7 +1,7 @@
 # BOOTH Price Tracker for VRChat - Extension Bundler
 $SourceDir = "extension"
 $OutputDir = "dist"
-$ZipFile = "booth-vrc-price-tracker-v1.0.0.zip"
+$ZipFile = "booth-vrc-price-tracker-v1.0.2.zip"
 
 # Create output directory if it doesn't exist
 if (!(Test-Path $OutputDir)) {
