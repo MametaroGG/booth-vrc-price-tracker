@@ -15,6 +15,46 @@
     const GITHUB_PAGES_URL = `https://mametarogg.github.io/booth-vrc-price-tracker/data/${shard}/${productId}.json?t=${new Date().getTime()}`;
 
     function isTargetProduct() {
+        // Collect category links, but exclude those in sidebars/recommendations
+        const allBrowseLinks = Array.from(document.querySelectorAll('a[href*="/browse/"]'));
+        const validCategoryLinks = allBrowseLinks.filter(a => {
+            const parent = a.closest('.recommend, .item-recommend, .other-items, .shop-items, .related-tags, .sidebar, .l-side, footer');
+            return !parent;
+        });
+
+        const excludedCategories = [
+            'ハードウェア・ガジェット', 'Hardware / Gadgets'
+        ];
+
+        // 1. Check for Excluded Categories first (Strict Hardware Exclusion)
+        const isExcluded = validCategoryLinks.some(a => {
+            const text = a.textContent.trim();
+            return excludedCategories.includes(text);
+        });
+
+        if (isExcluded) {
+            console.log('[Boopa] Excluded category (Hardware) detected, skipping.');
+            return false;
+        }
+
+        const allowedCategories = [
+            '3Dモデル', '3D Models',
+            'ソフトウェア', 'Software',
+            'ソフトウェア・ハードウェア', 'Software / Hardware', // Allow parent category (for Software items)
+            'ゲーム', 'Games', // Common subcategories
+            'ツール', 'Tools'
+        ];
+
+        // 2. Check for Allowed Categories
+        const isAllowedCategory = validCategoryLinks.some(a => {
+            const text = a.textContent.trim();
+            return allowedCategories.includes(text);
+        });
+
+        if (!isAllowedCategory) {
+            console.log('[Boopa] Category not in whitelist (3D Models/Software), skipping.');
+            return false;
+        }
         // Tag check: specific tag links
         const tagLinks = Array.from(document.querySelectorAll('a[href*="tags"]'));
         const hasVrcTag = tagLinks.some(a => {
@@ -101,92 +141,93 @@
             ? '<span>📈 価格推移 <small style="color: #999; font-weight: normal;">(収集待ち: デモ表示)</small></span>'
             : '<span>📈 価格推移</span>';
 
-        const selector = document.createElement('div');
-        selector.className = 'booth-price-range-selector';
-
-        const ranges = [
-            { label: '1日', value: 1 },
-            { label: '5日', value: 5 },
-            { label: '1月', value: 30 },
-            { label: '6月', value: 180 },
-            { label: '年初', value: 'ytd' },
-            { label: '1年', value: 365 },
-            { label: '5年', value: 1825 },
-            { label: '最大', value: 'all' }
-        ];
-
         const canvas = document.createElement('canvas');
         canvas.className = 'booth-price-tracker-canvas';
         container.appendChild(canvas);
 
-        const legendArea = document.createElement('div');
-        legendArea.className = 'booth-price-legend';
-        legendArea.style.cssText = 'display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; font-size: 11px; color: #666;';
-        container.appendChild(legendArea);
+        // Only show controls if NOT in demo mode
+        if (!isDemo) {
+            const selector = document.createElement('div');
+            selector.className = 'booth-price-range-selector';
 
-        const allVarNames = Object.keys(variations);
-        // Initialize all as active
-        const activeVariations = new Set(allVarNames);
+            const ranges = [
+                { label: '1日', value: 1 },
+                { label: '5日', value: 5 },
+                { label: '1か月', value: 30 },
+                { label: '6か月', value: 180 },
+                { label: '年初', value: 'ytd' },
+                { label: '1年', value: 365 },
+                { label: '5年', value: 1825 },
+                { label: '最大', value: 'all' }
+            ];
 
-        // Map to keep track of legend items to update styles
-        const legendItems = {};
+            const legendArea = document.createElement('div');
+            legendArea.className = 'booth-price-legend';
+            legendArea.style.cssText = 'display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; font-size: 11px; color: #666;';
+            container.appendChild(legendArea);
 
-        allVarNames.forEach((vName, idx) => {
-            const color = COLORS[idx % COLORS.length];
-            const item = document.createElement('div');
-            item.style.cssText = 'display: flex; align-items: center; gap: 4px; cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: opacity 0.2s, background 0.2s; user-select: none;';
-            item.innerHTML = `<span style="width: 8px; height: 8px; background: ${color}; border-radius: 50%;"></span><span>${vName}</span>`;
+            const allVarNames = Object.keys(variations);
+            // Initialize all as active
+            const activeVariations = new Set(allVarNames);
 
-            // Helper to update style based on active state
-            const updateStyle = () => {
-                item.style.opacity = activeVariations.has(vName) ? '1.0' : '0.4';
-                item.style.textDecoration = activeVariations.has(vName) ? 'none' : 'line-through';
-            };
+            // Map to keep track of legend items to update styles
+            const legendItems = {};
 
-            // Click Interaction: Toggle visibility
-            item.onclick = () => {
-                if (activeVariations.has(vName)) {
-                    activeVariations.delete(vName);
-                } else {
-                    activeVariations.add(vName);
-                }
+            allVarNames.forEach((vName, idx) => {
+                const color = COLORS[idx % COLORS.length];
+                const item = document.createElement('div');
+                item.style.cssText = 'display: flex; align-items: center; gap: 4px; cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: opacity 0.2s, background 0.2s; user-select: none;';
+                item.innerHTML = `<span style="width: 8px; height: 8px; background: ${color}; border-radius: 50%;"></span><span>${vName}</span>`;
+
+                // Helper to update style based on active state
+                const updateStyle = () => {
+                    item.style.opacity = activeVariations.has(vName) ? '1.0' : '0.4';
+                    item.style.textDecoration = activeVariations.has(vName) ? 'none' : 'line-through';
+                };
+
+                // Click Interaction: Toggle visibility
+                item.onclick = () => {
+                    if (activeVariations.has(vName)) {
+                        activeVariations.delete(vName);
+                    } else {
+                        activeVariations.add(vName);
+                    }
+                    updateStyle();
+                    // Redraw with current active set
+                    drawChart(canvas, variations, currentRange, null, activeVariations, isDemo);
+                };
+
+                // Hover Interaction: Highlight specific variation TEMPORARILY
+                item.onmouseenter = () => {
+                    if (!activeVariations.has(vName)) return; // Don't highlight if hidden
+                    item.style.background = '#f0f0f0';
+                    drawChart(canvas, variations, currentRange, vName, activeVariations, isDemo);
+                };
+                item.onmouseleave = () => {
+                    item.style.background = 'transparent';
+                    drawChart(canvas, variations, currentRange, null, activeVariations, isDemo);
+                };
+
                 updateStyle();
-                // Redraw with current active set
-                drawChart(canvas, variations, currentRange, null, activeVariations);
-            };
+                legendItems[vName] = item;
+                legendArea.appendChild(item);
+            });
 
-            // Hover Interaction: Highlight specific variation TEMPORARILY
-            item.onmouseenter = () => {
-                if (!activeVariations.has(vName)) return; // Don't highlight if hidden
-                item.style.background = '#f0f0f0';
-                drawChart(canvas, variations, currentRange, vName, activeVariations);
-            };
-            item.onmouseleave = () => {
-                item.style.background = 'transparent';
-                drawChart(canvas, variations, currentRange, null, activeVariations);
-            };
+            ranges.forEach(r => {
+                const btn = document.createElement('button');
+                btn.className = 'booth-price-range-btn' + (r.value === currentRange ? ' active' : '');
+                btn.textContent = r.label;
+                btn.onclick = () => {
+                    currentRange = r.value;
+                    container.querySelectorAll('.booth-price-range-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    drawChart(canvas, variations, currentRange, null, activeVariations, isDemo);
+                };
+                selector.appendChild(btn);
+            });
 
-            updateStyle();
-            legendItems[vName] = item;
-            legendArea.appendChild(item);
-        });
-
-        // Pass initial active set (no remove brace here)
-
-        ranges.forEach(r => {
-            const btn = document.createElement('button');
-            btn.className = 'booth-price-range-btn' + (r.value === currentRange ? ' active' : '');
-            btn.textContent = r.label;
-            btn.onclick = () => {
-                currentRange = r.value;
-                container.querySelectorAll('.booth-price-range-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                drawChart(canvas, variations, currentRange, null, activeVariations);
-            };
-            selector.appendChild(btn);
-        });
-
-        titleArea.appendChild(selector);
+            titleArea.appendChild(selector);
+        }
         container.appendChild(titleArea);
 
         // Inject into the first variation or a prominent place
@@ -197,12 +238,12 @@
             priceElements[0].closest('li')?.appendChild(container) || document.body.appendChild(container);
         }
 
-        drawChart(canvas, variations, currentRange, null, activeVariations);
+        drawChart(canvas, variations, currentRange, null, isDemo ? null : new Set(Object.keys(variations)), isDemo);
     }
 
     const COLORS = ['#fc4d50', '#4a90e2', '#7fb800', '#f5a623', '#9013fe', '#bd10e0'];
 
-    function drawChart(canvas, variations, range, highlightName, activeVariations = null) {
+    function drawChart(canvas, variations, range, highlightName, activeVariations = null, isDemo = false) {
         const ctx = canvas.getContext('2d');
         const containerWidth = canvas.clientWidth || 300;
         const containerHeight = canvas.clientHeight || 150;
@@ -210,6 +251,14 @@
         canvas.height = containerHeight * window.devicePixelRatio;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+
+        if (isDemo) {
+            ctx.fillStyle = '#999';
+            ctx.font = '12px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('データ収集はされていません。', containerWidth / 2, containerHeight / 2);
+            return;
+        }
 
         const now = new Date();
         const filteredVars = {};
