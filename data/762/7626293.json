@@ -24,6 +24,11 @@
         "date": "2026-01-25",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-01-26",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Eye_Only 1/25までセール中": [
@@ -60,6 +65,32 @@
         "date": "2026-01-25",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-01-26",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "FullSet（FullSet+各Only）": [
+      {
+        "date": "2026-01-26",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Eye_Only": [
+      {
+        "date": "2026-01-26",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Make_Only": [
+      {
+        "date": "2026-01-26",
+        "price": 500,
+        "is_sale": false
       }
     ]
   }
