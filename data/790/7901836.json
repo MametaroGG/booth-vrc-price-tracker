@@ -12,6 +12,11 @@
         "date": "2026-02-06",
         "price": 9999999,
         "is_sale": false
+      },
+      {
+        "date": "2026-02-08",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "MUMUS対応": [
@@ -24,6 +29,11 @@
         "date": "2026-02-06",
         "price": 9999999,
         "is_sale": false
+      },
+      {
+        "date": "2026-02-08",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "マリシア対応": [
@@ -48,12 +58,29 @@
         "date": "2026-02-06",
         "price": 9999999,
         "is_sale": false
+      },
+      {
+        "date": "2026-02-08",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "ムルル対応": [
       {
         "date": "2026-02-06",
         "price": 9999999,
+        "is_sale": false
+      },
+      {
+        "date": "2026-02-08",
+        "price": 300,
+        "is_sale": true
+      }
+    ],
+    "マリシア対応（許諾済み）": [
+      {
+        "date": "2026-02-08",
+        "price": 300,
         "is_sale": false
       }
     ]
