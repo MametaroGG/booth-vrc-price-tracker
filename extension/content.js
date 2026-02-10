@@ -138,9 +138,16 @@
 
         const titleArea = document.createElement('div');
         titleArea.className = 'booth-price-tracker-title';
+        const chartIcon = `
+            <svg class="booth-price-tracker-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+            </svg>
+        `;
+
         titleArea.innerHTML = isDemo
-            ? '<span>📈 価格推移 <small style="color: #999; font-weight: normal;">(収集待ち: デモ表示)</small></span>'
-            : '<span>📈 価格推移</span>';
+            ? `<span>${chartIcon} 価格推移 <small style="color: #999; font-weight: normal;">(収集待ち: デモ表示)</small></span>`
+            : `<span>${chartIcon} 価格推移</span>`;
 
         const canvas = document.createElement('canvas');
         canvas.className = 'booth-price-tracker-canvas';
@@ -156,16 +163,27 @@
                 { label: '5日', value: 5 },
                 { label: '1か月', value: 30 },
                 { label: '6か月', value: 180 },
-                { label: '年初', value: 'ytd' },
+                { label: '年初来', value: 'ytd' },
                 { label: '1年', value: 365 },
                 { label: '5年', value: 1825 },
                 { label: '最大', value: 'all' }
             ];
 
+            const legendToggle = document.createElement('div');
+            legendToggle.className = 'booth-legend-toggle';
+            legendToggle.innerHTML = '<span>▼</span> 商品一覧を表示';
+            container.appendChild(legendToggle);
+
             const legendArea = document.createElement('div');
-            legendArea.className = 'booth-price-legend';
-            legendArea.style.cssText = 'display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; font-size: 11px; color: #666;';
+            legendArea.className = 'booth-price-legend collapsed'; // Default to collapsed
+            legendArea.style.cssText = 'display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; font-size: 11px; opacity: 0.8; color: inherit;';
             container.appendChild(legendArea);
+
+            legendToggle.onclick = () => {
+                const isCollapsed = legendArea.classList.toggle('collapsed');
+                legendToggle.querySelector('span').textContent = isCollapsed ? '▼' : '▲';
+                legendToggle.querySelector('span').nextSibling.textContent = isCollapsed ? ' 商品一覧を表示' : ' 商品一覧を閉じる';
+            };
 
             const allVarNames = Object.keys(variations);
             // Initialize all as active
@@ -201,7 +219,7 @@
                 // Hover Interaction: Highlight specific variation TEMPORARILY
                 item.onmouseenter = () => {
                     if (!activeVariations.has(vName)) return; // Don't highlight if hidden
-                    item.style.background = '#f0f0f0';
+                    item.style.background = 'rgba(128, 128, 128, 0.1)';
                     drawChart(canvas, variations, currentRange, vName, activeVariations, isDemo);
                 };
                 item.onmouseleave = () => {
@@ -318,8 +336,12 @@
             return padding + chartHeight - ((price - minPrice) / (maxPrice - minPrice)) * chartHeight;
         };
 
+        // Detect text color from computed style for labels
+        const compStyle = window.getComputedStyle(canvas.parentElement);
+        const labelColor = compStyle.color || '#999';
+
         // Draw background lines
-        ctx.strokeStyle = '#f0f0f0';
+        ctx.strokeStyle = 'rgba(128, 128, 128, 0.2)';
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(padding, getY(minPrice / 0.95));
@@ -330,7 +352,8 @@
         ctx.lineTo(padding + chartWidth, getY(maxPrice / 1.05));
         ctx.stroke();
 
-        ctx.fillStyle = '#999';
+        ctx.fillStyle = labelColor;
+        ctx.globalAlpha = 0.6;
         ctx.font = '9px sans-serif';
         ctx.textAlign = 'left';
         ctx.fillText(`¥${Math.round(minPrice / 0.95).toLocaleString()}`, 0, getY(minPrice / 0.95));
