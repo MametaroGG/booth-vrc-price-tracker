@@ -23,26 +23,27 @@
         });
 
         const excludedCategories = [
-            'ハードウェア・ガジェット', 'Hardware / Gadgets'
+            'ハードウェア・ガジェット', 'Hardware / Gadgets', 'Hardware & Gadgets',
+            '写真作品', 'Photography',
+            '素材データ', 'Materials',
+            '小説・書籍', 'Novels / Books',
+            'ゲーム', 'Games'
         ];
 
-        // 1. Check for Excluded Categories first (Strict Hardware Exclusion)
+        // 1. Check for Excluded Categories first
         const isExcluded = validCategoryLinks.some(a => {
             const text = a.textContent.trim();
             return excludedCategories.includes(text);
         });
 
         if (isExcluded) {
-            console.log('[Boopa] Excluded category (Hardware) detected, skipping.');
+            console.log('[Boopa] Excluded category detected, skipping.');
             return false;
         }
 
         const allowedCategories = [
             '3Dモデル', '3D Models',
-            'ソフトウェア', 'Software',
-            'ソフトウェア・ハードウェア', 'Software / Hardware', // Allow parent category (for Software items)
-            'ゲーム', 'Games', // Common subcategories
-            'ツール', 'Tools'
+            'ソフトウェア', 'Software'
         ];
 
         // 2. Check for Allowed Categories

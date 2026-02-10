@@ -5,7 +5,7 @@ const path = require('path');
 
 const SEARCH_URLS = [
     'https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB?sort=new&tags%5B%5D=VRChat&type=digital',
-    'https://booth.pm/ja/browse/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2?sort=new&tags%5B%5D=VRChat&type=digital'
+    'https://booth.pm/ja/browse/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2?sort=new&tags%5B%5D=VRChat&type=digital'
 ];
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
@@ -27,25 +27,25 @@ const SCHEDULE_HOURS = [0, 6, 12, 18]; // JST schedule
  */
 function getStopTargetTime(startTime) {
     const now = new Date(startTime);
-    
+
     // Find the next scheduled run in JST
     // Since TZ=Asia/Tokyo is set in environment, Date methods use JST
     const currentHour = now.getHours();
     let nextHour = SCHEDULE_HOURS.find(h => h > currentHour);
     const nextRun = new Date(now);
-    
+
     if (nextHour === undefined) {
         nextHour = SCHEDULE_HOURS[0];
         nextRun.setDate(nextRun.getDate() + 1);
     }
     nextRun.setHours(nextHour, 0, 0, 0);
-    
+
     // 30 minutes before next run
     const targetStopBeforeNextRun = new Date(nextRun.getTime() - 30 * 60 * 1000);
-    
+
     // 5 hours from start
     const hardExecutionLimit = new Date(startTime + MAX_EXECUTION_TIME_MS);
-    
+
     // Use whichever comes first
     return targetStopBeforeNextRun < hardExecutionLimit ? targetStopBeforeNextRun : hardExecutionLimit;
 }
