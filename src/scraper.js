@@ -19,6 +19,36 @@ const MAX_PAGES = 3333; // BOOTH's search limit
 const DELAY_MS = 1500;
 const MAX_EXECUTION_TIME_MS = 5 * 60 * 60 * 1000; // 5 hours
 const STATE_FILE = path.join(DATA_DIR, 'crawl_state.json');
+const SCHEDULE_HOURS = [0, 6, 12, 18]; // JST schedule
+
+/**
+ * Calculates the target time to stop the scraper.
+ * It should be at most 5 hours from start, or 30 minutes before the next scheduled run.
+ */
+function getStopTargetTime(startTime) {
+    const now = new Date(startTime);
+    
+    // Find the next scheduled run in JST
+    // Since TZ=Asia/Tokyo is set in environment, Date methods use JST
+    const currentHour = now.getHours();
+    let nextHour = SCHEDULE_HOURS.find(h => h > currentHour);
+    const nextRun = new Date(now);
+    
+    if (nextHour === undefined) {
+        nextHour = SCHEDULE_HOURS[0];
+        nextRun.setDate(nextRun.getDate() + 1);
+    }
+    nextRun.setHours(nextHour, 0, 0, 0);
+    
+    // 30 minutes before next run
+    const targetStopBeforeNextRun = new Date(nextRun.getTime() - 30 * 60 * 1000);
+    
+    // 5 hours from start
+    const hardExecutionLimit = new Date(startTime + MAX_EXECUTION_TIME_MS);
+    
+    // Use whichever comes first
+    return targetStopBeforeNextRun < hardExecutionLimit ? targetStopBeforeNextRun : hardExecutionLimit;
+}
 
 async function scrapeSearchPage(url) {
     try {
@@ -181,8 +211,11 @@ async function main() {
 
     const processedIds = new Set();
     const startTime = Date.now();
+    const stopTargetTime = getStopTargetTime(startTime);
     let state = loadState();
 
+    console.log(`Current Time: ${new Date(startTime).toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}`);
+    console.log(`Target Stop Time: ${stopTargetTime.toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}`);
     console.log(`Resuming from URL Index: ${state.urlIndex}, Page: ${state.page}`);
 
     for (let uIdx = state.urlIndex; uIdx < SEARCH_URLS.length; uIdx++) {
@@ -194,8 +227,8 @@ async function main() {
 
         for (let page = startPage; page <= MAX_PAGES; page++) {
             // Check time limit
-            if (Date.now() - startTime > MAX_EXECUTION_TIME_MS) {
-                console.log('[Time Limit] Execution time limit reached (5 hours). Saving state and stopping safely.');
+            if (Date.now() > stopTargetTime.getTime()) {
+                console.log(`[Time Limit] Target stop time reached (${stopTargetTime.toLocaleString()}). Saving state and stopping safely.`);
                 saveState(uIdx, page);
                 return;
             }
