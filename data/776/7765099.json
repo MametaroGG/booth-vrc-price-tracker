@@ -157,6 +157,11 @@
         "date": "2026-02-26",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-02-27",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "FREE(1~5)": [
@@ -314,6 +319,11 @@
         "date": "2026-02-26",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-02-27",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "通常版": [
@@ -628,6 +638,20 @@
         "date": "2026-02-26",
         "price": 650,
         "is_sale": false
+      }
+    ],
+    "通常版(200円off)": [
+      {
+        "date": "2026-02-27",
+        "price": 300,
+        "is_sale": true
+      }
+    ],
+    "支援版(200円off)": [
+      {
+        "date": "2026-02-27",
+        "price": 450,
+        "is_sale": true
       }
     ]
   }
