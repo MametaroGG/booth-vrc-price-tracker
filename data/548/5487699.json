@@ -314,6 +314,11 @@
         "date": "2026-02-28",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-03-01",
+        "price": 4000,
+        "is_sale": true
       }
     ],
     "VRM": [
@@ -471,6 +476,11 @@
         "date": "2026-02-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-03-01",
+        "price": 3000,
+        "is_sale": true
       }
     ],
     "PC+Quest+VRM": [
@@ -628,6 +638,20 @@
         "date": "2026-02-28",
         "price": 8000,
         "is_sale": false
+      }
+    ],
+    "【SALE】PC": [
+      {
+        "date": "2026-03-01",
+        "price": 4000,
+        "is_sale": true
+      }
+    ],
+    "【SALE】PC+Quest+VRM": [
+      {
+        "date": "2026-03-01",
+        "price": 7000,
+        "is_sale": true
       }
     ]
   }
