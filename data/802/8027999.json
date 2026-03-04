@@ -34,6 +34,11 @@
         "date": "2026-03-02",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-03-04",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "メイクテクスチャのみ pack": [
@@ -51,6 +56,11 @@
         "date": "2026-03-02",
         "price": 450,
         "is_sale": true
+      },
+      {
+        "date": "2026-03-04",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "支援版": [
@@ -68,6 +78,18 @@
         "date": "2026-03-02",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-03-04",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "フルpack": [
+      {
+        "date": "2026-03-04",
+        "price": 600,
+        "is_sale": false
       }
     ]
   }
