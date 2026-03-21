@@ -7,12 +7,24 @@
         "date": "2026-03-20",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-03-21",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "初回セール(3/20まで)": [
       {
         "date": "2026-03-20",
         "price": 490,
+        "is_sale": false
+      }
+    ],
+    "セール終了": [
+      {
+        "date": "2026-03-21",
+        "price": 700,
         "is_sale": false
       }
     ]
