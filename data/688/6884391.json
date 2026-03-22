@@ -726,6 +726,11 @@
         "date": "2026-03-21",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-03-23",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "マニュアル単体": [
@@ -968,6 +973,25 @@
         "date": "2026-03-21",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-03-23",
+        "price": 0,
+        "is_sale": true
+      }
+    ],
+    "EX版(追加アニメーション付き)(100円 OFF)": [
+      {
+        "date": "2026-03-23",
+        "price": 900,
+        "is_sale": true
+      }
+    ],
+    "通常版(100円 OFF)": [
+      {
+        "date": "2026-03-23",
+        "price": 700,
+        "is_sale": true
       }
     ]
   }
