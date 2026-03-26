@@ -7,6 +7,11 @@
         "date": "2026-03-25",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-03-27",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "PoseAnimation only": [
@@ -14,6 +19,11 @@
         "date": "2026-03-25",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-03-27",
+        "price": 150,
+        "is_sale": true
       }
     ],
     "FaceAnimation only": [
@@ -21,6 +31,11 @@
         "date": "2026-03-25",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-03-27",
+        "price": 150,
+        "is_sale": true
       }
     ],
     "BlendShapes only": [
@@ -28,11 +43,21 @@
         "date": "2026-03-25",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-03-27",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "ごはん代（中身は変わりません）": [
       {
         "date": "2026-03-25",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-03-27",
         "price": 700,
         "is_sale": false
       }
