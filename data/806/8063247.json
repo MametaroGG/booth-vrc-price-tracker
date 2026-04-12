@@ -127,6 +127,11 @@
         "date": "2026-04-11",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-04-13",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Only gradation": [
@@ -381,6 +386,18 @@
         "date": "2026-04-11",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-04-13",
+        "price": 100,
+        "is_sale": true
+      }
+    ],
+    "Only gradation(2)": [
+      {
+        "date": "2026-04-13",
+        "price": 100,
+        "is_sale": true
       }
     ]
   }
