@@ -51,6 +51,11 @@
         "date": "2026-04-17",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-04-18",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Hair Only": [
@@ -85,6 +90,11 @@
         "date": "2026-04-17",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-04-18",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "Hair, Earrings, and HairClip": [
@@ -96,6 +106,18 @@
       {
         "date": "2026-04-17",
         "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-04-18",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "FREE Full Face Only": [
+      {
+        "date": "2026-04-18",
+        "price": 0,
         "is_sale": false
       }
     ]
