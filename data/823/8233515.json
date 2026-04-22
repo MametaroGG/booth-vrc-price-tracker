@@ -7,11 +7,21 @@
         "date": "2026-04-21",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-04-22",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Fyuett": [
       {
         "date": "2026-04-21",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-04-22",
         "price": 200,
         "is_sale": true
       }
@@ -20,6 +30,18 @@
       {
         "date": "2026-04-21",
         "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-04-22",
+        "price": 300,
+        "is_sale": true
+      }
+    ],
+    "free parts": [
+      {
+        "date": "2026-04-22",
+        "price": 0,
         "is_sale": true
       }
     ]
