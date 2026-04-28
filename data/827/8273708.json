@@ -7,11 +7,23 @@
         "date": "2026-04-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-04-29",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "通常": [
       {
         "date": "2026-04-28",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "通常(半額セールと中身一緒)": [
+      {
+        "date": "2026-04-29",
         "price": 1000,
         "is_sale": true
       }
