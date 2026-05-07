@@ -12,6 +12,11 @@
         "date": "2026-05-05",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-07",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "モデルのみ": [
@@ -24,6 +29,11 @@
         "date": "2026-05-05",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-07",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "ギミック付き": [
@@ -36,6 +46,11 @@
         "date": "2026-05-05",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-07",
+        "price": 650,
+        "is_sale": false
       }
     ]
   }
