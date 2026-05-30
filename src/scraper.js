@@ -73,6 +73,18 @@ async function scrapeSearchPage(url) {
     }
 }
 
+/**
+ * Removes a trailing BOOTH sale badge from a variation name so its price history stays
+ * under one stable key, e.g. "✧ Shinano | しなの (30% OFF)" -> "✧ Shinano | しなの".
+ * Strict on purpose (digits + %/円 + OFF/オフ) so real names containing "割引"/"SALE" survive.
+ */
+function normalizeVariationName(name) {
+    return name
+        .replace(/\s*[\(（]\s*\d[\d,]*\s*[%％円]\s*(?:OFF|オフ)\s*[\)）]\s*$/i, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+}
+
 async function scrapeProductDetails(productId) {
     const url = `https://booth.pm/ja/items/${productId}`;
     try {
@@ -89,12 +101,19 @@ async function scrapeProductDetails(productId) {
 
         // New selectors: .variation-item, .variation-name, .variation-price
         $('.variation-item').each((i, el) => {
-            const vName = $(el).find('.variation-name').text().trim() || 'default';
+            const rawName = $(el).find('.variation-name').text().trim() || 'default';
+            // BOOTH appends a discount badge to the name during a sale, e.g.
+            // "✧ Shinano | しなの (30% OFF)". Keying history by that raw name splits one
+            // variation into a new key for every sale, so strip the badge to keep the
+            // history under a single stable key. The badge also tells us it's on sale.
+            const vName = normalizeVariationName(rawName);
+            const nameImpliesSale = vName !== rawName;
             const priceText = $(el).find('.variation-price, .price, .text-20.font-bold').text();
             const price = parseInt(priceText.replace(/[^\d]/g, ''), 10);
 
             // Check for sale class or indicator
-            const isSale = $(el).find('.price, .variation-price').hasClass('is-sale') ||
+            const isSale = nameImpliesSale ||
+                $(el).find('.price, .variation-price').hasClass('is-sale') ||
                 $(el).find('.is-sale').length > 0;
 
             if (!isNaN(price)) {

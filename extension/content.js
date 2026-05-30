@@ -122,9 +122,43 @@
         }
     }
 
+    // BOOTH appends a discount badge to a variation's name while it is on sale, so
+    // "✧ Shinano | しなの" temporarily becomes "✧ Shinano | しなの (30% OFF)". The history is
+    // keyed by that raw name, so every sale spawned a *separate* variation key — splitting
+    // one product into multiple lines and multiple legend rows (26 keys for what is really
+    // 13 variations). Stripping the trailing badge reunites the sale and non-sale periods.
+    // The pattern is deliberately strict (digits + %/円 + OFF/オフ) so genuine names that
+    // merely contain words like "割引" or "SALE" are left untouched.
+    function normalizeVariationName(name) {
+        return name
+            .replace(/\s*[\(（]\s*\d[\d,]*\s*[%％円]\s*(?:OFF|オフ)\s*[\)）]\s*$/i, '')
+            .replace(/\s{2,}/g, ' ')
+            .trim();
+    }
+
+    function mergeVariations(rawVariations) {
+        const merged = {};
+        Object.keys(rawVariations).forEach(rawName => {
+            const base = normalizeVariationName(rawName) || rawName;
+            if (!merged[base]) merged[base] = [];
+            merged[base].push(...rawVariations[rawName]);
+        });
+        // Sort each reunited series by date and collapse duplicate dates (prefer the lower
+        // i.e. sale price if a single day ever appears under two source keys).
+        Object.keys(merged).forEach(base => {
+            const byDate = {};
+            merged[base].forEach(entry => {
+                const existing = byDate[entry.date];
+                if (!existing || entry.price < existing.price) byDate[entry.date] = entry;
+            });
+            merged[base] = Object.values(byDate).sort((a, b) => a.date.localeCompare(b.date));
+        });
+        return merged;
+    }
+
     function injectTracker(result) {
         console.log('[Boopa] Injecting tracker. isDemo:', result.isDemo);
-        const variations = result.data;
+        const variations = mergeVariations(result.data);
         const isDemo = result.isDemo;
         let currentRange = 'all';
 
