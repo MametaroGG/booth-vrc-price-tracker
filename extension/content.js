@@ -391,19 +391,43 @@
             ctx.strokeStyle = color;
             ctx.lineWidth = lineWidth;
             ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
             data.forEach((d, i) => {
                 const x = getX(d.date);
                 const y = getY(d.price);
                 if (i === 0) ctx.moveTo(x, y);
                 else ctx.lineTo(x, y);
+                // Keep every day hoverable even though we only draw markers at key points.
                 pointsToHover.push({ x, y, data: d, vName, color });
             });
             ctx.stroke();
 
-            data.forEach(d => {
-                ctx.fillStyle = color;
+            // Markers: only at meaningful points — the first reading, the last reading,
+            // and any day the price actually changed. Long flat stretches previously drew
+            // a dot every single day, so daily data collapsed into a solid bar of circles.
+            // Drawing only the "corners" keeps the line clean even on the 最大 (all) range.
+            // A pixel-gap filter guarantees markers never overlap when changes cluster.
+            const isEmphasized = highlightName === vName;
+            const markerRadius = isEmphasized ? 4 : 3;
+            const minMarkerGap = markerRadius * 2 + 2; // px between adjacent markers
+            let lastMarkerX = -Infinity;
+
+            ctx.globalAlpha = 1.0;
+            ctx.fillStyle = color;
+            data.forEach((d, i) => {
+                const isFirst = i === 0;
+                const isLast = i === data.length - 1;
+                const priceChanged = i > 0 && d.price !== data[i - 1].price;
+                if (!isFirst && !isLast && !priceChanged) return;
+
+                const x = getX(d.date);
+                // Thin out markers that would visually collide, but always keep the last
+                // point so the current price is marked.
+                if (!isLast && x - lastMarkerX < minMarkerGap) return;
+                lastMarkerX = x;
+
                 ctx.beginPath();
-                ctx.arc(getX(d.date), getY(d.price), highlightName === vName ? 4 : 2.5, 0, Math.PI * 2);
+                ctx.arc(x, getY(d.price), markerRadius, 0, Math.PI * 2);
                 ctx.fill();
             });
             ctx.globalAlpha = 1.0;
