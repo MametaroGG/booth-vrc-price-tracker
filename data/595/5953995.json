@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "キャンディー支援（内容物は同じです）": [
@@ -874,7 +879,16 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10060322": "lilToon一括コピー / lilToon Bulk Copier",
+    "10060330": "キャンディー支援（内容物は同じです）"
   }
 }

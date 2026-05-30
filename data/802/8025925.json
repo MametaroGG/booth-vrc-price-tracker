@@ -756,6 +756,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "本商品 (Ver 2.35.0a)": [
@@ -784,11 +789,21 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "おやつ代🧁/ 最新Ver＆過去Ver含む": [
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -798,7 +813,17 @@
         "date": "2026-05-28",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13435008": "本商品 (Ver 2.36.0a)",
+    "13472942": "おやつ代🧁/ 最新Ver＆過去Ver含む",
+    "14011044": "本商品 / 最新Ver＆過去Ver含む（🔑商用版）"
   }
 }

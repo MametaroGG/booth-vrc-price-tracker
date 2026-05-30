@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "お布施用(内容は無料版と同じ)": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1311,7 +1321,15 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7289846": "お布施用(内容は無料版と同じ)"
   }
 }

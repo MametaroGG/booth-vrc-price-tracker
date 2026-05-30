@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Support Us!": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Support Us! (x3)": [
@@ -1748,7 +1763,17 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8190337": "Support Us!",
+    "8193143": "Support Us! (x2)",
+    "8193144": "Support Us! (x3)"
   }
 }

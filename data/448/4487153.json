@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "UdonSharp Script Package + Buy me a coffee :3": [
@@ -874,7 +879,16 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7514830": "UdonSharp Script Package",
+    "7514890": "UdonSharp Script Package + Buy me a coffee :3"
   }
 }

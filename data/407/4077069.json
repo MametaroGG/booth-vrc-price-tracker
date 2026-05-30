@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Boost（The contents are the same 内容は同じです）": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 223,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 223,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-28",
         "price": 456,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 456,
+        "is_sale": false
       }
     ],
     "Boost ゾロメ （The contents are the same 内容は同じです）": [
@@ -1748,7 +1763,17 @@
         "date": "2026-05-28",
         "price": 666,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 666,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6821384": "Boost（The contents are the same 内容は同じです）",
+    "6821385": "Boost 四五六（The contents are the same 内容は同じです）",
+    "6821537": "Boost ゾロメ （The contents are the same 内容は同じです）"
   }
 }

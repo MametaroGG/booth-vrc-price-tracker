@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Download + Tip": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 420,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 420,
         "is_sale": false
       }
@@ -1311,7 +1321,15 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6566629": "Download + Tip"
   }
 }

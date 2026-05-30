@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Developer Edition（商用・開発版）": [
@@ -874,7 +879,16 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13125490": "Standard Edition（通常版）",
+    "13125491": "Developer Edition（商用・開発版）"
   }
 }

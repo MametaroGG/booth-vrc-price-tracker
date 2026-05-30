@@ -262,6 +262,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "【Full Set】全部入りパック（＋統合ランチャー）": [
@@ -522,6 +527,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -870,6 +880,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "【個別】Object Analyzer（パーツ検索・抽出）": [
@@ -1130,6 +1145,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1394,6 +1414,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "【個別】Resource Analyzer（テクスチャ容量調査・アニメーション調査）": [
@@ -1614,6 +1639,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1838,7 +1868,20 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13476544": "【個別】Object Analyzer（パーツ検索・抽出）",
+    "13476545": "【個別】Usage Viewer（アセット逆引き調査）",
+    "13476546": "【個別】Resource Analyzer（テクスチャ容量調査・アニメーション調査）",
+    "13476547": "【個別】Snapshot Manager（設定保存・復元）",
+    "13476548": "【Full Set】全部入りパック（＋統合ランチャー）",
+    "13476549": "【応援版】Full Setと同じ（+おやつ代）"
   }
 }

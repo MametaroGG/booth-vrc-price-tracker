@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "読み上げ機能付きVOICEVOX:ずんだもん": [
@@ -874,7 +879,16 @@
         "date": "2026-05-28",
         "price": 330,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 330,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10250385": "チャット翻訳",
+    "10291426": "読み上げ機能付きVOICEVOX:ずんだもん"
   }
 }

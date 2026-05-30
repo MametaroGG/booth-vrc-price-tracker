@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "支援版（内容は通常版と同じ）/Donate version(No additional items)": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1311,7 +1321,16 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11342128": "支援版（内容は通常版と同じ）/Donate version(No additional items)",
+    "11342129": "もっと支援版（内容は通常版と同じ）/More Donate version(No additional items)"
   }
 }

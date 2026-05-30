@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "開発支援 (Donation)": [
@@ -874,7 +879,15 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12012322": "開発支援 (Donation)"
   }
 }

@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "Free Version + Donation x1 / 無料版 + 寄付 x1": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": true
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Free Version + Donation x3 / 無料版 + 寄付 x3": [
@@ -1748,7 +1763,17 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "9818237": "Free Version + Donation x1 / 無料版 + 寄付 x1",
+    "9818238": "Free Version + Donation x2 / 無料版 + 寄付 x2",
+    "9818239": "Free Version + Donation x3 / 無料版 + 寄付 x3"
   }
 }

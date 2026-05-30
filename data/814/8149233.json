@@ -162,6 +162,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "ライセンスキー [VP-LIC]": [
@@ -322,6 +327,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -486,7 +496,16 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13642370": "ライセンスキー [VP-LIC]",
+    "13642371": "サーバー運営 15日分支援"
   }
 }

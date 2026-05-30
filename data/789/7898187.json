@@ -434,6 +434,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "v0.3.1 | 2026/01/21": [
@@ -869,7 +874,15 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13224935": "🍩おやつ代 | 内容は同じ"
   }
 }

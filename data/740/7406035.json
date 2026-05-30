@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Creator Support クリエイターサポート": [
@@ -874,7 +879,16 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12399600": "Standard  標準",
+    "12399945": "Creator Support クリエイターサポート"
   }
 }

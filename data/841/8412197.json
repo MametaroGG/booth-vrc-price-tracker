@@ -7,6 +7,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Prefab Painter": [
@@ -14,7 +19,31 @@
         "date": "2026-05-28",
         "price": 1850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1850,
+        "is_sale": false
+      }
+    ],
+    "Prefab Painter Pro [Includes SBA]": [
+      {
+        "date": "2026-05-31",
+        "price": 2250,
+        "is_sale": false
+      }
+    ],
+    "Scale Brush Addon": [
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14047423": "Prefab Painter",
+    "14062899": "Prefab Painter Pro [Includes SBA]",
+    "14062900": "Scale Brush Addon"
   }
 }

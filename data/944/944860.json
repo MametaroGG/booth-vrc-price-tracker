@@ -417,6 +417,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "リアル価格版": [
@@ -834,7 +839,15 @@
         "date": "2026-05-28",
         "price": 160,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 160,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "1508667": "リアル価格版"
   }
 }

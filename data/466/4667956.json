@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Tutorial / 教學": [
@@ -874,7 +879,15 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7826446": "Status Planner 0.4 / 狀態泡泡規劃師 0.4"
   }
 }

@@ -247,6 +247,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "EzCam 0.1.0 (ご飯代)": [
@@ -492,6 +497,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -741,7 +751,16 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13504836": "EzCam 0.1.0 (ご飯代)",
+    "13504837": "EzCam 0.1.0 (支援版)"
   }
 }

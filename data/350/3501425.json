@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Unity Package + Support Me": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 325,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 325,
         "is_sale": false
       }
@@ -1311,7 +1321,16 @@
         "date": "2026-05-28",
         "price": 625,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 625,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5817560": "Unity Package + Support Me",
+    "5817561": "Unity Package + Extra Support"
   }
 }

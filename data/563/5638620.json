@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "コーヒー代（NVIDIA開発環境補助）": [
@@ -874,7 +879,16 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9521314": "正式公開版",
+    "9573711": "コーヒー代（NVIDIA開発環境補助）"
   }
 }

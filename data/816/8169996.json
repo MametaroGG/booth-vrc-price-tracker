@@ -147,6 +147,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Coffee cost sponsorship (The composition is the same)": [
@@ -294,7 +299,16 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13679127": "Poiyomi Bulk Copier",
+    "13679136": "Coffee cost sponsorship (The composition is the same)"
   }
 }

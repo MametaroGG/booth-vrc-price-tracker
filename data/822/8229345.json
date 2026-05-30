@@ -102,6 +102,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Support Version / 支援版 (Full Script + Tips)": [
@@ -204,7 +209,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13768385": "Standard Version / 通常版 (Full Script)",
+    "13768421": "Support Version / 支援版 (Full Script + Tips)"
   }
 }

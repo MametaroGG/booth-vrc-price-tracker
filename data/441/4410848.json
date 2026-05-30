@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Donation 1000": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Donation 9001": [
@@ -1748,7 +1763,17 @@
         "date": "2026-05-28",
         "price": 9001,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 9001,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7390224": "Donation 1000",
+    "7390225": "Donation 3000",
+    "7390226": "Donation 9001"
   }
 }

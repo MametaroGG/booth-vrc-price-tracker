@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Myong's Avatar Tools": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11501670": "Myong's Utility Tools",
+    "11501823": "Myong's Avatar Tools",
+    "11501824": "Myong's All Tools"
   }
 }
