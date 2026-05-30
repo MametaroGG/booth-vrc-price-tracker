@@ -119,3 +119,79 @@
     margin-left: 10px;
     vertical-align: middle;
 }
+
+/* Optional per-variation "lowest recorded price" feature */
+.booth-lowest-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    opacity: 0.75;
+    cursor: pointer;
+    margin-top: 8px;
+    user-select: none;
+    color: inherit;
+}
+
+.booth-lowest-toggle:hover {
+    opacity: 1;
+}
+
+.booth-lowest-toggle input {
+    cursor: pointer;
+    margin: 0;
+}
+
+.booth-lowest-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin: 10px 0 2px;
+    font-size: 13px;
+    line-height: 1.45;
+    color: inherit;
+    opacity: 0.9;
+}
+
+.booth-lowest-badge strong {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.booth-lowest-label {
+    opacity: 0.75;
+}
+
+.booth-lowest-badge small {
+    font-size: 12px;
+    opacity: 0.6;
+    white-space: nowrap;
+}
+
+.booth-lowest-icon {
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    opacity: 0.8;
+    color: #fc4d50;
+}
+
+.booth-lowest-off {
+    background: #fc4d50;
+    color: #fff;
+    font-weight: bold;
+    padding: 1px 7px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.booth-lowest-now {
+    background: #2e7d32;
+    color: #fff;
+    padding: 1px 7px;
+    border-radius: 4px;
+    font-size: 11px;
+    white-space: nowrap;
+}

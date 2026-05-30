@@ -73,14 +73,19 @@ async function scrapeSearchPage(url) {
     }
 }
 
+// A trailing shop sale badge: a final (...) containing a number, a %/円, and a discount
+// word (OFF/オフ/SALE/セール) in any order — "(30% OFF)", "(30% SALE)", "(890円 OFF)".
+// Requiring all three keeps real names like "(コットン100%)" or "(…100％割引)" intact.
+// No /g flag, so .test() is stateless and safe to reuse.
+const SALE_BADGE_RE = /\s*[\(（](?=[^)）]*\d)(?=[^)）]*[%％円])(?=[^)）]*(?:OFF|オフ|SALE|セール))[^)）]*[\)）]\s*$/i;
+
 /**
- * Removes a trailing BOOTH sale badge from a variation name so its price history stays
- * under one stable key, e.g. "✧ Shinano | しなの (30% OFF)" -> "✧ Shinano | しなの".
- * Strict on purpose (digits + %/円 + OFF/オフ) so real names containing "割引"/"SALE" survive.
+ * Removes a trailing sale badge AND collapses stray whitespace so a variation's price
+ * history stays under one stable key, e.g. "✧ Shinano | しなの (30% OFF)" -> "✧ Shinano | しなの".
  */
 function normalizeVariationName(name) {
     return name
-        .replace(/\s*[\(（]\s*\d[\d,]*\s*[%％円]\s*(?:OFF|オフ)\s*[\)）]\s*$/i, '')
+        .replace(SALE_BADGE_RE, '')
         .replace(/\s{2,}/g, ' ')
         .trim();
 }
@@ -102,12 +107,16 @@ async function scrapeProductDetails(productId) {
         // New selectors: .variation-item, .variation-name, .variation-price
         $('.variation-item').each((i, el) => {
             const rawName = $(el).find('.variation-name').text().trim() || 'default';
-            // BOOTH appends a discount badge to the name during a sale, e.g.
-            // "✧ Shinano | しなの (30% OFF)". Keying history by that raw name splits one
-            // variation into a new key for every sale, so strip the badge to keep the
-            // history under a single stable key. The badge also tells us it's on sale.
+            // BOOTH gives every variation a stable internal ID (data-product-variant, aka
+            // cart_item_variation_id) that does NOT change when the shop renames the
+            // variation. Some shops rewrite the name on every sale (e.g.
+            // "✧ Shinano | しなの (30% OFF)"), which would otherwise spawn a brand new key
+            // each time. Capturing the ID lets us anchor history to identity, not name.
+            const variantId = $(el).find('[data-product-variant]').first().attr('data-product-variant') || null;
+            // Strip a trailing discount badge for a clean, stable display label. The
+            // presence of that badge (not mere whitespace cleanup) tells us it's on sale.
             const vName = normalizeVariationName(rawName);
-            const nameImpliesSale = vName !== rawName;
+            const nameImpliesSale = SALE_BADGE_RE.test(rawName);
             const priceText = $(el).find('.variation-price, .price, .text-20.font-bold').text();
             const price = parseInt(priceText.replace(/[^\d]/g, ''), 10);
 
@@ -117,7 +126,7 @@ async function scrapeProductDetails(productId) {
                 $(el).find('.is-sale').length > 0;
 
             if (!isNaN(price)) {
-                variations.push({ name: vName, price, isSale });
+                variations.push({ name: vName, price, isSale, variantId });
             }
         });
 
@@ -174,14 +183,37 @@ async function saveProductData(product) {
     if (!result.variations) {
         result.variations = {};
     }
+    // Map of BOOTH's stable variation ID -> the canonical key we store its history under.
+    // Anchoring identity to the ID means a shop renaming a variation (sale badges, emoji,
+    // reworded names) can never split one variation into multiple keys / chart lines.
+    if (!result.variation_keys) {
+        result.variation_keys = {};
+    }
 
     // Update each variation
     product.variations.forEach(v => {
-        if (!result.variations[v.name]) {
-            result.variations[v.name] = [];
+        // Resolve the stable storage key for this variation.
+        let key = (v.variantId && result.variation_keys[v.variantId]) || null;
+        if (!key) {
+            key = v.name;
+            // First time we see this ID and there is no clean bucket yet: adopt an existing
+            // bucket that normalizes to the same name (older data collected before
+            // ID-anchoring, possibly fragmented by sale badges) so history stays continuous.
+            if (!result.variations[key]) {
+                const match = Object.keys(result.variations)
+                    .find(k => normalizeVariationName(k) === v.name);
+                if (match) key = match;
+            }
+            if (v.variantId) {
+                result.variation_keys[v.variantId] = key;
+            }
         }
 
-        const history = result.variations[v.name];
+        if (!result.variations[key]) {
+            result.variations[key] = [];
+        }
+
+        const history = result.variations[key];
         const existingEntryIndex = history.findIndex(entry => entry.date === TODAY);
 
         // Price drop heuristic
@@ -294,4 +326,9 @@ async function main() {
     }
 }
 
-main();
+// Only auto-run when executed directly (node src/scraper.js), not when required by tests.
+if (require.main === module) {
+    main();
+}
+
+module.exports = { normalizeVariationName, scrapeProductDetails, saveProductData };

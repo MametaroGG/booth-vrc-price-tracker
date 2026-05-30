@@ -130,8 +130,12 @@
     // The pattern is deliberately strict (digits + %/円 + OFF/オフ) so genuine names that
     // merely contain words like "割引" or "SALE" are left untouched.
     function normalizeVariationName(name) {
+        // Strip a trailing sale badge — a final (...) that contains a number, a %/円, and a
+        // discount word (OFF/オフ/SALE/セール) in any order: "(30% OFF)", "(30% SALE)",
+        // "(890円 OFF)". Requiring all three keeps real names like "(コットン100%)" or
+        // "(…100％割引)" intact.
         return name
-            .replace(/\s*[\(（]\s*\d[\d,]*\s*[%％円]\s*(?:OFF|オフ)\s*[\)）]\s*$/i, '')
+            .replace(/\s*[\(（](?=[^)）]*\d)(?=[^)）]*[%％円])(?=[^)）]*(?:OFF|オフ|SALE|セール))[^)）]*[\)）]\s*$/i, '')
             .replace(/\s{2,}/g, ' ')
             .trim();
     }
@@ -154,6 +158,70 @@
             merged[base] = Object.values(byDate).sort((a, b) => a.date.localeCompare(b.date));
         });
         return merged;
+    }
+
+    // ===== Optional, user-toggled feature: lowest recorded price per variation =====
+    const LOWEST_PREF_KEY = 'showLowestPrice';
+
+    // SteamDB-style: the lowest price ever recorded for one variation's merged history.
+    function getLowestPriceInfo(history) {
+        if (!Array.isArray(history) || history.length === 0) return null;
+        // Ignore non-positive prices: a paid item briefly logged at ¥0 is almost certainly a
+        // scrape glitch and would otherwise make everything read "lowest ¥0 (-100%)".
+        const valid = history.filter(d => typeof d.price === 'number' && d.price > 0);
+        if (valid.length === 0) return null;
+        let low = valid[0];
+        for (const d of valid) {
+            // Lowest price; on ties keep the most recent date ("as of" semantics).
+            if (d.price < low.price || (d.price === low.price && d.date > low.date)) low = d;
+        }
+        const regular = Math.max(...valid.map(d => d.price)); // proxy for the non-sale price
+        const current = valid[valid.length - 1].price;
+        const discountPct = regular > 0 ? Math.round((1 - low.price / regular) * 100) : 0;
+        return { minPrice: low.price, minDate: low.date, regularPrice: regular, current, discountPct, isCurrentlyLowest: current <= low.price };
+    }
+
+    const TREND_DOWN_ICON = `<svg class="booth-lowest-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline><polyline points="16 17 22 17 22 11"></polyline></svg>`;
+
+    // Inject (or, when show=false, clear) a "lowest recorded price" badge under each
+    // variation on the page. Page names are normalized so they match the merged history
+    // even while the shop has a sale badge like "(840円 OFF)" appended live.
+    function renderLowestBadges(variations, show) {
+        document.querySelectorAll('.booth-lowest-badge').forEach(el => el.remove());
+        if (!show) return;
+
+        const today = new Date();
+        const keys = Object.keys(variations);
+        document.querySelectorAll('.variation-item').forEach(item => {
+            const nameEl = item.querySelector('.variation-name');
+            let history;
+            if (nameEl) {
+                history = variations[normalizeVariationName(nameEl.textContent.trim())];
+            }
+            // Single-item products still render one .variation-item but have NO
+            // .variation-name. There is exactly one tracked series in that case, so fall back
+            // to it instead of bailing out (which hid the badge on single products). Also
+            // covers a lone named variation whose label drifted from the stored key.
+            if (!history && keys.length === 1) {
+                history = variations[keys[0]];
+            }
+            const info = getLowestPriceInfo(history);
+            if (!info) return;
+
+            const dateStr = info.minDate.replace(/-/g, '/');
+            const days = Math.max(0, Math.floor((today - new Date(info.minDate)) / 86400000));
+            const daysLabel = days === 0 ? '本日' : `${days}日前`;
+            const off = info.discountPct > 0 ? ` <span class="booth-lowest-off">-${info.discountPct}%</span>` : '';
+            const nowTag = info.isCurrentlyLowest ? ` <span class="booth-lowest-now">最安値圏</span>` : '';
+
+            const badge = document.createElement('div');
+            badge.className = 'booth-lowest-badge';
+            badge.title = `記録上の最安値 ¥${info.minPrice.toLocaleString()}（通常 ¥${info.regularPrice.toLocaleString()}）／ ${dateStr}・${daysLabel}時点`;
+            badge.innerHTML = `${TREND_DOWN_ICON}<span class="booth-lowest-label">記録上の最安値</span> <strong>¥${info.minPrice.toLocaleString()}</strong>${off}${nowTag} <small>${dateStr}</small>`;
+            // Place it at the very bottom of the variation block (below the gift button), out
+            // of the name → price → buttons flow, so it no longer crowds the layout.
+            item.appendChild(badge);
+        });
     }
 
     function injectTracker(result) {
@@ -212,6 +280,26 @@
             legendArea.className = 'booth-price-legend collapsed'; // Default to collapsed
             legendArea.style.cssText = 'display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; font-size: 11px; opacity: 0.8; color: inherit;';
             container.appendChild(legendArea);
+
+            // --- Optional: per-variation "lowest recorded price" badges (off by default) ---
+            const lowestToggle = document.createElement('label');
+            lowestToggle.className = 'booth-lowest-toggle';
+            lowestToggle.innerHTML = `<input type="checkbox"> 各バリエーションに記録上の最安値を表示`;
+            container.appendChild(lowestToggle);
+            const lowestCheckbox = lowestToggle.querySelector('input');
+            lowestCheckbox.addEventListener('change', () => {
+                const show = lowestCheckbox.checked;
+                try { chrome.storage?.local?.set({ [LOWEST_PREF_KEY]: show }); } catch (e) { /* ignore */ }
+                renderLowestBadges(variations, show);
+            });
+            // Restore the saved preference (global across products) and render accordingly.
+            try {
+                chrome.storage.local.get({ [LOWEST_PREF_KEY]: false }, (res) => {
+                    const show = !!(res && res[LOWEST_PREF_KEY]);
+                    lowestCheckbox.checked = show;
+                    renderLowestBadges(variations, show);
+                });
+            } catch (e) { /* storage unavailable; feature stays off */ }
 
             legendToggle.onclick = () => {
                 const isCollapsed = legendArea.classList.toggle('collapsed');
