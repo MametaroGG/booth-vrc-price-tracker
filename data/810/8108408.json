@@ -207,6 +207,11 @@
         "date": "2026-05-28",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Shinra -森羅-": [
@@ -412,6 +417,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -621,6 +631,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Milltina -ミルティナ-": [
@@ -826,6 +841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1035,6 +1055,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Chocolat -ショコラ-": [
@@ -1240,6 +1265,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1449,6 +1479,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Airi -愛莉-": [
@@ -1656,7 +1691,22 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13571246": "フルパック",
+    "13576038": "Shinra -森羅-",
+    "13576039": "Shinano -しなの-",
+    "13576040": "Milltina -ミルティナ-",
+    "13576041": "Lumina -ルミナ-",
+    "13576042": "Chocolat -ショコラ-",
+    "13576043": "Sio -しお-",
+    "13576044": "Airi -愛莉-"
   }
 }

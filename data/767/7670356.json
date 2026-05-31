@@ -452,6 +452,11 @@
         "date": "2026-05-28",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "モアサナ単体データ／MOISSANA Only Data": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 5000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 5000,
         "is_sale": false
       }
@@ -1356,7 +1366,17 @@
         "date": "2026-05-28",
         "price": 9000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 9000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12847331": "カルメル単体データ／CARMEL Only Data",
+    "12847543": "モアサナ単体データ／MOISSANA Only Data",
+    "12847544": "カルメル＆モアサナ バンドルパック／CARMEL＆MOISSANA Bundle Pack"
   }
 }

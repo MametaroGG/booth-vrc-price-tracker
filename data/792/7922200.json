@@ -407,6 +407,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "🫧Makeup Texture🫧": [
@@ -812,6 +817,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1221,7 +1231,17 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13265229": "🫧Eye Texture🫧",
+    "13265230": "🫧Makeup Texture🫧",
+    "13265231": "🫧Set🫧"
   }
 }

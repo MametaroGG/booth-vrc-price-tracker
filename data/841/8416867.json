@@ -7,11 +7,21 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Makeup Tex Only": [
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": true
       }
@@ -21,6 +31,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "眉毛マスク（つくったことないので2種類入ってます。よければつかってください））": [
@@ -28,7 +43,17 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "14054781": "☆Full Pack☆",
+    "14054877": "Makeup Tex Only",
+    "14054878": "Eye Tex Only"
   }
 }

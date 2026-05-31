@@ -277,6 +277,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "本体MA版": [
@@ -552,6 +557,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -831,6 +841,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "DLCコンテンツ vol.1": [
@@ -1108,7 +1123,18 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13473937": "本体FULLPACK (NO DLC)",
+    "13474204": "本体MA版",
+    "13474205": "本体NoMA版",
+    "13474206": "DLCコンテンツ vol.1"
   }
 }

@@ -132,6 +132,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "For Marycia": [
@@ -262,6 +267,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -396,7 +406,17 @@
         "date": "2026-05-28",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13722932": "For Lapwing",
+    "13722981": "For Marycia",
+    "13722982": "FullSet (Lapwing,Marycia)"
   }
 }

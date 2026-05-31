@@ -87,6 +87,11 @@
         "date": "2026-05-28",
         "price": 1320,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1320,
+        "is_sale": false
       }
     ],
     "しなの - Shinano": [
@@ -172,6 +177,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 440,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 440,
         "is_sale": false
       }
@@ -261,6 +271,11 @@
         "date": "2026-05-28",
         "price": 440,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 440,
+        "is_sale": false
       }
     ],
     "マヌカ - Manuka": [
@@ -346,6 +361,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 440,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 440,
         "is_sale": false
       }
@@ -435,6 +455,11 @@
         "date": "2026-05-28",
         "price": 440,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 440,
+        "is_sale": false
       }
     ],
     "セレスティア - Selestia": [
@@ -522,6 +547,11 @@
         "date": "2026-05-28",
         "price": 440,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 440,
+        "is_sale": false
       }
     ],
     "ルミナ - Lumina": [
@@ -604,7 +634,21 @@
         "date": "2026-05-28",
         "price": 440,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 440,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13832240": "フルパック - Full Pack",
+    "13832374": "しなの - Shinano",
+    "13832375": "ミルティナ - Milltina",
+    "13832376": "マヌカ - Manuka",
+    "13832377": "愛莉 - Airi",
+    "13832378": "セレスティア - Selestia",
+    "13840422": "ルミナ - Lumina"
   }
 }

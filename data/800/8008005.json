@@ -327,6 +327,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "ELsion": [
@@ -652,6 +657,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -981,6 +991,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Rurune": [
@@ -1306,6 +1321,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1635,6 +1655,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Chiffon": [
@@ -1960,6 +1985,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -2289,7 +2319,21 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13404902": "Full pack",
+    "13404948": "ELsion",
+    "13404949": "Kipfel",
+    "13404950": "Rurune",
+    "13404951": "Eku",
+    "13404952": "Chiffon",
+    "13404953": "Chocolat"
   }
 }

@@ -107,6 +107,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "Shinano": [
@@ -212,6 +217,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": true
       }
@@ -321,6 +331,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Cazalis": [
@@ -426,6 +441,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": true
       }
@@ -535,6 +555,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Mayo": [
@@ -640,6 +665,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": true
       }
@@ -749,6 +779,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Miya": [
@@ -816,6 +851,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Misaki": [
@@ -843,6 +883,11 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": true
       }
     ],
     "Lunary": [
@@ -860,7 +905,24 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13785767": "Full set ♥",
+    "13785783": "Shinano",
+    "13785784": "Milfy",
+    "13785785": "Cazalis",
+    "13797266": "Mafuyu",
+    "13797267": "Mayo",
+    "13797268": "Chocolat",
+    "13870437": "Miya",
+    "13987985": "Misaki",
+    "14023043": "Lunary"
   }
 }

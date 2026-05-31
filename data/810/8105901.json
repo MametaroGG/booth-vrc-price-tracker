@@ -309,6 +309,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "FULLSET [ CHIFFON ]": [
@@ -524,6 +529,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -743,6 +753,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "FULLSET [ PLUM ]": [
@@ -958,6 +973,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1177,6 +1197,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "EYE TEXTURES [ LIME, CHIFFON, CHOCOLAT, PLUM ]": [
@@ -1392,6 +1417,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1611,6 +1641,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "BLENDSHAPE [ LIME, CHIFFON, CHOCOLAT, PLUM ]": [
@@ -1828,6 +1863,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "[FULLSET [ LIME, CHIFFON, CHOCOLAT, PLUM ]": [
@@ -1955,7 +1995,23 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13567053": "[FULLSET [ LIME, CHIFFON, CHOCOLAT, PLUM ]",
+    "13567178": "FULLSET [ LIME ]",
+    "13567179": "FULLSET [ CHIFFON ]",
+    "13567180": "FULLSET [ CHOCOLAT ]",
+    "13567181": "FULLSET [ PLUM ]",
+    "13567182": "MAKEUP  [ LIME, CHIFFON, CHOCOLAT, PLUM ]",
+    "13567183": "EYE TEXTURES [ LIME, CHIFFON, CHOCOLAT, PLUM ]",
+    "13567184": "MATERIAL  [ LIME, CHIFFON, CHOCOLAT, PLUM ]",
+    "13567185": "BLENDSHAPE [ LIME, CHIFFON, CHOCOLAT, PLUM ]"
   }
 }

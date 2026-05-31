@@ -322,6 +322,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "HashFT対応版+通常版": [
@@ -642,6 +647,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -966,7 +976,17 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13405656": "通常版",
+    "13414412": "HashFT対応版+通常版",
+    "13414413": "Super👍(HashFT対応版+通常版と同等です)"
   }
 }

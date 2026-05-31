@@ -217,6 +217,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": true
       }
     ],
     "Lumina_Cipher_Cloak": [
@@ -432,6 +437,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": true
       }
@@ -651,6 +661,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Lumina_PSYKHE": [
@@ -868,7 +883,18 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13568129": "フルセット / Full Set",
+    "13568175": "Lumina_Cipher_Cloak",
+    "13568176": "Lumina_Reveraglow",
+    "13568177": "Lumina_PSYKHE"
   }
 }

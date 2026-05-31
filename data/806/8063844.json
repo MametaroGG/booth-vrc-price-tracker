@@ -267,6 +267,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "水瀬-Minase": [
@@ -532,6 +537,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -801,6 +811,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "斑霞-Hanka": [
@@ -1066,6 +1081,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1335,6 +1355,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "獏-Baku": [
@@ -1600,6 +1625,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1869,7 +1899,21 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13499786": "Full Pack",
+    "13499928": "水瀬-Minase",
+    "13499929": "狛乃-Komano",
+    "13499930": "斑霞-Hanka",
+    "13499931": "彼方-Kanata",
+    "13499932": "獏-Baku",
+    "13499933": "泣夜-Nakiya"
   }
 }

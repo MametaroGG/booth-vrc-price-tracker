@@ -197,6 +197,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "[しなの] Shinano": [
@@ -392,6 +397,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -591,6 +601,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "FullPack": [
@@ -788,6 +803,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "[フィユエ ] Fyuett": [
@@ -808,6 +828,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -832,7 +857,20 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13607577": "[マヌカ] Manuka",
+    "13607608": "[しなの] Shinano",
+    "13607609": "[森羅] Shinra",
+    "13607610": "FullPack",
+    "14008603": "[フィユエ ] Fyuett",
+    "14008604": "[マリシア] Marycia"
   }
 }

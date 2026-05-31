@@ -537,6 +537,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "wire_flower_only": [
@@ -707,6 +712,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -881,7 +891,17 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12848203": "fullset",
+    "13590272": "wire_flower_only",
+    "13590273": "sakura_DLC"
   }
 }

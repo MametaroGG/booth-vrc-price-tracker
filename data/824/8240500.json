@@ -102,6 +102,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "02_cute and feminine": [
@@ -204,7 +209,16 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13785740": "01_cool and edgy",
+    "13785769": "02_cute and feminine"
   }
 }

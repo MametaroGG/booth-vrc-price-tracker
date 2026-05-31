@@ -97,6 +97,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Lapwing": [
@@ -192,6 +197,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -291,7 +301,17 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13494817": "Full pack",
+    "13494934": "Lapwing",
+    "13494935": "Marycia"
   }
 }

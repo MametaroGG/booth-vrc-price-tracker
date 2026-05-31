@@ -92,6 +92,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": true
       }
     ],
     "Full Set": [
@@ -182,6 +187,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -276,6 +286,11 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": true
       }
     ],
     "eye texture": [
@@ -366,6 +381,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -460,7 +480,19 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13825729": "【支援版※おまけ付き】Full Set",
+    "13826126": "Full Set",
+    "13826127": "make texure",
+    "13826128": "eye texture",
+    "13826129": "傷跡タトゥー"
   }
 }

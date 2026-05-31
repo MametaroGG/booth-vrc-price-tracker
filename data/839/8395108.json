@@ -17,6 +17,11 @@
         "date": "2026-05-28",
         "price": 690,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 790,
+        "is_sale": false
       }
     ],
     "Full Pack+💖": [
@@ -34,7 +39,16 @@
         "date": "2026-05-28",
         "price": 790,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 890,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14021465": "Full Pack",
+    "14021545": "Full Pack+💖"
   }
 }

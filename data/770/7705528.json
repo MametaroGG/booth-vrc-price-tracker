@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2700,
+        "is_sale": false
       }
     ],
     "SHINRA": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "LUMINA": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "HANKA": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "ALUE": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "SHINANO": [
@@ -4568,6 +4613,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -5027,7 +5077,25 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12907181": "FULLPACK",
+    "12907383": "SHINRA",
+    "12907384": "MINASE",
+    "12907385": "LUMINA",
+    "12907386": "MANUKA",
+    "12907387": "HANKA",
+    "12907388": "MILLTINA",
+    "12907389": "ALUE",
+    "12907390": "KUUTA",
+    "12907391": "SHINANO",
+    "12907392": "KOMANO"
   }
 }

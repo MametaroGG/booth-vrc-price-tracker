@@ -397,6 +397,11 @@
         "date": "2026-05-28",
         "price": 1750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1750,
+        "is_sale": false
       }
     ],
     "シンプルレオタード - Simple Leotard": [
@@ -792,6 +797,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1191,6 +1201,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "シンプルリンググローブ - Simple Ring Glove": [
@@ -1586,6 +1601,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1985,7 +2005,19 @@
         "date": "2026-05-28",
         "price": 220,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 220,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13248761": "フルセット - Full Set",
+    "13248858": "シンプルレオタード - Simple Leotard",
+    "13248859": "シンプルトレンカ - Simple Stirrups",
+    "13248860": "シンプルリンググローブ - Simple Ring Glove",
+    "13248861": "腰下ハーネス - Lower Harness"
   }
 }

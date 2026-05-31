@@ -67,6 +67,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "有料版(ピコピコ破壊付き)": [
@@ -134,7 +139,15 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13858529": "有料版(ピコピコ破壊付き)"
   }
 }

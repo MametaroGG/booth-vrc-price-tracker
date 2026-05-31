@@ -397,6 +397,11 @@
         "date": "2026-05-28",
         "price": 3700,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3700,
+        "is_sale": true
       }
     ],
     "A : Star Pants": [
@@ -792,6 +797,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": true
       }
@@ -1191,6 +1201,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "C : Kitty Nitty": [
@@ -1586,6 +1601,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -1985,6 +2005,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "E : LuneBleue": [
@@ -2380,6 +2405,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -2779,6 +2809,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "G : Overay Bikini 4": [
@@ -3174,6 +3209,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -3573,6 +3613,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "I : City Pop": [
@@ -3968,6 +4013,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 990,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 990,
         "is_sale": true
       }
@@ -4367,6 +4417,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "K : Garden Reverie": [
@@ -4764,7 +4819,26 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13280028": "Kumaly Pack (A~K)",
+    "13280131": "A : Star Pants",
+    "13280132": "B : Shibuya Maji",
+    "13280133": "C : Kitty Nitty",
+    "13280134": "D : Twillight",
+    "13280135": "E : LuneBleue",
+    "13280136": "F : セーラー チェイン",
+    "13280137": "G : Overay Bikini 4",
+    "13280138": "H : Overay Police",
+    "13280139": "I : City Pop",
+    "13280140": "J : Overay Bikini 5",
+    "13280141": "K : Garden Reverie"
   }
 }

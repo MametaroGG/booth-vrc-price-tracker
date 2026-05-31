@@ -37,6 +37,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "海咲/Misaki": [
@@ -72,6 +77,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -111,6 +121,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "森羅/Shinra": [
@@ -146,6 +161,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -185,6 +205,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "しなの/Shinano": [
@@ -222,7 +247,20 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13962190": "Full pack",
+    "13962195": "海咲/Misaki",
+    "13962196": "ルミナ/Lumina",
+    "13962197": "森羅/Shinra",
+    "13962198": "しゅあん/Shuan",
+    "13964806": "しなの/Shinano"
   }
 }

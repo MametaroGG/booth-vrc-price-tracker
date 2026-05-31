@@ -329,6 +329,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "DJEventHall": [
@@ -606,7 +611,16 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13448009": "DJEventHall",
+    "13448856": "ゆきぴに酒をおごる【内容は変わりません】"
   }
 }

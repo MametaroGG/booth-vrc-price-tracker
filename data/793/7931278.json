@@ -392,6 +392,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "愛莉 Airi": [
@@ -782,6 +787,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -1176,6 +1186,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "クマリ Kumaly": [
@@ -1566,6 +1581,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -1960,7 +1980,19 @@
         "date": "2026-05-28",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13282163": "しなの Shinano",
+    "13282208": "愛莉 Airi",
+    "13282209": "ミルティナ Milltina",
+    "13282210": "クマリ Kumaly",
+    "13282211": "Full Package"
   }
 }

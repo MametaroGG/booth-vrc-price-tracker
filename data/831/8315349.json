@@ -52,6 +52,11 @@
         "date": "2026-05-28",
         "price": 6300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6300,
+        "is_sale": false
       }
     ],
     "JUST ROBOT VERSION": [
@@ -102,6 +107,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2500,
         "is_sale": false
       }
@@ -156,7 +166,16 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13897564": "FULL PACKAGE VERSION",
+    "13921054": "JUST ROBOT VERSION"
   }
 }

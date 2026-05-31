@@ -32,6 +32,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Texture Pack 2 with VFX": [
@@ -62,6 +67,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": true
       }
@@ -96,7 +106,17 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13971716": "Basic Package",
+    "13971774": "Texture Pack 2 with VFX",
+    "13971775": "VFX & Texture Pack 2 (Donation Version)"
   }
 }

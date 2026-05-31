@@ -279,6 +279,11 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "利用規約PDF": [
@@ -506,6 +511,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "通常版": [
@@ -683,7 +693,16 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13482250": "通常版",
+    "13492340": "支援版(通常版と同内容)"
   }
 }

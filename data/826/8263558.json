@@ -82,6 +82,11 @@
         "date": "2026-05-28",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "しなの/Shinano": [
@@ -162,6 +167,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -246,6 +256,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "デルタフレア/DELTAFLAIR": [
@@ -326,6 +341,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -410,6 +430,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Grus": [
@@ -492,6 +517,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "ビナア/Binah": [
@@ -554,7 +584,21 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13819313": "しなの/Shinano",
+    "13819352": "Lapwing",
+    "13819353": "デルタフレア/DELTAFLAIR",
+    "13819354": "Wolfram",
+    "13839770": "フルセット/Full Set",
+    "13839771": "Grus",
+    "13879863": "ビナア/Binah"
   }
 }

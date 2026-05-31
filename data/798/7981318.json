@@ -347,6 +347,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Fullset": [
@@ -692,6 +697,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1041,6 +1051,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "マリシア / Marycia": [
@@ -1386,6 +1401,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -1735,6 +1755,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "ルミナ / Lumina": [
@@ -2080,6 +2105,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -2429,6 +2459,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "ショコラ / Chocolat": [
@@ -2774,6 +2809,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -3123,6 +3163,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "エク / Eku": [
@@ -3468,6 +3513,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -3817,6 +3867,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "愛莉 / Airi": [
@@ -4162,6 +4217,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -4511,6 +4571,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "コペ / Kope": [
@@ -4858,7 +4923,27 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13363436": "Fullset",
+    "13363764": "しなの / Shinano",
+    "13363765": "マリシア / Marycia",
+    "13363766": "ミルティナ / Milltina",
+    "13363767": "ルミナ / Lumina",
+    "13363768": "キプフェル / Kipfel",
+    "13363769": "ショコラ / Chocolat",
+    "13363770": "マヌカ / Manuka",
+    "13363771": "エク / Eku",
+    "13363772": "リナシータ / Rinasciita",
+    "13363773": "愛莉 / Airi",
+    "13363774": "ラムネ / Ramune",
+    "13363775": "コペ / Kope"
   }
 }

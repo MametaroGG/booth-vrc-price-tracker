@@ -222,6 +222,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "eye only": [
@@ -442,6 +447,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -666,7 +676,17 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13562448": "fullpack (eye+make+psd)",
+    "13562635": "eye only",
+    "13562636": "make only"
   }
 }

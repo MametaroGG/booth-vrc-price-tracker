@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "春 - Spring": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "秋 - Autumn": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "星 - Stellar": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13110358": "フルセット (Full Set) - 春夏秋冬＋星",
+    "13113094": "春 - Spring",
+    "13113095": "夏 - Summer",
+    "13113096": "秋 - Autumn",
+    "13113097": "冬 - Winter",
+    "13113098": "星 - Stellar"
   }
 }

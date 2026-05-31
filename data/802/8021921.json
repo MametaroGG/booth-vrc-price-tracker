@@ -237,6 +237,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Shinra": [
@@ -472,6 +477,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -711,6 +721,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Kipfel": [
@@ -946,6 +961,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1185,6 +1205,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -1420,6 +1445,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1659,6 +1689,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Mao": [
@@ -1894,6 +1929,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -2133,6 +2173,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "SHRI": [
@@ -2368,6 +2413,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -2607,6 +2657,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "FullPack+おまけ": [
@@ -2844,7 +2899,26 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13428064": "Minase",
+    "13428561": "Shinra",
+    "13428562": "Komano",
+    "13428563": "Kipfel",
+    "13428564": "Manuka",
+    "13428565": "Rurune",
+    "13428566": "Mao",
+    "13428567": "Rize",
+    "13428568": "Kanata",
+    "13428569": "SHRI",
+    "13428570": "+Head",
+    "13428572": "FullPack+おまけ"
   }
 }

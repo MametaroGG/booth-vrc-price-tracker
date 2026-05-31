@@ -412,6 +412,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Sio": [
@@ -822,6 +827,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1236,6 +1246,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Shuan": [
@@ -1646,6 +1661,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -2060,6 +2080,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Rinasciita": [
@@ -2470,6 +2495,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -2884,6 +2914,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Full Set": [
@@ -3296,7 +3331,22 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13262762": "Shinano",
+    "13262888": "Sio",
+    "13262889": "rurune",
+    "13262890": "Shuan",
+    "13262891": "EME",
+    "13262892": "Rinasciita",
+    "13262893": "Pretzel",
+    "13262894": "Full Set"
   }
 }

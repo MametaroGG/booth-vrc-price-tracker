@@ -64,6 +64,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Dye 2": [
@@ -109,6 +114,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -158,6 +168,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Full (Dye1、Dye2、Only Dye)": [
@@ -190,7 +205,18 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13932832": "Full (Dye1、Dye2、Only Dye)",
+    "13932900": "Dye 1",
+    "13932901": "Dye 2",
+    "13932902": "Only Dye"
   }
 }

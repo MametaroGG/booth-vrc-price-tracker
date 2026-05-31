@@ -77,6 +77,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": true
       }
     ],
     "カザリス": [
@@ -152,6 +157,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -231,6 +241,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "応援版": [
@@ -308,6 +323,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": true
       }
     ],
     "Euphorikaユーフォリカ": [
@@ -380,6 +400,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "海咲Misaki": [
@@ -407,7 +432,20 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13849079": "カザリス",
+    "13850041": "Fullset",
+    "13850042": "Mie",
+    "13850043": "応援版",
+    "13865032": "Euphorikaユーフォリカ",
+    "13987398": "海咲Misaki"
   }
 }

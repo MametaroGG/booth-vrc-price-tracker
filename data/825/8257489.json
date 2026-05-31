@@ -92,6 +92,11 @@
         "date": "2026-05-28",
         "price": 403,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 403,
+        "is_sale": false
       }
     ],
     "ApplePrincess_BlackDiamond_Garter_LegWraps": [
@@ -182,6 +187,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 107,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 107,
         "is_sale": false
       }
@@ -276,6 +286,11 @@
         "date": "2026-05-28",
         "price": 107,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 107,
+        "is_sale": false
       }
     ],
     "ApplePrincess_PinkLady_Garter_LegWraps": [
@@ -366,6 +381,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 107,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 107,
         "is_sale": false
       }
@@ -460,6 +480,11 @@
         "date": "2026-05-28",
         "price": 107,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 107,
+        "is_sale": false
       }
     ],
     "ApplePrincess_Russet_Garter_LegWraps": [
@@ -552,7 +577,20 @@
         "date": "2026-05-28",
         "price": 107,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 107,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13809642": "ApplePrincess_Garter_LegWraps",
+    "13810456": "ApplePrincess_BlackDiamond_Garter_LegWraps",
+    "13810457": "ApplePrincess_GrannySmith_Garter_LegWraps",
+    "13810458": "ApplePrincess_PinkLady_Garter_LegWraps",
+    "13810459": "ApplePrincess_RedDelicious_Garter_LegWraps",
+    "13810460": "ApplePrincess_Russet_Garter_LegWraps"
   }
 }

@@ -132,6 +132,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "💛MAKE UP＋BODY💛": [
@@ -262,6 +267,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 750,
         "is_sale": false
       }
@@ -396,7 +406,17 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13663229": "💖FULL SET💖",
+    "13734565": "💛MAKE UP＋BODY💛",
+    "13734566": "💜MAKE UP💜"
   }
 }

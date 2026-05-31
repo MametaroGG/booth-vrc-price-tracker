@@ -422,6 +422,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "shinano": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "chiffon": [
@@ -1688,6 +1703,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "fullset[1600→1200]": [
@@ -1838,5 +1858,11 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13131038": "fullset",
+    "13131390": "shinano",
+    "13131391": "pochi",
+    "13131392": "chiffon"
   }
 }

@@ -17,6 +17,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Chial G": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -51,6 +61,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Nath de Exiore": [
@@ -68,7 +83,18 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14031574": "Pack Model",
+    "14031588": "Chial G",
+    "14031589": "Asama G",
+    "14031590": "Nath de Exiore"
   }
 }

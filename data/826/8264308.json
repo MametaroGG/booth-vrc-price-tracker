@@ -92,6 +92,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Only gradation(3)": [
@@ -182,6 +187,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -278,7 +288,17 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13820486": "All pack",
+    "13820511": "Only gradation(3)",
+    "13820512": "Only highlights(5)"
   }
 }

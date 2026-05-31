@@ -322,6 +322,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "makeup only": [
@@ -644,7 +649,16 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13413887": "Makeup and Eye(full pack)",
+    "13413984": "makeup only"
   }
 }

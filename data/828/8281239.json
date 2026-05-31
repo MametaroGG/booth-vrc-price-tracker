@@ -77,6 +77,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Full Pack: ALL INCLUDED!": [
@@ -152,6 +157,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -231,6 +241,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Marycia Compatible": [
@@ -306,6 +321,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -385,6 +405,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Dancing Tsuru": [
@@ -462,7 +487,20 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13845720": "Shinano Compatible",
+    "13845816": "Full Pack: ALL INCLUDED!",
+    "13845817": "Manuka Compatible",
+    "13845818": "Marycia Compatible",
+    "13845819": "Lapwing Compatible",
+    "13845820": "Dancing Tsuru"
   }
 }

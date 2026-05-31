@@ -117,6 +117,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "manuka": [
@@ -232,6 +237,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -351,6 +361,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "rurune": [
@@ -466,6 +481,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -585,7 +605,19 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13747017": "Fullpack",
+    "13768282": "manuka",
+    "13768283": "Sio",
+    "13768284": "rurune",
+    "13768285": "Lasyusha"
   }
 }

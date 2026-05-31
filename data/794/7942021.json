@@ -399,6 +399,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Intimidate(威嚇) wolf&cat": [
@@ -774,6 +779,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1153,6 +1163,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "猫のみ": [
@@ -1530,7 +1545,18 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13300452": "Intimidate(威嚇) wolf&cat",
+    "13302580": "支援　中身は一緒です（おやつ代）",
+    "13316076": "狼のみ",
+    "13316077": "猫のみ"
   }
 }

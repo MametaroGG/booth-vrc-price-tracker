@@ -177,6 +177,11 @@
         "date": "2026-05-28",
         "price": 130,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 130,
+        "is_sale": false
       }
     ],
     "エナドリ代": [
@@ -354,7 +359,16 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13643285": "しなの/紫晶の雫_amethyst",
+    "13645279": "エナドリ代"
   }
 }

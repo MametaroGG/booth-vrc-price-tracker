@@ -14,6 +14,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "tatoo": [
@@ -21,12 +26,22 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": true
       }
     ],
     "make": [
       {
         "date": "2026-05-28",
         "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
         "is_sale": true
       }
     ],
@@ -36,6 +51,19 @@
         "price": 100,
         "is_sale": true
       }
+    ],
+    "Fullset【PSD付】": [
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": true
+      }
     ]
+  },
+  "variation_keys": {
+    "14062722": "Fullset【PSD付】",
+    "14062894": "Eye",
+    "14062895": "tatoo",
+    "14062896": "make"
   }
 }

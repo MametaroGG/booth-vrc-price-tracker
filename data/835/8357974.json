@@ -37,6 +37,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Fullset": [
@@ -72,6 +77,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -111,6 +121,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "EYE set": [
@@ -146,6 +161,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -185,6 +205,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "FACE1": [
@@ -220,6 +245,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -259,6 +289,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Face Blendshape set": [
@@ -296,7 +331,22 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13962397": "EYE1",
+    "13962462": "EYE2",
+    "13962463": "EYE set",
+    "13962464": "FACE1",
+    "13962465": "FACE2",
+    "13962466": "Face Blendshape set",
+    "13962467": "MATERIAL",
+    "13962468": "Fullset"
   }
 }

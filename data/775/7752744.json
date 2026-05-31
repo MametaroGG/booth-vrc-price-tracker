@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12987320": "All",
+    "12987556": "Manuka",
+    "12987557": "Lumina",
+    "12987558": "Shinano",
+    "12987559": "Shinra"
   }
 }

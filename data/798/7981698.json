@@ -352,6 +352,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Tops": [
@@ -702,6 +707,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -1056,6 +1066,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Shoes": [
@@ -1408,7 +1423,18 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13364128": "Full set",
+    "13364184": "Tops",
+    "13364185": "Bottoms",
+    "13364186": "Shoes"
   }
 }

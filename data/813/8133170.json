@@ -192,6 +192,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -382,6 +387,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -576,6 +586,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Ichigo": [
@@ -768,7 +783,18 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13613521": "ALL（応援）",
+    "13614504": "Milltina",
+    "13614505": "Shinano",
+    "13614506": "Ichigo"
   }
 }

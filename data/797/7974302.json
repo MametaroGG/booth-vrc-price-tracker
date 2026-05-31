@@ -374,6 +374,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Eyes": [
@@ -731,7 +736,16 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13353296": "Full Pack (Make,Body,Eyes)",
+    "13354164": "Eyes"
   }
 }

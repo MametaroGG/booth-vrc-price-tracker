@@ -432,6 +432,11 @@
         "date": "2026-05-28",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "Donation版 (Satelite Lazer入り)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-28",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11630117": "Neo Assets",
+    "12940093": "Donation版 (Satelite Lazer入り)"
   }
 }

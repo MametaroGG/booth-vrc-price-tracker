@@ -52,6 +52,11 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "Make": [
@@ -102,6 +107,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -160,7 +170,17 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13802715": "FullPack(特典あり)",
+    "13802756": "Make",
+    "13802757": "Eye"
   }
 }

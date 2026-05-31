@@ -222,6 +222,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Manuka Compatible": [
@@ -442,6 +447,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -666,6 +676,11 @@
         "date": "2026-05-28",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "Shinano Compatible": [
@@ -886,6 +901,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1110,6 +1130,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Noy Compatible": [
@@ -1332,7 +1357,20 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13562009": "Lime Compatible",
+    "13562046": "Manuka Compatible",
+    "13562047": "Full Pack: ALL INCLUDED!",
+    "13562048": "Shinano Compatible",
+    "13562049": "Sio Compatible",
+    "13562050": "Noy Compatible"
   }
 }

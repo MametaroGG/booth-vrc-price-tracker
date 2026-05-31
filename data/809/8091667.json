@@ -222,6 +222,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "makeup＆eyetexture_full": [
@@ -442,6 +447,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -666,6 +676,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "makeup&eyetexture_black": [
@@ -888,7 +903,17 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13549499": "makeup＆eyetexture_full",
+    "13549500": "makeup&eyetexture_white",
+    "13549501": "makeup&eyetexture_black"
   }
 }

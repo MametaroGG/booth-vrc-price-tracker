@@ -227,6 +227,11 @@
         "date": "2026-05-28",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Chiffon・Chocolat・Lime・Plum": [
@@ -527,6 +532,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -903,6 +913,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Milfy・Eku": [
@@ -1198,6 +1213,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1497,6 +1517,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Mafuyu": [
@@ -1792,6 +1817,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -2091,6 +2121,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -2388,7 +2423,22 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13446501": "フルセット",
+    "13451403": "Chiffon・Chocolat・Lime・Plum",
+    "13453249": "Milk・Karin",
+    "13453250": "Milfy・Eku",
+    "13453251": "Manuka",
+    "13453252": "Mafuyu",
+    "13453253": "Elusion・Nemesis",
+    "13453254": "Shinano"
   }
 }

@@ -312,6 +312,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": true
       }
     ],
     "【支援版】Books": [
@@ -624,7 +629,16 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13431484": "Books",
+    "13431650": "【支援版】Books"
   }
 }

@@ -307,6 +307,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Sponsor（the same as the free version） 赞助（与免费版内容相同）": [
@@ -693,7 +698,15 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13452389": "support me（the same as free version） 支持我（内容物与免费版相同）"
   }
 }

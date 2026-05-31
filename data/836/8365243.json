@@ -32,6 +32,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "♡お菓子代♡": [
@@ -64,7 +69,16 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13974915": "通常版 Makeup＆Body＆Eye",
+    "13975017": "♡お菓子代♡"
   }
 }

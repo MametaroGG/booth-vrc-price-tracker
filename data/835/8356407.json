@@ -37,6 +37,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "海咲-Misaki-": [
@@ -72,6 +77,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -111,6 +121,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "水瀬": [
@@ -146,6 +161,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -185,6 +205,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "sio": [
@@ -220,6 +245,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -259,7 +289,21 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13960035": "Full pack",
+    "13963417": "海咲-Misaki-",
+    "13963418": "森羅",
+    "13963419": "水瀬",
+    "13963420": "ミルティナ",
+    "13963421": "sio",
+    "13963422": "ルミナ"
   }
 }

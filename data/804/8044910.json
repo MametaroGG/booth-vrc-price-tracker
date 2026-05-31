@@ -287,6 +287,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "フルパック": [
@@ -572,6 +577,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -861,6 +871,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Natural Eye": [
@@ -1146,6 +1161,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1435,7 +1455,18 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13467994": "フルパック",
+    "13467995": "Crystal Eye",
+    "13467996": "Natural Eye",
+    "13467997": "Melty Eye"
   }
 }

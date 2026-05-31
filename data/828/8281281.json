@@ -77,6 +77,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Full Pack: ALL INCLUDED!": [
@@ -152,6 +157,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -231,6 +241,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Lapwing Compatible": [
@@ -306,6 +321,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -385,7 +405,19 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13845826": "Shinano Compatible",
+    "13845852": "Full Pack: ALL INCLUDED!",
+    "13845853": "Manuka Compatible",
+    "13845854": "Lapwing Compatible",
+    "13845855": "Marycia Compatible"
   }
 }

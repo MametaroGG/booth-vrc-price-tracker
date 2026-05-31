@@ -212,6 +212,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "✧ MAKE only": [
@@ -422,6 +427,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -636,6 +646,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "✧ Support": [
@@ -848,7 +863,18 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13569832": "✧ MAKE & EYE",
+    "13572041": "✧ MAKE only",
+    "13572042": "✧ EYE only",
+    "13579171": "✧ Support"
   }
 }

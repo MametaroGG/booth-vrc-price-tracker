@@ -137,6 +137,11 @@
         "date": "2026-05-28",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "Baku": [
@@ -272,6 +277,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -411,6 +421,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Kanata": [
@@ -546,6 +561,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -685,6 +705,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Komano": [
@@ -820,6 +845,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -959,6 +989,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Maki": [
@@ -1094,6 +1129,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -1233,6 +1273,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Pulshead": [
@@ -1370,7 +1415,24 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13711065": "Fullpack",
+    "13711066": "Baku",
+    "13711067": "Hanka",
+    "13711068": "Kanata",
+    "13711069": "Kei",
+    "13711070": "Komano",
+    "13711071": "Kuuta",
+    "13711072": "Maki",
+    "13711073": "Minase",
+    "13711074": "Pulshead"
   }
 }

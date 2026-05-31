@@ -187,6 +187,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "真央 mao": [
@@ -372,6 +377,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -561,6 +571,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "製作応援FULL SET（おまけPSDファイル付き）": [
@@ -748,7 +763,18 @@
         "date": "2026-05-28",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13587148": "FULL SET",
+    "13587239": "真央 mao",
+    "13587240": "まめふれんず Mamefriends",
+    "13587241": "製作応援FULL SET（おまけPSDファイル付き）"
   }
 }

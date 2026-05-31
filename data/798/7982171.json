@@ -304,6 +304,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Koishi Hat(Warudo/VRC)": [
@@ -504,6 +509,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -708,6 +718,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Koishi Cloth(Warudo/VRC)": [
@@ -908,6 +923,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1112,6 +1132,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Koishi Acc(Warudo/VRC)": [
@@ -1314,7 +1339,20 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13365049": "Koishi Full set(Warudo/VRC)",
+    "13545448": "Koishi Hat(Warudo/VRC)",
+    "13545449": "Koishi Hair(Warudo/VRC)",
+    "13545450": "Koishi Cloth(Warudo/VRC)",
+    "13545451": "Koishi Shoes(Warudo/VRC)",
+    "13545452": "Koishi Acc(Warudo/VRC)"
   }
 }

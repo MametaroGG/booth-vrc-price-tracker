@@ -342,6 +342,11 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "🖤Wendy🤍 Lovely Make Up": [
@@ -682,6 +687,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": true
       }
@@ -1026,6 +1036,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "🖤Wendy🤍 Void Night Eyes": [
@@ -1368,7 +1383,18 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13373345": "🎁SALE🎁 Wendy Textures FullPack",
+    "13373414": "🖤Wendy🤍 Lovely Make Up",
+    "13373415": "🤍Wendy🖤 Diamond Eyes",
+    "13373416": "🖤Wendy🤍 Void Night Eyes"
   }
 }

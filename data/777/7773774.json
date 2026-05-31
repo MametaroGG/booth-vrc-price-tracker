@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1780,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1780,
+        "is_sale": false
       }
     ],
     "しなの shinano": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 998,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 998,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 998,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 998,
+        "is_sale": false
       }
     ],
     "ミルティナ milltina": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 998,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 998,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 998,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 998,
+        "is_sale": false
       }
     ],
     "萌 Moe": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-28",
         "price": 998,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 998,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13023455": "フルパック Full Pack",
+    "13033953": "しなの shinano",
+    "13033954": "森羅 shinra",
+    "13033955": "ミルティナ milltina",
+    "13033956": "エク eku",
+    "13177574": "萌 Moe"
   }
 }

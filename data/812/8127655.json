@@ -197,6 +197,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Selestia": [
@@ -392,6 +397,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -591,6 +601,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Mizuki/Rurune": [
@@ -786,6 +801,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -985,6 +1005,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Kikyo": [
@@ -1180,6 +1205,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1379,6 +1409,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -1574,6 +1609,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1773,6 +1813,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Moe": [
@@ -1970,6 +2015,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -2147,7 +2197,25 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13603611": "Full Package",
+    "13603732": "Selestia",
+    "13603733": "Nagi",
+    "13603734": "Mizuki/Rurune",
+    "13603735": "Lasyusha",
+    "13603736": "Kikyo",
+    "13603737": "Sio",
+    "13603738": "Manuka",
+    "13603739": "Lime/Chiffon",
+    "13603740": "Moe",
+    "13639859": "Shinano"
   }
 }

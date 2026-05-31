@@ -332,6 +332,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "EM_Raging arm": [
@@ -662,6 +667,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -996,6 +1006,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "PP_Starving Venom arm": [
@@ -1326,6 +1341,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1660,6 +1680,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Supreme King arm": [
@@ -1992,7 +2017,20 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13398745": "[event_five arm]",
+    "13398891": "EM_Raging arm",
+    "13398892": "PK_Rebellion arm",
+    "13398893": "PP_Starving Venom arm",
+    "13398894": "SR_Crystal Clear arm",
+    "13398895": "Supreme King arm"
   }
 }

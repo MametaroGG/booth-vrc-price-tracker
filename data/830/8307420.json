@@ -52,6 +52,11 @@
         "date": "2026-05-28",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "lil.Two【Airi】": [
@@ -102,6 +107,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -156,6 +166,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "lil.Two【Chocolat,Chiffon,Lime,Plum】": [
@@ -206,6 +221,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -260,6 +280,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "lil.Two【Rurune】": [
@@ -312,7 +337,20 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13885829": "lil.Two【fullset】",
+    "13886058": "lil.Two【Airi】",
+    "13886059": "lil.Two【Cazalis】",
+    "13886060": "lil.Two【Chocolat,Chiffon,Lime,Plum】",
+    "13886061": "lil.Two【Mao,Ririka】",
+    "13886062": "lil.Two【Rurune】"
   }
 }

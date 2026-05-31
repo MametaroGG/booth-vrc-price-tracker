@@ -22,6 +22,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "個人利用版/Personal use version ＆ 応援-中身同じ": [
@@ -42,6 +47,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 180,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 180,
         "is_sale": true
       }
@@ -66,7 +76,16 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "14004457": "個人利用版/Personal use version ＆ 応援-中身同じ",
+    "14004458": "商品 商用利用版/Commercial use version-中身同じ"
   }
 }

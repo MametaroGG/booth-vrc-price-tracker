@@ -182,6 +182,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "make texture": [
@@ -362,6 +367,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -546,6 +556,11 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "full set+おやつ代": [
@@ -728,7 +743,18 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13636259": "full set",
+    "13636569": "make texture",
+    "13636570": "eye texture",
+    "13636571": "full set+おやつ代"
   }
 }

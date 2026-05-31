@@ -257,6 +257,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "EYE": [
@@ -514,6 +519,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "MAKEUP": [
@@ -769,6 +779,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1030,7 +1045,18 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13500601": "FULLPACK",
+    "13500602": "EYE",
+    "13500603": "MAKEUP",
+    "13500604": "支援(FULLPACKと同じ内容です)"
   }
 }

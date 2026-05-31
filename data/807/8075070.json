@@ -132,6 +132,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "VIRTUAL EDEN": [
@@ -262,6 +267,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -396,7 +406,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13519109": "VIRTUAL EDEN",
+    "13729003": "VIRTUAL EDEN＋"
   }
 }

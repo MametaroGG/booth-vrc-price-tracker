@@ -62,6 +62,11 @@
         "date": "2026-05-28",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 7000,
+        "is_sale": false
       }
     ],
     "Soluna.vroid": [
@@ -124,6 +129,11 @@
         "date": "2026-05-28",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 7000,
+        "is_sale": false
       }
     ],
     "Soluna Day.vroid": [
@@ -174,6 +184,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 4000,
         "is_sale": false
       }
@@ -228,6 +243,11 @@
         "date": "2026-05-28",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Soluna Night.vroid": [
@@ -278,6 +298,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 4000,
         "is_sale": false
       }
@@ -332,7 +357,20 @@
         "date": "2026-05-28",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12939830": "Soluna.vrm",
+    "12939835": "Soluna.vroid",
+    "13917442": "Soluna Day.vroid",
+    "13917443": "Soluna Day.vrm",
+    "13917444": "Soluna Night.vroid",
+    "13917445": "Soluna Night.vrm"
   }
 }

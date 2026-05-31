@@ -132,6 +132,11 @@
         "date": "2026-05-28",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "まめふれんず/mamefriends": [
@@ -264,6 +269,11 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "えも研/emoken": [
@@ -394,6 +404,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 950,
         "is_sale": false
       }
@@ -535,6 +550,11 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "ネメシス/nemesis": [
@@ -662,7 +682,19 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13726030": "えも研/emoken",
+    "13726145": "まめふれんず/mamefriends",
+    "13726146": "ネメシス/nemesis",
+    "13726147": "ひかるん / hikarun",
+    "13726348": "フルセット/full set"
   }
 }

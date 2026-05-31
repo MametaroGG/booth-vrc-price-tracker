@@ -297,6 +297,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "༄FULL＋PSD༄": [
@@ -592,6 +597,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -891,6 +901,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "༄MAKEUP only༄": [
@@ -1188,7 +1203,18 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13403571": "༄FULL༄",
+    "13403705": "༄FULL＋PSD༄",
+    "13403706": "༄EYE only༄",
+    "13403707": "༄MAKEUP only༄"
   }
 }

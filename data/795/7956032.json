@@ -372,6 +372,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "✧MAKEUP✧": [
@@ -742,6 +747,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1116,6 +1126,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "✧Donate✧（=Full Pack）": [
@@ -1488,7 +1503,18 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13324401": "✧FULLSET✧",
+    "13324458": "✧MAKEUP✧",
+    "13324459": "✧EYE✧",
+    "13324460": "✧Donate✧（=Full Pack）"
   }
 }

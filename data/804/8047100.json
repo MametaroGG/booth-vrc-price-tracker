@@ -279,6 +279,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "English": [
@@ -324,6 +329,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -373,7 +383,17 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13471533": "日本語",
+    "13894286": "English",
+    "13894287": "韓国語"
   }
 }

@@ -362,6 +362,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Usasaki Compatible": [
@@ -722,6 +727,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1086,6 +1096,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Full Pack: ALL INCLUDED!": [
@@ -1448,7 +1463,18 @@
         "date": "2026-05-28",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13343913": "Kipfel Compatible",
+    "13343935": "Usasaki Compatible",
+    "13343936": "Hyakko Compatible",
+    "13343937": "Full Pack: ALL INCLUDED!"
   }
 }

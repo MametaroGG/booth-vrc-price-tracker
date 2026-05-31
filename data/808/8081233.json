@@ -107,6 +107,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Make up only PNG+ PSD": [
@@ -212,6 +217,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -321,6 +331,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "しくろへのコーヒー代 　(フルパックと同じ)": [
@@ -428,7 +443,18 @@
         "date": "2026-05-28",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13529942": "Eye Texture (13 Colors) only PNG+ PSD",
+    "13530024": "Make up only PNG+ PSD",
+    "13530025": "Full pack PNG + PSD",
+    "13696387": "しくろへのコーヒー代 　(フルパックと同じ)"
   }
 }

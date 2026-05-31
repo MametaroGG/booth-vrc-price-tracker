@@ -312,6 +312,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "【RSFXShader】商用ライセンス版【Gimmick同梱】": [
@@ -649,6 +654,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "通常版『飛べよおおおお』Gimmick 3/25 23:59迄SALE!": [
@@ -678,5 +688,9 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13389520": "通常版『飛べよおおおお』Gimmick",
+    "13389732": "【RSFXShader】商用ライセンス版【Gimmick同梱】"
   }
 }

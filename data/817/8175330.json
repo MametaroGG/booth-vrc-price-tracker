@@ -72,6 +72,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "トップス4色セット【All Tops】": [
@@ -142,6 +147,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -216,7 +226,17 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13687416": "トップス4色セット【All Tops】",
+    "13694838": "ボトムス4色セット【All Bottoms】",
+    "13694875": "上下4色セット【All Item】"
   }
 }

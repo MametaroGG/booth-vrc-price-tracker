@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Short Jacket/ショートジャケット": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 550,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "Boots/ブーツ": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12947580": "Short Jacket/ショートジャケット",
+    "12947708": "Full Set/全部セット",
+    "12947709": "Bodysuit and Hip Feathers/ボディスーツ+腰羽",
+    "12947710": "Boots/ブーツ"
   }
 }

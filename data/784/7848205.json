@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Makeup【PNG】": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "おやつ代(内容はFullpackと変わりません)": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13144688": "Fullpack 【PNG+PSD】+(Face blendshape)",
+    "13145333": "Makeup【PNG】",
+    "13145334": "Eyes【PNG】",
+    "13145335": "おやつ代(内容はFullpackと変わりません)"
   }
 }

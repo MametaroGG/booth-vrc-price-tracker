@@ -409,6 +409,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "For Zev": [
@@ -714,6 +719,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1023,6 +1033,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "For Kanata": [
@@ -1328,6 +1343,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1637,6 +1657,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "For Angel worker": [
@@ -1942,6 +1967,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -2251,6 +2281,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "For Komano": [
@@ -2556,6 +2591,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -2865,6 +2905,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "For Baku": [
@@ -3172,6 +3217,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Fullpack": [
@@ -3379,7 +3429,25 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13316356": "Fullpack",
+    "13438986": "For Minase",
+    "13443471": "For Zev",
+    "13443472": "For Hanka",
+    "13443473": "For Kanata",
+    "13443474": "For Hell worker",
+    "13443475": "For Angel worker",
+    "13443476": "For Alue",
+    "13443477": "For Komano",
+    "13443478": "For Azuedo",
+    "13443479": "For Baku"
   }
 }

@@ -227,6 +227,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Boost": [
@@ -454,7 +459,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13551614": "通常版",
+    "13552203": "Boost"
   }
 }

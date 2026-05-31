@@ -466,6 +466,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Boost(内容は同じ)": [
@@ -918,7 +923,16 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13158424": "Calmium",
+    "13158596": "Boost(内容は同じ)"
   }
 }

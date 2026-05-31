@@ -252,6 +252,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Alarm clock prop (+ Donation)": [
@@ -504,7 +509,16 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13513923": "Alarm clock prop",
+    "13513936": "Alarm clock prop (+ Donation)"
   }
 }

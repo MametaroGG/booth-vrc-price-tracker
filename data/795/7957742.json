@@ -372,6 +372,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Dress": [
@@ -742,6 +747,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -1116,7 +1126,17 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13327190": "Full Set",
+    "13327267": "Dress",
+    "13327268": "Shoes"
   }
 }

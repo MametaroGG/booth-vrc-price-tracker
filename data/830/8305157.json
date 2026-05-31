@@ -57,6 +57,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "支援用": [
@@ -114,7 +119,16 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13882473": "Celestial System Piercing",
+    "13897950": "支援用"
   }
 }

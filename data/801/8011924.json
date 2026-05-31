@@ -312,6 +312,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "Face Freckles Only (顔のみ)": [
@@ -622,6 +627,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 450,
         "is_sale": false
       }
@@ -936,7 +946,17 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13411783": "Face Freckles + Body Freckles (顔と体)",
+    "13432345": "Face Freckles Only (顔のみ)",
+    "13432346": "Body Freckles Only (体のみ)"
   }
 }

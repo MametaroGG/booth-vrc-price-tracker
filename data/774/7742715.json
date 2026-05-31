@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Eyetextureのみ": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "〚FULLSET〛+ おやつ": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12968935": "〚FULLSET〛Eyetexture + FaceAnimation + Face Blendshape",
+    "12969030": "Eyetextureのみ",
+    "12969031": "Eyetexture + DefaultFaceAnime",
+    "12969032": "〚FULLSET〛+ おやつ"
   }
 }

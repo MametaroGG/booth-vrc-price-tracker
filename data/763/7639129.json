@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "FullSet": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "MakeOnly": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12794171": "FullSet",
+    "12794197": "Donate",
+    "12794198": "EyeOnly",
+    "12794199": "MakeOnly",
+    "12794200": "EyelushOnly"
   }
 }

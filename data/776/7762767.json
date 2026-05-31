@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "EKU": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "KIPFEL": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "MINASE": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13004725": "ALL",
+    "13004758": "EKU",
+    "13004759": "KANATA",
+    "13004760": "KIPFEL",
+    "13004761": "KOMANO",
+    "13004762": "MINASE"
   }
 }

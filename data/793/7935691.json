@@ -297,6 +297,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "for Komano": [
@@ -592,6 +597,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -891,6 +901,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "for Hanka": [
@@ -1186,6 +1201,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1485,7 +1505,19 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13289700": "for Komano",
+    "13368964": "【 Full Set 】",
+    "13368965": "for Minase",
+    "13368966": "for Hanka",
+    "13368967": "for 珍飯亭共通素体（V3）"
   }
 }

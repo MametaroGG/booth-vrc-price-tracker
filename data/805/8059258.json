@@ -272,6 +272,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Marycia版ヘッドセット＋衣装": [
@@ -542,6 +547,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2700,
         "is_sale": false
       }
@@ -816,6 +826,11 @@
         "date": "2026-05-28",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2700,
+        "is_sale": false
       }
     ],
     "air,nial,simulacrum版ヘッドセット+衣装": [
@@ -1088,7 +1103,18 @@
         "date": "2026-05-28",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13492201": "ヘッドセットのみ（Marycia、lapwing、当ショップアバター対応）",
+    "13492433": "Marycia版ヘッドセット＋衣装",
+    "13492434": "lapwing版ヘッドセット+衣装",
+    "13492435": "air,nial,simulacrum版ヘッドセット+衣装"
   }
 }

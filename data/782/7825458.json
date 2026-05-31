@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "キウイ大福専用- for KiwiDaifuku": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "完全セット - All Available": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13107538": "キウイ大福専用- for KiwiDaifuku",
+    "13107569": "みかん大福専用- for MikanDaifuku",
+    "13107570": "ﾌﾞﾙｰﾍﾞﾘｰ大福専用- for BlueberryDaifuku",
+    "13107571": "完全セット - All Available"
   }
 }

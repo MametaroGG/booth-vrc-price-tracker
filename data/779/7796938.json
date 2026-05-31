@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "shirnk and heel key list": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 0,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1480,
+        "is_sale": false
       }
     ],
     "しなの -shinano-": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1480,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1480,
+        "is_sale": false
       }
     ],
     "凪 -nagi-": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1480,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-28",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1480,
+        "is_sale": false
       }
     ],
     "ルミナ -lumina-": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1480,
         "is_sale": false
       }
@@ -4113,7 +4153,22 @@
         "date": "2026-05-28",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1480,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13058631": "ラムネ -ramune-",
+    "13058632": "しなの -shinano-",
+    "13058633": "ルルネ -rurune-",
+    "13065991": "凪 -nagi-",
+    "13068948": "マリシア -marycia-",
+    "13076466": "ルミナ -lumina-",
+    "13077783": "真冬 -mafuyu-",
+    "13077803": "フルパック -fullpack-"
   }
 }

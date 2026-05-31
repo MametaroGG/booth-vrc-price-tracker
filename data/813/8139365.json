@@ -162,6 +162,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "shinanoNoir Ribbon makeup only": [
@@ -322,6 +327,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -486,7 +496,17 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13624763": "shinanoNoir Ribbon makeup full",
+    "13672012": "shinanoNoir Ribbon makeup only",
+    "13672013": "shinanoNoir Ribbon体傷"
   }
 }

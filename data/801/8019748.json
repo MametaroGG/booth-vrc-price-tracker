@@ -302,6 +302,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Flamethrower Drone": [
@@ -602,6 +607,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -906,7 +916,17 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13424541": "Laser Drone",
+    "13433768": "Flamethrower Drone",
+    "13433769": "Duo-Pack (Both Drones)"
   }
 }

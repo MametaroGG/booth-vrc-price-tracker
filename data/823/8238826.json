@@ -32,6 +32,11 @@
         "date": "2026-04-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "Mocha Veil": [
@@ -142,6 +147,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -256,6 +266,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Round&Round": [
@@ -366,6 +381,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -480,6 +500,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Full（300円OFF!!）": [
@@ -564,5 +589,12 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13783265": "Full（約55%OFF!!）",
+    "13783351": "Mocha Veil",
+    "13783352": "Marine Delight",
+    "13783353": "Round&Round",
+    "13783354": "しんかい"
   }
 }

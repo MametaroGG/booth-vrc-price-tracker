@@ -84,6 +84,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "MILLTINA": [
@@ -154,6 +159,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -228,6 +238,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "豺狼": [
@@ -298,6 +313,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -372,6 +392,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "海咲": [
@@ -409,6 +434,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "しなの": [
@@ -431,7 +461,21 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13838697": "LASYUSHA",
+    "13863026": "MILLTINA",
+    "13863027": "RURUNE",
+    "13863028": "豺狼",
+    "13863029": "フルパック",
+    "13965496": "海咲",
+    "14005810": "しなの"
   }
 }

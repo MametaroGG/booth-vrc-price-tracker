@@ -377,6 +377,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": true
       }
     ],
     "Airi": [
@@ -752,6 +757,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 550,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 550,
         "is_sale": true
       }
@@ -1131,6 +1141,11 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": true
       }
     ],
     "Lumina": [
@@ -1506,6 +1521,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 550,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 550,
         "is_sale": true
       }
@@ -1885,6 +1905,11 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": true
       }
     ],
     "Milltina": [
@@ -2260,6 +2285,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 550,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 550,
         "is_sale": true
       }
@@ -2639,6 +2669,11 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": true
       }
     ],
     "Shinra": [
@@ -3014,6 +3049,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 550,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 550,
         "is_sale": true
       }
@@ -3393,7 +3433,23 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13320116": "FULL PACK",
+    "13320263": "Airi",
+    "13320264": "Chocolat / Chiffon / Lime",
+    "13320265": "Lumina",
+    "13320266": "Manuka",
+    "13320267": "Milltina",
+    "13320268": "Shinano",
+    "13320269": "Shinra",
+    "13320270": "Sio"
   }
 }

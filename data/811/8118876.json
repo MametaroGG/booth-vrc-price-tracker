@@ -207,6 +207,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Chocolat,Lime,Plum,Chiffon": [
@@ -412,6 +417,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -621,6 +631,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Airi": [
@@ -826,6 +841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1035,6 +1055,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Ramune": [
@@ -1240,6 +1265,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1449,6 +1479,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "FullPack[All Avatars]": [
@@ -1656,6 +1691,11 @@
         "date": "2026-05-28",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "Mayo": [
@@ -1821,6 +1861,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1990,7 +2035,24 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13587844": "Shinano",
+    "13589878": "Chocolat,Lime,Plum,Chiffon",
+    "13589879": "Manuka",
+    "13589880": "Airi",
+    "13589881": "Milfy,Eku",
+    "13589882": "Ramune",
+    "13589883": "Sio",
+    "13589884": "FullPack[All Avatars]",
+    "13665075": "Mayo",
+    "13665076": "Lumina"
   }
 }

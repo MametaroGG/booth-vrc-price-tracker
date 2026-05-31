@@ -382,6 +382,11 @@
         "date": "2026-05-28",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "MMD单体": [
@@ -764,7 +769,16 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13123151": "VRC，MMD同捆",
+    "13132622": "MMD单体"
   }
 }

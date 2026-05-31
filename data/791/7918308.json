@@ -412,6 +412,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Creator Support (クリエイターをサポート)": [
@@ -824,7 +829,16 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13258684": "Standard (スタンダードバージョン)",
+    "13258727": "Creator Support (クリエイターをサポート)"
   }
 }

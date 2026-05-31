@@ -217,6 +217,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "EM_Raging gun": [
@@ -432,6 +437,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -651,6 +661,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "PP_Starving Venom gun": [
@@ -866,6 +881,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1085,6 +1105,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Supreme King gun": [
@@ -1302,7 +1327,20 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13574926": "{event_Five gun}",
+    "13575041": "EM_Raging gun",
+    "13575042": "PK_Rebellion gun",
+    "13575043": "PP_Starving Venom gun",
+    "13575044": "SR_Crystal Clear gun",
+    "13575045": "Supreme King gun"
   }
 }

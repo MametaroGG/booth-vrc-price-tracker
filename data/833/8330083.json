@@ -52,6 +52,11 @@
         "date": "2026-05-28",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 7000,
+        "is_sale": false
       }
     ],
     "赤Red": [
@@ -102,6 +107,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -156,6 +166,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "白White": [
@@ -206,6 +221,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -260,6 +280,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "青Blue": [
@@ -310,6 +335,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -364,7 +394,21 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13918737": "全色all color",
+    "13919137": "赤Red",
+    "13919138": "ピンクpink",
+    "13919139": "白White",
+    "13919140": "紫Purple",
+    "13919141": "青Blue",
+    "13919142": "緑Green"
   }
 }

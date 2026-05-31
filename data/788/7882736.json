@@ -555,6 +555,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "🎀Lapwing": [
@@ -980,6 +985,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1409,6 +1419,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "🎀Shinano": [
@@ -1836,6 +1851,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "SALE🎀Fyuett": [
@@ -1960,7 +1980,19 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13198977": "🎀フルパック",
+    "13199030": "🎀Lapwing",
+    "13199031": "🎀Marycia",
+    "13199032": "🎀Shinano",
+    "13753921": "🎀Fyuett"
   }
 }

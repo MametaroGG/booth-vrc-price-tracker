@@ -214,6 +214,11 @@
         "date": "2026-05-28",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "Airi": [
@@ -299,6 +304,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -388,6 +398,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -473,6 +488,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -562,6 +582,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -647,6 +672,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -736,6 +766,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Rindo": [
@@ -821,6 +856,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -910,7 +950,23 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13567153": "Airi",
+    "13830061": "All Avatars",
+    "13830062": "Kumaly",
+    "13830063": "Milltina",
+    "13830064": "Manuka",
+    "13830065": "Shinano",
+    "13830066": "Ramune",
+    "13830067": "Rindo",
+    "13830068": "Riru"
   }
 }

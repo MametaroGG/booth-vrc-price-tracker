@@ -122,6 +122,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Lumina": [
@@ -242,6 +247,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -366,6 +376,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Marycia": [
@@ -486,6 +501,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -610,6 +630,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Shinra": [
@@ -730,6 +755,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -854,7 +884,21 @@
         "date": "2026-05-28",
         "price": 4950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13527567": "Shinano",
+    "13544121": "Lumina",
+    "13544122": "Milltina",
+    "13544123": "Marycia",
+    "13544124": "Manuka",
+    "13544125": "Shinra",
+    "13544126": "All"
   }
 }

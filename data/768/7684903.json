@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "forWarabi": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "forMarycia": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "forMaon": [
@@ -2682,6 +2707,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "forShinano": [
@@ -2859,7 +2889,21 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12871919": "forNemo",
+    "12872895": "forWarabi",
+    "12872896": "forWolfram",
+    "12872897": "フルセット",
+    "13139901": "forMarycia",
+    "13280171": "forMaon",
+    "13642127": "forShinano"
   }
 }

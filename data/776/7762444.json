@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Boost Ver.(内容は同一・個人用組み込みライセンス)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13004207": "Standard Ver.",
+    "13004238": "Boost Ver.(内容は同一・個人用組み込みライセンス)",
+    "13004239": "Corporate Ver.(企業向け)"
   }
 }

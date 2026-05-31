@@ -122,6 +122,11 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "☀️Sun&Moon_Make up only🌙": [
@@ -242,6 +247,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 320,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 320,
         "is_sale": false
       }
@@ -366,7 +376,17 @@
         "date": "2026-05-28",
         "price": 320,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 320,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13705540": "☀️Sun&Moon_Full Pack🌙",
+    "13750664": "☀️Sun&Moon_Make up only🌙",
+    "13750665": "☀️Sun&Moon_Eye texture only🌙"
   }
 }

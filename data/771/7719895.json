@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "フーディーのみ Hoodie only": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "フィッシュネットスリーブのみ Fishnet sleeves only": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12928587": "フルパック Full pack",
+    "12928635": "フーディーのみ Hoodie only",
+    "12928636": "クロップトップのみ Crop top only",
+    "12928637": "フィッシュネットスリーブのみ Fishnet sleeves only"
   }
 }

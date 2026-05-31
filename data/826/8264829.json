@@ -92,6 +92,11 @@
         "date": "2026-05-28",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "for_Shinano": [
@@ -182,6 +187,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -276,6 +286,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "for_Lime&Chiffon&Chocolat": [
@@ -366,6 +381,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -460,6 +480,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "for_Rurune": [
@@ -550,6 +575,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -644,6 +674,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "for_Airi": [
@@ -734,6 +769,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -828,7 +868,22 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13821177": "Fullset",
+    "13821237": "for_Shinano",
+    "13821238": "for_Milfy",
+    "13821239": "for_Lime&Chiffon&Chocolat",
+    "13821240": "for_Mayo",
+    "13821241": "for_Rurune",
+    "13821242": "for_Manuka",
+    "13821243": "for_Airi"
   }
 }

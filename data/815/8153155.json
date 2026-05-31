@@ -107,6 +107,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "しくろへのコーヒー代　（フルパックと同じ）": [
@@ -212,6 +217,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -321,6 +331,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "RURUNE（ルルネ） only": [
@@ -426,6 +441,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -535,6 +555,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "MAYO（まよ） only": [
@@ -640,6 +665,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -749,6 +779,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "KUUTA (くうた)　only": [
@@ -856,7 +891,22 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13649310": "LUMINA（ルミナ） only",
+    "13649495": "FULLPACK フルパック",
+    "13649496": "しくろへのコーヒー代　（フルパックと同じ）",
+    "13649497": "RURUNE（ルルネ） only",
+    "13649498": "MILLTINA（ミルティナ） only",
+    "13649499": "MAYO（まよ） only",
+    "13649500": "SHINANO（しなの） only",
+    "13672200": "KUUTA (くうた)　only"
   }
 }

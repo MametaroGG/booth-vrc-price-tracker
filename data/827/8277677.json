@@ -82,6 +82,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Flower_01": [
@@ -162,6 +167,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -246,6 +256,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Memphis_01": [
@@ -326,6 +341,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -410,6 +430,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Memphis_03": [
@@ -490,6 +515,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -574,7 +604,21 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13840413": "Full set",
+    "13840480": "Flower_01",
+    "13840481": "Star_01",
+    "13840482": "Memphis_01",
+    "13840483": "Memphis_02",
+    "13840484": "Memphis_03",
+    "13840485": "Memphis_04"
   }
 }

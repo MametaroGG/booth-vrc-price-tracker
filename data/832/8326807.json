@@ -54,6 +54,11 @@
         "date": "2026-05-28",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "LUMINA": [
@@ -69,6 +74,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2600,
         "is_sale": false
       }
@@ -88,6 +98,11 @@
         "date": "2026-05-28",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "Marycia": [
@@ -103,6 +118,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2600,
         "is_sale": false
       }
@@ -122,7 +142,19 @@
         "date": "2026-05-28",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13913854": "フルパック",
+    "14025209": "LUMINA",
+    "14025210": "Lasyusha",
+    "14025211": "Marycia",
+    "14025212": "shinano"
   }
 }

@@ -269,6 +269,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "02_PCS_Taijuukei": [
@@ -494,6 +499,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -723,6 +733,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "04_PCS_PolygonSeesaw": [
@@ -950,6 +965,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "フルセット - FullSet": [
@@ -1137,7 +1157,19 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13529914": "フルセット - FullSet",
+    "13532000": "01_PCS_SimpleCounter",
+    "13532001": "02_PCS_Taijuukei",
+    "13532002": "03_PCS_PolygonLimitArea",
+    "13532003": "04_PCS_PolygonSeesaw"
   }
 }

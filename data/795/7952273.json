@@ -377,6 +377,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Hell -normalmap-": [
@@ -752,6 +757,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1131,6 +1141,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Throne of the Fallen -normalmap-": [
@@ -1506,6 +1521,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1885,6 +1905,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "valhalla -normalmap-": [
@@ -2262,6 +2287,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "FullPack": [
@@ -2279,7 +2309,21 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13317723": "valhalla",
+    "13317853": "Hell",
+    "13317854": "Hell -normalmap-",
+    "13317855": "Throne of the Fallen",
+    "13317856": "Throne of the Fallen -normalmap-",
+    "13317857": "valhalla -normalmap-",
+    "14030487": "FullPack"
   }
 }

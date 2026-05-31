@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2300,
+        "is_sale": false
       }
     ],
     "Manuka/マヌカ": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Chocolat/ショコラ": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Milltina/ミルティナ": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Ramune/ラムネ": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13046241": "FULL",
+    "13046331": "Manuka/マヌカ",
+    "13047083": "Shinano/しなの",
+    "13047084": "Chocolat/ショコラ",
+    "13047085": "Milfy/ミルフィ",
+    "13047086": "Milltina/ミルティナ",
+    "13047087": "Lumina/ルミナ",
+    "13062475": "Ramune/ラムネ"
   }
 }

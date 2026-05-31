@@ -62,6 +62,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "寒色系セット / Cool Tone Set": [
@@ -122,6 +127,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 190,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 190,
         "is_sale": false
       }
@@ -186,6 +196,11 @@
         "date": "2026-05-28",
         "price": 190,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 190,
+        "is_sale": false
       }
     ],
     "ブルー・パープル系セット / Blue & Purple Set": [
@@ -248,7 +263,18 @@
         "date": "2026-05-28",
         "price": 190,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 190,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13747858": "フルセット / Complete Set",
+    "13756752": "寒色系セット / Cool Tone Set",
+    "13756753": "暖色系セット / Warm Tone Set",
+    "13756754": "ブルー・パープル系セット / Blue & Purple Set"
   }
 }

@@ -75,6 +75,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -85,6 +90,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -99,6 +109,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "跳雪": [
@@ -109,6 +124,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -123,6 +143,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Pmma": [
@@ -133,6 +158,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -147,6 +177,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "蘭麗": [
@@ -157,6 +192,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -171,7 +211,23 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14022612": "Full Pack",
+    "14023047": "Shinano",
+    "14023048": "Rurune",
+    "14023049": "跳雪",
+    "14023050": "リナシータ",
+    "14023051": "Pmma",
+    "14023052": "伶",
+    "14023053": "蘭麗",
+    "14023054": "海咲"
   }
 }

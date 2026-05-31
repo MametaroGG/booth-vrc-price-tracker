@@ -312,6 +312,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "MANUKA": [
@@ -622,6 +627,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1050,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1050,
         "is_sale": false
       }
@@ -936,6 +946,11 @@
         "date": "2026-05-28",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1050,
+        "is_sale": false
       }
     ],
     "SHINANO": [
@@ -1246,6 +1261,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1050,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1050,
         "is_sale": false
       }
@@ -1560,6 +1580,11 @@
         "date": "2026-05-28",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1050,
+        "is_sale": false
       }
     ],
     "RURUNE": [
@@ -1870,6 +1895,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1050,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1050,
         "is_sale": false
       }
@@ -2184,6 +2214,11 @@
         "date": "2026-05-28",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1050,
+        "is_sale": false
       }
     ],
     "MILFY,EKU": [
@@ -2494,6 +2529,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1050,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1050,
         "is_sale": false
       }
@@ -2808,6 +2848,11 @@
         "date": "2026-05-28",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1050,
+        "is_sale": false
       }
     ],
     "AIRI": [
@@ -3120,7 +3165,24 @@
         "date": "2026-05-28",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1050,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13390244": "FULL",
+    "13390254": "MANUKA",
+    "13395906": "SHINRA",
+    "13395907": "SHINANO",
+    "13395908": "LUMINA",
+    "13395909": "RURUNE",
+    "13395910": "CHOCOLAT,CHIFFON",
+    "13395911": "MILFY,EKU",
+    "13395912": "MILLTINA",
+    "13395913": "AIRI"
   }
 }

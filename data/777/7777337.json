@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "法人向け For corporate clients": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13028646": "個人向け For individuals",
+    "13028780": "法人向け For corporate clients"
   }
 }

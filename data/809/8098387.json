@@ -222,6 +222,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Sio [しお]": [
@@ -442,6 +447,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -666,6 +676,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Shinano [しなの]": [
@@ -888,7 +903,18 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13556442": "FULL SET",
+    "13558342": "Sio [しお]",
+    "13558343": "MANUKA [マヌカ]",
+    "13558344": "Shinano [しなの]"
   }
 }

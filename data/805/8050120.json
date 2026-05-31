@@ -282,6 +282,11 @@
         "date": "2026-05-28",
         "price": 780,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 780,
+        "is_sale": false
       }
     ],
     "VRChat Pack (Donation)": [
@@ -562,6 +567,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -846,6 +856,11 @@
         "date": "2026-05-28",
         "price": 1450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1450,
+        "is_sale": false
       }
     ],
     "Full Pack (Donation)": [
@@ -1128,7 +1143,18 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13476836": "VRChat Pack",
+    "13477721": "VRChat Pack (Donation)",
+    "13477722": "Full Pack",
+    "13477723": "Full Pack (Donation)"
   }
 }

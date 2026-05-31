@@ -162,6 +162,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "blendshape＋bodyscale＋faceanimation(10個)": [
@@ -326,7 +331,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13669292": "blendshape",
+    "13669904": "【prefab版】blendshape＋bodyscale＋faceanimation(10個)"
   }
 }

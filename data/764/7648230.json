@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "ルルネ/Rurune": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ミルフィ エク/milfy,Eku": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "キプフェル/kipufel": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "リナシータ/Rinasciita": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "車校代を助ける（フルパックと同じです）": [
@@ -4265,7 +4310,24 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12810329": "フルパック/fullpack",
+    "12832152": "ルルネ/Rurune",
+    "12832153": "ミルティナ/milltina",
+    "12832154": "ミルフィ エク/milfy,Eku",
+    "12832155": "キプフェル/kipufel",
+    "12832156": "ゾメちゃん/zome",
+    "12832157": "アズキ/azuki",
+    "12832158": "リナシータ/Rinasciita",
+    "12832159": "にゃご/nyago",
+    "13691324": "車校代を助ける（フルパックと同じです）"
   }
 }

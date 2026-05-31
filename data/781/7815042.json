@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 781,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 781,
+        "is_sale": false
       }
     ],
     "Commercial License": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 2341,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2341,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13089878": "Personal License",
+    "13091060": "Commercial License"
   }
 }

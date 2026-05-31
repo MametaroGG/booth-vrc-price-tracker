@@ -37,6 +37,11 @@
         "date": "2026-05-28",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "Milltina / ミルティナ": [
@@ -72,6 +77,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -111,6 +121,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Mayo / まよ": [
@@ -146,6 +161,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -185,6 +205,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Plum + Chocolat + Chiffon + Lime / プラム + ショコラ + シフォン + ライム": [
@@ -222,7 +247,20 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13959685": "FullSet / フルセット",
+    "13959968": "Milltina / ミルティナ",
+    "13959969": "Shinano / しなの",
+    "13959970": "Mayo / まよ",
+    "13959971": "Airi / 愛莉",
+    "13959972": "Plum + Chocolat + Chiffon + Lime / プラム + ショコラ + シフォン + ライム"
   }
 }

@@ -362,6 +362,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "SURVIVAL JACKET【Lapwing】": [
@@ -722,6 +727,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -1086,7 +1096,17 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13326141": "SURVIVAL JACKET【Shinano】",
+    "13332747": "SURVIVAL JACKET【Lapwing】",
+    "13332748": "SURVIVAL JACKET【Kipfel】"
   }
 }

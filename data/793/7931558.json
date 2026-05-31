@@ -452,6 +452,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "谷間セット / Body Texture Set": [
@@ -832,6 +837,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1216,6 +1226,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "谷間B / Body Texture B": [
@@ -1596,6 +1611,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1980,6 +2000,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "谷間+肌色 / Body Texture+Skin Color": [
@@ -2362,7 +2387,20 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13282594": "谷間セット / Body Texture Set",
+    "13282628": "谷間A / Body Texture A",
+    "13282629": "谷間B / Body Texture B",
+    "13282630": "肌色 / Skin Color Texture",
+    "13282631": "谷間+肌色 / Body Texture+Skin Color",
+    "13282632": "Donation / おやつ代（谷間+肌色+おまけ）"
   }
 }

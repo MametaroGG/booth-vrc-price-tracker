@@ -64,6 +64,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "[VRChat] 조선 보부상 세트": [
@@ -104,6 +109,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -148,6 +158,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "[Full Set] 보부상 통합 팩 (VRC+Warudo)": [
@@ -190,7 +205,18 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13842157": "[단품] 패랭이 (Single Item)",
+    "13955429": "[VRChat] 조선 보부상 세트",
+    "13955430": "[Warudo] 조선 보부상 세트",
+    "13955431": "[Full Set] 보부상 통합 팩 (VRC+Warudo)"
   }
 }

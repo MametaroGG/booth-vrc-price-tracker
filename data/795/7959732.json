@@ -367,6 +367,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "春 -桜花 Sakura-": [
@@ -732,6 +737,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 450,
         "is_sale": false
       }
@@ -1101,6 +1111,11 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "秋 -彼岸花 Lycoris-": [
@@ -1466,6 +1481,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 450,
         "is_sale": false
       }
@@ -1835,7 +1855,19 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13330811": "Full Set",
+    "13331001": "春 -桜花 Sakura-",
+    "13331002": "夏 -蓮華 Lotus-",
+    "13331003": "秋 -彼岸花 Lycoris-",
+    "13331004": "冬 -寒椿 Camellia-"
   }
 }

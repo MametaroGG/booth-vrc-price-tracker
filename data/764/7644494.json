@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "1.3.5.CC.": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12803572": "Full Pack",
+    "12893043": "1.3.5.CC.",
+    "12893044": "2.4.6.Owl."
   }
 }

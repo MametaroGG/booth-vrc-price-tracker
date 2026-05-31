@@ -12,6 +12,11 @@
         "date": "2026-05-28",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "ミックスピンク-Mix Pink": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "オレンジパープル-Orange Purple": [
@@ -48,7 +63,18 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14002248": "全色-ALL COLOR-",
+    "14006769": "ミックスピンク-Mix Pink",
+    "14006770": "ミントグレー-Mint Gray",
+    "14006771": "オレンジパープル-Orange Purple"
   }
 }

@@ -307,6 +307,11 @@
         "date": "2026-05-28",
         "price": 9000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 9000,
+        "is_sale": false
       }
     ],
     "全色　all color": [
@@ -612,6 +617,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 7000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 7000,
         "is_sale": false
       }
@@ -965,6 +975,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "青Blue": [
@@ -1270,6 +1285,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2500,
         "is_sale": false
       }
@@ -1579,6 +1599,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "黄色Yellow": [
@@ -1886,6 +1911,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "白White": [
@@ -2188,6 +2218,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "黒Black": [
@@ -2460,7 +2495,22 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13412693": "全色コンプリートセット　Complete Set of All Colors",
+    "13442208": "全色　all color",
+    "13442209": "白White",
+    "13442210": "黒Black",
+    "13442211": "赤Red",
+    "13442212": "青Blue",
+    "13442213": "緑Green",
+    "13442214": "黄色Yellow"
   }
 }

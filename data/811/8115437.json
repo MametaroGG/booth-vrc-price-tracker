@@ -197,6 +197,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Lapwing": [
@@ -392,6 +397,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -591,6 +601,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "森羅": [
@@ -786,6 +801,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -985,6 +1005,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "フルパック": [
@@ -1182,7 +1207,20 @@
         "date": "2026-05-28",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13582160": "Marycia",
+    "13588710": "Lapwing",
+    "13588711": "Mumus",
+    "13588712": "森羅",
+    "13588713": "しなの",
+    "13594736": "フルパック"
   }
 }

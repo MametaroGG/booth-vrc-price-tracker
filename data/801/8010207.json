@@ -297,6 +297,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Sweet. [Personal price]": [
@@ -592,6 +597,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -891,6 +901,11 @@
         "date": "2026-05-28",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "Sweet. [Corporate price]": [
@@ -1188,7 +1203,18 @@
         "date": "2026-05-28",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13408544": "Goth. [Personal price]",
+    "13455693": "Sweet. [Personal price]",
+    "13455694": "Goth. [Corporate price]",
+    "13455695": "Sweet. [Corporate price]"
   }
 }

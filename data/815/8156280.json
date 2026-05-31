@@ -167,6 +167,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "✦ komano ✦": [
@@ -332,6 +337,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 980,
         "is_sale": false
       }
@@ -501,6 +511,11 @@
         "date": "2026-05-28",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 980,
+        "is_sale": false
       }
     ],
     "✦ Rei (共通素体) ✦": [
@@ -666,6 +681,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 980,
         "is_sale": false
       }
@@ -835,7 +855,19 @@
         "date": "2026-05-28",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13655570": "✦ Full pack ✦",
+    "13656052": "✦ komano ✦",
+    "13656053": "✦ minase ✦",
+    "13656054": "✦ Rei (共通素体) ✦",
+    "13656055": "✦ +Head (Alué 基準) ✦"
   }
 }

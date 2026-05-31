@@ -452,6 +452,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "キプフェル・まめひなた/Kipfel・Mamehinata": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "エルシオン/Elusion": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -2260,6 +2280,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ひかるん/Hikarun": [
@@ -2702,7 +2727,20 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13155314": "フルセット/fullset",
+    "13197889": "キプフェル・まめひなた/Kipfel・Mamehinata",
+    "13197890": "しらつめ/Shiratsume",
+    "13197891": "エルシオン/Elusion",
+    "13197892": "ノーチカ/Nochica",
+    "13221484": "ひかるん/Hikarun"
   }
 }

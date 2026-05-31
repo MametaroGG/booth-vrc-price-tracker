@@ -282,6 +282,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "おやつ代（内容物は変わりません）": [
@@ -564,7 +569,16 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13474353": "Cyber Cool Eye",
+    "13474455": "おやつ代（内容物は変わりません）"
   }
 }

@@ -387,6 +387,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "プルム • Expressions + (Donation)": [
@@ -774,7 +779,16 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13282852": "プルム • Expressions +",
+    "13282918": "プルム • Expressions + (Donation)"
   }
 }

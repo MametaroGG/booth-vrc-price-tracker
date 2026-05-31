@@ -474,6 +474,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "alue eye texture set　(支援版)": [
@@ -926,6 +931,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "mao eye texture set （通常版）": [
@@ -991,6 +1001,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1060,6 +1075,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "フルパック（通常版）": [
@@ -1125,6 +1145,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -1194,7 +1219,20 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13208320": "alue eye texture set (通常版)",
+    "13208604": "alue eye texture set　(支援版)",
+    "13875330": "mao eye texture set （通常版）",
+    "13875331": "mao eye texture set（支援版）",
+    "13875365": "フルパック（通常版）",
+    "13875366": "フルパック（支援版）"
   }
 }

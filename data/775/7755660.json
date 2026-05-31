@@ -452,6 +452,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "✧︎makeup only": [
@@ -907,6 +912,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -1366,6 +1376,11 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "✧︎faceAnimation only": [
@@ -1821,6 +1836,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -2280,6 +2300,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "【1周年SALE】 ✧︎fullpack": [
@@ -2289,5 +2314,11 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12992740": "✧︎fullpack",
+    "12992741": "✧︎makeup only",
+    "12992742": "✧︎eyetexture only",
+    "12992743": "✧︎faceAnimation only"
   }
 }

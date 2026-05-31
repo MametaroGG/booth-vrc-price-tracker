@@ -332,6 +332,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Porcelain Bob Hair + Donate ♡": [
@@ -729,6 +734,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Porcelain Bob Hair(一週間限定セール）": [
@@ -802,5 +812,9 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13262850": "Porcelain Bob Hair",
+    "13264635": "Porcelain Bob Hair + Donate ♡"
   }
 }

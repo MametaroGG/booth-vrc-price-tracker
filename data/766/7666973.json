@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Eye texture Only": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 170,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 170,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Full Set(支援版の内容込)": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12841527": "Full Set(支援版の内容込)",
+    "12843502": "Makeup texture Only",
+    "12843503": "Eye texture Only",
+    "12843586": "Eye texture Only(支援版)"
   }
 }

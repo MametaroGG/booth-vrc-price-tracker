@@ -257,6 +257,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Full Pack: ALL INCLUDED!": [
@@ -512,6 +517,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2600,
         "is_sale": false
       }
@@ -771,6 +781,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Licht Compatible": [
@@ -1026,6 +1041,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1285,7 +1305,19 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13504637": "Komano Compatible",
+    "13504681": "Full Pack: ALL INCLUDED!",
+    "13504682": "Bokusei (PlusHead Body) Compatible",
+    "13504683": "Licht Compatible",
+    "13504684": "Shizune Compatible"
   }
 }

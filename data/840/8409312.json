@@ -12,6 +12,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "まめふれんず/mamefriends": [
@@ -24,6 +29,11 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "えも研/emoken": [
@@ -36,6 +46,11 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "ネメシス/nemesis": [
@@ -48,6 +63,11 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "ひかるん / hikarun": [
@@ -60,6 +80,11 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "なのでび / Nanodevi": [
@@ -72,7 +97,20 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "14042658": "まめふれんず/mamefriends",
+    "14042742": "えも研/emoken",
+    "14042743": "ネメシス/nemesis",
+    "14042744": "ひかるん / hikarun",
+    "14042745": "なのでび / Nanodevi",
+    "14043168": "フルセット/full set"
   }
 }

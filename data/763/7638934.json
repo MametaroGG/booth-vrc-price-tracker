@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Icy Chain -Chain Collar-（支援版）": [
@@ -899,6 +904,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "『50%OFF BIG SALE』Icy Chain -Chain Collar-（通常版）": [
@@ -918,5 +928,9 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12793721": "Icy Chain -Chain Collar-（通常版）",
+    "12793803": "Icy Chain -Chain Collar-（支援版）"
   }
 }

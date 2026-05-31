@@ -142,6 +142,11 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "01 × 02 color": [
@@ -282,6 +287,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -426,7 +436,17 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13697405": "full set おまけ有り",
+    "13710160": "01 × 02 color",
+    "13710161": "03 × 04 color"
   }
 }

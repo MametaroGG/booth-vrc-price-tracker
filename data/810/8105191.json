@@ -222,6 +222,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Chito（ちと）": [
@@ -651,6 +656,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "マヌカ（Manuka）Breast_big 100": [
@@ -873,6 +883,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Chito（ちと）Special Price": [
@@ -890,7 +905,18 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13565840": "Chito（ちと）Special Price",
+    "13565893": "しなの（Shinano)Breast_big 100",
+    "13565894": "マヌカ（Manuka）Breast_big 100",
+    "13565993": "Full"
   }
 }

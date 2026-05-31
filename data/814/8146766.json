@@ -142,6 +142,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Elara Braid Hair + Donate ♡": [
@@ -324,6 +329,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Elara Braid Hair(一週間限定セール）": [
@@ -370,5 +380,9 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13637569": "Elara Braid Hair",
+    "13637846": "Elara Braid Hair + Donate ♡"
   }
 }

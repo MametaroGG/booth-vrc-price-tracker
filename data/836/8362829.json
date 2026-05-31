@@ -32,6 +32,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "M-NAIL-01 : Adapted for Misaki": [
@@ -62,6 +67,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -96,7 +106,17 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13970926": "M-NAIL-01 : Adapted for Mao",
+    "13971005": "M-NAIL-01 : Adapted for Misaki",
+    "13971006": "M-NAIL-01 : Complete Archive"
   }
 }

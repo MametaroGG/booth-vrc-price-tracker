@@ -27,6 +27,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "Plum Full set (+OMAKE)": [
@@ -52,6 +57,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": true
       }
@@ -81,6 +91,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Plum Makeup Only": [
@@ -106,6 +121,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": true
       }
@@ -135,6 +155,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "Plum Eyes Only": [
@@ -162,7 +187,18 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13997048": "Chocolat Full set (+OMAKE)",
+    "13997052": "Plum Full set (+OMAKE)",
+    "13997053": "Chocolat Makeup Only",
+    "13997054": "Plum Makeup Only"
   }
 }

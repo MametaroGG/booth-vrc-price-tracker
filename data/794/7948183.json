@@ -372,6 +372,11 @@
         "date": "2026-05-28",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "JUST SUMMER": [
@@ -742,6 +747,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1116,6 +1126,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "-マ・シェリ・ノワール-【Ma chérie Noir】": [
@@ -1488,7 +1503,18 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13310995": "フルセット[FullSet]",
+    "13311020": "JUST SUMMER",
+    "13311021": "Intimate Chill",
+    "13311022": "-マ・シェリ・ノワール-【Ma chérie Noir】"
   }
 }

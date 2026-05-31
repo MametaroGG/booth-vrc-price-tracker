@@ -292,6 +292,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "KOMANO_body pierced_necklace+": [
@@ -582,6 +587,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -876,6 +886,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "bodypierced fullset ZEPTO002": [
@@ -1163,6 +1178,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "zev bodypierced_necklace+": [
@@ -1440,7 +1460,19 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13460462": "MINASE_body pierced _necklace",
+    "13460788": "KOMANO_body pierced_necklace+",
+    "13460789": "HANKA_body pierced_necklace+",
+    "13468721": "bodypierced fullset ZEPTO002",
+    "13483177": "zev bodypierced_necklace+"
   }
 }

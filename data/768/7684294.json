@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "PSD版♥PNG.PSD♥": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12870946": "通常版♥PNG♥",
+    "12871640": "PSD版♥PNG.PSD♥",
+    "12871641": "支援版♥PSD版と内容は同じです♥"
   }
 }

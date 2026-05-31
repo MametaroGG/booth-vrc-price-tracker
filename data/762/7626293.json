@@ -485,6 +485,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "FullSet（FullSet+各Only）": [
@@ -870,6 +875,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1259,6 +1269,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Make_Only": [
@@ -1644,6 +1659,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2063,6 +2083,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "FullSet（FullSet+各Only）セール中": [
@@ -2176,5 +2201,12 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12772130": "FullSet（FullSet+各Only）",
+    "12772235": "Eye_Only",
+    "12772236": "Make_Only",
+    "13040660": "Skin_Only",
+    "13169384": "Supporter♡（FullSet+特典Eye追加3種）"
   }
 }

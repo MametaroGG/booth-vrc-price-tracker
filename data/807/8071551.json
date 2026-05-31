@@ -252,6 +252,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "AIRI": [
@@ -502,6 +507,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -756,6 +766,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "MILFY": [
@@ -1006,6 +1021,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1260,6 +1280,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "SHINANO": [
@@ -1510,6 +1535,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1764,7 +1794,21 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13513008": "FULLPACK",
+    "13513085": "AIRI",
+    "13513086": "LUMINA",
+    "13513087": "MILFY",
+    "13513088": "MILLTINA",
+    "13513089": "SHINANO",
+    "13513090": "SIO"
   }
 }

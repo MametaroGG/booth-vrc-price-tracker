@@ -217,6 +217,11 @@
         "date": "2026-05-28",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "クラエナ-Kuraena-": [
@@ -432,6 +437,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -651,6 +661,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "アイザラ-ijzer-": [
@@ -713,7 +728,18 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13573810": "フルセット-Fullset-",
+    "13573811": "クラエナ-Kuraena-",
+    "13573812": "ヴェルニカ-Velnica-",
+    "13879605": "アイザラ-ijzer-"
   }
 }

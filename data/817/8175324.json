@@ -157,6 +157,11 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "辛味チキン代(内容物は変わりません)": [
@@ -314,7 +319,16 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13687409": "Senbyo maketexture",
+    "13687621": "辛味チキン代(内容物は変わりません)"
   }
 }

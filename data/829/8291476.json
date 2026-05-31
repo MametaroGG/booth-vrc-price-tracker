@@ -72,6 +72,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Plumちゃん対応": [
@@ -142,6 +147,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -216,6 +226,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Linaちゃん対応": [
@@ -288,7 +303,18 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13861944": "フルパック（Plumちゃん、Fyuettちゃん、Linaちゃん対応）",
+    "13862323": "Plumちゃん対応",
+    "13862324": "Fyuettちゃん対応",
+    "13862325": "Linaちゃん対応"
   }
 }

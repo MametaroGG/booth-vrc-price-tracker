@@ -147,6 +147,11 @@
         "date": "2026-05-28",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3800,
+        "is_sale": false
       }
     ],
     "水瀬-Minase": [
@@ -292,6 +297,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -441,6 +451,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "狛乃-Komano": [
@@ -586,6 +601,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -735,6 +755,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "アルエ-Alué/PlusHead": [
@@ -880,6 +905,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -1029,7 +1059,21 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13697345": "FullPack",
+    "13698017": "水瀬-Minase",
+    "13698018": "泣夜-Nakiya",
+    "13698019": "狛乃-Komano",
+    "13698020": "碼希-Maki",
+    "13698021": "アルエ-Alué/PlusHead",
+    "13698022": "班霞-Hanka"
   }
 }

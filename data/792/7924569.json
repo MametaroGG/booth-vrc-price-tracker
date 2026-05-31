@@ -397,6 +397,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Dark Pack ＋ Face blendshape -typeA-": [
@@ -792,6 +797,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -1191,7 +1201,17 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13269295": "FullPack",
+    "13278622": "Dark Pack ＋ Face blendshape -typeA-",
+    "13278623": "Sheer Pack ＋ Face blendshape -typeB-"
   }
 }

@@ -317,6 +317,11 @@
         "date": "2026-05-28",
         "price": 699,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 699,
+        "is_sale": false
       }
     ],
     "Kumaly「クマリ」": [
@@ -632,6 +637,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 499,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 499,
         "is_sale": false
       }
@@ -951,6 +961,11 @@
         "date": "2026-05-28",
         "price": 499,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 499,
+        "is_sale": false
       }
     ],
     "Wendy「ウェンディ」": [
@@ -1268,6 +1283,11 @@
         "date": "2026-05-28",
         "price": 499,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 499,
+        "is_sale": false
       }
     ],
     "Shiraha「シラハ」": [
@@ -1490,6 +1510,11 @@
         "date": "2026-05-28",
         "price": 499,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 499,
+        "is_sale": false
       }
     ],
     "Mayo「まよ」": [
@@ -1667,7 +1692,20 @@
         "date": "2026-05-28",
         "price": 499,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 499,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13424131": "All 「全て」",
+    "13424143": "Kumaly「クマリ」",
+    "13424144": "Luchika「ルチカ」",
+    "13424145": "Wendy「ウェンディ」",
+    "13565833": "Shiraha「シラハ」",
+    "13642535": "Mayo「まよ」"
   }
 }

@@ -87,6 +87,11 @@
         "date": "2026-05-28",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "まよ(Mayo)": [
@@ -172,6 +177,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -261,6 +271,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "ミルティナ(Milltina)": [
@@ -346,6 +361,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -435,6 +455,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "ルルネ(Rurune)": [
@@ -520,6 +545,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -609,6 +639,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "愛莉(Airi)": [
@@ -694,6 +729,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -783,6 +823,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "森羅(Shinra)": [
@@ -870,6 +915,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "マヌカ(Manuka)": [
@@ -892,7 +942,25 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13813058": "FullSet",
+    "13828308": "まよ(Mayo)",
+    "13828309": "ラムネ(Ramune)",
+    "13828310": "ミルティナ(Milltina)",
+    "13828311": "ルミナ(LUMINA)",
+    "13828312": "ルルネ(Rurune)",
+    "13828313": "ラシューシャ(Lasyusha)",
+    "13828314": "愛莉(Airi)",
+    "13828315": "しなの(Shinano)",
+    "13828316": "森羅(Shinra)",
+    "13998035": "マヌカ(Manuka)"
   }
 }

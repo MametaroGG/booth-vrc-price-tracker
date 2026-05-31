@@ -387,6 +387,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "-支援1-AnimationMergerTool ver 1.0.0": [
@@ -772,6 +777,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -1161,7 +1171,17 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13300320": "AnimationMergerTool ver 1.0.0",
+    "13300446": "-支援1-AnimationMergerTool ver 1.0.0",
+    "13300447": "-支援2-AnimationMergerTool ver 1.0.0"
   }
 }

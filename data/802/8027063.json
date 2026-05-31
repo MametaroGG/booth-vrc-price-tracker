@@ -302,6 +302,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Eye + Makeup": [
@@ -602,6 +607,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -906,6 +916,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Eye Texture only": [
@@ -1206,6 +1221,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -1510,6 +1530,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "FULL PACK +ドーナツ代": [
@@ -1812,7 +1837,20 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13437150": "FULL PACK",
+    "13437790": "Eye + Makeup",
+    "13437791": "Makeup only",
+    "13437792": "Eye Texture only",
+    "13437793": "Face Blendshape only",
+    "13437819": "FULL PACK +ドーナツ代"
   }
 }

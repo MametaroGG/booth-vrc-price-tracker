@@ -192,6 +192,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "BodyBlush only": [
@@ -382,6 +387,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -576,6 +586,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Donation": [
@@ -768,7 +783,18 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13613372": "Makeup only",
+    "13613538": "BodyBlush only",
+    "13613539": "Full set",
+    "13613540": "Donation"
   }
 }

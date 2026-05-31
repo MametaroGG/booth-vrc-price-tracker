@@ -7,11 +7,21 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": true
       }
     ],
     "しなの": [
       {
         "date": "2026-05-28",
+        "price": 980,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 980,
         "is_sale": true
       }
@@ -21,7 +31,17 @@
         "date": "2026-05-28",
         "price": 980,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 980,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "14052879": "ALL",
+    "14052959": "しなの",
+    "14052960": "愛莉"
   }
 }

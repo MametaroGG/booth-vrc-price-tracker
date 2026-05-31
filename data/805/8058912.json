@@ -102,6 +102,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "通常版": [
@@ -128,5 +133,8 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13491655": "default"
   }
 }

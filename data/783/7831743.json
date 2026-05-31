@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "【Poiyomi】白Rimプリセットのみ": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "コーヒーを奢る※内容は同じです。": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13117784": "【Poiyomi】白Rim&黒Rimプリセット",
+    "13118203": "【Poiyomi】白Rimプリセットのみ",
+    "13118204": "【Poiyomi】黒Rimプリセットのみ",
+    "13118205": "コーヒーを奢る※内容は同じです。"
   }
 }

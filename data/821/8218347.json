@@ -127,6 +127,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "Shinano": [
@@ -252,6 +257,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": true
       }
@@ -388,6 +398,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "Selsetia": [
@@ -513,6 +528,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": true
       }
@@ -642,6 +662,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "Maya": [
@@ -769,6 +794,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "Chocolat/Chiffon": [
@@ -891,7 +921,21 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13752285": "Manuka",
+    "13752380": "Shinano",
+    "13752381": "Chocolat/Chiffon",
+    "13752382": "Moe",
+    "13752383": "Selsetia",
+    "13752384": "Shinra",
+    "13752385": "Maya"
   }
 }

@@ -459,6 +459,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "商用利用 個人用 Licenses 1人": [
@@ -734,6 +739,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1013,7 +1023,17 @@
         "date": "2026-05-28",
         "price": 10000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 10000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12936359": "minase",
+    "13487739": "商用利用 個人用 Licenses 1人",
+    "13487740": "商用利用 企業向け Licenses 1人"
   }
 }

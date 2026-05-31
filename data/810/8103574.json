@@ -222,6 +222,11 @@
         "date": "2026-05-28",
         "price": 2100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": true
       }
     ],
     "A : StarPants": [
@@ -442,6 +447,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": true
       }
@@ -666,6 +676,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "C : Overay Bikini": [
@@ -886,6 +901,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -1110,7 +1130,19 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13562872": "Full Pack (A~D)",
+    "13563054": "A : StarPants",
+    "13563055": "B : Overay Police",
+    "13563056": "C : Overay Bikini",
+    "13563057": "D : Himawari"
   }
 }

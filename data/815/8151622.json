@@ -177,6 +177,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Mayo Darkmake only": [
@@ -352,6 +357,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 450,
         "is_sale": false
       }
@@ -531,7 +541,17 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13646426": "Mayo Darkmake+eye",
+    "13646456": "Mayo Darkmake only",
+    "13646457": "Mayo Darkeye"
   }
 }

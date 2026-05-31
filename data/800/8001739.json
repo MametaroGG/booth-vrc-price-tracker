@@ -426,6 +426,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "˚ ✦ Alue ✦˚": [
@@ -636,6 +641,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -850,6 +860,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "˚ ✦ Kuuta ✦˚": [
@@ -1062,6 +1077,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "˚ ✦ Komano ✦˚": [
@@ -1154,7 +1174,19 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13394655": "˚ ✦ Full Set ✦˚",
+    "13402019": "˚ ✦ Kuuta ✦˚",
+    "13580790": "˚ ✦ Alue ✦˚",
+    "13580791": "˚ ✦ Maro ✦˚",
+    "13821123": "˚ ✦ Komano ✦˚"
   }
 }

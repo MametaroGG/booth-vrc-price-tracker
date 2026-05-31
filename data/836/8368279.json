@@ -51,6 +51,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "通常+α支援版(４種類&追加texture)": [
@@ -68,7 +73,16 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13979676": "通常版(２種類)",
+    "13982502": "通常+α支援版(４種類&追加texture)"
   }
 }

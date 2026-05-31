@@ -337,6 +337,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "次のやる気代　Donation（内容同じ）": [
@@ -674,7 +679,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13391800": "元のチークを好きな濃さに調整するやつ！",
+    "13391983": "次のやる気代　Donation（内容同じ）"
   }
 }

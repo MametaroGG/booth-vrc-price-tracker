@@ -97,6 +97,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "EM_Raging beam weapon": [
@@ -192,6 +197,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -291,6 +301,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "PP_Starving Venom beam weapon": [
@@ -386,6 +401,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -485,6 +505,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Superme King beam weapon": [
@@ -582,7 +607,20 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13810214": "{event_five beam weapon}",
+    "13810264": "EM_Raging beam weapon",
+    "13810265": "PK_Rebellion beam weapon",
+    "13810266": "PP_Starving Venom beam weapon",
+    "13810267": "SR_Crystal Clear beam weapon",
+    "13810268": "Superme King beam weapon"
   }
 }

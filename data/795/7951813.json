@@ -372,6 +372,11 @@
         "date": "2026-05-28",
         "price": 2900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2900,
+        "is_sale": false
       }
     ],
     "Kuuta": [
@@ -742,6 +747,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -1116,6 +1126,11 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Noiz_Re": [
@@ -1486,6 +1501,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -1860,6 +1880,11 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Plum&Chocolat": [
@@ -2230,6 +2255,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -2604,7 +2634,21 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13316999": "FULL SET (6avatar）",
+    "13325343": "Kuuta",
+    "13325344": "＋Head(Alué)",
+    "13325345": "Noiz_Re",
+    "13325346": "Manuka",
+    "13325347": "Plum&Chocolat",
+    "13325348": "Mamefriends"
   }
 }

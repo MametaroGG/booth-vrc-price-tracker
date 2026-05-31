@@ -37,6 +37,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "海咲-Misaki-": [
@@ -72,6 +77,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -111,6 +121,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "マヌカ-Manuka-": [
@@ -146,6 +161,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -185,6 +205,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "エンシカ-Enshika-": [
@@ -220,6 +245,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -259,7 +289,29 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "リンネ-Linne-": [
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13954207": "フルパッケージ-FULLPACKAGE-",
+    "13961301": "ミルフィ-Milfy-",
+    "13961302": "マヌカ-Manuka-",
+    "13961303": "ウェンディ-Wendy-",
+    "13961304": "ミヤ-Miya-",
+    "13961305": "エンシカ-Enshika-",
+    "13965072": "海咲-Misaki-",
+    "14067072": "リンネ-Linne-"
   }
 }

@@ -212,6 +212,11 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "ヨプテ -Yopte-": [
@@ -424,6 +429,11 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "ハオラン -Haolan-": [
@@ -564,6 +574,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -708,6 +723,11 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "くうた -Kuuta-": [
@@ -850,7 +870,19 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13574230": "まふれんず -Mamefrineds-",
+    "13575468": "ヨプテ -Yopte-",
+    "13715222": "ハオラン -Haolan-",
+    "13715223": "+Head",
+    "13715224": "くうた -Kuuta-"
   }
 }

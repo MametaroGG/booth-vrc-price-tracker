@@ -182,6 +182,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Face Texture Only / フェイステクスチャのみ": [
@@ -364,7 +369,16 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13524312": "FullSet / フルセット Face Texture + Bandage Mesh フェイステクスチャ＋ばんそうこうメッシュ",
+    "13530466": "Face Texture Only / フェイステクスチャのみ"
   }
 }

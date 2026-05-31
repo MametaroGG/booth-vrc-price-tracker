@@ -57,6 +57,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "しなの-Shinano対応": [
@@ -112,6 +117,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -171,6 +181,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "ミルティナ-Milltina 対応": [
@@ -223,6 +238,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Misaki-海咲　対応": [
@@ -250,7 +270,19 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13900208": "しなの-Shinano対応",
+    "13900583": "フルセット版",
+    "13900584": "真央-mao-対応",
+    "13915667": "ミルティナ-Milltina 対応",
+    "13987045": "Misaki-海咲　対応"
   }
 }

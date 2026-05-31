@@ -122,6 +122,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Makeup only for Shinano": [
@@ -242,6 +247,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 450,
         "is_sale": false
       }
@@ -366,6 +376,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Makeup & Eyes set (+ OMAKE) for Kuuta": [
@@ -486,6 +501,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -610,6 +630,11 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Eyes only for Kuuta": [
@@ -732,7 +757,20 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13746499": "Makeup & Eyes set (+ OMAKE) for Shinano",
+    "13746539": "Makeup only for Shinano",
+    "13746540": "Eyes only for Shinano",
+    "13746541": "Makeup & Eyes set (+ OMAKE) for Kuuta",
+    "13746542": "Makeup only for Kuuta",
+    "13746543": "Eyes only for Kuuta"
   }
 }

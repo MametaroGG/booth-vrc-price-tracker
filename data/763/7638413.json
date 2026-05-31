@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "Minase Compatible": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Kuuta Compatible": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Turanari (Tinmeshitei Body)Compatible": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12792878": "Licht Compatible",
+    "12792910": "Full Pack: ALL INCLUDED!",
+    "12792911": "Minase Compatible",
+    "12792912": "Kuuta Compatible",
+    "12792913": "Bokusei (PlusHead Body) Compatible",
+    "12792914": "Turanari (Tinmeshitei Body)Compatible"
   }
 }

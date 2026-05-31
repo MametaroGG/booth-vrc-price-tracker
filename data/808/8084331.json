@@ -377,6 +377,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Reimu_Manuka_Clothing Set": [
@@ -562,6 +567,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -751,6 +761,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Reimu_Shinano_Clothing Set": [
@@ -938,6 +953,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Reimu_Milltina(FC)_Clothing Set": [
@@ -1025,7 +1045,19 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13534841": "Reimu_Full.ver1.2",
+    "13535878": "Reimu_Manuka_Clothing Set",
+    "13535879": "Reimu_Gohei&Ofuda",
+    "13627745": "Reimu_Shinano_Clothing Set",
+    "13831458": "Reimu_Milltina(FC)_Clothing Set"
   }
 }

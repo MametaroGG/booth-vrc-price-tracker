@@ -127,6 +127,11 @@
         "date": "2026-05-28",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": true
       }
     ],
     "fyuett フィユエ用": [
@@ -254,7 +259,64 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
+      }
+    ],
+    "Manuka マヌカ用": [
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
+      }
+    ],
+    "Shinano しなの用": [
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
+      }
+    ],
+    "Rurune ルルネ用": [
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
+      }
+    ],
+    "Chocolat ショコラ用": [
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
+      }
+    ],
+    "Milfy Eku ミルフィ エク用": [
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
+      }
+    ],
+    "Linne リンネ用": [
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13729343": "FULLPACK",
+    "13753169": "fyuett フィユエ用",
+    "14066351": "Manuka マヌカ用",
+    "14066352": "Shinano しなの用",
+    "14066353": "Rurune ルルネ用",
+    "14066354": "Chocolat ショコラ用",
+    "14066355": "Milfy Eku ミルフィ エク用",
+    "14066356": "Linne リンネ用"
   }
 }

@@ -212,6 +212,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "EYE TEXTURES": [
@@ -447,6 +452,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -686,6 +696,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "MATERIAL": [
@@ -921,6 +936,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1160,6 +1180,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "FULLSET [SALE]": [
@@ -1189,5 +1214,12 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13529552": "FULLSET",
+    "13529616": "EYE TEXTURES",
+    "13529617": "MAKEUP",
+    "13529618": "MATERIAL",
+    "13529619": "BLENDSHAPE"
   }
 }

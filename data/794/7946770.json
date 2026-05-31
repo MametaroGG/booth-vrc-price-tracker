@@ -372,6 +372,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Throne of the Fallen tattoo -normalmap-": [
@@ -742,6 +747,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1116,6 +1126,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Satanic Flora tattoo -normalmap-": [
@@ -1486,6 +1501,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1860,6 +1880,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Hell tattoo-normalmap-": [
@@ -2232,7 +2257,20 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13308632": "Throne of the Fallen tattoo",
+    "13308653": "Throne of the Fallen tattoo -normalmap-",
+    "13308654": "Satanic Flora tattoo",
+    "13308655": "Satanic Flora tattoo -normalmap-",
+    "13308656": "Hell tattoo",
+    "13308657": "Hell tattoo-normalmap-"
   }
 }

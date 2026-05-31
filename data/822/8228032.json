@@ -102,6 +102,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Only-Sio-": [
@@ -217,6 +222,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -336,6 +346,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Only-Shinano-": [
@@ -451,6 +466,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -570,6 +590,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Only-Lumina-": [
@@ -685,6 +710,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -804,6 +834,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "『50%OFF BIG SALE』Fullset": [
@@ -823,5 +858,14 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13766402": "Fullset",
+    "13766614": "Only-Sio-",
+    "13766615": "Only-Chocolat-",
+    "13766616": "Only-Shinano-",
+    "13766617": "Only-Eku-",
+    "13766618": "Only-Lumina-",
+    "13766619": "Only-MameFriends-"
   }
 }

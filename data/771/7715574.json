@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "Tower N2 + CloudSea": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12921134": "Tower N2",
+    "12921291": "Tower N2 + CloudSea"
   }
 }

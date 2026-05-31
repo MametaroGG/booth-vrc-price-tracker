@@ -232,6 +232,11 @@
         "date": "2026-05-28",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2300,
+        "is_sale": false
       }
     ],
     "水瀬// Minase": [
@@ -462,6 +467,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -696,6 +706,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "斑霞// Hanka": [
@@ -926,6 +941,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -1160,6 +1180,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "累惟// Rui": [
@@ -1392,7 +1417,20 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13447928": "フルセット// fullset",
+    "13447981": "水瀬// Minase",
+    "13447982": "狛乃// Komano",
+    "13447983": "斑霞// Hanka",
+    "13447984": "森羅// Shinra",
+    "13447985": "累惟// Rui"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "応援用(中身は同じです) Support Version (Includes the same content)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13020047": "キメラマウス素体 Chimeric Mouse Base Model",
+    "13020057": "応援用(中身は同じです) Support Version (Includes the same content)"
   }
 }

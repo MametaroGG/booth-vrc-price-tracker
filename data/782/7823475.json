@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1360,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1360,
+        "is_sale": false
       }
     ],
     "『愛莉』 - Airi": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13128089": "『愛莉』 - Airi",
+    "13128090": "『ショコラ & シフォン & ライム』 - Chocolat & Chiffon &Lime",
+    "13195517": "『フルセット』FULL Package"
   }
 }

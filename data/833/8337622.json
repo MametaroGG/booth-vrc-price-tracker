@@ -42,6 +42,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Standalone Walkman Only": [
@@ -82,6 +87,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -126,6 +136,11 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Kikyo Nostalgic Threads": [
@@ -166,6 +181,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -210,6 +230,11 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Rindo Nostalgic Threads": [
@@ -250,6 +275,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -294,7 +324,21 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13930091": "FullPack Nostalgic Threads",
+    "13946358": "Standalone Walkman Only",
+    "13946359": "Airi Nostalgic Threads",
+    "13946360": "Kikyo Nostalgic Threads",
+    "13946361": "Militina Nostalgic Threads",
+    "13946362": "Rindo Nostalgic Threads",
+    "13946363": "Shinano Nostalgic Threads"
   }
 }

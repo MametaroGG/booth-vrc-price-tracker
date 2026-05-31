@@ -97,6 +97,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Supporter Pin + Tip": [
@@ -192,6 +197,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -291,7 +301,17 @@
         "date": "2026-05-28",
         "price": 3400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13802208": "Supporter Pin",
+    "13802237": "Supporter Pin + Tip",
+    "13802238": "Supporter Pin + Super Tip"
   }
 }

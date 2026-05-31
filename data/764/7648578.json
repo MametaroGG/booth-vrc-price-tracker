@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "💕Airi eye+makeup💕": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "💕Sio eye+makeup💕": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12811023": "💕Full pack💕",
+    "12811051": "💕Airi eye+makeup💕",
+    "12811052": "💕Manuka eye+makeup💕",
+    "12811053": "💕Sio eye+makeup💕",
+    "12811054": "💕Moe eye+makeup💕"
   }
 }

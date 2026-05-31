@@ -197,6 +197,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Blend Shape + make up": [
@@ -392,6 +397,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -591,7 +601,17 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13581998": "Blend Shape only",
+    "13582566": "おやつ代(中身は一緒)",
+    "13588758": "Blend Shape + make up"
   }
 }

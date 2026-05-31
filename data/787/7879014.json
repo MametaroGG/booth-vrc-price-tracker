@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "しらつめ - Shiratsume": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "しなの - Shinano": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13192413": "フルパック - Full Pack",
+    "13196663": "しらつめ - Shiratsume",
+    "13196664": "マヌカ - MANUKA",
+    "13196665": "しなの - Shinano",
+    "13196666": "Lapwing"
   }
 }

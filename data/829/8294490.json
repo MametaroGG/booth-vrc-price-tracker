@@ -78,6 +78,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "開発支援(Donation) β機能が先行": [
@@ -153,6 +158,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "スポンサー BOOTHおよびツールへの掲載頂けます": [
@@ -192,7 +202,16 @@
         "date": "2026-05-28",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13870230": "開発支援(Donation) ※過去バージョンあります",
+    "13947787": "スポンサー BOOTHおよびツールへの掲載"
   }
 }

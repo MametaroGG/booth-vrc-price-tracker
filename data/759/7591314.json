@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "For Airi 愛莉用": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "For Milltina ミルティナ用": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "For Lurie ルリエ用": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "For Selestia セレスティア用": [
@@ -3416,7 +3451,22 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12711113": "全部入り Full Set",
+    "12860860": "For Airi 愛莉用",
+    "12860861": "For Shinano しなの用",
+    "12860862": "For Milltina ミルティナ用",
+    "12860863": "For DeltaFlairBody デルタフレア共通素体用",
+    "12860864": "For Lurie ルリエ用",
+    "12929845": "For Manuka マヌカ用",
+    "13567205": "For Selestia セレスティア用"
   }
 }

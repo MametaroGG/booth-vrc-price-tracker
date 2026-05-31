@@ -282,6 +282,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Only『Sio』": [
@@ -577,6 +582,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -876,6 +886,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Only『しなの』": [
@@ -1173,6 +1188,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "『50%OFF BIG SALE』FullSet": [
@@ -1192,5 +1212,11 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13448107": "FullSet",
+    "13448257": "Only『Sio』",
+    "13448258": "Only『ショコラ』",
+    "13448259": "Only『しなの』"
   }
 }

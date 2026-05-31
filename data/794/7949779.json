@@ -377,6 +377,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Only gradation": [
@@ -752,6 +757,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -1133,7 +1143,17 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13313719": "All pack",
+    "13313752": "Only gradation",
+    "13313753": "Only hightlights(2)"
   }
 }

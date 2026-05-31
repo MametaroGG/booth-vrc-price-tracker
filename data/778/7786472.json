@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "❄Shinano❄": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 750,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "❄Eku❄": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 750,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13040886": "❄Full Pack❄",
+    "13041816": "❄Shinano❄",
+    "13041817": "❄Milfy❄",
+    "13041818": "❄Eku❄",
+    "13042146": "❄Donate❄（=Full Pack）"
   }
 }

@@ -272,6 +272,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "01. 舞夜 ver - Maya -": [
@@ -542,6 +547,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -816,6 +826,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "03.愛莉 ver - Airi -": [
@@ -1083,6 +1098,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "04.セレスティア ver - Selestia -": [
@@ -1338,6 +1358,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1597,6 +1622,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "06.サフィー ver - Sapphy -": [
@@ -1849,7 +1879,21 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13491021": "Full Pack",
+    "13491056": "01. 舞夜 ver - Maya -",
+    "13495351": "02.しなの ver - Shinano -",
+    "13499855": "03.愛莉 ver - Airi -",
+    "13504879": "04.セレスティア ver - Selestia -",
+    "13509792": "05.ミルティナ ver - Milltina -",
+    "13514339": "06.サフィー ver - Sapphy -"
   }
 }

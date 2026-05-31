@@ -449,6 +449,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "♢ Minase ♢": [
@@ -884,6 +889,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -1323,6 +1333,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "♢ +Head ♢": [
@@ -1760,6 +1775,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "♢ Full Pack ♢": [
@@ -2187,7 +2207,19 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13211654": "♢ Full Pack ♢",
+    "13224960": "♢ Komano ♢",
+    "13224961": "♢ Minase ♢",
+    "13224962": "♢ Hanka ♢",
+    "13224963": "♢ +Head ♢"
   }
 }

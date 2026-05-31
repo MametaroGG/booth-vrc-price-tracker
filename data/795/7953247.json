@@ -377,6 +377,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "5 ALL SKINTONES": [
@@ -752,6 +757,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1131,6 +1141,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "3 SKINTONES LIGHT": [
@@ -1506,6 +1521,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1885,6 +1905,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "AESTHETIC HUE (HAIR)": [
@@ -2262,7 +2287,20 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13319459": "SKINTONES+TANLINES+AESTHETIC HUE (300OFF)",
+    "13319513": "5 ALL SKINTONES",
+    "13319514": "2 SKINTONES DARK",
+    "13319515": "3 SKINTONES LIGHT",
+    "13319516": "TANLINES ONLY",
+    "13319517": "AESTHETIC HUE (HAIR)"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "お金もりもり森鴎外価格(Donate)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12892298": "通常価格450円",
+    "12892434": "お金もりもり森鴎外価格(Donate)"
   }
 }

@@ -392,6 +392,11 @@
         "date": "2026-05-28",
         "price": 780,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 780,
+        "is_sale": false
       }
     ],
     "Succubus": [
@@ -784,7 +789,16 @@
         "date": "2026-05-28",
         "price": 580,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 580,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13284343": "Succubus + Variations",
+    "13284580": "Succubus"
   }
 }

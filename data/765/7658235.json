@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "Lapwing対応": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "しらつめ対応": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12826641": "full pack",
+    "12826743": "Lapwing対応",
+    "12826744": "Marycia対応",
+    "12912396": "しらつめ対応"
   }
 }

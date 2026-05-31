@@ -377,6 +377,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "shinano": [
@@ -752,6 +757,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 980,
         "is_sale": false
       }
@@ -1131,6 +1141,11 @@
         "date": "2026-05-28",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 980,
+        "is_sale": false
       }
     ],
     "rurune": [
@@ -1506,6 +1521,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 980,
         "is_sale": false
       }
@@ -1885,6 +1905,11 @@
         "date": "2026-05-28",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 980,
+        "is_sale": false
       }
     ],
     "sio": [
@@ -2262,7 +2287,20 @@
         "date": "2026-05-28",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13317265": "FULLSET",
+    "13317411": "shinano",
+    "13317412": "LUMINA",
+    "13317413": "rurune",
+    "13317414": "milltina",
+    "13317415": "sio"
   }
 }

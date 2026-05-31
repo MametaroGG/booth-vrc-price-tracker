@@ -292,6 +292,11 @@
         "date": "2026-05-28",
         "price": 1950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1950,
+        "is_sale": false
       }
     ],
     "mamefriends -通常版-": [
@@ -582,6 +587,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 950,
         "is_sale": false
       }
@@ -876,6 +886,11 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "mamefriends -バッグ付属版-": [
@@ -1166,6 +1181,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1460,7 +1480,19 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13461167": "FULLPACK【衣装＋バッグ】",
+    "13461505": "mamefriends -通常版-",
+    "13461506": "savarum -通常版-",
+    "13461507": "mamefriends -バッグ付属版-",
+    "13461508": "savarum -バッグ付属版-"
   }
 }

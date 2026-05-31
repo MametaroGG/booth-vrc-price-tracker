@@ -332,6 +332,11 @@
         "date": "2026-05-28",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2300,
+        "is_sale": false
       }
     ],
     "Alué (+Head)": [
@@ -662,6 +667,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -996,6 +1006,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "しなの": [
@@ -1326,6 +1341,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -1660,7 +1680,19 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13309704": "フルパック",
+    "13310639": "Alué (+Head)",
+    "13310640": "Lapwing",
+    "13310641": "しなの",
+    "13398377": "斑霞-Hanka-"
   }
 }

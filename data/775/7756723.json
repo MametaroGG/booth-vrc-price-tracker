@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Support(SameFiles)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 390,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 390,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12994352": "WinterCostume for ReplicantKissMa/KissMommy",
+    "12994469": "Support(SameFiles)"
   }
 }

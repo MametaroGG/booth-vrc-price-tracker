@@ -62,6 +62,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "『ショコラ』-Chocolat ＋『Universal Shoes』": [
@@ -122,6 +127,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -186,6 +196,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "『Universal Shoes』単品": [
@@ -246,6 +261,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -310,7 +330,18 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13878542": "『フルパック』-Full Package",
+    "13878590": "『ショコラ』-Chocolat ＋『Universal Shoes』",
+    "13878591": "『しなの』 - Shinano＋『Universal Shoes』",
+    "13878592": "『Universal Shoes』単品"
   }
 }

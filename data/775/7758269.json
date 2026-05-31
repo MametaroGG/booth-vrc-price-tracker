@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "Marycia": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Rinasciita": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12996866": "Marycia",
+    "13060921": "Fullset（ Marycia / Mafuyu / Rinasciita / Alué ）",
+    "13060922": "Mafuyu",
+    "13060923": "Rinasciita",
+    "13060924": "Alué"
   }
 }

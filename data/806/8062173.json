@@ -267,6 +267,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "♡ Makeup & Body": [
@@ -534,7 +539,16 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13497052": "♡ Makeup & Body + Face Blendshape",
+    "13497769": "♡ Makeup & Body"
   }
 }

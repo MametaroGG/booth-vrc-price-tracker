@@ -132,6 +132,11 @@
         "date": "2026-05-28",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "Airi": [
@@ -262,6 +267,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -396,6 +406,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Milfy&Eku": [
@@ -526,6 +541,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -660,6 +680,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -790,6 +815,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -924,6 +954,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Mayo": [
@@ -1054,6 +1089,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -1188,6 +1228,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Kumaly": [
@@ -1320,7 +1365,24 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13676390": "FullSet",
+    "13676394": "Airi",
+    "13731325": "Chiffon&Chocolat&Lime&Plum",
+    "13731326": "Milfy&Eku",
+    "13731327": "Shinano",
+    "13731328": "Manuka",
+    "13731329": "Milltina",
+    "13731330": "Mayo",
+    "13731331": "Rurune",
+    "13731332": "Kumaly"
   }
 }

@@ -17,6 +17,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "Lapwing": [
@@ -34,6 +39,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Lasyusha": [
@@ -51,6 +61,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Binah": [
@@ -68,6 +83,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "LUMINA": [
@@ -85,6 +105,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Marycia": [
@@ -102,6 +127,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "HIBIKI": [
@@ -119,6 +149,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Ms.Sereno": [
@@ -136,6 +171,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "深澄": [
@@ -153,6 +193,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "LuciferDevil(MARU Body)": [
@@ -170,7 +215,24 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14028447": "Full Pack",
+    "14028867": "Lapwing",
+    "14028868": "Lasyusha",
+    "14028869": "Binah",
+    "14028870": "LUMINA",
+    "14028871": "Marycia",
+    "14028872": "HIBIKI",
+    "14028873": "Ms.Sereno",
+    "14028874": "深澄",
+    "14028881": "LuciferDevil(MARU Body)"
   }
 }

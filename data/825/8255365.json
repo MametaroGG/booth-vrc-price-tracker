@@ -92,6 +92,11 @@
         "date": "2026-05-28",
         "price": 722,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 722,
+        "is_sale": false
       }
     ],
     "ApplePrincess_BlackDiamond_Dress": [
@@ -182,6 +187,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 192,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 192,
         "is_sale": false
       }
@@ -276,6 +286,11 @@
         "date": "2026-05-28",
         "price": 192,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 192,
+        "is_sale": false
       }
     ],
     "ApplePrincess_PinkLady_Dress": [
@@ -366,6 +381,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 192,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 192,
         "is_sale": false
       }
@@ -460,6 +480,11 @@
         "date": "2026-05-28",
         "price": 192,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 192,
+        "is_sale": false
       }
     ],
     "ApplePrincess_Russet_Dress": [
@@ -552,7 +577,20 @@
         "date": "2026-05-28",
         "price": 192,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 192,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13806110": "ApplePrincess_Dresses",
+    "13809631": "ApplePrincess_BlackDiamond_Dress",
+    "13809632": "ApplePrincess_GrannySmith_Dress",
+    "13809633": "ApplePrincess_PinkLady_Dress",
+    "13809634": "ApplePrincess_RedDelicious_Dress",
+    "13809635": "ApplePrincess_Russet_Dress"
   }
 }

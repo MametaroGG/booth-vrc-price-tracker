@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "make up texture PNG ＋ PSD": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13105122": "make up texture PNG",
+    "13105203": "make up texture PNG ＋ PSD"
   }
 }

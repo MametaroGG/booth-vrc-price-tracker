@@ -177,6 +177,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "[ Chocolat / ショコラ ]": [
@@ -352,6 +357,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -531,6 +541,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "[ Rurune / ルルネ ]": [
@@ -706,6 +721,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -885,6 +905,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "[ Milltina / ミルティナ ]": [
@@ -1060,6 +1085,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1239,6 +1269,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "[ Sio / しお ]": [
@@ -1416,6 +1451,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "[ Shinra / 森羅 ]": [
@@ -1586,6 +1626,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1760,6 +1805,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "[ Mafuyu / 真冬 ]": [
@@ -1932,6 +1982,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "[ Lapwing ]": [
@@ -2099,7 +2154,26 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13643022": "[ Full Pack ]",
+    "13643412": "[ Chocolat / ショコラ ]",
+    "13643413": "[ Shinano / しなの ]",
+    "13643414": "[ Rurune / ルルネ ]",
+    "13643415": "[ Manuka / マヌカ ]",
+    "13643416": "[ Milltina / ミルティナ ]",
+    "13643417": "[ Milfy(+Eku) / ミルフィ(エク) ]",
+    "13643418": "[ Sio / しお ]",
+    "13653540": "[ Shinra / 森羅 ]",
+    "13654100": "[ Mafuyu / 真冬 ]",
+    "13659814": "[ Marycia / マリシア ] (T-Pose)",
+    "13669519": "[ Lapwing ]"
   }
 }

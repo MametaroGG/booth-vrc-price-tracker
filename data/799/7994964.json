@@ -337,6 +337,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "【VRC】 MUSIC PLAYER on HALO for Avatar WITH DEMO AMBIENT PLAYLIST (15 tracks)": [
@@ -672,6 +677,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1011,6 +1021,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "【VRC】 MUSIC PLAYER on HALO for Avatar WITH DEMO HARDSTYLE PLAYLIST (30 tracks)": [
@@ -1346,6 +1361,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1685,7 +1705,19 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13384257": "【VRC】 MUSIC PLAYER on HALO for Avatar WITHOUT DEMO PLAYLISTS",
+    "13391901": "【VRC】 MUSIC PLAYER on HALO for Avatar WITH DEMO AMBIENT PLAYLIST (15 tracks)",
+    "13391902": "【VRC】 MUSIC PLAYER on HALO for Avatar WITH DEMO BREAKCORE PLAYLIST (30 tracks)",
+    "13391903": "【VRC】 MUSIC PLAYER on HALO for Avatar WITH DEMO HARDSTYLE PLAYLIST (30 tracks)",
+    "13391904": "【VRC】 MUSIC PLAYER on HALO for Avatar WITH ALL DEMO PLAYLISTS"
   }
 }

@@ -37,6 +37,11 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "Eye type A": [
@@ -72,6 +77,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -111,6 +121,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Make up": [
@@ -148,7 +163,18 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13959342": "Fullset",
+    "13959343": "Eye type A",
+    "13959344": "Eye type B",
+    "13959345": "Make up"
   }
 }

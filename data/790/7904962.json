@@ -454,6 +454,11 @@
         "date": "2026-05-28",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -874,6 +879,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -1298,6 +1308,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Shinra": [
@@ -1718,6 +1733,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -2142,6 +2162,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -2562,6 +2587,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -2986,6 +3016,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Manuka(~2/1 23:59無料配布)": [
@@ -3380,6 +3415,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Mayo": [
@@ -3557,6 +3597,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Misaki 5/14 18:00~": [
@@ -3616,7 +3661,24 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13236235": "Manuka",
+    "13236320": "FullPack(特典付き)",
+    "13236321": "Shinano",
+    "13236322": "Sio",
+    "13236323": "Shinra",
+    "13236324": "Shuan",
+    "13236325": "Milltina",
+    "13236326": "Lumina",
+    "13641681": "Mayo",
+    "13914982": "Misaki"
   }
 }

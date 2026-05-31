@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "Lasyusha": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Sio": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12963104": "Fullpack",
+    "12973402": "Lasyusha",
+    "12973403": "Manuka",
+    "12973404": "Milltina",
+    "12973405": "Shinano",
+    "12973406": "Shinra",
+    "13051201": "Lumina",
+    "13051202": "Sio"
   }
 }

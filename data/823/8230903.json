@@ -57,6 +57,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "ミント・ミルク・ラスク・カリン用-Mint,Milk,Rusk,Karin-": [
@@ -112,6 +117,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -171,6 +181,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ソラハ用-Soraha-": [
@@ -226,6 +241,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -285,6 +305,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "利用規約": [
@@ -342,7 +367,27 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "ミルフィ用-Milfy-": [
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13770659": "ミント・ミルク・ラスク・カリン用-Mint,Milk,Rusk,Karin-",
+    "13846412": "とこなつマリンセーラー-Full Set-",
+    "13846413": "ライム・シフォン・ショコラ・プラム用-Lime,Chiffon,Chocolat,Plum-",
+    "13846414": "ソラハ用-Soraha-",
+    "13846415": "ネメシス・エルシオン用-Nemesis,ELusion-",
+    "14067189": "ミルフィ用-Milfy-"
   }
 }

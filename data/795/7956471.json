@@ -357,6 +357,11 @@
         "date": "2026-05-28",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "テクスチャフルパック（Make+Eye）": [
@@ -712,6 +717,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1071,6 +1081,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "桔梗-kikyo-（Make+Eye）": [
@@ -1426,6 +1441,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1785,6 +1805,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "ししゅか-siska-（Make+Eye）": [
@@ -2140,6 +2165,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2499,6 +2529,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "ショコラ-Chocolat-（Make+Eye）": [
@@ -2854,6 +2889,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -3213,6 +3253,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "むんき-Munkki-（Make+Eye）": [
@@ -3568,6 +3613,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -3927,6 +3977,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "ルミナ-LUMINA-（Make+Eye）": [
@@ -4284,7 +4339,26 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13325152": "フルパック（Make+Eye+チョコギミック付）",
+    "13325177": "テクスチャフルパック（Make+Eye）",
+    "13325178": "桔梗-kikyo-（Make+Eye+チョコギミック付）",
+    "13325179": "桔梗-kikyo-（Make+Eye）",
+    "13346436": "ししゅか-siska-（Make+Eye+チョコギミック付）",
+    "13346437": "ししゅか-siska-（Make+Eye）",
+    "13346438": "ショコラ-Chocolat-（Make+Eye+チョコギミック付）",
+    "13346439": "ショコラ-Chocolat-（Make+Eye）",
+    "13346440": "むんき-Munkki-（Make+Eye+チョコギミック付）",
+    "13346441": "むんき-Munkki-（Make+Eye）",
+    "13346693": "ルミナ-LUMINA-（Make+Eye+チョコギミック付）",
+    "13346694": "ルミナ-LUMINA-（Make+Eye）"
   }
 }

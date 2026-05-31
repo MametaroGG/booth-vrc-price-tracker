@@ -220,6 +220,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "メイクテクスチャ - Makeup Texture": [
@@ -410,6 +415,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -604,6 +614,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "ねこにおやつをあげる！（中身はメイク&アイテクスチャと同じです） - donate": [
@@ -796,7 +811,18 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13610536": "アイテクスチャ - Eye Texture",
+    "13610732": "メイクテクスチャ - Makeup Texture",
+    "13610733": "メイク&アイテクスチャ - Makeup & Eye Texture",
+    "13610794": "ねこにおやつをあげる！（中身はメイク&アイテクスチャと同じです） - donate"
   }
 }

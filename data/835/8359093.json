@@ -37,6 +37,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "♥makeup+blendshape♥": [
@@ -72,6 +77,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 550,
         "is_sale": false
       }
@@ -111,6 +121,11 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "♥blendshape♥": [
@@ -146,6 +161,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -185,6 +205,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "♥eye♥": [
@@ -222,7 +247,20 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13964497": "♥makeup+eye+blendshape♥",
+    "13964537": "♥makeup+blendshape♥",
+    "13964538": "♥makeup+eye♥",
+    "13964539": "♥blendshape♥",
+    "13964540": "♥makeup♥",
+    "13964541": "♥eye♥"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-28",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "通常版（メイドverのみ）": [
@@ -864,7 +869,16 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13059548": "FULL PACK（執事ver付き）",
+    "13198405": "通常版（メイドverのみ）"
   }
 }

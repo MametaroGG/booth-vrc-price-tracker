@@ -539,6 +539,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "A&M": [
@@ -916,7 +921,16 @@
         "date": "2026-05-28",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13065184": "A&M",
+    "13065468": "おこづかい用"
   }
 }

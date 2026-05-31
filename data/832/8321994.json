@@ -52,6 +52,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "【TYPE A】": [
@@ -102,6 +107,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -156,6 +166,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "【TYPE C】": [
@@ -206,6 +221,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -260,7 +280,19 @@
         "date": "2026-05-28",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13906897": "【FULLPACK】",
+    "13906944": "【TYPE A】",
+    "13906945": "【TYPE B】",
+    "13906946": "【TYPE C】",
+    "13906947": "【FULLPACK】 (Donation)"
   }
 }

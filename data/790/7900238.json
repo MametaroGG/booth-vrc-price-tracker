@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "【通常版】LT101 RISER | Expansion": [
@@ -873,6 +878,11 @@
       {
         "date": "2026-05-28",
         "price": 210,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 231,
         "is_sale": false
       }
     ],
@@ -1311,7 +1321,16 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 440,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13228280": "【通常版】LT101 RISER | Expansion",
+    "13228336": "【商用版】通常版と同じ内容です"
   }
 }

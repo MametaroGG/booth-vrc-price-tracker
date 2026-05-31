@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "[Corporate Ver.] 聖夜の宴": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12983455": "[Standard Ver.] 聖夜の宴",
+    "12983528": "[Corporate Ver.] 聖夜の宴"
   }
 }

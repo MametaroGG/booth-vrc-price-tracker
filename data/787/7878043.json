@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 3180,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3180,
+        "is_sale": false
       }
     ],
     "1. Consolatoria": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "3. Lenis Fortis": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "5. Winter Sweater In Home": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -3199,7 +3229,21 @@
         "date": "2026-05-28",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13190685": "Full Pack",
+    "13190746": "1. Consolatoria",
+    "13190747": "2. Initium Veris",
+    "13190748": "3. Lenis Fortis",
+    "13190749": "4. Silens Maga",
+    "13190750": "5. Winter Sweater In Home",
+    "13190751": "6. Fluxus Corium"
   }
 }

@@ -177,6 +177,11 @@
         "date": "2026-05-28",
         "price": 4400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4400,
+        "is_sale": true
       }
     ],
     "A : Star Pants": [
@@ -352,6 +357,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": true
       }
@@ -531,6 +541,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "C : Urban Drop": [
@@ -706,6 +721,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -885,6 +905,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "E : Urban Campus": [
@@ -1060,6 +1085,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -1239,6 +1269,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "G : Sera Daily": [
@@ -1414,6 +1449,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -1593,6 +1633,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "I : JABIS": [
@@ -1768,6 +1813,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -1947,6 +1997,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "K : Twillight": [
@@ -2122,6 +2177,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -2301,7 +2361,27 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13640949": "FullSet (A~L)(12Clothing include)",
+    "13641214": "A : Star Pants",
+    "13641215": "B : Shibuya Maji",
+    "13641216": "C : Urban Drop",
+    "13641217": "D : Yakimochi",
+    "13641218": "E : Urban Campus",
+    "13641219": "F : Useable",
+    "13641220": "G : Sera Daily",
+    "13641221": "H : Overay Police",
+    "13641222": "I : JABIS",
+    "13641223": "J : エッチメード",
+    "13641224": "K : Twillight",
+    "13641225": "L : Bruma"
   }
 }

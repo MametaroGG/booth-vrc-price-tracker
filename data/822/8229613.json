@@ -117,6 +117,11 @@
         "date": "2026-05-28",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "shinra": [
@@ -232,6 +237,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -351,6 +361,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "lapwing": [
@@ -468,7 +483,18 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13768719": "fullpack( 3avatar )",
+    "13769248": "shinra",
+    "13769249": "shinano",
+    "13769250": "lapwing"
   }
 }

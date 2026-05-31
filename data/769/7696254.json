@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "ハート型のメガネ / Heart Shaped Glasses": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "3つのグラス形状すべて / All 3 Glasses Shapes": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12890979": "星型メガネ / Star Shaped Glasses",
+    "12890980": "ハート型のメガネ / Heart Shaped Glasses",
+    "12890981": "シャッター型メガネ / Shutter Shape Glasses",
+    "12890982": "3つのグラス形状すべて / All 3 Glasses Shapes"
   }
 }

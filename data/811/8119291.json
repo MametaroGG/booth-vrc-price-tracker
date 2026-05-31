@@ -192,6 +192,11 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "xxSecretlaceEye_Kumaly": [
@@ -382,6 +387,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -576,6 +586,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "xxSecretlaceEye_Ririka": [
@@ -766,6 +781,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -960,6 +980,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "ミルク代(中身はフルパック版と同じです)": [
@@ -1152,7 +1177,20 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13588478": "xxSecretlaceEye_Full",
+    "13600699": "xxSecretlaceEye_Kumaly",
+    "13600700": "xxSecretlaceEye_Milltina",
+    "13600701": "xxSecretlaceEye_Ririka",
+    "13600702": "xxSecretlaceEye_Shinano",
+    "13600703": "ミルク代(中身はフルパック版と同じです)"
   }
 }

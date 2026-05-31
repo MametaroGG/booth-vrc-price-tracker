@@ -17,6 +17,11 @@
         "date": "2026-05-28",
         "price": 7920,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 7920,
+        "is_sale": true
       }
     ],
     "Mini": [
@@ -34,6 +39,11 @@
         "date": "2026-05-28",
         "price": 3180,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3180,
+        "is_sale": true
       }
     ],
     "free （10日間の無料トライアル）": [
@@ -46,7 +56,16 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13998452": "Pro",
+    "14006379": "Mini"
   }
 }

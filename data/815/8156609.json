@@ -172,6 +172,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Manuka": [
@@ -342,6 +347,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -516,6 +526,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Airi": [
@@ -686,6 +701,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -860,6 +880,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Milfy Eku": [
@@ -1030,6 +1055,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -1204,6 +1234,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Milltina": [
@@ -1376,7 +1411,22 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13656183": "Fullpackage",
+    "13656585": "Manuka",
+    "13656586": "Shinano",
+    "13656587": "Airi",
+    "13656588": "Shinra",
+    "13656589": "Milfy Eku",
+    "13656590": "Sio",
+    "13656591": "Milltina"
   }
 }

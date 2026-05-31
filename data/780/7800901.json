@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "トーク火鉢(説明書)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 0,
         "is_sale": false
       }
@@ -1371,7 +1381,15 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13065552": "トーク火鉢"
   }
 }

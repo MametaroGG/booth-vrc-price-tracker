@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "make up （支援版）※通常版と内容は変わりません": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13152697": "make up",
+    "13152786": "make up （支援版）※通常版と内容は変わりません"
   }
 }

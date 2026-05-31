@@ -72,6 +72,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "お茶代(内容物は同じです)": [
@@ -144,7 +149,16 @@
         "date": "2026-05-28",
         "price": 360,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 360,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13855628": "Lace Normalmap",
+    "13855714": "お茶代(内容物は同じです)"
   }
 }

@@ -77,6 +77,11 @@
         "date": "2026-05-28",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -152,6 +157,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -231,6 +241,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -306,6 +321,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -385,6 +405,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "セレスティア": [
@@ -460,6 +485,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -539,6 +569,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Lumina": [
@@ -586,6 +621,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Misaki－海咲-": [
@@ -623,6 +663,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "翠羽": [
@@ -645,7 +690,24 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13814117": "フルセット",
+    "13833187": "Shinano",
+    "13833188": "森羅",
+    "13833189": "Milltina",
+    "13833190": "Manuka",
+    "13833191": "セレスティア",
+    "13833192": "桔梗",
+    "13932069": "Lumina",
+    "13964882": "Misaki－海咲-",
+    "14001795": "翠羽"
   }
 }

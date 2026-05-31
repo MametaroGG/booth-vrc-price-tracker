@@ -402,6 +402,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "タバコ代(差分psdデータ有)": [
@@ -806,7 +811,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13257383": "Glow/Matte eye texture",
+    "13259489": "タバコ代(差分PSDデータ付き)"
   }
 }

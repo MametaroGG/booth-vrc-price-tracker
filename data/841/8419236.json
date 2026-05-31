@@ -7,6 +7,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "投げ銭 (Donation)": [
@@ -14,7 +19,15 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "14058391": "投げ銭 (Donation)"
   }
 }

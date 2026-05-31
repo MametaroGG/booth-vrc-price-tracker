@@ -168,6 +168,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "しなの対応 - Shinano": [
@@ -415,6 +420,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ミルフィ対応 - Milfy": [
@@ -662,6 +672,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ショコラ対応 - Chocolat": [
@@ -909,6 +924,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "マヌカ対応 - Manuka": [
@@ -1156,6 +1176,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "キプフェル対応 - Kipfel": [
@@ -1403,6 +1428,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ねこにおやつをあげる！（中身はフルパックと同じです）": [
@@ -1650,6 +1680,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "5アバター対応 フルパック - Full pack": [
@@ -1951,6 +1986,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Lapwing対応 - Lapwing": [
@@ -2113,6 +2153,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "8アバター対応 フルパック - Full pack": [
@@ -2182,6 +2227,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "9アバター対応 フルパック - Full pack": [
@@ -2221,6 +2271,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "海咲対応 - Misaki": [
@@ -2238,6 +2293,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "まよ対応 - Mayo": [
@@ -2255,6 +2315,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "彼方対応 - Kanata": [
@@ -2272,7 +2337,28 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13437042": "しなの対応 - Shinano",
+    "13517739": "フルパック - Full pack",
+    "13517740": "ミルフィ対応 - Milfy",
+    "13517741": "ショコラ対応 - Chocolat",
+    "13517742": "マヌカ対応 - Manuka",
+    "13517743": "キプフェル対応 - Kipfel",
+    "13521138": "ねこにおやつをあげる！（中身はフルパックと同じです）",
+    "13671737": "エク対応 - Eku",
+    "13672442": "Lapwing対応 - Lapwing",
+    "13941182": "ルミナ対応 - Lumina",
+    "13996578": "真央対応 - Mao",
+    "14031444": "海咲対応 - Misaki",
+    "14031445": "まよ対応 - Mayo",
+    "14031446": "彼方対応 - Kanata"
   }
 }

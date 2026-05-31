@@ -432,6 +432,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "🩷Full Tex🩷": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "🩵EyeTex Only🩵": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13234928": "❤️Full Tex+PSD+BlendShapes❤️",
+    "13234929": "🩷Full Tex🩷",
+    "13234930": "💛MakeupTex+TongueTex Only💛",
+    "13234931": "🩵EyeTex Only🩵"
   }
 }

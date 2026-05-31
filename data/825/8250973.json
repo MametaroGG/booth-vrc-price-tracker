@@ -102,6 +102,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "HeartBeats Pin +Donate": [
@@ -204,7 +209,16 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13799438": "HeartBeats Pin",
+    "13799469": "HeartBeats Pin +Donate"
   }
 }

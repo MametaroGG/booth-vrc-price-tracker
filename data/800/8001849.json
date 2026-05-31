@@ -337,6 +337,11 @@
         "date": "2026-05-28",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2700,
+        "is_sale": false
       }
     ],
     "lapwing版": [
@@ -672,6 +677,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2700,
         "is_sale": false
       }
@@ -1011,6 +1021,11 @@
         "date": "2026-05-28",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2700,
+        "is_sale": false
       }
     ],
     "しなの版": [
@@ -1088,7 +1103,18 @@
         "date": "2026-05-28",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13394850": "Marycia版",
+    "13395061": "lapwing版",
+    "13395062": "air,nial,simulacrum版",
+    "13847329": "しなの版"
   }
 }

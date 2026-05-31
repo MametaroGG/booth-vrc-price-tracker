@@ -192,6 +192,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Moe_萌": [
@@ -382,6 +387,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": true
       }
@@ -576,7 +586,17 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13539434": "【🍀SALE中🍀】FULL PACK",
+    "13541319": "Moe_萌",
+    "13541320": "Sio_しお"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "rurune": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "kipfel": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13023048": "all",
+    "13055380": "rurune",
+    "13055381": "sio",
+    "13055382": "kipfel"
   }
 }

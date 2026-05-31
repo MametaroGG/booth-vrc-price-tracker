@@ -899,6 +899,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "CHIFFON": [
@@ -1354,6 +1359,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -1813,6 +1823,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "MILFY": [
@@ -2268,6 +2283,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -2727,6 +2747,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "[6 AVATAR]": [
@@ -2744,7 +2769,20 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13124090": "[6 AVATAR]",
+    "13124147": "CHOCOLAT",
+    "13124148": "CHIFFON",
+    "13124149": "PLUM",
+    "13124150": "MILFY",
+    "13124151": "AIRI"
   }
 }

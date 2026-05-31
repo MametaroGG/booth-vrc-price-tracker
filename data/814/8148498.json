@@ -177,6 +177,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "On_the_Blazer_MAYO": [
@@ -352,6 +357,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -531,6 +541,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "FULL": [
@@ -708,7 +723,18 @@
         "date": "2026-05-28",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13640760": "1st_MAYO",
+    "13640906": "On_the_Blazer_MAYO",
+    "13640907": "Vintage_setup_MAYO",
+    "13640908": "FULL"
   }
 }

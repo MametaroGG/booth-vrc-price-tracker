@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "MANUKA【eyetexture＋makeuptexture】": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "rurune【eyetexture＋makeuptexture】": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "kipfel【eyetexture＋makeuptexture】": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12971164": "フルパック/fullpack",
+    "12972501": "MANUKA【eyetexture＋makeuptexture】",
+    "12972502": "Milltina【eyetexture＋makeuptexture】",
+    "12972503": "rurune【eyetexture＋makeuptexture】",
+    "12972504": "白雪天使【eyetexture＋makeuptexture】",
+    "12972505": "kipfel【eyetexture＋makeuptexture】"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Yollchang (ヨル)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Inaba Kaya (伊奈波かや)": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12998211": "Milltina (ミルティナ)",
+    "12998355": "Yollchang (ヨル)",
+    "12998356": "Apollo (アポロ)",
+    "12998357": "Inaba Kaya (伊奈波かや)"
   }
 }

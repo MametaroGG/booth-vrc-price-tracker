@@ -132,6 +132,11 @@
         "date": "2026-05-28",
         "price": 420,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 420,
+        "is_sale": false
       }
     ],
     "[NEON_BUNNY_JUMP] 1": [
@@ -262,6 +267,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 120,
         "is_sale": false
       }
@@ -396,6 +406,11 @@
         "date": "2026-05-28",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "[NEON_BUNNY_SIT] 3": [
@@ -526,6 +541,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 120,
         "is_sale": false
       }
@@ -660,7 +680,19 @@
         "date": "2026-05-28",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 120,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13746497": "[NEON_BUNNY_SIGNS] ALL",
+    "13746577": "[NEON_BUNNY_JUMP] 1",
+    "13746578": "[NEON_BUNNY_FACE] 2",
+    "13746579": "[NEON_BUNNY_SIT] 3",
+    "13746580": "[NEON_BUNNY_STAND] 4"
   }
 }

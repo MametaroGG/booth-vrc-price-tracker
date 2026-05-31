@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "怜-Rei-(旧素体)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "伊依-Iyori-(珍飯亭共通素体)": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12699303": "FullSet",
+    "12856037": "怜-Rei-(旧素体)",
+    "12856038": "斑霞-Hanka-",
+    "12856039": "伊依-Iyori-(珍飯亭共通素体)",
+    "12856040": "アルエ-Aluè-(+Head)"
   }
 }

@@ -12,6 +12,11 @@
         "date": "2026-05-28",
         "price": 801,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 801,
+        "is_sale": false
       }
     ],
     "For 海咲": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -36,11 +46,21 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "For Linne": [
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -50,6 +70,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "For kyoko 京狐・沙猫": [
@@ -57,7 +82,20 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14041917": "フルパック",
+    "14044328": "For 海咲",
+    "14045971": "For Nagi 凪",
+    "14054651": "For kyoko 京狐・沙猫",
+    "14061076": "For Linne",
+    "14061867": "For Shinano　しなの"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 660,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 660,
+        "is_sale": false
       }
     ],
     "Airi対応版": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11557440": "(wip)ふるせっと予定地(Airi only)",
+    "12958554": "Airi対応版"
   }
 }

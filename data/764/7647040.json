@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "リナシータ - Rinasciita": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "EFBody": [
@@ -1828,6 +1843,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "ルミナ - LUMINA": [
@@ -2220,6 +2240,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "ルミナ - LUMINA ✨SAIL✨": [
@@ -2234,5 +2259,12 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12808343": "森羅 - Shinra",
+    "12810120": "リナシータ - Rinasciita",
+    "12810121": "EFBody",
+    "12810235": "フルパック - FullPack",
+    "13276277": "ルミナ - LUMINA"
   }
 }

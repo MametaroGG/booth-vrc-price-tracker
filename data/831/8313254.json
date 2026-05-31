@@ -57,6 +57,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "スポンサー": [
@@ -112,6 +117,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -171,6 +181,11 @@
         "date": "2026-05-28",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "Angel Light Tools MEGAPACK": [
@@ -228,7 +243,18 @@
         "date": "2026-05-28",
         "price": 2001,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2001,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13894164": "スポンサー",
+    "13895444": "商用著作権または個人カスタマイズ",
+    "13895570": "Native Light Tools 標準照明ツール",
+    "13895571": "Angel Light Tools MEGAPACK"
   }
 }

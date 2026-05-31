@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Ramune": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "MizukiRurune": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "MilfyEku": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12905728": "fullpack",
+    "12905799": "Shinano",
+    "12905800": "MizukiRurune",
+    "12905801": "Lumina",
+    "12905802": "MilfyEku",
+    "12905803": "ChocolateChiffon",
+    "12905804": "Milltina",
+    "13062516": "Ramune"
   }
 }

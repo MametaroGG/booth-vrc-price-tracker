@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "キプフェル＆まめひなた(Kipfel＆Msmehinata)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "エルシオン(Elusion)": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12783319": "Full Set",
+    "12792559": "キプフェル＆まめひなた(Kipfel＆Msmehinata)",
+    "12792560": "みみのこ(Miminoko)",
+    "12792561": "エルシオン(Elusion)"
   }
 }

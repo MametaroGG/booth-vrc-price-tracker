@@ -102,6 +102,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "フィユエちゃん(Fyuett)対応": [
@@ -202,6 +207,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -306,7 +316,17 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13801864": "Fullset フルセット",
+    "13801939": "フィユエちゃん(Fyuett)対応",
+    "13801940": "カザリス(Cazalis)ちゃん対応"
   }
 }

@@ -399,6 +399,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "fullpack(今後増えます。対応予定アバターは商品紹介文にあります。)": [
@@ -784,6 +789,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1173,7 +1183,17 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13282810": "【Minase】",
+    "13282844": "❥支援boost(EyeTexture fullpack+1type postprocess)",
+    "13295412": "fullpack(今後増えます。対応予定アバターは商品紹介文にあります。)"
   }
 }

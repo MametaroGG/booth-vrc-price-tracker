@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Knit hat": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12881742": "Cap",
+    "12881887": "Knit hat",
+    "12881888": "Cap&Knit hat Fullpackage"
   }
 }

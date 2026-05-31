@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "MermaidDress_Pattern_2": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -2125,7 +2135,17 @@
         "date": "2026-05-28",
         "price": 3400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12986375": "MermaidDress_Pattern_1",
+    "12986434": "MermaidDress_Pattern_2",
+    "12986437": "MermaidDress/ACC_All"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "狛乃 ・ Komano": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "くうた・Kuuta": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "+Head": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -3199,7 +3229,21 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13149059": "フルセット・Full set",
+    "13149133": "狛乃 ・ Komano",
+    "13149134": "彼方・Kanata",
+    "13149135": "くうた・Kuuta",
+    "13149136": "真央・Mao",
+    "13149137": "+Head",
+    "13149138": "斑霞・Hanka"
   }
 }

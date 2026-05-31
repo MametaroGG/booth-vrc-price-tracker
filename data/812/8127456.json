@@ -172,6 +172,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "- Eye Texture only -": [
@@ -342,6 +347,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -516,6 +526,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "♡Fullpack 支援版 For Supporter 후원 버전♡": [
@@ -688,7 +703,18 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13603207": "- Makeup & Eye Texture - (Fullpack)",
+    "13647201": "- Eye Texture only -",
+    "13647202": "- Makeup only -",
+    "13647600": "♡Fullpack 支援版 For Supporter 후원 버전♡"
   }
 }

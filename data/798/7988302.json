@@ -332,6 +332,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "✂ Makeup Only": [
@@ -662,6 +667,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 550,
         "is_sale": false
       }
@@ -996,7 +1006,17 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13375385": "✂ Full Pack (+eyes 1 color)",
+    "13398605": "✂ Makeup Only",
+    "13398606": "✂ EyeLash Only"
   }
 }

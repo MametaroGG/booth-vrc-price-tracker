@@ -22,6 +22,11 @@
         "date": "2026-05-28",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 980,
+        "is_sale": false
       }
     ],
     "Braided Pigtails": [
@@ -42,6 +47,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 450,
         "is_sale": false
       }
@@ -66,6 +76,11 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Half Twintails": [
@@ -86,6 +101,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 450,
         "is_sale": false
       }
@@ -110,7 +130,19 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13982551": "Full Set",
+    "13982656": "Braided Pigtails",
+    "13982657": "Cool Bob",
+    "13982658": "Half Twintails",
+    "13982659": "Wavy Long"
   }
 }

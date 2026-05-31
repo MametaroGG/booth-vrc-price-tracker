@@ -387,6 +387,11 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "Almazおっけー": [
@@ -772,6 +777,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -1161,6 +1171,11 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Almazハート": [
@@ -1546,6 +1561,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -1935,6 +1955,11 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Almaz素敵なパー": [
@@ -2320,6 +2345,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -2709,6 +2739,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Almazがおー": [
@@ -3096,7 +3131,22 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13273783": "Almazジェスチャーフルセット",
+    "13273900": "Almazおっけー",
+    "13273901": "Almazつまむ",
+    "13273902": "Almazハート",
+    "13273903": "Almazゆるく握る",
+    "13273904": "Almaz素敵なパー",
+    "13273905": "Almaz指パッチン",
+    "13273906": "Almazがおー"
   }
 }

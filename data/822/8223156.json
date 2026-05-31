@@ -122,6 +122,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "②UnityPackage版＋①": [
@@ -244,7 +249,16 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13759449": "①FBX＋テクスチャのみ",
+    "13759558": "②UnityPackage版＋①"
   }
 }

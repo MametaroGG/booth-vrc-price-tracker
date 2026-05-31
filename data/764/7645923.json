@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "[Airi]": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 350,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "[Chocolat]": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 350,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": true
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "[Minase]": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 350,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": true
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "[Milltina]": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 350,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": true
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "[Sio]": [
@@ -4568,6 +4613,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 350,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": true
       }
@@ -5027,6 +5077,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "[Eku]": [
@@ -5482,6 +5537,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 350,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": true
       }
@@ -5941,6 +6001,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "[Rurune]": [
@@ -6396,6 +6461,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 350,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": true
       }
@@ -6855,6 +6925,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "[Lumina]": [
@@ -7312,7 +7387,30 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12806400": "[Airi]",
+    "12806584": "[Full Pack]",
+    "12806585": "[Chiffon]",
+    "12806586": "[Chocolat]",
+    "12806587": "[Manuka]",
+    "12806588": "[Minase]",
+    "12806589": "[Shinra]",
+    "12806590": "[Milltina]",
+    "12806591": "[Shinano]",
+    "12806592": "[Sio]",
+    "12806593": "[Komano]",
+    "12806594": "[Eku]",
+    "12806595": "[Milfy]",
+    "12806596": "[Rurune]",
+    "12806597": "[Shirley]",
+    "12806598": "[Lumina]"
   }
 }

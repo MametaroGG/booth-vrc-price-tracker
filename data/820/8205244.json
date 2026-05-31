@@ -27,6 +27,11 @@
         "date": "2026-05-28",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6000,
+        "is_sale": false
       }
     ],
     "Quest版単品": [
@@ -52,6 +57,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -81,7 +91,17 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13735210": "フルセット（PC・Quest・FallBack全部入り",
+    "13735830": "Quest版単品",
+    "13735831": "FallBack版単品"
   }
 }

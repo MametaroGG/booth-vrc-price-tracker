@@ -192,6 +192,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "しなの[Shinano]": [
@@ -382,6 +387,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -576,6 +586,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "愛莉[Airi]": [
@@ -766,6 +781,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -960,6 +980,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "イチゴ[ICHIGO]": [
@@ -1152,7 +1177,20 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13587230": "フルセット[FullSet]",
+    "13596913": "しなの[Shinano]",
+    "13596965": "ミルティナ[Milltina]",
+    "13596966": "愛莉[Airi]",
+    "13596967": "クマリ[KUMALY]",
+    "13596968": "イチゴ[ICHIGO]"
   }
 }

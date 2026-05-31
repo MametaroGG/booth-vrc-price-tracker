@@ -172,6 +172,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Make Up + body": [
@@ -342,6 +347,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -516,6 +526,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Blendshape": [
@@ -665,5 +680,10 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13657202": "FULL (makeup + eye + blendshape)",
+    "13657250": "Make Up + body",
+    "13657251": "Eye"
   }
 }

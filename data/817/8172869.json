@@ -117,6 +117,11 @@
         "date": "2026-05-28",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 980,
+        "is_sale": false
       }
     ],
     "Braid Bangs Style": [
@@ -232,6 +237,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 450,
         "is_sale": false
       }
@@ -351,6 +361,11 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Natural Style": [
@@ -466,6 +481,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 450,
         "is_sale": false
       }
@@ -585,7 +605,19 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13683705": "Full Set",
+    "13689920": "Braid Bangs Style",
+    "13689921": "Center Part Style",
+    "13689922": "Natural Style",
+    "13689923": "Pattun Style"
   }
 }

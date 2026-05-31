@@ -7,6 +7,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Buy me a Asset(Same contents)": [
@@ -14,7 +19,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14052923": "Just 120mm TP-T",
+    "14053001": "Buy me a Asset(Same contents)"
   }
 }

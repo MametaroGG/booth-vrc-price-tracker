@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 9000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 9000,
+        "is_sale": false
       }
     ],
     "全色　all color": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 7000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 7000,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "青Blue": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "赤Red": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "黒Black": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13122432": "白White",
+    "13122653": "青Blue",
+    "13122654": "黒青Dark Blue",
+    "13122655": "赤Red",
+    "13122656": "黒赤Dark Red",
+    "13122657": "黒Black",
+    "13122658": "全色　all color",
+    "13161153": "全色コンプリートセット　Complete Set of All Colors"
   }
 }

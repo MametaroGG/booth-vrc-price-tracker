@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "YawaCorgi_bousi【Alué】": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "おやつ代 全セット(内容は同じです)": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13046733": "YawaCorgi_bousi【キプフェル】",
+    "13046799": "YawaCorgi_bousi【Alué】",
+    "13046800": "YawaCorgi_bousi【やわこーぎー】",
+    "13046855": "おやつ代 全セット(内容は同じです)"
   }
 }

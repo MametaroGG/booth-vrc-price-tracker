@@ -192,6 +192,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Bloomin’Grenade+支援代": [
@@ -384,7 +389,16 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13539454": "Bloomin’Grenade",
+    "13550100": "Bloomin’Grenade+支援代"
   }
 }

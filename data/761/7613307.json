@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "selestia": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "sio": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "kipfel": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ichigo": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -4113,7 +4153,23 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12749064": "full pack",
+    "12775290": "selestia",
+    "12775291": "lasyusya",
+    "12775292": "sio",
+    "12775293": "milltina",
+    "12775294": "kipfel",
+    "12775295": "rurune",
+    "12775296": "ichigo",
+    "12775297": "nagi"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "WinterLookAiri": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "WinterLookLapwing": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "WinterLookMarycia": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "WinterLookMoe": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "WinterLookSelestia": [
@@ -4568,6 +4613,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -5027,6 +5077,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "WinterLookShizuku": [
@@ -5484,7 +5539,26 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12910177": "Fullset",
+    "12910422": "WinterLookAiri",
+    "12910423": "WinterLookChiffon",
+    "12910424": "WinterLookLapwing",
+    "12910425": "WinterLookManuka",
+    "12910426": "WinterLookMarycia",
+    "12910427": "WinterLookMilltina",
+    "12910428": "WinterLookMoe",
+    "12910429": "WinterLookRurune",
+    "12910430": "WinterLookSelestia",
+    "12910431": "WinterLookShinano",
+    "12910432": "WinterLookShizuku"
   }
 }

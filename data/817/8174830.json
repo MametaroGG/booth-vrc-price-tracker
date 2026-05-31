@@ -147,6 +147,11 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "-naked＆noiz（支援版）": [
@@ -292,6 +297,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -441,6 +451,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "noiz（瞳のみ）": [
@@ -588,7 +603,18 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13686599": "-naked＆noiz（通常版）",
+    "13687439": "-naked＆noiz（支援版）",
+    "13687440": "-naked（メイクのみ）",
+    "13687441": "noiz（瞳のみ）"
   }
 }

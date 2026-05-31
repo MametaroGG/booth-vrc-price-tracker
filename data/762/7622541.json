@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Eyes Only": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "唇を消したい方用": [
@@ -1828,7 +1843,17 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12765525": "Eyes&MakeUp",
+    "12765556": "Eyes Only",
+    "12765557": "MakeUp Only"
   }
 }

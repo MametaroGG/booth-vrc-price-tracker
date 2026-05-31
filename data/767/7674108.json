@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Ribite_Free": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 0,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Ribite_Full": [
@@ -1828,6 +1843,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Damien_Free": [
@@ -2168,6 +2188,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 0,
         "is_sale": false
       }
@@ -2512,6 +2537,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Baku_Free": [
@@ -2807,6 +2837,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 0,
         "is_sale": false
       }
@@ -3106,7 +3141,18 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12854060": "JAULA_Full",
+    "12854061": "Ribite_Full",
+    "13381721": "Damien_Full",
+    "13454361": "Baku_Full"
   }
 }

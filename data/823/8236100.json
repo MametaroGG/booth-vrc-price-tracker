@@ -112,6 +112,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Full Pack: ALL INCLUDED!": [
@@ -222,6 +227,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2600,
         "is_sale": false
       }
@@ -336,6 +346,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Lasyusha Compatible": [
@@ -446,6 +461,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -560,7 +580,19 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13778618": "Shinano Compatible",
+    "13778647": "Full Pack: ALL INCLUDED!",
+    "13778648": "Sio Compatible",
+    "13778649": "Lasyusha Compatible",
+    "13778650": "Milltina Compatible"
   }
 }

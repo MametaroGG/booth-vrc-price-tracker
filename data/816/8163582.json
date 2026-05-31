@@ -97,6 +97,11 @@
         "date": "2026-05-28",
         "price": 2400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": true
       }
     ],
     "まよ Mayo": [
@@ -192,6 +197,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -291,6 +301,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "しなの Shinano": [
@@ -386,6 +401,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -485,6 +505,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "愛莉 Airi": [
@@ -582,6 +607,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "森羅 Shinra": [
@@ -674,7 +704,21 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13668553": "Full set",
+    "13799890": "まよ Mayo",
+    "13799891": "ルミナ LUMINA",
+    "13799892": "しなの Shinano",
+    "13799893": "ミルティナ Milltina",
+    "13799894": "愛莉 Airi",
+    "13828171": "森羅 Shinra"
   }
 }

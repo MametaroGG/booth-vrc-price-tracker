@@ -37,6 +37,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "LilToonShadowCopy（lilToon影設定コピー）": [
@@ -72,6 +77,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -111,6 +121,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "LilToonRimLightCopy（lilToonリムライト設定コピー）": [
@@ -146,6 +161,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -185,7 +205,18 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13965446": "フルセット",
+    "13965552": "LilToonShadowCopy（lilToon影設定コピー）",
+    "13965553": "LilToonDistanceFadeCopy（lilToon距離フェードコピー）",
+    "13965554": "LilToonRimLightCopy（lilToonリムライト設定コピー）"
   }
 }

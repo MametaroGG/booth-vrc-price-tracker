@@ -372,6 +372,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "支援ぱっく(バレンタインタトゥー付き)": [
@@ -744,7 +749,16 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13321028": "ChocolateDripHalo",
+    "13322514": "支援ぱっく(バレンタインタトゥー付き)"
   }
 }

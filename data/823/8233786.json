@@ -112,6 +112,11 @@
         "date": "2026-05-28",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "FBXのみ (FBX only)": [
@@ -224,7 +229,16 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13775337": "VRC/VRM対応 完全版 (Complete ver)",
+    "13775338": "FBXのみ (FBX only)"
   }
 }

@@ -132,6 +132,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "【Full Set】make＆eye texture": [
@@ -262,6 +267,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": true
       }
@@ -396,6 +406,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "make texture": [
@@ -528,7 +543,18 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13717272": "【支援版※フルセットと同じ内容】",
+    "13717279": "【Full Set】make＆eye texture",
+    "13717280": "eye texture",
+    "13717281": "make texture"
   }
 }

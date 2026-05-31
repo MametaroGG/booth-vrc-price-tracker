@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1250,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-28",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12953384": "Airi",
+    "12954532": "Milltina",
+    "12954533": "Shinano"
   }
 }

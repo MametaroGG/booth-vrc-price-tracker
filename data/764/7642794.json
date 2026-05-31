@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Airi": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Lumina": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Shinra": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "企業用 Full Pack(1人)": [
@@ -4570,7 +4615,24 @@
         "date": "2026-05-29",
         "price": 20000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 20000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12800677": "FULL PACK",
+    "12814108": "Airi",
+    "12814109": "Chocolat / Chiffon /Lime",
+    "12814110": "Lumina",
+    "12814111": "MANUKA",
+    "12814112": "Milltina",
+    "12814113": "Shinano",
+    "12814114": "Shinra",
+    "12814115": "Sio",
+    "12819984": "企業用 Full Pack(1人)"
   }
 }

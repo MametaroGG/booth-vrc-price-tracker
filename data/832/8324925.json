@@ -52,6 +52,11 @@
         "date": "2026-05-28",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "【Full Pack+💖】": [
@@ -102,6 +107,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 950,
         "is_sale": false
       }
@@ -156,7 +166,17 @@
         "date": "2026-05-28",
         "price": 8500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 8500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13910922": "【Full Pack】",
+    "13910969": "【Full Pack+💖】",
+    "13910970": "【Full Pack+Business Purposes】"
   }
 }

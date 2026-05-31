@@ -539,6 +539,11 @@
         "date": "2026-05-28",
         "price": 4000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": true
       }
     ],
     "◈ Urban Trekker ◈ Kumaly ◈ クマリ ◈": [
@@ -794,6 +799,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": true
       }
@@ -1053,6 +1063,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": true
       }
     ],
     "◈ Lady Aurora ◈ Kumaly ◈ クマリ ◈": [
@@ -1308,6 +1323,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": true
       }
@@ -1567,6 +1587,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": true
       }
     ],
     "◈ Lust Nun ◈ Kumaly ◈ クマリ ◈": [
@@ -1824,7 +1849,20 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13447810": "◈ Kumaly Full Pack ◈ クマリ ◈ 50%",
+    "13447913": "◈ Urban Trekker ◈ Kumaly ◈ クマリ ◈",
+    "13447914": "◈ Nomad Street ◈ Kumaly ◈ クマリ ◈",
+    "13447915": "◈ Lady Aurora ◈ Kumaly ◈ クマリ ◈",
+    "13447916": "◈ Yaneko Spark ◈ Kumaly ◈ クマリ ◈",
+    "13447917": "◈ Lust Nun ◈ Kumaly ◈ クマリ ◈"
   }
 }

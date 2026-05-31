@@ -383,6 +383,11 @@
         "date": "2026-05-28",
         "price": 180,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 180,
+        "is_sale": false
       }
     ],
     "商用利用版/Commercial use version-中身同じ": [
@@ -440,7 +445,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13212128": "個人利用版/Personal use version",
+    "13768456": "商用利用版/Commercial use version-中身同じ"
   }
 }

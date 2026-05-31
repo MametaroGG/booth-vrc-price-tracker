@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "エスプレッソ一杯(同じ内容)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13120282": "TFS for Plum",
+    "13120290": "エスプレッソ一杯(同じ内容)"
   }
 }

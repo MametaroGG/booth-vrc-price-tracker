@@ -307,6 +307,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "PNG pack": [
@@ -612,6 +617,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 750,
         "is_sale": false
       }
@@ -921,6 +931,11 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "Makeup PNG": [
@@ -1226,6 +1241,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 450,
         "is_sale": false
       }
@@ -1535,7 +1555,19 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13259968": "Full set",
+    "13263837": "PNG pack",
+    "13263838": "Makeup PSD",
+    "13263839": "Makeup PNG",
+    "13263840": "Eye PNG"
   }
 }

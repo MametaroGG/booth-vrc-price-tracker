@@ -452,6 +452,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "フルパック -fullpack-": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2880,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "ルルネ -rurune-": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -2637,6 +2657,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "マリシア -marycia-": [
@@ -3087,6 +3112,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -3541,6 +3571,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "ラムネ -ramune-": [
@@ -3993,6 +4028,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "エク,ミルフィ -eku,milfy-": [
@@ -4070,7 +4110,22 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13206601": "フルパック -fullpack-",
+    "13206613": "しなの -shinano-",
+    "13206614": "ルルネ -rurune-",
+    "13206615": "エク,ミルフィ -eku,milfy-",
+    "13206622": "ルミナ -lumina-",
+    "13206623": "マリシア -marycia-",
+    "13206624": "凪 -nagi-",
+    "13206625": "ラムネ -ramune-"
   }
 }

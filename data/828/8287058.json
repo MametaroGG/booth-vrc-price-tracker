@@ -72,6 +72,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "MAKE UP ♥": [
@@ -142,6 +147,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -216,7 +226,17 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13855026": "EYE ♥",
+    "13855123": "MAKE UP ♥",
+    "13855124": "FULL ♥"
   }
 }

@@ -82,6 +82,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Galaxy tail ✖ クラゲしっぽ セットパック": [
@@ -162,6 +167,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 850,
         "is_sale": false
       }
@@ -246,7 +256,17 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13714138": "Galaxy Tail material　通常版",
+    "13729412": "Galaxy tail ✖ クラゲしっぽ セットパック",
+    "13729413": "支援版 通常パックと内容物同じ"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 7000,
+        "is_sale": false
       }
     ],
     "pink": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "light_blue": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Purple": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -3199,7 +3229,21 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13189359": "all color",
+    "13189537": "pink",
+    "13189538": "Black_White",
+    "13189539": "light_blue",
+    "13189540": "light_pink",
+    "13189541": "Purple",
+    "13189542": "Red"
   }
 }

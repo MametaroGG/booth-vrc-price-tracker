@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "⯎ Make up SET ⯎": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13080238": "⯎ FULL (makeup set+Face Blendshapes) ⯎",
+    "13080262": "⯎ Make up SET ⯎",
+    "13080263": "⯎ Face Blendshapes ⯎"
   }
 }

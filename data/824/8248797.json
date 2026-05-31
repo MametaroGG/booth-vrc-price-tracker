@@ -107,6 +107,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Bella Vanish": [
@@ -212,6 +217,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -321,6 +331,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Full Pakage": [
@@ -428,7 +443,18 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13796633": "涼しい夜",
+    "13796707": "Bella Vanish",
+    "13796708": "Urban Denim",
+    "13796709": "Full Pakage"
   }
 }

@@ -17,6 +17,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "ラムネ/ramune": [
@@ -34,6 +39,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ミルティナ/milltina": [
@@ -51,6 +61,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "しなの/shinano": [
@@ -68,6 +83,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "海咲/Misaki": [
@@ -85,6 +105,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "マヌカ/manuka": [
@@ -102,6 +127,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ルミナ/lumina": [
@@ -119,6 +149,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ルルネ/rurune": [
@@ -136,6 +171,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "エク/Eku": [
@@ -153,6 +193,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "しお/sio": [
@@ -170,6 +215,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "イチゴ/ichigo": [
@@ -187,6 +237,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "愛莉/airi": [
@@ -204,6 +259,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "シフォン/chiffon": [
@@ -221,7 +281,27 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14006882": "フルセット/full set",
+    "14007316": "ラムネ/ramune",
+    "14007317": "ミルティナ/milltina",
+    "14007318": "しなの/shinano",
+    "14007319": "海咲/Misaki",
+    "14007320": "マヌカ/manuka",
+    "14007321": "ルミナ/lumina",
+    "14007322": "ルルネ/rurune",
+    "14007323": "エク/Eku",
+    "14007324": "しお/sio",
+    "14007325": "イチゴ/ichigo",
+    "14007326": "愛莉/airi",
+    "14007327": "シフォン/chiffon"
   }
 }

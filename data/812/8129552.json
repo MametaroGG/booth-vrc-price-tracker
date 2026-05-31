@@ -152,6 +152,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Shuan": [
@@ -302,6 +307,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 720,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 720,
         "is_sale": false
       }
@@ -456,6 +466,11 @@
         "date": "2026-05-28",
         "price": 720,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 720,
+        "is_sale": false
       }
     ],
     "Lasyusha": [
@@ -606,6 +621,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 720,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 720,
         "is_sale": false
       }
@@ -760,6 +780,11 @@
         "date": "2026-05-28",
         "price": 720,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 720,
+        "is_sale": false
       }
     ],
     "Marycia": [
@@ -912,6 +937,11 @@
         "date": "2026-05-28",
         "price": 720,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 720,
+        "is_sale": false
       }
     ],
     "Mamehinata": [
@@ -1052,6 +1082,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 720,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 720,
         "is_sale": false
       }
@@ -1196,6 +1231,11 @@
         "date": "2026-05-28",
         "price": 720,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 720,
+        "is_sale": false
       }
     ],
     "Marubody": [
@@ -1333,7 +1373,23 @@
         "date": "2026-05-28",
         "price": 720,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 720,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13607058": "Fullset",
+    "13651707": "Shuan",
+    "13651708": "Manuka",
+    "13655159": "Lasyusha",
+    "13677903": "Milltina",
+    "13692360": "Marycia",
+    "13707212": "Mamehinata",
+    "13713563": "LUMINA",
+    "13719665": "Marubody"
   }
 }

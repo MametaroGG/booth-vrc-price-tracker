@@ -167,6 +167,11 @@
         "date": "2026-05-28",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "Mobile版 (VRChat Android / Quest )": [
@@ -332,6 +337,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3500,
         "is_sale": false
       }
@@ -501,6 +511,11 @@
         "date": "2026-05-28",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6000,
+        "is_sale": false
       }
     ],
     "アバターアップロード用サムネイル1枚（boothのものと同じです。ご希望の方）": [
@@ -668,7 +683,17 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13598045": "PC版",
+    "13598046": "Mobile版 (VRChat Android / Quest )",
+    "13598047": "PC/Mobile版 同封"
   }
 }

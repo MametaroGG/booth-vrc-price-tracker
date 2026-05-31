@@ -102,6 +102,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "おはなさん": [
@@ -202,6 +207,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -306,6 +316,11 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "くまさん": [
@@ -406,6 +421,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 0,
         "is_sale": false
       }
@@ -510,7 +530,17 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13765542": "フルセット",
+    "13774535": "おはなさん",
+    "13774536": "ちょうちょさん"
   }
 }

@@ -519,6 +519,11 @@
         "date": "2026-05-28",
         "price": 4000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": true
       }
     ],
     "◈ Urban Trekker ◈ Ramune ◈ ラムネ ◈": [
@@ -964,6 +969,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": true
       }
@@ -1413,6 +1423,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": true
       }
     ],
     "◈ Lust Nun ◈ Ramune ◈ ラムネ ◈": [
@@ -1858,6 +1873,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": true
       }
@@ -2307,6 +2327,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": true
       }
     ],
     "◈ Yaneko Spark ◈ Ramune ◈ ラムネ ◈": [
@@ -2754,7 +2779,20 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13142617": "◈ Ramune  Full Pack ◈ ラムネ ◈ 50%",
+    "13142727": "◈ Lust Nun ◈ Ramune ◈ ラムネ ◈",
+    "13142728": "◈ Lady Aurora ◈ Ramune ◈ ラムネ ◈",
+    "13142729": "◈ Nomad Street ◈ Ramune ◈ ラムネ ◈",
+    "13142730": "◈ Yaneko Spark ◈ Ramune ◈ ラムネ ◈",
+    "13142731": "◈ Urban Trekker ◈ Ramune ◈ ラムネ ◈"
   }
 }

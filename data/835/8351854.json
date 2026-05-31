@@ -37,6 +37,11 @@
         "date": "2026-05-28",
         "price": 3280,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3280,
+        "is_sale": false
       }
     ],
     "1. 'Lazy Cloud'": [
@@ -72,6 +77,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -111,6 +121,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "3. 'RUDIS STREET'": [
@@ -146,6 +161,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -185,6 +205,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "5. 'Lenis_Fortis'": [
@@ -220,6 +245,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -259,6 +289,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "7. 'Consolatoria'": [
@@ -296,7 +331,22 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13953057": "Full Pack (1~7)",
+    "13954327": "1. 'Lazy Cloud'",
+    "13954328": "2. 'PROJECT_VERNA'",
+    "13954329": "3. 'RUDIS STREET'",
+    "13954330": "4. 'Silens Maga'",
+    "13954331": "5. 'Lenis_Fortis'",
+    "13954332": "6. 'Winter Sweater In House'",
+    "13954333": "7. 'Consolatoria'"
   }
 }

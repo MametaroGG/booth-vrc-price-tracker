@@ -187,6 +187,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "ミルフィDarkGirly makeup　only": [
@@ -372,6 +377,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -561,6 +571,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ミルフィDarkGirly eye": [
@@ -748,7 +763,18 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13624752": "Dark girly makeup+傷texture",
+    "13626163": "ミルフィDarkGirly makeup　only",
+    "13626164": "ミルフィDarkGirly 傷",
+    "13626165": "ミルフィDarkGirly eye"
   }
 }

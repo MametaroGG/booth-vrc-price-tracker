@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Muffler_NY（応援版）": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12904701": "Muffler_NY（通常版）",
+    "12949994": "Muffler_NY（応援版）"
   }
 }

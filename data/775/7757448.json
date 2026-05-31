@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "【VRCHAT】商用利用版 commercial use Ver": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "【VRM】商用利用版 commercial use Ver": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12995490": "【VRCHAT】通常版 regular Ver",
+    "12995774": "【VRCHAT】商用利用版 commercial use Ver",
+    "12996748": "【VRM】通常版 regular Ver",
+    "12996749": "【VRM】商用利用版 commercial use Ver"
   }
 }

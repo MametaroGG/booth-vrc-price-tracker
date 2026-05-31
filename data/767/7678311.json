@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "IvorySnapskin-material＋texture": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12860731": "IvorySnapskin-material",
+    "12860928": "IvorySnapskin-material＋texture",
+    "12860929": "ねこちゃんの餌代(IvorySnapskin-material＋textureと変わりません)"
   }
 }

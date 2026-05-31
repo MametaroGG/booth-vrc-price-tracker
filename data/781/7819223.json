@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "ゾメちゃんAvzomend": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Mao真央": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "雫峰 Shizune": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13097110": "ALL",
+    "13097189": "ゾメちゃんAvzomend",
+    "13097190": "Alué（+head)",
+    "13097191": "Mao真央",
+    "13097192": "Sio  しお",
+    "13133745": "雫峰 Shizune"
   }
 }

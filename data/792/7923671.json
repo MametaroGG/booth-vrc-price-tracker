@@ -407,6 +407,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "斑霞 Hanka": [
@@ -812,6 +817,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1221,6 +1231,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "テッキー（珍飯亭共通素体）Techie": [
@@ -1626,6 +1641,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -2035,6 +2055,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "彼方 Kanata": [
@@ -2442,7 +2467,20 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13267737": "フルパック FullPack",
+    "13267829": "斑霞 Hanka",
+    "13267830": "狛乃 Komano",
+    "13267831": "テッキー（珍飯亭共通素体）Techie",
+    "13267832": "アルエ（+Head）Alue",
+    "13267833": "彼方 Kanata"
   }
 }

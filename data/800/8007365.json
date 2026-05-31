@@ -327,6 +327,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ヘイロー＆リングのみ -halo & ring-": [
@@ -652,6 +657,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -981,7 +991,17 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13403849": "フルパック -full pack-",
+    "13403868": "ヘイロー＆リングのみ -halo & ring-",
+    "13403869": "アクセサリーのみ -accessory only-"
   }
 }

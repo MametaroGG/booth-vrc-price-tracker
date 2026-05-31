@@ -399,6 +399,11 @@
         "date": "2026-05-28",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "Nemo対応": [
@@ -459,6 +464,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 680,
         "is_sale": false
       }
@@ -523,7 +533,17 @@
         "date": "2026-05-28",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 680,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13188516": "Maon対応",
+    "13881806": "Nemo対応",
+    "13881807": "Kipfel対応"
   }
 }

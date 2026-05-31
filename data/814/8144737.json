@@ -174,6 +174,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "For LUMINA -ルミナ-": [
@@ -284,6 +289,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -398,6 +408,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "For Shinano -しなの-": [
@@ -508,6 +523,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -622,6 +642,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "For Airi -愛莉-": [
@@ -732,6 +757,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -846,6 +876,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "For Selestia -セレスティア-": [
@@ -958,6 +993,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "フルパック": [
@@ -1010,7 +1050,23 @@
         "date": "2026-05-28",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13634018": "フルパック",
+    "13725122": "For Shinra -森羅-",
+    "13725123": "For LUMINA -ルミナ-",
+    "13725124": "For Milltina -ミルティナ-",
+    "13725125": "For Shinano -しなの-",
+    "13725126": "For Lasyusha -ラシューシャ-",
+    "13725127": "For Airi -愛莉-",
+    "13725128": "For Manuka -マヌカ-",
+    "13728836": "For Selestia -セレスティア-"
   }
 }

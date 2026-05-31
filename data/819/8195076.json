@@ -137,6 +137,11 @@
         "date": "2026-05-28",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "Lapwing": [
@@ -272,6 +277,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -411,6 +421,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "翠羽": [
@@ -546,6 +561,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -685,6 +705,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "しなの": [
@@ -750,6 +775,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -819,7 +849,21 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13719063": "Full Set",
+    "13719136": "Lapwing",
+    "13719137": "mumus",
+    "13719138": "翠羽",
+    "13719139": "+Head",
+    "13869434": "しなの",
+    "13869435": "Marycia"
   }
 }

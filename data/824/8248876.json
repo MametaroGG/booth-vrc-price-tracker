@@ -107,6 +107,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Nochica": [
@@ -212,6 +217,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -321,6 +331,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Chocolat": [
@@ -426,6 +441,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -535,6 +555,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "MAYO": [
@@ -640,6 +665,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -749,6 +779,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "7_Avatar": [
@@ -856,6 +891,11 @@
         "date": "2026-05-28",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Misaki": [
@@ -893,7 +933,23 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13796786": "Kipfel",
+    "13796937": "Nochica",
+    "13796938": "Fyuett",
+    "13796939": "Chocolat",
+    "13796940": "LUMINA",
+    "13796941": "MAYO",
+    "13796942": "Milfy",
+    "13796943": "7_Avatar",
+    "13967105": "Misaki"
   }
 }

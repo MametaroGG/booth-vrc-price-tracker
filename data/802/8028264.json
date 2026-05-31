@@ -302,6 +302,11 @@
         "date": "2026-05-28",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Mens": [
@@ -602,6 +607,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -906,7 +916,17 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13439185": "FullSet",
+    "13439270": "Mens",
+    "13439271": "Ladies"
   }
 }

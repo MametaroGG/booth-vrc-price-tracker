@@ -307,6 +307,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "たばこ代（商品は同じです）": [
@@ -614,7 +619,16 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13432699": "Velvet Nightmare",
+    "13439036": "たばこ代（商品は同じです）"
   }
 }

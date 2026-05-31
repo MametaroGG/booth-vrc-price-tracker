@@ -262,6 +262,11 @@
         "date": "2026-05-28",
         "price": 9000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 9000,
+        "is_sale": false
       }
     ],
     "全色　all color": [
@@ -522,6 +527,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 7000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 7000,
         "is_sale": false
       }
@@ -786,6 +796,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "青Blue": [
@@ -1046,6 +1061,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2500,
         "is_sale": false
       }
@@ -1310,6 +1330,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "紫Purple": [
@@ -1570,6 +1595,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2500,
         "is_sale": false
       }
@@ -1834,6 +1864,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "茶Brown": [
@@ -2096,7 +2131,22 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13494577": "全色コンプリートセット　Complete Set of All Colors",
+    "13494958": "全色　all color",
+    "13494959": "白White",
+    "13494960": "青Blue",
+    "13494961": "緑Green",
+    "13494962": "紫Purple",
+    "13494963": "赤Red",
+    "13494964": "茶Brown"
   }
 }

@@ -57,6 +57,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Shinano_SharpEye+PSD+α": [
@@ -114,7 +119,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13908845": "Shinano_SharpEye",
+    "13908865": "Shinano_SharpEye+PSD+α"
   }
 }

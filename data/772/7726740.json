@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Full Pack: ALL INCLUDED!": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Manuka Compatible": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Masscat Compatible": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12940696": "Shinano Compatible",
+    "12940742": "Full Pack: ALL INCLUDED!",
+    "12940743": "Milltina Compatible",
+    "12940744": "Manuka Compatible",
+    "12940745": "Lapwing Compatible",
+    "12940746": "Masscat Compatible"
   }
 }

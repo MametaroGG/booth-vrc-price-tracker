@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6000,
+        "is_sale": false
       }
     ],
     "VRChat Unity Package file": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Unity Game Package": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2500,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13121824": "All Variants [FBX + Unity + VRChat + Warudo File]",
+    "13121868": "VRChat Unity Package file",
+    "13121869": "Warudo Avatar file + Scene file",
+    "13121870": "Unity Game Package",
+    "13121871": "FBX file"
   }
 }

@@ -17,6 +17,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Full set": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": true
       }
@@ -51,6 +61,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "eye texture": [
@@ -68,7 +83,18 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "14026591": "【支援版※通常版と同じ内容】Full set",
+    "14026658": "Full set",
+    "14026659": "make texture",
+    "14026660": "eye texture"
   }
 }

@@ -282,6 +282,11 @@
         "date": "2026-05-28",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "Anri": [
@@ -562,6 +567,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 950,
         "is_sale": false
       }
@@ -846,6 +856,11 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "Komano": [
@@ -1126,6 +1141,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 950,
         "is_sale": false
       }
@@ -1410,6 +1430,11 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "Kipfel": [
@@ -1690,6 +1715,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 950,
         "is_sale": false
       }
@@ -1974,6 +2004,11 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "Sio": [
@@ -2254,6 +2289,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 950,
         "is_sale": false
       }
@@ -2538,6 +2578,11 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -2820,7 +2865,24 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13288034": "All",
+    "13288841": "Anri",
+    "13288842": "Minase",
+    "13288843": "Komano",
+    "13288844": "Mamehinata",
+    "13288845": "Kipfel",
+    "13288846": "Shinra",
+    "13288847": "Sio",
+    "13288848": "Lime",
+    "13288849": "Manuka"
   }
 }

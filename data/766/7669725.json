@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1480,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Chiffon": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -3199,7 +3229,21 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12846036": "Full set",
+    "12865400": "Shinano",
+    "12865401": "Milltina",
+    "12865402": "Chiffon",
+    "12865403": "Airi",
+    "12865404": "Manuka",
+    "12865405": "Lumina"
   }
 }

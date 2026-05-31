@@ -327,6 +327,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Core Edition（マテリアル関係のみ）": [
@@ -654,7 +659,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13180095": "Ultimate Edition（脚部パーツ付き）",
+    "13180110": "Core Edition（マテリアル関係のみ）"
   }
 }

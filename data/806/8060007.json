@@ -272,6 +272,11 @@
         "date": "2026-05-28",
         "price": 788,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 788,
+        "is_sale": false
       }
     ],
     "VRChat Quest Only - VRChat Quest専用": [
@@ -542,6 +547,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3152,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3152,
         "is_sale": false
       }
@@ -816,6 +826,11 @@
         "date": "2026-05-28",
         "price": 4728,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4728,
+        "is_sale": false
       }
     ],
     "All of the Above - すべて含む": [
@@ -1088,7 +1103,18 @@
         "date": "2026-05-28",
         "price": 5517,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5517,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13493463": "Blender IK Rig - Blender IKリグ",
+    "13493630": "VRChat Quest Only - VRChat Quest専用",
+    "13493631": "VRChat PC Only - VRChat PC専用",
+    "13493632": "All of the Above - すべて含む"
   }
 }

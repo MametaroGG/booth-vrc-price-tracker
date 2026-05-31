@@ -217,6 +217,11 @@
         "date": "2026-05-28",
         "price": 3400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3400,
+        "is_sale": false
       }
     ],
     "Manuka / マヌカ": [
@@ -432,6 +437,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -651,6 +661,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Shinra / 森羅": [
@@ -868,7 +883,18 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13538323": "Full package",
+    "13538338": "Manuka / マヌカ",
+    "13538339": "Shinano / しなの",
+    "13538340": "Shinra / 森羅"
   }
 }

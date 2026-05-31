@@ -122,6 +122,11 @@
         "date": "2026-05-28",
         "price": 420,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 420,
+        "is_sale": false
       }
     ],
     "[NEON_FOX_HEAD] 1": [
@@ -242,6 +247,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 120,
         "is_sale": false
       }
@@ -366,6 +376,11 @@
         "date": "2026-05-28",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "[NEON_FOX_JUMP] 3": [
@@ -486,6 +501,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 120,
         "is_sale": false
       }
@@ -610,7 +630,19 @@
         "date": "2026-05-28",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 120,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13759009": "[NEON_FOX_SIGNS] ALL",
+    "13759030": "[NEON_FOX_HEAD] 1",
+    "13759031": "[NEON_FOX_SIT] 2",
+    "13759032": "[NEON_FOX_JUMP] 3",
+    "13759033": "[NEON_FOX_SLEEP] 4"
   }
 }

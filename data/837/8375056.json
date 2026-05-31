@@ -17,6 +17,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "BonusEdition(おまけ付き)": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": true
       }
@@ -51,7 +61,17 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13989858": "StandardEdition",
+    "13989865": "BonusEdition(おまけ付き)",
+    "13989866": "Donate"
   }
 }

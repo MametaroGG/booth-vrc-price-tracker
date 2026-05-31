@@ -22,6 +22,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "black": [
@@ -42,6 +47,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -66,6 +76,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "white / Corporate price": [
@@ -86,6 +101,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -110,6 +130,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "white＋black 2way/ Corporate price": [
@@ -132,7 +157,20 @@
         "date": "2026-05-28",
         "price": 4200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14004503": "white",
+    "14004600": "black",
+    "14004601": "white＋black 2way",
+    "14004602": "white / Corporate price",
+    "14004603": "black / Corporate price",
+    "14004604": "white＋black 2way/ Corporate price"
   }
 }

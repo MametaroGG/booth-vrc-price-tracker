@@ -287,6 +287,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "PeriDoll支援版（アイ＆メイク＋ブレンドシェイプ）": [
@@ -574,7 +579,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13472217": "PeriDoll通常版（アイ＆メイク）",
+    "13472431": "PeriDoll支援版（アイ＆メイク＋ブレンドシェイプ）"
   }
 }

@@ -387,6 +387,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "[Makeup_only]": [
@@ -774,7 +779,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13295418": "[Full Pack (Makeup+Eyetexture)]",
+    "13295497": "[Makeup_only]"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Kilsike Set": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Kilsike MakeUpTexture 単品": [
@@ -1828,6 +1843,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Deltaflair Set": [
@@ -2248,6 +2268,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2672,6 +2697,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Deltaflair MakeUpTexture 単品": [
@@ -3092,6 +3122,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -3516,6 +3551,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Lethalfreet EyeTexture 単品": [
@@ -3936,6 +3976,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -4360,7 +4405,24 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12903752": "Full Set",
+    "12904291": "Kilsike Set",
+    "12904292": "Kilsike EyeTexture 単品",
+    "12904293": "Kilsike MakeUpTexture 単品",
+    "13252362": "Deltaflair Set",
+    "13252363": "Deltaflair EyeTexture 単品",
+    "13252364": "Deltaflair MakeUpTexture 単品",
+    "13252365": "Lethalfreet Set",
+    "13252366": "Lethalfreet EyeTexture 単品",
+    "13252367": "Lethalfreet MakeUpTexture 単品"
   }
 }

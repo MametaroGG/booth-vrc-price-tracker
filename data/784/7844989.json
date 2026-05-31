@@ -447,6 +447,11 @@
         "date": "2026-05-28",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "Kittysan 2.0 VRCFaceTracking": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 5000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 5000,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-28",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13139436": "Kittysan 2.0 Basic",
+    "13144594": "Kittysan 2.0 VRCFaceTracking",
+    "13144595": "Kittysan 2.0 Full"
   }
 }

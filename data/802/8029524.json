@@ -307,6 +307,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "メイク（make） unitypackage": [
@@ -612,6 +617,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -921,6 +931,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Make PNG(Texture only)": [
@@ -1226,6 +1241,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1535,7 +1555,19 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13441280": "フルパック＋PSDデータ",
+    "13441334": "メイク（make） unitypackage",
+    "13441335": "機械天瞳-KIKAITENDOU- 　unitypackage",
+    "13441336": "Make PNG(Texture only)",
+    "13441337": "機械天瞳-KIKAITENDOU-  PNG(Texture only)"
   }
 }

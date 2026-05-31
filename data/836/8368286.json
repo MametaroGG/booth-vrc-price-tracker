@@ -32,6 +32,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "make up + body + eye（発光テクスチャ付き）": [
@@ -62,6 +67,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -96,7 +106,17 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13979683": "Fullset",
+    "13979997": "make up + body + eye（発光テクスチャ付き）",
+    "13979998": "make up + body"
   }
 }

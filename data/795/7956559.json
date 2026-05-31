@@ -358,6 +358,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Fullpack": [
@@ -478,6 +483,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": true
       }
@@ -602,6 +612,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Cazalis only": [
@@ -689,6 +704,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Lunary only": [
@@ -706,7 +726,19 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13325279": "Fullpack",
+    "13729284": "Wendy only",
+    "13754921": "Fyuett only",
+    "13831063": "Cazalis only",
+    "14022354": "Lunary only"
   }
 }

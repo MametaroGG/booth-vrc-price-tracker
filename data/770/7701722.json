@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2980,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2980,
+        "is_sale": false
       }
     ],
     "桔梗 - Kikyo -": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "マヌカ - Manuka -": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12900379": "フルパック - FullPack -",
+    "12900880": "桔梗 - Kikyo -",
+    "12900881": "マヌカ - Manuka -",
+    "12900882": "斑霞 - Hanka -",
+    "13012688": "しなの - Shinano -"
   }
 }

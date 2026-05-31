@@ -278,6 +278,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "開発お助け版(機能は同じです)": [
@@ -350,7 +355,16 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13655293": "製作者向けフルパッケージ版 Full feature for creator セール中 SALE",
+    "13684696": "開発お助け版(機能は同じです)"
   }
 }

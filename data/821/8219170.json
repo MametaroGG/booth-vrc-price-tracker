@@ -153,6 +153,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "【Breeze+Pong♥】 SET": [
@@ -268,6 +273,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -387,6 +397,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "【Breeze】Only": [
@@ -502,6 +517,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -621,7 +641,19 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13753321": "FULL PACK 【Breeze + Dazzling + Pong♥】",
+    "13753459": "【Breeze+Pong♥】 SET",
+    "13753460": "【Dazzling+Pong♥】 SET",
+    "13768511": "【Breeze】Only",
+    "13768512": "【Dazzling】Only"
   }
 }

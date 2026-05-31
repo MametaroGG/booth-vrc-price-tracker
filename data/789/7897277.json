@@ -237,6 +237,11 @@
         "date": "2026-05-28",
         "price": 2950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2950,
+        "is_sale": false
       }
     ],
     "Airi": [
@@ -472,6 +477,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1550,
         "is_sale": false
       }
@@ -711,6 +721,11 @@
         "date": "2026-05-28",
         "price": 1550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1550,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -946,6 +961,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1550,
         "is_sale": false
       }
@@ -1185,6 +1205,11 @@
         "date": "2026-05-28",
         "price": 1550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1550,
+        "is_sale": false
       }
     ],
     "Rurune": [
@@ -1420,6 +1445,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1550,
         "is_sale": false
       }
@@ -1659,6 +1689,11 @@
         "date": "2026-05-28",
         "price": 1550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1550,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -1894,6 +1929,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1550,
         "is_sale": false
       }
@@ -2133,6 +2173,11 @@
         "date": "2026-05-28",
         "price": 1550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1550,
+        "is_sale": false
       }
     ],
     "Sio": [
@@ -2370,7 +2415,24 @@
         "date": "2026-05-28",
         "price": 1550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13223131": "Fullpack",
+    "13224672": "Airi",
+    "13224673": "Shinra",
+    "13224674": "Manuka",
+    "13224675": "ichigo",
+    "13224676": "Rurune",
+    "13224677": "Lumina",
+    "13224678": "Shinano",
+    "13224679": "Milltina",
+    "13224680": "Sio"
   }
 }

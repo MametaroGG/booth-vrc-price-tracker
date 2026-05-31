@@ -7,6 +7,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4200,
+        "is_sale": true
       }
     ],
     "ラムネ / Ramune": [
@@ -14,7 +19,16 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "14056550": "フルセット(後日追加対応します)",
+    "14056875": "ラムネ / Ramune"
   }
 }

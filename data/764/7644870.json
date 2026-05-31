@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "KernelSight 開発版 (将来的に追加される予定です)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-28",
         "price": 9999999,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 9999999,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12804320": "KernelSight 通常版",
+    "12857853": "KernelSight 開発版 (将来的に追加される予定です)"
   }
 }

@@ -92,6 +92,11 @@
         "date": "2026-05-28",
         "price": 416,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 416,
+        "is_sale": false
       }
     ],
     "ApplePrincess_BlackDiamond_Crown": [
@@ -182,6 +187,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 112,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 112,
         "is_sale": false
       }
@@ -276,6 +286,11 @@
         "date": "2026-05-28",
         "price": 112,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 112,
+        "is_sale": false
       }
     ],
     "ApplePrincess_PinkLady_Crown": [
@@ -366,6 +381,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 112,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 112,
         "is_sale": false
       }
@@ -460,6 +480,11 @@
         "date": "2026-05-28",
         "price": 112,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 112,
+        "is_sale": false
       }
     ],
     "ApplePrincess_Russet_Crown": [
@@ -552,7 +577,20 @@
         "date": "2026-05-28",
         "price": 112,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 112,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13805023": "ApplePrincess_Crowns",
+    "13805739": "ApplePrincess_BlackDiamond_Crown",
+    "13805740": "ApplePrincess_GrannySmith_Crown",
+    "13805741": "ApplePrincess_PinkLady_Crown",
+    "13805742": "ApplePrincess_RedDelicious_Crown",
+    "13805743": "ApplePrincess_Russet_Crown"
   }
 }

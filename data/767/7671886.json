@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1555,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1555,
+        "is_sale": false
       }
     ],
     "A Tip c: ((same files))": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 2222,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2222,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12850054": "DEFAULT",
+    "13003276": "A Tip c: ((same files))"
   }
 }

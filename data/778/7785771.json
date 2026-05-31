@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1380,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1380,
+        "is_sale": false
       }
     ],
     "A_Fireplace": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "C_Table&Rug": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13039980": "Fireplace Living Room All Set",
+    "13040427": "A_Fireplace",
+    "13040428": "B_Seating",
+    "13040429": "C_Table&Rug"
   }
 }

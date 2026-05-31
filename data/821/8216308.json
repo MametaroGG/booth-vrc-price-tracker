@@ -122,6 +122,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "支援版(内容は上と同じ)": [
@@ -244,7 +249,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13749008": "CrystalPendant2.0",
+    "13757001": "支援版(内容は上と同じ)"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "LUMINA": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 880,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "SIO": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 880,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "CHOCOLAT": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 880,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-28",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "LASYUSHA": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 880,
         "is_sale": false
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-28",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "MILLTINA": [
@@ -4568,6 +4613,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 880,
         "is_sale": false
       }
@@ -5027,7 +5077,25 @@
         "date": "2026-05-28",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 880,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13016049": "ALL",
+    "13018436": "LUMINA",
+    "13018437": "SHINANO",
+    "13018438": "SIO",
+    "13018439": "MANUKA",
+    "13018440": "CHOCOLAT",
+    "13018441": "MOE",
+    "13031765": "LASYUSHA",
+    "13031766": "AIRI",
+    "13031767": "MILLTINA",
+    "13031768": "KIPFEL"
   }
 }

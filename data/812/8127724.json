@@ -197,6 +197,11 @@
         "date": "2026-05-28",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "Marycia版（衣装のみ）": [
@@ -392,6 +397,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2700,
         "is_sale": false
       }
@@ -591,6 +601,11 @@
         "date": "2026-05-28",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "lapwing版（衣装のみ）": [
@@ -786,6 +801,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2700,
         "is_sale": false
       }
@@ -985,6 +1005,11 @@
         "date": "2026-05-28",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "simulacrum、air、nial版（衣装のみ）": [
@@ -1180,6 +1205,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2700,
         "is_sale": false
       }
@@ -1379,7 +1409,21 @@
         "date": "2026-05-28",
         "price": 4800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13603706": "Marycia版（衣装のみ）",
+    "13604180": "Marycia版（ヘッドセット付属）",
+    "13604181": "lapwing版（衣装のみ）",
+    "13604182": "lapwing版（ヘッドセット付属）",
+    "13604183": "simulacrum、air、nial版（衣装のみ）",
+    "13604184": "simulacrum、air、nial版（ヘッドセット付属）",
+    "13604239": "ALL（ヘッドセット含む）"
   }
 }

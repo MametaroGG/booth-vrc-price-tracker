@@ -127,6 +127,11 @@
         "date": "2026-05-28",
         "price": 420,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 420,
+        "is_sale": false
       }
     ],
     "[NEON_CAT_FACE] 1": [
@@ -252,6 +257,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 120,
         "is_sale": false
       }
@@ -381,6 +391,11 @@
         "date": "2026-05-28",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "[NEON_CAT_WALK] 3": [
@@ -506,6 +521,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 120,
         "is_sale": false
       }
@@ -635,6 +655,11 @@
         "date": "2026-05-28",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "[NEON_CAT_SCARED] 5": [
@@ -762,7 +787,20 @@
         "date": "2026-05-28",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 120,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13752405": "[NEON_CAT_SIGNS] ALL",
+    "13752451": "[NEON_CAT_FACE] 1",
+    "13752452": "[NEON_CAT_STRETCH] 2",
+    "13752453": "[NEON_CAT_WALK] 3",
+    "13752454": "[NEON_CAT_SIT] 4",
+    "13752455": "[NEON_CAT_SCARED] 5"
   }
 }

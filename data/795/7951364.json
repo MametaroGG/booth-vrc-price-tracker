@@ -372,6 +372,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "sea bone eye": [
@@ -742,6 +747,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 120,
         "is_sale": false
       }
@@ -1116,6 +1126,11 @@
         "date": "2026-05-28",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "kurage eye": [
@@ -1486,6 +1501,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 120,
         "is_sale": false
       }
@@ -1860,6 +1880,11 @@
         "date": "2026-05-28",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "pop bear eye": [
@@ -2232,7 +2257,20 @@
         "date": "2026-05-28",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 120,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13316215": "プラム対応５種類",
+    "13316237": "sea bone eye",
+    "13316728": "soft paw eye",
+    "13316929": "kurage eye",
+    "13318087": "sugar heart eye",
+    "13320547": "pop bear eye"
   }
 }

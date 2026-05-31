@@ -514,6 +514,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "【曲の追加、リクエストしたい人用】Flute 3D model": [
@@ -966,6 +971,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "【セールする時用】Flute 3D model": [
@@ -1358,7 +1368,17 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13205133": "【セールする時用】Flute 3D model",
+    "13205949": "【通常版】Flute 3D model",
+    "13205950": "【曲の追加、リクエストしたい人用】Flute 3D model"
   }
 }

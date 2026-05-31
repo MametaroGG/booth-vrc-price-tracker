@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": true
       }
     ],
     "VA09-HEAD": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "VA09-ARM": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": true
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "VA09-WEAPONS": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13134037": "フルセット",
+    "13134068": "VA09-HEAD",
+    "13134069": "VA09-CORE",
+    "13134070": "VA09-ARM",
+    "13134071": "VA09-LEG",
+    "13134072": "VA09-WEAPONS"
   }
 }

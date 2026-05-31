@@ -162,6 +162,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "୨୧ MAKE UP ୨୧": [
@@ -322,6 +327,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -486,7 +496,17 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13674215": "♡MAKE UP & EYE FULLSET♡",
+    "13674772": "୨୧ MAKE UP ୨୧",
+    "13674773": "୨୧ EYE ୨୧"
   }
 }

@@ -32,6 +32,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Hakslea【ハクスレア】": [
@@ -62,6 +67,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -96,6 +106,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Aries【アリエスくん】": [
@@ -128,6 +143,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Andrew【アンドリューくん】": [
@@ -142,7 +162,19 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13983709": "フルセット",
+    "13983973": "Hakslea【ハクスレア】",
+    "13983974": "Haolan【ハオランくん】",
+    "13983975": "Aries【アリエスくん】",
+    "14047089": "Andrew【アンドリューくん】＋Head"
   }
 }

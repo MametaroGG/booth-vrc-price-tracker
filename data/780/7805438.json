@@ -442,6 +442,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "支援版(目のテクスチャと髪とShadeCat対応版付き)": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -1326,7 +1336,17 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13073245": "通常版",
+    "13073472": "支援版(目のテクスチャと髪とShadeCat対応版付き)",
+    "13077050": "Shade Cat対応版"
   }
 }

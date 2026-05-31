@@ -12,6 +12,11 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3100,
+        "is_sale": false
       }
     ],
     "「ミルティナ」Milltina": [
@@ -23,6 +28,11 @@
       {
         "date": "2026-05-28",
         "price": 960,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
         "is_sale": false
       }
     ],
@@ -36,6 +46,11 @@
         "date": "2026-05-28",
         "price": 960,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "「クマリ」Kumaly": [
@@ -47,6 +62,11 @@
       {
         "date": "2026-05-28",
         "price": 960,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
         "is_sale": false
       }
     ],
@@ -60,6 +80,11 @@
         "date": "2026-05-28",
         "price": 960,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "「しなの」Shinano": [
@@ -71,6 +96,11 @@
       {
         "date": "2026-05-28",
         "price": 960,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
         "is_sale": false
       }
     ],
@@ -84,7 +114,21 @@
         "date": "2026-05-28",
         "price": 960,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14041451": "Full Package",
+    "14042007": "「ミルティナ」Milltina",
+    "14042008": "「ラムネ」 Ramune",
+    "14042009": "「クマリ」Kumaly",
+    "14042010": "「セレスティア」Selestia",
+    "14042011": "「しなの」Shinano",
+    "14042012": "「愛莉」Airi"
   }
 }

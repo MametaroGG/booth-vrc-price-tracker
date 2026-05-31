@@ -277,6 +277,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Texture Pack 2 and VFX": [
@@ -552,6 +557,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1700,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": true
       }
@@ -831,6 +841,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": true
       }
     ],
     "Complete Set ( Wings + Texture pack 2 with VFX +Headpiece) (Donation Version)": [
@@ -1108,7 +1123,18 @@
         "date": "2026-05-28",
         "price": 2300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13481627": "Basic Package",
+    "13485539": "Texture Pack 2 and VFX",
+    "13485540": "Complete Set ( Wings + Texture pack 2 with VFX +Headpiece)",
+    "13485541": "Complete Set ( Wings + Texture pack 2 with VFX +Headpiece) (Donation Version)"
   }
 }

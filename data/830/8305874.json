@@ -62,6 +62,11 @@
         "date": "2026-05-28",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5500,
+        "is_sale": true
       }
     ],
     "利用規約": [
@@ -124,7 +129,15 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13883819": "予約購入（500円OFF）"
   }
 }

@@ -201,6 +201,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "MDollnail SpringAuroraNail": [
@@ -371,6 +376,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -545,6 +555,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "MDollnail YozakuraNail": [
@@ -715,6 +730,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -889,6 +909,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "MDollnail + NailTexture FullSet": [
@@ -1039,6 +1064,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -1193,6 +1223,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "NailTexture SpringAuroraNail": [
@@ -1343,6 +1378,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -1497,6 +1537,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "NailTexture YozakuraNail": [
@@ -1647,6 +1692,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -1801,7 +1851,25 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13647880": "MDollnail + NailTexture FullSet",
+    "13658463": "MDollnail FullSet",
+    "13658464": "MDollnail SpringAuroraNail",
+    "13658465": "MDollnail SakuraVeilNail",
+    "13658466": "MDollnail YozakuraNail",
+    "13658467": "MDollnail FairyDropsNail",
+    "13689145": "NailTexture FullSet",
+    "13689146": "NailTexture SpringAuroraNail",
+    "13689147": "NailTexture SakuraVeilNail",
+    "13689148": "NailTexture YozakuraNail",
+    "13689149": "NailTexture FairyDropsNail"
   }
 }

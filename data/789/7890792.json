@@ -451,6 +451,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Standard": [
@@ -897,7 +902,16 @@
         "date": "2026-05-28",
         "price": 850,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13212708": "セール中 ˗ˏˋ 15％OFF ˎˊ˗",
+    "13239666": "˗ˏˋ Support Price ˎˊ˗"
   }
 }

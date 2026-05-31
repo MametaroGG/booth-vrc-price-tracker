@@ -397,6 +397,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "【ミルティナ/Milltina】": [
@@ -792,6 +797,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 990,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 990,
         "is_sale": false
       }
@@ -1191,6 +1201,11 @@
         "date": "2026-05-28",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 990,
+        "is_sale": false
       }
     ],
     "【 しなの/Shinano 】": [
@@ -1586,6 +1601,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 990,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 990,
         "is_sale": false
       }
@@ -1987,7 +2007,19 @@
         "date": "2026-05-28",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 990,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13266149": "Full Package",
+    "13266178": "【ミルティナ/Milltina】",
+    "13266179": "【愛莉/Airi】",
+    "13266180": "【 しなの/Shinano 】",
+    "13277383": "【クマリ/Kumaly】"
   }
 }

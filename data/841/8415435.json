@@ -7,11 +7,21 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": true
       }
     ],
     "通常版 (セール中)": [
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -21,7 +31,17 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "14052557": "支援版 (Donation)",
+    "14053510": "通常版 (セール中)",
+    "14053511": "Model Only (セール中)"
   }
 }

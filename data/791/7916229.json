@@ -407,6 +407,11 @@
         "date": "2026-05-28",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3800,
+        "is_sale": false
       }
     ],
     "α Pac(Small arms)": [
@@ -812,6 +817,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -1221,7 +1231,17 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13255378": "Full Pac",
+    "13255418": "α Pac(Small arms)",
+    "13255419": "β Pac(Large arms)"
   }
 }

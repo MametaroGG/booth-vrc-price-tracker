@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Throne of the Fallen tattoo normalmap付き": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Valhalla Tattoo normalmap付き": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Hell tattoo normalmap付き": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Heaven tattoo normalmap付き": [
@@ -3656,7 +3691,30 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "-fullset-": [
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12932668": "Throne of the Fallen tattoo",
+    "12932887": "Throne of the Fallen tattoo normalmap付き",
+    "12932888": "Valhalla Tattoo",
+    "12932889": "Valhalla Tattoo normalmap付き",
+    "12932890": "Hell tattoo",
+    "12932891": "Hell tattoo normalmap付き",
+    "12932892": "Heaven tattoo",
+    "12932893": "Heaven tattoo normalmap付き",
+    "14079345": "-fullset-"
   }
 }

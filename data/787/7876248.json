@@ -464,6 +464,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "ルパック - FULL PACK": [
@@ -916,7 +921,16 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13187392": "ルパック - FULL PACK",
+    "13187993": "ルパック - FULL PACK + TIP <3"
   }
 }

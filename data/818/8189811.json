@@ -137,6 +137,11 @@
         "date": "2026-05-28",
         "price": 1020,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1020,
+        "is_sale": false
       }
     ],
     "Eye Texture (PNG)": [
@@ -272,6 +277,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -411,7 +421,17 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13710815": "Full Set + Blendshape",
+    "13716135": "Eye Texture (PNG)",
+    "13716136": "Make Up (PSD+PNG)"
   }
 }

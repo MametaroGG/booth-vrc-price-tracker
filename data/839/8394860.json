@@ -17,6 +17,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "01. 舞夜 ver - Maya -": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -51,6 +61,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "03.愛莉 ver - Airi -": [
@@ -68,6 +83,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "04.セレスティア ver - Selestia -": [
@@ -78,6 +98,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -92,11 +117,21 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "06.サフィー ver - Sapphy -": [
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -106,6 +141,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "08.ルルネ ver - rurune -": [
@@ -113,7 +153,23 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14020865": "Full Pack",
+    "14021184": "01. 舞夜 ver - Maya -",
+    "14021185": "02.しなの ver - Shinano -",
+    "14026291": "03.愛莉 ver - Airi -",
+    "14032856": "04.セレスティア ver - Selestia -",
+    "14040865": "05.ミルティナ ver - Milltina -",
+    "14048929": "06.サフィー ver - Sapphy -",
+    "14056426": "07.ひきくまりのクマリ ver - Kumaly -",
+    "14063539": "08.ルルネ ver - rurune -"
   }
 }

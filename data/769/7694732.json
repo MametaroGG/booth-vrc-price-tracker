@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "rurune対応 ショートヘア": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "フォシュニア対応 ShortHair": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12888672": "3アバター対応ショートヘア",
+    "12888870": "rurune対応 ショートヘア",
+    "12888871": "Sio対応 ショートヘア",
+    "12888872": "フォシュニア対応 ShortHair"
   }
 }

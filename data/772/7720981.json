@@ -564,6 +564,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "追加衣装のみ": [
@@ -1021,6 +1026,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "【限定衣装付き】アバター+追加衣装セット　ポポちゃん-fuwari Popondetta": [
@@ -1373,7 +1383,17 @@
         "date": "2026-05-28",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12930414": "【アバターのみ】ポポちゃん-fuwari Popondetta",
+    "12930478": "【限定衣装付き】アバター+追加衣装セット　ポポちゃん-fuwari Popondetta",
+    "12930479": "追加衣装のみ"
   }
 }

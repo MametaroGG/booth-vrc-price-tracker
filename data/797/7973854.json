@@ -357,6 +357,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "🍫Chocolat🍫": [
@@ -712,6 +717,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 0,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 0,
         "is_sale": true
       }
@@ -1071,6 +1081,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "🍫Plum🍫": [
@@ -1426,6 +1441,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": true
       }
@@ -1785,6 +1805,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "🍫Mafuyu🍫": [
@@ -2140,6 +2165,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": true
       }
@@ -2499,6 +2529,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "🍫Anomea🍫": [
@@ -2854,6 +2889,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": true
       }
@@ -3213,7 +3253,22 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13352552": "🍫FullSet🍫",
+    "13353051": "🍫Chiffon🍫",
+    "13353052": "🍫Plum🍫",
+    "13353053": "🍫Shinano🍫",
+    "13353054": "🍫Mafuyu🍫",
+    "13353055": "🍫Milfy🍫",
+    "13353056": "🍫Anomea🍫",
+    "13353057": "🍫Clonka🍫"
   }
 }

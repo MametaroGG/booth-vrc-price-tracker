@@ -122,6 +122,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Starlit_Crescent_Halo-星月のヘイロー-": [
@@ -242,6 +247,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -366,6 +376,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Starlit_Crescent_Choker - 星月のチョーカー -": [
@@ -486,6 +501,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -610,6 +630,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Starlit Crescent Earrings - 星月の耳飾り -": [
@@ -732,7 +757,19 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13759155": "星月のアクセサリーFULLPACK",
+    "13759156": "Starlit_Crescent_Halo-星月のヘイロー-",
+    "13759157": "Starlit_Crescent_Choker - 星月のチョーカー -",
+    "13759158": "Starlit Crescent Rings - 星月の指輪-",
+    "13759159": "Starlit Crescent Earrings - 星月の耳飾り -"
   }
 }

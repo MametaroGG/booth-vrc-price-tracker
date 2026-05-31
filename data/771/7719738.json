@@ -62,6 +62,11 @@
         "date": "2026-05-28",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 7000,
+        "is_sale": false
       }
     ],
     "Twinklewish.vroid": [
@@ -124,7 +129,16 @@
         "date": "2026-05-28",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 7000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12928336": "Twinklewish.vrm",
+    "12928344": "Twinklewish.vroid"
   }
 }

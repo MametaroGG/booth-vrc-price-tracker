@@ -7,11 +7,21 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "海咲/Misaki": [
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "リンネ/Linne": [
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -35,11 +55,21 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "狛乃/Komano": [
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -49,6 +79,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "斑霞/Hanka": [
@@ -56,7 +91,38 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "フルパック": [
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "アルエ/Alue": [
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14061771": "ルミナ/LUMINA",
+    "14061834": "海咲/Misaki",
+    "14061835": "ミルティナ/Milltina",
+    "14061836": "リンネ/Linne",
+    "14061837": "森羅/Shinra",
+    "14061838": "狛乃/Komano",
+    "14061839": "水瀬/Minase",
+    "14061947": "斑霞/Hanka",
+    "14068785": "フルパック",
+    "14070120": "アルエ/Alue"
   }
 }

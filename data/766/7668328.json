@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "Pyrielle.vroid": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "Glacielle.vroid": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12843704": "Pyrielle.vrm",
+    "12843746": "Pyrielle.vroid",
+    "12843747": "Glacielle.vrm",
+    "12843748": "Glacielle.vroid"
   }
 }

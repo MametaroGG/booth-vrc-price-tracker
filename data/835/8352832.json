@@ -42,6 +42,11 @@
         "date": "2026-05-28",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2300,
+        "is_sale": false
       }
     ],
     "VARAYA/SUISOU + AQUARIA Addon": [
@@ -82,6 +87,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -126,7 +136,17 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13954567": "VARAYA/SUISOU",
+    "13955363": "VARAYA/SUISOU + AQUARIA Addon",
+    "13955364": "VARAYA/AQUARIA Addon"
   }
 }

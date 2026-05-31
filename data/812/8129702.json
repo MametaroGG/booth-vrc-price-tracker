@@ -198,6 +198,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "✧︎makeup only": [
@@ -363,6 +368,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -532,6 +542,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "【1周年SALE】 ✧︎fullpack": [
@@ -541,5 +556,10 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13607282": "✧︎fullpack",
+    "13607324": "✧︎makeup only",
+    "13607325": "✧︎eye texture only"
   }
 }

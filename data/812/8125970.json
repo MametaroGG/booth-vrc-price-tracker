@@ -202,6 +202,11 @@
         "date": "2026-05-28",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "Commercial License: The Wheel": [
@@ -404,7 +409,16 @@
         "date": "2026-05-28",
         "price": 11000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 11000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13600211": "Base Product: The Wheel",
+    "13600447": "Commercial License: The Wheel"
   }
 }

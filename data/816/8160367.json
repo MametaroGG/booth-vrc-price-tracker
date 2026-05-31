@@ -167,6 +167,11 @@
         "date": "2026-05-28",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "Airi": [
@@ -332,6 +337,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1250,
         "is_sale": false
       }
@@ -501,6 +511,11 @@
         "date": "2026-05-28",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "Miltina": [
@@ -666,6 +681,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1250,
         "is_sale": false
       }
@@ -835,6 +855,11 @@
         "date": "2026-05-28",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -1002,7 +1027,20 @@
         "date": "2026-05-28",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13663273": "All Clothes",
+    "13663279": "Airi",
+    "13663280": "Kumaly",
+    "13663281": "Miltina",
+    "13663282": "Shinano",
+    "13663283": "Manuka"
   }
 }

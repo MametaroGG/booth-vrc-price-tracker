@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "『Marycia』対応 (Tポーズ)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "フルセット (Lapwing/Marycia/しなの)": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13141504": "『Lapwing』対応 (Aポーズ)",
+    "13141671": "『Marycia』対応 (Tポーズ)",
+    "13141672": "『Shinano』対応 (Tポーズ)",
+    "13141673": "フルセット (Lapwing/Marycia/しなの)"
   }
 }

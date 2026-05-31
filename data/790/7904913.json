@@ -432,6 +432,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "『Eyes Full Pack』": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13236139": "Full Pack 『Makeup, Eye texture, Freckles, Face Blendshape』",
+    "13236168": "『Eyes Full Pack』",
+    "13236169": "『 Face Blendshape』 \"UNITY Screenshot\""
   }
 }

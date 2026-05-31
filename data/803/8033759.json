@@ -564,6 +564,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Single_Hanka": [
@@ -859,6 +864,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -1158,6 +1168,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Single_Nehail": [
@@ -1453,6 +1468,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -1829,6 +1849,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Single_Nakiya(T+A_Pose)": [
@@ -2051,6 +2076,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Fullpack_V1.1": [
@@ -2081,6 +2111,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3500,
         "is_sale": false
       }
@@ -2115,7 +2150,22 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13448527": "Fullpack_V1.1",
+    "13448711": "Single_Iyori",
+    "13448712": "Single_Hanka",
+    "13448713": "Single_Komano",
+    "13448714": "Single_Nehail",
+    "13448715": "Single_Nakiya(T+A_Pose)",
+    "13448716": "Single_Baku",
+    "13971956": "Single_Anila"
   }
 }

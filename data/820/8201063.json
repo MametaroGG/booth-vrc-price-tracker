@@ -176,6 +176,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Full Vroid File (As Shown in photos)": [
@@ -308,6 +313,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Free Hair and Rose Accessory": [
@@ -418,6 +428,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 0,
         "is_sale": false
       }
@@ -532,7 +547,17 @@
         "date": "2026-05-28",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13728843": "Full Vroid File (As Shown in photos)",
+    "13729669": "Earrings Only",
+    "13729671": "Outfit Only"
   }
 }

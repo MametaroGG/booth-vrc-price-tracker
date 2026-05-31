@@ -387,6 +387,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Receipt Clip やる気代(内容は変わりません)": [
@@ -774,6 +779,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "お札Texture": [
@@ -1026,7 +1036,16 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13189671": "Receipt Clip 通常(内容は変わりません)",
+    "13299685": "Receipt Clip やる気代(内容は変わりません)"
   }
 }

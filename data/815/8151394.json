@@ -132,6 +132,11 @@
         "date": "2026-05-28",
         "price": 8000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 8000,
+        "is_sale": false
       }
     ],
     "Pochi対応": [
@@ -262,6 +267,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -396,6 +406,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "斑霞対応": [
@@ -526,6 +541,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -660,7 +680,19 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13646108": "FullPackage",
+    "13725276": "Pochi対応",
+    "13725277": "狛乃対応",
+    "13725278": "斑霞対応",
+    "13725279": "Zain対応"
   }
 }

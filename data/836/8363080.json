@@ -32,6 +32,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Kumaly eye hair and body Ver.1.00": [
@@ -62,6 +67,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -96,7 +106,17 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13971374": "Eku eye hair and body Ver.1.00",
+    "13971520": "Kumaly eye hair and body Ver.1.00",
+    "13971521": "Eku and Kumaly Ver.1.00"
   }
 }

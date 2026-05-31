@@ -459,6 +459,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "- [マヌカ] -Manuka-": [
@@ -889,6 +894,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -1323,6 +1333,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "- [セレスティア] -Selestia-": [
@@ -1755,7 +1770,18 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13186904": "- [愛莉] -Airi-",
+    "13239793": "- [マヌカ] -Manuka-",
+    "13239794": "- [ミルティナ] -Milltina-",
+    "13239887": "- [セレスティア] -Selestia-"
   }
 }

@@ -162,6 +162,11 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": true
       }
     ],
     "Airi-愛莉": [
@@ -322,6 +327,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -486,6 +496,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Shinano-しなの": [
@@ -646,6 +661,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -810,6 +830,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "[Sio-しお": [
@@ -972,7 +997,20 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13671880": "Airi-愛莉",
+    "13671982": "Full set",
+    "13671983": "Manuka-マヌカ",
+    "13671984": "Shinano-しなの",
+    "13671985": "Milltina-ミルティナ",
+    "13671986": "[Sio-しお"
   }
 }

@@ -27,6 +27,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "ALL VERSIONS + DONATE": [
@@ -52,6 +57,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3500,
         "is_sale": false
       }
@@ -81,6 +91,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Komano": [
@@ -106,6 +121,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -135,6 +155,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Kanata": [
@@ -162,7 +187,20 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11570819": "ALL VERSIONS",
+    "11570827": "Minase",
+    "11570828": "Komano",
+    "11570830": "+ Head",
+    "13918700": "ALL VERSIONS + DONATE",
+    "13918701": "Kanata"
   }
 }

@@ -392,6 +392,11 @@
         "date": "2026-05-28",
         "price": 4400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4400,
+        "is_sale": false
       }
     ],
     "Tracksuit/トラックスーツ": [
@@ -782,6 +787,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -1176,6 +1186,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "ALT Sigil Punk/ALTシグイルパンク": [
@@ -1566,6 +1581,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -1960,6 +1980,11 @@
         "date": "2026-05-28",
         "price": 1350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1350,
+        "is_sale": false
       }
     ],
     "スウェットパンツとTシャツ/ Sweatpants and T-Shirt": [
@@ -2350,6 +2375,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -2744,6 +2774,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "うさぎのパーカー/Bunny Hoodie": [
@@ -3134,6 +3169,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -3528,7 +3568,23 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13278563": "フルパック/Full Pack [🏷️55%オフ]9750>4400",
+    "13278735": "Tracksuit/トラックスーツ",
+    "13278736": "Sigil Punk/シグイルパンク",
+    "13278737": "ALT Sigil Punk/ALTシグイルパンク",
+    "13278738": "Devil ReVamp/デビルリヴァンプ",
+    "13278739": "スウェットパンツとTシャツ/ Sweatpants and T-Shirt",
+    "13278740": "フライトキャップ/Flight Cap",
+    "13278741": "うさぎのパーカー/Bunny Hoodie",
+    "13278742": "ニーソックス/Loose Knee Socks"
   }
 }

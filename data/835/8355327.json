@@ -44,6 +44,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Eku,Milfy": [
@@ -81,6 +86,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "フルパック": [
@@ -113,6 +123,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "【sale】ルナリィ": [
@@ -146,6 +161,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "真央": [
@@ -158,6 +178,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "ルミナ": [
@@ -170,7 +195,44 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
+      }
+    ],
+    "リンネ": [
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
+      }
+    ],
+    "chocolat": [
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
+      }
+    ],
+    "milltina": [
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13958425": "フルパック",
+    "13960374": "海咲",
+    "13960375": "Eku,Milfy",
+    "14022444": "ルナリィ",
+    "14022445": "真央",
+    "14022446": "ルミナ",
+    "14068220": "リンネ",
+    "14068221": "chocolat",
+    "14068222": "milltina"
   }
 }

@@ -127,6 +127,11 @@
         "date": "2026-05-28",
         "price": 2950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2950,
+        "is_sale": false
       }
     ],
     "Alue": [
@@ -252,6 +257,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1550,
         "is_sale": false
       }
@@ -381,6 +391,11 @@
         "date": "2026-05-28",
         "price": 1550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1550,
+        "is_sale": false
       }
     ],
     "Kanata": [
@@ -506,6 +521,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1550,
         "is_sale": false
       }
@@ -635,6 +655,11 @@
         "date": "2026-05-28",
         "price": 1550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1550,
+        "is_sale": false
       }
     ],
     "Minase": [
@@ -760,6 +785,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1550,
         "is_sale": false
       }
@@ -889,7 +919,21 @@
         "date": "2026-05-28",
         "price": 1550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13731544": "Fullpack",
+    "13736122": "Alue",
+    "13736123": "Hanka",
+    "13736124": "Kanata",
+    "13736125": "Komano",
+    "13736126": "Minase",
+    "13736127": "Nakiya"
   }
 }

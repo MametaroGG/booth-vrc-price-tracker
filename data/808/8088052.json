@@ -232,6 +232,11 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "ギミック&パーティクルあり　Particles are present in the surrouding area": [
@@ -462,6 +467,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1380,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1380,
         "is_sale": false
       }
@@ -696,7 +706,17 @@
         "date": "2026-05-28",
         "price": 1680,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1680,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13541203": "素体のみ　Model only",
+    "13541571": "ギミック&パーティクルあり　Particles are present in the surrouding area",
+    "13541572": "バグモード搭載フルセット　[full set]chenges the bug mode"
   }
 }

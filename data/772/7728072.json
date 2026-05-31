@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "ライム/シフォン/ショコラ - Lime/Chiffon/Chocolat": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "ミルフィ/エク - Milfy/Eku": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12943234": "フルセット - Fullset",
+    "12964804": "ライム/シフォン/ショコラ - Lime/Chiffon/Chocolat",
+    "12964805": "しなの - Shinano",
+    "12964806": "ミルフィ/エク - Milfy/Eku"
   }
 }

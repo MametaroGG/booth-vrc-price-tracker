@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1150,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1150,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1150,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1150,
+        "is_sale": false
       }
     ],
     "Kikyo": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12805094": "Full pack",
+    "12805274": "Manuka",
+    "12805275": "Shinra",
+    "12805276": "Shinano",
+    "12805277": "Milltina",
+    "12805278": "Kikyo"
   }
 }

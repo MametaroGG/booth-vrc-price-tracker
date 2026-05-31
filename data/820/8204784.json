@@ -132,6 +132,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "【Mayo/まよ】": [
@@ -262,6 +267,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -396,6 +406,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "【Shinano_しなの】": [
@@ -528,6 +543,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "【Milltina_ミルティナ】": [
@@ -650,6 +670,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "コンプリートセット": [
@@ -760,6 +785,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 4000,
         "is_sale": false
       }
@@ -874,6 +904,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "【Kumaly_クマリー】": [
@@ -969,6 +1004,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1068,6 +1108,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "【Euphorika_ユーフォリカ】": [
@@ -1120,7 +1165,24 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13734591": "【Airi_愛莉】",
+    "13734630": "【Mayo/まよ】",
+    "13734631": "【Manuka_マヌカ 】",
+    "13738774": "【Shinano_しなの】",
+    "13758421": "【Milltina_ミルティナ】",
+    "13780073": "【Chocolat_ショコラ】【Chiffon_シフォン】【Lime_ライム】",
+    "13780105": "コンプリートセット",
+    "13813360": "【Kumaly_クマリー】",
+    "13814792": "【Velle_ヴェール】",
+    "13920304": "【Euphorika_ユーフォリカ】"
   }
 }

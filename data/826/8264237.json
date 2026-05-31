@@ -303,6 +303,11 @@
         "date": "2026-05-28",
         "price": 2900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2900,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -348,6 +353,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -397,6 +407,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Chocolat & Chiffon": [
@@ -442,6 +457,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -491,6 +511,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Milfy": [
@@ -536,6 +561,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -585,6 +615,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Mamehinata & Kipfel": [
@@ -632,7 +667,22 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13820382": "Shinano",
+    "13846036": "Marycia",
+    "13846037": "Chocolat & Chiffon",
+    "13846038": "Lapwing",
+    "13846039": "Milfy",
+    "13846040": "Shiratsume",
+    "13846041": "Mamehinata & Kipfel",
+    "13846042": "Full Pack"
   }
 }

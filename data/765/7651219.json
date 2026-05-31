@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "きふ(Donation)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12815413": "ポーズパックセット60(Pose Pack set 60)",
+    "12815481": "きふ(Donation)"
   }
 }

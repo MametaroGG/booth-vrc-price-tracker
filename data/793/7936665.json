@@ -362,6 +362,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "MAKEUP + BODY COLOR": [
@@ -747,6 +752,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1136,6 +1146,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "NAILS": [
@@ -1521,6 +1536,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1910,6 +1930,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "BLENDSHAPES": [
@@ -2297,6 +2322,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "FULLSET [SALE]": [
@@ -2326,5 +2356,13 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13291228": "FULLSET",
+    "13291526": "MAKEUP + BODY COLOR",
+    "13291527": "EYE TEXTURES",
+    "13291528": "NAILS",
+    "13291529": "MATERIAL SETTING",
+    "13291530": "BLENDSHAPES"
   }
 }

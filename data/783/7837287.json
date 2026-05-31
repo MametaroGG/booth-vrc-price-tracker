@@ -464,6 +464,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "EyePatch Only": [
@@ -921,6 +926,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "FullSet (Hair&EyePatch)": [
@@ -1358,6 +1368,11 @@
         "date": "2026-05-28",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "『50%OFF BIG SALE』FullSet (Hair&EyePatch)": [
@@ -1377,5 +1392,10 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13126807": "FullSet (Hair&EyePatch)",
+    "13126878": "Hair Only",
+    "13126879": "EyePatch Only"
   }
 }

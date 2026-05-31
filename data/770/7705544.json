@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ご飯代(内容物はおなじです）": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12907207": "Makeup Texture",
+    "12907445": "ご飯代(内容物はおなじです）"
   }
 }

@@ -42,6 +42,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": true
       }
     ],
     "Shinano / しなの": [
@@ -82,6 +87,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -126,6 +136,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Manuka / マヌカ": [
@@ -166,6 +181,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -210,6 +230,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Karin / カリン (こまど素体)": [
@@ -247,7 +272,20 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13953366": "ALL AVATARS",
+    "13953519": "Shinano / しなの",
+    "13953520": "Kikyo / 桔梗",
+    "13953521": "Manuka / マヌカ",
+    "13953522": "Selestia / セレスティア",
+    "13970049": "Karin / カリン (こまど素体)"
   }
 }

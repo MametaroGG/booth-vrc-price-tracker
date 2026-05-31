@@ -346,6 +346,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "✧︎faceAnimation only": [
@@ -643,6 +648,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "【1周年SALE】 ✧︎fullpack": [
@@ -652,5 +662,9 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13414382": "✧︎fullpack",
+    "13415135": "✧︎faceAnimation only"
   }
 }

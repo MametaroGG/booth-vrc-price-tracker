@@ -279,6 +279,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "3点セット　Arachne + Insects + Arachne Parts": [
@@ -304,6 +309,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 4000,
         "is_sale": false
       }
@@ -333,7 +343,17 @@
         "date": "2026-05-28",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12947947": "3点セット　Arachne + Insects + Arachne Parts",
+    "13689112": "サメヒヨケムシ　Insects only",
+    "13986742": "ヒヨケムシのジニー　Arachne only"
   }
 }

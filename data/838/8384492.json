@@ -22,6 +22,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Full": [
@@ -42,6 +47,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -66,7 +76,17 @@
         "date": "2026-05-28",
         "price": 495,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 495,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14004266": "①only",
+    "14004409": "Full",
+    "14004410": "+☕マウントレーニア代(お礼ラクガキつき)"
   }
 }

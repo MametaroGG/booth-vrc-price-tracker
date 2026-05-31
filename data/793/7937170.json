@@ -387,6 +387,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "スノーハヴォック/SNOWHAVOC": [
@@ -774,6 +779,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ルチカ/Luchika": [
@@ -1086,6 +1096,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "海咲/Misaki": [
@@ -1123,7 +1138,18 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13292089": "リーサルフリート/LETHALFREET",
+    "13292239": "スノーハヴォック/SNOWHAVOC",
+    "13431235": "ルチカ/Luchika",
+    "13965097": "海咲/Misaki"
   }
 }

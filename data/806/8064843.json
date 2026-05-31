@@ -279,6 +279,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ANIMAL_100pose": [
@@ -514,6 +519,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -753,6 +763,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "ELEGANT_100pose": [
@@ -988,6 +1003,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1227,6 +1247,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "IDOL_100pose": [
@@ -1462,6 +1487,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1701,6 +1731,11 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "🧿𝗙𝘂𝗹𝗹⁺𝟱𝟬𝟬𝗽𝗼𝘀𝗲": [
@@ -1868,6 +1903,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "🧿𝗙𝘂𝗹𝗹⁺𝟱𝟬𝟬𝗽𝗼𝘀𝗲（¥3,000→¥2,500）": [
@@ -1902,5 +1942,14 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13501395": "🧿𝗙𝘂𝗹𝗹⁺𝟱𝟬𝟬𝗽𝗼𝘀𝗲",
+    "13501431": "StudioLumiFilter-Phantom Filter+Light+Camera+Pose",
+    "13501432": "ANIMAL_100pose",
+    "13501433": "CUTE_100pose",
+    "13501434": "ELEGANT_100pose",
+    "13501435": "HEART_100pose",
+    "13501436": "IDOL_100pose"
   }
 }

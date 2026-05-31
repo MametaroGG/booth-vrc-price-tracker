@@ -17,6 +17,11 @@
         "date": "2026-05-28",
         "price": 1570,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1570,
+        "is_sale": true
       }
     ],
     "Minase": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": true
       }
@@ -51,6 +61,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "Komano": [
@@ -66,6 +81,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": true
       }
@@ -85,7 +105,19 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "14005546": "Full Pack",
+    "14005608": "Minase",
+    "14005609": "Hanka",
+    "14005610": "Komano",
+    "14005611": "Kanata"
   }
 }

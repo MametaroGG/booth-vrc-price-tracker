@@ -122,6 +122,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Make up": [
@@ -242,6 +247,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -366,6 +376,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "おやつ代(Eye(6色) + Make up + BlendShap)": [
@@ -488,6 +503,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Eye(6色) + Make up": [
@@ -595,7 +615,19 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13760555": "Eye(6色)",
+    "13762516": "Eye(6色) + Make up + BlendShap",
+    "13762617": "Make up",
+    "13762679": "おやつ代(Eye(6色) + Make up + BlendShap)",
+    "13793210": "Eye(6色) + Make up"
   }
 }

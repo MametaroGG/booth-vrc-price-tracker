@@ -437,6 +437,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Plum Face Animation + Makeup": [
@@ -874,7 +879,16 @@
         "date": "2026-05-28",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13230511": "Plum Face Animation",
+    "13230526": "Plum Face Animation + Makeup"
   }
 }

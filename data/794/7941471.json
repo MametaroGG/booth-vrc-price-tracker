@@ -387,6 +387,11 @@
         "date": "2026-05-28",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "IZANAMI 伊邪那美対応": [
@@ -772,6 +777,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1161,6 +1171,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Milltina ミルティナ対応": [
@@ -1546,6 +1561,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1935,6 +1955,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Manuka マヌカ対応": [
@@ -2320,6 +2345,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -2709,6 +2739,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "MILFY / EKU ミルフィ/エク対応": [
@@ -3094,6 +3129,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -3483,6 +3523,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "SHINANO しなの対応": [
@@ -3868,6 +3913,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -4257,6 +4307,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Nagiya Ruri 凪夜瑠璃対応": [
@@ -4642,6 +4697,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -5031,6 +5091,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "CHIFFON/CHOCOLAT/LIME/PLUM シフォン/ショコラ/ライム/プラム対応": [
@@ -5416,6 +5481,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -5805,6 +5875,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "MAO 真央対応": [
@@ -6192,7 +6267,30 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13299491": "Full Pack",
+    "13299578": "IZANAMI 伊邪那美対応",
+    "13299579": "イチゴ Ichigo 対応",
+    "13299580": "Milltina ミルティナ対応",
+    "13299581": "LUMINA ルミナ対応",
+    "13299582": "Manuka マヌカ対応",
+    "13299583": "SIO しお対応",
+    "13299584": "MILFY / EKU ミルフィ/エク対応",
+    "13299585": "SHINRA 森羅対応",
+    "13299586": "SHINANO しなの対応",
+    "13299587": "RURUNE ルルネ対応",
+    "13299588": "Nagiya Ruri 凪夜瑠璃対応",
+    "13299589": "Selestia セレスティア対応",
+    "13299590": "CHIFFON/CHOCOLAT/LIME/PLUM シフォン/ショコラ/ライム/プラム対応",
+    "13299591": "PlusHead ( +Head, 墨惺, アルエ, トネール ETC ) 対応",
+    "13299592": "MAO 真央対応"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-28",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "まめふれんず/mamefriends": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 950,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "エルシオン/elusion": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-28",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13236260": "まめふれんず/mamefriends",
+    "13236426": "えも研/emoken",
+    "13236427": "エルシオン/elusion",
+    "13238033": "フルセット/full set (ドロワーズ付き)"
   }
 }

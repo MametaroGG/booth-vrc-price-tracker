@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "komano": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "full": [
@@ -1828,6 +1843,11 @@
         "date": "2026-05-28",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "商用利用 個人用 Licenses 1人": [
@@ -2103,6 +2123,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -2382,7 +2407,20 @@
         "date": "2026-05-28",
         "price": 30000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 30000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13018837": "minase",
+    "13019061": "komano",
+    "13019062": "hanka",
+    "13019063": "full",
+    "13487728": "商用利用 個人用 Licenses 1人",
+    "13487729": "商用利用 企業向け Licenses 1人"
   }
 }

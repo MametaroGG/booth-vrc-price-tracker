@@ -13,6 +13,24 @@
         "price": 200,
         "is_sale": false
       }
+    ],
+    "BrushEye": [
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "BrushEye_withPSD": [
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
+      }
     ]
+  },
+  "variation_keys": {
+    "14036404": "BrushEye",
+    "14080193": "BrushEye_withPSD"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-28",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2700,
+        "is_sale": false
       }
     ],
     "lapwing 版": [
@@ -854,7 +859,16 @@
         "date": "2026-05-28",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13243729": "air , nial , simulacrum 版",
+    "13243846": "lapwing 版"
   }
 }

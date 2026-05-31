@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "SimplePack【簡易演奏機能のみ】": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "MIDI Pack vol.1（どこかで聞いたことがある/激しめ）": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "MIDI Pack vol.3（JAZZ）": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12803409": "FullPack【自動演奏機能搭載】",
+    "12803602": "SimplePack【簡易演奏機能のみ】",
+    "12803603": "Object Only【ギミック無し】",
+    "12903021": "MIDI Pack vol.1（どこかで聞いたことがある/激しめ）",
+    "12903022": "MIDI Pack vol.2（穏やか/優雅）",
+    "12903023": "MIDI Pack vol.3（JAZZ）"
   }
 }

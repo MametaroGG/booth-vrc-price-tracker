@@ -82,6 +82,11 @@
         "date": "2026-05-28",
         "price": 149,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 149,
+        "is_sale": false
       }
     ],
     "vrcha（税抜）": [
@@ -164,7 +169,16 @@
         "date": "2026-05-28",
         "price": 138,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 138,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13840812": "vrcha（税込）",
+    "13841118": "vrcha（税抜）"
   }
 }

@@ -49,6 +49,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "しなの版のみ（ジャケットは含まれません）": [
@@ -61,7 +66,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13929276": "Flaneur Fullset",
+    "14045624": "しなの版のみ（ジャケットは含まれません）"
   }
 }

@@ -172,6 +172,11 @@
         "date": "2026-05-28",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -342,6 +347,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -516,6 +526,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -686,6 +701,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -860,6 +880,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "shinano": [
@@ -1030,6 +1055,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1204,6 +1234,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "ICHIGO": [
@@ -1376,6 +1411,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Mayo": [
@@ -1538,7 +1578,23 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13623051": "Full Package",
+    "13623293": "Milltina",
+    "13623294": "Selestia",
+    "13623295": "Airi",
+    "13623296": "shinano",
+    "13623298": "kumaly",
+    "13623299": "ICHIGO",
+    "13637513": "Manuka",
+    "13677629": "Mayo"
   }
 }

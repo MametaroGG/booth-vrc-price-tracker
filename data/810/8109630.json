@@ -217,6 +217,11 @@
         "date": "2026-05-28",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Ari用": [
@@ -432,6 +437,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 960,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 960,
         "is_sale": false
       }
@@ -651,6 +661,11 @@
         "date": "2026-05-28",
         "price": 960,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 960,
+        "is_sale": false
       }
     ],
     "Milfy/Eku用": [
@@ -866,6 +881,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 960,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 960,
         "is_sale": false
       }
@@ -1085,6 +1105,11 @@
         "date": "2026-05-28",
         "price": 960,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 960,
+        "is_sale": false
       }
     ],
     "Moe用": [
@@ -1300,6 +1325,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 960,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 960,
         "is_sale": false
       }
@@ -1519,7 +1549,21 @@
         "date": "2026-05-28",
         "price": 960,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 960,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13573310": "Full Pack",
+    "13573320": "Ari用",
+    "13573321": "Lime/Chiffon/Chocolat/Plum用",
+    "13573322": "Milfy/Eku用",
+    "13573323": "Milltina用",
+    "13573324": "Moe用",
+    "13573325": "Shinano用"
   }
 }

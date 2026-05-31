@@ -297,6 +297,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "KIMONO-Kirise_対応-": [
@@ -592,6 +597,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -891,7 +901,17 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13426624": "KIMONO-Lurunet・IOLI・VAZILE・白狼 対応-",
+    "13448389": "KIMONO-Kirise_対応-",
+    "13448390": "KIMONO-Rize_対応-"
   }
 }

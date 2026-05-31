@@ -417,6 +417,11 @@
         "date": "2026-05-28",
         "price": 444,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 444,
+        "is_sale": false
       }
     ],
     "MANUKA": [
@@ -832,6 +837,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 222,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 222,
         "is_sale": false
       }
@@ -1251,6 +1261,11 @@
         "date": "2026-05-28",
         "price": 222,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 222,
+        "is_sale": false
       }
     ],
     "MILLTINA": [
@@ -1668,7 +1683,18 @@
         "date": "2026-05-28",
         "price": 222,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 222,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13254369": "ALL",
+    "13254379": "MANUKA",
+    "13254380": "SHINANO",
+    "13254381": "MILLTINA"
   }
 }

@@ -22,6 +22,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Full Pack: ALL INCLUDED!": [
@@ -42,6 +47,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2600,
         "is_sale": false
       }
@@ -66,6 +76,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Shinano Compatible": [
@@ -86,6 +101,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -110,7 +130,19 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14010531": "Minagi Compatible",
+    "14010578": "Full Pack: ALL INCLUDED!",
+    "14010579": "Yui Compatible",
+    "14010580": "Shinano Compatible",
+    "14010581": "Manuka Compatible"
   }
 }

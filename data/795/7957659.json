@@ -367,6 +367,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "応援プラン（内容変更なし）": [
@@ -734,7 +739,16 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13327053": "UDON SECURE PIN",
+    "13334972": "応援プラン（内容変更なし）"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "full set": [
@@ -837,6 +842,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 850,
         "is_sale": false
       }
@@ -1221,6 +1231,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "milfy&eku": [
@@ -1601,6 +1616,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -1985,6 +2005,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "sio": [
@@ -2367,6 +2392,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "shinra": [
@@ -2747,6 +2777,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -3213,5 +3248,14 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12850073": "full set",
+    "12850629": "デカール",
+    "12850630": "full set ＋支援",
+    "12850631": "milfy&eku",
+    "12850632": "rurune",
+    "12850633": "sio",
+    "12850634": "shinra"
   }
 }

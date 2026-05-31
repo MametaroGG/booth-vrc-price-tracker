@@ -252,6 +252,11 @@
         "date": "2026-05-28",
         "price": 1170,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1170,
+        "is_sale": false
       }
     ],
     "【カエル単体】01_022|ソバージュネコメガエル|Waxy monkey leaf frog|Phyllomedusa sauvagii": [
@@ -502,6 +507,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -756,6 +766,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "【カエル単体】02_015|プエルトリコヒキガエル|Puertorican crested toad|Peltophryne lemur": [
@@ -1006,6 +1021,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1260,6 +1280,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "【カエル単体】04_002|ヤミフクラガエル|Brown short-headed frog|Breviceps fuscus": [
@@ -1510,6 +1535,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1764,6 +1794,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "【カエル単体】10_001|ブラジルニセメダマガエル|Cuyaba bart frog|Physalaemus nattereri": [
@@ -2014,6 +2049,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -2268,6 +2308,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "【カエル単体】22_004|ヴィリディスオオクサガエル|Rusty forest tree frog|Leptopelis viridis": [
@@ -2518,6 +2563,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -2772,6 +2822,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "【カエル単体】24_001|ケガエル|Hairy frog|Astylosternus robustus": [
@@ -3022,6 +3077,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -3276,6 +3336,11 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "【カエル単体】30_001|チチカカミズガエル|Titicaca water frog|Telmatobius culeus": [
@@ -3528,7 +3593,28 @@
         "date": "2026-05-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13500060": "【カエル13匹】全てのカエル",
+    "13500181": "【カエル単体】01_022|ソバージュネコメガエル|Waxy monkey leaf frog|Phyllomedusa sauvagii",
+    "13500182": "【カエル単体】01_023|ケンランフリンジアマガエル|Fringe leaf tree frog|Cruziohyla craspedopus",
+    "13500183": "【カエル単体】02_015|プエルトリコヒキガエル|Puertorican crested toad|Peltophryne lemur",
+    "13500184": "【カエル単体】02_016|キマダラフキヤヒキガエル|Hoogmoed harlequin frog|Atelopus hoogmoedi",
+    "13500185": "【カエル単体】04_002|ヤミフクラガエル|Brown short-headed frog|Breviceps fuscus",
+    "13500186": "【カエル単体】04_003|ナマクワフクラガエル|Namaqua rain frog|Breviceps namaquensis",
+    "13500187": "【カエル単体】10_001|ブラジルニセメダマガエル|Cuyaba bart frog|Physalaemus nattereri",
+    "13500188": "【カエル単体】22_003|リゲンバッハクサガエル|Riggenbach's reed frog|Hyperolius riggenbachi",
+    "13500189": "【カエル単体】22_004|ヴィリディスオオクサガエル|Rusty forest tree frog|Leptopelis viridis",
+    "13500190": "【カエル単体】22_005|マダラクサガエル|Painted reed frog|Hyperolius marmoratus",
+    "13500191": "【カエル単体】24_001|ケガエル|Hairy frog|Astylosternus robustus",
+    "13500192": "【カエル単体】26_002|カニクイガエル|Crab-eating frog|Fejervarya cancrivora",
+    "13500193": "【カエル単体】30_001|チチカカミズガエル|Titicaca water frog|Telmatobius culeus"
   }
 }

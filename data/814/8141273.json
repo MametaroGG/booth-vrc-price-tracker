@@ -591,6 +591,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Single_Hanka_Shidou_V1.1": [
@@ -693,6 +698,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Single_Komano_V1.1": [
@@ -793,6 +803,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -924,6 +939,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Fullpack_V1.2": [
@@ -1048,6 +1068,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Fullpack_V1.3": [
@@ -1078,6 +1103,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 4200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 4200,
         "is_sale": false
       }
@@ -1112,7 +1142,21 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13628080": "Fullpack_V1.3",
+    "13628416": "Single_Iyori_V1.1",
+    "13628417": "Single_Hanka_Shidou_V1.1",
+    "13628418": "Single_Komano_V1.1",
+    "13628419": "Single_Nakiya(T+A_Pose)_V1.2",
+    "13628420": "Single_Baku_V1.1",
+    "13971983": "Single_Anila_V1.1"
   }
 }

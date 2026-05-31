@@ -197,6 +197,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "水族館代（支援版 中身は同じです）": [
@@ -394,7 +399,16 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13561835": "Dripping Material",
+    "13588915": "水族館代（支援版 中身は同じです）"
   }
 }

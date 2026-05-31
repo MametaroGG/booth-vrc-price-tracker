@@ -367,6 +367,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Choco♥eye set (瞳・まつげセット)": [
@@ -732,6 +737,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1101,6 +1111,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Choco♥eye fullset (全ての内容を含むセット)": [
@@ -1468,7 +1483,18 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13315301": "Choco♥eye only(瞳のみ)",
+    "13332699": "Choco♥eye set (瞳・まつげセット)",
+    "13332700": "Makeup Texture only(メイクアップのみ)",
+    "13332701": "Choco♥eye fullset (全ての内容を含むセット)"
   }
 }

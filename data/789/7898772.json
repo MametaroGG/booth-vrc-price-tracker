@@ -442,6 +442,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Airi - 愛莉": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Milltina - ミルティナ": [
@@ -1766,6 +1781,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -2210,6 +2230,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Velle - ヴェール": [
@@ -2650,6 +2675,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -3094,6 +3124,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Chocolat + Chiffon + Plum - ショコラ + シフォン + プラム": [
@@ -3536,7 +3571,22 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13225649": "Fullset - フルセット",
+    "13225777": "Airi - 愛莉",
+    "13225778": "Ichigo - イチゴ",
+    "13225779": "Milltina - ミルティナ",
+    "13225780": "Shinano - しなの",
+    "13225781": "Velle - ヴェール",
+    "13225782": "Uruki - ウルキ",
+    "13225783": "Chocolat + Chiffon + Plum - ショコラ + シフォン + プラム"
   }
 }

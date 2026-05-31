@@ -297,6 +297,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Black": [
@@ -592,6 +597,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1175,6 +1185,11 @@
         "date": "2026-05-28",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Black[Corporate price]": [
@@ -1192,7 +1207,18 @@
         "date": "2026-05-28",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13408548": "Pink",
+    "13409106": "Black",
+    "13409107": "Pink[Corporate price]",
+    "13409108": "Black[Corporate price]"
   }
 }

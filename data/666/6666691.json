@@ -531,6 +531,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "おちびちゃんズ PlumS (Sister\"S\")": [
@@ -976,6 +981,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1425,6 +1435,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "おちびちゃんズ Plum normal & Sister\"S\"": [
@@ -1870,6 +1885,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -2319,6 +2339,11 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "おちびちゃんズ Plum Sister\"S\" & Sister\"Z\"": [
@@ -2764,6 +2789,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -3213,7 +3243,21 @@
         "date": "2026-05-28",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11220314": "おちびちゃんズ PlumN (normal)",
+    "13148363": "おちびちゃんズ PlumS (Sister\"S\")",
+    "13148364": "おちびちゃんズ PlumZ (Sister\"Z\")",
+    "13148365": "おちびちゃんズ Plum normal & Sister\"S\"",
+    "13148366": "おちびちゃんズ Plum normal & Sister\"Z\"",
+    "13148367": "おちびちゃんズ Plum Sister\"S\" & Sister\"Z\"",
+    "13148368": "おちびちゃんズ Plum FullSet"
   }
 }

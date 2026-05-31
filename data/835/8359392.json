@@ -37,6 +37,11 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "🤍Misaki💜 Lovely Make Up": [
@@ -72,6 +77,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": true
       }
@@ -111,6 +121,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "🤍Misaki💜 FOREVER Eyes": [
@@ -148,7 +163,18 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13965008": "🎁SALE🎁 Misaki Textures FullPack",
+    "13965047": "🤍Misaki💜 Lovely Make Up",
+    "13965048": "💜Misaki🤍 Cosmic Bloom Eyes",
+    "13965049": "🤍Misaki💜 FOREVER Eyes"
   }
 }

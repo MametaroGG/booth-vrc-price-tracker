@@ -247,6 +247,11 @@
         "date": "2026-05-28",
         "price": 1860,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1860,
+        "is_sale": false
       }
     ],
     "しなの - Shinano": [
@@ -492,6 +497,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1130,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1130,
         "is_sale": false
       }
@@ -741,6 +751,11 @@
         "date": "2026-05-28",
         "price": 1130,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1130,
+        "is_sale": false
       }
     ],
     "マヌカ - Manuka": [
@@ -986,6 +1001,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1130,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1130,
         "is_sale": false
       }
@@ -1235,6 +1255,11 @@
         "date": "2026-05-28",
         "price": 1130,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1130,
+        "is_sale": false
       }
     ],
     "ルミナ - Lumina": [
@@ -1482,7 +1507,20 @@
         "date": "2026-05-28",
         "price": 1130,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1130,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13519623": "フルパック - Full Pack",
+    "13519748": "しなの - Shinano",
+    "13519749": "ミルティナ - Milltina",
+    "13519750": "マヌカ - Manuka",
+    "13519751": "愛莉 - Airi",
+    "13519752": "ルミナ - Lumina"
   }
 }

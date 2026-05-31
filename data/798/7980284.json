@@ -352,6 +352,11 @@
         "date": "2026-05-28",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Alien Parts エイリアンパーツ V1.2": [
@@ -702,6 +707,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1056,7 +1066,17 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13362027": "BUNDLE (Skin+Parts) (100OFF)",
+    "13362914": "Alien Parts エイリアンパーツ V1.2",
+    "13362915": "Alien Skin エイリアンスキン"
   }
 }

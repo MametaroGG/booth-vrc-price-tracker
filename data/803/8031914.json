@@ -302,6 +302,11 @@
         "date": "2026-05-28",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "Lissy.vrm": [
@@ -604,7 +609,16 @@
         "date": "2026-05-28",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13445352": "Lissy.vroid",
+    "13445357": "Lissy.vrm"
   }
 }

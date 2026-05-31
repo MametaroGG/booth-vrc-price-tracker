@@ -37,6 +37,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "Misaki": [
@@ -72,6 +77,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": true
       }
@@ -111,6 +121,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Fyuett": [
@@ -146,6 +161,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": true
       }
@@ -185,6 +205,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Cazalis": [
@@ -222,7 +247,20 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13963854": "Fullset",
+    "13963997": "Misaki",
+    "13963998": "Plum",
+    "13963999": "Fyuett",
+    "13964000": "Lina",
+    "13964001": "Cazalis"
   }
 }

@@ -342,6 +342,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Earring＋Ring ※1名へのみ譲渡可": [
@@ -684,7 +689,16 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13324514": "Earring",
+    "13324533": "Earring＋Ring ※1名へのみ譲渡可"
   }
 }

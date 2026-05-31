@@ -325,6 +325,11 @@
         "date": "2026-05-28",
         "price": 2990,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2990,
+        "is_sale": false
       }
     ],
     "Noir Lace : Gothic (Mayo専用)": [
@@ -360,6 +365,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1490,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1490,
         "is_sale": false
       }
@@ -399,6 +409,11 @@
         "date": "2026-05-28",
         "price": 1490,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1490,
+        "is_sale": false
       }
     ],
     "Sora Sailor : Blue (Mayo専用)": [
@@ -436,7 +451,18 @@
         "date": "2026-05-28",
         "price": 1490,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1490,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13748215": "3 Clothes Full Set (Mayo専用)",
+    "13749105": "Noir Lace : Gothic (Mayo専用)",
+    "13749106": "Lunar Secret Date (Mayo専用)",
+    "13749107": "Sora Sailor : Blue (Mayo専用)"
   }
 }

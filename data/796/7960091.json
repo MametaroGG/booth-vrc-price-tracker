@@ -367,6 +367,11 @@
         "date": "2026-05-28",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": true
       }
     ],
     "RUSTY PUNK (Kumaly | クマリ) (30% OFF)": [
@@ -734,6 +739,11 @@
         "date": "2026-05-28",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1150,
+        "is_sale": true
       }
     ],
     "Lumi Hollow (Kumaly | クマリ) (30% OFF)": [
@@ -1101,6 +1111,11 @@
         "date": "2026-05-28",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1050,
+        "is_sale": true
       }
     ],
     "Velvet Curse (Kumaly | クマリ) (30% OFF)": [
@@ -1468,6 +1483,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Sick Honey (Kumaly | クマリ) (30% OFF)": [
@@ -1835,6 +1855,11 @@
         "date": "2026-05-28",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1050,
+        "is_sale": true
       }
     ],
     "Masquerade Classic (Kumaly | クマリ) (30% OFF)": [
@@ -2202,7 +2227,20 @@
         "date": "2026-05-28",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13331479": "Full-Package (All 5) (30% OFF)",
+    "13331569": "RUSTY PUNK (Kumaly | クマリ) (30% OFF)",
+    "13331570": "Lumi Hollow (Kumaly | クマリ) (30% OFF)",
+    "13331571": "Velvet Curse (Kumaly | クマリ) (30% OFF)",
+    "13331572": "Sick Honey (Kumaly | クマリ) (30% OFF)",
+    "13333269": "Masquerade Classic (Kumaly | クマリ) (30% OFF)"
   }
 }

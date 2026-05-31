@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Artist \"SEASONALFRUITS\" ( SEASONALFRUITSPack+ADD+Tattoo Guide)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Artist \"MEUNGGOO\" ( MEUNGGOO Pack+ADD+Tattoo Guide)": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12913451": "Full package (All Artist Pack+ADD+Tattoo Guide)",
+    "12914748": "Artist \"DA00\" ( DA00 Pack+ADD+Tattoo Guide)",
+    "12914749": "Artist \"NON\" ( NON Pack+ADD+Tattoo Guide)",
+    "12914750": "Artist \"MEUNGGOO\" ( MEUNGGOO Pack+ADD+Tattoo Guide)",
+    "12914751": "Artist \"SEASONALFRUITS\" ( SEASONALFRUITSPack+ADD+Tattoo Guide)"
   }
 }

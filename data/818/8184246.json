@@ -142,6 +142,11 @@
         "date": "2026-05-28",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "Lapwing版": [
@@ -282,6 +287,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2400,
         "is_sale": false
       }
@@ -426,7 +436,17 @@
         "date": "2026-05-28",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13701636": "Marycia版",
+    "13707732": "Lapwing版",
+    "13707733": "フルパック版"
   }
 }

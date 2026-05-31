@@ -242,6 +242,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "『ショコラ』-Chocolat": [
@@ -482,6 +487,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -726,6 +736,11 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "『キプフェル』 -Kipfel": [
@@ -968,7 +983,18 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13494245": "『フルパック』-Full Package",
+    "13496349": "『ショコラ』-Chocolat",
+    "13496350": "『しなの』 - Shinano",
+    "13496351": "『キプフェル』 -Kipfel"
   }
 }

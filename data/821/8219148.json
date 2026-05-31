@@ -134,6 +134,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "マリシア-Marycia-": [
@@ -259,6 +264,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -388,6 +398,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "FULL PACK（おまけはつきません）": [
@@ -513,6 +528,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -642,6 +662,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "フィユエ-Fyuett-": [
@@ -764,7 +789,20 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13753295": "フィユエ-Fyuett-",
+    "13753477": "フィユエ-Fyuett-SUPPORTセット",
+    "13753478": "マリシア-Marycia-",
+    "13753479": "マリシア-Marycia-SUPPORTセット",
+    "13753480": "FULL PACK（おまけはつきません）",
+    "13753481": "FULL PACK SUPPORT セット"
   }
 }

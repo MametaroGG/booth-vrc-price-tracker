@@ -47,6 +47,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "【PSD付 Full Pack】3TypeMake&Bodytexture + 2Type texture": [
@@ -92,6 +97,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -141,6 +151,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "【EyeOnly】Eye texture 2": [
@@ -188,7 +203,18 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13928029": "【24時間限定無料】Eye texture 1",
+    "13928166": "【PSD付 Full Pack】3TypeMake&Bodytexture + 2Type texture",
+    "13928167": "【MakeOnly】3TypeMake&Bodytexture",
+    "13928168": "【EyeOnly】Eye texture 2"
   }
 }

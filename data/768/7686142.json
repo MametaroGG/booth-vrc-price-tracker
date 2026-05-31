@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 5900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5900,
+        "is_sale": true
       }
     ],
     "CafeChic": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "SereneWinter": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Soralea": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Suzutoki": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "NOIRBIT": [
@@ -4568,6 +4613,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": true
       }
@@ -5027,7 +5077,25 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12874018": "FullSet【50％OFF】",
+    "12874190": "CafeChic",
+    "12874191": "CozyStroll",
+    "12874192": "SereneWinter",
+    "12874193": "TacticalNova",
+    "12874194": "Soralea",
+    "12874195": "Vellmare",
+    "12874196": "Suzutoki",
+    "12874197": "Urbanie",
+    "12874198": "NOIRBIT",
+    "12874199": "MaplePuff"
   }
 }

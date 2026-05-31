@@ -227,6 +227,11 @@
         "date": "2026-05-28",
         "price": 690,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 690,
+        "is_sale": false
       }
     ],
     "Milfy": [
@@ -452,6 +457,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 390,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 390,
         "is_sale": false
       }
@@ -681,6 +691,11 @@
         "date": "2026-05-28",
         "price": 390,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 390,
+        "is_sale": false
       }
     ],
     "shinano": [
@@ -906,6 +921,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 390,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 390,
         "is_sale": false
       }
@@ -1135,7 +1155,19 @@
         "date": "2026-05-28",
         "price": 390,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 390,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13395664": "Milfy",
+    "13395896": "【SALE】FullPack - 現在 4 avater",
+    "13401586": "Chocolate",
+    "13401632": "shinano",
+    "13402397": "Kipfel"
   }
 }

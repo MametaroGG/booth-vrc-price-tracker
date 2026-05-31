@@ -227,6 +227,11 @@
         "date": "2026-05-28",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "Minty Emily.vrm": [
@@ -454,7 +459,16 @@
         "date": "2026-05-28",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13547763": "Minty Emily.vroid",
+    "13547772": "Minty Emily.vrm"
   }
 }

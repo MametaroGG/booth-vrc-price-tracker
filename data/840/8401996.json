@@ -7,11 +7,21 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Lumina": [
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -21,6 +31,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Ramune": [
@@ -28,7 +43,34 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Eku": [
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "rurune": [
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "14031889": "full",
+    "14032019": "Lumina",
+    "14032020": "Milfy",
+    "14032021": "Ramune",
+    "14080864": "Eku",
+    "14080865": "rurune"
   }
 }

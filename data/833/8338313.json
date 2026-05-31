@@ -80,6 +80,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "✧︎makeup & Blendshape": [
@@ -115,6 +120,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 350,
         "is_sale": false
       }
@@ -154,6 +164,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "✧︎Blendshape only": [
@@ -191,6 +206,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "【1周年SALE】 ✧︎fullpack": [
@@ -200,5 +220,11 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13931172": "✧︎fullpack",
+    "13931263": "✧︎makeup & Blendshape",
+    "13931264": "✧︎eye texture only",
+    "13931400": "✧︎Blendshape only"
   }
 }

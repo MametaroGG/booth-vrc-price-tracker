@@ -57,6 +57,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "✨VELVORA [20% SALE]": [
@@ -112,6 +117,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -171,6 +181,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "✨COZY NIGHT [20% SALE]": [
@@ -228,7 +243,18 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13766416": "✨Full Set 3 MAKE UP [20% SALE]",
+    "13766528": "✨VELVORA [20% SALE]",
+    "13766529": "✨TOXIC DARLING [20% SALE]",
+    "13766530": "✨COZY NIGHT [20% SALE]"
   }
 }

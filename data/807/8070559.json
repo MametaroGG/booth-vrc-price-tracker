@@ -254,6 +254,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": true
       }
     ],
     "Milltina -ミルティナ-": [
@@ -499,6 +504,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": true
       }
@@ -748,6 +758,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Shinano -しなの-": [
@@ -878,6 +893,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 900,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": true
       }
@@ -1012,7 +1032,19 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13511281": "Milltina -ミルティナ-",
+    "13516227": "Full set",
+    "13516228": "Manuka -マヌカ-",
+    "13731384": "Shinano -しなの-",
+    "13731385": "Moe -萌-"
   }
 }

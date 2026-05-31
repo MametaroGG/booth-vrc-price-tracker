@@ -367,6 +367,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "「プラム Plum ＆ シフォン  Chiffon ＆  シフォン Chocolat」": [
@@ -732,6 +737,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1101,6 +1111,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "「マヌカ Manuka 」": [
@@ -1468,7 +1483,18 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13335007": "「しなの Shinano 」",
+    "13335124": "「プラム Plum ＆ シフォン  Chiffon ＆  シフォン Chocolat」",
+    "13335125": "「 エク Eku 」",
+    "13335126": "「マヌカ Manuka 」"
   }
 }

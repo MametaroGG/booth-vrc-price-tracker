@@ -433,6 +433,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "泣夜 Nakiya": [
@@ -768,6 +773,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1107,6 +1117,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "真央 Mao": [
@@ -1442,6 +1457,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1781,6 +1801,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "狛乃 Komano": [
@@ -2116,6 +2141,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -2455,6 +2485,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "水瀬 Minase": [
@@ -2792,7 +2827,22 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13365148": "水瀬 マテリアルプラス Minase - Material PULS -",
+    "13365256": "泣夜 マテリアルプラス Nakiya - Material PULS -",
+    "13365257": "泣夜 Nakiya",
+    "13365258": "真央 マテリアルプラス Mao - Material PULS -",
+    "13365259": "真央 Mao",
+    "13365260": "狛乃 マテリアルプラス Komano - Material PULS -",
+    "13365261": "狛乃 Komano",
+    "13365262": "水瀬 Minase"
   }
 }

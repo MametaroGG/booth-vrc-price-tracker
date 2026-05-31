@@ -322,6 +322,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "TT_Support(中身は同じです)": [
@@ -644,7 +649,16 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13412934": "LUMINA FutomomoV3 1.1.5",
+    "13412995": "TT_Support(中身は同じです)"
   }
 }

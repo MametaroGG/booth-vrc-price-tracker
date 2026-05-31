@@ -57,6 +57,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Blendshape Only (face animation)": [
@@ -114,7 +119,16 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13905434": "FullSET(MakePSD+Blendshape)",
+    "13905650": "Blendshape Only (face animation)"
   }
 }

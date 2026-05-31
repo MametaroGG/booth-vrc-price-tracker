@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 6500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6500,
+        "is_sale": false
       }
     ],
     "「シュマリ -Shumari-」": [
@@ -914,6 +919,11 @@
         "date": "2026-05-28",
         "price": 6500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6500,
+        "is_sale": false
       }
     ],
     "「スマリ -Sumari-」　　　　　　「シュマリ -Shumari-」": [
@@ -1369,6 +1379,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 12000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 12000,
         "is_sale": false
       }
@@ -1830,7 +1845,17 @@
         "date": "2026-05-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12741736": "「スマリ -Sumari-」",
+    "12909192": "「シュマリ -Shumari-」",
+    "12909193": "「スマリ -Sumari-」　　　　　　「シュマリ -Shumari-」"
   }
 }

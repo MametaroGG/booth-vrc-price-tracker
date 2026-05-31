@@ -67,6 +67,11 @@
         "date": "2026-05-28",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "陸上機＋水上機/氷上機 　Landplane & Seaplane/Skiplane": [
@@ -132,6 +137,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3500,
         "is_sale": false
       }
@@ -201,7 +211,17 @@
         "date": "2026-05-28",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13869378": "陸上機＋水上機/氷上機 　Landplane & Seaplane/Skiplane",
+    "13869379": "戦闘機つきフルセット　Full set with fighter plane variant",
+    "13871773": "陸上機のみ　Landplane only"
   }
 }

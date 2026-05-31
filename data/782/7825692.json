@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "Crimson Care - クリムゾンケア": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Gothic Streetwear - ゴシックストリートウェア": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Strapped Edge - ストラップエッジ": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -3199,7 +3229,21 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13107904": "Full Set - フルパック",
+    "13108288": "Crimson Care - クリムゾンケア",
+    "13108289": "Flower Pixie - フラワーピクシー",
+    "13108290": "Gothic Streetwear - ゴシックストリートウェア",
+    "13108291": "Starlight Dream Set - スターライトドリームセット",
+    "13108292": "Strapped Edge - ストラップエッジ",
+    "13108293": "Evil Dress - 邪悪なドレス"
   }
 }

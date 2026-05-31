@@ -427,6 +427,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Matilda/マチルダ_まめ・キプ・リルレオ": [
@@ -697,6 +702,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -971,6 +981,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "fullset/(Meteor.Matilda.William)_まめキプ・リルレオ・みみのこ": [
@@ -1118,6 +1133,11 @@
         "date": "2026-05-28",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Meteor/ミーティア_みみのこ": [
@@ -1263,6 +1283,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1419,6 +1444,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Matilda/マチルダ_みみのこ": [
@@ -1561,7 +1591,21 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13482124": "fullset/(Meteor.Matilda.William)_まめキプ・リルレオ・みみのこ",
+    "13482769": "Meteor/ミーティア_まめ・キプ・リルレオ",
+    "13482770": "Matilda/マチルダ_まめ・キプ・リルレオ",
+    "13482771": "William/ウィリアム_まめ・キプ・リルレオ",
+    "13700616": "Meteor/ミーティア_みみのこ",
+    "13700617": "Matilda/マチルダ_みみのこ",
+    "13700618": "William/ウィリアム_みみのこ"
   }
 }

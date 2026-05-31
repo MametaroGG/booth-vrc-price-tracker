@@ -377,6 +377,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "purple": [
@@ -752,6 +757,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -1131,6 +1141,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "light green": [
@@ -1506,6 +1521,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -1885,6 +1905,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "pink": [
@@ -2260,6 +2285,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -2639,6 +2669,11 @@
         "date": "2026-05-28",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "light&dark": [
@@ -3014,6 +3049,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 280,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 280,
         "is_sale": false
       }
@@ -3393,6 +3433,11 @@
         "date": "2026-05-28",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Simple type all eyes": [
@@ -3768,6 +3813,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -4147,6 +4197,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "おやつ-(all eyesファイルと同等)　all eyes": [
@@ -4524,7 +4579,26 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13315020": "blue",
+    "13316224": "purple",
+    "13316225": "turquoise",
+    "13316226": "light green",
+    "13316227": "red",
+    "13316228": "pink",
+    "13316229": "yellow",
+    "13316230": "light&dark",
+    "13316231": "all eyes",
+    "13316232": "Simple type all eyes",
+    "13316233": "おやつ-(all eyesファイルと同等)　Simple type",
+    "13316234": "おやつ-(all eyesファイルと同等)　all eyes"
   }
 }

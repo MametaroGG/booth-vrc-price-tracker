@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 3280,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3280,
+        "is_sale": false
       }
     ],
     "1. Silens Maga": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "3. Initium Veris": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1150,
+        "is_sale": false
       }
     ],
     "5. Aliquam Sectam": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "7. Winter Sweater In Home": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13023218": "Full Pack",
+    "13024001": "1. Silens Maga",
+    "13024130": "2. Consolatoria",
+    "13024131": "3. Initium Veris",
+    "13024132": "4. Fluxus Corium",
+    "13024133": "5. Aliquam Sectam",
+    "13024134": "6. Unda Forma",
+    "13024135": "7. Winter Sweater In Home"
   }
 }

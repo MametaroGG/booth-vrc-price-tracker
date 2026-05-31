@@ -162,6 +162,11 @@
         "date": "2026-05-28",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": true
       }
     ],
     "♡Nyan1 Set": [
@@ -322,6 +327,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": true
       }
@@ -486,7 +496,17 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13562148": "♡Cut＆Tattoo Set",
+    "13671088": "♡Nyan1 Set",
+    "13671089": "♡Nyan2 Set"
   }
 }

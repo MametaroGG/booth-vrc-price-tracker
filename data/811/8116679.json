@@ -295,6 +295,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Quest/Mobile版": [
@@ -460,6 +465,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -629,6 +639,11 @@
         "date": "2026-05-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "luonaにご飯を奢る（作者が喜びます）※PC版とQuest/Mobile版の両方が入っています。": [
@@ -796,7 +811,18 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13584056": "翠羽ろり化prefab（PC版）",
+    "13584354": "支援版（PC版とQuest/Mobile版の両方が入っています。)",
+    "13584355": "luonaにご飯を奢る（作者が喜びます）※PC版とQuest/Mobile版の両方が入っています。",
+    "13662755": "Quest/Mobile版"
   }
 }

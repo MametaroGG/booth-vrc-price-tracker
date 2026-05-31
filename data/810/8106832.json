@@ -192,6 +192,11 @@
         "date": "2026-05-28",
         "price": 1350,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1350,
+        "is_sale": true
       }
     ],
     "R/LAW-32-GOSPEL (EN-Lance)": [
@@ -382,6 +387,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": true
       }
@@ -576,6 +586,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "R/LAW-34-BABEL (EN-ShotGun)": [
@@ -766,6 +781,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": true
       }
@@ -960,6 +980,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "R/LAW-35-HYDRA (MachineGun)": [
@@ -1150,6 +1175,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 400,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": true
       }
@@ -1344,7 +1374,21 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13568496": "フルセット",
+    "13568571": "R/LAW-32-GOSPEL (EN-Lance)",
+    "13568572": "R/LAW-31-ARAMASA (TripleChainSaw)",
+    "13568573": "R/LAW-34-BABEL (EN-ShotGun)",
+    "13568574": "R/LAW-33-UZUME (Plasma-Rifle)",
+    "13568575": "R/LAW-35-HYDRA (MachineGun)",
+    "13568576": "R/LAW-38-OUROBOROS (FingerMachineGun)"
   }
 }

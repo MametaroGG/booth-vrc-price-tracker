@@ -439,6 +439,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "✨ Hanka 斑霞": [
@@ -859,6 +864,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1283,6 +1293,11 @@
         "date": "2026-05-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "✨Men Full Set 3 AVATARS [ 1200->1000 ]": [
@@ -1692,7 +1707,18 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13210451": "✨Men Full Set 3 AVATARS",
+    "13211087": "✨ Minase 水瀬",
+    "13211088": "✨ Hanka 斑霞",
+    "13211089": "✨ Komano 狛乃"
   }
 }

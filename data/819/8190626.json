@@ -142,6 +142,11 @@
         "date": "2026-05-28",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "RD-ACTIVE_TOY（非変身版）": [
@@ -284,7 +289,16 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13712044": "RISEDIVER-ACTIVE（フルセット版）",
+    "13712109": "RD-ACTIVE_TOY（非変身版）"
   }
 }

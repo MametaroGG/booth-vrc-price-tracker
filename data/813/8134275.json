@@ -261,6 +261,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "【法人向け】Hitomi_Starship_Bangs01_Type1": [
@@ -388,7 +393,16 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13615479": "【個人向け】Hitomi_Starship_Bangs01_Type1",
+    "13618819": "【法人向け】Hitomi_Starship_Bangs01_Type1"
   }
 }

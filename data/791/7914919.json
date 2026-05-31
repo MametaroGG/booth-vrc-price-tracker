@@ -412,6 +412,11 @@
         "date": "2026-05-28",
         "price": 778,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 778,
+        "is_sale": false
       }
     ],
     "VRChat Quest-Only": [
@@ -822,6 +827,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3114,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3114,
         "is_sale": false
       }
@@ -1236,6 +1246,11 @@
         "date": "2026-05-28",
         "price": 4671,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4671,
+        "is_sale": false
       }
     ],
     "All of the Above": [
@@ -1648,7 +1663,18 @@
         "date": "2026-05-28",
         "price": 5450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13253201": "Blender IK Rig",
+    "13253232": "VRChat Quest-Only",
+    "13253233": "VRChat PC-Only",
+    "13253234": "All of the Above"
   }
 }

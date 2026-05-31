@@ -122,6 +122,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "販売記念セール【4/22まで】": [
@@ -158,5 +163,8 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13749258": "default"
   }
 }

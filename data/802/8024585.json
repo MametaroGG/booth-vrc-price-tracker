@@ -312,6 +312,11 @@
         "date": "2026-05-28",
         "price": 3094,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3094,
+        "is_sale": false
       }
     ],
     "Warudo": [
@@ -622,6 +627,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 3094,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3094,
         "is_sale": false
       }
@@ -936,7 +946,17 @@
         "date": "2026-05-28",
         "price": 5414,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5414,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13432549": "VRChat",
+    "13432671": "Warudo",
+    "13432672": "VRChat + Warudo"
   }
 }

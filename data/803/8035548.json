@@ -262,6 +262,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "しなの[Shinano]": [
@@ -547,6 +552,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -836,6 +846,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ミルティナ[Milltina]": [
@@ -1121,6 +1136,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1410,6 +1430,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ショコラ[Chocolat]": [
@@ -1695,6 +1720,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1984,6 +2014,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ラシューシャ[Lasyusha]": [
@@ -2269,6 +2304,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -2558,6 +2598,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "凪[Nagi]": [
@@ -2843,6 +2888,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -3132,6 +3182,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ツユナ[Tsuyuna]": [
@@ -3419,6 +3474,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "[Sale!! ~3/8]フルセット[FullSet]": [
@@ -3448,5 +3508,19 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13451483": "フルセット[FullSet]",
+    "13462872": "しなの[Shinano]",
+    "13462873": "マヌカ[Manuka]",
+    "13462874": "ミルティナ[Milltina]",
+    "13462875": "ルルネ[Rurune]",
+    "13462876": "ショコラ[Chocolat]",
+    "13462877": "ルミナ[Lumina]",
+    "13462878": "ラシューシャ[Lasyusha]",
+    "13462879": "イチゴ[Ichigo]",
+    "13462880": "凪[Nagi]",
+    "13462881": "ナナセ・ノワール[NanaseNoir]",
+    "13462882": "ツユナ[Tsuyuna]"
   }
 }

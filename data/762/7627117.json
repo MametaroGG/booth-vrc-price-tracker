@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 8000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 8000,
+        "is_sale": false
       }
     ],
     "Men S": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Men L": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Women M": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -3199,7 +3229,21 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12773538": "FullPack",
+    "12773587": "Men S",
+    "12773588": "Men M",
+    "12773589": "Men L",
+    "12773590": "Women S",
+    "12773591": "Women M",
+    "12773592": "Women L"
   }
 }

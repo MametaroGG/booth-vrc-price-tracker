@@ -34,6 +34,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Petal - 単品": [
@@ -51,6 +56,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Ivy - 単品": [
@@ -68,6 +78,11 @@
         "date": "2026-05-28",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "無料版【ショップフォロワー様限定・パスで解凍】": [
@@ -86,6 +101,19 @@
         "price": 0,
         "is_sale": true
       }
+    ],
+    "FullPack - 3種セット＋Ring": [
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
+      }
     ]
+  },
+  "variation_keys": {
+    "13996956": "FullPack - 3種セット＋Ring",
+    "14002948": "Lily - 単品",
+    "14002949": "Petal - 単品",
+    "14002950": "Ivy - 単品"
   }
 }

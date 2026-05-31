@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 980,
+        "is_sale": false
       }
     ],
     "A_ShellBack Sofa": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "C_Shelf & Mirror": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13182179": "Fluffy Girly Interior All Set",
+    "13182207": "A_ShellBack Sofa",
+    "13182208": "B_Table & Rug",
+    "13182209": "C_Shelf & Mirror"
   }
 }

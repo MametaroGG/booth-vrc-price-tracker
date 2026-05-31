@@ -214,6 +214,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Marycia": [
@@ -414,6 +419,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -618,6 +628,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Kipfel（まめふれんず）": [
@@ -820,6 +835,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Chocolat,Chiffon（Lime,Plum）": [
@@ -1017,6 +1037,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Shiratsume,Fyuett": [
@@ -1139,7 +1164,20 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13577955": "Marycia",
+    "13595320": "Lapwing",
+    "13598582": "fullpackage",
+    "13598583": "Kipfel（まめふれんず）",
+    "13605977": "Chocolat,Chiffon（Lime,Plum）",
+    "13753687": "Shiratsume,Fyuett"
   }
 }

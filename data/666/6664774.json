@@ -225,6 +225,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "おちびちゃんズ MAYO (Sister\"Z\")": [
@@ -380,6 +385,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -539,7 +549,17 @@
         "date": "2026-05-28",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11217559": "おちびちゃんズ MAYO (normal)",
+    "13646765": "おちびちゃんズ MAYO (Sister\"Z\")",
+    "13646766": "おちびちゃんズ MAYO FullSet"
   }
 }

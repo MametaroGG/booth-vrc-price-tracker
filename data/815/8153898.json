@@ -172,6 +172,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "【B-set】ブロンズトーン": [
@@ -342,6 +347,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -516,6 +526,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "【Support】A+B-setと中身は同じ": [
@@ -688,7 +703,18 @@
         "date": "2026-05-28",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13650602": "【A-set】イエロートーン",
+    "13650693": "【B-set】ブロンズトーン",
+    "13650694": "【A+B-set】おまけ付き",
+    "13650695": "【Support】A+B-setと中身は同じ"
   }
 }

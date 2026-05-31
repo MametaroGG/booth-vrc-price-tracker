@@ -222,6 +222,11 @@
         "date": "2026-05-28",
         "price": 9000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 9000,
+        "is_sale": false
       }
     ],
     "全色　all color": [
@@ -442,6 +447,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 7000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 7000,
         "is_sale": false
       }
@@ -666,6 +676,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "黄色Yellow": [
@@ -886,6 +901,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -1110,6 +1130,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "ピンクPink": [
@@ -1330,6 +1355,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -1554,6 +1584,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "緑Green": [
@@ -1776,7 +1811,22 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13562792": "全色コンプリートセット　Complete Set of All Colors",
+    "13562885": "全色　all color",
+    "13562886": "赤Red",
+    "13562887": "黄色Yellow",
+    "13562888": "黒Black",
+    "13562889": "ピンクPink",
+    "13562890": "水色light blue",
+    "13562891": "緑Green"
   }
 }

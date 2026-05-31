@@ -372,6 +372,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "天地 - Crimson": [
@@ -742,6 +747,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 750,
         "is_sale": false
       }
@@ -1116,7 +1126,17 @@
         "date": "2026-05-28",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13312337": "フルセット - Full Set",
+    "13328425": "天地 - Crimson",
+    "13328426": "彼方 - Azure"
   }
 }

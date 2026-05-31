@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Chocolat": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Airi": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "[for business purposes] Full Pack(1人)": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-29",
         "price": 15000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 15000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12848497": "Full Pack",
+    "12849530": "Manuka",
+    "12849531": "Chiffon",
+    "12849532": "Chocolat",
+    "12849533": "Milfy",
+    "12849534": "Airi",
+    "12849535": "Selestina",
+    "12849536": "[for business purposes] Full Pack(1人)"
   }
 }

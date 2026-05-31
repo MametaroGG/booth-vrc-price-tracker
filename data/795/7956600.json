@@ -372,6 +372,11 @@
         "date": "2026-05-28",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "[FULLSET]  MILFY ミルフィ": [
@@ -742,6 +747,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1116,6 +1126,11 @@
         "date": "2026-05-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "[MAKEUP + BODY COLOR] MILFY ミルフィ + EKU エク": [
@@ -1486,6 +1501,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1860,6 +1880,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "[NAILS] MILFY ミルフィ + EKU エク": [
@@ -2230,6 +2255,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -2604,6 +2634,11 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "[BLENDSHAPES] MILFY ミルフィ + EKU エク": [
@@ -2976,7 +3011,22 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13325337": "[FULLSET] MILFY ミルフィ + EKU エク",
+    "13325361": "[FULLSET]  MILFY ミルフィ",
+    "13325362": "[FULLSET]  EKU エク",
+    "13325363": "[MAKEUP + BODY COLOR] MILFY ミルフィ + EKU エク",
+    "13325364": "[EYE TEXTURES] MILFY ミルフィ + EKU エク",
+    "13325365": "[NAILS] MILFY ミルフィ + EKU エク",
+    "13325366": "[MATERIAL SETTING] MILFY ミルフィ + EKU エク",
+    "13325367": "[BLENDSHAPES] MILFY ミルフィ + EKU エク"
   }
 }

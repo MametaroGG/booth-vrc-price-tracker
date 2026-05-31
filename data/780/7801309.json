@@ -457,6 +457,11 @@
         "date": "2026-05-28",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Shinano / しなの": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "Uruki / ウルキ": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "Lumina / ルミナ": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "Mamehinata / Mamefriends / まめひなた / まめふれんず": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-28",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13066285": "Fullset / フルセット",
+    "13066466": "Shinano / しなの",
+    "13066467": "Plum, Lime, Chiffon, Chocolat / ショコラ, ライム, シフォン,プラム",
+    "13066468": "Uruki / ウルキ",
+    "13066469": "Milltina / ミルティナ",
+    "13066470": "Lumina / ルミナ",
+    "13066471": "Manuka / マヌカ",
+    "13066472": "Mamehinata / Mamefriends / まめひなた / まめふれんず"
   }
 }

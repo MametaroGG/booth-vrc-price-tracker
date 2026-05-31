@@ -209,6 +209,11 @@
         "date": "2026-05-28",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Body Only": [
@@ -411,6 +416,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Make Only": [
@@ -608,6 +618,11 @@
         "date": "2026-05-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "✨️30％OFF✨️Full Set": [
@@ -676,5 +691,10 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "13556729": "Make Only",
+    "13557684": "Full Set",
+    "13557685": "Body Only"
   }
 }

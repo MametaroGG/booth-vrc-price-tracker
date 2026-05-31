@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "kip": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "full !": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12890237": "mame",
+    "12890650": "kip",
+    "12890651": "ichinose",
+    "12890652": "full !"
   }
 }

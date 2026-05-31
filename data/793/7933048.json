@@ -392,6 +392,11 @@
         "date": "2026-05-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "🤍 FULL PACK 🤍": [
@@ -782,6 +787,11 @@
       },
       {
         "date": "2026-05-28",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1176,6 +1186,11 @@
         "date": "2026-05-28",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "🤍 EYE 🤍": [
@@ -1568,7 +1583,18 @@
         "date": "2026-05-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13285148": "🤍 EYE 🤍",
+    "13285518": "🤍 FULL PACK ＋ BlendShape 🤍",
+    "13285519": "🤍 FULL PACK 🤍",
+    "13285520": "🤍 MAKE UP 🤍"
   }
 }
