@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 490,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 490,
+        "is_sale": false
       }
     ],
     "限定版-Limited Edition-": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10964303": "通常版-Normal Edition-",
+    "10965051": "限定版-Limited Edition-"
   }
 }

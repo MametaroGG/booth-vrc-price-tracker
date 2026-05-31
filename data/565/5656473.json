@@ -142,6 +142,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "有償 (PAID)": [
@@ -282,6 +287,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 280,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 280,
         "is_sale": false
       }
@@ -426,6 +436,11 @@
         "date": "2026-05-30",
         "price": 580,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 580,
+        "is_sale": false
       }
     ],
     "作成支援★★ (Creation Support)": [
@@ -568,7 +583,17 @@
         "date": "2026-05-30",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 880,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9551723": "有償 (PAID)",
+    "9551724": "作成支援★ (Creation Support)",
+    "9551725": "作成支援★★ (Creation Support)"
   }
 }

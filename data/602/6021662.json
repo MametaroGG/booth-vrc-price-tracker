@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2300,
+        "is_sale": false
       }
     ],
     "Sio": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Mafuyu": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Lime": [
@@ -2622,7 +2647,20 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10174133": "Full set",
+    "10174284": "Sio",
+    "10174285": "Moe",
+    "10174286": "Mafuyu",
+    "10174287": "Selestia",
+    "10174288": "Lime"
   }
 }

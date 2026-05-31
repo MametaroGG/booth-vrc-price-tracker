@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 2900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2900,
+        "is_sale": false
       }
     ],
     "Lapwing": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2900,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-29",
         "price": 4900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10182067": "＋Head",
+    "10182068": "Lapwing",
+    "10473523": "FULL PACK"
   }
 }

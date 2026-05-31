@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 780,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 780,
+        "is_sale": false
       }
     ],
     "Capybara Shoes": [
@@ -884,7 +889,16 @@
         "date": "2026-05-29",
         "price": 320,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 320,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11033255": "Capybara Onesie & Shoes",
+    "11045223": "Capybara Shoes"
   }
 }

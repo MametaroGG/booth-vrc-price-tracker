@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "Digital license": [
@@ -874,7 +879,16 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10043763": "Personal license",
+    "10043851": "Digital license"
   }
 }

@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "【シャロ (Chalo)】 Halloween Circus": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1000,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "【酒井シホ(Sakai Shiho) 】 Halloween Circus": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10513075": "【シャロ (Chalo)】 Halloween Circus",
+    "10513191": "【フォシュニア(Foshunia)】 Halloween Circus",
+    "10513192": "【ララミエ (Laramie)】 Halloween Circus",
+    "12612883": "【酒井シホ(Sakai Shiho) 】 Halloween Circus"
   }
 }

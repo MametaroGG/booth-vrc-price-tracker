@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "LOVE_DRINK_Hair_Donate": [
@@ -884,7 +889,16 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10299006": "LOVE_DRINK_Hair",
+    "10300457": "LOVE_DRINK_Hair_Donate"
   }
 }

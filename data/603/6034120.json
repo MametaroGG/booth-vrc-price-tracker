@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "水瀬 Minase Only": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "狛乃 Komano Only": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "+Head Only": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "森羅 Shinra Only": [
@@ -3496,7 +3531,22 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10194240": "フルセット Fullset",
+    "10194308": "水瀬 Minase Only",
+    "10194309": "くうた Kuuta Only",
+    "10194310": "狛乃 Komano Only",
+    "10194311": "まめふれんず Mamefriends Only",
+    "10194312": "+Head Only",
+    "10194313": "マヌカ Manuka Only",
+    "10194314": "森羅 Shinra Only"
   }
 }

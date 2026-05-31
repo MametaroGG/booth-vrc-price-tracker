@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "VRC用unityパッケージ ＋ テクスチャPSD": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 4000,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11259955": "full pack",
+    "11704591": "VRMのみ　※改変には不向き",
+    "11736836": "VRC用unityパッケージ ＋ テクスチャPSD"
   }
 }

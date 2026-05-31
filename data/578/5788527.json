@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "3点セット　Arachne & Arachne parts for other avatars & spider": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 4000,
         "is_sale": false
       }
@@ -1311,7 +1321,16 @@
         "date": "2026-05-30",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9791745": "3点セット　Arachne & Arachne parts for other avatars & spider",
+    "9799485": "アラクネのラテラ Arachne only"
   }
 }

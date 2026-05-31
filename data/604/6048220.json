@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "DragonHorn_N　白金珊瑚": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "DragonWing_J": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10217492": "神聖海竜FullSet",
+    "10217582": "DragonHorn_N　白金珊瑚",
+    "10217583": "DragonTail_02_E　大海竜",
+    "10217584": "DragonWing_J"
   }
 }

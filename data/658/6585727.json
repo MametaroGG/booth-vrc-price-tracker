@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Personal Licenses (Broadcast)": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 11000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 11000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11095212": "Personal Licenses (Broadcast)",
+    "11096962": "Personal"
   }
 }

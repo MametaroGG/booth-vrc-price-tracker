@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "【内容物は変わりません】支援購入 - Support Price": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11218632": "通常購入 - Standard Price",
+    "11234448": "【内容物は変わりません】支援購入 - Support Price"
   }
 }

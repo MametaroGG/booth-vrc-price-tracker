@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "-Lofty-[ロフティー]+支援代": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10602815": "-Lofty-[ロフティー]",
+    "10602820": "-Lofty-[ロフティー]+支援代"
   }
 }

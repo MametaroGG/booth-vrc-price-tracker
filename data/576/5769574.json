@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "MANUKA": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1700,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9742409": "KIKYO",
+    "9774082": "Full Pack",
+    "9774083": "MANUKA"
   }
 }

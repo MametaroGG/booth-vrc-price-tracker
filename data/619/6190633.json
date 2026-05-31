@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "マヌカ-MANUKA-対応": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "しなの-Shinano-対応": [
@@ -1766,6 +1781,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -2210,6 +2230,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "MARUBODYアバター対応": [
@@ -2652,7 +2677,20 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10454805": "Full Set",
+    "10457723": "しなの-Shinano-対応",
+    "10457724": "ライム-Lime-対応",
+    "10457725": "マヌカ-MANUKA-対応",
+    "10457726": "ソフィナ-Sophina-対応",
+    "10468435": "MARUBODYアバター対応"
   }
 }

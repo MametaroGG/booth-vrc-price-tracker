@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "しなの/Shinano": [
@@ -894,6 +899,11 @@
         "date": "2026-05-29",
         "price": 890,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "ミルティナ/Milltina": [
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 890,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "愛莉/Airi": [
@@ -1788,6 +1803,11 @@
         "date": "2026-05-29",
         "price": 890,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "マヌカ/Manuka": [
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 890,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "ショコラ&ライム&シフォン / Chocolat&Lime&Chiffon": [
@@ -2682,6 +2707,11 @@
         "date": "2026-05-29",
         "price": 890,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "森羅/Shinra": [
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 890,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "萌/Moe": [
@@ -3576,6 +3611,11 @@
         "date": "2026-05-29",
         "price": 890,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "しお/Sio": [
@@ -4023,7 +4063,23 @@
         "date": "2026-05-29",
         "price": 890,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11259290": "Full-Set",
+    "11263788": "しなの/Shinano",
+    "11263789": "ミルティナ/Milltina",
+    "11263790": "愛莉/Airi",
+    "11263791": "マヌカ/Manuka",
+    "11263792": "ショコラ&ライム&シフォン / Chocolat&Lime&Chiffon",
+    "11263793": "森羅/Shinra",
+    "11266493": "萌/Moe",
+    "11266691": "しお/Sio"
   }
 }

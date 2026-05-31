@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Luxurious Ring 支援版(おまけブレスレット付)": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10833228": "Luxurious Ring",
+    "10833659": "Luxurious Ring 支援版(おまけブレスレット付)"
   }
 }

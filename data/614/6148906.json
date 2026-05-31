@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "②Nail Set [Shinano Only]": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1326,7 +1336,17 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10385483": "①MakeUp Set [Shinano Only]",
+    "10415663": "②Nail Set [Shinano Only]",
+    "10415664": "③Full Set [Makeup & Nail]"
   }
 }

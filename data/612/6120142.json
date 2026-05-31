@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "VRoid＋VRMパック": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2500,
         "is_sale": false
       }
@@ -1326,7 +1336,17 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10337018": "VRMパック",
+    "10338123": "VRoid＋VRMパック",
+    "10338218": "衣装＋髪飾り　カスタムアイテム"
   }
 }

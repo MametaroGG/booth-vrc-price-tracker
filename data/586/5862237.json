@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 5600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5600,
+        "is_sale": false
       }
     ],
     "semi modular version | セミモジュール版": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 6400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 6400,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 7200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 7200,
+        "is_sale": false
       }
     ],
     "nsfw semi modular version |  NSFWセミモジュラーバージョン": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 8000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 8000,
         "is_sale": false
       }
@@ -2185,7 +2205,19 @@
         "date": "2026-05-30",
         "price": 8800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 8800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9899309": "regular version | 通常版",
+    "9899363": "semi modular version | セミモジュール版",
+    "9899364": "fully modular version | 完全モジュール式バージョン",
+    "9899365": "nsfw semi modular version |  NSFWセミモジュラーバージョン",
+    "9899366": "nsfw fully modular | NSFW 完全モジュール式"
   }
 }

@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Whitchi walking （シフォン/衣装・帽子・ブーツデータのみ/ネイル等は含まれません)": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 400,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 801,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 801,
+        "is_sale": false
       }
     ],
     "Ankle_boots(単品)（for MANUKA）": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10395395": "Whitchi walking（京狐・沙猫）",
+    "10395542": "フルパック（京狐・沙猫・シフォン対応）",
+    "10403082": "Ankle_boots(単品)（for MANUKA）",
+    "10416056": "Whitchi walking （シフォン/衣装・帽子・ブーツデータのみ/ネイル等は含まれません)"
   }
 }

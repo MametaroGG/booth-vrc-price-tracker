@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 199,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 199,
+        "is_sale": false
       }
     ],
     "PACK #2 [GRAY] || パック#2 [グレー]": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 199,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 199,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 199,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 199,
+        "is_sale": false
       }
     ],
     "PACK #4 [BLUE] || パック#4 [青]": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-30",
         "price": 199,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 199,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9837736": "PACK #1 [GREEN] || パック#1 [グリーン]",
+    "9837995": "PACK #2 [GRAY] || パック#2 [グレー]",
+    "9837996": "PACK #3 [RED] || パック#3 [赤]",
+    "9837997": "PACK #4 [BLUE] || パック#4 [青]"
   }
 }

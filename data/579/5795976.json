@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "♥MANUKA♥": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 900,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "♥MOE♥": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 900,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "♥SIO♥": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 900,
         "is_sale": false
       }
@@ -3059,7 +3089,21 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9788245": "♥FULL♥",
+    "9788680": "♥MANUKA♥",
+    "9788681": "♥CHIFFON♥",
+    "9788682": "♥MOE♥",
+    "9788683": "♥KIKYO♥",
+    "9788684": "♥SIO♥",
+    "9788685": "♥MAME HINATA♥"
   }
 }

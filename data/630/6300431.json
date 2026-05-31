@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "White": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "BlackPink": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -2237,6 +2257,11 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Pink  / Corporate price": [
@@ -2257,6 +2282,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2100,
         "is_sale": false
       }
@@ -2281,6 +2311,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Black/ Corporate price": [
@@ -2301,6 +2336,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2100,
         "is_sale": false
       }
@@ -2325,6 +2365,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "BlackPink+Black+White+Pink 4 way / Corporate price": [
@@ -2347,7 +2392,24 @@
         "date": "2026-05-29",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 7000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10635981": "Pink",
+    "10636060": "White",
+    "10636061": "Black",
+    "10636062": "BlackPink",
+    "12545919": "BlackPink+Black+White+Pink 4 way",
+    "14011350": "Pink  / Corporate price",
+    "14011351": "White/ Corporate price",
+    "14011352": "Black/ Corporate price",
+    "14011353": "BlackPink / Corporate price",
+    "14011354": "BlackPink+Black+White+Pink 4 way / Corporate price"
   }
 }

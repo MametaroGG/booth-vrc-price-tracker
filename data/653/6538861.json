@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 170,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 170,
+        "is_sale": false
       }
     ],
     "The Waltz (Red)": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 110,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 110,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 110,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 110,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11022292": "The Waltz (Red and Blue variatons)",
+    "11022327": "The Waltz (Red)",
+    "11022328": "The Waltz (Blue)"
   }
 }

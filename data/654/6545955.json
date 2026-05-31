@@ -392,6 +392,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Eye only": [
@@ -837,6 +842,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 200,
         "is_sale": false
       }
@@ -1286,6 +1296,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "支援版(Full set + Face BlendShape)": [
@@ -1733,6 +1748,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "🎉SALE🎉Full set": [
@@ -1792,5 +1812,11 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11038229": "Full set",
+    "11038623": "支援版(Full set + Face BlendShape)",
+    "11115223": "Eye only",
+    "11115224": "Make only"
   }
 }

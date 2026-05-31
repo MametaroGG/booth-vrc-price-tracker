@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "TAmago_Hair_001 + Donate": [
@@ -884,6 +889,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "商用利用 個人用 Licenses 1人": [
@@ -1149,6 +1159,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1418,7 +1433,18 @@
         "date": "2026-05-29",
         "price": 15000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 15000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10953355": "TAmago_Hair_001",
+    "10953398": "TAmago_Hair_001 + Donate",
+    "13487843": "商用利用 個人用 Licenses 1人",
+    "13487844": "商用利用 企業向け Licenses 1人"
   }
 }

@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1100,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1100,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Rindo": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1100,
         "is_sale": false
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Kikyo": [
@@ -3574,6 +3609,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1100,
         "is_sale": false
       }
@@ -4023,6 +4063,11 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Lime": [
@@ -4470,7 +4515,24 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10725025": "Full Set",
+    "10725228": "Shinano",
+    "10725229": "Airi",
+    "10725230": "Manuka",
+    "10725231": "Sio",
+    "10725232": "Rindo",
+    "10725233": "Selestia",
+    "10725234": "Kikyo",
+    "10725235": "Mafuyu",
+    "10725236": "Lime"
   }
 }

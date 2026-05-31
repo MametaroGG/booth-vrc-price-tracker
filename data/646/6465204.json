@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "make＆EYE01　unitypackage": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 950,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "make_unitypackage": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "EYE02_unitypackage": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "EYE01Texture": [
@@ -3574,6 +3609,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 350,
         "is_sale": false
       }
@@ -4023,7 +4063,23 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10904869": "フルパック＋PSDデータ",
+    "10905852": "make＆EYE01　unitypackage",
+    "10905853": "make＆EYE02　unitypackage",
+    "10905854": "make_unitypackage",
+    "10905855": "EYE01_unitypackage",
+    "10905856": "EYE02_unitypackage",
+    "10905857": "maketexture",
+    "10905858": "EYE01Texture",
+    "10905859": "EYE02Texture"
   }
 }

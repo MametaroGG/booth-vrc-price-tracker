@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "Nanami.vroid": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11068392": "Nanami.vrm",
+    "11560204": "Nanami.vroid"
   }
 }

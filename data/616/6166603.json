@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Shinano De-Coloured Arms (しなの)": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 600,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Moe De-Coloured Arms (萌 )": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10413818": "Full Set(しなの, 桔梗, 萌 )",
+    "10414082": "Shinano De-Coloured Arms (しなの)",
+    "10414083": "Kikyo De-Coloured Arms (桔梗 )",
+    "10414084": "Moe De-Coloured Arms (萌 )"
   }
 }

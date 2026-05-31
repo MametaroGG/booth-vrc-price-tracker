@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "崇橋ノ神 VRM＋VRoidデータ": [
@@ -874,7 +879,16 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10192816": "崇橋ノ神 VRMデータのみ",
+    "10192977": "崇橋ノ神 VRM＋VRoidデータ"
   }
 }

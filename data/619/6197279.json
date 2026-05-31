@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Makeup＆Lipsticks Texture　only": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ご飯代(内容物は同じです)＋Full Package": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10467030": "Makeup＆Lipsticks Texture　only",
+    "10467298": "Eyes Texture only",
+    "10467299": "Full Package",
+    "10467300": "ご飯代(内容物は同じです)＋Full Package"
   }
 }

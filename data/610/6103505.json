@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "セレスティア / SELESTIA 🩷": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "森羅 / SHINRA 🩷": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10309011": "🩷 FULL SET 🩷",
+    "10309065": "セレスティア / SELESTIA 🩷",
+    "10309066": "マヌカ / MANUKA 🩷",
+    "10309067": "森羅 / SHINRA 🩷"
   }
 }

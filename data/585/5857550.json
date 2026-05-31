@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "おやつ代(オマケ付き)": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9890862": "RiDs HearT tattoo 本体",
+    "10551188": "おやつ代(オマケ付き)"
   }
 }

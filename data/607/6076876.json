@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "PSD付き＋おまけ用顔の影マスク": [
@@ -874,7 +879,16 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10265975": "PNG only",
+    "10266188": "PSD付き＋おまけ用顔の影マスク"
   }
 }

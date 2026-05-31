@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ONESAN VER": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "Support me ( • ᴗ - ) ✧": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10287231": "LOLI VER",
+    "10287242": "ONESAN VER",
+    "10287243": "ALL",
+    "10287244": "Support me ( • ᴗ - ) ✧"
   }
 }

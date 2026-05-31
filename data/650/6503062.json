@@ -606,6 +606,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "LASYUSHA_FULLPACK": [
@@ -896,6 +901,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1190,6 +1200,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "NAKIYA_FULLPACK": [
@@ -1480,6 +1495,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1774,6 +1794,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "BAKU_FULLPACK": [
@@ -2066,7 +2091,20 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10964677": "LASYUSHA_EYE",
+    "10964726": "LASYUSHA_FULLPACK",
+    "13450303": "NAKIYA_EYE",
+    "13450304": "NAKIYA_FULLPACK",
+    "13454537": "BAKU_EYE",
+    "13454538": "BAKU_FULLPACK"
   }
 }

@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Lime": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 480,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 480,
+        "is_sale": false
       }
     ],
     "Moe": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 480,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 480,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 480,
         "is_sale": false
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-30",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 480,
+        "is_sale": false
       }
     ],
     "Selestia": [
@@ -3496,7 +3531,22 @@
         "date": "2026-05-30",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 480,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10006843": "【フルセット】",
+    "10006880": "Lime",
+    "10006881": "chiffon",
+    "10006882": "Moe",
+    "10006883": "kikyo",
+    "10006884": "Manuka",
+    "10055827": "Selestia",
+    "10055828": "Sophina"
   }
 }

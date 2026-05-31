@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "パープル / Purple": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1000,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "全色 / All 3 colors": [
@@ -1766,6 +1781,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2400,
         "is_sale": false
       }
@@ -2210,7 +2230,19 @@
         "date": "2026-05-29",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 6000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10444683": "ピンク / Pink",
+    "10445003": "パープル / Purple",
+    "10445004": "青 / Blue",
+    "10445033": "全色 / All 3 colors",
+    "10952937": "Corporate Ver. （企業版）全色 / All 3 colors"
   }
 }

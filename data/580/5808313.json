@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "マヌカ  - Manuka": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "桔梗 - Kikyo": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9809538": "マヌカ  - Manuka",
+    "9812677": "セルティア  - Selestia",
+    "9812678": "桔梗 - Kikyo",
+    "12194871": "【マニュアル/単】 放射性セット (Manual/Single) Radioactive set"
   }
 }

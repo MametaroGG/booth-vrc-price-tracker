@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "💜マヌカ用 ( Manuka )💜": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1100,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "💜しなの ( Shinano )💜": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1100,
         "is_sale": false
       }
@@ -2235,7 +2255,19 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10585544": "💜萌用 ( Moe )💜",
+    "10585598": "💜マヌカ用 ( Manuka )💜",
+    "10585599": "💜愛莉用 ( Airi )💜",
+    "10585600": "💜しなの ( Shinano )💜",
+    "10585601": "💜Full Set (4人)💜"
   }
 }

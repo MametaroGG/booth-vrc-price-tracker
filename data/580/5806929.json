@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "マヌカ[Manuka]": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2300,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2300,
+        "is_sale": false
       }
     ],
     "桔梗[Kikyo]": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2300,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2300,
+        "is_sale": false
       }
     ],
     "しお[Sio]": [
@@ -2622,7 +2647,20 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9807426": "FULL PACK",
+    "9821142": "マヌカ[Manuka]",
+    "9821143": "セレスティア[Selestia]",
+    "9821144": "桔梗[Kikyo]",
+    "9821145": "萌[Moe]",
+    "9821146": "しお[Sio]"
   }
 }

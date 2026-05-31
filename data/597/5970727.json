@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "forChiffon（シフォン）": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "forManuka（マヌカ）": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "forMizuki（瑞希）": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "forShinra（森羅）": [
@@ -3494,6 +3529,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -3933,7 +3973,23 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10089834": "フルセット（8体）",
+    "10186738": "forChiffon（シフォン）",
+    "10186739": "forKikyo（桔梗）",
+    "10186740": "forManuka（マヌカ）",
+    "10186741": "forMARUBODY（ルキフェル）",
+    "10186742": "forMizuki（瑞希）",
+    "10186743": "forMoe（萌）",
+    "10186744": "forShinra（森羅）",
+    "10186745": "forSio（しお）"
   }
 }

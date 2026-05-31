@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Selestia - セレスティア用": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 900,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Sio - しお用": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 900,
         "is_sale": false
       }
@@ -2185,7 +2205,19 @@
         "date": "2026-05-30",
         "price": 1550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9765988": "Moe - 萌用",
+    "9765991": "Selestia - セレスティア用",
+    "9765992": "Manuka - マヌカ用",
+    "9765993": "Sio - しお用",
+    "9765994": "Full Set[4人]"
   }
 }

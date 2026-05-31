@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "Manuka / マヌカ": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 199,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 199,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 199,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 199,
+        "is_sale": false
       }
     ],
     "Moe / 萌": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 199,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 199,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 199,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 199,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9584771": "Full Pack [4 Avatars]",
+    "9584837": "Manuka / マヌカ",
+    "9584838": "Moe / 萌",
+    "9584839": "Sio / しお",
+    "9711922": "Mizuki / 瑞希"
   }
 }

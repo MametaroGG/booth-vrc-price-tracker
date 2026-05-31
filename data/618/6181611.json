@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": true
       }
     ],
     "DLC - Coffee Grinder": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 600,
         "is_sale": true
       }
@@ -1326,7 +1336,16 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10439983": "Siphon Coffee本体 - Main Package",
+    "10794861": "DLC - Coffee Grinder"
   }
 }

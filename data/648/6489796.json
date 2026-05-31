@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2850,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2850,
+        "is_sale": false
       }
     ],
     "Lilly Hair Style One": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1400,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10942933": "Lilly Full Hair",
+    "10942984": "Lilly Hair Style One",
+    "10942985": "Lilly Hair Style Two"
   }
 }

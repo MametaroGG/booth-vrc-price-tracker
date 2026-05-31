@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "FantasticBunny+VRM": [
@@ -874,7 +879,16 @@
         "date": "2026-05-30",
         "price": 390,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 390,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9735110": "FantasticBunny",
+    "9735257": "FantasticBunny+VRM"
   }
 }

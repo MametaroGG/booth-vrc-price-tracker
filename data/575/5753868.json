@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "萌 Moe": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": true
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "9715324": "マヌカ_Manuka",
+    "9718354": "萌 Moe",
+    "9729448": "「しお Sio」"
   }
 }

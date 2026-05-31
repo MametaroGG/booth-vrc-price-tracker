@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "投げ銭（中身は通常版と同じです）support version(Contents are the same as the standard version)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9567570": "通常版(standard version)",
+    "9567578": "投げ銭（中身は通常版と同じです）support version(Contents are the same as the standard version)"
   }
 }

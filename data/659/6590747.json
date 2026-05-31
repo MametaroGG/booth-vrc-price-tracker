@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1650,
+        "is_sale": false
       }
     ],
     "Kipfel/キプフェルEyes✨": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Sinano/しなのEyes✨": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "これでおいしいものたべてね！": [
@@ -2682,7 +2707,20 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11103065": "Kipfel/キプフェルEyes✨",
+    "11103216": "フルセット✨",
+    "11103217": "Mamehinata/まめひなた✨",
+    "11103218": "Sinano/しなのEyes✨",
+    "11103219": "Lasyusha/ラシューシャEyes✨",
+    "11103220": "これでおいしいものたべてね！"
   }
 }

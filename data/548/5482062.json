@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 5800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5800,
+        "is_sale": false
       }
     ],
     "Mobile版 (VRChat Android / Quest 対応)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3800,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 8500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 8500,
+        "is_sale": false
       }
     ],
     "VRChat用サムネイル・ポスター等": [
@@ -1728,7 +1743,17 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9254387": "PC版 (VRM同梱)",
+    "9309927": "Mobile版 (VRChat Android / Quest 対応)",
+    "9309928": "PC版 & Mobile版 (PC版準拠 VRM同梱) 重複購入にご注意ください"
   }
 }

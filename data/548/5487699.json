@@ -402,6 +402,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "Quest ※詳細をよく確認のうえご購入お願いします": [
@@ -832,6 +837,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 4000,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "PC+Quest+VRM": [
@@ -1668,6 +1683,11 @@
         "date": "2026-05-30",
         "price": 8000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 8000,
+        "is_sale": false
       }
     ],
     "【SALE】PC": [
@@ -1734,5 +1754,11 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "9263573": "PC",
+    "9264404": "Quest ※詳細をよく確認のうえご購入お願いします",
+    "9264405": "VRM",
+    "9264406": "PC+Quest+VRM"
   }
 }

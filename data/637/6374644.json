@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "Manuka_マヌカ": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 100,
         "is_sale": true
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10757787": "Shinano_しなの",
+    "10833521": "Manuka_マヌカ",
+    "10833522": "Airi_愛莉"
   }
 }

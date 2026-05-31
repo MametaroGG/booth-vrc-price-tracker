@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4000,
+        "is_sale": true
       }
     ],
     "トリーニャ◆TRINYA◆": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": true
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": true
       }
     ],
     "萌◆MOE◆": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": true
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": true
       }
     ],
     "シフォン◆CHIFFON◆": [
@@ -2622,7 +2647,20 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "9857193": "フルセット ◆FULL SET◆",
+    "9857280": "トリーニャ◆TRINYA◆",
+    "9857281": "マヌカ ◆MANUKA◆",
+    "9857282": "萌◆MOE◆",
+    "9857283": "桔梗 ◆KIKYO◆",
+    "9857284": "シフォン◆CHIFFON◆"
   }
 }

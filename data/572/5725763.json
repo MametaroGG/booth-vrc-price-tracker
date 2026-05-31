@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 4800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4800,
+        "is_sale": false
       }
     ],
     "for Kikyo （桔梗）": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3200,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9666693": "for Kikyo （桔梗）",
+    "10907542": "for Shinano （しなの）",
+    "10907550": "for All"
   }
 }

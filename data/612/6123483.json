@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 2250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2250,
+        "is_sale": false
       }
     ],
     "LOLI": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "SHOTA": [
@@ -1766,6 +1781,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -2210,7 +2230,19 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10342434": "LOLI",
+    "10342452": "FULL SET",
+    "10342453": "ONESAN",
+    "10342454": "SHOTA",
+    "10342455": "Support me"
   }
 }

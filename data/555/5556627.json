@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "2. Coming Soon (Don't Buy)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 999999,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 999999,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9381197": "1. Kuso-gaki Twintail (Face Pack)",
+    "9381390": "2. Coming Soon (Don't Buy)"
   }
 }

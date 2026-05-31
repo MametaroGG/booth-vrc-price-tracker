@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "❤Manuka❤": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 850,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "❤Kipfel, Mamehinata❤": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-29",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 850,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10198648": "❤Full Pack❤",
+    "10198761": "❤Manuka❤",
+    "10198762": "❤Chiffon, Lime❤",
+    "10198763": "❤Kipfel, Mamehinata❤"
   }
 }

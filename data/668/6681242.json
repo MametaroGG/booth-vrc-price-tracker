@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "manuka": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 130,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 130,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 130,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 130,
+        "is_sale": false
       }
     ],
     "kipfel": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 130,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 130,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 130,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 130,
+        "is_sale": false
       }
     ],
     "mamehinata": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 130,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 130,
         "is_sale": false
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 130,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 130,
+        "is_sale": false
       }
     ],
     "nagi": [
@@ -3574,6 +3609,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 130,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 130,
         "is_sale": false
       }
@@ -4023,6 +4063,11 @@
         "date": "2026-05-29",
         "price": 130,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 130,
+        "is_sale": false
       }
     ],
     "sophina": [
@@ -4470,7 +4515,24 @@
         "date": "2026-05-29",
         "price": 130,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 130,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11247082": "All",
+    "11247122": "manuka",
+    "11247123": "kikyo",
+    "11247124": "kipfel",
+    "11247125": "mafuyu",
+    "11247126": "mamehinata",
+    "11247127": "moe",
+    "11247128": "nagi",
+    "11247129": "sophina",
+    "11247130": "maya"
   }
 }

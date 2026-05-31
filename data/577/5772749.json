@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "💖Momoka💖 Cosmos Eyes": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "💝Momoka💝 Momoka Lovely FullPack": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9748049": "💖Momoka💖 Pastel Eyes",
+    "9748080": "💖Momoka💖 Cosmos Eyes",
+    "9748081": "💖Momoka💖 Lovely Make Up",
+    "9748082": "💝Momoka💝 Momoka Lovely FullPack"
   }
 }

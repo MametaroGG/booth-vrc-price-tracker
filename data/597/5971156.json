@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Manuka_マヌカ_British_Classic": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 450,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Shinra_森羅_British_Classic": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 450,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Kikyo_桔梗_British_Classic": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 450,
         "is_sale": false
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Chiffon_シフォン_British_Classic": [
@@ -3496,7 +3531,22 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10090656": "Full_set_フルセット",
+    "10090684": "Manuka_マヌカ_British_Classic",
+    "10090685": "Moe_萌_British_Classic",
+    "10090686": "Shinra_森羅_British_Classic",
+    "10090687": "Selestia_セレスティア_British_Classic",
+    "10090688": "Kikyo_桔梗_British_Classic",
+    "10090689": "Sio_しお_British_Classic",
+    "10090690": "Chiffon_シフォン_British_Classic"
   }
 }

@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "支援（内容同じ）": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10864727": "ペンギン足跡パーティクル（Penguin Footprint Particle）",
+    "10864986": "支援（内容同じ）"
   }
 }

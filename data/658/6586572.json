@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "衣装Only": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11096407": "衣装+髪型（Reぱっつん姫ロング）SET（おまけつき）",
+    "11102530": "衣装Only"
   }
 }

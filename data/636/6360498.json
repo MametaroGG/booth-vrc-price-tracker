@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "ビジネスユース/商用/commercial": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10734500": "[本体 5]",
+    "10734541": "ビジネスユース/商用/commercial"
   }
 }

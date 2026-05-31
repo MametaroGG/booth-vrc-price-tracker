@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "Green": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 399,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 399,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "Black": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 399,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 399,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "Red": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 399,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 399,
         "is_sale": false
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-30",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "All Colour": [
@@ -3496,7 +3531,22 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9697732": "Pink",
+    "9697798": "Green",
+    "9697799": "Purple",
+    "9697800": "Black",
+    "9697801": "Silver",
+    "9697802": "Red",
+    "9697803": "Sky",
+    "9697804": "All Colour"
   }
 }

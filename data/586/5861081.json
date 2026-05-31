@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 3300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3300,
+        "is_sale": false
       }
     ],
     "Stylish Jerseys(ジャージ+靴)": [
@@ -874,7 +879,16 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9897301": "Stylish Jerseys_Second Outer_Fullset",
+    "9897403": "Stylish Jerseys(ジャージ+靴)"
   }
 }

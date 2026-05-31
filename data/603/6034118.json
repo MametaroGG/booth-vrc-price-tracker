@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "[MANUKA]": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": true
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10194238": "[SIO]",
+    "10194254": "[MANUKA]",
+    "10194255": "[FULL SET]"
   }
 }

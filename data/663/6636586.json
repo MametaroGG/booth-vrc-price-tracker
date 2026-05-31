@@ -412,6 +412,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Sea Horn+あいす代": [
@@ -859,6 +864,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "【SALE】Sea Horn": [
@@ -898,5 +908,9 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11173405": "Sea Horn",
+    "11173533": "Sea Horn+あいす代"
   }
 }

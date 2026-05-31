@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3800,
+        "is_sale": false
       }
     ],
     "団体利用・商用利用版 - Group and Commercial Use license": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 5100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11065535": "通常版 - Personal license",
+    "11068146": "団体利用・商用利用版 - Group and Commercial Use license"
   }
 }

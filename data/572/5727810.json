@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 7000,
+        "is_sale": false
       }
     ],
     "スーツ衣装セット版（Suit Bundle Edition）": [
@@ -874,6 +879,11 @@
         "date": "2026-05-30",
         "price": 8500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 8500,
+        "is_sale": false
       }
     ],
     "墨惺ぬいぐるみポーチ": [
@@ -946,7 +956,17 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9670148": "通常版（Standard Edition）",
+    "9743407": "スーツ衣装セット版（Suit Bundle Edition）",
+    "13863435": "墨惺ぬいぐるみポーチ"
   }
 }

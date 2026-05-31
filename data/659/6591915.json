@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1900,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1900,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1900,
         "is_sale": false
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "Selestia": [
@@ -3576,7 +3611,22 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11104859": "Full pack",
+    "11105098": "Milltina",
+    "11105341": "Chocolat",
+    "11105342": "Shinano",
+    "11105343": "Airi",
+    "11105344": "Manuka",
+    "11105345": "Moe",
+    "11105346": "Selestia"
   }
 }

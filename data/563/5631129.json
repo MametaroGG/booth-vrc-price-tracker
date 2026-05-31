@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Mania": [
@@ -864,6 +869,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Unknown": [
@@ -1294,6 +1304,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2500,
         "is_sale": false
       }
@@ -2452,6 +2467,11 @@
         "date": "2026-05-30",
         "price": 999999,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 999999,
+        "is_sale": false
       }
     ],
     "Hora": [
@@ -2522,6 +2542,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2500,
         "is_sale": false
       }
@@ -2596,6 +2621,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Neivassi": [
@@ -2666,6 +2696,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2500,
         "is_sale": false
       }
@@ -2740,7 +2775,22 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9508569": "IN-Papyro",
+    "10113806": "過去データ購入者向け",
+    "10113807": "Mania",
+    "10597988": "Unknown",
+    "11537199": "Hora",
+    "11537200": "Lubior",
+    "13871223": "Neivassi",
+    "13871224": "Ves"
   }
 }

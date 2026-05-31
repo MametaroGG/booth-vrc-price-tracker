@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Exo's Ears (Texture Pack 2)": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 650,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9721688": "Exo's Ears (Basic Package)",
+    "9721726": "Exo's Ears (Texture Pack 2)",
+    "9721750": "Exo's Ears (Donation Version)"
   }
 }

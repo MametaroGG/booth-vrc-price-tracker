@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "◇◇EYETexture　PNGデータ　8枚＋エミッション用mask1枚": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10084441": "◇make upPNGファイル透過１枚",
+    "10084974": "◇◇EYETexture　PNGデータ　8枚＋エミッション用mask1枚",
+    "10084975": "◇◇◇全部データ＋PSDデータ"
   }
 }

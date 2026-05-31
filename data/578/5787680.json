@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "scoopsahoy_girl": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "For support(all＋sneakers) 支援用　服全部＋スニーカー": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9773835": "scoopsahoy_boy",
+    "9774177": "scoopsahoy_girl",
+    "9774178": "all_scoopsahoy costume",
+    "9774179": "For support(all＋sneakers) 支援用　服全部＋スニーカー"
   }
 }

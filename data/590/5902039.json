@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "Liloumois": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 750,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "Haruka": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 750,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "碼希": [
@@ -2622,7 +2647,20 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9964979": "Sio",
+    "9965006": "Liloumois",
+    "9965007": "Cian",
+    "9965008": "Haruka",
+    "9965009": "墨惺",
+    "9965010": "碼希"
   }
 }

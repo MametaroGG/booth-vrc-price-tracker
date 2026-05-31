@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "おちびちゃんズ Sio": [
@@ -867,6 +872,11 @@
       },
       {
         "date": "2026-05-27",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1000,
         "is_sale": false
       }
@@ -1301,6 +1311,11 @@
         "date": "2026-05-27",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "【SALE】おちびちゃんズ Sio": [
@@ -1317,5 +1332,10 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10253583": "おちびちゃんズ rurune",
+    "10273883": "おちびちゃんズ Sio",
+    "10273884": "おちびちゃんズ rurune & Sio"
   }
 }

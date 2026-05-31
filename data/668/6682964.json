@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": true
       }
     ],
     "Don't Start Now_Dance(forMMD)": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": true
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11249976": "Don't Start Now_Dance(forUnity)",
+    "11250056": "Don't Start Now_Dance(forMMD)",
+    "11250057": "Unity/MMD 同封版"
   }
 }

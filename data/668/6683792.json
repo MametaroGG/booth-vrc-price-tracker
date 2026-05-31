@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 990,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 990,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 990,
+        "is_sale": false
       }
     ],
     "Selestia": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 990,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 990,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 990,
+        "is_sale": false
       }
     ],
     "ICHIGO(イチゴ)": [
@@ -2682,7 +2707,20 @@
         "date": "2026-05-29",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 990,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11251279": "フルセット",
+    "11251339": "Milltina",
+    "11251340": "Shinano",
+    "11278901": "Selestia",
+    "11278981": "Manuka",
+    "12307673": "ICHIGO(イチゴ)"
   }
 }

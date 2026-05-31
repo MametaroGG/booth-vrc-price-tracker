@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Catherine ClothesSet (Pecs)": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1800,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11038058": "Catherine ClothesSet Bundle(Pecs+Breast)",
+    "11038122": "Catherine ClothesSet (Pecs)",
+    "11038123": "Catherine ClothesSet (Breast)"
   }
 }

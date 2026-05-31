@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 3900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3900,
+        "is_sale": false
       }
     ],
     "地雷ロリータ": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1800,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Running Cat": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10158534": "地雷ロリータ",
+    "10158660": "３点セット",
+    "10158661": "Pinky Girl",
+    "10158662": "Running Cat"
   }
 }

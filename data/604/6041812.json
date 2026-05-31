@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 198,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 198,
+        "is_sale": false
       }
     ],
     "Manukaちゃん版": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Meiちゃん版": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-29",
         "price": 198,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 198,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10206605": "Maoちゃん版",
+    "11440896": "Manukaちゃん版",
+    "11775083": "Binahちゃん版",
+    "12967599": "Meiちゃん版"
   }
 }

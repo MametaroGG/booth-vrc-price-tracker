@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Halo only(ヘイロー単品）": [
@@ -874,7 +879,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10017430": "Halo + Loyal set(モノクル/ピアス/髪飾り/指輪)",
+    "10017667": "Halo only(ヘイロー単品）"
   }
 }

@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1980,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1980,
+        "is_sale": true
       }
     ],
     "Airi": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 990,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 990,
         "is_sale": true
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 990,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Manuka": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 990,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 990,
         "is_sale": true
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 990,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Shinra": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 990,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 990,
         "is_sale": true
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 990,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Moe": [
@@ -3576,7 +3611,22 @@
         "date": "2026-05-29",
         "price": 990,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 990,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10620280": "FullSet",
+    "10623697": "Shinano",
+    "10623698": "Manuka",
+    "10623699": "Selestia",
+    "10623700": "Shinra",
+    "10623701": "Lime & Chiffon",
+    "10623702": "Moe",
+    "10623707": "Airi"
   }
 }

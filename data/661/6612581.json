@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 499,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 499,
+        "is_sale": false
       }
     ],
     "Gray Shirt/グレーのシャツ": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 100,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Black Shirt/黒シャツ": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 100,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Pink Shirt/ピンクのシャツ": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 100,
         "is_sale": false
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Red Shirt/赤シャツ": [
@@ -3574,6 +3609,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 100,
         "is_sale": false
       }
@@ -4023,6 +4063,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Yellow Shirt/黄色いシャツ": [
@@ -4470,7 +4515,24 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11136544": "All colors/すべての色",
+    "11136598": "Gray Shirt/グレーのシャツ",
+    "11136599": "White Shirt/白いシャツ",
+    "11136600": "Black Shirt/黒シャツ",
+    "11136601": "Blue Shirt/青いシャツ",
+    "11136602": "Pink Shirt/ピンクのシャツ",
+    "11136603": "Green Shirt/グリーンシャツ",
+    "11136604": "Red Shirt/赤シャツ",
+    "11136605": "Orange Shirt/オレンジシャツ",
+    "11136606": "Yellow Shirt/黄色いシャツ"
   }
 }

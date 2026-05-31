@@ -1710,6 +1710,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "BeanieLongHair / Personal price": [
@@ -1730,6 +1735,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -1754,6 +1764,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "ALL hair+Beanie  2 way / Personal price": [
@@ -1774,6 +1789,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1798,6 +1818,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "BeanieLongHair / Corporate price": [
@@ -1818,6 +1843,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1400,
         "is_sale": false
       }
@@ -1842,6 +1872,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ALL hair+Beanie  2 way / Corporate price": [
@@ -1864,7 +1899,22 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10353969": "BeanieShortHair / Personal price",
+    "10353979": "BeanieLongHair / Personal price",
+    "10353980": "Beanie / Personal price",
+    "12545946": "ALL hair+Beanie  2 way / Personal price",
+    "14011161": "BeanieShortHair / Corporate price",
+    "14011162": "BeanieLongHair / Corporate price",
+    "14011163": "Beanie / Corporate price",
+    "14011164": "ALL hair+Beanie  2 way / Corporate price"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Starry Again (ご支援版)": [
@@ -879,6 +884,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Starry Again(Cat ver)": [
@@ -898,5 +908,9 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11187142": "Starry Again",
+    "11187173": "Starry Again (ご支援版)"
   }
 }

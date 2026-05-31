@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1680,
+        "is_sale": true
       }
     ],
     "Selestia": [
@@ -894,6 +899,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 840,
+        "is_sale": true
       }
     ],
     "shinano": [
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 840,
+        "is_sale": true
       }
     ],
     "shinra": [
@@ -1788,6 +1803,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 840,
+        "is_sale": true
       }
     ],
     "Arir": [
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 840,
+        "is_sale": true
       }
     ],
     "Manuka": [
@@ -2682,6 +2707,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 840,
+        "is_sale": true
       }
     ],
     "Moe": [
@@ -3129,7 +3159,21 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 840,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10742834": "Selestia",
+    "10760925": "shinano",
+    "10760926": "shinra",
+    "10774795": "Arir",
+    "10780822": "Manuka",
+    "10780842": "Fullpackage",
+    "10795794": "Moe"
   }
 }

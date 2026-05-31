@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "愛莉/Airi": [
@@ -884,6 +889,11 @@
         "date": "2026-05-29",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "しなの/Shinano": [
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "マヌカ/Manuka": [
@@ -1768,6 +1783,11 @@
         "date": "2026-05-29",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "セレスティア/Selestia": [
@@ -2210,6 +2230,11 @@
         "date": "2026-05-29",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "しお/Sio": [
@@ -2652,7 +2677,20 @@
         "date": "2026-05-29",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10509640": "Full-Set",
+    "10509767": "愛莉/Airi",
+    "10509768": "しなの/Shinano",
+    "10509769": "マヌカ/Manuka",
+    "10509770": "セレスティア/Selestia",
+    "10509771": "しお/Sio"
   }
 }

@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "MelowEye_02【12色】": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": true
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "MelowCoffret【メイクテクスチャ】": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": true
       }
@@ -2235,7 +2255,19 @@
         "date": "2026-05-29",
         "price": 2200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10564153": "MelowEye_01【11色】",
+    "10564262": "MelowEye_02【12色】",
+    "10564263": "MelowPurity_eyetexture【26色】",
+    "10564264": "MelowCoffret【メイクテクスチャ】",
+    "10564265": "FULLPACK【Meloweye＆MelowCoffret＆MelowPurity】"
   }
 }

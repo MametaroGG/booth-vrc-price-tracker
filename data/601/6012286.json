@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "ONLY_Inner": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10158048": "SET",
+    "10158056": "ONLY_Inner",
+    "10158057": "ONLY_Bottoms & Shoes"
   }
 }

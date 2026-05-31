@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 15000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 15000,
+        "is_sale": false
       }
     ],
     "Gothmode look セット": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 13000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 13000,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 10000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 10000,
+        "is_sale": false
       }
     ],
     "衣装セット": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 12000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 12000,
         "is_sale": false
       }
@@ -2185,7 +2205,19 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9924815": "フルセット",
+    "10087157": "衣装セット",
+    "10087158": "Basic look セット",
+    "10087409": "Gothmode look セット",
+    "10087410": "Gothmode look 単品衣装"
   }
 }

@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "支援版1（内容は通常版と同一）/ BOOST Edition(Same Content)": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 100,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "支援版3（内容は通常版と同一）/ BOOST Edition(Same Content)": [
@@ -1788,7 +1803,17 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10819095": "支援版1（内容は通常版と同一）/ BOOST Edition(Same Content)",
+    "10825106": "支援版2（内容は通常版と同一）/ BOOST Edition(Same Content)",
+    "10825107": "支援版3（内容は通常版と同一）/ BOOST Edition(Same Content)"
   }
 }

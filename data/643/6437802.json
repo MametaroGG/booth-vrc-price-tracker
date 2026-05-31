@@ -412,6 +412,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Crystal Artifact+あいす代": [
@@ -859,6 +864,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "【SALE】Crystal Artifact【～02/01】": [
@@ -898,5 +908,9 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10862309": "Crystal Artifact",
+    "10862523": "Crystal Artifact+あいす代"
   }
 }

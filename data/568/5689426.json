@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "KOMANO": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1000,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "商用利用 個人用 Licenses 1人": [
@@ -1576,6 +1591,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -1845,7 +1865,19 @@
         "date": "2026-05-29",
         "price": 20000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 20000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9607892": "MINASE",
+    "10088421": "KOMANO",
+    "10088422": "FULL",
+    "13487857": "商用利用 個人用 Licenses 1人",
+    "13487858": "商用利用 企業向け Licenses 1人"
   }
 }

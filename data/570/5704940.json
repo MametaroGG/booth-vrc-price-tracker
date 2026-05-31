@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 560,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 560,
+        "is_sale": false
       }
     ],
     "Rimshade": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 460,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 460,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9633493": "Face + Body",
+    "9698877": "Rimshade",
+    "9698878": "all"
   }
 }

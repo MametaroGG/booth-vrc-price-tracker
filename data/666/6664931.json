@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2280,
+        "is_sale": false
       }
     ],
     "-BAMi- 定価 2180 JPY": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2180,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2180,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 2180,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2180,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11217763": "-BAMi- 定価 2180 JPY",
+    "11232951": "-FullPack- 定価 2280 JPY",
+    "11232952": "-MameFriends SET- 定価 2180 JPY"
   }
 }

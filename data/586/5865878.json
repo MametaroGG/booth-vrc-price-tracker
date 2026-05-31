@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "Eye+Emi tex+Eye Material Package": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Eye+Emi tex(Png)only": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 680,
         "is_sale": false
       }
@@ -2185,7 +2205,19 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9905725": "Makeup(PSD+PNG)+Tongue Tex+Material Package",
+    "9905948": "Eye+Emi tex+Eye Material Package",
+    "9905949": "Makeup(PSD+PNG)+Lips change",
+    "9905950": "Eye+Emi tex(Png)only",
+    "9905951": "Tongue tex(Png)only"
   }
 }

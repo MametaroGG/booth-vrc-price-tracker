@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ダブルラバースーツ+RTX": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 950,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "【EVERYTHING】": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10416887": "justラバー",
+    "10417097": "ダブルラバースーツ+RTX",
+    "10417098": "LT:RD+BA:RE+RTX",
+    "10417099": "【EVERYTHING】"
   }
 }

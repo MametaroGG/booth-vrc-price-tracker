@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 430,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 430,
+        "is_sale": false
       }
     ],
     "Tail,Wing": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1326,7 +1336,17 @@
         "date": "2026-05-29",
         "price": 180,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 180,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10289889": "All",
+    "10291097": "Face",
+    "10291098": "Tail,Wing"
   }
 }

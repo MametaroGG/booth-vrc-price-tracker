@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "HappyBirthday(内容は同じです)": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11038566": "ボロボロテクスチャ",
+    "11038573": "HappyBirthday(内容は同じです)"
   }
 }

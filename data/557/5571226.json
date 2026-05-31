@@ -1182,6 +1182,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Pattern_2": [
@@ -1427,6 +1432,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1800,
         "is_sale": false
       }
@@ -1676,7 +1686,17 @@
         "date": "2026-05-30",
         "price": 3400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9406438": "Pattern_1",
+    "9406503": "Pattern_2",
+    "9406506": "Pattern_All"
   }
 }

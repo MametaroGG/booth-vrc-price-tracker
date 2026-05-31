@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 7000,
+        "is_sale": false
       }
     ],
     "AoA Correction for Aerodynamic Resistance Add-on": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 400,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Dynamic Take Off Supporter Add-on": [
@@ -1766,6 +1781,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 400,
         "is_sale": false
       }
@@ -2210,6 +2230,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Liner Auto Flaps Add-on": [
@@ -2650,6 +2675,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 400,
         "is_sale": false
       }
@@ -3094,7 +3124,21 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10270972": "F-36 Meteor 〈ミーティア〉フルセット（新規制作物が全て追加されます）",
+    "10981017": "AoA Correction for Aerodynamic Resistance Add-on",
+    "10981018": "Altitude Air Density Changer Add-on",
+    "10981019": "Dynamic Take Off Supporter Add-on",
+    "10981020": "Ground Roll Stabilizer Add-on",
+    "10981021": "Liner Auto Flaps Add-on",
+    "10981022": "Side Srip Add-on"
   }
 }

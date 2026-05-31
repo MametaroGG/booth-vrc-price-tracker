@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "もちふぃった～用変換プロファイル": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 0,
         "is_sale": false
       }
@@ -1341,7 +1351,15 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10732886": "Samar v1.12"
   }
 }

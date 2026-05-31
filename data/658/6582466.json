@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 499,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 499,
+        "is_sale": false
       }
     ],
     "Peach pants / ピーチパンツ": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 199,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 199,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 199,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 199,
+        "is_sale": false
       }
     ],
     "Black pants / 黒のパンツ": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 199,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 199,
         "is_sale": false
       }
@@ -2235,7 +2255,19 @@
         "date": "2026-05-29",
         "price": 199,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 199,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11090180": "All colors / すべての色",
+    "11114770": "Pink pants / ピンクのパンツ",
+    "11114771": "Peach pants / ピーチパンツ",
+    "11114772": "Black pants / 黒のパンツ",
+    "11114773": "White pants / 白いパンツ"
   }
 }

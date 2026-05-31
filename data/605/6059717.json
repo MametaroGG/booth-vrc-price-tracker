@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "水瀬 / Minase": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 600,
         "is_sale": true
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10237327": "Full-Set",
+    "10237432": "水瀬 / Minase",
+    "10237433": "狛乃 / Komano"
   }
 }

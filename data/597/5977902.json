@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3800,
+        "is_sale": false
       }
     ],
     "PC VRC Only": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 6800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 6800,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-29",
         "price": 7600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 7600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10101657": "Quest VRC Only",
+    "10115486": "PC VRC Only",
+    "10115487": "PC + Quest"
   }
 }

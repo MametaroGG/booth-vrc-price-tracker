@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "桔梗 - KIKYO": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 480,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 480,
+        "is_sale": false
       }
     ],
     "マヌカ-MANUKA": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 480,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-29",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 480,
+        "is_sale": false
       }
     ],
     "しなの - Shinano": [
@@ -2222,7 +2247,20 @@
         "date": "2026-05-29",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 480,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10099282": "FULL PACK",
+    "10099326": "桔梗 - KIKYO",
+    "10099327": "セレスティア - SELESTIA",
+    "10109911": "マヌカ-MANUKA",
+    "13033408": "ミルティナ - Milltina",
+    "13966202": "しなの - Shinano"
   }
 }

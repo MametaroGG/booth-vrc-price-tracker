@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "ღ EYE TEXTURE ღ": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "ღ FACE BLENDSHAPE ღ": [
@@ -1788,7 +1803,18 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11203465": "ღ EYE TEXTURE ღ",
+    "11239511": "ღ MAKE UP ღ",
+    "11239512": "ღ FACE BLENDSHAPE ღ",
+    "11239513": "ღ FULL SET  ( MAKE UP+ EYE TEXTURE+ Face Animation ) ღ"
   }
 }

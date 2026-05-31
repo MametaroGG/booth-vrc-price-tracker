@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2220,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2220,
+        "is_sale": false
       }
     ],
     "HIB-MK33 (Commercial License)": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 3602,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3602,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11231039": "HIB-MK33 (Personal License)",
+    "11668908": "HIB-MK33 (Commercial License)"
   }
 }

@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 3100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3100,
+        "is_sale": false
       }
     ],
     "マヌカ(Manuka)": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "森羅(Shinra)": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "セレスティア(Selestia)": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "舞夜(Maya)": [
@@ -3494,6 +3529,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -3933,6 +3973,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "愛莉(Airi)": [
@@ -4370,7 +4415,24 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10270468": "All 9",
+    "10270530": "マヌカ(Manuka)",
+    "10270531": "萌(Moe)",
+    "10270532": "森羅(Shinra)",
+    "10270533": "桔梗(Kikyo)",
+    "10270534": "セレスティア(Selestia)",
+    "10270535": "シフォン+ライム(Chiffon+Lime)",
+    "10270536": "舞夜(Maya)",
+    "11233291": "ミルティナ(Milltina)",
+    "12030204": "愛莉(Airi)"
   }
 }

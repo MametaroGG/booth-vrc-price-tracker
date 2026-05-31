@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Bully Maguire - FBX Variant": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11261826": "Bully Maguire - Base Variant",
+    "11261936": "Bully Maguire - FBX Variant"
   }
 }

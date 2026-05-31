@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 3100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3100,
+        "is_sale": false
       }
     ],
     "マヌカ(Manuka)": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "森羅(Shinra)": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "セレスティア(Selestia)": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "舞夜(Maya)": [
@@ -3496,7 +3531,22 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10159786": "All 7",
+    "10159952": "マヌカ(Manuka)",
+    "10159953": "萌(Moe)",
+    "10159954": "森羅(Shinra)",
+    "10159955": "桔梗(Kikyo)",
+    "10159956": "セレスティア(Selestia)",
+    "10159957": "シフォン+ライム(Chiffon+Lime)",
+    "10159958": "舞夜(Maya)"
   }
 }

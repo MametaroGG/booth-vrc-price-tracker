@@ -1730,6 +1730,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Blue / Personal price": [
@@ -1750,6 +1755,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -1774,6 +1784,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "All 3 color / Personal price": [
@@ -1794,6 +1809,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -1818,6 +1838,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Pink / Corporate price": [
@@ -1838,6 +1863,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2100,
         "is_sale": false
       }
@@ -1862,6 +1892,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "All 3 color / Corporate price": [
@@ -1884,7 +1919,22 @@
         "date": "2026-05-29",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 6000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11170222": "Black / Personal price",
+    "11170291": "Blue / Personal price",
+    "11170292": "Pink / Personal price",
+    "11170293": "All 3 color / Personal price",
+    "14011483": "Black / Corporate price",
+    "14011484": "Pink / Corporate price",
+    "14011485": "Blue / Corporate price",
+    "14011486": "All 3 color / Corporate price"
   }
 }

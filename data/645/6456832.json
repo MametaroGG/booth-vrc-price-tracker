@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "ショコラ • Expressions + (Donation)": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10892197": "ショコラ • Expressions +",
+    "10892249": "ショコラ • Expressions + (Donation)"
   }
 }

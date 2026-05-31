@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "マヌカmanuka": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2200,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "桔梗kikyo": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2200,
         "is_sale": false
       }
@@ -2185,7 +2205,19 @@
         "date": "2026-05-30",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9753713": "フルセット(manuka/moe/kikyo)",
+    "9756446": "マヌカmanuka",
+    "9756447": "萌moe",
+    "9756448": "桔梗kikyo",
+    "10338154": "愛莉airi"
   }
 }

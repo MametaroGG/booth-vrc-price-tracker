@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 3700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3700,
+        "is_sale": false
       }
     ],
     "For マヌカ": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2200,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "For 愛莉": [
@@ -1766,6 +1781,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2200,
         "is_sale": false
       }
@@ -2210,6 +2230,11 @@
         "date": "2026-05-29",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "For セレスティア": [
@@ -2652,7 +2677,20 @@
         "date": "2026-05-29",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10354343": "Full Set",
+    "10354511": "For マヌカ",
+    "10354512": "For しなの",
+    "10354513": "For 愛莉",
+    "10371657": "For 萌",
+    "10375975": "For セレスティア"
   }
 }

@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "◇◇EYETexture＆makeTexture１０枚＋mask用１枚": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 450,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "◇◇◇◇EYETexture＆makeTexture１０枚＋mask用１枚＋unitypackage＋PSD": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10233076": "◇EYETexture１０枚＋mask用１枚",
+    "10233141": "◇◇EYETexture＆makeTexture１０枚＋mask用１枚",
+    "10233142": "◇◇◇EYETexture＆makeTexture１０枚＋mask用１枚＋unitypackage",
+    "10233143": "◇◇◇◇EYETexture＆makeTexture１０枚＋mask用１枚＋unitypackage＋PSD"
   }
 }

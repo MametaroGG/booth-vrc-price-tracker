@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "VRC+VRM版": [
@@ -874,6 +879,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": true
       }
     ],
     "【期間限定セール品】VRC+VRM版": [
@@ -908,5 +918,9 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10020033": "VRM版のみ",
+    "10021182": "VRC+VRM版"
   }
 }

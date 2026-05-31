@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "BlownPink": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Pink+BlownPink+Black": [
@@ -1788,6 +1803,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Black / Corporate price": [
@@ -1808,6 +1828,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2100,
         "is_sale": false
       }
@@ -1832,6 +1857,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Pink / Corporate price": [
@@ -1852,6 +1882,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2100,
         "is_sale": false
       }
@@ -1876,7 +1911,22 @@
         "date": "2026-05-29",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 6000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11295730": "Black",
+    "11295731": "BlownPink",
+    "11295732": "Pink",
+    "12545893": "Pink+BlownPink+Black",
+    "14012611": "Black / Corporate price",
+    "14012612": "BlownPink / Corporate price",
+    "14012613": "Pink / Corporate price",
+    "14012614": "Pink+BlownPink+Black / Corporate price"
   }
 }

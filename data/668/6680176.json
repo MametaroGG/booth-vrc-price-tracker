@@ -681,6 +681,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "🐼Panda Accessories🐼": [
@@ -1011,6 +1016,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 400,
         "is_sale": false
       }
@@ -1345,7 +1355,17 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11282596": "🐼Panda Accessories🐼(おまけ付き)",
+    "11282689": "🐼Panda Accessories🐼",
+    "11901536": "🐼Panda Accessories🐼支援版(おまけ付きと中身は同じです)"
   }
 }

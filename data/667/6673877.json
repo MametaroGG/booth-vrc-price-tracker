@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "キプ代をおごる（中身は変わりません）/Donation": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11233669": "通常版/Normal",
+    "11240117": "キプ代をおごる（中身は変わりません）/Donation"
   }
 }

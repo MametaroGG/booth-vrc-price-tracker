@@ -1303,6 +1303,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Glay / Personal price": [
@@ -1323,6 +1328,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -1347,6 +1357,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Black / Corporate price": [
@@ -1367,6 +1382,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2100,
         "is_sale": false
       }
@@ -1391,6 +1411,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Glay+Black  2 way / Corporate price": [
@@ -1413,7 +1438,20 @@
         "date": "2026-05-29",
         "price": 3900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11130431": "Black /Personal price",
+    "11130460": "Glay / Personal price",
+    "12545875": "Glay+Black  2 way/ Personal price",
+    "14011469": "Black / Corporate price",
+    "14011470": "Glay  / Corporate price",
+    "14011471": "Glay+Black  2 way / Corporate price"
   }
 }

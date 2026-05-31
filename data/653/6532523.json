@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 3400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3400,
+        "is_sale": false
       }
     ],
     "マヌカ / Manuka": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "しなの / Shinano": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "ライム & シフォン&ショコラ / Lime & Chiffon & Chocolate": [
@@ -2682,7 +2707,20 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11011916": "Full-Set",
+    "11061504": "マヌカ / Manuka",
+    "11061505": "真冬 / Mafuyu",
+    "11061506": "しなの / Shinano",
+    "11061507": "愛莉 / Airi",
+    "11061508": "ライム & シフォン&ショコラ / Lime & Chiffon & Chocolate"
   }
 }

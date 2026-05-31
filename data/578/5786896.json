@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 890,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 890,
+        "is_sale": false
       }
     ],
     "+Head_DBST": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 890,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 890,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 890,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 890,
+        "is_sale": false
       }
     ],
     "DBST_Set": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9772364": "kuuta_DBST",
+    "9772517": "+Head_DBST",
+    "9772518": "DBST_Set",
+    "9796149": "Astel_DBST"
   }
 }

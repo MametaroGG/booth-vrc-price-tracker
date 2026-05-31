@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "HANEYASUME（支援版／ニット付き）": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 801,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 801,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10700487": "HANEYASUME（通常版）",
+    "10700559": "HANEYASUME（支援版／ニット付き）"
   }
 }

@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "Tradition Pack": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2800,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-29",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10224530": "Full Package",
+    "10224625": "Tradition Pack",
+    "10224626": "Modern Pack"
   }
 }

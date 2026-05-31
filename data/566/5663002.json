@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 849,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 849,
+        "is_sale": false
       }
     ],
     "【標準版B】型番1 | Radio Model 1": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 849,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 849,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1269,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1269,
+        "is_sale": false
       }
     ],
     "【商用版】合併版と同じ内容です | Same content as the consolidated version": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1899,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1899,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9563489": "【標準版B】型番1 | Radio Model 1",
+    "9563605": "【標準版A】型番2 | Radio Model 2",
+    "9563606": "【合併版】型番1および型番2にDLCを含む |  Includes Model 1 and Model 2 with DLC",
+    "9563607": "【商用版】合併版と同じ内容です | Same content as the consolidated version"
   }
 }

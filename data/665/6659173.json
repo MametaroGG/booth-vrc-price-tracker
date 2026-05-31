@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "✰ Makeup Texture + Emi ✰": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 350,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11208286": "✰ FULL✰",
+    "11208409": "✰ Makeup Texture + Emi ✰",
+    "11208410": "✰ Eyes Texture + Emi ✰"
   }
 }

@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 2353,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2353,
+        "is_sale": false
       }
     ],
     "Ogre Only": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2353,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2353,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-30",
         "price": 4705,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4705,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9763794": "Goblin Only",
+    "9763831": "Ogre Only",
+    "9763832": "All Files - Goblin and Ogre"
   }
 }

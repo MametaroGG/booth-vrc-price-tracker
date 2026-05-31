@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "🩷 Color Pack 🩷": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1400,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 1950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1950,
+        "is_sale": false
       }
     ],
     "🩷 Full Pack 🩷 [COMMERCIAL LICENSE]": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 6200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 6200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10369257": "🩷 Basic Pack 🩷",
+    "10369779": "🩷 Color Pack 🩷",
+    "10369780": "🩷 Full Pack 🩷",
+    "10369781": "🩷 Full Pack 🩷 [COMMERCIAL LICENSE]"
   }
 }

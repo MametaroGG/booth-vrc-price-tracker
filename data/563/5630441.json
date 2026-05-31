@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "(SUPPORT VER) Clairvoyant Eyes Full Set (Imeris + Rindo)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1520,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1520,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 760,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 760,
+        "is_sale": false
       }
     ],
     "Clairvoyant Eyes - Rindo": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 760,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 760,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9507327": "Clairvoyant Eyes Full Set (Imeris + Rindo)",
+    "9507346": "(SUPPORT VER) Clairvoyant Eyes Full Set (Imeris + Rindo)",
+    "9507347": "Clairvoyant Eyes - Imeris",
+    "9507348": "Clairvoyant Eyes - Rindo"
   }
 }

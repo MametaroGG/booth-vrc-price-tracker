@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Donation / Support | 寄付・支援": [
@@ -874,7 +879,16 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9975970": "Armband Set | 腕章セット",
+    "10142715": "Donation / Support | 寄付・支援"
   }
 }

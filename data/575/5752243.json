@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 7500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 7500,
+        "is_sale": false
       }
     ],
     "♥ Voxy ♥": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 7500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 7500,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 7500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 7500,
+        "is_sale": false
       }
     ],
     "♥ The Vees ♥": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-30",
         "price": 17000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 17000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9712871": "♥ Valyn ♥",
+    "9713011": "♥ Voxy ♥",
+    "9713012": "♥ Velvet ♥",
+    "9713013": "♥ The Vees ♥"
   }
 }

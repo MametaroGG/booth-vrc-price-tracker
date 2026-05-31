@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "Touch Spots + Extra Option": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 880,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10960555": "Touch Spots",
+    "10960696": "Touch Spots + Extra Option"
   }
 }

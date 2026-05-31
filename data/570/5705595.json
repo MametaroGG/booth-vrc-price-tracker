@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Flory Make-up Texture [PSD]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "【 支援版 / 内容は同じです。】 【 Full Pack 】 Lily + Flory Make-up Texture [PSD]": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9634622": "Lily Make-up Texture [PSD]",
+    "9634673": "Flory Make-up Texture [PSD]",
+    "9634674": "【 Full Pack 】 Lily + Flory Make-up Texture [PSD]",
+    "9634675": "【 支援版 / 内容は同じです。】 【 Full Pack 】 Lily + Flory Make-up Texture [PSD]"
   }
 }

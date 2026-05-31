@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ジェクト爺さん VRM＋VRoidデータ": [
@@ -874,7 +879,16 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10193087": "ジェクト爺さん VRMのみ",
+    "10193175": "ジェクト爺さん VRM＋VRoidデータ"
   }
 }

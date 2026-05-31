@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "Manuka": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": true
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Sio": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": true
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Chiffon": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": true
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Haruka": [
@@ -3494,6 +3529,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": true
       }
@@ -3933,6 +3973,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Shinano": [
@@ -4370,6 +4415,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Misaki": [
@@ -4407,7 +4457,25 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "9937765": "fullpack",
+    "9937831": "Manuka",
+    "9937832": "Moe",
+    "9937833": "Sio",
+    "9937834": "Selestia",
+    "9937835": "Chiffon",
+    "9937836": "Lasyusha",
+    "9937837": "Haruka",
+    "10022976": "Kipfel",
+    "10390306": "Shinano",
+    "13965274": "Misaki"
   }
 }

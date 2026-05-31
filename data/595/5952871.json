@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 1990,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1990,
+        "is_sale": false
       }
     ],
     "【For Kikyo】": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 990,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 990,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 990,
+        "is_sale": false
       }
     ],
     "【For Selestia】": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 990,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 990,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 990,
+        "is_sale": false
       }
     ],
     "【For Chiffon】": [
@@ -2622,7 +2647,20 @@
         "date": "2026-05-30",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 990,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10058485": "【All-Set】",
+    "10059207": "【For Kikyo】",
+    "10059208": "【For Manuka】",
+    "10059209": "【For Selestia】",
+    "10059210": "【For Shinra】",
+    "10059211": "【For Chiffon】"
   }
 }

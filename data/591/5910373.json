@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1490,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1490,
+        "is_sale": false
       }
     ],
     "シンプルなチャイナドレス - Simple Chinadress": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ホットパンツ・シュテルン - Hot Pants -Stern-": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9979378": "フルセット - Full Set",
+    "9979503": "シンプルなチャイナドレス - Simple Chinadress",
+    "9979504": "上着・ツクンフト - Jacket -Zukunft-",
+    "9979505": "ホットパンツ・シュテルン - Hot Pants -Stern-",
+    "9979506": "開き彼シャツ - Open Dress Shirt"
   }
 }

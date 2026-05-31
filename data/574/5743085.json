@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 2490,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Selestia": [
@@ -873,6 +878,11 @@
       {
         "date": "2026-05-30",
         "price": 1390,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
         "is_sale": false
       }
     ],
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 1390,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -1747,6 +1762,11 @@
       {
         "date": "2026-05-30",
         "price": 1390,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
         "is_sale": false
       }
     ],
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 1390,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-30",
         "price": 1390,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Karin/Milk": [
@@ -3495,6 +3530,11 @@
       {
         "date": "2026-05-30",
         "price": 1390,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
         "is_sale": false
       }
     ],
@@ -3933,6 +3973,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Moe": [
@@ -4369,6 +4414,11 @@
       {
         "date": "2026-05-30",
         "price": 1390,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
         "is_sale": false
       }
     ],
@@ -4809,7 +4859,25 @@
         "date": "2026-05-30",
         "price": 1390,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9696489": "ALL",
+    "9892607": "Manuka",
+    "9892608": "Chiffon/Lime",
+    "9892609": "Karin/Milk",
+    "9892610": "Sio",
+    "9892611": "Moe",
+    "10870987": "Airi",
+    "10870988": "Kipfel (Mamefriends)",
+    "10870989": "Shinano",
+    "10900806": "Selestia",
+    "11295196": "Novabody"
   }
 }

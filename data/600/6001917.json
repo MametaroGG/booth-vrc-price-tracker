@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "マヌカ対応　Manuka": [
@@ -874,6 +879,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "桔梗対応　kikyo": [
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Lapwing対応　Lapwing": [
@@ -1748,6 +1763,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "森羅対応　shinra": [
@@ -2185,6 +2205,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "白雪天使対応　shirayuki tenshi": [
@@ -2622,6 +2647,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "黒兎さより対応　kurousagi sayori": [
@@ -3059,6 +3089,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "ミルティナ対応(cow flat smallキー対応)": [
@@ -3496,6 +3531,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "しなの対応　shinano": [
@@ -3933,6 +3973,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "ショコラ対応(ライム、シフォン共通素体)": [
@@ -4370,7 +4415,24 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10141795": "フルセット Full Pack",
+    "10147025": "マヌカ対応　Manuka",
+    "10147026": "桔梗対応　kikyo",
+    "10147027": "Lapwing対応　Lapwing",
+    "10147028": "森羅対応　shinra",
+    "10147029": "白雪天使対応　shirayuki tenshi",
+    "10147030": "黒兎さより対応　kurousagi sayori",
+    "12018236": "ミルティナ対応(cow flat smallキー対応)",
+    "12031443": "しなの対応　shinano",
+    "12049596": "ショコラ対応(ライム、シフォン共通素体)"
   }
 }

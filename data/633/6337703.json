@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 719,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 719,
+        "is_sale": false
       }
     ],
     "【通常版B】G19 Gen5 Blue Gun | v1.0": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 719,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 719,
         "is_sale": false
       }
@@ -1326,7 +1336,17 @@
         "date": "2026-05-29",
         "price": 1689,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1689,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10697843": "【通常版A】G19 Gen4 Blue Gun | v1.0",
+    "10697941": "【通常版B】G19 Gen5 Blue Gun | v1.0",
+    "10697942": "【商用版】通常版のAとBを含みます | Includes the standard versions A and B."
   }
 }

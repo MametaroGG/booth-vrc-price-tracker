@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "愛莉/Airi": [
@@ -874,6 +879,11 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "マヌカ/Manuka": [
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "萌/Moe": [
@@ -1748,6 +1763,11 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "桔梗/Kikyo": [
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "セレスティア/Selestia": [
@@ -2622,6 +2647,11 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "しお/Sio": [
@@ -3059,6 +3089,11 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "ライム&シフォン / Lime&Chiffon": [
@@ -3496,7 +3531,22 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9848566": "Full-Set",
+    "9848582": "マヌカ/Manuka",
+    "9848583": "萌/Moe",
+    "9848584": "桔梗/Kikyo",
+    "9848585": "セレスティア/Selestia",
+    "9848586": "しお/Sio",
+    "9848587": "ライム&シフォン / Lime&Chiffon",
+    "10279888": "愛莉/Airi"
   }
 }

@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "ヌーヴェル(Nouvelle)/望身(Nozomi)/ハーミット(Hermit)/ヒルマ(Hilma)/ファルリア(Falria)/ホライズ(Horiz)": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "シフォン(Chiffon)": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "マヌカ(Manuka)": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": false
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "萌(Moe)": [
@@ -3496,7 +3531,22 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10089745": "Full Set",
+    "10092942": "ヌーヴェル(Nouvelle)/望身(Nozomi)/ハーミット(Hermit)/ヒルマ(Hilma)/ファルリア(Falria)/ホライズ(Horiz)",
+    "10092943": "桔梗(Kikyo)",
+    "10092956": "シフォン(Chiffon)",
+    "10092957": "シエル(Ciel)",
+    "10092958": "マヌカ(Manuka)",
+    "10092959": "真冬(Mafuyu)",
+    "10092960": "萌(Moe)"
   }
 }

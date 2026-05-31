@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 240,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 240,
+        "is_sale": false
       }
     ],
     "マヌカ-Manuka-": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 240,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 240,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 240,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 240,
+        "is_sale": false
       }
     ],
     "ラシューシャ -Lasyusha-": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-29",
         "price": 240,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 240,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10249936": "森羅 -Shinra-",
+    "10269157": "マヌカ-Manuka-",
+    "12880402": "しゅあん -Shuan-",
+    "12880403": "ラシューシャ -Lasyusha-"
   }
 }

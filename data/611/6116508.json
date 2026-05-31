@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "しなの/Shinano": [
@@ -884,6 +889,11 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "愛莉/Airi": [
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "マヌカ/Manuka": [
@@ -1768,6 +1783,11 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "萌/Moe": [
@@ -2210,6 +2230,11 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "セレスティア/Selestia": [
@@ -2652,6 +2677,11 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "ライム&シフォン / Lime&Chiffon": [
@@ -3094,7 +3124,21 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10330679": "Full-Set",
+    "10330715": "しなの/Shinano",
+    "10330716": "愛莉/Airi",
+    "10330717": "マヌカ/Manuka",
+    "10330718": "萌/Moe",
+    "10330719": "セレスティア/Selestia",
+    "10330720": "ライム&シフォン / Lime&Chiffon"
   }
 }

@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "えさ代(内容物は一緒です)": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11224058": "skinhead texture",
+    "11224287": "えさ代(内容物は一緒です)"
   }
 }

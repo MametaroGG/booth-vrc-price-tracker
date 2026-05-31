@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "FULLパック": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 550,
         "is_sale": false
       }
@@ -1326,7 +1336,17 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10360294": "FULLパック",
+    "10360709": "normalパック",
+    "10360710": "応援"
   }
 }

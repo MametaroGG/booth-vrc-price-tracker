@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "黒 / Black": [
@@ -894,6 +899,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "白+黒 / White+Black": [
@@ -1339,6 +1349,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1700,
         "is_sale": false
       }
@@ -1790,6 +1805,11 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "[Corporate Ver.] 黒 / Black": [
@@ -2060,6 +2080,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2400,
         "is_sale": false
       }
@@ -2334,7 +2359,20 @@
         "date": "2026-05-29",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11103098": "白 / White",
+    "11103141": "黒 / Black",
+    "11103142": "白+黒 / White+Black",
+    "11103143": "[Corporate Ver.] 白+黒 / White+Black",
+    "13484756": "[Corporate Ver.] 白 / White",
+    "13484757": "[Corporate Ver.] 黒 / Black"
   }
 }

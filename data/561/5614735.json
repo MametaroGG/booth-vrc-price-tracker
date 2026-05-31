@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "さくらポイントピアス sakura point piercing": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 150,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "さくらキャンディピアス（ホワイト） sakura candy piercing white": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9480542": "さくらアクセサリー３種セット",
+    "9481093": "さくらポイントピアス sakura point piercing",
+    "9481094": "さくらキャンディピアス（ピンク））sakura candy piercing pink",
+    "9481095": "さくらキャンディピアス（ホワイト） sakura candy piercing white"
   }
 }

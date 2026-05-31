@@ -432,6 +432,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ミルフィ-Milfy-": [
@@ -864,6 +869,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "マリシア-Marycia-（￥500→￥400）": [
@@ -900,5 +910,9 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10941877": "マリシア-Marycia-",
+    "10953570": "ミルフィ-Milfy-"
   }
 }

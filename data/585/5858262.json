@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 6000,
+        "is_sale": false
       }
     ],
     "for 柘榴 -Zakuro-": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2300,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2300,
+        "is_sale": false
       }
     ],
     "for ラシューシャ Lasyusha": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2300,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2300,
+        "is_sale": false
       }
     ],
     "for マヌカ Manuka": [
@@ -2622,7 +2647,20 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9892141": "for 柘榴 -Zakuro-",
+    "9892276": "for 森羅 Shinra",
+    "9892277": "for ラシューシャ Lasyusha",
+    "9892278": "for Lapwing",
+    "9892279": "for マヌカ Manuka",
+    "9901804": "5アバターフルパック"
   }
 }

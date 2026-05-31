@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "American Diner【ひゅーじょん君用】": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "American Diner【ロポリこん用】": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10210652": "【full set】American Diner【ひゅーじょん・ハオラン・ロポリこん】",
+    "10211380": "American Diner【ひゅーじょん君用】",
+    "10211381": "American Diner【ハオラン用】",
+    "10211382": "American Diner【ロポリこん用】"
   }
 }

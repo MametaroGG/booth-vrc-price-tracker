@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "❤Eyes+Makeup(♡png♡)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 580,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 580,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "❤Only Makeup(png)": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9529376": "❤Eyes+Makeup(♡psd♡)",
+    "9529456": "❤Eyes+Makeup(♡png♡)",
+    "9529457": "❤Only Eyes(png)",
+    "9529458": "❤Only Makeup(png)"
   }
 }

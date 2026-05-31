@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "支援版（Thank you ver.♡）": [
@@ -874,7 +879,16 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10190531": "通常版（Standard ver.）",
+    "12743032": "支援版（Thank you ver.♡）"
   }
 }

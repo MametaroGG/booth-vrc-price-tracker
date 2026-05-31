@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "for 水瀬 Minase": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2700,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10584398": "フルパック complete pack",
+    "10585692": "for 水瀬 Minase",
+    "10585693": "for 狛乃 Komano"
   }
 }

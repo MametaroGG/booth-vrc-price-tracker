@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 5600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5600,
+        "is_sale": false
       }
     ],
     "Rinasciita_リナシータ_Oblivion": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2800,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Moe_萌_Oblivion": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2800,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Sio_しお_Oblivion": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2800,
         "is_sale": false
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Shinano_しなの_Oblivion": [
@@ -3576,7 +3611,22 @@
         "date": "2026-05-29",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10628315": "FullSet_フルセット_Oblivion",
+    "10628535": "Manuka_マヌカ_Oblivion",
+    "10628536": "Moe_萌_Oblivion",
+    "10628537": "Chiffon_シフォン_Oblivion",
+    "10628538": "Sio_しお_Oblivion",
+    "10628539": "Rurune_ルルネ_Oblivion",
+    "10628540": "Shinano_しなの_Oblivion",
+    "12981950": "Rinasciita_リナシータ_Oblivion"
   }
 }

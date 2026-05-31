@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Full pack + Donate🙂‍↕️": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1100,
         "is_sale": false
       }
@@ -1326,7 +1336,17 @@
         "date": "2026-05-29",
         "price": 15000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 15000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10320869": "Full pack",
+    "10320898": "Full pack + Donate🙂‍↕️",
+    "10490246": "商業用 Licenses (1人)"
   }
 }

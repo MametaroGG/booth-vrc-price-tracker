@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "[Manuka]": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1800,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "[Selestia]": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1800,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "[Sio]": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1800,
         "is_sale": false
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "企業向け V-tube FullPack (1人)": [
@@ -3496,7 +3531,22 @@
         "date": "2026-05-30",
         "price": 30000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 30000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9942644": "[Full Avatar Package]",
+    "9942769": "[Manuka]",
+    "9942770": "[Moe]",
+    "9942771": "[Selestia]",
+    "9942772": "[Shinra]",
+    "9942773": "[Sio]",
+    "9942774": "[Lime & Chiffon]",
+    "12169918": "企業向け V-tube FullPack (1人)"
   }
 }

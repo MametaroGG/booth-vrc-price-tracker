@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 880,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "Airi": [
@@ -1766,6 +1781,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 880,
         "is_sale": false
       }
@@ -2210,6 +2230,11 @@
         "date": "2026-05-29",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "Selestia": [
@@ -2650,6 +2675,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 880,
         "is_sale": false
       }
@@ -3094,6 +3124,11 @@
         "date": "2026-05-29",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "Moe": [
@@ -3536,7 +3571,22 @@
         "date": "2026-05-29",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 880,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10471027": "Full Set",
+    "10471085": "Shinnano",
+    "10471086": "Airi",
+    "10471087": "Manuka",
+    "10471088": "Selestia",
+    "10471089": "Kikyo",
+    "10471090": "Moe",
+    "11480865": "Milltina"
   }
 }

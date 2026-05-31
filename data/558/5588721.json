@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "🤍Kuuta🖤 Spring MakeUp Only": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9435461": "🖤Kuuta🤍 Spring Eyes Only",
+    "9435467": "🤍Kuuta🖤 Spring MakeUp Only",
+    "9435468": "🖤SALE🖤 Full Pack (Eyes, MakeUp, Body, Nail, Tongue)"
   }
 }

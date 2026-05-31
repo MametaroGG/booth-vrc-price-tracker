@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "YUGI_Outfit": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "All_3": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 2900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10422219": "MeroTron_Outfit",
+    "10422312": "YUGI_Outfit",
+    "10422313": "Manuka_Outfit",
+    "10422347": "All_3"
   }
 }

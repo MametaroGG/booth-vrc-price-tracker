@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Donate(内容は同じです）": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10759962": "Tentacle Hair",
+    "10760027": "Donate(内容は同じです）"
   }
 }

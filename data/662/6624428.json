@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Light Skin Tones 「ウルキ・Uruki」": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 450,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11154922": "All Skin Tones 「ウルキ・Uruki」",
+    "11155006": "Light Skin Tones 「ウルキ・Uruki」",
+    "11155007": "Dark Skin Tones 「ウルキ・Uruki」"
   }
 }

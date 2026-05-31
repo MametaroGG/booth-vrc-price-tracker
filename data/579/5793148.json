@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "支援版（内容は通常版と同一）/ BOOST Edition(Same Content)": [
@@ -874,7 +879,16 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "9783591": "通常版 / Standard Edition",
+    "9783620": "支援版（内容は通常版と同一）/ BOOST Edition(Same Content)"
   }
 }

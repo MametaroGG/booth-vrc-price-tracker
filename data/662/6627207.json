@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "スリムドレス/Bodycon Dress": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "レッグウォーマー /Layered Legwarmers": [
@@ -1573,6 +1588,11 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "ハイトップスニーカー/HightopSneakers": [
@@ -1800,7 +1820,19 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11159099": "フルパック/Full Pack",
+    "11159542": "スリムドレス/Bodycon Dress",
+    "11159543": "セーター＆ショートパンツ /Sweater & Shorts",
+    "13541718": "レッグウォーマー /Layered Legwarmers",
+    "13557398": "ハイトップスニーカー/HightopSneakers"
   }
 }

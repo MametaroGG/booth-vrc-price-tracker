@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Airi": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 950,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -1766,6 +1781,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 950,
         "is_sale": false
       }
@@ -2210,6 +2230,11 @@
         "date": "2026-05-29",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "Chiffon & Lime": [
@@ -2650,6 +2675,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 950,
         "is_sale": false
       }
@@ -3094,6 +3124,11 @@
         "date": "2026-05-29",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "Kikyo": [
@@ -3536,7 +3571,22 @@
         "date": "2026-05-29",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10439139": "Full Set",
+    "10447082": "Airi",
+    "10447083": "Shinano",
+    "10447084": "Manuka",
+    "10447085": "Selestia",
+    "10447086": "Chiffon & Lime",
+    "10447087": "Moe",
+    "10456275": "Kikyo"
   }
 }

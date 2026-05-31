@@ -427,6 +427,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "通常版 + BOOST (Donate)": [
@@ -874,6 +879,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "【SALE】通常版": [
@@ -898,5 +908,9 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11233762": "通常版",
+    "11241043": "通常版 + BOOST (Donate)"
   }
 }

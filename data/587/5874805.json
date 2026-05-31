@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 498,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 498,
+        "is_sale": false
       }
     ],
     "レニャ vroidファイル付き": [
@@ -874,7 +879,16 @@
         "date": "2026-05-30",
         "price": 1980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9920545": "レニャ vrmのみ",
+    "9920549": "レニャ vroidファイル付き"
   }
 }

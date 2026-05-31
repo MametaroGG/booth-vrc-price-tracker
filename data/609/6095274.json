@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "あんがーちゃん★ロボット -angerChan★Robot-": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "あんがーちゃん★angerChan -乗り物シリーズ-フルセット": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10296062": "あんがーちゃん★車 -angerChan★Car-",
+    "10296367": "あんがーちゃん★ロボット -angerChan★Robot-",
+    "10296368": "あんがーちゃん★スケボー -angerChan★SkateBoard-",
+    "10297139": "あんがーちゃん★angerChan -乗り物シリーズ-フルセット"
   }
 }

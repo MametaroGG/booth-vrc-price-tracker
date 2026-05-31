@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "BOKUSEI 墨惺対応 ( FACE, BODY, +PSD )": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "+Head BODY TEXTURE ONLY": [
@@ -1788,7 +1803,18 @@
         "date": "2026-05-29",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11100426": "FULL SET ( トネール & 墨惺対応 )",
+    "11100502": "BOKUSEI 墨惺対応 ( FACE, BODY, +PSD )",
+    "11100503": "TONNERRE トネール対応  ( FACE, BODY, +PSD )",
+    "11100504": "+Head BODY TEXTURE ONLY"
   }
 }

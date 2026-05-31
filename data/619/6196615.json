@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "[This product requires the \"MainPack\" to use] ExtraOption\"PonyTailPack\"": [
@@ -884,7 +889,16 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10465499": "MainPack",
+    "10465664": "[This product requires the \"MainPack\" to use] ExtraOption\"PonyTailPack\""
   }
 }

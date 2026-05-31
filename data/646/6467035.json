@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Only Texture [ makeup | body | eyes ]": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10907626": "Full pack   [ makeup | body | eyes | ShapeKey | Piercing ]",
+    "10908417": "Only Texture [ makeup | body | eyes ]"
   }
 }

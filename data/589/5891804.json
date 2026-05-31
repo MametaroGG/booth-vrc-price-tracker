@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 12110,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 12110,
+        "is_sale": false
       }
     ],
     "♥ 不正 / Rogue ♥": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 7270,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 7270,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-30",
         "price": 7270,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 7270,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9948152": "♥ サキュバス・シスターズ / The Succubat Sisters ♥",
+    "9948281": "♥ 不正 / Rogue ♥",
+    "9948282": "♥ サングリア / Sangria ♥"
   }
 }

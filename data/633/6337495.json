@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 130,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 130,
+        "is_sale": false
       }
     ],
     "支援版.zip": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10697543": "通常版",
+    "10697565": "支援版.zip"
   }
 }

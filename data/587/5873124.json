@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 1280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1280,
+        "is_sale": false
       }
     ],
     "狛乃対応（Komano）": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 780,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 780,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-30",
         "price": 780,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 780,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9917838": "フルパック",
+    "9919741": "狛乃対応（Komano）",
+    "9919742": "水瀬対応（Minase）"
   }
 }

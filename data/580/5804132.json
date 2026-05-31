@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 130,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 130,
+        "is_sale": false
       }
     ],
     "Chocolat": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 130,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 130,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-30",
         "price": 130,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 130,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9802497": "Chiffon",
+    "12375500": "Chocolat",
+    "12375828": "Shinano"
   }
 }

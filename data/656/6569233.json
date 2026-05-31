@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 480,
+        "is_sale": false
       }
     ],
     "Tail + Variation": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 580,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 580,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11070373": "Tail",
+    "11111137": "Tail + Variation"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 960,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 960,
+        "is_sale": false
       }
     ],
     "For Grus": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 680,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 680,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9319109": "All",
+    "9319375": "For Grus",
+    "9319376": "For Lapwing"
   }
 }

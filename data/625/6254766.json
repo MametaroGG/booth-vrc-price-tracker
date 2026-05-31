@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "MameFriends": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 490,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 490,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 490,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 490,
+        "is_sale": false
       }
     ],
     "Azuki": [
@@ -1788,7 +1803,18 @@
         "date": "2026-05-29",
         "price": 490,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 490,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10562677": "MameFriends",
+    "10562722": "Full Pack",
+    "10677651": "Nemesis",
+    "11545791": "Azuki"
   }
 }

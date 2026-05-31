@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 3100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3100,
+        "is_sale": false
       }
     ],
     "NSFW": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3200,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 3400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11003620": "SFW",
+    "11009026": "NSFW",
+    "11009027": "Both"
   }
 }

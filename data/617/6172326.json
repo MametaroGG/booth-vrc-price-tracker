@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "ReadMe&Guide (JP/EN/KR/ZH)": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 0,
         "is_sale": false
       }
@@ -1326,7 +1336,16 @@
         "date": "2026-05-29",
         "price": 9999999,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 9999999,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10423397": "◤◢◤◢終売◤◢◤◢  購入者DL用(旧内容) 舌ピアスセット Tonguepiercingset",
+    "12807704": "✦舌ピアスセット✦ Tonguepiercingset"
   }
 }

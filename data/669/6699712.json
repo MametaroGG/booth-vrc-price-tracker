@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": true
       }
     ],
     "【Milltina】": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": true
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "【Selestia】": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": true
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "【Shinano】": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": true
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "【Shinra】": [
@@ -3576,7 +3611,22 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11276226": "【FullPack】",
+    "11278808": "【Milltina】",
+    "11278809": "【Airi】",
+    "11278810": "【Selestia】",
+    "11278811": "【Manuka】",
+    "11278812": "【Shinano】",
+    "11278813": "【Moe】",
+    "11278814": "【Shinra】"
   }
 }

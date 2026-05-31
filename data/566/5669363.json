@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 329,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 329,
+        "is_sale": false
       }
     ],
     "Emerald makeup - No materials": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 299,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 299,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 249,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 249,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9574524": "Emerald Makeup",
+    "9574645": "Emerald makeup - No materials",
+    "9574646": "Emerald Eyes"
   }
 }

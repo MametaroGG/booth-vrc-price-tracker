@@ -674,6 +674,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "CHIFFON WITH PSD": [
@@ -1104,6 +1109,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1538,6 +1548,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "CHOCOLATE WITH PSD": [
@@ -1968,6 +1983,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -2402,6 +2422,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "MILFY WITH PSD": [
@@ -2834,6 +2859,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "FULL SET(WITH PSD)": [
@@ -3026,7 +3056,21 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9523499": "CHIFFON",
+    "9523506": "CHIFFON WITH PSD",
+    "11298521": "FULL SET(WITH PSD)",
+    "11298522": "CHOCOLATE",
+    "11298523": "CHOCOLATE WITH PSD",
+    "11298524": "MILFY",
+    "11298525": "MILFY WITH PSD"
   }
 }

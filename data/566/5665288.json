@@ -551,6 +551,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "MMD ver.(Only For 1.0)": [
@@ -868,7 +873,16 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9567265": "FaceTracking ver.(Include MMD ver.)(Only For 1.0)",
+    "9567372": "MMD ver.(Only For 1.0)"
   }
 }

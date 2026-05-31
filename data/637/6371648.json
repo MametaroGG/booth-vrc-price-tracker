@@ -412,6 +412,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Chinese style long hair + Donate": [
@@ -859,6 +864,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Chinese style long hair(一週間限定セール）": [
@@ -900,5 +910,9 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10752473": "Chinese style long hair",
+    "12988975": "Chinese style long hair + Donate"
   }
 }

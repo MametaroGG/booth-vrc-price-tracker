@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3300,
+        "is_sale": false
       }
     ],
     "for 水瀬 Minase": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "for カルネ Kalne (+Head)": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9983958": "4アバターフルパック",
+    "9984121": "for 水瀬 Minase",
+    "9984122": "for 狛乃 Komano",
+    "9984123": "for カルネ Kalne (+Head)",
+    "9984124": "for 杏里 Anri"
   }
 }

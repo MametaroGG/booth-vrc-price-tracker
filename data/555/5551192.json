@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5500,
+        "is_sale": false
       }
     ],
     "VRMデータ(VRM only)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9371799": "VRChat用パッケージ(VRChat package)",
+    "9371811": "VRMデータ(VRM only)"
   }
 }

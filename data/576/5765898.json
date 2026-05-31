@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "おひねり": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 100,
         "is_sale": false
       }
@@ -1311,7 +1321,16 @@
         "date": "2026-05-30",
         "price": 760,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 760,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9736527": "おひねり",
+    "9743543": "W餃子定食（唐揚げ２個）を奢る"
   }
 }

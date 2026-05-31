@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "💜Chocolat🤍 Lovely Make Up": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": true
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "💜Chocolat🤍 Historic Eyes": [
@@ -1788,7 +1803,18 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10876162": "🎁SALE🎁 Chocolat Textures FullPack",
+    "10876172": "💜Chocolat🤍 Lovely Make Up",
+    "10876173": "🤍Chocolat💜 Diamond Eyes",
+    "10876174": "💜Chocolat🤍 Historic Eyes"
   }
 }

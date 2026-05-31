@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Set 森羅 -shinra- & マヌカ -MANUKA-  応援版": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "マヌカ -MANUKA-": [
@@ -1788,7 +1803,18 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10991876": "森羅 -shinra-",
+    "11221882": "Set 森羅 -shinra- & マヌカ -MANUKA-",
+    "11221883": "Set 森羅 -shinra- & マヌカ -MANUKA-  応援版",
+    "11221884": "マヌカ -MANUKA-"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 199,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 199,
+        "is_sale": false
       }
     ],
     "unitypackage+blender file": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 249,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 249,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9571316": "unitypackage",
+    "9571449": "unitypackage+blender file"
   }
 }

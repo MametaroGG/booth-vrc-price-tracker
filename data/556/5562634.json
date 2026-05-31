@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "Merushi Only": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 650,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "WeekEnd Only": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 650,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9390885": "FULL SET",
+    "9390943": "Lina Only",
+    "9390944": "WeekEnd Only",
+    "9390945": "もちリーヌ/Mochirine アイマスク単体",
+    "9390946": "Merushi Only"
   }
 }

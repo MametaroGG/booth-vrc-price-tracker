@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "Clingy&Chilly 支援版": [
@@ -904,7 +909,16 @@
         "date": "2026-05-29",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11181107": "Clingy&Chilly 通常版",
+    "11185209": "Clingy&Chilly 支援版"
   }
 }

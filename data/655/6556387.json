@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "しなの/Shinano": [
@@ -894,6 +899,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "愛莉/Airi": [
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "マヌカ/Manuka": [
@@ -1788,6 +1803,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "ショコラ&ライム&シフォン / Chocolat&Lime&Chiffon": [
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "萌/Moe": [
@@ -2682,6 +2707,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "セレスティア/Selestia": [
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "ルルネ & 瑞希 / Rurune & Mizuki": [
@@ -3576,7 +3611,22 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11050341": "Full-Set",
+    "11050360": "しなの/Shinano",
+    "11050361": "愛莉/Airi",
+    "11050362": "マヌカ/Manuka",
+    "11050363": "萌/Moe",
+    "11050364": "ショコラ&ライム&シフォン / Chocolat&Lime&Chiffon",
+    "11050365": "セレスティア/Selestia",
+    "11062961": "ルルネ & 瑞希 / Rurune & Mizuki"
   }
 }

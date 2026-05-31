@@ -434,6 +434,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "桜🌸ヘアピン / Sakura HairPin": [
@@ -764,6 +769,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1098,6 +1108,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "桜🌸イヤリングA / Sakura Earring A": [
@@ -1428,6 +1443,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1762,7 +1782,19 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9523321": "桜🌸フルセット / Sakura FullSet",
+    "13368787": "桜🌸ヘアピン / Sakura HairPin",
+    "13368788": "桜🌸リング / Sakura Ring",
+    "13368789": "桜🌸イヤリングA / Sakura Earring A",
+    "13368790": "桜🌸イヤリングB / Sakura Earring B"
   }
 }

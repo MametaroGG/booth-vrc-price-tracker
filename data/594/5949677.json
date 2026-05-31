@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1300,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Sio": [
@@ -1728,6 +1743,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "All pack": [
@@ -1880,6 +1900,11 @@
         "date": "2026-02-26",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1900,
+        "is_sale": true
       }
     ],
     "Shinra (520円 Off)": [
@@ -2197,5 +2222,12 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10051271": "Shinra",
+    "10051701": "Manuka",
+    "10051702": "Selestia",
+    "10051703": "Sio",
+    "10051704": "All pack"
   }
 }

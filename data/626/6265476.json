@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "shinra_barcode_tattoo【brack】": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 125,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 125,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 125,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 125,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10579658": "shinra_barcode_tattoo【brack&white】",
+    "10579754": "shinra_barcode_tattoo【brack】",
+    "10579755": "shinra_barcode_tattoo【white】"
   }
 }

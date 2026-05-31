@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Eyes only": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 680,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "Tongue only": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9279187": "[All+] Eyes+Body+Makeup textures+Materials",
+    "9279467": "Eyes only",
+    "9279468": "Makeup only",
+    "9279469": "Tongue only"
   }
 }

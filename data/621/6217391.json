@@ -1327,6 +1327,32 @@
         "price": 850,
         "is_sale": false
       }
+    ],
+    "Shinano/しなの 50% OFF": [
+      {
+        "date": "2026-06-01",
+        "price": 425,
+        "is_sale": true
+      }
+    ],
+    "Airi/愛莉 50% OFF": [
+      {
+        "date": "2026-06-01",
+        "price": 425,
+        "is_sale": true
+      }
+    ],
+    "Rurune/ルルネ 50% OFF": [
+      {
+        "date": "2026-06-01",
+        "price": 425,
+        "is_sale": true
+      }
     ]
+  },
+  "variation_keys": {
+    "10501876": "Shinano/しなの 50% OFF",
+    "10501939": "Airi/愛莉 50% OFF",
+    "10501940": "Rurune/ルルネ 50% OFF"
   }
 }

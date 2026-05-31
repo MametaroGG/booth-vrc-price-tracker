@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3980,
+        "is_sale": false
       }
     ],
     "Quest（Android）対応版のみ": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 1980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9534234": "フルセット版",
+    "9567385": "Quest（Android）対応版のみ"
   }
 }

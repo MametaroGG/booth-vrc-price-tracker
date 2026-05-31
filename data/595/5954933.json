@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "🌴SALE🌴 Manuka": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 950,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "🌴SALE🌴 Shinra": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-30",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10061983": "🎁FullPack🎁 3アバター対応",
+    "10061995": "🌴SALE🌴 Manuka",
+    "10061996": "🌴SALE🌴 Sio",
+    "10061997": "🌴SALE🌴 Shinra"
   }
 }

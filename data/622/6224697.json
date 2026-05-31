@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 130,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 130,
+        "is_sale": false
       }
     ],
     "Black": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 130,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 130,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10513802": "White",
+    "10513862": "Black",
+    "10513863": "Full"
   }
 }

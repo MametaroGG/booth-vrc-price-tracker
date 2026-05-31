@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 980,
+        "is_sale": false
       }
     ],
     "unitypackage": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -1326,7 +1336,17 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11086449": "フルパック＋PSDデータ",
+    "11086593": "unitypackage",
+    "11086594": "texture"
   }
 }

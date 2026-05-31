@@ -307,6 +307,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Full Package (Main Package + Chocolat DLC)": [
@@ -593,5 +598,8 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10880265": "default"
   }
 }

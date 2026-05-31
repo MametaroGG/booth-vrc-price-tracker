@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "お菓子食べたい(同一商品)(* ^ ω ^)♥ /Same file as シフォン/chiffon": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 200,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "お菓子食べたい(同一商品)(* ^ ω ^)♥ /Same file as  ライム -Lime": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10412854": "Texture Chiffon シフォン",
+    "10412881": "お菓子食べたい(同一商品)(* ^ ω ^)♥ /Same file as シフォン/chiffon",
+    "10461226": "Textureライム -Lime",
+    "10461227": "お菓子食べたい(同一商品)(* ^ ω ^)♥ /Same file as  ライム -Lime"
   }
 }

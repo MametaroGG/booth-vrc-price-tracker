@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "マヌカ": [
@@ -874,6 +879,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "森羅": [
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "桔梗": [
@@ -1748,6 +1763,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Sio": [
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "NORANEKOSEVEN": [
@@ -2622,7 +2647,20 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9877284": "ヘルべチカ",
+    "9877314": "マヌカ",
+    "9877315": "森羅",
+    "9964835": "桔梗",
+    "9964836": "Sio",
+    "9964837": "NORANEKOSEVEN"
   }
 }

@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "【通常版B】X300U-B Light | Expansion | v2.0": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 399,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 399,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-29",
         "price": 629,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 629,
+        "is_sale": false
       }
     ],
     "【商用版】統合バージョンと同じ内容です | The commercial version is identical to the merged version.": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-29",
         "price": 1056,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1056,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10277574": "【通常版A】X300U-A Light | Expansion | v2.0",
+    "10277637": "【通常版B】X300U-B Light | Expansion | v2.0",
+    "10277638": "【統合版】X300U-A & X300U-B Weapon Light ライト",
+    "10277639": "【商用版】統合バージョンと同じ内容です | The commercial version is identical to the merged version."
   }
 }

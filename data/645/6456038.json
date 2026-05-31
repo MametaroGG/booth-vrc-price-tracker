@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "Silverborn - Claymore / Great sword": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Silver Spine - One-handed sword": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Silver Edge - One-handed sword": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -3129,7 +3159,21 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10890883": "Demon Hunter / Silver Ages",
+    "10891070": "Silverborn - Claymore / Great sword",
+    "10891071": "Broken Silverborn - Broken sword",
+    "10891072": "Silver Spine - One-handed sword",
+    "10891073": "Silver Shade - Daggers",
+    "10891074": "Silver Edge - One-handed sword",
+    "10891075": "Silver Dance - Double-headed melee"
   }
 }

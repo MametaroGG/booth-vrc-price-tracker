@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "BLACK": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 399,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 399,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "BLUE": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 399,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 399,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "PINK": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 399,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 399,
         "is_sale": false
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "YELLOW": [
@@ -3574,6 +3609,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 399,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 399,
         "is_sale": false
       }
@@ -4023,6 +4063,11 @@
         "date": "2026-05-29",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "ALL COLOURS": [
@@ -4470,7 +4515,24 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10528831": "RED",
+    "10529028": "BLACK",
+    "10529029": "PURPLE",
+    "10529030": "BLUE",
+    "10529031": "GREEN",
+    "10529032": "PINK",
+    "10529033": "ORANGE",
+    "10529034": "YELLOW",
+    "10545331": "SKY",
+    "10545332": "ALL COLOURS"
   }
 }

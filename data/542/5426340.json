@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 580,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 580,
+        "is_sale": false
       }
     ],
     "Horns + Extra Variation": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 880,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9157437": "Horns",
+    "9236703": "Horns + Extra Variation"
   }
 }

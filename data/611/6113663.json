@@ -1288,6 +1288,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Black / Personal price": [
@@ -1308,6 +1313,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -1332,6 +1342,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Pink / Corporate price": [
@@ -1352,6 +1367,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -1376,6 +1396,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Black+Pink 2way / Corporate price": [
@@ -1398,7 +1423,20 @@
         "date": "2026-05-29",
         "price": 4200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10325309": "Pink / Personal price",
+    "10334928": "Black / Personal price",
+    "12545938": "Black+Pink 2way / Personal price",
+    "14011206": "Pink / Corporate price",
+    "14011207": "Black / Corporate price",
+    "14011208": "Black+Pink 2way / Corporate price"
   }
 }

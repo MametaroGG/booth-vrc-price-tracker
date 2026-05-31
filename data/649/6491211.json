@@ -412,6 +412,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Memory Flower + あいす代": [
@@ -859,6 +864,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "【SALE】Memory Flower": [
@@ -898,5 +908,9 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10945382": "Memory Flower",
+    "10945509": "Memory Flower + あいす代"
   }
 }

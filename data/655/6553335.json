@@ -427,6 +427,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "おちびちゃんズ Milltina Z (Sister\"Z\")": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "【SALE】おちびちゃんズ Milltina (normal)": [
@@ -1349,5 +1364,10 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11045617": "おちびちゃんズ Milltina (normal)",
+    "11045681": "おちびちゃんズ Milltina Z (Sister\"Z\")",
+    "11045682": "おちびちゃんズ Milltina FullSet"
   }
 }

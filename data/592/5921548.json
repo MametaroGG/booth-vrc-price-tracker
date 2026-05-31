@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Akyo購入費支援版（金額に応じて対応Akyoが増えます。通常版と同じです。）": [
@@ -864,7 +869,15 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10081097": "Akyo購入費支援版（金額に応じて対応Akyoが増えます。通常版と同じです。）"
   }
 }

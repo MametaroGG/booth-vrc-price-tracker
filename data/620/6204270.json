@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "VRCパック": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 4000,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Fullパック": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 7500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 7500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10478489": "VRMパック",
+    "10487866": "VRCパック",
+    "10487867": "Vroidパック",
+    "10487868": "Fullパック"
   }
 }

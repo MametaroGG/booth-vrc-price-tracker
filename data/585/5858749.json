@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "Eyes Texture Only (PNG)": [
@@ -874,7 +879,16 @@
         "date": "2026-05-30",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9893270": "Full Set (Eyes,Makeup)",
+    "9893331": "Eyes Texture Only (PNG)"
   }
 }

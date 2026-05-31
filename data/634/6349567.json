@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "VRMデータ(VRM only)": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10716202": "VRChat用パッケージ(VRChat package)／Quest版(Quest ver)",
+    "10716319": "VRMデータ(VRM only)"
   }
 }

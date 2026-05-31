@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 980,
+        "is_sale": false
       }
     ],
     "[単品]♥Face Chain Type1♥": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "[単品]♥Face Chain Type3♥": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9976904": "【Full Pack】♥Face Chain♥",
+    "9991087": "[単品]♥Face Chain Type1♥",
+    "9991088": "[単品]♥Face Chain Type2♥",
+    "9991089": "[単品]♥Face Chain Type3♥"
   }
 }

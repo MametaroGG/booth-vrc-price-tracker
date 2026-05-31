@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "The Full Project + Supporting the creator": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 6300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 6300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9233301": "The Full Project",
+    "10922364": "The Full Project + Supporting the creator"
   }
 }

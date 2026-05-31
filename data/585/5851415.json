@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 230,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 230,
+        "is_sale": false
       }
     ],
     "Mame Gradation": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9880561": "おやつ（中身は同じ）",
+    "9880883": "Mame Gradation"
   }
 }

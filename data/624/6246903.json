@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "Shinano": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 450,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 450,
         "is_sale": true
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": true
       }
     ],
     "Selestia": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 450,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 450,
         "is_sale": true
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": true
       }
     ],
     "Moe": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 450,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 450,
         "is_sale": true
       }
@@ -3129,7 +3159,21 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "10550038": "FullPack",
+    "10554244": "Shinano",
+    "10554245": "Airi",
+    "10554246": "Selestia",
+    "10554247": "Manuka",
+    "10554248": "Moe",
+    "10554249": "Kikyo"
   }
 }

@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "プロ版 Pro Version": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 8000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 8000,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-30",
         "price": 3950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9932550": "フルバージョン Full Version",
+    "10496462": "プロ版 Pro Version",
+    "11060223": "プロにアップグレード Upgrade to Pro 【NEED FULL VERSION PURCHASED !!!】"
   }
 }

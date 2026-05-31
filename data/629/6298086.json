@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "サンプル": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 0,
         "is_sale": false
       }
@@ -1341,7 +1351,16 @@
         "date": "2026-05-29",
         "price": 12000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 12000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10631997": "髪服体　Rock and Roll Tshirts_Set",
+    "12047156": "【法人向け】髪服体　Rock and Roll Tshirts_Set"
   }
 }

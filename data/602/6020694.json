@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 280,
+        "is_sale": false
       }
     ],
     "For Lapwing": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 280,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 280,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-29",
         "price": 280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 280,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10172518": "For Grus",
+    "10172711": "For Lapwing",
+    "10172712": "For Shinra"
   }
 }

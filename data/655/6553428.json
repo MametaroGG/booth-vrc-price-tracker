@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 6980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 6980,
+        "is_sale": false
       }
     ],
     "Chill Days": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1190,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1190,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 1890,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1890,
+        "is_sale": false
       }
     ],
     "Ame Parka": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1580,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1580,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 1890,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1890,
+        "is_sale": false
       }
     ],
     "Soft Grunge": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1580,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1580,
         "is_sale": false
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 1580,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1580,
+        "is_sale": false
       }
     ],
     "Ame Knit": [
@@ -3576,7 +3611,22 @@
         "date": "2026-05-29",
         "price": 1280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1280,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11045743": "Full Set フルセット",
+    "11045840": "Chill Days",
+    "11045841": "Conform Knit",
+    "11045842": "Ame Parka",
+    "11045843": "Aberrant Cardigan",
+    "11045844": "Soft Grunge",
+    "11045845": "Chill Knit",
+    "11045846": "Ame Knit"
   }
 }

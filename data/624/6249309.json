@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "TextPanelギミック同梱版": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 3300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10554317": "通常版",
+    "10557238": "TextPanelギミック同梱版"
   }
 }

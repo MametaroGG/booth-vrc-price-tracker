@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "IQOS支援版(内容物は変わりません)": [
@@ -884,7 +889,16 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10510169": "DevilNecklace",
+    "10510234": "IQOS支援版(内容物は変わりません)"
   }
 }

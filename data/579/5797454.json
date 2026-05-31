@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "Makeup(PSD+PNG)+Face tattoos+Lips change": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "Tongue tex(Png)only": [
@@ -1748,7 +1763,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9790544": "[All+] Eyes+Makeup(PSD)+Tongue Tex+Material Package",
+    "9790705": "Makeup(PSD+PNG)+Face tattoos+Lips change",
+    "9790706": "Eye+Emi tex(Png)only",
+    "9790707": "Tongue tex(Png)only"
   }
 }

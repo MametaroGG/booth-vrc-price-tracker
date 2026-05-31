@@ -444,11 +444,21 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "キプフェルちゃん(Kipfel)対応": [
       {
         "date": "2026-05-29",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1300,
         "is_sale": false
       }
@@ -458,6 +468,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "しらつめちゃん(Shiratsume)対応": [
@@ -465,7 +480,18 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10326125": "キプフェルちゃん(Kipfel)対応",
+    "14073957": "Full",
+    "14073958": "フィユエちゃん(Fyuett)対応",
+    "14073959": "しらつめちゃん(Shiratsume)対応"
   }
 }
