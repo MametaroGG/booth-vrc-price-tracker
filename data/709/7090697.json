@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "豪華版(Fullset)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11889286": "和スタイル(Nomalset)",
+    "11889348": "豪華版(Fullset)"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "FREE": [
@@ -478,5 +483,8 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11457915": "default"
   }
 }

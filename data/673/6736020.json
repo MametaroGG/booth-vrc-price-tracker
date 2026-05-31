@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "♥支援版♥[内容物は同じです]Make up+Eye+Tongue texure+Material package": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2800,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "Makeup Only": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 680,
         "is_sale": false
       }
@@ -2235,7 +2255,19 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11334643": "Make up+Eye+Tongue texure+Material package",
+    "11335686": "♥支援版♥[内容物は同じです]Make up+Eye+Tongue texure+Material package",
+    "11335687": "Eye Only",
+    "11335688": "Makeup Only",
+    "11335689": "Tongue Only"
   }
 }

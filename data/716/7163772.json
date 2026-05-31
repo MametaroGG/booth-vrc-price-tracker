@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "[おやつ代] boots_swamp_v1.00 (※内容は通常版と同じです)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12007512": "boots_swamp_v1.00",
+    "12007598": "[おやつ代] boots_swamp_v1.00 (※内容は通常版と同じです)"
   }
 }

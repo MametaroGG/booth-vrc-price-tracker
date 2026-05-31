@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "ショコラ -Chocolat- ver": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "ミルティナ -Milltina- ver": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "セレスティア -Selestia- ver": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "森羅 -Shinra- ver": [
@@ -3576,7 +3611,22 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11322168": "Fullset -7Avatar-",
+    "11335052": "ショコラ -Chocolat- ver",
+    "11335053": "マヌカ -Manuka- ver",
+    "11335054": "ミルティナ -Milltina- ver",
+    "11335055": "萌 -Moe- ver",
+    "11335056": "セレスティア -Selestia- ver",
+    "11335057": "しなの -Shinano- ver",
+    "11335058": "森羅 -Shinra- ver"
   }
 }

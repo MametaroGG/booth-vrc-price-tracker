@@ -462,6 +462,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Mellowin_Hair - Bridge": [
@@ -922,6 +927,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1386,7 +1396,17 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11891485": "Mellowin_Hair - Full Pack",
+    "11891571": "Mellowin_Hair - Bridge",
+    "11891572": "Mellowin_Hair - Gradation"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "Airi(愛莉)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 250,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": true
       }
     ],
     "Hanka (斑霞)": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 250,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": true
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": true
       }
     ],
     "Shinra (森羅)": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 250,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": true
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": true
       }
     ],
     "Shinano (しなの)": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 250,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": true
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": true
       }
     ],
     "Milltina (ミルティナ)": [
@@ -4570,7 +4615,24 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12176689": "FullPack (フルパック)",
+    "12176737": "Airi(愛莉)",
+    "12176738": "Chocolat (ショコラ)",
+    "12176739": "Hanka (斑霞)",
+    "12176740": "Manuka (マヌカ)",
+    "12176741": "Shinra (森羅)",
+    "12176742": "Sio (しお)",
+    "12176743": "Shinano (しなの)",
+    "12176744": "Minase (水瀬)",
+    "12176745": "Milltina (ミルティナ)"
   }
 }

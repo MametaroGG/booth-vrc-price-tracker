@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "コーヒー代  +【無料】Celestial Trineシリーズ【リング3本セット】": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1371,7 +1381,16 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12133528": "コーヒー代  +【無料】Celestial Trineシリーズ【リング3本セット】",
+    "12133529": "サンドイッチ代  +【無料】Celestial Trineシリーズ【リング3本セット】"
   }
 }

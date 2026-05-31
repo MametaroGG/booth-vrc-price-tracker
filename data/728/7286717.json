@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 730,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 730,
+        "is_sale": false
       }
     ],
     "RURUNE": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 730,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 730,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 730,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 730,
+        "is_sale": false
       }
     ],
     "SIO": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 730,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 730,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12206180": "SHINANO",
+    "12206243": "RURUNE",
+    "12206244": "MAO",
+    "12206245": "SIO"
   }
 }

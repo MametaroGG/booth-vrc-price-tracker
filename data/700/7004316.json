@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2860,
+        "is_sale": false
       }
     ],
     "【商用版】通常バージョンと同じ内容です | Same content as standard version": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 4400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4840,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11754227": "【通常バージョン】G45 Gen5 | Base MKG3 | v2.0",
+    "11754903": "【商用版】通常バージョンと同じ内容です | Same content as standard version"
   }
 }

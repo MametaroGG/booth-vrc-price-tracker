@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6000,
+        "is_sale": false
       }
     ],
     "for 森羅 Shinra": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2900,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 2900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2900,
+        "is_sale": false
       }
     ],
     "for Lapwing": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2900,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 2900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2900,
+        "is_sale": false
       }
     ],
     "for ラシューシャ Lasyusha": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 2900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11777674": "5アバターフルパック full pack for 5 avatars",
+    "11864198": "for 森羅 Shinra",
+    "11864199": "for マリシア Marycia",
+    "11864200": "for Lapwing",
+    "11864201": "for Sio",
+    "12527981": "for ラシューシャ Lasyusha"
   }
 }

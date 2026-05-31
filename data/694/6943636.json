@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "セレスティア / SELESTIA 🩷": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 550,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "ショコラ/ Chocolat | シフォン / Chiffon | ライム / Lime 🩷": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11656182": "🩷 FULL SET 🩷",
+    "11656231": "セレスティア / SELESTIA 🩷",
+    "11656232": "マヌカ / Manuka 🩷",
+    "11656233": "ショコラ/ Chocolat | シフォン / Chiffon | ライム / Lime 🩷"
   }
 }

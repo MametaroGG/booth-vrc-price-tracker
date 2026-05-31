@@ -2207,6 +2207,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "pinkwhite": [
@@ -2227,6 +2232,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -2251,6 +2261,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "bluewhite": [
@@ -2271,6 +2286,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -2295,6 +2315,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "ALL colors [Corporate price]": [
@@ -2315,6 +2340,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -2339,6 +2369,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "pinkblack[Corporate price]": [
@@ -2359,6 +2394,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2100,
         "is_sale": false
       }
@@ -2383,6 +2423,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "blueblack [Corporate price]": [
@@ -2405,7 +2450,24 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11983243": "ALL colors",
+    "11984001": "pinkwhite",
+    "11984002": "pinkblack",
+    "11984003": "bluewhite",
+    "11984004": "blueblack",
+    "14013192": "ALL colors [Corporate price]",
+    "14013193": "pinkwhite [Corporate price]",
+    "14013194": "pinkblack[Corporate price]",
+    "14013195": "bluewhite[Corporate price]",
+    "14013196": "blueblack [Corporate price]"
   }
 }

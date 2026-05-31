@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Kipfel normal color onry（まつげ無し）": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Chiffon pastel color only（まつげ無し）": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -2260,6 +2280,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Chiffon full color & matsuge": [
@@ -2710,6 +2735,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -3164,6 +3194,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Full pack + Donate(おまけつき)": [
@@ -3616,7 +3651,22 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11957298": "Kipfel pastel color only（まつげ無し）",
+    "11960228": "Kipfel normal color onry（まつげ無し）",
+    "11960229": "Kipfel full color & matsuge",
+    "11960230": "Chiffon pastel color only（まつげ無し）",
+    "11960231": "Chiffon normal color only（まつげ無し）",
+    "11960232": "Chiffon full color & matsuge",
+    "11960233": "Full pack",
+    "11960657": "Full pack + Donate(おまけつき)"
   }
 }

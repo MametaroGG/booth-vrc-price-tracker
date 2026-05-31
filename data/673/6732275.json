@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "マヌカ - Manuka": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 850,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "ミルティナ - Milltina": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 850,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "ルルネ - rurune": [
@@ -2530,6 +2555,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 850,
         "is_sale": false
       }
@@ -2829,6 +2859,11 @@
         "date": "2026-05-29",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "ルチカ - Luchika": [
@@ -3126,7 +3161,22 @@
         "date": "2026-05-29",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11328570": "フルパック - Full Pack",
+    "11334272": "マヌカ - Manuka",
+    "11334367": "しなの - Shinano",
+    "11334368": "ミルティナ - Milltina",
+    "11334369": "ショコラ - Chocolat",
+    "13440695": "ルルネ - rurune",
+    "13440696": "キプフェル - Kipfel",
+    "13440697": "ルチカ - Luchika"
   }
 }

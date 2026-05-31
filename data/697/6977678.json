@@ -680,6 +680,11 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "-支援1-ShaderChangerTool ver 1.0.1": [
@@ -1070,6 +1075,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1464,6 +1474,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "-支援3-ShaderChangerTool ver 1.0.1": [
@@ -1856,7 +1871,17 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12041916": "-支援1-ShaderChangerTool ver 1.0.1",
+    "12041917": "-支援2-ShaderChangerTool ver 1.0.1",
+    "12041918": "-支援3-ShaderChangerTool ver 1.0.1"
   }
 }

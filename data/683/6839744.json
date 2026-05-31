@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Kipfel tattoo +みるく代": [
@@ -904,7 +909,16 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11494586": "Kipfel tattoo",
+    "11494772": "Kipfel tattoo +みるく代"
   }
 }

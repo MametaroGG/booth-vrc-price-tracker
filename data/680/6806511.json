@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Chocolat/ Lime / Chiffon": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Shinra": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2260,6 +2280,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Airi": [
@@ -2710,6 +2735,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -3164,6 +3194,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Moe": [
@@ -3614,6 +3649,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -4068,6 +4108,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "企業用 Full Pack(1人)": [
@@ -4520,7 +4565,24 @@
         "date": "2026-05-29",
         "price": 12000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 12000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11443881": "FULL PACK",
+    "11444135": "Chocolat/ Lime / Chiffon",
+    "11444552": "Manuka",
+    "11444553": "Shinra",
+    "11444554": "Sio",
+    "11444555": "Airi",
+    "11444556": "Sinano",
+    "11444557": "Moe",
+    "11444558": "Selestia",
+    "11686893": "企業用 Full Pack(1人)"
   }
 }

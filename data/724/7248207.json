@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "緑 / Green": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "青 / Blue": [
@@ -1828,6 +1843,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Pibo （肩掛け）": [
@@ -2283,6 +2303,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -2924,6 +2949,11 @@
         "date": "2026-05-29",
         "price": 12000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 12000,
+        "is_sale": false
       }
     ],
     "全色 / All 4 colors（Full set+Pibo）": [
@@ -3199,6 +3229,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 4000,
         "is_sale": false
       }
@@ -3478,6 +3513,11 @@
         "date": "2026-05-29",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "[Corporate Ver.] 緑 / Green （+Pibo）": [
@@ -3753,6 +3793,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3200,
         "is_sale": false
       }
@@ -4032,6 +4077,11 @@
         "date": "2026-05-29",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "[Corporate Ver.] 青 / Blue （+Pibo）": [
@@ -4309,7 +4359,25 @@
         "date": "2026-05-29",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12142661": "青 / Blue",
+    "12144547": "ピンク / Pink",
+    "12144548": "緑 / Green",
+    "12144549": "黄 / Yellow",
+    "12144550": "Pibo （肩掛け）",
+    "12144551": "全色 / All 4 colors（Full set+Pibo）",
+    "12144552": "[Corporate Ver.] 全色 / All 4 colors（Full set+Pibo）",
+    "13484725": "[Corporate Ver.] ピンク / Pink （+Pibo）",
+    "13484726": "[Corporate Ver.] 緑 / Green （+Pibo）",
+    "13484727": "[Corporate Ver.] 黄 / Yellow （+Pibo）",
+    "13484728": "[Corporate Ver.] 青 / Blue （+Pibo）"
   }
 }

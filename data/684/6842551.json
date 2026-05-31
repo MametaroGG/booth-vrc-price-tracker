@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "For shinra -森羅-": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1900,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "For shinano -しなの-": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1900,
         "is_sale": false
       }
@@ -2260,6 +2280,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "For liloumois -リルモワ-": [
@@ -2710,6 +2735,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1900,
         "is_sale": false
       }
@@ -3164,6 +3194,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "For manuka -マヌカ-": [
@@ -3616,7 +3651,22 @@
         "date": "2026-05-29",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11498900": "フルパック",
+    "11499019": "For shinra -森羅-",
+    "11499020": "For milltina -ミルティナ-",
+    "11499021": "For shinano -しなの-",
+    "11499022": "For lasyusha -ラシューシャ-",
+    "11499024": "For liloumois -リルモワ-",
+    "11614909": "For selestia -セレスティア-",
+    "12440528": "For manuka -マヌカ-"
   }
 }

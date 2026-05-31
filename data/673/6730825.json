@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 220,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 220,
+        "is_sale": false
       }
     ],
     "JP/無料版": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 0,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 220,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 220,
+        "is_sale": false
       }
     ],
     "EN/Free version": [
@@ -1788,7 +1803,16 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11326267": "JP/有料版 +スウェット2色,ストリートパンツ3色,ネックレス",
+    "11326347": "EN/Paid version +Sweatshirts 2color,Sweatpants 3color,Accessories"
   }
 }

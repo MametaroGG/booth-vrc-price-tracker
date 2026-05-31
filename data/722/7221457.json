@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "【single package】 \"[Artist  x  WM] New Year's series_ tattoo of a snake\" + \"Tattoo guide\"": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "【Only \"Tattoo guide\" 】 Only \"Tattoo guide\"": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12099064": "【Full package】\"[Artist  x  WM] New Year's series_ tattoo of a snake\" + \"Summer tattoo\"+\"Tattoo guide\"",
+    "12108888": "【single package】 \"[Artist  x  WM] Summer tattoo\" + \"Tattoo guide\"",
+    "12108889": "【single package】 \"[Artist  x  WM] New Year's series_ tattoo of a snake\" + \"Tattoo guide\"",
+    "12152490": "【Only \"Tattoo guide\" 】 Only \"Tattoo guide\""
   }
 }

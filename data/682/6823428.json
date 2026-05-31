@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Soft Wavy Hair Highlights": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Soft Wavy Hair Highlights & Gradation": [
@@ -1808,7 +1823,18 @@
         "date": "2026-05-29",
         "price": 325,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 325,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11469841": "Soft Wavy Hair FullPack",
+    "11469847": "Soft Wavy Hair Highlights",
+    "11469848": "Soft Wavy Hair Gradation",
+    "11469849": "Soft Wavy Hair Highlights & Gradation"
   }
 }

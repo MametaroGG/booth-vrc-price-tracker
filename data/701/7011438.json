@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "マヌカ対応 -Manuka-": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 5000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 5000,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11765650": "しなの対応 -Shinano-",
+    "11765661": "マヌカ対応 -Manuka-",
+    "11765662": "りりか対応 -Ririka-"
   }
 }

@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "SprPiano(通常版＋MIDI対応版)": [
@@ -904,7 +909,16 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11500021": "SprPiano(通常版)",
+    "11531316": "SprPiano(通常版＋MIDI対応版)"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2900,
+        "is_sale": true
       }
     ],
     "Popular Products 2025 25% off Bundle Package 2": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 3600,
         "is_sale": true
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 4000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11854321": "Popular Products 2025 25% off Bundle Package",
+    "11854567": "Popular Products 2025 25% off Bundle Package 2",
+    "11854568": "Popular Products 2025 25% off Bundle Package 2 (Donation Version)"
   }
 }

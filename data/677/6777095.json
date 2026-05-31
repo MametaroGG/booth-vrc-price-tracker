@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Twin Braid REMAKE - highlight": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1341,7 +1351,17 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11398989": "Twin Braid REMAKE - Full Pack",
+    "11399185": "Twin Braid REMAKE - highlight",
+    "11399186": "Twin Braid REMAKE - gradation"
   }
 }

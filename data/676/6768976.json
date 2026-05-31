@@ -449,6 +449,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Corporate price": [
@@ -471,7 +476,16 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11386483": "Personal price",
+    "14012698": "Corporate price"
   }
 }

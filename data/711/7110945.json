@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Hyper_Seleritas": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1750,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1750,
+        "is_sale": false
       }
     ],
     "Kaizo_Container": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11921273": "Hyper_Seleritas",
+    "11921585": "Space_Gatling",
+    "11921586": "Kaizo_Container",
+    "11921587": "˗ˏˋ ★ Full House Bundle ★ˎˊ˗"
   }
 }

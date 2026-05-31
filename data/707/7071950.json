@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "💄Shuan_MakeTexture(しゅあん)": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "🎁Shuan_Fullset(しゅあん全部入り)": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -2260,6 +2280,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "👀Musa_EyeTexture(仮称:Musa)": [
@@ -2710,6 +2735,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -3164,7 +3194,21 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11859945": "💄Shuan_MakeTexture(しゅあん)",
+    "11860048": "👀Shuan_EyeTexture(しゅあん)",
+    "11860049": "🎁Shuan_Fullset(しゅあん全部入り)",
+    "12352744": "🎉ALLFullset(全アバター入り)🎉",
+    "12352745": "💄Musa_MakeTexture(仮称:Musa)",
+    "12352746": "👀Musa_EyeTexture(仮称:Musa)",
+    "12352747": "🎁Musa_Fullset(仮称:Musa全部入り)"
   }
 }

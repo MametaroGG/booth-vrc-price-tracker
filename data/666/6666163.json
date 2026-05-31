@@ -432,6 +432,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "おちびちゃんズ mao (Sister?\"Z\")": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "【SALE】おちびちゃんズ mao (normal)": [
@@ -1379,5 +1394,10 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11219547": "おちびちゃんズ mao (normal)",
+    "11679903": "おちびちゃんズ mao (Sister?\"Z\")",
+    "11679904": "おちびちゃんズ mao FullSet"
   }
 }

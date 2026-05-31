@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "【Full set】全編_ポーズセット": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "【Manuka】マヌカ編_ポーズセット": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": true
       }
@@ -2285,7 +2305,18 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11700071": "【Full set】全編_ポーズセット",
+    "11951731": "【Milltina】ミルティナ編_ポーズセット",
+    "11951732": "【Manuka】マヌカ編_ポーズセット",
+    "11951733": "【Lasyusha】ラシューシャ編_ポーズセット"
   }
 }

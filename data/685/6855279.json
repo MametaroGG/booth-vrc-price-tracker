@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Edge ver（フチあり）": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "支援版（Complete verと同じです）": [
@@ -1808,7 +1823,18 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11518277": "Soft ver（フチなし）",
+    "11518902": "Edge ver（フチあり）",
+    "11518903": "Complete ver（フチあり＋なし＋おまけセット）",
+    "11519252": "支援版（Complete verと同じです）"
   }
 }

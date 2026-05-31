@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "Hair+Ears": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11355186": "Hair only",
+    "11386013": "Hair+Ears"
   }
 }

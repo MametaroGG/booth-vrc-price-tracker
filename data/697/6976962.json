@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "Box 2": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1900,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "Box 4": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1900,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "Box 6": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1900,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "Full Set": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-29",
         "price": 11000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 11000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11710599": "Box 1",
+    "11710696": "Box 2",
+    "11710697": "Box 3",
+    "11710698": "Box 4",
+    "11710699": "Box 5",
+    "11710700": "Box 6",
+    "11710701": "Box 7",
+    "11710702": "Full Set"
   }
 }

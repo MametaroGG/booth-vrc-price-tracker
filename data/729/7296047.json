@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "🤍Alué🖤 Lovely Make Up": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "🤍Alué🖤 Historic Eyes": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12221077": "🎁FullPack🎁 Alué Textures FullPack",
+    "12221105": "🤍Alué🖤 Lovely Make Up",
+    "12221106": "🖤Alué🤍 Diamond Eyes",
+    "12221107": "🤍Alué🖤 Historic Eyes"
   }
 }

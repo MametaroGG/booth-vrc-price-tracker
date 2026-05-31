@@ -459,6 +459,11 @@
         "date": "2026-05-29",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "泣夜 - Nakiya": [
@@ -834,6 +839,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3200,
         "is_sale": false
       }
@@ -1213,6 +1223,11 @@
         "date": "2026-05-29",
         "price": 5200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5200,
+        "is_sale": false
       }
     ],
     "獏 - Baku": [
@@ -1515,7 +1530,18 @@
         "date": "2026-05-29",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12111838": "+Head",
+    "13321608": "泣夜 - Nakiya",
+    "13321609": "FULL PACK",
+    "13453951": "獏 - Baku"
   }
 }

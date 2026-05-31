@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "キプフェル＆まめふれんず　衣装単体（Outfit Only）": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "みみのこ　衣装単体（Outfit Only）": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11892202": "キプフェル＆まめふれんず　衣装+髪型（Outfit+Hair）SET",
+    "11892219": "キプフェル＆まめふれんず　衣装単体（Outfit Only）",
+    "12011118": "みみのこ　衣装+髪型（Outfit+Hair）SET",
+    "12011119": "みみのこ　衣装単体（Outfit Only）"
   }
 }

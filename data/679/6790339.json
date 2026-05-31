@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "KOMANO": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "KUUTA": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "GRUS": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -3129,6 +3159,11 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "商用利用 個人用 Licenses 1人": [
@@ -3399,6 +3434,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -3673,7 +3713,23 @@
         "date": "2026-05-29",
         "price": 30000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 30000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11419506": "MINASE",
+    "11419590": "KOMANO",
+    "11419591": "REI",
+    "11419592": "KUUTA",
+    "11419593": "+HEAD",
+    "11419594": "GRUS",
+    "11419595": "FULL",
+    "13487820": "商用利用 個人用 Licenses 1人",
+    "13487821": "商用利用 企業向け Licenses 1人"
   }
 }

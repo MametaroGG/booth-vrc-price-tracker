@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3800,
+        "is_sale": false
       }
     ],
     "Blender Rig": [
@@ -1306,6 +1311,11 @@
         "date": "2026-05-29",
         "price": 6800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6800,
+        "is_sale": false
       }
     ],
     "PC + Quest + Blender Rig": [
@@ -1760,7 +1770,17 @@
         "date": "2026-05-29",
         "price": 7600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 7600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11411330": "Quest VRC Only",
+    "11411353": "PC VRC Only",
+    "11411354": "PC + Quest"
   }
 }

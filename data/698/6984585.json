@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "フルパック": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 980,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "檸檬-remon-れもんunitypackage": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "彼岸花-higanbana-  unitypackage": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11723112": "フルパック",
+    "11723205": "向日葵-himawari-ひまわりunitypackage",
+    "11723206": "檸檬-remon-れもんunitypackage",
+    "11723207": "キルティング-quilting- unitypackage",
+    "11723261": "フルパック＋PSD",
+    "11792820": "彼岸花-higanbana-  unitypackage"
   }
 }

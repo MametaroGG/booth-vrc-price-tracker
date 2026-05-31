@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 3999,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3999,
+        "is_sale": false
       }
     ],
     "VRChat ARKit (for VRCFT)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2400,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11690766": "Full Package",
+    "11845189": "VRChat ARKit (for VRCFT)",
+    "11845190": "VTubing ARKit (for iPhone FT)"
   }
 }

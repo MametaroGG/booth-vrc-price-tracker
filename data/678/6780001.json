@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "cityrain skybox full version": [
@@ -884,7 +889,16 @@
         "date": "2026-05-29",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11403378": "cityrain skybox only fog",
+    "11403809": "cityrain skybox full version"
   }
 }

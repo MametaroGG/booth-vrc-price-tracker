@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": true
       }
     ],
     "Lapwing": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "びしょぬれのしずくさん": [
@@ -1808,7 +1823,18 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11441275": "fullset",
+    "11466258": "Lapwing",
+    "11466259": "Lowtus",
+    "11466260": "びしょぬれのしずくさん"
   }
 }

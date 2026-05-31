@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Gakuran Only": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1140,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1140,
         "is_sale": false
       }
@@ -1356,7 +1366,17 @@
         "date": "2026-05-29",
         "price": 1140,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1140,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10269137": "Complete (All uniforms)",
+    "10269183": "Gakuran Only",
+    "10269184": "Seifuku Only"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2700,
+        "is_sale": false
       }
     ],
     "しなの-Shinano": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "森羅-Shinra": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11598042": "フルパック - Full Pack",
+    "11598992": "しなの-Shinano",
+    "11598993": "桔梗-Kikyo ゆうぎり-Yugiri",
+    "11598994": "森羅-Shinra",
+    "11598995": "白雨-Hakuu"
   }
 }

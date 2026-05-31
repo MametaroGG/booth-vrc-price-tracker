@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "ラシューシャ - Lasyusya": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 690,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 690,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 690,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 690,
+        "is_sale": false
       }
     ],
     "真央 - Mao": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 690,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 690,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 690,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 690,
+        "is_sale": false
       }
     ],
     "まるぼでぃ - Marubody": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 690,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 690,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12090977": "フルパック",
+    "12091017": "ラシューシャ - Lasyusya",
+    "12091018": "マヌカ - Manuka",
+    "12091019": "真央 - Mao",
+    "12091020": "まるぼでぃ - Marubody",
+    "12109688": "ミルティナ - Milltina"
   }
 }

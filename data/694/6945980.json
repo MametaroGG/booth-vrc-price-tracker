@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 4200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4200,
+        "is_sale": false
       }
     ],
     "for Shinano": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2400,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "for Shinra": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2400,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "for Lasyusha": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2400,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "for Sio": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11660093": "Full Pack",
+    "11669628": "for Shinano",
+    "11669629": "for Marycia",
+    "11669630": "for Shinra",
+    "11669631": "for Lapwing",
+    "11669632": "for Lasyusha",
+    "11669633": "for Milltina",
+    "11669634": "for Sio"
   }
 }

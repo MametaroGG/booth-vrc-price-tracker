@@ -526,6 +526,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "アズキ - Azuki": [
@@ -976,6 +981,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1430,6 +1440,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "がぶ - Gabu": [
@@ -1882,6 +1897,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "FULL PACK": [
@@ -2297,6 +2317,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2800,
         "is_sale": false
       }
@@ -2716,7 +2741,20 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11428954": "FULL PACK",
+    "11429285": "キプフェル - Kipfel",
+    "11429286": "アズキ - Azuki",
+    "11501550": "しらつめ - Shiratsume",
+    "12664542": "がぶ - Gabu",
+    "13198151": "サバラム - Savarum"
   }
 }

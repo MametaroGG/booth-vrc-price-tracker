@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Shinano [しなの]": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 850,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "Kikyo [桔梗]": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 850,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "Chocolat+Chiffon [ショコラ+シフォン]": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 850,
         "is_sale": false
       }
@@ -3199,7 +3229,21 @@
         "date": "2026-05-29",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 850,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11572123": "Manuka [マヌカ]",
+    "11572124": "Kikyo [桔梗]",
+    "11572125": "Selestia [セレスティア]",
+    "11600147": "Shinano [しなの]",
+    "11685333": "Full Pack [フルパック]",
+    "11685334": "Chocolat+Chiffon [ショコラ+シフォン]",
+    "11685335": "Lasyusha [ラシューシャ]"
   }
 }

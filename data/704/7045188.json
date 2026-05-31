@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "ALL_TexturePACK（EYE + Makeup Texture）": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11818560": "EYE_Texture ONLY（まつげ部分は含まれません！）",
+    "11832771": "ALL_TexturePACK（EYE + Makeup Texture）"
   }
 }

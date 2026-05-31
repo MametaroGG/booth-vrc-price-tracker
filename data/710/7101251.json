@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "ADFBS_Mao 【Carnivorous】肉食動物": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1356,7 +1366,17 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11905270": "ADFBS_Mao 【Herbivorous】草食動物",
+    "11905312": "ADFBS_Mao 【Carnivorous】肉食動物",
+    "11905313": "ADFBS_Mao 【Fullpack】"
   }
 }

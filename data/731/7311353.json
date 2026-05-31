@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "基本銃器 | Basic Firearm": [
@@ -913,6 +918,11 @@
       {
         "date": "2026-05-29",
         "price": 2630,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2893,
         "is_sale": false
       }
     ],
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 3398,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3739,
+        "is_sale": false
       }
     ],
     "基本銃器 + サプレッサー | Basic Firearm + Suppressor": [
@@ -1827,6 +1842,11 @@
       {
         "date": "2026-05-29",
         "price": 2880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3168,
         "is_sale": false
       }
     ],
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 3360,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3699,
+        "is_sale": false
       }
     ],
     "拡張パッケージ A | Extended Package A": [
@@ -2741,6 +2766,11 @@
       {
         "date": "2026-05-29",
         "price": 4780,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5259,
         "is_sale": false
       }
     ],
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 4838,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5319,
+        "is_sale": false
       }
     ],
     "商用版ライセンス [全内容を含む] | Commercial License [Includes all content]": [
@@ -3656,7 +3691,21 @@
         "date": "2026-05-29",
         "price": 7872,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 8668,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12251624": "基本銃器 | Basic Firearm",
+    "12251842": "基本銃器 + 拡張マガジン/弾薬 | Basic Firearm + Extended Mag/Ammo",
+    "12251843": "基本銃器 + サプレッサー | Basic Firearm + Suppressor",
+    "12251844": "標準パッケージ [上記内容を含む] | Standard Package [Includes the above]",
+    "12251845": "拡張パッケージ A | Extended Package A",
+    "12251846": "拡張パッケージ B | Extended Package B",
+    "12251862": "商用版ライセンス [全内容を含む] | Commercial License [Includes all content]"
   }
 }

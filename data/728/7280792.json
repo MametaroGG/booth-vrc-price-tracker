@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 6500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6500,
+        "is_sale": false
       }
     ],
     "単色購入【light purple】": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3600,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "単色購入【purple×black】": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12196405": "3色セット",
+    "12196451": "単色購入【light purple】",
+    "12196452": "単色購入【dobby black】",
+    "12196453": "単色購入【purple×black】"
   }
 }

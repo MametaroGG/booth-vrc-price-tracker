@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "🩵Blue": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "🧡Orange": [
@@ -1828,6 +1843,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "❤️Pink [Corporate price]": [
@@ -1848,6 +1868,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2100,
         "is_sale": false
       }
@@ -1872,6 +1897,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "🖤Gray [Corporate price]": [
@@ -1892,6 +1922,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2100,
         "is_sale": false
       }
@@ -1916,7 +1951,22 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12039377": "❤️Pink",
+    "12173491": "🩵Blue",
+    "12173492": "🖤Gray",
+    "12173493": "🧡Orange",
+    "14012950": "❤️Pink [Corporate price]",
+    "14012951": "🩵Blue [Corporate price]",
+    "14012952": "🖤Gray [Corporate price]",
+    "14012953": "🧡Orange [Corporate price]"
   }
 }

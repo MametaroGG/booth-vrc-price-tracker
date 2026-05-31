@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": true
       }
     ],
     "Shinanoのみ": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "Manukaのみ": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": true
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "Chocolat & Chiffon & Limeのみ": [
@@ -2742,7 +2767,19 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11674822": "FullSet 8 Avaters",
+    "11674964": "Shinanoのみ",
+    "11674965": "Rurune & Mizukiのみ",
+    "11674966": "Manukaのみ",
+    "11674967": "Mafuyuのみ"
   }
 }

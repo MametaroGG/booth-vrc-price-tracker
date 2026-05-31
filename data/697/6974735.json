@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "MAMEFRIENDS GIRL": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1260,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1260,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 1260,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1260,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11706538": "MAMEFRIENDS FULLPACK(GIRL+BOY)",
+    "11706594": "MAMEFRIENDS GIRL",
+    "11706595": "MAMEFRIENDS BOY"
   }
 }

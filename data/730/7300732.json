@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "EYE TEXTURE ONLY": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 150,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": true
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12228381": "FULL PACK",
+    "12228448": "EYE TEXTURE ONLY",
+    "12228449": "MAKEUP TEXTURE ONLY"
   }
 }

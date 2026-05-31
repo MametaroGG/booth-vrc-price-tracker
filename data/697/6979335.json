@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": true
       }
     ],
     "Milltina": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": true
       }
     ],
     "Manuka": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": true
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": true
       }
     ],
     "Chocolat,Chiffon,Lime": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": true
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": true
       }
     ],
     "Moe": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": true
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": true
       }
     ],
     "Selestia": [
@@ -4570,7 +4615,24 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11714690": "Full Pack",
+    "11714727": "Milltina",
+    "11716641": "Shinano",
+    "11716642": "Manuka",
+    "11716652": "Shinra",
+    "11716653": "Chocolat,Chiffon,Lime",
+    "11716656": "Airi",
+    "11716657": "Moe",
+    "11716658": "Sio",
+    "11722879": "Selestia"
   }
 }

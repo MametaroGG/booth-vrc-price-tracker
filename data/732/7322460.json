@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 4100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4100,
+        "is_sale": false
       }
     ],
     "Live2D+3D": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 6100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12262349": "3D",
+    "12262350": "Live2D+3D"
   }
 }

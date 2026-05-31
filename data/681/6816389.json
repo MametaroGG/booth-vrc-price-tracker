@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "3Dモデル持ち込みカスタムグレード": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 7200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 7200,
         "is_sale": false
       }
@@ -1356,7 +1366,13 @@
         "date": "2026-05-29",
         "price": 10000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 10000,
+        "is_sale": false
       }
     ]
-  }
+  },
+  "variation_keys": {}
 }

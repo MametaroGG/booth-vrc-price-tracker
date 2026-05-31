@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "🔶 Multicolor Pack 🔶": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 880,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 580,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 580,
+        "is_sale": false
       }
     ],
     "🔶 ICE Pack 🔶": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 880,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 880,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "🔶 Full Pack 🔶 [COMMERCIAL LICENSE]": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12236182": "🔶 Basic Pack 🔶",
+    "12236216": "🔶 Multicolor Pack 🔶",
+    "12236217": "🔶 Metallic Pack 🔶",
+    "12236218": "🔶 ICE Pack 🔶",
+    "12236219": "🔶 Full Pack 🔶",
+    "12236220": "🔶 Full Pack 🔶 [COMMERCIAL LICENSE]"
   }
 }

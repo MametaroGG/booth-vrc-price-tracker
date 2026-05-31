@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "もちふぃった～変換プロファイル（順変換のみ）": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 0,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "NIBAN素体＋下着のみ": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1750,
         "is_sale": false
       }
@@ -2260,6 +2280,11 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "キャップ単体": [
@@ -2712,7 +2737,19 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11641365": "Full Set（NIBAN本体＋NIBAN_Bunny衣装セット＋スニーカー））",
+    "11717185": "キャップ単体",
+    "12003787": "NIBAN素体＋下着のみ",
+    "12003788": "NIBAN_Bunny衣装単体",
+    "12105203": "NIBAN本体＋キャップ＋スニーカー"
   }
 }

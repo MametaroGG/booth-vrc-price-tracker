@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 4800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4800,
+        "is_sale": false
       }
     ],
     "MaidSet": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3120,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 2160,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2160,
+        "is_sale": false
       }
     ],
     "しなの用-Shinano": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2400,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "ショコラ用-Chocolat": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2400,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "マヌカ用-MANUKA": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12058493": "FuLLSet",
+    "12059061": "MaidSet",
+    "12059062": "M.A.G[義肢]Set",
+    "12059063": "しなの用-Shinano",
+    "12059064": "ミルティナ用-Milltina",
+    "12059065": "ショコラ用-Chocolat",
+    "12059066": "愛莉用-Airi",
+    "12059067": "マヌカ用-MANUKA"
   }
 }

@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Eyes": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Bland Shapes_ 2": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": false
       }
@@ -2260,6 +2280,11 @@
         "date": "2026-05-29",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "All": [
@@ -2712,7 +2737,20 @@
         "date": "2026-05-29",
         "price": 1450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11569353": "Face + Body",
+    "11570023": "Eyes",
+    "11570024": "Bland Shapes_ 1",
+    "11570025": "Bland Shapes_ 2",
+    "11570026": "Bland Shapes_All",
+    "11570027": "All"
   }
 }

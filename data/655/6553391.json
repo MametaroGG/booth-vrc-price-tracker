@@ -1121,6 +1121,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "makeup＆eye": [
@@ -1897,6 +1902,11 @@
         "date": "2026-05-29",
         "price": 1000000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000000,
+        "is_sale": false
       }
     ],
     "【販売終了】makeup＆eye": [
@@ -1977,6 +1987,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000000,
         "is_sale": false
       }
@@ -2061,7 +2076,18 @@
         "date": "2026-05-29",
         "price": 1000000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12118536": "【販売終了】makeup＆eye",
+    "12118537": "【販売終了】makeup only",
+    "12120437": "【販売終了】makeup＆eye＋支援",
+    "12122088": "eye only"
   }
 }

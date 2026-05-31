@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "通常版": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2500,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 3100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3100,
+        "is_sale": false
       }
     ],
     "【ブースト用】通常版(Sleepkit2なし)": [
@@ -1808,7 +1823,18 @@
         "date": "2026-05-29",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11476351": "【ブースト用】RBS SleepKit2 同梱版",
+    "11476352": "【ブースト用】通常版(Sleepkit2なし)",
+    "11485351": "RBS SleepKit 2 同梱版",
+    "11485352": "通常版"
   }
 }

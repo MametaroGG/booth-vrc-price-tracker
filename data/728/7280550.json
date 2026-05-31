@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 7000,
+        "is_sale": false
       }
     ],
     "単色購入【white】": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3800,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3800,
+        "is_sale": false
       }
     ],
     "単色購入【GHOST】": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12196022": "3色セット",
+    "12196090": "単色購入【white】",
+    "12196091": "単色購入【purple】",
+    "12196230": "単色購入【GHOST】"
   }
 }

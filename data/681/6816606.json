@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "Distribution Licence": [
@@ -904,7 +909,16 @@
         "date": "2026-05-29",
         "price": 2250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11459531": "Personal Use",
+    "11459543": "Distribution Licence"
   }
 }

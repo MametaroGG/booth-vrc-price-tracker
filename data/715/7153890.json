@@ -382,6 +382,11 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Julius_Pochi_minius_Puchi": [
@@ -802,6 +807,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1226,6 +1236,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "shinano": [
@@ -1646,6 +1661,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -2070,6 +2090,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "coco": [
@@ -2492,6 +2517,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "fullset[450→400]": [
@@ -2883,6 +2913,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "fullset[450→300]": [
@@ -3107,5 +3142,14 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11991004": "fullset",
+    "11991159": "Julius_Pochi_minius_Puchi",
+    "11991160": "ZZZ",
+    "11991161": "shinano",
+    "11991724": "shiratume",
+    "12141791": "coco",
+    "13367915": "reika"
   }
 }

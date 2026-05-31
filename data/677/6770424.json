@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Cat Light「猫ライト」": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Rabbit Light「兎ライト」": [
@@ -1768,7 +1783,18 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11388704": "FullPack【動物ライト】",
+    "11388960": "Cat Light「猫ライト」",
+    "11388961": "Puppy Light「犬ライト」",
+    "11388962": "Rabbit Light「兎ライト」"
   }
 }

@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 2750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2750,
+        "is_sale": false
       }
     ],
     "Lapwing": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2750,
         "is_sale": false
       }
@@ -1356,7 +1366,17 @@
         "date": "2026-05-29",
         "price": 2750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11858703": "Lapwing",
+    "11858985": "しなの",
+    "12929933": "紗羅"
   }
 }

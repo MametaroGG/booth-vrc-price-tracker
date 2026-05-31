@@ -462,6 +462,11 @@
         "date": "2026-05-29",
         "price": 1450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1450,
+        "is_sale": false
       }
     ],
     "MANUKA": [
@@ -922,6 +927,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1386,6 +1396,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Lime/Chiffon/Chocolat": [
@@ -1846,6 +1861,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -2310,6 +2330,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Moe": [
@@ -2770,6 +2795,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -3234,6 +3264,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Kikyo": [
@@ -3696,7 +3731,22 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11894634": "Fullpackage",
+    "11894927": "MANUKA",
+    "11894928": "Shinano",
+    "11894929": "Lime/Chiffon/Chocolat",
+    "11894930": "Milltina",
+    "11894931": "Moe",
+    "11894932": "Airi",
+    "11894933": "Kikyo"
   }
 }

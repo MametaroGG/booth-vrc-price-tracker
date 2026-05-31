@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "おやつ代 (内容は同じです)": [
@@ -899,6 +904,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "【セール中】Dearly Ribbon Ring": [
@@ -908,5 +918,9 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11445747": "Dearly Ribbon Ring",
+    "11446083": "おやつ代 (内容は同じです)"
   }
 }

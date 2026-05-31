@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "[水瀬] MINASE": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2800,
         "is_sale": false
       }
@@ -1356,7 +1366,17 @@
         "date": "2026-05-29",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11486167": "[水瀬 / 狛乃] MINASE / KOMANO",
+    "11486415": "[水瀬] MINASE",
+    "11486416": "[狛乃] KOMANO"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 5100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5100,
+        "is_sale": true
       }
     ],
     "MUMUS_FaceTracking（QuestPro動作確認済み）": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11669605": "MUMUS_Avatar",
+    "12350633": "MUMUS_FaceTracking（QuestPro動作確認済み）"
   }
 }

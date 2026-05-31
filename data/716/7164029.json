@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "FULLSET(Selestia+Ciely+Minami+Anon)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12007950": "あのん Anon",
+    "12008109": "FULLSET(Selestia+Ciely+Minami+Anon)"
   }
 }

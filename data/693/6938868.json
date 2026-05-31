@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "テクスチャ+シェイプキー（おまけforDELTAFLAIR）": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "テクスチャ+シェイプキー（おまけforSNOWHAVOC）": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11648920": "テクスチャのみ",
+    "11657759": "テクスチャ+シェイプキー（おまけforDELTAFLAIR）",
+    "11677476": "テクスチャ+シェイプキー（おまけforLETHALFREET）",
+    "11677477": "全部セット（おまけforDELTAFLAIR+おまけforLETHALFREET+おまけforSNOWHAVOC）",
+    "12644561": "テクスチャ+シェイプキー（おまけforSNOWHAVOC）"
   }
 }

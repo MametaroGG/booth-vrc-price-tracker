@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1280,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1280,
+        "is_sale": false
       }
     ],
     "水瀬 Minase": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 980,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11821189": "水瀬 Minase",
+    "11824926": "斑霞 Hanka",
+    "11824927": "フルパック"
   }
 }

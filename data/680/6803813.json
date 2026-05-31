@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "TypeB: Eye Texture (PNG & PSD)": [
@@ -904,7 +909,16 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "11439864": "TypeA: Eye Texture (PNG ONLY)",
+    "11440066": "TypeB: Eye Texture (PNG & PSD)"
   }
 }

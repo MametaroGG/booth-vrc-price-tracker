@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "ダッツ代（内容物は変わりません）": [
@@ -894,7 +899,16 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11350544": "【jellyfish eyes】",
+    "11350671": "ダッツ代（内容物は変わりません）"
   }
 }

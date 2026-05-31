@@ -447,6 +447,11 @@
         "date": "2026-05-29",
         "price": 1750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1750,
+        "is_sale": false
       }
     ],
     "Airi 愛莉": [
@@ -892,6 +897,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1341,6 +1351,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Milltina ミルティナ": [
@@ -1786,6 +1801,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2235,6 +2255,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Kikyo専用": [
@@ -2680,6 +2705,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -3129,7 +3159,21 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11369874": "Fullset",
+    "11370043": "Airi 愛莉",
+    "11370044": "Manuka マヌカ",
+    "11370045": "Milltina ミルティナ",
+    "11370046": "Shinano対応",
+    "11416837": "Kikyo専用",
+    "12459067": "Ichigoイチゴ"
   }
 }

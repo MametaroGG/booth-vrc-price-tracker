@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5500,
+        "is_sale": false
       }
     ],
     "Quest版": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3500,
         "is_sale": false
       }
@@ -1356,7 +1366,16 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11489195": "PC ＆ Quest ＆ VRM",
+    "11652622": "Quest版"
   }
 }

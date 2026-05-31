@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "JewelEyes Series_Manuka": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 250,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": true
       }
     ],
     "JewelEyes Series_Chocolat": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 250,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": true
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12279646": "FullPack",
+    "12279736": "JewelEyes Series_Manuka",
+    "12279737": "JewelEyes Series_Milltina",
+    "12279738": "JewelEyes Series_Chocolat",
+    "12279739": "JewelEyes Series_Airi"
   }
 }

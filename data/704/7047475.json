@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 220,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 220,
+        "is_sale": false
       }
     ],
     "追加マテリアルパック付 RIGEL Horn Set【Deep Blue】": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 320,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 320,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11822283": "RIGEL Horn Set【Deep Blue】",
+    "11822465": "追加マテリアルパック付 RIGEL Horn Set【Deep Blue】",
+    "11822466": "作者にエナドリを送る（内容物は追加マテリアルパック付きと同じです）"
   }
 }

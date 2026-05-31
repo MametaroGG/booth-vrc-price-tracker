@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1250,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1250,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11647807": "Rindo",
+    "11647836": "Manuka",
+    "11647837": "Airi",
+    "11647838": "Shinano",
+    "11647839": "Sio"
   }
 }

@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Pro版アップグレード（配布用Prefab作成機能）": [
@@ -904,7 +909,16 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11354309": "Standard版（個人利用向け）",
+    "11354394": "Pro版アップグレード（配布用Prefab作成機能）"
   }
 }

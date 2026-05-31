@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 270,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 270,
+        "is_sale": false
       }
     ],
     "🤍salted_Makeup only🤍": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12026677": "🤍salted_Full pack🤍",
+    "12026772": "🤍salted_Makeup only🤍",
+    "12026773": "🤍salted_Eye texture only🤍"
   }
 }

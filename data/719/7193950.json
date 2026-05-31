@@ -459,6 +459,11 @@
         "date": "2026-05-29",
         "price": 1027,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1027,
+        "is_sale": false
       }
     ],
     "Carderi_GroundRobe_Blue": [
@@ -899,6 +904,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 385,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 385,
         "is_sale": false
       }
@@ -1343,6 +1353,11 @@
         "date": "2026-05-29",
         "price": 385,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 385,
+        "is_sale": false
       }
     ],
     "Carderi_GroundRobe_Red": [
@@ -1783,6 +1798,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 385,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 385,
         "is_sale": false
       }
@@ -2227,7 +2247,19 @@
         "date": "2026-05-29",
         "price": 385,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 385,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12054881": "ALL Carderi_GroundRobe",
+    "13224873": "Carderi_GroundRobe_Blue",
+    "13224874": "Carderi_GroundRobe_Green",
+    "13224875": "Carderi_GroundRobe_Red",
+    "13224876": "Carderi_GroundRobe_Yellow"
   }
 }

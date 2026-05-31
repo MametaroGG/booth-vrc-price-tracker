@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Miltina": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Moe": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -2260,6 +2280,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Shinra": [
@@ -2710,6 +2735,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -3164,6 +3194,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Selestia": [
@@ -3616,7 +3651,22 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12231612": "Fullpack",
+    "12231699": "Miltina",
+    "12231700": "Manuka",
+    "12231701": "Moe",
+    "12231702": "Sio",
+    "12231703": "Shinra",
+    "12231704": "Shinano",
+    "12231705": "Selestia"
   }
 }

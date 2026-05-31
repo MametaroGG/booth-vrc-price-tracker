@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ハートFBXのみ（アニメーションなし）": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12232306": "FULLセット！（prefab本体＋ハートFBX））",
+    "12232347": "ハートFBXのみ（アニメーションなし）"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Milfy": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Mizuki/Rurune": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1700,
         "is_sale": false
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Komano": [
@@ -4570,7 +4615,24 @@
         "date": "2026-05-29",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12203768": "Full Pack",
+    "12204066": "Shinano",
+    "12204067": "Manuka",
+    "12204068": "Milfy",
+    "12204069": "Airi",
+    "12204070": "Milltina",
+    "12204071": "Lime/Chiffon/Chocolat",
+    "12204072": "Mizuki/Rurune",
+    "12204073": "Minase",
+    "12204074": "Komano"
   }
 }

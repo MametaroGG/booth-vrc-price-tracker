@@ -684,6 +684,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "衣装Only（まめふれんず/Kipfel(MameFrends)）": [
@@ -1134,6 +1139,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -1588,6 +1598,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "衣装Only（エルシオン&ネメシス/Elusion&Nemesis）": [
@@ -2038,6 +2053,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -2492,6 +2512,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "フルセット＋キプフェル対応髪型（くるんとついん）＋おまけ": [
@@ -2714,6 +2739,11 @@
         "date": "2026-05-29",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "衣装Only（うささき）": [
@@ -2923,7 +2953,21 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11474695": "フルセット＋キプフェル対応髪型（くるんとついん）＋おまけ",
+    "11517573": "セット（まめふれんず対応＋キプフェル対応髪型（くるんとついん）＋おまけ",
+    "11517574": "衣装Only（まめふれんず/Kipfel(MameFrends)）",
+    "11517575": "衣装Only（しらつめ/Shiratsume）",
+    "12214192": "衣装Only（エルシオン&ネメシス/Elusion&Nemesis）",
+    "12304928": "衣装Only（えも研素体/EMOLab）",
+    "13588848": "衣装Only（うささき/Usasaki）"
   }
 }

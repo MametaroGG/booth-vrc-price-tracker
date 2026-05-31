@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 480,
+        "is_sale": false
       }
     ],
     "chocolat": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 480,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 480,
+        "is_sale": false
       }
     ],
     "shinano": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 480,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 480,
+        "is_sale": false
       }
     ],
     "all": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "11645031": "milltina",
+    "11646589": "chocolat",
+    "11646590": "kisha",
+    "11646591": "shinano",
+    "11646592": "manuka",
+    "11646593": "all"
   }
 }
