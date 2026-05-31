@@ -442,6 +442,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Milfy": [
@@ -882,6 +887,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1326,6 +1336,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Nagi": [
@@ -1766,6 +1781,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -2210,6 +2230,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Yoshitsugu": [
@@ -2650,6 +2675,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -3094,6 +3124,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "次も期待(内容はFullPackと同じです)": [
@@ -3536,6 +3571,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Nakiya": [
@@ -3908,6 +3948,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Telmy": [
@@ -3965,6 +4010,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Misaki": [
@@ -4002,7 +4052,25 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12399890": "FullPack",
+    "12401456": "Milfy",
+    "12401457": "Minase",
+    "12401458": "Nagi",
+    "12401459": "Shuan",
+    "12401460": "Yoshitsugu",
+    "12500948": "Milltina",
+    "12515310": "次も期待(内容はFullPackと同じです)",
+    "13295629": "Nakiya",
+    "13915666": "Telmy",
+    "13965431": "Misaki"
   }
 }

@@ -701,6 +701,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "フルセット": [
@@ -1041,6 +1046,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 450,
         "is_sale": false
       }
@@ -1385,7 +1395,17 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12578999": "フルセット",
+    "12595166": "ナチュラルメイクアップテクスチャ",
+    "12595167": "【SALE】blendshape"
   }
 }

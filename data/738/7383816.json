@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "KIPFEL": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12363132": "FULLPACK",
+    "12363534": "KIPFEL",
+    "12363535": "MIMINOKO"
   }
 }

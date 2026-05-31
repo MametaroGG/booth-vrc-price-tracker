@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Manuka": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Milltina": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": true
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Selestia": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12662131": "Manuka",
+    "12663468": "Milltina",
+    "12668013": "Airi",
+    "12668062": "Ichigo",
+    "12668119": "Selestia",
+    "12668177": "Full Pack"
   }
 }

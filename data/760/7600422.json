@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Eiserne JungfrauⅡ(アイアンメイデン)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12728213": "Eiserne JungfrauⅠ(ナース)",
+    "12728371": "Eiserne JungfrauⅡ(アイアンメイデン)",
+    "12728372": "Eiserne Jungfrau/fullset(Ⅰ.Ⅱ)"
   }
 }

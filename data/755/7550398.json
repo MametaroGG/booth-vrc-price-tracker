@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "Pack 1-Lapwing": [
@@ -914,6 +919,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Pack 1-Grus": [
@@ -1369,6 +1379,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -1870,7 +1885,18 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12640094": "Pack 1-Full Pack",
+    "12642651": "Pack 1-Lapwing",
+    "12642652": "Pack 1-Grus",
+    "12642654": "Pack 2-shushu(hair accessory)＋hairband"
   }
 }

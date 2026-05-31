@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 3700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3700,
+        "is_sale": false
       }
     ],
     "桔梗 対応(For Kikyo)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "森羅 対応(For Shinra)": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "マヌカ 対応(For Manuka)": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "凪 対応(For Nagi)": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "レティニア 対応(For MARUBODY)": [
@@ -4570,7 +4615,24 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12501212": "フルセット版(Full set)",
+    "12501851": "森羅 対応(For Shinra)",
+    "12513540": "桔梗 対応(For Kikyo)",
+    "12559859": "ラシューシャ 対応(For Lasyusha)",
+    "12595778": "マヌカ 対応(For Manuka)",
+    "12595779": "凪 対応(For Nagi)",
+    "12638435": "しなの 対応(For Shinano)",
+    "12638436": "ビナア 対応(For Binah)",
+    "12684357": "マリシア 対応(For Marycia)",
+    "12684358": "レティニア 対応(For MARUBODY)"
   }
 }

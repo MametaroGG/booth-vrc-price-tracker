@@ -839,6 +839,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ʚ Rurune ɞ": [
@@ -1294,6 +1299,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1753,6 +1763,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ʚ Lapwing ɞ": [
@@ -2208,6 +2223,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -2667,6 +2687,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ʚ Full pack ɞ": [
@@ -2744,7 +2769,20 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12511954": "ʚ Full pack ɞ",
+    "12631777": "ʚ Shinano ɞ",
+    "12631778": "ʚ Rurune ɞ",
+    "12631779": "ʚ Mafuyu ɞ",
+    "12631780": "ʚ Lapwing ɞ",
+    "12631781": "ʚ Grus ɞ"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "PC版 & Mobile版 & フォールバック版": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 7500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 7500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12697942": "PC版のみ",
+    "12698097": "PC版 & Mobile版 & フォールバック版"
   }
 }

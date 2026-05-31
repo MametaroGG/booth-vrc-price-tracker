@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "PlusHead ( +Head, 墨惺, アルエ, トネール ETC ) 対応": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "KANATA 彼方対応": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12376663": "PlusHead ( +Head, 墨惺, アルエ, トネール ETC ) 対応",
+    "12376892": "HANKA 斑霞対応",
+    "12376893": "KANATA 彼方対応",
+    "12377017": "FULL SET SALE"
   }
 }

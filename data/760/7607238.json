@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "シフォン - Chiffon /ショコラ - Chocolat": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "しお - Sio": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "ヴェール - Velle": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12739750": "フルセット - FullSet",
+    "12739753": "シフォン - Chiffon /ショコラ - Chocolat",
+    "12739756": "しなの - Shinano",
+    "12739757": "しお - Sio",
+    "12739758": "ウルキ - Uruki",
+    "12739759": "ヴェール - Velle"
   }
 }

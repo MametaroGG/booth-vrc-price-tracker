@@ -417,6 +417,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Muffin Puff Hair+ Donate": [
@@ -874,6 +879,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Muffin Puff Hair(一週間限定セール）": [
@@ -920,5 +930,9 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12409521": "Muffin Puff Hair",
+    "12409603": "Muffin Puff Hair+ Donate"
   }
 }

@@ -739,6 +739,11 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "PC版": [
@@ -914,6 +919,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 5000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 5000,
         "is_sale": false
       }
@@ -1093,7 +1103,16 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12612446": "PC版",
+    "13650125": "Quest/Mobile版"
   }
 }

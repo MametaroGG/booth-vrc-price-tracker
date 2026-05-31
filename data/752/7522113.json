@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 9999999,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 9999999,
+        "is_sale": false
       }
     ],
     "Marycia": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 9999999,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 9999999,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 9999999,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 9999999,
+        "is_sale": false
       }
     ],
     "Shinano": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 9999999,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 9999999,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12592564": "Manuka",
+    "12634124": "Marycia",
+    "12634125": "rurune",
+    "12634126": "Shinano"
   }
 }

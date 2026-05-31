@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "Black Pack": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Make up Pack": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": true
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12596038": "Black Pack",
+    "12597031": "White Pack",
+    "12599971": "Full Pack",
+    "12617040": "Make up Pack",
+    "12617041": "pofi eye Pack"
   }
 }

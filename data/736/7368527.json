@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Molecule Keychain　ゲオスミン": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Molecule Keychain　リナロール": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12338588": "Molecule Keychain　Series.21 セット（ゲオスミン・ボルネオール・リナロール）",
+    "12338593": "Molecule Keychain　ゲオスミン",
+    "12338594": "Molecule Keychain　ボルネオール",
+    "12338595": "Molecule Keychain　リナロール"
   }
 }

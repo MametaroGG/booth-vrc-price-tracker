@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "キプフェル / Kipfel": [
@@ -914,6 +919,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "まめひなた / mamehinata": [
@@ -1369,6 +1379,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1850,6 +1865,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "ショコラ / chocolat": [
@@ -2305,6 +2325,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -2764,6 +2789,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "ライム / lime": [
@@ -3219,6 +3249,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -3678,6 +3713,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "ゴハン代": [
@@ -4135,6 +4175,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "エルシオン / ELusion & ネメシス / nemesis": [
@@ -4572,7 +4617,24 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12755529": "キプフェル / Kipfel",
+    "13080322": "ゴハン代",
+    "13081243": "フルセット / Fullset",
+    "13081244": "まめひなた / mamehinata",
+    "13081245": "エルシオン / ELusion & ネメシス / nemesis",
+    "13158416": "プラム / plum",
+    "13158417": "ショコラ / chocolat",
+    "13158418": "シフォン / chiffon",
+    "13158419": "ライム / lime",
+    "13158420": "カリン / karin"
   }
 }

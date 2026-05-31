@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "学園服ORA_Manuka対応": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2600,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12356739": "学園服ORA_Mafuyu対応",
+    "12356824": "学園服ORA_Manuka対応",
+    "12356825": "学園服ORA_Mao対応"
   }
 }

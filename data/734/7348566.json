@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6000,
+        "is_sale": false
       }
     ],
     "ALL ITEM_森羅 - Shinra": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "ALL ITEM_桔梗 - Kikyo": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "ALL ITEM_竜胆 - Rindo": [
@@ -2742,6 +2767,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "ALL ITEM_ルルネ - Rurune": [
@@ -3067,6 +3097,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -3396,6 +3431,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "ALL ITEM_しなの - Shinano": [
@@ -3721,6 +3761,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -4050,7 +4095,24 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12305431": "ALL ITEM_対応アバターフルパック - FULLPACK",
+    "12400159": "ALL ITEM_森羅 - Shinra",
+    "12400160": "ALL ITEM_マヌカ - Manuka",
+    "12400161": "ALL ITEM_桔梗 - Kikyo",
+    "12400162": "ALL ITEM_セレスティア - Selestia",
+    "12400163": "ALL ITEM_竜胆 - Rindo",
+    "13408746": "ALL ITEM_ルルネ - Rurune",
+    "13408747": "ALL ITEM_キプフェル - Kipfel",
+    "13408748": "ALL ITEM_しなの - Shinano",
+    "13408749": "ALL ITEM_ミルティナ - Milltina"
   }
 }

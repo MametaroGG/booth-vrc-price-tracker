@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "All pack [PNG+PSD+設定済みマテリアル]": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Eye Texture [PNGのみ]": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12280327": "All pack [PNG+PSD+設定済みマテリアル]",
+    "12284997": "Makeup Texture [PNGのみ]",
+    "12284998": "Eye Texture [PNGのみ]",
+    "12730856": "All pack+Blendshape"
   }
 }

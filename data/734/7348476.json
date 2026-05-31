@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 140,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 140,
+        "is_sale": false
       }
     ],
     "SHINANO_しなの": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "SHINRA_森羅": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12305253": "SHINANO_しなの",
+    "12490828": "MANUKA_マヌカ",
+    "12496864": "SHINRA_森羅",
+    "12496928": "【3対応】Full set"
   }
 }

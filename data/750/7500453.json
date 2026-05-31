@@ -751,6 +751,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Fullset+Item": [
@@ -1166,6 +1171,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3000,
         "is_sale": false
       }
@@ -1585,6 +1595,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Sanatia+Item": [
@@ -2000,6 +2015,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -2419,6 +2439,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Nanodevi+Item": [
@@ -2834,6 +2859,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -3253,6 +3283,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Shinano+Item": [
@@ -3670,7 +3705,22 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12557100": "Fullset+Item",
+    "12562178": "Lapwing+Item",
+    "12562179": "Sanatia+Item",
+    "12562180": "Marycia+Item",
+    "12562181": "Nanodevi+Item",
+    "12562182": "Rurune+Item",
+    "12562183": "Shinano+Item",
+    "12562184": "Item Tassel&Sunglasses"
   }
 }

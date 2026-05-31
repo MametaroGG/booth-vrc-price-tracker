@@ -362,6 +362,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Try Me Pack［100］": [
@@ -812,6 +817,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "⁺𝟱𝟬𝟬𝗦𝘁𝘆𝗹𝗲　　　　　　（2,000 → 1,800）": [
@@ -1362,5 +1377,9 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12751001": "⁺𝟱𝟬𝟬𝗦𝘁𝘆𝗹𝗲",
+    "12752534": "Try Me Pack［100］"
   }
 }

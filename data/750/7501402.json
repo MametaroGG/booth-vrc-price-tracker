@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "B_Black": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "D_Pink": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Fluffy Frame Bed All Set": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 1180,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1180,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12558457": "A_White",
+    "12558585": "B_Black",
+    "12558586": "C_Brown",
+    "12558587": "D_Pink",
+    "12558588": "E_Blue",
+    "12558589": "Fluffy Frame Bed All Set"
   }
 }

@@ -462,6 +462,11 @@
         "date": "2026-05-29",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Boy256- PC ONLY": [
@@ -922,6 +927,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2000,
         "is_sale": false
       }
@@ -1386,6 +1396,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Supporter Version (All versions + Emotes!)": [
@@ -1623,7 +1638,18 @@
         "date": "2026-05-29",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12438755": "BOY 256- PC and QUEST",
+    "12438779": "Boy256- PC ONLY",
+    "12438780": "BOY 256- QUEST ONLY",
+    "13536689": "Supporter Version (All versions + Emotes!)"
   }
 }

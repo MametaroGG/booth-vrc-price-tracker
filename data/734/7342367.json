@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "restroom🚻(全部入り)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12295110": "restroom🚻(全部入り)",
+    "12325808": "toilet🚽(単体販売)　小便器(urinal)付いてきます。"
   }
 }

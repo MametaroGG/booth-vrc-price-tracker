@@ -227,6 +227,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "ルミナ/LUMINA": [
@@ -452,6 +457,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -681,6 +691,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "森羅/SHINRA": [
@@ -906,6 +921,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1135,6 +1155,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "ミルティナ/MILLTINA": [
@@ -1360,6 +1385,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1589,6 +1619,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "ルルネ/RURUNE": [
@@ -1814,6 +1849,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -2043,6 +2083,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "しょこら,しふぉん/CHOCOLAT,CHIFFON": [
@@ -2268,6 +2313,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -2497,6 +2547,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "しお/SIO": [
@@ -2722,6 +2777,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -2951,6 +3011,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "愛莉/AIRI": [
@@ -3176,6 +3241,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -3405,6 +3475,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "まよ/MAYO": [
@@ -3577,6 +3652,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "海咲/MISAKI": [
@@ -3614,7 +3694,31 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12459315": "FULL",
+    "12459361": "マヌカ/MANUKA",
+    "12459362": "森羅/SHINRA",
+    "12459363": "しなの/SHINANO",
+    "12459364": "ミルティナ/MILLTINA",
+    "12459365": "ルルネ/RURUNE",
+    "12459366": "しょこら,しふぉん/CHOCOLAT,CHIFFON",
+    "12459367": "ミルフィ,エク/MILFY,EKU",
+    "12459368": "しお/SIO",
+    "12459369": "真央,リリカ/MAO,RIRIKA",
+    "12459370": "愛莉/AIRI",
+    "12459371": "萌/MOE",
+    "12637555": "いちご/ICHIGO",
+    "12637556": "しゅあん/SHUAN",
+    "12935541": "ルミナ/LUMINA",
+    "13657850": "まよ/MAYO",
+    "13965421": "海咲/MISAKI"
   }
 }

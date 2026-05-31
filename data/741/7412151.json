@@ -422,6 +422,11 @@
         "date": "2026-05-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "MINASE FULL SET [make up fullset+body]": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "HANKA FULL SET [make up fullset+body]": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -2110,6 +2130,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Veil makeup for KOMANO": [
@@ -2530,6 +2555,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -2954,6 +2984,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "shard body texture for MINASE": [
@@ -3374,6 +3409,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -3798,6 +3838,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "shard body texture for HANKA": [
@@ -4220,7 +4265,24 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12409439": "MINASE FULL SET [make up fullset+body]",
+    "12409482": "KOMANO FULL SET [make up fullset+body]",
+    "12409483": "HANKA FULL SET [make up fullset+body]",
+    "12409600": "Veil makeup for MINASE",
+    "12409601": "Veil makeup for KOMANO",
+    "12431796": "Veil makeup for HANKA",
+    "12431797": "shard body texture for MINASE",
+    "12431798": "shard body texture for KOMANO",
+    "12431799": "shard body texture for HANKA",
+    "12431817": "ALL FULL SET [ all avatar makeup + body ]"
   }
 }

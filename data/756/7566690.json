@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "【瞳テクスチャ】AshenCurrent Eye Spark": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "【瞳テクスチャ2種】AshenCurrent Eye Spark/Muted": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12667665": "【Eye＆Makeup Texture】FULLPACK",
+    "12670871": "【瞳テクスチャ】AshenCurrent Eye Spark",
+    "12670872": "【瞳テクスチャ】AshenCurrent Eye Muted",
+    "12670873": "【瞳テクスチャ2種】AshenCurrent Eye Spark/Muted",
+    "12670874": "【メイク】Makeuptexture_forFluctua01"
   }
 }

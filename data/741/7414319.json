@@ -422,6 +422,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Sanatia": [
@@ -877,6 +882,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1336,6 +1346,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Lapwing": [
@@ -1791,6 +1806,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -2250,6 +2270,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "MilkCoffee": [
@@ -2707,6 +2732,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Fullset+MilkCoffee≪Fullset BoothFesセール≫": [
@@ -2746,5 +2776,13 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12412897": "Fullset+MilkCoffee",
+    "12413165": "Sanatia",
+    "12413166": "Marycia",
+    "12413167": "Lapwing",
+    "12413168": "Rurune",
+    "12413169": "MilkCoffee"
   }
 }

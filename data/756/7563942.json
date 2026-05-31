@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Story": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 0,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "シフォン -Chiffon-": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "真冬 Mafuyu / シアン - Cian": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "ソラハ（Soraha）": [
@@ -4568,6 +4613,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -5027,7 +5077,24 @@
         "date": "2026-05-29",
         "price": 1013000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1013000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12663229": "Ciel - シエル -",
+    "12729678": "Full set",
+    "12729679": "シフォン -Chiffon-",
+    "12729680": "あのめあ（Anomea）",
+    "12729681": "真冬 Mafuyu / シアン - Cian",
+    "12729682": "ミルフィ Milfy / エク - Eku",
+    "12729683": "Manuka",
+    "12729684": "インターネットのぽまえ（Pomae）",
+    "12729685": "ソラハ（Soraha）",
+    "12729686": "Dear Momiji"
   }
 }

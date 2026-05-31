@@ -462,6 +462,11 @@
         "date": "2026-05-29",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "PLUS": [
@@ -924,7 +929,16 @@
         "date": "2026-05-29",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12678005": "通常版",
+    "12683941": "PLUS"
   }
 }

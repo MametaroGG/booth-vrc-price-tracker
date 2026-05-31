@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "キャミトップ - Cami Top": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 320,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 320,
+        "is_sale": false
       }
     ],
     "シンプルカーディガン - Simple Cardigan": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12350899": "フルセット - Full Set",
+    "12351359": "キャミトップ - Cami Top",
+    "12351360": "ジャストドルフィンパンツ - Just Dolphin Pants",
+    "12351361": "シンプルカーディガン - Simple Cardigan"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "nagi": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "moe": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "sinano": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "airi": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -4113,7 +4153,23 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12566040": "all",
+    "12566262": "nagi",
+    "12566263": "milfy エク",
+    "12566264": "moe",
+    "12566265": "rurune",
+    "12566266": "sinano",
+    "12566267": "milltina",
+    "12566268": "airi",
+    "12566269": "sio"
   }
 }

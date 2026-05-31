@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 5700,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 5700,
+        "is_sale": true
       }
     ],
     "CafeChic": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "CasualHoodie": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "TacticalNova": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Vellmare": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Urbanie": [
@@ -4568,6 +4613,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -5027,7 +5077,25 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12368329": "FullSet【50％OFF】",
+    "12368445": "CafeChic",
+    "12368446": "CozyStroll",
+    "12368447": "CasualHoodie",
+    "12368448": "SereneWinter",
+    "12368449": "TacticalNova",
+    "12368457": "Soralea",
+    "12368458": "Vellmare",
+    "12368459": "Suzutoki",
+    "12368460": "Urbanie",
+    "12368461": "NOIRBIT"
   }
 }

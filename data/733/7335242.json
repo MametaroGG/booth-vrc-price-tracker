@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 4950,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4950,
+        "is_sale": false
       }
     ],
     "キトンと竪琴セット for レティニア": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 4950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 4950,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 3850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3850,
+        "is_sale": false
       }
     ],
     "キトン Only for レティニア": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 3850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 3850,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 1650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12282853": "キトンと竪琴セット for KALNE",
+    "12282903": "キトンと竪琴セット for レティニア",
+    "12282904": "キトン Only for KALNE",
+    "12282905": "キトン Only for レティニア",
+    "12282906": "竪琴 Only"
   }
 }

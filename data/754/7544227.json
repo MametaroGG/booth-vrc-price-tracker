@@ -407,6 +407,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "make only": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 250,
         "is_sale": false
       }
@@ -1321,6 +1331,11 @@
         "date": "2026-05-29",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "🎉SALE🎉make + eye texture": [
@@ -1375,5 +1390,10 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12629244": "make + eye texture",
+    "12631584": "make only",
+    "12631585": "eye only"
   }
 }

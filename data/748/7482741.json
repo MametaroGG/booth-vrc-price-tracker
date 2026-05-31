@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2700,
+        "is_sale": false
       }
     ],
     "くうた": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2700,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 3400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12527262": "+Head",
+    "12527434": "くうた",
+    "12527435": "FULL PACK"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 4125,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4125,
+        "is_sale": false
       }
     ],
     "Sigil Punk/シグイルパンク": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1600,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Devil ReVamp/デビルリヴァンプ": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1350,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "フライトキャップ/Flight Cap": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "ニーソックス/Loose Knee Socks": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-29",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12634889": "フルパック/Full Pack [🏷️50%オフ]8250>4125",
+    "12634983": "Sigil Punk/シグイルパンク",
+    "12634984": "ALT Sigil Punk/ALTシグイルパンク",
+    "12634985": "Devil ReVamp/デビルリヴァンプ",
+    "12634986": "スウェットパンツとTシャツ/ Sweatpants and T-Shirt",
+    "12634987": "フライトキャップ/Flight Cap",
+    "12634988": "うさぎのパーカー/Bunny Hoodie",
+    "12634989": "ニーソックス/Loose Knee Socks"
   }
 }

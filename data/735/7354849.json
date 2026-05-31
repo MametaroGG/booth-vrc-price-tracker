@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "アリスフィール-AlicePhil 対応": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "しお-Sio 対応": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": false
       }
@@ -2587,6 +2607,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "ネメシス-Nemesis　エルシオン-Elusion 対応": [
@@ -3044,6 +3069,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "ミルフィ-Milfy 対応": [
@@ -3201,7 +3231,21 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12316546": "フルパック-FullPack",
+    "12317016": "アリスフィール-AlicePhil 対応",
+    "12317017": "ルルネ-Rurune 対応",
+    "12317018": "しお-Sio 対応",
+    "12317019": "ミルフィ-Milfy 対応",
+    "12317020": "ミルティナ-Milltina 対応",
+    "12317021": "ネメシス-Nemesis　エルシオン-Elusion 対応"
   }
 }

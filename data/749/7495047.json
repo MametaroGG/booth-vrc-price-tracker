@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "🫧Kipfel（Clothes＋Bag）🫧": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "🫧Kipfel（OnlyClothes）🫧": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12548125": "🫧Kipfel（Clothes＋Bag）🫧",
+    "12548518": "🫧FullSet（＋Bag）🫧",
+    "12548519": "🫧Cornet（Clothes＋Bag）🫧",
+    "12548520": "🫧Kipfel（OnlyClothes）🫧",
+    "12548521": "🫧Cornet（OnlyClothes）🫧"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": true
       }
     ],
     "amorphous": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Eagle": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": true
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "human": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": true
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "skull": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": true
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "wing": [
@@ -4570,7 +4615,24 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12553523": "フルセット",
+    "12554873": "amorphous",
+    "12554874": "Dragon",
+    "12554875": "Eagle",
+    "12554876": "flame",
+    "12554877": "human",
+    "12554878": "mark",
+    "12554879": "skull",
+    "12554880": "Wave",
+    "12554881": "wing"
   }
 }

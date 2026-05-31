@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1875,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1875,
+        "is_sale": true
       }
     ],
     "R/LBW-04-VULTURE (VerticalMissile)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "R/LBW-10-MEDIUM (BitLauncher)": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": true
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "R/LB-HungerUnit": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 400,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 400,
         "is_sale": true
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "EXT-HungerUnit": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12551612": "フルセット",
+    "12551656": "R/LBW-04-VULTURE (VerticalMissile)",
+    "12551657": "R/LBW-06-TRIDENT (EN-Canon)",
+    "12551658": "R/LBW-10-MEDIUM (BitLauncher)",
+    "12551659": "R/LBW-11-ORACLE (RADAR)",
+    "12551660": "R/LB-HungerUnit",
+    "12551661": "EXT-03-GUST (Add-SideThruster)",
+    "12551662": "EXT-HungerUnit"
   }
 }

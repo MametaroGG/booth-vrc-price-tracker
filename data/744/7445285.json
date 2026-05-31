@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Kikyo【桔梗】": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "FlashShield, Helmet【フラッシュシールドギミックとヘルメット】【全アバター対応】": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12464140": "ALLPACK",
+    "12464287": "Kikyo【桔梗】",
+    "12464288": "Manuka【マヌカ】",
+    "12464289": "FlashShield, Helmet【フラッシュシールドギミックとヘルメット】【全アバター対応】"
   }
 }

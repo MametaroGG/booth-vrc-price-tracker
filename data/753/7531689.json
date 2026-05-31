@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1150,
+        "is_sale": false
       }
     ],
     "SHINRA": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 740,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 740,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 740,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 740,
+        "is_sale": false
       }
     ],
     "MANUKA": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 740,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 740,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 740,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 740,
+        "is_sale": false
       }
     ],
     "SHINANO": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 740,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 740,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 740,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 740,
+        "is_sale": false
       }
     ],
     "MILLTINA": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 740,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 740,
         "is_sale": false
       }
@@ -4113,7 +4153,23 @@
         "date": "2026-05-29",
         "price": 740,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 740,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12608090": "FULLPACK",
+    "12609007": "SHINRA",
+    "12609008": "MINASE",
+    "12609009": "MANUKA",
+    "12609010": "MILFY",
+    "12609011": "SHINANO",
+    "12609012": "HANKA",
+    "12609013": "MILLTINA",
+    "12609014": "KOMANO"
   }
 }

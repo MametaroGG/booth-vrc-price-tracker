@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "イチゴ • Expressions + (Donation)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12628862": "イチゴ • Expressions +",
+    "12628911": "イチゴ • Expressions + (Donation)"
   }
 }

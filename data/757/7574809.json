@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "B_飾り棚（ConsoleTable）": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "D_収納棚（Cabinet）": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 150,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Cozy Living All Set": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12682398": "A_サイドテーブル（SideTable）",
+    "12682975": "B_飾り棚（ConsoleTable）",
+    "12682976": "C_テレビ台（Lowboard）",
+    "12682977": "D_収納棚（Cabinet）",
+    "12682978": "E_本棚（Bookshelf）",
+    "12682979": "Cozy Living All Set"
   }
 }

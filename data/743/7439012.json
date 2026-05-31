@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "【ミルティナ/Milltina】": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 990,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 990,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 990,
+        "is_sale": false
       }
     ],
     "【愛莉/Airi】": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 990,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 990,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 990,
+        "is_sale": false
       }
     ],
     "【 セレスティア/Selestia 】": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 990,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12453298": "Full Package",
+    "12453439": "【ミルティナ/Milltina】",
+    "12453440": "【イチゴ/ICHIGO】",
+    "12453441": "【愛莉/Airi】",
+    "12453442": "【 しなの/Shinano 】",
+    "12478667": "【 セレスティア/Selestia 】"
   }
 }

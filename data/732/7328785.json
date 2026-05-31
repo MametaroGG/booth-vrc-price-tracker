@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "シェーナ, リーナ, フレーナ (Sheyna, Lina, Freina)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "ショコラ, シフォン, ライム (Chocolat, Chiffon, Lime)": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1400,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "サングラス単品 (Sunglasses Only)": [
@@ -2742,7 +2767,20 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12272326": "フルセット (Fullset)",
+    "12272450": "シェーナ, リーナ, フレーナ (Sheyna, Lina, Freina)",
+    "12272451": "しなの (Shinano)",
+    "12272452": "ショコラ, シフォン, ライム (Chocolat, Chiffon, Lime)",
+    "12272453": "マヌカ (Manuka)",
+    "12301428": "サングラス単品 (Sunglasses Only)"
   }
 }

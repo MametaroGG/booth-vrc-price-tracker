@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 1320,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1320,
+        "is_sale": false
       }
     ],
     "SHINRA": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "MANUKA": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -2260,6 +2280,11 @@
         "date": "2026-05-29",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "HANKA": [
@@ -2710,6 +2735,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 650,
         "is_sale": false
       }
@@ -3164,6 +3194,11 @@
         "date": "2026-05-29",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "KOMANO": [
@@ -3616,7 +3651,22 @@
         "date": "2026-05-29",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12571781": "FULLPACK",
+    "12572915": "SHINRA",
+    "12572916": "MINASE",
+    "12572917": "MANUKA",
+    "12572918": "SHINANO",
+    "12572919": "HANKA",
+    "12572920": "MILLTINA",
+    "12572921": "KOMANO"
   }
 }

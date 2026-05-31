@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 3900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3900,
+        "is_sale": false
       }
     ],
     "装備品のみ(onlyEQP.)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1250,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1850,
+        "is_sale": false
       }
     ],
     "しなの Shinano": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1850,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1850,
+        "is_sale": false
       }
     ],
     "愛莉 Airi": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1850,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1850,
+        "is_sale": false
       }
     ],
     "ルルネ Rurune": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1850,
         "is_sale": false
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 1850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1850,
+        "is_sale": false
       }
     ],
     "しお Sio": [
@@ -4568,6 +4613,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1850,
         "is_sale": false
       }
@@ -5027,6 +5077,11 @@
         "date": "2026-05-29",
         "price": 1850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1850,
+        "is_sale": false
       }
     ],
     "ルミナ LUMINA": [
@@ -5484,7 +5539,26 @@
         "date": "2026-05-29",
         "price": 1850,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1850,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12422902": "Full Set",
+    "12423287": "装備品のみ(onlyEQP.)",
+    "12423370": "森羅 Shinra",
+    "12423371": "しなの Shinano",
+    "12423372": "マヌカ Manuka",
+    "12423373": "愛莉 Airi",
+    "12423374": "ミルティナ Milltina",
+    "12423375": "ルルネ Rurune",
+    "12423376": "マリシア Marycia",
+    "12423377": "しお Sio",
+    "12423378": "ラシューシャ Lasyusha",
+    "12631706": "ルミナ LUMINA"
   }
 }

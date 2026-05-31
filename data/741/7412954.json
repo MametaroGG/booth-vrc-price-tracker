@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "キプフェル-KIPFEL-": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "マヌカ-MANUKA-": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -2260,6 +2280,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "ミルティナ-MILLTINA-": [
@@ -2712,7 +2737,20 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12410742": "FULLPACK",
+    "12411798": "キプフェル-KIPFEL-",
+    "12411799": "ソフィナ-SOPHINA-",
+    "12411800": "マヌカ-MANUKA-",
+    "12411801": "しお-SIO-",
+    "12411802": "ミルティナ-MILLTINA-"
   }
 }

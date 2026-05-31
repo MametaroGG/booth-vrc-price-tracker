@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "02『EKU MelowCoffret』": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": true
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12638586": "01『LUMINA MelowCoffret』",
+    "12664730": "02『EKU MelowCoffret』",
+    "13128688": "03『PLUM MelowCoffret』"
   }
 }

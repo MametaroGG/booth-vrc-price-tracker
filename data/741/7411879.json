@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Milltina / ミルティナ": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 190,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 190,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 190,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 190,
+        "is_sale": false
       }
     ],
     "Uruki / ウルキ": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 190,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 190,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 190,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 190,
+        "is_sale": false
       }
     ],
     "Lapwing": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 190,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 190,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 190,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 190,
+        "is_sale": false
       }
     ],
     "Kirsch / キルシ": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-29",
         "price": 190,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 190,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12408982": "Fullset / フルセット",
+    "12409215": "Milltina / ミルティナ",
+    "12409216": "Shinano / しなの",
+    "12409217": "Uruki / ウルキ",
+    "12409218": "Milfy / ミルフィ",
+    "12409219": "Lapwing",
+    "12409220": "Sio / しお",
+    "12409221": "Kirsch / キルシ"
   }
 }

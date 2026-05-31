@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Texture単体販売 (きかがくヘイロー購入者用)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12314183": "ステータスヘイロー / Status Halo",
+    "12314241": "Texture単体販売 (きかがくヘイロー購入者用)"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "企業・チーム用ライセンス (Corporate/Team License)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 6600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12415933": "個人ライセンス (Personal License)",
+    "12425831": "企業・チーム用ライセンス (Corporate/Team License)"
   }
 }

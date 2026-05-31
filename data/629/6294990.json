@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 8000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 8000,
+        "is_sale": false
       }
     ],
     "アズ - Hase -": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 4500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 4500,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "License List File": [
@@ -1665,5 +1680,10 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10627184": "アズ&ラピ - Hase&Lapi -",
+    "13092296": "アズ - Hase -",
+    "13092297": "ラピ - Lapi -"
   }
 }

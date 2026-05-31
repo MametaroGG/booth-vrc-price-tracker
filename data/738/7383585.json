@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 2140,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2140,
+        "is_sale": false
       }
     ],
     "しなの shinano": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1356,7 +1366,17 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12362822": "フルパック",
+    "12387644": "しなの shinano",
+    "12387645": "ミルティナ milltina"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "利用規約": [
@@ -914,6 +919,11 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "フォルダ構造": [
@@ -1303,5 +1313,8 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12691878": "Ness VRChat Avatar"
   }
 }

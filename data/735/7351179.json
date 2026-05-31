@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "B : Melting": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": true
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "D : Urban Drop": [
@@ -1806,6 +1821,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": true
       }
@@ -2260,6 +2280,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "F : Blue Lagoon": [
@@ -2710,6 +2735,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 900,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": true
       }
@@ -3164,7 +3194,21 @@
         "date": "2026-05-29",
         "price": 2900,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2900,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12309860": "A : Star Pants",
+    "12309958": "B : Melting",
+    "12309959": "C : Sling Shot Bikini",
+    "12309960": "D : Urban Drop",
+    "12309961": "E : Shibuya Maji",
+    "12309962": "F : Blue Lagoon",
+    "12309963": "Ichigo Pack (A~F)"
   }
 }

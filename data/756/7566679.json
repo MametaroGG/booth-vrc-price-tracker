@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "CASUALITY [Aikosan]": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "CASUALITY [Lasyusha]": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 2700,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12667630": "CASUALITY [ALL]",
+    "12667687": "CASUALITY [Milltina]",
+    "12667688": "CASUALITY [Aikosan]",
+    "12667689": "CASUALITY [Liloumois]",
+    "12667690": "CASUALITY [Lasyusha]"
   }
 }

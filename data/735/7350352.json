@@ -227,6 +227,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "マヌカ/MANUKA": [
@@ -452,6 +457,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -681,6 +691,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "しなの/SHINANO": [
@@ -906,6 +921,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1135,6 +1155,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "しお/SIO": [
@@ -1360,6 +1385,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -1589,6 +1619,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "しふぉん,しょこら/CHIFFON,CHOCOLAT": [
@@ -1814,6 +1849,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 600,
         "is_sale": false
       }
@@ -2043,6 +2083,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "愛莉/AIRI": [
@@ -2270,7 +2315,24 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12308449": "FULL",
+    "12308459": "マヌカ/MANUKA",
+    "12308460": "森羅/SHINRA",
+    "12308461": "しなの/SHINANO",
+    "12308462": "ミルティナ/MILLTINA",
+    "12308463": "しお/SIO",
+    "12308464": "ルルネ/RURUNE",
+    "12308465": "しふぉん,しょこら/CHIFFON,CHOCOLAT",
+    "12308466": "ミルフィ,エク/MILFY,EKU",
+    "12308467": "愛莉/AIRI"
   }
 }

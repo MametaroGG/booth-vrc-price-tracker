@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 9500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 9500,
+        "is_sale": false
       }
     ],
     "JUST UNDERGARMENTS": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12726184": "FULL PACKAGE VERSION",
+    "12726267": "JUST UNDERGARMENTS"
   }
 }

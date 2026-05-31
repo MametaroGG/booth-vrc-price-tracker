@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "【Milltina】ミルティナ編_ポーズセット_特典無し": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 100,
         "is_sale": true
       }
@@ -1371,7 +1381,16 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12466845": "【Milltina】ミルティナ編_ポーズセット_特典付き",
+    "12467557": "【Milltina】ミルティナ編_ポーズセット_特典無し"
   }
 }

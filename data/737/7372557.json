@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 6980,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 6980,
+        "is_sale": false
       }
     ],
     "Chill Days": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1190,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1190,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1890,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1890,
+        "is_sale": false
       }
     ],
     "Day Break": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1890,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1890,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1580,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1580,
+        "is_sale": false
       }
     ],
     "Aberrant Cardigan": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1890,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1890,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1580,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1580,
+        "is_sale": false
       }
     ],
     "Chill Knit": [
@@ -3656,7 +3691,22 @@
         "date": "2026-05-29",
         "price": 1580,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1580,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12345233": "Full Set フルセット",
+    "12345281": "Chill Days",
+    "12345282": "Conform Knit",
+    "12345283": "Day Break",
+    "12345284": "Ame Parka",
+    "12345285": "Aberrant Cardigan",
+    "12345286": "Soft Grunge",
+    "12345287": "Chill Knit"
   }
 }

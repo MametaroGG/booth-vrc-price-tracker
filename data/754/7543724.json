@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "『Marycia』対応": [
@@ -914,6 +919,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "『しなの』対応": [
@@ -1369,6 +1379,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -1830,6 +1845,11 @@
         "date": "2026-05-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "『Lowtus』対応": [
@@ -2057,7 +2077,19 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12628401": "『Lapwing』対応",
+    "12628467": "『Marycia』対応",
+    "12628468": "『しなの』対応",
+    "12628469": "3アバターセット(Lapwing/Marycia/しなの)",
+    "13548937": "『Lowtus』対応"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Half Pack (1,2,3,4,5)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 2800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 2800,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "1. 'Silens Maga'": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1300,
         "is_sale": false
       }
@@ -2285,6 +2305,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "3. 'Vestis Aestatis'": [
@@ -2740,6 +2765,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -3199,6 +3229,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "5. 'Nequam Bulma'": [
@@ -3654,6 +3689,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 850,
         "is_sale": false
       }
@@ -4113,6 +4153,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "7. 'Fluxus Corium'": [
@@ -4568,6 +4613,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1150,
         "is_sale": false
       }
@@ -5027,6 +5077,11 @@
         "date": "2026-05-29",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1150,
+        "is_sale": false
       }
     ],
     "9. 'Winter Sweater In House'": [
@@ -5482,6 +5537,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -5941,6 +6001,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "11. 'Aliquam Sectam'": [
@@ -6398,7 +6463,28 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12313948": "Full Pack",
+    "12314083": "1. 'Silens Maga'",
+    "12314084": "2. 'Unda Forma'",
+    "12314085": "3. 'Vestis Aestatis'",
+    "12314086": "4. 'Lascivus'",
+    "12314087": "5. 'Nequam Bulma'",
+    "12314088": "6. 'Initium Veris'",
+    "12314089": "7. 'Fluxus Corium'",
+    "12314090": "8. 'Vetitum Tentatio'",
+    "12314091": "9. 'Winter Sweater In House'",
+    "12314092": "10. 'Consolatoria'",
+    "12314093": "11. 'Aliquam Sectam'",
+    "12314101": "Half Pack (1,2,3,4,5)",
+    "12314102": "Half Pack (6,7,8,9,10,11)"
   }
 }

@@ -452,6 +452,11 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "森羅｜SHINRA": [
@@ -902,6 +907,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1000,
         "is_sale": false
       }
@@ -1356,6 +1366,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "まめふれんず｜MameFriends": [
@@ -1808,6 +1823,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "海咲｜Misaki": [
@@ -1845,7 +1865,19 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12694514": "フルセット｜FULL SET",
+    "12697725": "森羅｜SHINRA",
+    "12697726": "ルミナ｜LUMINA",
+    "12753103": "まめふれんず｜MameFriends",
+    "13965075": "海咲｜Misaki"
   }
 }

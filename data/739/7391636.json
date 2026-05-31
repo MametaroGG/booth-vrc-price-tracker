@@ -644,6 +644,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "for Nanodevi": [
@@ -1099,6 +1104,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 800,
         "is_sale": false
       }
@@ -1646,6 +1656,34 @@
         "price": 800,
         "is_sale": false
       }
+    ],
+    "Full Set": [
+      {
+        "date": "2026-05-31",
+        "price": 2800,
+        "is_sale": false
+      }
+    ],
+    "for Chiroar": [
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "for Tenchil": [
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
+      }
     ]
+  },
+  "variation_keys": {
+    "12376070": "for Nanodevi",
+    "13201331": "Full Set",
+    "13201332": "for Torao",
+    "13492813": "for Tenchil",
+    "14074140": "for Chiroar"
   }
 }

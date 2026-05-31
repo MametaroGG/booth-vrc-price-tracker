@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Pattern_2": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Pattern_4": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1100,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 3300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12628660": "Pattern_1",
+    "12628694": "Pattern_2",
+    "12628695": "Pattern_3",
+    "12628696": "Pattern_4",
+    "12628697": "Pattern_All"
   }
 }

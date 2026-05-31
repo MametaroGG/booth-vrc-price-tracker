@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 7000,
+        "is_sale": false
       }
     ],
     "単色購入【cerulean】": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 4000,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12214987": "2色セット",
+    "12364469": "単色購入【cosmic black】",
+    "12364470": "単色購入【cerulean】"
   }
 }

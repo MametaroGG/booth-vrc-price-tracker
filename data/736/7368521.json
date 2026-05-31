@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Molecule Keychain　ペニシリン": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Molecule Keychain　クロラムフェニコール": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12338575": "Molecule Keychain　Series.20 セット（ペニシリン・ストレプトマイシン・クロラムフェニコール）",
+    "12338584": "Molecule Keychain　ペニシリン",
+    "12338585": "Molecule Keychain　ストレプトマイシン",
+    "12338586": "Molecule Keychain　クロラムフェニコール"
   }
 }

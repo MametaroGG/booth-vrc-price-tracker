@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "终止符事務所武器パッケージ丨Full-Stop Office weap combo BundlePackage": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12737864": "終止符事務所フィクサー武器丨Full-Stop Office Rep weapon",
+    "12737973": "终止符事務所武器パッケージ丨Full-Stop Office weap combo BundlePackage"
   }
 }

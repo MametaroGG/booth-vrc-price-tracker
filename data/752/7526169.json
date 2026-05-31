@@ -831,6 +831,11 @@
         "date": "2026-05-29",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "MakeupPSD,PNG,＋Eyes＋blendshape": [
@@ -1101,6 +1106,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 700,
         "is_sale": false
       }
@@ -1375,6 +1385,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "blendshape": [
@@ -1647,7 +1662,18 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12599220": "MakeupPSD,PNG,＋Eyes＋blendshape",
+    "12599237": "MakeupPNG",
+    "12599238": "Eyes",
+    "13492910": "blendshape"
   }
 }

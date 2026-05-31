@@ -559,6 +559,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "✧ Eye Textureのみ ✧": [
@@ -1014,6 +1019,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 200,
         "is_sale": false
       }
@@ -1473,6 +1483,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "✧通常版 / Normal version✧": [
@@ -1830,7 +1845,18 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12521960": "✧通常版 / Normal version✧",
+    "12522103": "✧ Make Textureのみ ✧",
+    "12522104": "✧ Eye Textureのみ ✧",
+    "12821249": "✧おやつ代（中身は通常版と同じです）✧"
   }
 }

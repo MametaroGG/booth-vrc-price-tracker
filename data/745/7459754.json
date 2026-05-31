@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "イチゴちゃん対応 Ichigo ver.": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "愛莉ちゃん対応 Airi ver.": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 900,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12486931": "フルパック　Fullpack",
+    "12490482": "イチゴちゃん対応 Ichigo ver.",
+    "12490483": "ミルティナちゃん対応 Milltina ver.",
+    "12490484": "愛莉ちゃん対応 Airi ver.",
+    "12490485": "しなのちゃん対応 Shinano ver."
   }
 }

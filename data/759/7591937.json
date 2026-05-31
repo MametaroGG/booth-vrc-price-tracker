@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "猫のカリカリ代（LUMINA通常版と同じです）": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12712263": "LUMINA通常版",
+    "12714508": "猫のカリカリ代（LUMINA通常版と同じです）"
   }
 }

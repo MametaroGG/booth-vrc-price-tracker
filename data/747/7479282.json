@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "【まめふれんず/キプフェル】衣装＋ヘッドフォン（Wear+Headphones)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1900,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "【まめふれんず/キプフェル】衣装単体（Wear Only）": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12520622": "【まめふれんず/キプフェル】衣装単体（Wear Only）",
+    "12540454": "【フルパック】衣装＋ヘッドフォン（Wear+Headphones)",
+    "12921986": "【まめふれんず/キプフェル】衣装＋ヘッドフォン（Wear+Headphones)",
+    "12921987": "【うささき】衣装＋ヘッドフォン（Wear+Headphones)"
   }
 }

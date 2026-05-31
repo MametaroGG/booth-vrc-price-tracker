@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     ".vrm ARKit + VRC Unity Package": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12370042": ".vrm ARKit file only",
+    "12370135": ".vrm ARKit + VRC Unity Package"
   }
 }

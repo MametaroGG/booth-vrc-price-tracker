@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "支援版(2set×9color)": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12565152": "通常版(2set×9color)",
+    "12565180": "支援版(2set×9color)"
   }
 }

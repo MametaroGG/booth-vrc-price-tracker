@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "✦ Makeup&Eye Pack ✦": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1200,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "✧ Eye ✧": [
@@ -1826,6 +1841,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 500,
         "is_sale": false
       }
@@ -2285,7 +2305,19 @@
         "date": "2026-05-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12696729": "✦ Full Pack ✦",
+    "12697021": "✦ Makeup&Eye Pack ✦",
+    "12697022": "✧ Makeup ✧",
+    "12697023": "✧ Eye ✧",
+    "12697024": "✧ Poiyomi setting ✧"
   }
 }

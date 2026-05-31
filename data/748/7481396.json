@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Lumin's Tail (Commercial License)": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1900,
         "is_sale": false
       }
@@ -1371,7 +1381,17 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12524727": "Lumin's Tail (Personal License)",
+    "12527416": "Lumin's Tail (Commercial License)",
+    "12569581": "Lumin's Tail (Donation Version) (Personal |Commercial License)"
   }
 }

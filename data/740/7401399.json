@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "VEVENTS Join List Zone [Donation] 【支援版】": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12392022": "VEVENTS Join List Zone",
+    "12392130": "VEVENTS Join List Zone [Donation] 【支援版】"
   }
 }

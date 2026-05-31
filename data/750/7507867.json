@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "EJ767-300 (旅客版)*DLC": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 750,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "AWACSレーダーをピザにするテクスチャ": [
@@ -1548,7 +1563,17 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12568627": "EJ767F / EJ767E AWACS",
+    "13060121": "EJ767-300 (旅客版)*DLC",
+    "13079191": "EJ767KC (空中給油機版)*DLC"
   }
 }

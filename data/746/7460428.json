@@ -887,6 +887,11 @@
         "date": "2026-05-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Etude makeup (unitypackage+psd)": [
@@ -925,6 +930,17 @@
         "price": 400,
         "is_sale": false
       }
+    ],
+    "Etude makeup (+psd)": [
+      {
+        "date": "2026-05-31",
+        "price": 400,
+        "is_sale": false
+      }
     ]
+  },
+  "variation_keys": {
+    "12488176": "Etude makeup (+psd)",
+    "12488853": "support (same file)"
   }
 }

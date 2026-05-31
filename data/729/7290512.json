@@ -427,6 +427,11 @@
         "date": "2026-05-29",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "もちふぃった～変換プロファイル（順変換）": [
@@ -884,6 +889,11 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Quest/Mobile版": [
@@ -1111,6 +1121,11 @@
         "date": "2026-05-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "【半額】オリジナル3Dモデル「がぶ」": [
@@ -1145,5 +1160,9 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12212270": "オリジナル3Dモデル「がぶ」",
+    "13555205": "Quest/Mobile版"
   }
 }

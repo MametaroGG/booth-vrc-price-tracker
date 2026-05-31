@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "💗Ichigo🤍 Lovely Make Up": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
         "price": 300,
         "is_sale": true
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "💗Ichigo🤍 Diamond Eyes Only": [
@@ -1828,7 +1843,18 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-05-31",
+        "price": 300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12288325": "🎁SALE🎁 Ichigo Textures FullPack",
+    "12288330": "💗Ichigo🤍 Lovely Make Up",
+    "12288331": "🤍Ichigo💗 Aurora Star Eyes Only",
+    "12288332": "💗Ichigo🤍 Diamond Eyes Only"
   }
 }

@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "+Head BODY TEXTURE ( BODY + MATERIAL PRESET )": [
@@ -914,7 +919,16 @@
         "date": "2026-05-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12557788": "BOKUSEI 墨惺対応 FULL PACK ( FACE, BODY, MATERIAL PRESET )",
+    "12557829": "+Head BODY TEXTURE ( BODY + MATERIAL PRESET )"
   }
 }

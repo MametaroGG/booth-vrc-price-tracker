@@ -457,6 +457,11 @@
         "date": "2026-05-29",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 3800,
+        "is_sale": false
       }
     ],
     "マリシア-Marycia": [
@@ -912,6 +917,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
         "price": 1800,
         "is_sale": false
       }
@@ -1371,6 +1381,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "泣夜": [
@@ -1743,6 +1758,11 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "獏": [
@@ -2040,7 +2060,19 @@
         "date": "2026-05-29",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12463082": "Fullpack(マリシア+プラスヘッド)",
+    "12463083": "マリシア-Marycia",
+    "12463084": "+Head",
+    "13322293": "泣夜",
+    "13454423": "獏"
   }
 }

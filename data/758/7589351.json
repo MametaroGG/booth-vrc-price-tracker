@@ -402,6 +402,11 @@
         "date": "2026-05-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "FREE4": [
@@ -854,6 +859,11 @@
         "date": "2026-05-29",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-05-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "POSE Set50（ ¥500→¥400 ）": [
@@ -908,5 +918,8 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "12707495": "POSE Set50"
   }
 }
