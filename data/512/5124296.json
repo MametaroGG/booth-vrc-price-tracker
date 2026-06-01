@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Ciel eyetex": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 100,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "full pack": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8627461": "Moe eyetex",
+    "8627559": "Ciel eyetex",
+    "8646700": "Maya eyetex",
+    "8646701": "full pack"
   }
 }

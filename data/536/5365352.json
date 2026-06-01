@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "桔梗[Kikyo]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "セレスティア[SELESTIA]": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "まるぼでぃ[MARUBODY]": [
@@ -2590,6 +2615,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": false
       }
@@ -3024,7 +3054,21 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9054825": "桔梗[Kikyo]",
+    "9054863": "萌[Moe]",
+    "9054864": "セレスティア[SELESTIA]",
+    "9054865": "マヌカ[MANUKA]",
+    "9054866": "まるぼでぃ[MARUBODY]",
+    "9055787": "フルセット[FULL SET]",
+    "9959595": "森羅[Shinra]"
   }
 }

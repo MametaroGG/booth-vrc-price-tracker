@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "MAKEUP ONLY": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 120,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 220,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 220,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8593059": "LENS ONLY",
+    "8593123": "MAKEUP ONLY",
+    "8593124": "LENS & MAKEUP"
   }
 }

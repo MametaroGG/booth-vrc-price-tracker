@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "💙Hakua🤍 Lovely Make Up Only": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 350,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8970603": "🤍Hakua💙 Lovely Eyes Only",
+    "8970628": "💙Hakua🤍 Lovely Make Up Only",
+    "8970629": "💙SALE💙 Lovely Texture Full Pack"
   }
 }

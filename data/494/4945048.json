@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "営業中＆準備中": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 200,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8313025": "OPEN＆CLOSED",
+    "8313068": "営業中＆準備中",
+    "8313069": "2種セット＜OPEN＆CLOSED／営業中＆準備中＞"
   }
 }

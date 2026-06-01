@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Stylish Set [Xena]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1000,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8171364": "Stylish Set [Shinra]",
+    "8171374": "Stylish Set [Xena]",
+    "8171375": "Stylish Set [Shinra, Xena]"
   }
 }

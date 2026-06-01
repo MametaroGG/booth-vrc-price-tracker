@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3480,
+        "is_sale": false
       }
     ],
     "パンク Frei - Punk Frei": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1680,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1280,
+        "is_sale": false
       }
     ],
     "ボディーハーネス『ゲファー』 - Body Harness 『Gefahr』": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8789713": "フルセット - Full Set",
+    "8789719": "パンク Frei - Punk Frei",
+    "8789720": "パンク NEET - Punk NEET",
+    "8789721": "ボディーハーネス『ゲファー』 - Body Harness 『Gefahr』",
+    "8789722": "ボディーハーネス - Body Harness"
   }
 }

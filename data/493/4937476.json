@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "お捻り出す": [
@@ -864,7 +869,15 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8298983": "お捻り出す"
   }
 }

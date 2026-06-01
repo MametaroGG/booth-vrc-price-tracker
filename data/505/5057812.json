@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "[Almani Pajamas] 萌 (Moe).ver_3.1.0": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1000,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8510893": "[Almani Pajamas] マヌカ (Manuka).ver_3.00",
+    "8511697": "[Almani Pajamas] 萌 (Moe).ver_3.1.0",
+    "8511698": "[Almani Pajamas] 卯月 (Uzuki).ver_3.1.0"
   }
 }

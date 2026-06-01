@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 7800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 7800,
+        "is_sale": false
       }
     ],
     "Dolphin Wear": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Casual Clothes": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1400,
         "is_sale": false
       }
@@ -2185,6 +2205,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Crop Wear": [
@@ -2620,6 +2645,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1400,
         "is_sale": false
       }
@@ -3059,6 +3089,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "オフショルダーシャツ Remake": [
@@ -3494,6 +3529,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1400,
         "is_sale": false
       }
@@ -3933,6 +3973,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Ame Sweater": [
@@ -4370,7 +4415,24 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9208611": "Full Set フルセット",
+    "9208774": "Dolphin Wear",
+    "9208775": "Daylily",
+    "9208776": "Casual Clothes",
+    "9208777": "Simple Hoodie",
+    "9208778": "Crop Wear",
+    "9208779": "Tshirt & Shorts",
+    "9208780": "オフショルダーシャツ Remake",
+    "9208781": "Flare Jersey",
+    "9208782": "Ame Sweater"
   }
 }

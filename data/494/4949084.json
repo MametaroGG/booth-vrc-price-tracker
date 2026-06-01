@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "服＋帽子＋靴 (clothes + hat + shoes)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8320347": "服＋帽子 (clothes + hat)",
+    "8320362": "服＋帽子＋靴 (clothes + hat + shoes)"
   }
 }

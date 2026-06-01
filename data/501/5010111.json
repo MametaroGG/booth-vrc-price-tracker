@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ポップコーンセット(支援版)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 680,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8428775": "MOVIE＆POP DAY(通常版)",
+    "8433659": "ポップコーンセット(支援版)"
   }
 }

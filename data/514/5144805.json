@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Meta Summer Gotcha(Moe)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2800,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8662753": "Meta Summer Gotcha(Kikyo)",
+    "8662838": "Meta Summer Gotcha(Moe)",
+    "8662839": "Meta Summer Gotcha(Kikyo+Moe_set)"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "もちふぃった～変換プロファイル": [
@@ -864,6 +869,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "AstralStella": [
@@ -1206,7 +1216,16 @@
         "date": "2026-05-30",
         "price": 10000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 10000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8903906": "ラズリ -Lazuli-",
+    "13344815": "AstralStella"
   }
 }

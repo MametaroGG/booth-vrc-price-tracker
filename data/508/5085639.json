@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "Eyes+Emi Tex Only": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 280,
+        "is_sale": false
       }
     ],
     "Shadow Mask(PCSS)": [
@@ -1728,7 +1743,17 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8559844": "Eyes+Makeup(PSD)+Body(PSD)+Tongue Tex+Package",
+    "8559904": "Eyes+Emi Tex Only",
+    "8559905": "Tongue Tex Only"
   }
 }

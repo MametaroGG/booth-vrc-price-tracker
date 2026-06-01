@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Bodyguard Suit [Moe]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1400,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Bodyguard Suit [3Set]": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8882490": "Bodyguard Suit [mamehinata]",
+    "8882507": "Bodyguard Suit [Moe]",
+    "8882508": "Bodyguard Suit [Shinra]",
+    "8882509": "Bodyguard Suit [3Set]"
   }
 }

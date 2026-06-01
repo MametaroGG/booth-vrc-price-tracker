@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": true
       }
     ],
     "Coffin normal with Lid": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 250,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 250,
         "is_sale": true
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "Coffin Chair": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 400,
         "is_sale": true
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "8598596": "Full set",
+    "8598719": "Coffin normal with Lid",
+    "8598720": "Coffin Bed",
+    "8598721": "Coffin Chair",
+    "8598722": "Coffin Shelves"
   }
 }

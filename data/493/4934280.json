@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "白 white": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 400,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "緑 green": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8293286": "Fullset",
+    "8293287": "白 white",
+    "8293288": "茶 brown",
+    "8293289": "緑 green"
   }
 }

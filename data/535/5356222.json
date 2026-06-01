@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Temptation": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1800,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Cool Side": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9040000": "フルセット",
+    "9040062": "Temptation",
+    "9040063": "Frill Tac",
+    "9040064": "Cool Side",
+    "9040065": "Subcul ZipUp Jersey"
   }
 }

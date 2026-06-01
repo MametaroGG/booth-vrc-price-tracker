@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Only Face Animation": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 200,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Full set (Texture+Animation)+愛": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9129003": "Only Make up Texture",
+    "9129035": "Only Face Animation",
+    "9129036": "Full set (Texture+Animation)",
+    "9129037": "Full set (Texture+Animation)+愛"
   }
 }

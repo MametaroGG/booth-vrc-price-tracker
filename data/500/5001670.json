@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "ブラックジャック Comedy Ver.": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 5000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 5000,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8415392": "ブラックジャック Full Ver.",
+    "8426523": "ブラックジャック Comedy Ver.",
+    "8426524": "ブラックジャック LITE Ver."
   }
 }

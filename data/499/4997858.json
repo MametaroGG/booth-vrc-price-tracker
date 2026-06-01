@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "傘立て/土台 UmbrellaStand/Deck": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 100,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "火かき棒 PokerStick": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 200,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "ブラシ・ほうき Brush": [
@@ -2590,6 +2615,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 200,
         "is_sale": false
       }
@@ -3024,6 +3054,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "ランチ支援Ver.　5itemsSet＋Donation (M)": [
@@ -3456,7 +3491,22 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8408333": "5点セット 5itemsSet",
+    "8408348": "傘立て/土台 UmbrellaStand/Deck",
+    "8408349": "シャベル・スコップ/チリトリ Shovel/Dust pan",
+    "8408350": "火かき棒 PokerStick",
+    "8408351": "火ばさみ FireTongs",
+    "8408352": "ブラシ・ほうき Brush",
+    "8408353": "お菓子支援　5itemsSet＋Donation (S)",
+    "8409330": "ランチ支援Ver.　5itemsSet＋Donation (M)"
   }
 }

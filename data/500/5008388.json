@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "🧡Lapwing🧡 Only Make Up": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 350,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8426030": "🧡Lapwing🧡 Only Eyes",
+    "8426072": "🧡Lapwing🧡 Only Make Up",
+    "8426073": "🧡Lapwing🧡 女子高生 Textures Full Pack"
   }
 }

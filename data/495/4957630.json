@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "2.Hibiscus｜ハイビスカス柄": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "4.Full set｜全色セット": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8334903": "1.Lemon｜レモン柄",
+    "8334915": "2.Hibiscus｜ハイビスカス柄",
+    "8334916": "3.Flamingo｜フラミンゴ柄",
+    "8334917": "4.Full set｜全色セット"
   }
 }

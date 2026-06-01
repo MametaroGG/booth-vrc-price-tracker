@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "セットアップ済み帽子": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 0,
         "is_sale": false
       }
@@ -1296,7 +1306,15 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9044661": "セットアップ済み帽子(支援版、内容は同じ)"
   }
 }

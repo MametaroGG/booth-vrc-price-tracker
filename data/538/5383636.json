@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "通常Ver.　Normal Ver.": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 350,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "お菓子支援　Normal Ver.＋Half Ver.＋Donation (S)": [
@@ -1728,7 +1743,17 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9085298": "通常Ver.　Normal Ver.",
+    "9167386": "通常＋半分　Normal Ver.＋Half Ver.",
+    "9167387": "お菓子支援　Normal Ver.＋Half Ver.＋Donation (S)"
   }
 }

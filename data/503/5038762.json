@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "GLORIA Eyetexture": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8477419": "GLORIA Eye&MakeUp",
+    "8477639": "GLORIA Eyetexture"
   }
 }

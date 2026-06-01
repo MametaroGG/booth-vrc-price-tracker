@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "【DragonArm】C_白龍ARM【個別】": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1000,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8426774": "【DragonArm】C_白龍ARM【個別】",
+    "8436471": "【DragonARM】C_白龍ARM+DragonTail_W【セット】",
+    "8436472": "【DragonTailシリーズ】DragonTail_W【個別】"
   }
 }

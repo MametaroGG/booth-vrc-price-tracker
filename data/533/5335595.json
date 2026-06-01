@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 6500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 6500,
+        "is_sale": false
       }
     ],
     "ぽん -pon only- #chibi_kemo": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 5000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 5000,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9005010": "ぽんとちゅね -pon&chune- #chibi_kemo",
+    "9019143": "ちゅね -chune only- #chibi_kemo",
+    "9019144": "ぽん -pon only- #chibi_kemo"
   }
 }

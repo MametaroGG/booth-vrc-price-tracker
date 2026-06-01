@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "ライト版Lite Version": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "即時生成バージョン Instant Generate Version (Full)": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 4500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 4500,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9139436": "ライト版Lite Version",
+    "9242292": "完全版 Full Version",
+    "9242293": "バージョンアップ Upgrade",
+    "10503002": "即時生成バージョン Instant Generate Version (Full)",
+    "10503003": "(Need Full Version Owned)即時生成バージョンDLCアップグレード (Instant Generate DLC Upgrade)"
   }
 }

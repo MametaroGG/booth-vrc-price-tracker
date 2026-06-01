@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "VRM単品": [
@@ -874,7 +879,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8621897": "VRChat用セットアップ済(VRM含む)",
+    "8621986": "VRM単品"
   }
 }

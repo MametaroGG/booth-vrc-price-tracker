@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "[3Dモデル] - Pixie - (Manuka●マヌカ専用)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "[3Dモデル] - Pixie - (Kikyo●桔梗専用)": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8672716": "[3Dモデル] - Pixie - (Manuka●マヌカ専用)",
+    "8672720": "[3Dモデル] - Pixie - All",
+    "8676129": "[3Dモデル] - Pixie - (Kikyo●桔梗専用)",
+    "8681508": "[3Dモデル] - Pixie - (Moe●萌専用)",
+    "8684330": "[3Dモデル] - Pixie - (Selestia●セレスティア専用)"
   }
 }

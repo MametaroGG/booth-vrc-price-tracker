@@ -434,6 +434,11 @@
         "date": "2026-05-30",
         "price": 1027,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1027,
+        "is_sale": false
       }
     ],
     "Carderi_CelestialRobe_Blue": [
@@ -849,6 +854,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 385,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 385,
         "is_sale": false
       }
@@ -1268,6 +1278,11 @@
         "date": "2026-05-30",
         "price": 385,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 385,
+        "is_sale": false
       }
     ],
     "Carderi_CelestialRobe_Green": [
@@ -1683,6 +1698,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 385,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 385,
         "is_sale": false
       }
@@ -2102,7 +2122,19 @@
         "date": "2026-05-30",
         "price": 385,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 385,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8270667": "ALL Carderi_CelestialRobe",
+    "13228753": "Carderi_CelestialRobe_Blue",
+    "13228754": "Carderi_CelestialRobe_DarkBlue",
+    "13228755": "Carderi_CelestialRobe_Green",
+    "13228756": "Carderi_CelestialRobe_Purple"
   }
 }

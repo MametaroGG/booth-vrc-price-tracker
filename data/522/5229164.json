@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 490,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 490,
+        "is_sale": false
       }
     ],
     "Green Knitted Sweater": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 490,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 490,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8812679": "Red Knitted Sweater",
+    "8812692": "Green Knitted Sweater"
   }
 }

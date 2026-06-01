@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "♥支援版♥[All+]Material package+ Makeup+Tongue": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1800,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "Mizuki_Tongue(PNG)Only": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 280,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9171468": "Mizuki_Makeup(PSD)Only",
+    "9171516": "Mizuki_Tongue(PNG)Only",
+    "9171918": "[All+]Material package+ Makeup+Tongue",
+    "9177040": "♥支援版♥[All+]Material package+ Makeup+Tongue"
   }
 }

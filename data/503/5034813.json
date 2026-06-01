@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "セレスティア Selestia": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 250,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Full Set (愛を送る <3)": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8470598": "Full Set",
+    "8472335": "セレスティア Selestia",
+    "8472336": "萌 Moe",
+    "8472592": "Full Set (愛を送る <3)"
   }
 }

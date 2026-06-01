@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1350,
+        "is_sale": false
       }
     ],
     "Glow Sticks & support me": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9045329": "Glow sticks",
+    "9045355": "Glow Sticks & support me",
+    "10006827": "Glow sticks Commercial"
   }
 }

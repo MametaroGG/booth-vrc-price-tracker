@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "桔梗 -KIKYO-": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "マヌカ　-MANUKA-": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8250453": "萌 -MOE-",
+    "8262310": "桔梗 -KIKYO-",
+    "8262311": "セレスティア -SELESTIA-",
+    "8262312": "萌・桔梗・セレスティア・マヌカ  -MOE, KIKYO, SELESTIA, MANUKA-",
+    "9696464": "マヌカ　-MANUKA-"
   }
 }

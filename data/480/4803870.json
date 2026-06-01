@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Amusant 森羅 Ver.1.0.1": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1400,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Amusant 狐雪 Ver.1.0.1": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8056695": "Amusant 森羅 Ver.1.0.1",
+    "8306812": "Amusant 萌 Ver.1.0.1",
+    "8306813": "Amusant 狐雪 Ver.1.0.1",
+    "8512346": "Amusant ライム Ver.1.0.1"
   }
 }

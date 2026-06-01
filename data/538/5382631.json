@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Type - A": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Type - C": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9083676": "フルパッケージ -FULL PACKAGE-",
+    "9083689": "Type - A",
+    "9083690": "Type - B",
+    "9083691": "Type - C"
   }
 }

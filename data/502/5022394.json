@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "【DragonBodyシリーズ】B_蛇腹竜体【個別】": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8449824": "【フルセット】B_蛇腹竜体＋DragonTail_Z",
+    "8450169": "【DragonBodyシリーズ】B_蛇腹竜体【個別】",
+    "8450170": "【DragonTailシリーズ】DragonTail_Z【個別】"
   }
 }

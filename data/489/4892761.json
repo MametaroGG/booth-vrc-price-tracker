@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Buy me chips (Same Content)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8213680": "Underwater",
+    "8213861": "Buy me chips (Same Content)"
   }
 }

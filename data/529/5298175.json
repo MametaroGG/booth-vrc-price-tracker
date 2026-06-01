@@ -434,6 +434,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "衣装のみ": [
@@ -756,7 +761,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8936232": "Kupka/クプカ",
+    "13378583": "衣装のみ"
   }
 }

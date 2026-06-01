@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "HOUSEKI EYE": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 120,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "ばってん目": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 120,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8676740": "HOUSEKI EYE",
+    "8676750": "フルセット（ばってん目 / しゅわしゅわ / HOUSEKI ）",
+    "8676758": "しゅわしゅわアイ",
+    "8676759": "ばってん目"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "MCF Sci Fi Suit Blade Wolf Selestia": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "MCF Sci Fi Suit Blade Wolf RINDO": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "MCF Sci Fi Suit Blade Wolf YATO": [
@@ -2592,7 +2617,20 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8118957": "FULL SET",
+    "8119310": "MCF Sci Fi Suit Blade Wolf Selestia",
+    "8119311": "MCF Sci Fi Suit Blade Wolf KIKYO",
+    "8119312": "MCF Sci Fi Suit Blade Wolf RINDO",
+    "8119313": "MCF Sci Fi Suit Blade Wolf MOE",
+    "8119314": "MCF Sci Fi Suit Blade Wolf YATO"
   }
 }

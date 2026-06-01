@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1490,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1490,
+        "is_sale": true
       }
     ],
     "同じ内容(original price)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 3700,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3700,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "8214879": "4着の服装(期間割引)",
+    "8214896": "同じ内容(original price)"
   }
 }

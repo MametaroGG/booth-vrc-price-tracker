@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Commercial use right": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 12000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 12000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8183216": "Bebe Chill Room",
+    "10598248": "Commercial use right"
   }
 }

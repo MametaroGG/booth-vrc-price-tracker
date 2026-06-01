@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "small breast (NoPB)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1000,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "big breast": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8272805": "フルセット(PSD・clipファイル)",
+    "8272859": "small breast (NoPB)",
+    "8272860": "normal breast",
+    "8272861": "big breast"
   }
 }

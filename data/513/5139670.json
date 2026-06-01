@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "シャツShirt +  スマートフォン +  ネクタイ": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1000,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8654216": "スカートSkirt + Leg Harness * Choker  [NO RIG]",
+    "8654264": "シャツShirt +  スマートフォン +  ネクタイ",
+    "8654265": "すべて  Everything Included"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 4800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4800,
+        "is_sale": false
       }
     ],
     "萌 - Moe": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2200,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "ライム - Lime": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2200,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "セレスティア - SELESTIA": [
@@ -2590,6 +2615,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2200,
         "is_sale": false
       }
@@ -3024,6 +3054,11 @@
         "date": "2026-05-30",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "竜胆 - RINDO": [
@@ -3454,6 +3489,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2200,
         "is_sale": false
       }
@@ -3888,7 +3928,23 @@
         "date": "2026-05-30",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8220451": "フルパック - FullPack",
+    "8220941": "萌 - Moe",
+    "8220942": "森羅 - Shinra",
+    "8220943": "ライム - Lime",
+    "8220944": "桔梗 - Kikyo",
+    "8220945": "セレスティア - SELESTIA",
+    "8220946": "舞夜 - Maya",
+    "8220947": "竜胆 - RINDO",
+    "8220948": "ルーナリット - Lunalitt"
   }
 }

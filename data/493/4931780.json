@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "PNG１枚＋PSDファイル": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8288819": "PNG１枚",
+    "8288905": "PNG１枚＋PSDファイル"
   }
 }

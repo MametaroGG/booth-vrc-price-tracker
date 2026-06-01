@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "[3Dモデル] - Luxia - (Manuka●マヌカ専用)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "[3Dモデル] - Luxia - (Kikyo●桔梗専用)": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8731264": "[3Dモデル] - Luxia - (Manuka●マヌカ専用)",
+    "8731275": "[3Dモデル] - Luxia - (Kikyo●桔梗専用)",
+    "8731276": "[3Dモデル] - Luxia - All",
+    "8733566": "[3Dモデル] - Luxia - (Moe●萌専用)"
   }
 }

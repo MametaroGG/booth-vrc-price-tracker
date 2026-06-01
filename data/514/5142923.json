@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Halloween Accessories And Buy me some food for life": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8659630": "Halloween Accessories ハロウィンアクセサリー",
+    "8659655": "Halloween Accessories And Buy me some food for life"
   }
 }

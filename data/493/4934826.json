@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "For Kikyo 「桔梗」": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1800,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8294082": "For Shinra 「森羅」",
+    "8390282": "For Kikyo 「桔梗」",
+    "8405359": "For Moe 「萌」"
   }
 }

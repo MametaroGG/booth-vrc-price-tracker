@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "[SKY EYE TEXTURE]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "[STELLAR EYE TEXTURE] + ♥": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 555,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 555,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 555,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 555,
+        "is_sale": false
       }
     ],
     "[FLORAL EYE TEXTURE] + ♥": [
@@ -2592,7 +2617,20 @@
         "date": "2026-05-30",
         "price": 555,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 555,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8516718": "[STELLAR EYE TEXTURE]",
+    "8516719": "[SKY EYE TEXTURE]",
+    "8516720": "[FLORAL EYE TEXTURE]",
+    "8516721": "[STELLAR EYE TEXTURE] + ♥",
+    "8516722": "[SKY EYE TEXTURE] + ♥",
+    "8516723": "[FLORAL EYE TEXTURE] + ♥"
   }
 }

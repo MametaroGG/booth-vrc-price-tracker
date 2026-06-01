@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 310,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 310,
+        "is_sale": false
       }
     ],
     "ホワイト - WHITE": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 310,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 310,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 310,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 310,
+        "is_sale": false
       }
     ],
     "レッド - RED": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 310,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 310,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8823235": "ピンク - PINK",
+    "8826356": "ホワイト - WHITE",
+    "8826357": "ネイビー - NAVY",
+    "8826358": "レッド - RED"
   }
 }

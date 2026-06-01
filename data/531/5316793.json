@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "for kikyo": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8970185": "for manuka",
+    "8974990": "for kikyo"
   }
 }

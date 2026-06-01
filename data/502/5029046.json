@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 150,
+        "is_sale": true
       }
     ],
     "ピンク（pink）": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 150,
         "is_sale": true
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 150,
+        "is_sale": true
       }
     ],
     "全色（full set）": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "8460561": "オレンジ（orange）",
+    "8460746": "ピンク（pink）",
+    "8460747": "ブルー（blue）",
+    "8460748": "全色（full set）"
   }
 }

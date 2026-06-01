@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Donate(同じ内容)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8915910": "Light_System",
+    "8916212": "Donate(同じ内容)"
   }
 }

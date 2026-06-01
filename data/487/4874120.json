@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "舞夜 (Maya)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 900,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Grus": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 900,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "森羅 (Shinra)": [
@@ -2590,6 +2615,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 900,
         "is_sale": false
       }
@@ -3024,6 +3054,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "萌 (Moe)": [
@@ -3454,6 +3489,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 900,
         "is_sale": false
       }
@@ -3888,6 +3928,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "まりえる (Mariel)": [
@@ -4318,6 +4363,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 900,
         "is_sale": false
       }
@@ -4752,6 +4802,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "MARUBODY": [
@@ -5184,7 +5239,26 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8181486": "ALL",
+    "8284454": "舞夜 (Maya)",
+    "8284473": "桔梗 (Kikyo)",
+    "8284474": "Grus",
+    "8284475": "カリン (Karin)",
+    "8292323": "森羅 (Shinra)",
+    "8292324": "セレスティア (Selestia)",
+    "8298569": "萌 (Moe)",
+    "8298570": "竜胆 (Rindo)",
+    "8304718": "まりえる (Mariel)",
+    "8304719": "リーファ (Leefa)",
+    "8310305": "MARUBODY"
   }
 }

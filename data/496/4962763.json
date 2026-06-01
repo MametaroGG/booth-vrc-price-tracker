@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Industrial Pack [2 Colors]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1100,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Raver Pack [2 Colors]": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1100,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8344707": "Basic Pack [2 Colors]",
+    "8344718": "Industrial Pack [2 Colors]",
+    "8344719": "Sweet Pack [2 Colors]",
+    "8344720": "Raver Pack [2 Colors]",
+    "8344721": "FULL PACK [8 Colors]"
   }
 }

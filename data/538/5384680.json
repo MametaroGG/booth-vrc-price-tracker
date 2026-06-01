@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "ポテト・ルナ／ルナセット[Potato Runa Only]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9087018": "ベース・ルナ/ルナセット[Base Runa Only]",
+    "9102389": "ポテト・ルナ／ルナセット[Potato Runa Only]",
+    "9102390": "ベース＆ポテト・ルナ／ルナセット[Base Runa + Potato Runa Set]"
   }
 }

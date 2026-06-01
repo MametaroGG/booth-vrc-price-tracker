@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "【ルキフェル -Lucifer #MARUBODY】": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "【森羅 - Shinra】": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1600,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8235123": "【桔梗 - Kikyo】",
+    "8235142": "【ルキフェル -Lucifer #MARUBODY】",
+    "8235143": "【セレスティア - Selestia】",
+    "8235144": "【森羅 - Shinra】",
+    "8235145": "【萌 - Moe】"
   }
 }

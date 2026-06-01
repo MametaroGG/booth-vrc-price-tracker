@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "リンゴ１個奢る": [
@@ -864,7 +869,15 @@
         "date": "2026-05-30",
         "price": 105,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 105,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8802427": "リンゴ１個奢る"
   }
 }

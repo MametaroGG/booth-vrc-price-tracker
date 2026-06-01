@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "TYPE: SAND": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 350,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "3 SHARK SET【イベント限定価格】": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1050,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8282241": "TYPE: NAVY",
+    "8282268": "TYPE: SAND",
+    "8282269": "TYPE: KIBORI",
+    "8282270": "3 SHARK SET【イベント限定価格】"
   }
 }

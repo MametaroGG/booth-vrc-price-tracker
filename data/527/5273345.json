@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Moe 萌対応": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "MANUKA マヌカ対応": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8891754": "DARIA 　ダリア対応",
+    "8891953": "MANUKA マヌカ対応",
+    "9124458": "NAGIYA RURI 凪夜瑠璃対応",
+    "9185017": "Moe 萌対応"
   }
 }

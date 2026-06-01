@@ -402,6 +402,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Face60Type": [
@@ -832,6 +837,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 600,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Doll MakeupTex": [
@@ -1696,6 +1711,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -2130,6 +2150,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "集会コラボ𝙽𝚘𝚟𝚎𝚕𝚝𝚢🔐💕": [
@@ -2562,6 +2587,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "💝𝐅𝐮𝐥𝐥“𝐌𝐚𝐱𝟏𝟎𝟎”⁺Blink⁺Tex（¥1,500→¥1,200）": [
@@ -2596,5 +2626,11 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "8889455": "Face60Type",
+    "8917782": "Doll MakeupTex",
+    "8917783": "💝𝐅𝐮𝐥𝐥“𝐌𝐚𝐱𝟏𝟎𝟎”⁺Blink⁺Tex",
+    "11924632": "BlinkAnimation♥2Type"
   }
 }

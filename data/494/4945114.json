@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "VRChat版": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3300,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8313121": "VRM版",
+    "8313246": "VRChat版",
+    "8313247": "VRChat版とVRM版のセット"
   }
 }

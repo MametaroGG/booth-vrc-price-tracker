@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "KaMuI (カムイ)-DP096": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3600,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "TenKa (テンカ)-DP098": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 13000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 13000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8598794": "LaMu (ラム)-DP095",
+    "8598804": "KaMuI (カムイ)-DP096",
+    "8598805": "PhaLa (ファラ)-DP097",
+    "8598806": "TenKa (テンカ)-DP098",
+    "8598807": "メディウムヴァンガード 4種セット-DP117"
   }
 }

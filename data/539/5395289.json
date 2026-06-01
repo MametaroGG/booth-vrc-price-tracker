@@ -412,6 +412,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "猫の日まで(通常版と内容は同じです）": [
@@ -458,5 +463,8 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13399401": "default"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2900,
+        "is_sale": false
       }
     ],
     "【Moe用】ルームウェア": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "【Manuka用】ルームウェア": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8782922": "【FULL SET】ルームウェア",
+    "8783194": "【Moe用】ルームウェア",
+    "8783195": "【Kikyo用】ルームウェア",
+    "8783196": "【Manuka用】ルームウェア",
+    "8783197": "【Selestia用】ルームウェア"
   }
 }

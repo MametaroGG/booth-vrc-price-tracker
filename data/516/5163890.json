@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Only makeup  メイク": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 550,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8696186": "Full set 全部",
+    "8714970": "Only makeup  メイク",
+    "8714971": "Blood 傷"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Neon Pack [2 colors]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 900,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "FULL PACK [6 colors]": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8522473": "Basic Pack [2 colors]",
+    "8522479": "Neon Pack [2 colors]",
+    "8522480": "Acid Pack [2 colors]",
+    "8522481": "FULL PACK [6 colors]"
   }
 }

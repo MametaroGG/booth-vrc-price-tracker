@@ -262,6 +262,11 @@
         "date": "2026-03-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -522,6 +527,11 @@
       },
       {
         "date": "2026-03-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -786,7 +796,17 @@
         "date": "2026-03-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9175471": "Manuka + Kikyo",
+    "9177866": "Manuka",
+    "9177867": "Kikyo"
   }
 }

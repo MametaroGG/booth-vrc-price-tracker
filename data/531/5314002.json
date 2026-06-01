@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "マヌカ用-MANUKA": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1800,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "萌用-Moe": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8965312": "FullSet",
+    "8965334": "マヌカ用-MANUKA",
+    "8965335": "桔梗用-Kikyo",
+    "9322373": "萌用-Moe"
   }
 }

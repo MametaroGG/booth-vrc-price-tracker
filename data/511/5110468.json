@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2300,
+        "is_sale": false
       }
     ],
     "Lapwing版": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8604355": "2アバター対応版（Full Pack for Lapwing and Grus)",
+    "8604392": "Lapwing版",
+    "8604393": "Grus版"
   }
 }

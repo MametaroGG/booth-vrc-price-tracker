@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "\"URBAN STRIKE\" 武器単体(FH36/HOUNDS.45)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8954712": "兵士アバター素体 \"URBAN STRIKE\" フルセット（武器付）",
+    "8954877": "\"URBAN STRIKE\" 武器単体(FH36/HOUNDS.45)"
   }
 }

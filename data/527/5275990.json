@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "おやつ代（Your Love!!）": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8897041": "通常版",
+    "8897194": "おやつ代（Your Love!!）",
+    "8897375": "Riruruフルセット（アイテクスチャ3種＋Faceアニメーション14種）"
   }
 }

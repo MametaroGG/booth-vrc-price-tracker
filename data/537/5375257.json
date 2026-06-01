@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2400,
+        "is_sale": true
       }
     ],
     "LAYERED T-SHIRT": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 850,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "RAVE CARGO PANTS": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 950,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 850,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9071838": "LAYERED T-SHIRT",
+    "9071865": "CROSS-BODY BAG",
+    "9071866": "RAVE CARGO PANTS",
+    "9071867": "STOMPERS",
+    "9072182": "FULL OUTFIT (25% off)"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "【きなこ・リィ対応】for Kinako / Lii": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "【3アバター対応】for Mamehinata /  Kinako /  Lii": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 800,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8141614": "【まめひなた対応】for Mamehinata",
+    "8164996": "【きなこ・リィ対応】for Kinako / Lii",
+    "8164997": "【3アバター対応】for Mamehinata /  Kinako /  Lii",
+    "10261297": "【ネメシス対応】for Nemesis",
+    "10261298": "【4アバター対応】for Mamehinata /  Kinako /  Lii / Nemesis"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Same Contents + Buy me a Coffee | 同じコンテンツ + コーヒーを購入": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8182832": "Archers Blades: [Kanshou and Bakuya] | アーチャーのブレード: [干将・莫邪]",
+    "8182990": "Same Contents + Buy me a Coffee | 同じコンテンツ + コーヒーを購入"
   }
 }

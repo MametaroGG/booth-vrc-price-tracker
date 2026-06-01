@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Sussy Tattoo Only png and for kikyo preset": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 250,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8191982": "Sussy Makeup Only for Kikyo",
+    "8192062": "Sussy Tattoo Only png and for kikyo preset",
+    "8192063": "All (Makeup & Tattoo)"
   }
 }

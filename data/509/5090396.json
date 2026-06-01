@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "Maya |【舞夜】": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1300,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8567943": "Full Pack",
+    "8567972": "Maya |【舞夜】",
+    "8567973": "Moe |【萌用】"
   }
 }

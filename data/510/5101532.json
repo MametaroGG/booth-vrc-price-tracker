@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Revolver94S ExAdd v1.0本体付属版（Body set version）": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1000,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8588433": "Revolver94S ExAdd v1.0 追加パーツ版（Add parts version）",
+    "8588434": "Revolver94S ExAdd v1.0本体付属版（Body set version）",
+    "8588435": "Revolver94S ExAdd v1.0本体付属版（Donation version）"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "マヌカ / Manuka": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1700,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "竜胆 / Rindo": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1700,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9143727": "桔梗 / Kikyo",
+    "9145196": "マヌカ / Manuka",
+    "9145197": "舞夜 / Maya",
+    "9145198": "竜胆 / Rindo",
+    "9145199": "森羅 / Shinra"
   }
 }

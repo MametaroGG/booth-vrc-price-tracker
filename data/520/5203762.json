@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1225,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1225,
+        "is_sale": true
       }
     ],
     "For マヌカ Manuka [N030_1]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 825,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 825,
         "is_sale": true
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 825,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 825,
+        "is_sale": true
       }
     ],
     "For 真冬 Mafuyu [N032_1]": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 825,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 825,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "8767195": "For All(Moe,Manuka,Mafuyu) [N031_2]",
+    "8767355": "For マヌカ Manuka [N030_1]",
+    "8767356": "For 萌 Moe [N031_1]",
+    "8794283": "For 真冬 Mafuyu [N032_1]"
   }
 }

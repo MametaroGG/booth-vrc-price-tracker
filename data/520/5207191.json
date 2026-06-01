@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2480,
+        "is_sale": false
       }
     ],
     "メイドビキニ - Maid Bikini": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1480,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1480,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8773280": "フルセット - Full Set",
+    "8773305": "メイドビキニ - Maid Bikini",
+    "8773306": "制服 - School Uniform"
   }
 }

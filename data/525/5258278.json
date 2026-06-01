@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "BERYL": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2200,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "DIAMOND": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "RAPICE(セット販売)": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 9000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 9000,
         "is_sale": false
       }
@@ -2989,7 +3019,21 @@
         "date": "2026-05-30",
         "price": 10000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 10000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8865492": "AMETHYST",
+    "8890261": "BERYL",
+    "8890262": "CITRINE",
+    "8890263": "DIAMOND",
+    "8890264": "RAPICE(セット販売)",
+    "8925132": "EMERALD",
+    "8925133": "RAPICE＋E(セット販売)"
   }
 }

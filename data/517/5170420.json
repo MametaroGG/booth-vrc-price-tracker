@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Meta Summer Gotcha(Karin)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2800,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8707885": "Meta Summer Gotcha(Manuka)",
+    "8707969": "Meta Summer Gotcha(Karin)",
+    "8707970": "Meta Summer Gotcha(Manuka+Karin)"
   }
 }

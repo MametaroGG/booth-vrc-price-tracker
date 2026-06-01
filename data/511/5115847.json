@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Scarlet Normal Outfit (VRC + Jacket and Glasses Not Included)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 3150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8613285": "Scarlet Full Version (Include VRC + Jacket and Glasses)",
+    "8613417": "Scarlet Normal Outfit (VRC + Jacket and Glasses Not Included)"
   }
 }

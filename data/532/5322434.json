@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "アンディ対応(For Andi)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "サリア対応(For Saria)": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "森羅対応(For Shinra)": [
@@ -2590,6 +2615,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -3024,6 +3054,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "凪対応(For Nagi)": [
@@ -3454,6 +3489,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -3888,6 +3928,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "萌対応(For Moe)": [
@@ -4318,6 +4363,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -4752,6 +4802,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "リセリエ対応(For Liserie)": [
@@ -5182,6 +5237,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2000,
         "is_sale": false
       }
@@ -5616,7 +5676,27 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9000704": "森羅対応(For Shinra)",
+    "9039895": "桔梗対応(For Kikyo)",
+    "9128816": "ラシューシャ対応(For Lasyusha)",
+    "9131597": "フルセット(Full Set)",
+    "9167159": "萌対応(For Moe)",
+    "9195108": "マヌカ対応(For Manuka)",
+    "9225848": "セレスティア対応(For Selestia)",
+    "9249773": "アンディ対応(For Andi)",
+    "9273389": "リセリエ対応(For Liserie)",
+    "9313189": "凪対応(For Nagi)",
+    "9344072": "サリア対応(For Saria)",
+    "10288559": "ルルチ対応(For Luluchi)",
+    "10758942": "しなの対応(For Shinano)"
   }
 }

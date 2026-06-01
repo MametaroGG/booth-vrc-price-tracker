@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "BOOST応援品（中身は同じ）": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 2222,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2222,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8558826": "osoujiNEKOchan",
+    "8558865": "BOOST応援品（中身は同じ）"
   }
 }

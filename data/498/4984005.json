@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 580,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 580,
+        "is_sale": false
       }
     ],
     "水瀬君": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 580,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 580,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 580,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 580,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8384355": "杏里君、他",
+    "8407865": "水瀬君",
+    "8407866": "TOMA君"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 580,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 580,
+        "is_sale": false
       }
     ],
     "Lime専用_Flowing Tears": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 250,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Kikyo専用_Flowing Tears": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8297384": "Lime専用_Flowing Tears",
+    "8301443": "[All]Flowing Tears(Lime/Moe/Kikyo)",
+    "8301444": "Moe専用_Flowing Tears",
+    "8301445": "Kikyo専用_Flowing Tears"
   }
 }

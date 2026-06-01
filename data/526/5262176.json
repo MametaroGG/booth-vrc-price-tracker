@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Zigg_Hoodie": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1700,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8872859": "Zigg_Hoodie",
+    "8872882": "Zigg_Hoodie_Shirts_Set",
+    "8872883": "Zigg_Shirts"
   }
 }

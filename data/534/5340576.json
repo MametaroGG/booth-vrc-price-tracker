@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2580,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2580,
+        "is_sale": false
       }
     ],
     "for manuka": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1380,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1380,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1380,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1380,
+        "is_sale": false
       }
     ],
     "for moe": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1380,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1380,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1380,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1380,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9015012": "ALL LOSER",
+    "9015180": "for manuka",
+    "9015181": "for selestia",
+    "9015182": "for moe",
+    "9015183": "for kikyo"
   }
 }

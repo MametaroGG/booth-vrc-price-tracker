@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "Raaku [PC& Quest]+[DPS]": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 6777,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 6777,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 7500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 7500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8809595": "Raaku [Quest Only]",
+    "8809798": "Raaku [PC& Quest]+[DPS]",
+    "8809801": "💜Raaku [PC& Quest]+[DPS]💜Support💜"
   }
 }

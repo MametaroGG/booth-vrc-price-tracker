@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "QBZ-95 Nomal": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "QBZ-95 Custom Ver2": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8308358": "QBZ-95 3種類フルセット",
+    "8308906": "QBZ-95 Nomal",
+    "8308907": "QBZ-95 Custom Ver1",
+    "8308908": "QBZ-95 Custom Ver2"
   }
 }

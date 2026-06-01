@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 110,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 110,
+        "is_sale": false
       }
     ],
     "Cyan Stripes": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 110,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 110,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 110,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 110,
+        "is_sale": false
       }
     ],
     "Purple Stripes": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 110,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 110,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8297663": "Blue Stripes",
+    "8297931": "Cyan Stripes",
+    "8297932": "Pink Stripes",
+    "8297933": "Purple Stripes",
+    "8297934": "All Stripes Color"
   }
 }

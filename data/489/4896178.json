@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "6月：vTuber - June : vTuber": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 2500,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 3750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8219707": "6月：VRChatアバタ - June : VRChat Avatar",
+    "8219708": "6月：vTuber - June : vTuber",
+    "8219709": "6月 : VRChat + vTuber + すべてのファイル - June : VRChat + vTuber + ALL FILES"
   }
 }

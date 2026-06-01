@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "[3Dモデル] - Ronin - (Manuka●マヌカ専用)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "[3Dモデル] - Ronin - (Kikyo●桔梗専用)": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8784115": "[3Dモデル] - Ronin - (Manuka●マヌカ専用)",
+    "8784154": "[3Dモデル] - Ronin - (Moe●萌専用)",
+    "8784155": "[3Dモデル] - Ronin - (Kikyo●桔梗専用)",
+    "8784156": "[3Dモデル] - Ronin - All"
   }
 }

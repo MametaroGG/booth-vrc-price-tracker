@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "企業ライセンス(Corporate License)": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 5400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8381894": "個人ライセンス(Personal License)",
+    "8382921": "企業ライセンス(Corporate License)"
   }
 }

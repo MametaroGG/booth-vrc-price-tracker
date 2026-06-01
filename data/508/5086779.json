@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 840,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 840,
+        "is_sale": true
       }
     ],
     "For 愛莉 Airi [N028_2]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 840,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 840,
         "is_sale": true
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 840,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 840,
+        "is_sale": true
       }
     ],
     "For マヌカ Manuka [N029_1]": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 840,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 840,
         "is_sale": true
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1225,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1225,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "8561687": "For 萌 Moe [N028_1]",
+    "8561885": "For マヌカ Manuka [N029_1]",
+    "8561886": "For All(Moe,Manuka,Airi,Shinano) [N029_2]",
+    "10429775": "For 愛莉 Airi [N028_2]",
+    "10750167": "For しなの Shinano [N028_3]"
   }
 }

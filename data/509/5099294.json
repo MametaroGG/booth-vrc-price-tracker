@@ -1297,6 +1297,32 @@
         "price": 850,
         "is_sale": false
       }
+    ],
+    "フルパック/Full Pack 50% OFF": [
+      {
+        "date": "2026-06-01",
+        "price": 625,
+        "is_sale": true
+      }
+    ],
+    "マヌカ/Manuka 50% OFF": [
+      {
+        "date": "2026-06-01",
+        "price": 425,
+        "is_sale": true
+      }
+    ],
+    "ヴェール/Velle 50% OFF": [
+      {
+        "date": "2026-06-01",
+        "price": 425,
+        "is_sale": true
+      }
     ]
+  },
+  "variation_keys": {
+    "8584394": "マヌカ/Manuka 50% OFF",
+    "8584405": "ヴェール/Velle 50% OFF",
+    "9100484": "フルパック/Full Pack 50% OFF"
   }
 }

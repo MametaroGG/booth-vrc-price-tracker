@@ -392,6 +392,11 @@
         "date": "2026-05-30",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 6000,
+        "is_sale": false
       }
     ],
     "Kikyo用": [
@@ -817,6 +822,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3000,
         "is_sale": false
       }
@@ -1246,6 +1256,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Shinra用": [
@@ -1671,6 +1686,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3000,
         "is_sale": false
       }
@@ -2100,6 +2120,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "SBOシリーズ用": [
@@ -2525,6 +2550,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3000,
         "is_sale": false
       }
@@ -2954,6 +2984,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Amelia用": [
@@ -3379,6 +3414,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3000,
         "is_sale": false
       }
@@ -3808,6 +3848,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Kaya用": [
@@ -4233,6 +4278,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3000,
         "is_sale": false
       }
@@ -4662,6 +4712,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Wolferia用": [
@@ -5087,6 +5142,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3000,
         "is_sale": false
       }
@@ -5516,6 +5576,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "【 30%OFF SEAL！】フルセット": [
@@ -5555,5 +5620,20 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "9063784": "フルセット",
+    "9063944": "Kikyo用",
+    "9064532": "SELESTIA用",
+    "9064533": "Shinra用",
+    "9064534": "Zome用",
+    "9064535": "SBOシリーズ用",
+    "9064536": "Cynthia用",
+    "9064537": "Amelia用",
+    "9098705": "7sBody用（Renard、Choucas）",
+    "9098706": "Kaya用",
+    "9219610": "Lena用",
+    "9233674": "Wolferia用",
+    "9441576": "EMISTIA用"
   }
 }

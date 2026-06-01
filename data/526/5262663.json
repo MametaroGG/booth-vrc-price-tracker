@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 6000,
+        "is_sale": false
       }
     ],
     "Quest対応版のみ（注・変身Ver.の変身前の姿のQuest対応版です。全ての服のQuest対応版商品ではありません。）": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8873705": "PC版＋Quest対応版",
+    "8875005": "Quest対応版のみ（注・変身Ver.の変身前の姿のQuest対応版です。全ての服のQuest対応版商品ではありません。）"
   }
 }

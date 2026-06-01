@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "🎁Velle🎁 Only Eyes": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 300,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "🎁Velle🎁 Detail Full Pack (Body+Eyes+Tongue)": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 850,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8503733": "🎁Velle🎁 Only Tongue",
+    "8503827": "🎁Velle🎁 Only Eyes",
+    "8503828": "🎁Velle🎁 Detail Middle Pack (Body+Tongue)",
+    "8503829": "🎁Velle🎁 Detail Full Pack (Body+Eyes+Tongue)"
   }
 }

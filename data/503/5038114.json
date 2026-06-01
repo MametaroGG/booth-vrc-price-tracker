@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2480,
+        "is_sale": false
       }
     ],
     "スポーツウエア - Sports Wear": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1980,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8476320": "フルセット - Full Set",
+    "8476364": "スポーツウエア - Sports Wear",
+    "8476365": "体操着 - Gym Uniform"
   }
 }

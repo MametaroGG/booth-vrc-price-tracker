@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "森羅 サイバー・タトゥー / Shinra Cyber Tattoo [ アイスクリーム代 / Ice cream money ]": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8730099": "森羅 サイバー・タトゥー / Shinra Cyber Tattoo",
+    "8740620": "森羅 サイバー・タトゥー / Shinra Cyber Tattoo [ アイスクリーム代 / Ice cream money ]"
   }
 }

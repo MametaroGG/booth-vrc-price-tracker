@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Bodyguard Suit [Manuka]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 1400,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Bodyguard Suit [3set]": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8789501": "Bodyguard Suit [Lasyusha]",
+    "8789509": "Bodyguard Suit [Manuka]",
+    "8789510": "Bodyguard Suit [Selestia]",
+    "8789511": "Bodyguard Suit [3set]"
   }
 }

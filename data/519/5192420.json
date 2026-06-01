@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "【SootEYE】-KALNE-+【猫のおやつ代】": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 700,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8746924": "【SootEYE】-KALNE-",
+    "8746967": "【SootEYE】-KALNE-+【猫のおやつ代】",
+    "8746968": "donate only【SootEYE2】+【SootEYE】-KALNE-+【猫のおやつ代】"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "Arane.vrm": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8675817": "Arane.vroid",
+    "8675853": "Arane.vrm"
   }
 }

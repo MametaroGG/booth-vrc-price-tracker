@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "Blu Greenコーデセット(VRoid)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 3000,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Blu Greenのキャスケット(FBX)": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8439660": "2色コーデセット(VRoid)",
+    "8439869": "Blu Greenコーデセット(VRoid)",
+    "8439870": "Orangeコーデセット(VRoid)",
+    "8439871": "Blu Greenのキャスケット(FBX)"
   }
 }

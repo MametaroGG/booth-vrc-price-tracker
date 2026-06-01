@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "For Manuka": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": true
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "For Lasyusha": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
         "price": 1200,
         "is_sale": true
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 3600,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-01",
+        "price": 3600,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "8609215": "For Shinra",
+    "8609254": "For Manuka",
+    "8609255": "For Lasyusha",
+    "8609256": "For Dami",
+    "8609257": "For ALL"
   }
 }

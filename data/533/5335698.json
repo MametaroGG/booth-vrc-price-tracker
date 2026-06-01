@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Mono": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9005337": "サリア",
+    "10524507": "Mono"
   }
 }

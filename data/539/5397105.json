@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 502,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 502,
+        "is_sale": false
       }
     ],
     "16 Bit Only": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 573,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
         "price": 573,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 717,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-01",
+        "price": 717,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9108387": "8-Bit Only",
+    "9108489": "16 Bit Only",
+    "9108490": "8 + 16-bit Combo"
   }
 }
