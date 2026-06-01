@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "tsubakiUniform_Hair": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1500,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "tsubakiUniform_Shoe": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6199645": "tsubakiUniform_All",
+    "6199672": "tsubakiUniform_Hair",
+    "6199673": "tsubakiUniform_Wear",
+    "6199674": "tsubakiUniform_Shoe"
   }
 }

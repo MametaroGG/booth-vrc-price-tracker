@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Sport Swimsuit『競泳水着』 for Yugi&Miyo「ユギ」「ミヨ」": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Casual Wear for Yugi&Miyo「ユギ」「ミヨ」": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7335027": "Full Pack for Yugi&Miyo「ユギ」「ミヨ」",
+    "7335053": "Sport Swimsuit『競泳水着』 for Yugi&Miyo「ユギ」「ミヨ」",
+    "7335054": "Lace Swimsuit『レースの水着』Yugi&Miyo「ユギ」「ミヨ」",
+    "7335055": "Casual Wear for Yugi&Miyo「ユギ」「ミヨ」"
   }
 }

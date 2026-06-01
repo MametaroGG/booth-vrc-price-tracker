@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Bunny Texture Set": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Cat Texture Set": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8109501": "Base Texture Set",
+    "8109512": "Bunny Texture Set",
+    "8109513": "B00BA Texture Set",
+    "8109514": "Cat Texture Set"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Pancake set": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Strawberry lemonade": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5291989": "Cupcake",
+    "5292261": "Pancake set",
+    "5292262": "Scone set",
+    "5292263": "Strawberry lemonade",
+    "5292264": "all in one package 全部パック"
   }
 }

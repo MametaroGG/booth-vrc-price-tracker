@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "セレスティア - Selestia": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7029921": "桔梗 - Kikyo",
+    "7029981": "セレスティア/桔梗 - Sele/Kkyo",
+    "7029982": "セレスティア - Selestia"
   }
 }

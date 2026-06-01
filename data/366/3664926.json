@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "コーヒーを奢る（Fullsetと内容は同じ）": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6097716": "Fullset（全サイズ）",
+    "6097779": "PNGのみ（全サイズ）",
+    "6303860": "コーヒーを奢る（Fullsetと内容は同じ）"
   }
 }

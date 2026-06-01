@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Buy me a cup of coffee": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6620592": "Buy me a candy",
+    "8526700": "Buy me a cup of coffee"
   }
 }

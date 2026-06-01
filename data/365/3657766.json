@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Apartment Room + I get a coffee? ~": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6085831": "Apartment Room",
+    "6085921": "Apartment Room + I get a coffee? ~"
   }
 }

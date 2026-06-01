@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Imeris DailyWearA": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Koyuki DailyWearA": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Maya DailyWearA": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -2989,7 +3019,21 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5672490": "Eyo DailyWearA",
+    "5672504": "Imeris DailyWearA",
+    "5672505": "Kokoa DailyWearA",
+    "5672506": "Koyuki DailyWearA",
+    "5672507": "Leeme DailyWearA",
+    "5672508": "Maya DailyWearA",
+    "5672509": "Wolferia DailyWearA"
   }
 }

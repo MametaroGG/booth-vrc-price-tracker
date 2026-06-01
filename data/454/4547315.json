@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "Valentine dress Karin": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 850,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 850,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7615762": "Valentine dress Soraha",
+    "9265748": "Valentine dress Karin",
+    "9265750": "Valentine dress Mamehinata"
   }
 }

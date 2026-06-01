@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "set2 (Grey pajamas)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 200,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "3 full sets": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4858254": "set1 (Bear pajamas)",
+    "4858309": "set2 (Grey pajamas)",
+    "4858310": "set3 (Pink pajamas)",
+    "4858311": "3 full sets"
   }
 }

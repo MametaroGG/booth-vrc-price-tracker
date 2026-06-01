@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ALL+ ❤": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 555,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 555,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "MOON 月": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "MERCURY 水星": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -2989,6 +3019,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "VENUS 金星": [
@@ -3414,6 +3449,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -3843,6 +3883,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "EARTH 地球": [
@@ -4270,7 +4315,24 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6770518": "SUN 太陽",
+    "6770929": "MOON 月",
+    "6770930": "MARS 火星",
+    "6770931": "MERCURY 水星",
+    "6770932": "JUPITER 木星",
+    "6770933": "VENUS 金星",
+    "6770934": "SATURN 土星",
+    "6770935": "EARTH 地球",
+    "6770936": "ALL",
+    "6770937": "ALL+ ❤"
   }
 }

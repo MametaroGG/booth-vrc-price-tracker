@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "桔梗(Kikyo)用": [
@@ -854,6 +859,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "舞夜(Maya)用": [
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "竜胆(Rindo)用": [
@@ -1708,6 +1723,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Grus用 ( BlendShapes X )": [
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "カリン(Karin)用 ( BlendShapes X )": [
@@ -2562,6 +2587,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "セレスティア(Selestia)用": [
@@ -2989,7 +3019,21 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "6343784": "ALL",
+    "6352926": "桔梗(Kikyo)用",
+    "6352927": "舞夜(Maya)用",
+    "6352928": "Grus用 ( BlendShapes X )",
+    "6352933": "竜胆(Rindo)用",
+    "6640679": "カリン(Karin)用 ( BlendShapes X )",
+    "6777590": "セレスティア(Selestia)用"
   }
 }

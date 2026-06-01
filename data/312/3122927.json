@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "PNG": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5170527": "PNG",
+    "5301307": "PNG+PSD"
   }
 }

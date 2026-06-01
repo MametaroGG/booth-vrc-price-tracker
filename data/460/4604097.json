@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "メイク+肌テクスチャ〈Make up+Body Texture〉": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7713874": "瞳テクスチャ〈Eye texture〉",
+    "7713941": "メイク+肌テクスチャ〈Make up+Body Texture〉",
+    "7713942": "透明感メイク〈Fullset〉"
   }
 }

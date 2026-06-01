@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Only Make-Up Texture": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 200,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7747496": "Only Eyes Texture",
+    "7747844": "Only Make-Up Texture",
+    "7747845": "All (Eyes & Make-up Texture)"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "LSBody_OverSize(みみの)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1500,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Sue_OverSize(透羽)": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1500,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5137769": "Imeris_OverSize",
+    "5137822": "LSBody_OverSize(みみの)",
+    "5137823": "Sephira_OverSize",
+    "5137824": "Sue_OverSize(透羽)",
+    "5137825": "U_OverSize"
   }
 }

@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "エラ耳type1のみ": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4570982": "エラ耳type1＆2セット",
+    "4574784": "エラ耳type1のみ",
+    "4574785": "エラ耳type2のみ"
   }
 }

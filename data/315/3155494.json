@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Bunny Choux doll+pin set": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5228003": "Bunny choux full set",
+    "5228321": "Bunny Choux doll+pin set"
   }
 }

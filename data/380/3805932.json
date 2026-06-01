@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "桔梗用-Kikyo": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "萌用-Moe": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "ミルティナ用-Milltina": [
@@ -2562,7 +2587,20 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6338055": "桔梗用-Kikyo",
+    "9468310": "FullSet",
+    "9468311": "マヌカ用-MANUKA",
+    "9468312": "萌用-Moe",
+    "11071578": "しなの用-Shinano",
+    "11071579": "ミルティナ用-Milltina"
   }
 }

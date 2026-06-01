@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "PNGのみ（Natural）": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "PNGのみ（Point）": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6125269": "Fullset",
+    "6132682": "PNGのみ（Natural）",
+    "6132683": "PNGのみ（Oval）",
+    "6132684": "PNGのみ（Point）",
+    "6132685": "PNGのみ（Square）"
   }
 }

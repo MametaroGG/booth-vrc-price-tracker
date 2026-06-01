@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "with Gold lace": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5730738": "with black lace",
+    "5731896": "with Gold lace",
+    "6277447": "Customizable PSD file"
   }
 }

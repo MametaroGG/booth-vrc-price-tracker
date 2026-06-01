@@ -1033,6 +1033,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "PearlyNail Only": [
@@ -1158,6 +1163,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1287,7 +1297,17 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5527600": "PearlyNail + PearlyNail-Soft",
+    "5697981": "PearlyNail Only",
+    "5697982": "PearlyNail-Soft Only"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "RED": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 399,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 399,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "PINK": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 399,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 399,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "GREEN": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 399,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 399,
         "is_sale": false
       }
@@ -2989,7 +3019,21 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7968898": "BLUE",
+    "7968915": "RED",
+    "7968916": "WHITE",
+    "7968917": "PINK",
+    "7968918": "PURPLE",
+    "7968919": "GREEN",
+    "7968920": "ALL COLOURS"
   }
 }

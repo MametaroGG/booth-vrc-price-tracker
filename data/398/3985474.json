@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "谷間A / Body Texture A": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 250,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Donation / おやつ代（中身はセットと同じです）": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6649028": "谷間セット / Body Texture Set",
+    "6649086": "谷間A / Body Texture A",
+    "6649087": "谷間B / Body Texture B",
+    "6649088": "Donation / おやつ代（中身はセットと同じです）"
   }
 }

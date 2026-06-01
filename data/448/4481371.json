@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Dark": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 150,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Blonde": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 150,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7504853": "Original",
+    "7504855": "Dark",
+    "7504856": "Black",
+    "7504857": "Blonde",
+    "7504858": "Full Pack!"
   }
 }

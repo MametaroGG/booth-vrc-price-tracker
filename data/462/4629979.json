@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "竜胆 - Rindo": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "セレスティア - Selestia": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7759850": "フルセット - ALL version",
+    "7783570": "竜胆 - Rindo",
+    "7783571": "桔梗 - Kikyo",
+    "8006634": "セレスティア - Selestia",
+    "8386920": "ヨール/狐薄 - Yawl/Kohaku"
   }
 }

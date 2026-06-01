@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Izulちゃん用（旧バージョン）": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Refrainちゃん用": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6358362": "四人分全部！",
+    "6358435": "Izulちゃん用（旧バージョン）",
+    "6358436": "Heuvelちゃん用",
+    "6358437": "Refrainちゃん用",
+    "6358438": "Soleilちゃん用"
   }
 }

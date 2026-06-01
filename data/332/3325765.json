@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "支援してくれ！！(日本語版/無料版と内容は変わりません)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Please support me(English version/Contents are the same as the free version)": [
@@ -1708,7 +1723,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5519473": "支援してくれ！！(日本語版/無料版と内容は変わりません)",
+    "5523106": "Please support me(English version/Contents are the same as the free version)"
   }
 }

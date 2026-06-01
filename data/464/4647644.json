@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 1990,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1990,
+        "is_sale": false
       }
     ],
     "【For Moe】": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 990,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 990,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 990,
+        "is_sale": false
       }
     ],
     "【For Kikyo】": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 990,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 990,
         "is_sale": false
       }
@@ -2185,7 +2205,19 @@
         "date": "2026-05-30",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 990,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7792023": "【All-Set】",
+    "7856209": "【For Moe】",
+    "7856210": "【For Selestia】",
+    "7856211": "【For Kikyo】",
+    "7856212": "【For Karin】"
   }
 }

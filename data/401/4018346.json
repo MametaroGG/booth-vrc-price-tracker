@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Maya - 舞夜用": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 250,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "GRUS用": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6721745": "GRUS・Maya・桔梗 -Fullset-",
+    "6722238": "Maya - 舞夜用",
+    "6722239": "Kikyo - 桔梗用",
+    "6722240": "GRUS用"
   }
 }

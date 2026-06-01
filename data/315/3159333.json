@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "浴衣３Dモデル（模様別売）「Yukata -3D model only-」": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "模様「スズラン (Suzuran) -Dark-」(UTS)": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "模様「ほしぞら (Hoshizora) -Dark-」(UTS)": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -2989,6 +3019,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "模様「キキョウ (Kikyou) -Dark-」(UTS)": [
@@ -3414,6 +3449,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -3843,6 +3883,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "模様「ひがんばな (Higanbana) -Dark-」(UTS)": [
@@ -4270,7 +4315,24 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5235487": "フルセット「Full Set」（３Dモデル＋UTSの模様全種）",
+    "5235861": "浴衣３Dモデル（模様別売）「Yukata -3D model only-」",
+    "5235862": "模様「スズラン (Suzuran) -Light-」(UTS)",
+    "5235863": "模様「スズラン (Suzuran) -Dark-」(UTS)",
+    "5235864": "模様「ほしぞら (Hoshizora) -Light-」(UTS)",
+    "5235865": "模様「ほしぞら (Hoshizora) -Dark-」(UTS)",
+    "5235866": "模様「キキョウ (Kikyou) -Light-」(UTS)",
+    "5235867": "模様「キキョウ (Kikyou) -Dark-」(UTS)",
+    "5235868": "模様「ひがんばな (Higanbana) -Light-」(UTS)",
+    "5235869": "模様「ひがんばな (Higanbana) -Dark-」(UTS)"
   }
 }

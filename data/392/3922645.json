@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "舞夜_Summer Time Memory": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1300,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "桔梗_Summer Time Memory + ♡": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1500,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "フィア_Summer Time Memory + ♡": [
@@ -2562,7 +2587,20 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6533626": "桔梗_Summer Time Memory",
+    "6533641": "舞夜_Summer Time Memory",
+    "6533642": "フィア_Summer Time Memory",
+    "6533643": "桔梗_Summer Time Memory + ♡",
+    "6533644": "舞夜_Summer Time Memory + ♡",
+    "6533645": "フィア_Summer Time Memory + ♡"
   }
 }

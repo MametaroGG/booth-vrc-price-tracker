@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Body&Face": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5748204": "ALL",
+    "5748223": "Body&Face",
+    "5748224": "EYE"
   }
 }

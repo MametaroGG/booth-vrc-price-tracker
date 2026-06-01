@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Suzuka Miki [ Beat Saber ]": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3500,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 6500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 6500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7450230": "Suzuka Miki [ FBX, VRM & VRchat ]",
+    "7894710": "Suzuka Miki [ Beat Saber ]",
+    "7894711": "Suzuka Miki [ All set ]"
   }
 }

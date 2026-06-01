@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Kokoa Concept-C": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Leeme Concept-C": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Wolferia Concept-C": [
@@ -2562,7 +2587,20 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4779161": "Eyo Concept-C",
+    "4779215": "Kokoa Concept-C",
+    "4779216": "Koyuki Concept-C",
+    "4779217": "Leeme Concept-C",
+    "4779218": "Merino Concept-C",
+    "4779219": "Wolferia Concept-C"
   }
 }

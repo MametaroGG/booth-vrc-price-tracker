@@ -12,6 +12,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "カラバリ版": [
@@ -24,7 +29,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7460251": "通常版",
+    "7460496": "カラバリ版"
   }
 }

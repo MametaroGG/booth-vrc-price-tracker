@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "02.オレンジ-ORANGE-": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "04.シアン-CYAN-": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "06.グレー-GRAY-": [
@@ -2592,7 +2617,20 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6825866": "01.グリーン-GREEN-",
+    "6858891": "02.オレンジ-ORANGE-",
+    "6858892": "03.パープル-PURPLE-",
+    "6858893": "04.シアン-CYAN-",
+    "6858894": "05.マゼンタ-MAGENTA-",
+    "6858895": "06.グレー-GRAY-"
   }
 }

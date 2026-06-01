@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "[ English ]Dog bones and bowls": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7720480": "[ KO ]뼈다귀와 밥그릇",
+    "7722632": "[ English ]Dog bones and bowls",
+    "10821414": "sponsor Price"
   }
 }

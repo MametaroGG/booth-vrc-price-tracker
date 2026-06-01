@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "商用版(Commercial)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 6000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 6000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Inner": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Shoes": [
@@ -2562,7 +2587,20 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4945644": "通常版(Standard)",
+    "4945925": "商用版(Commercial)",
+    "4945926": "Tops",
+    "4945927": "Inner",
+    "4945928": "Bottoms",
+    "4945929": "Shoes"
   }
 }

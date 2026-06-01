@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1332,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1332,
+        "is_sale": false
       }
     ],
     "Swimsuit Only": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 666,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 666,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5804393": "EVERYTHING",
+    "5950760": "Swimsuit Only"
   }
 }

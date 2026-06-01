@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Stella Arpiem + Donate": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7704763": "Stella Arpiem",
+    "7704829": "Stella Arpiem + Donate"
   }
 }

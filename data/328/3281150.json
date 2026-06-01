@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Boo-tiful Set #2": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 600,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Spooky Scary Set #4": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5443419": "Meow-o-ween Set #1",
+    "5443431": "Boo-tiful Set #2",
+    "5443432": "Witching Hour Set #3",
+    "5443433": "Spooky Scary Set #4"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Minase 水瀬": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7634413": "Meiyun めいゆん",
+    "7634524": "Minase 水瀬",
+    "7634525": "Maya 舞夜"
   }
 }

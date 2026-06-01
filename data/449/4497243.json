@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Kikyo 桔梗": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Leefa リーファ": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7530970": "Selestia セレスティア",
+    "7531012": "Kikyo 桔梗",
+    "7531013": "Karin カリン",
+    "7531014": "Leefa リーファ"
   }
 }

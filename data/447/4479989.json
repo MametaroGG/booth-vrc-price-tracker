@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "For リーファ / 리파 전용 / For Leefa": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1400,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7502421": "For 桔梗 / 키쿄 전용 / For Kikyo",
+    "7502730": "For リーファ / 리파 전용 / For Leefa",
+    "7502731": "For INABA / 이나바 전용 / For INABA"
   }
 }

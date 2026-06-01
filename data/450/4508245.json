@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Ⓑ　VRChat_light * Mtoon": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Ⓓ　NEOKET * VRM": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7550363": "Ⓐ　VRChat * Mtoon",
+    "7587884": "Ⓑ　VRChat_light * Mtoon",
+    "7587885": "Ⓒ　cluster * VRM",
+    "7593606": "Ⓓ　NEOKET * VRM"
   }
 }

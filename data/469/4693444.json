@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "■CHERRY（サクランボ）": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "■WHITE（ハイネック）": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7869369": "■CHECK(チェック柄)",
+    "7869399": "■CHERRY（サクランボ）",
+    "7869400": "■DOT（ドット柄）",
+    "7869401": "■WHITE（ハイネック）",
+    "7883730": "■FULL（4着全て）"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "投げ銭用": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -1281,7 +1291,16 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5947784": "投げ銭用",
+    "5947786": "おさとうさんセット"
   }
 }

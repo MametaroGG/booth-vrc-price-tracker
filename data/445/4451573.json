@@ -1482,6 +1482,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "まるぼでぃ -MARUBODY-": [
@@ -1652,6 +1657,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -1826,6 +1836,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "あのん/むろむ -Anon/Muromu-": [
@@ -1996,6 +2011,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -2170,7 +2190,19 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7455299": "まるぼでぃ -MARUBODY-",
+    "7719426": "フルセット -Full set-",
+    "7719427": "ウルフェリア -Wolferia-",
+    "7719428": "あのん/むろむ -Anon/Muromu-",
+    "7889966": "ラミエル(ソルシエル) -Ramiel-"
   }
 }

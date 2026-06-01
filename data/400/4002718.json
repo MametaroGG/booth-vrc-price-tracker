@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Fantasy earring (1 earring)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 150,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Sword earring (1 earring)": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6681313": "Full set (3 earrings)",
+    "6693032": "Fantasy earring (1 earring)",
+    "6693033": "Ice spike earring (1 earring)",
+    "6693034": "Sword earring (1 earring)"
   }
 }

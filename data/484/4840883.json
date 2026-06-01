@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "BIBIAN - Kikyo桔梗": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8123020": "BIBIAN - Moe萌",
+    "8123136": "BIBIAN - Kikyo桔梗",
+    "8123137": "BIBIAN - Moe & Kikyo (set)"
   }
 }

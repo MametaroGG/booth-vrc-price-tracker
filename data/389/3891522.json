@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "ワールドのみ(World Only)": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6479433": "すべて同梱(Bar All -World&Prop-)",
+    "6479459": "ワールドのみ(World Only)"
   }
 }

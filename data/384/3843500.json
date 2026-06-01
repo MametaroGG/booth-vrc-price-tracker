@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "逆マイクロビキニ(MicroBikiniReverse)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "TechWear Set2": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Jinbei": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 600,
         "is_sale": false
       }
@@ -2989,6 +3019,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "テックコート(TechCoat)": [
@@ -3414,6 +3449,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -3843,6 +3883,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "寝間着(NightWear)": [
@@ -4268,6 +4313,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -4697,6 +4747,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Raincoat": [
@@ -5122,6 +5177,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -5551,6 +5611,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Pants2": [
@@ -5976,6 +6041,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -6405,6 +6475,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Pants3": [
@@ -6830,6 +6905,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 0,
         "is_sale": false
       }
@@ -7259,7 +7339,28 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6399281": "テックコート(TechCoat)",
+    "6399332": "下着パンツ(UnderPants)",
+    "6417043": "テックハット(TechHat)",
+    "6431763": "スク水(Sukumizu)",
+    "6470235": "寝間着(NightWear)",
+    "6665045": "Raincoat",
+    "6782033": "Dress",
+    "6782034": "Pants2",
+    "6787731": "Jinbei",
+    "6827714": "NightWear2",
+    "6974620": "TechWear Set1",
+    "6974621": "TechWear Set2",
+    "7029452": "普段着A(CasualWearA)",
+    "7029453": "逆マイクロビキニ(MicroBikiniReverse)"
   }
 }

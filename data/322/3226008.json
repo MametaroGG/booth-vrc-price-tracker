@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "ミキシング・コンソール Mixing Console": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "スピーカーB Speaker B": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 150,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "【無料Free】オフィスチェア Office Chair": [
@@ -2562,7 +2587,19 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5350868": "フルセット Full Set",
+    "5499839": "ミキシング・コンソール Mixing Console",
+    "5499840": "スピーカーA Speaker A",
+    "5499841": "スピーカーB Speaker B",
+    "5499842": "PCモニター PC Monitor"
   }
 }

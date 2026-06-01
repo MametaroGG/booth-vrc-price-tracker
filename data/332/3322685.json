@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "ONLY_Sue(Hakka)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1600,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5514345": "All",
+    "5514399": "ONLY_Sue(Hakka)",
+    "5514400": "ONLY_Grus"
   }
 }

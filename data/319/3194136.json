@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "(2)ウルフェリア用 -Wolferia": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "(4)リーメ&リーバ用 -Leeme&Reeva": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "(6)シュティーア用 -Stier": [
@@ -2562,7 +2587,20 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5297022": "(1)メリノ用 -Merino",
+    "5298992": "(2)ウルフェリア用 -Wolferia",
+    "5298993": "(3)イメリス用 -Imeris",
+    "5298994": "(4)リーメ&リーバ用 -Leeme&Reeva",
+    "5299002": "(5)薄荷用 -Hakka",
+    "6752676": "(6)シュティーア用 -Stier"
   }
 }

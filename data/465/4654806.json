@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "(SUPPORT VER) Blossom Eyes Full Set (Imeris + Selestia)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1520,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1520,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 760,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 760,
+        "is_sale": false
       }
     ],
     "Blossom Eyes - Selestia": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 760,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 760,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7805103": "Blossom Eyes Full Set (Imeris + Selestia)",
+    "7854653": "Blossom Eyes - Imeris",
+    "7854654": "Blossom Eyes - Selestia",
+    "9489355": "(SUPPORT VER) Blossom Eyes Full Set (Imeris + Selestia)"
   }
 }

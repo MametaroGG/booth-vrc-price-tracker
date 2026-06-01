@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Bunny Pudding Ear(commercial use for streaming)": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4753320": "Bunny Pudding Ear",
+    "7472686": "Bunny Pudding Ear(commercial use for streaming)"
   }
 }

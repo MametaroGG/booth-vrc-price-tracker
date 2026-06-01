@@ -362,6 +362,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Long apricot blossom+tip": [
@@ -724,7 +729,16 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6477689": "Long apricot blossom",
+    "7740341": "Long apricot blossom+tip"
   }
 }

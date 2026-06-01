@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Cross Necklace + Your Love": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6293669": "Cross Necklace",
+    "6293678": "Cross Necklace + Your Love"
   }
 }

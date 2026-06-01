@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "-ハーフマスク Halfmask-": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "支援": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7994193": "フルセット",
+    "7994402": "-ハーフマスク Halfmask-",
+    "7994403": "-眼帯 Eyepatch-",
+    "7994404": "支援"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "ミルティ": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "追加テクスチャ": [
@@ -1708,7 +1723,13 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
-  }
+  },
+  "variation_keys": {}
 }

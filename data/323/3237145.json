@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "ご支援版/Support version": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 220,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 220,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5370004": "通常版/normal version",
+    "5370146": "ご支援版/Support version"
   }
 }

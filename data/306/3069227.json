@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Hadaki-kun Unity Packaged": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Hadaki kun Quest optimized": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5077526": "Hadaki-kun FBX",
+    "5077696": "Hadaki-kun Unity Packaged",
+    "5086113": "Hadaki kun Dynamic bones",
+    "5086114": "Hadaki kun Quest optimized"
   }
 }

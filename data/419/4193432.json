@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "GEM EYE combo- eye+makeup 目+顔メイク+♥": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 555,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 555,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "GEM EYE- makeup顔メイク": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7018223": "GEM EYE combo- eye+makeup 目+顔メイク",
+    "7018224": "GEM EYE combo- eye+makeup 目+顔メイク+♥",
+    "7018225": "GEM EYE- eye目",
+    "7018226": "GEM EYE- makeup顔メイク"
   }
 }

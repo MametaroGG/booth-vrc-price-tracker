@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "アッシュ(Ash)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "舞夜(Maya)": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "狐雪(Koyuki)": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -2989,7 +3019,21 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5670332": "ALL",
+    "5670337": "アッシュ(Ash)",
+    "5670338": "舞夜(Maya)",
+    "5670339": "Grus",
+    "5670340": "狐雪(Koyuki)",
+    "5670341": "まりえる(Mariel)",
+    "5721413": "竜胆(Rindo)"
   }
 }

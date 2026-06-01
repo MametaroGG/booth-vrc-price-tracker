@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "\"SUZUKA\" + \"BodySuit\" セット（別売のBodySuitと同じ内容です）": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4594281": "\"SUZUKA\" のみ",
+    "4594286": "\"SUZUKA\" + \"BodySuit\" セット（別売のBodySuitと同じ内容です）"
   }
 }

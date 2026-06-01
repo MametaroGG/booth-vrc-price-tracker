@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "[MARU's VFX] Diva's Trail - Sparking Water": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 200,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "[MARU's VFX] Diva's Trail - Stellar Comet": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6724304": "[MARU's VFX] Diva's Trail - Full Package",
+    "6729101": "[MARU's VFX] Diva's Trail - Sparking Water",
+    "6729102": "[MARU's VFX] Diva's Trail - Dream Ignis",
+    "6729103": "[MARU's VFX] Diva's Trail - Stellar Comet"
   }
 }

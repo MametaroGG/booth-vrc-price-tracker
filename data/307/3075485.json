@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1980,
+        "is_sale": false
       }
     ],
     "猫ランジェリー - Neko Lingerie": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1380,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1380,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5088929": "フルセット - Full Set",
+    "5088988": "スクール水着 - School Swimsuit",
+    "5088989": "猫ランジェリー - Neko Lingerie"
   }
 }

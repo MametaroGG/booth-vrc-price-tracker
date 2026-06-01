@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Lace Swimsuit『レースの水着』 for Rindo": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Ring Swimsuit『リング付き水着』 for Rindo": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5790409": "Full Pack for Rindo",
+    "5790418": "Lace Swimsuit『レースの水着』 for Rindo",
+    "5790419": "Sport Swimsuit『競泳水着』 for Rindo",
+    "5790420": "Ring Swimsuit『リング付き水着』 for Rindo"
   }
 }

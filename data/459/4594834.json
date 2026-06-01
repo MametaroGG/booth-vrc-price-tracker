@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Accessory Set ( NONCOMMERCIAL ) (アクセサリーセット)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 900,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "School Outfit Set ( 制服 ) 「くるみ KURUMI」 NONCOMMERCIAL": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7697065": "「SALE」FULL SET ( 全部 ) NONCOMMERCIAL",
+    "7697066": "Accessory Set ( NONCOMMERCIAL ) (アクセサリーセット)",
+    "7697067": "School Outfit Set ( 制服 ) 「まみ MAMI」 NONCOMMERCIAL",
+    "7697068": "School Outfit Set ( 制服 ) 「くるみ KURUMI」 NONCOMMERCIAL"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "Quest版のみ": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3000,
         "is_sale": false
       }
@@ -1281,7 +1291,16 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6299349": "フルパック",
+    "8711377": "Quest版のみ"
   }
 }

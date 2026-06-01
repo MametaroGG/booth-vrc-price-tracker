@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Gold【通常版／standard version】": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Gold【「商用版」／commercial version 】": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3000,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5017172": "FullSet（Gold&Black）【通常版／standard version】",
+    "6823144": "Gold【「商用版」／commercial version 】",
+    "7415495": "Gold【通常版／standard version】",
+    "7415496": "Black【通常版／standard version】",
+    "7415497": "Black【「商用版」／commercial version 】"
   }
 }

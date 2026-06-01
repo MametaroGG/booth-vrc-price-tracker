@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Eyelash_睫毛": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "All Set+おまけBody texture": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6899171": "Eye_瞳",
+    "7675511": "Eyelash_睫毛",
+    "7675512": "Face_Makeup_メイク",
+    "7675513": "All Set+おまけBody texture"
   }
 }

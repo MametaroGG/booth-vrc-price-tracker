@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Pose animation Idle only": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 250,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7267575": "Pose animation sit only",
+    "7267636": "Pose animation Idle only",
+    "7267637": "Pose animation Fullset"
   }
 }

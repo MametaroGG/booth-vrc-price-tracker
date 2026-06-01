@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "森羅 Shinra": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1700,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8028066": "Full package",
+    "8028172": "森羅 Shinra",
+    "8028173": "Moe 萌"
   }
 }

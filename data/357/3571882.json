@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "【樹木１種】ConiferA": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "【樹木１種】ConiferC": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5933949": "【針葉樹フィールドセット】Complete",
+    "5937935": "【樹木１種】ConiferA",
+    "5937938": "【樹木１種】ConiferB",
+    "5937939": "【樹木１種】ConiferC",
+    "5937940": "【低木４種】ConiferD"
   }
 }

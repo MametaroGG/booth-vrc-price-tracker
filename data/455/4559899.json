@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Rindo Tattoos「竜胆」": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Yol Tattoos 龍のヨルちゃん": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7636832": "All Tattoos  全て",
+    "7636844": "Rindo Tattoos「竜胆」",
+    "7636845": "Selestia Tattoos「セレスティア」",
+    "7636846": "Yol Tattoos 龍のヨルちゃん",
+    "7636847": "Maya Tattoos「舞夜」"
   }
 }

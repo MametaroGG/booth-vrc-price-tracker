@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "お小遣い（内容は同じ）": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5797492": "Tanpopo12月号",
+    "5797561": "お小遣い（内容は同じ）"
   }
 }

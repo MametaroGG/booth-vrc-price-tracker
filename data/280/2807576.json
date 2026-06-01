@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 3480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3480,
+        "is_sale": false
       }
     ],
     "バニースーツ - Bunny Suit": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 980,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1480,
+        "is_sale": false
       }
     ],
     "例のセーター - Open Back Sweater": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1280,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1280,
         "is_sale": false
       }
@@ -2110,7 +2130,19 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4623520": "フルセット - Full Set",
+    "4623607": "バニースーツ - Bunny Suit",
+    "4623608": "ビキニオーバーオール - Bikini Overalls",
+    "4623609": "例のセーター - Open Back Sweater",
+    "4623610": "スクール水着 - School Swimsuit"
   }
 }

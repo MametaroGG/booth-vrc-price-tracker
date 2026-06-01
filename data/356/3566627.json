@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1980,
+        "is_sale": false
       }
     ],
     "ストリートウェア - Street Wear": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1480,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5924845": "フルセット - Full Set",
+    "5924901": "ストリートウェア - Street Wear",
+    "5924902": "レオタードセーター - Leotard Sweater"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 16000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 16000,
+        "is_sale": false
       }
     ],
     "【ライトセット】Light Set": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 6000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 6000,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 11000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 11000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7420891": "【フルセット】Full Set",
+    "7420913": "【ライトセット】Light Set",
+    "7420914": "【ミドルセット】Middle Set"
   }
 }

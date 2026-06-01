@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "コーヒーを奢る（中身はFullsetと同じ）": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6057587": "FullSet（全サイズ＆チップ同梱）",
+    "6057645": "テクスチャのみ（PNG）",
+    "6303880": "コーヒーを奢る（中身はFullsetと同じ）"
   }
 }

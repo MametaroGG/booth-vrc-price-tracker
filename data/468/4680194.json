@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": true
       }
     ],
     "Classic Color": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": true
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "7847120": "ALL Color",
+    "7847466": "Classic Color",
+    "7847467": "Fairy Color"
   }
 }

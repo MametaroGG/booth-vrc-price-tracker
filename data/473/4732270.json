@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ALL+♥": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 555,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 555,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Aurora オーロラ": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "BlueSky 青い空": [
@@ -2590,6 +2615,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -3024,6 +3054,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Rainbow 虹": [
@@ -3454,6 +3489,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -3888,6 +3928,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "SunsetGlow 夕焼け": [
@@ -4320,7 +4365,24 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7935187": "ALL",
+    "7935188": "ALL+♥",
+    "7935189": "SolarEclipse 日食",
+    "7935190": "Aurora オーロラ",
+    "7935191": "Lightning 稲妻",
+    "7935192": "BlueSky 青い空",
+    "7935193": "Milkyway 銀河",
+    "7935194": "Rainbow 虹",
+    "7935195": "Rain 雨",
+    "7935196": "SunsetGlow 夕焼け"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "【DLC】Headdress": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "もちふぃった～変換プロファイル": [
@@ -1728,6 +1743,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "DivineLight": [
@@ -1750,7 +1770,18 @@
         "date": "2026-05-30",
         "price": 10000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 10000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7994395": "フレア -Flare-",
+    "10198352": "【DLC】Headdress",
+    "10198353": "【DLC】Kemomimi",
+    "14016747": "DivineLight"
   }
 }

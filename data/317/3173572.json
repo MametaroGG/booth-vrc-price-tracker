@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 9980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 9980,
+        "is_sale": false
       }
     ],
     "多目的離れ 別棟拡張 (Extension)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3980,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 12980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 12980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5261521": "Michigari Sea House",
+    "6069483": "多目的離れ 別棟拡張 (Extension)",
+    "6069484": "【セット】Michigari Sea House 本体 + 多目的離れ 別棟拡張 (Extension)"
   }
 }

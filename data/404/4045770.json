@@ -317,6 +317,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "OUTFIT SET + BODY": [
@@ -634,7 +639,16 @@
         "date": "2026-05-30",
         "price": 2900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6766532": "OUTFIT SET ONLY",
+    "6766616": "OUTFIT SET + BODY"
   }
 }

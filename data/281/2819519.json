@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Star": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Flower": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -2110,6 +2130,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "（手動導入）導入説明書": [
@@ -2530,6 +2555,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 0,
         "is_sale": false
       }
@@ -2954,6 +2984,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "(Install with Modular Avatar) モジュラーアバターで導入": [
@@ -3376,7 +3411,19 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4643588": "フルセット",
+    "4644285": "Star",
+    "4644286": "Shard",
+    "4644287": "Flower",
+    "4644288": "Heart"
   }
 }

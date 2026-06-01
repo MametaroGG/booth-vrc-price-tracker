@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Long_version(スカートタイプ)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4721570": "Short_version(ズボンタイプ)",
+    "4745606": "Long_version(スカートタイプ)",
+    "4745607": "FullSet(ズボン、スカートタイプ)"
   }
 }

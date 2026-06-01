@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1980,
+        "is_sale": false
       }
     ],
     "ビキニジャケット - Bikini Jacket": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1380,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1380,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1380,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1380,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5140250": "フルセット - Full Set",
+    "5141582": "ビキニジャケット - Bikini Jacket",
+    "5141583": "ストリートウェア - Street Wear"
   }
 }

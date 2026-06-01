@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "霧青（ウチン/Wuchin）♂": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3200,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5018309": "墨藍（モラン/Molan）♀",
+    "5018536": "霧青（ウチン/Wuchin）♂",
+    "5018537": "墨藍（モラン/Molan）& 霧青（ウチン/Wuchin）SET"
   }
 }

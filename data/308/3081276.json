@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2780,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2780,
+        "is_sale": false
       }
     ],
     "ビキニジャケット - Bikini Jacket": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1380,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1380,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1180,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1180,
+        "is_sale": false
       }
     ],
     "ビキニオーバーオール - Bikini Overalls": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1380,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1380,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5098444": "フルセット - Full Set",
+    "5098550": "ビキニジャケット - Bikini Jacket",
+    "5098551": "例のセーター - Open Back Sweater",
+    "5098552": "ビキニオーバーオール - Bikini Overalls"
   }
 }

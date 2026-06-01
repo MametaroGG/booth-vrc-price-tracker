@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "REAPER ＆Dragon": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6075384": "REAPER",
+    "6076096": "REAPER ＆Dragon"
   }
 }

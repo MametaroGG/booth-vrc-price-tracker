@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3300,
+        "is_sale": true
       }
     ],
     "DLC - Ade": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 880,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 880,
         "is_sale": true
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 550,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 550,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "6300384": "Coffee Set",
+    "6534009": "DLC - Ade",
+    "6963703": "Skin - WhiteWood"
   }
 }

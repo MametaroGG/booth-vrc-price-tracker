@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "ワンピース2(dress2)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "パンツ(underpants)": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 0,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "すく水(sukumizu)": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -2989,6 +3019,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "寝間着(nightwear)": [
@@ -3414,6 +3449,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 650,
         "is_sale": false
       }
@@ -3843,7 +3883,22 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6038876": "ワンピース(dress)",
+    "6054768": "振袖セット(furisode)",
+    "6059199": "すく水(sukumizu)",
+    "6068076": "ブーツ(boots)",
+    "6076776": "寝間着(nightwear)",
+    "6091705": "夜(night)",
+    "6351462": "ワンピース2(dress2)",
+    "6674795": "水着(Swimwear)"
   }
 }

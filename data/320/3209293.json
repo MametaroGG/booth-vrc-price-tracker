@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "ゲウレク -Gevrek-専用": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1300,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5322573": "ハウラ / JAULA専用",
+    "5322780": "ゲウレク -Gevrek-専用",
+    "5325203": "碼希-まき-専用"
   }
 }

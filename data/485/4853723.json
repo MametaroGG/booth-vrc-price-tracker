@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Only Eye texture": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Only Make up": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8145021": "FULL PACK",
+    "8153248": "Only Eye texture",
+    "8153249": "Only Skin texture",
+    "8153250": "Only Make up",
+    "8153251": "FULL PACK [ Buy a bubble tea for me ]"
   }
 }

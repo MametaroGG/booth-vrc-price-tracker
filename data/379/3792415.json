@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "こだま TypeA": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 200,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "こだま TypeC": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 200,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6314165": "こだまセット(Full Set)",
+    "6322907": "こだま TypeA",
+    "6322908": "こだま TypeB",
+    "6322909": "こだま TypeC",
+    "6322910": "こだま TypeD"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Casual Wear for Maya「舞夜」": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5663965": "Casual Wear for Maya & Mariel",
+    "5664008": "Casual Wear for Maya「舞夜」",
+    "5664009": "Casual Wear for Mariel「まりえる」"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "[MARU's VFX] Neko's Footprint Twinkle Dust": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "[MARU's VFX] Neko's Footprint Tropical Leaf": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "[MARU's VFX] Neko's Footprint Kinetic Gear": [
@@ -2562,7 +2587,20 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5427429": "[MARU's VFX] Neko's Footprint Twinkle Dust",
+    "5427548": "[MARU's VFX] Neko's Footprint Moonshine Star",
+    "5427549": "[MARU's VFX] Neko's Footprint Tropical Leaf",
+    "5427550": "[MARU's VFX] Neko's Footprint Macaroon Wave",
+    "5427551": "[MARU's VFX] Neko's Footprint Kinetic Gear",
+    "5427552": "[MARU's VFX] Neko's Footprint Full Package"
   }
 }

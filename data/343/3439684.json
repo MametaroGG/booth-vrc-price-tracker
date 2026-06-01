@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Mariel_Only": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1500,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5713682": "Maya_Only",
+    "5713690": "Mariel_Only",
+    "5713691": "All_in_One"
   }
 }

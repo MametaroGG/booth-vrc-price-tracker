@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "換気ダクトセット Vent Duct Set": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "トラスセット Truss Set (+Stage)": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5833410": "フールパック",
+    "5834581": "換気ダクトセット Vent Duct Set",
+    "5834582": "鉄骨構造セット Steel Structure Set",
+    "5834583": "トラスセット Truss Set (+Stage)"
   }
 }

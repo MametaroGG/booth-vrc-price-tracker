@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "👀Nuance Eye Only": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 350,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7951563": "👀Nuance Eye Only",
+    "7951623": "💄Nuance Makeup Only",
+    "7951624": "💄+👀Nuance Makeup+EyeTexture Pack"
   }
 }

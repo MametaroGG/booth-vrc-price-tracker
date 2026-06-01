@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1650,
+        "is_sale": false
       }
     ],
     "RD_school uniform(学園服_上着のみ)": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6501866": "RD_school uniform(学園服+)",
+    "6509606": "RD_school uniform(学園服_上着のみ)"
   }
 }

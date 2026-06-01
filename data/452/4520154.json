@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "[Cub's Eye - NEKO] 🐱": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "[Cub's Eye - ALL] 🐶🐱🐰": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 555,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 555,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7570559": "[Cub's Eye - INU] 🐶",
+    "7570560": "[Cub's Eye - NEKO] 🐱",
+    "7570561": "[Cub's Eye - USAGI] 🐰",
+    "7570562": "[Cub's Eye - ALL] 🐶🐱🐰",
+    "7570563": "[Cub's Eye - ALL+♥] 🐶🐱🐰"
   }
 }

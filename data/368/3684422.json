@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "スー/Sue": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 5000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 5000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 6500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 6500,
+        "is_sale": false
       }
     ],
     "Quest版ヴェール/ForQuest-Veil": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6129994": "ヴェール/Veil",
+    "6130229": "スー/Sue",
+    "6130230": "ヴェール&スー セット/Veil&Sue set",
+    "6138447": "Quest版ヴェール/ForQuest-Veil"
   }
 }

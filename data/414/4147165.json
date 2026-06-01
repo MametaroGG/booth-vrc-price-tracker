@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Texture 2": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 150,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Full Set": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 375,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 375,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6937787": "Texture 1",
+    "6937799": "Texture 2",
+    "6937800": "Texture 3",
+    "6937801": "Full Set"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Body_A05,A0Xbody対応版": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3500,
         "is_sale": false
       }
@@ -1283,7 +1293,17 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2584028": "フルバージョン",
+    "9519877": "Body_A05,A0Xbody対応版",
+    "9519878": "ヘルベチカ(A06Body),A0XBody,A1XBody対応版"
   }
 }

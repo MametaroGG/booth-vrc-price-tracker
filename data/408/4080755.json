@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "水瀬 Minase": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Fullset + ♥": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6827166": "杏里 Anri",
+    "6827180": "水瀬 Minase",
+    "6827181": "Fullset (Anri + Minase)",
+    "6827182": "Fullset + ♥"
   }
 }

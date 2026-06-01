@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Bikini_Selestia": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Bikini_Maya": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7484825": "Bikini_Full Package",
+    "7484881": "Bikini_Selestia",
+    "7484882": "Bikini_Kikyo",
+    "7484883": "Bikini_Maya"
   }
 }

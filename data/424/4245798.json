@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "paid version 有料版(テクスチャ全て&UnityPackage有)": [
@@ -864,7 +869,15 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7109911": "paid version 有料版(テクスチャ全て&UnityPackage有)"
   }
 }

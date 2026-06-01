@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "Body+Outfit": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Outfit": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7768942": "Complete (Body+Outfit+PSD)",
+    "7773589": "Body+Outfit",
+    "7780119": "Body",
+    "7780120": "Outfit",
+    "8753456": "Hairstyle"
   }
 }

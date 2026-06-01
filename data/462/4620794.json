@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "🧥Trench Coat🧥 (for Grus) + ビール代🍺": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "🧥Trench Coat🧥 (for Haolan)  + ビール代🍺": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7743693": "🧥Trench Coat🧥 (for Grus)",
+    "7743743": "🧥Trench Coat🧥 (for Grus) + ビール代🍺",
+    "7743744": "🧥Trench Coat🧥 (for Haolan)",
+    "7743745": "🧥Trench Coat🧥 (for Haolan)  + ビール代🍺"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 380,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 380,
+        "is_sale": false
       }
     ],
     "✙SUNGLASSESS ONLY": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 420,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 420,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8130253": "✙MAKEUP+ EYE TEXTURE ONLY",
+    "8130269": "✙SUNGLASSESS ONLY",
+    "8130270": "✙MAKEUP+ EYE TEXTURE +SUNGLASSESS SET"
   }
 }

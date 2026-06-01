@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "MEDIUM": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 750,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "ALL FOR DISCOUNT": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4706619": "SHORT",
+    "4706636": "MEDIUM",
+    "4706637": "TALL",
+    "4706638": "ALL FOR DISCOUNT"
   }
 }

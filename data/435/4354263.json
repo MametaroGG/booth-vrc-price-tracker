@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "✖ Buckle punk (Rusk) ✖": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1600,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "✖ Buckle punk (Rusk) ✖  + ビール代🍺": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7296361": "✖ Buckle punk (Karin) ✖",
+    "7296579": "✖ Buckle punk (Rusk) ✖",
+    "7296580": "✖ Buckle punk (Karin) ✖  + ビール代🍺",
+    "7296581": "✖ Buckle punk (Rusk) ✖  + ビール代🍺"
   }
 }

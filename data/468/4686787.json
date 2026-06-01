@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "アイスクリームサポート(同じfile)": [
@@ -874,7 +879,16 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7858194": "萌 moe cute make up set",
+    "7858199": "アイスクリームサポート(同じfile)"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     ".vrchat": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "All File types": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7751822": ".vrm",
+    "7751963": ".vrchat",
+    "7751964": ".vroid",
+    "7751965": "All File types",
+    "7752054": "Commercial License"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "README(English)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 0,
         "is_sale": false
       }
@@ -1281,7 +1291,16 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6129023": "通常版",
+    "6129037": "支援版"
   }
 }

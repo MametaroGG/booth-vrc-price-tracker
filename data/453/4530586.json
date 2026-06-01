@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "ヴェガ / Wega": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "トリニティ・パック / Trinity Pack": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 7000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7587817": "デネブ / Deneb",
+    "7587839": "アルタイル / Altair",
+    "7587840": "ヴェガ / Wega",
+    "7670002": "トリニティ・パック / Trinity Pack"
   }
 }

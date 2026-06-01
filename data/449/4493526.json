@@ -412,6 +412,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "作者を支援": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -1276,6 +1286,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "【半額セール中】通常版": [
@@ -1300,5 +1315,10 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "7525184": "通常版",
+    "7525516": "作者を支援",
+    "10540417": "ShadowCast Addon"
   }
 }

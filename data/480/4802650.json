@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Taunting Dance + Crying Small": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 450,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Taunting Dance + Crying Large": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 450,
         "is_sale": false
       }
@@ -2160,7 +2180,18 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8054300": "Taunting Dance + Crying Small",
+    "8054301": "Taunting Dance + Crying Medium",
+    "8054302": "Taunting Dance + Crying Large",
+    "8054303": "Taunting Dance + Crying All Sizes"
   }
 }

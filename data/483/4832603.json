@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 420,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 420,
+        "is_sale": false
       }
     ],
     "✙STAR~withbox✙": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 420,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 420,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8108705": "✙MOON~withbox✙",
+    "8108822": "✙STAR~withbox✙",
+    "8108823": "✙MOON&STAR~withbox✙"
   }
 }

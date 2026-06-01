@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Selestia": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1300,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8048681": "Selestia",
+    "8109112": "Full Pack",
+    "8109113": "Kikyo"
   }
 }

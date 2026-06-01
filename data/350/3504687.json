@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "「狐雪 (Koyuki)」": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": true
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "5822885": "「舞夜 (Maya)」",
+    "5823021": "「狐雪 (Koyuki)」",
+    "5823022": "「ここあ (Kokoa)」"
   }
 }

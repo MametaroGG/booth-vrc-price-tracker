@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "IonicEst 投げ銭版（Donation version）": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7870051": "IonicEst 基本版（Basic version）",
+    "7870061": "IonicEst 投げ銭版（Donation version）"
   }
 }

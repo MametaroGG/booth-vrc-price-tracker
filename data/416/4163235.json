@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "桔梗 kikyo": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1400,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "舞夜 Maya": [
@@ -1728,6 +1743,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "ももね Momone 100円OFF": [
@@ -1745,7 +1765,19 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6965198": "カリン、ラスク、ミルク、ミント Karin,Rusk,Milk,Mint",
+    "6988721": "桔梗 kikyo",
+    "6990538": "ルーナリット （リーファ）Lunalitt (Leefa)",
+    "6994254": "舞夜 Maya",
+    "14033430": "ももね Momone 100円OFF"
   }
 }

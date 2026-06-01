@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "INABA、KOSAME、Shiina用": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8002109": "森羅用",
+    "8002280": "INABA、KOSAME、Shiina用"
   }
 }

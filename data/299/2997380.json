@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "茶碗蒸し　fbx": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 0,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "こくろねにおこづかいをあげる　fbx（内容は変わりません）": [
@@ -1708,7 +1723,16 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4952258": "こくろねにおこづかいをあげる　unitypackage（内容は変わりません）",
+    "4952259": "こくろねにおこづかいをあげる　fbx（内容は変わりません）"
   }
 }

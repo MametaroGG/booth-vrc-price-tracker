@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Summer street outfit (あなたの愛)": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6459167": "Summer street outfit",
+    "6459190": "Summer street outfit (あなたの愛)"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1650,
+        "is_sale": false
       }
     ],
     "Nurse Dress": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 825,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 825,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 525,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 525,
+        "is_sale": false
       }
     ],
     "Nurse Fishnet Lace Tights": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 200,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5495122": "Full Nurse Outfit",
+    "5728486": "Nurse Dress",
+    "5728487": "Nurse Shoes",
+    "5728488": "Nurse Fishnet Lace Tights",
+    "5728489": "Nurse Headpiece"
   }
 }

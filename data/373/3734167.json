@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "maya 舞夜": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "kikyo 桔梗": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "grus": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -2989,6 +3019,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "selestia セレスティア": [
@@ -3416,7 +3451,22 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6213766": "All one",
+    "6213822": "maya 舞夜",
+    "6213823": "rindo 竜胆",
+    "6213824": "kikyo 桔梗",
+    "6213825": "wolferia ウルフェリア",
+    "6213826": "grus",
+    "6233362": "leefa リーファ",
+    "7409821": "selestia セレスティア"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "J.H.ARMY 入隊(幹部)": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7371236": "J.H.ARMY 入隊(一般)",
+    "7371880": "J.H.ARMY 入隊(幹部)"
   }
 }

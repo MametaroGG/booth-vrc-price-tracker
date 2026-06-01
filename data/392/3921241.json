@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "薄荷 / Hakka": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "狐雪 / Koyuki": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "ルシナ / Rushina": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -2989,7 +3019,21 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6531168": "フルセット / Full set",
+    "6531427": "薄荷 / Hakka",
+    "6531428": "桔梗 / Kikyo",
+    "6531429": "狐雪 / Koyuki",
+    "6531430": "舞夜 / Maya",
+    "6531431": "ルシナ / Rushina",
+    "6531432": "幽狐 / Yuuko"
   }
 }

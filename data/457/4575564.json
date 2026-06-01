@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "セレスティア Selestia": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 900,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "萌 Moe": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 900,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7663515": "桔梗 Kikyo",
+    "7663802": "セレスティア Selestia",
+    "7683779": "竜胆 Rindo",
+    "7882075": "萌 Moe",
+    "8767119": "マヌカ Manuka"
   }
 }

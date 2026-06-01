@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "森羅": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8027064": "Grus",
+    "8027087": "森羅"
   }
 }

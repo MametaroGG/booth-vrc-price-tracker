@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "anri suit": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "minase suit": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5841666": "full set",
+    "5841713": "anri suit",
+    "10273016": "komano suit",
+    "10273017": "minase suit"
   }
 }

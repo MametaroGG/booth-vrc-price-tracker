@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 399,
+        "is_sale": false
       }
     ],
     "With 3D model": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 540,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 540,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6498897": "Avatar only",
+    "6499165": "With 3D model",
+    "6499166": "2本セット(\"With 3D model\"版と内容は変わりません。全く同じファイルが二つずつ入っているだけです。※ネタバージョンです！作者がウーバーイーツ頼めます。)"
   }
 }

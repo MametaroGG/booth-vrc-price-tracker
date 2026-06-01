@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "\"A\"set | 天使の環とクジラの尾 | Halo & Whale'sTail | 4 items": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "\"C\"set | みずしぶきと水面 | AquaFoot & Surface of Sea | 4 items": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 200,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7554377": "【FullSet】仮想に舞う星海の鯨 | Virtual Aqua Dance |18 items",
+    "7643400": "\"A\"set | 天使の環とクジラの尾 | Halo & Whale'sTail | 4 items",
+    "7643401": "\"B\"set | ダンス向けトレイル2種類 | AquaHand trail & YoyoHand trail | 4 items",
+    "7643402": "\"C\"set | みずしぶきと水面 | AquaFoot & Surface of Sea | 4 items",
+    "7643403": "\"D\"set | 星の雨と星の海 | Rains & in the Sea | 4 items"
   }
 }

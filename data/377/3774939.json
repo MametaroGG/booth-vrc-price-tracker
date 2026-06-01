@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "Boost ver. (内容は同一・組み込み可)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": true
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "6283729": "通常版　Standard Version",
+    "6284123": "Boost ver. (内容は同一・組み込み可)",
+    "10236925": "Corporate Ver.(企業向け)"
   }
 }

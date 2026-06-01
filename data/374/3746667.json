@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Rabbit  (あなたの愛)": [
@@ -856,7 +861,16 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6236042": "Rabbit",
+    "6236296": "Rabbit (あなたの愛)"
   }
 }

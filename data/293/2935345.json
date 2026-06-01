@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 299,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 299,
+        "is_sale": false
       }
     ],
     "Shaved Sideburns Texture 剃ったもみあげテクスチャ": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 199,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 199,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 199,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 199,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4840184": "VRoid Undercut Hair Preset (.vroid file) VRoidアンダーカットヘアプリセット",
+    "4840408": "Shaved Sideburns Texture 剃ったもみあげテクスチャ",
+    "4840409": "Shaved Head Texture 坊主頭の質感"
   }
 }

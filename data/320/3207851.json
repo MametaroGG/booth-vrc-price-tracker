@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "Only_Maki": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1500,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5319680": "All",
+    "5319690": "Only_Maki",
+    "5319691": "Only_Anri"
   }
 }

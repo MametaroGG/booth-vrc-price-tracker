@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "[桔梗] kikyo nail textuer": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 150,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "[セレスティア] serestia nail textuer": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 150,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6756073": "[リーファ] leefa nail textuer",
+    "6756158": "[桔梗] kikyo nail textuer",
+    "6756159": "[舞夜] maya nail textuer",
+    "6756160": "[リーファ/桔梗/舞夜/セレスティア] nail textuer set",
+    "6830160": "[セレスティア] serestia nail textuer"
   }
 }

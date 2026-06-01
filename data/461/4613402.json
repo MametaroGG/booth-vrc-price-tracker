@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2480,
+        "is_sale": false
       }
     ],
     "逆バニー - Reverse Bunny": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1780,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1780,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1480,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7730305": "フルセット - Full Set",
+    "7730344": "逆バニー - Reverse Bunny",
+    "7730345": "メイドビキニ - Maid Bikini"
   }
 }

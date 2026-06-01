@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3800,
+        "is_sale": false
       }
     ],
     "「舞夜用」Maya": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "「狐雪用」Koyuki": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6542530": "Fullset (Maya + Kokoa + Koyuki)",
+    "6542531": "「舞夜用」Maya",
+    "6542532": "「ここあ用」Kokoa",
+    "6542533": "「狐雪用」Koyuki"
   }
 }

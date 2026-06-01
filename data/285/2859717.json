@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Cat Hoodies": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -1266,7 +1276,16 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4711744": "Cat Hoodies",
+    "4711745": "Pink Bunny Hoodie"
   }
 }

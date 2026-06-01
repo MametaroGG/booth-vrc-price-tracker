@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "アバター用 (for Avatar)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 600,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7916582": "セット (Avatar & World)",
+    "8038573": "アバター用 (for Avatar)",
+    "8038574": "ワールド用 (for World)"
   }
 }

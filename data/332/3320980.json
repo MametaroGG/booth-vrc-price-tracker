@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "waveUniform_Hair": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2500,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "waveUniform_Shoe": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5511395": "waveUniform_Allset",
+    "5511485": "waveUniform_Hair",
+    "5511486": "waveUniform_Wear",
+    "5511700": "waveUniform_Shoe"
   }
 }

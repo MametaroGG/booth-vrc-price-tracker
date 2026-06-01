@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "bear cloths": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 950,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "舞夜christmas": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5713589": "すばらしい(衣装3種)",
+    "5713692": "bear cloths",
+    "5713693": "チャイナドレス",
+    "5713694": "舞夜christmas"
   }
 }

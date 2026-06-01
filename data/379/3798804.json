@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "黒百合のオフショルトップス（Tops only）": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1300,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6324544": "黒百合の街着（All set）",
+    "6324594": "黒百合のオフショルトップス（Tops only）",
+    "6324595": "黒百合のショートパンツII（Pants only）"
   }
 }

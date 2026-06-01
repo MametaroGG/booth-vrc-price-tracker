@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 7500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 7500,
+        "is_sale": false
       }
     ],
     "単色購入【black】": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 4000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "単色購入【navy】": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5215061": "3色セット (psdテクスチャ付属)",
+    "5215104": "単色購入【black】",
+    "5215105": "単色購入【paleblue】",
+    "5215106": "単色購入【navy】"
   }
 }

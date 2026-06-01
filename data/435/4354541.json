@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "「舞夜対応」for Maya": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "「マヌカ対応」Manuka": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7296812": "【全対応】「舞夜, カリン,マヌカ,萌」Maya, Karin, Manuka,Moe",
+    "7296862": "「舞夜対応」for Maya",
+    "7296863": "「カリン対応」for Karin",
+    "8873850": "「マヌカ対応」Manuka",
+    "8987915": "「萌対応」Moe"
   }
 }

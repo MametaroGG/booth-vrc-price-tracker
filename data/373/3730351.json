@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "黒白セット　Black＆WhiteSet": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 150,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "フルセット　FullSet（法人向け）": [
@@ -1708,7 +1723,17 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6207875": "黒白セット　Black＆WhiteSet",
+    "6207879": "フルセット　FullSet",
+    "6207880": "フルセット　FullSet（法人向け）"
   }
 }

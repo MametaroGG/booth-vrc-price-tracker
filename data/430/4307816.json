@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Only Maya+Crystal Staff, earring": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1100,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Only Maya [Crystal Accessory X]": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 950,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 950,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7220415": "Underboob Angel (Kikyo, Maya)+Crystal Staff, earring",
+    "7232058": "Only Maya+Crystal Staff, earring",
+    "7232059": "Only Kikyo+Crystal Staff, earring",
+    "7282735": "Only Maya [Crystal Accessory X]",
+    "7282736": "Only Kikyo [Crystal Accessory X]"
   }
 }

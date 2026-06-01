@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "maya 舞夜": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "kikyo 桔梗": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6683146": "All one",
+    "6683147": "maya 舞夜",
+    "6683148": "rindo 竜胆",
+    "6683149": "kikyo 桔梗",
+    "6683150": "leefa リーファ"
   }
 }

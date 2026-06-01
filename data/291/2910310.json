@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "赤単品/ONLY Red&Ribbon": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 250,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "黒単品/ONLY Black＆Pearl": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4798016": "3色セット/3Colors set",
+    "4799540": "赤単品/ONLY Red&Ribbon",
+    "4799541": "白単品/ONLY White&Bell",
+    "4799542": "黒単品/ONLY Black＆Pearl"
   }
 }

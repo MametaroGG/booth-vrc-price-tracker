@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Default + Source Files  ┃ デフォルト + ソースファイル": [
@@ -851,5 +856,9 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4723364": "Default + Source Files ┃ デフォルト + ソースファイル",
+    "4723571": "Default + Source Files ┃ デフォルト + ソースファイル"
   }
 }

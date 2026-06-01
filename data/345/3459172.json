@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Sky Eyes + Nail": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 200,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Sky Eyes + Nail + Donate": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5747422": "Only Sky Eyes",
+    "5747755": "Sky Eyes + Nail",
+    "5747756": "Only Sky Eyes + Donate",
+    "5747757": "Sky Eyes + Nail + Donate"
   }
 }

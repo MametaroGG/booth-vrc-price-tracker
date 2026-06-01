@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 290,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 290,
+        "is_sale": false
       }
     ],
     "item + mogumogu": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "item + mogumogu + peropero": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 350,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6494289": "item",
+    "6494451": "Donate",
+    "7059565": "item + mogumogu",
+    "8152402": "item +peropero",
+    "8152403": "item + mogumogu + peropero"
   }
 }

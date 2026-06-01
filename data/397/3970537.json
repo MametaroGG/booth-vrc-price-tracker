@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Boost A [Same File]": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6618246": "Friday Particle Floor",
+    "6618247": "Boost A [Same File]",
+    "6618248": "Boost B [Same File]"
   }
 }

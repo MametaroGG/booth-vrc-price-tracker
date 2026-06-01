@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "hood zip up(boost +100)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7318514": "hood zip up(normal)",
+    "7318925": "hood zip up(boost +100)"
   }
 }

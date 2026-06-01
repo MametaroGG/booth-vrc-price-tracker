@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Strawberry Dress • Pink": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 600,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Commercial Use • Pink": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Commercial Use • Both Colors": [
@@ -2562,7 +2587,20 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6518692": "Strawberry Dress • Both Colors",
+    "6518738": "Strawberry Dress • Pink",
+    "6518739": "Strawberry Dress • Black",
+    "6518740": "Commercial Use • Pink",
+    "6518741": "Commercial Use • Black",
+    "6518742": "Commercial Use • Both Colors"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Style A": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 350,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Style C": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 350,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5590981": "フールパック Full Pack",
+    "5591038": "Style A",
+    "5591039": "Style B",
+    "5591040": "Style C",
+    "5591041": "Style D"
   }
 }

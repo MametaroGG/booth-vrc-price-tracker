@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Casual Set Yoll": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Casual Set [Kikyo, Yoll, TubeRose]": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7457639": "Casual Set Kikyo",
+    "7457651": "Casual Set Yoll",
+    "7457652": "Casual Set TubeRose",
+    "7457653": "Casual Set [Kikyo, Yoll, TubeRose]"
   }
 }

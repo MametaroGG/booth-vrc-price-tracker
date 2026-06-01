@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "face paint": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 200,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "shoes": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "full outfits(-100 jpy)": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -2989,6 +3019,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "dress customizable": [
@@ -3414,6 +3449,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1100,
         "is_sale": false
       }
@@ -3843,6 +3883,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Face paint customizable": [
@@ -4268,6 +4313,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -4697,6 +4747,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Full outfit customizable(- 300 jpy)": [
@@ -5124,7 +5179,25 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5026370": "dresses",
+    "5029220": "face paint",
+    "5029222": "shoes",
+    "5029223": "gloves & body accessories",
+    "5029224": "full outfits(-100 jpy)",
+    "5029225": "eyes customizable",
+    "5029226": "dress customizable",
+    "5029227": "gloves & body accessories customizable",
+    "5029228": "Face paint customizable",
+    "5029229": "Shoes customizable",
+    "5029230": "Full outfit customizable(- 300 jpy)"
   }
 }

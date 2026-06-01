@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "Wk-HoloProjector": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7921445": "Wk-FullSET",
+    "7921697": "Wk-HoloProjector"
   }
 }

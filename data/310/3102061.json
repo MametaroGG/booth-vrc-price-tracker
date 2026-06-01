@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Fox Ver. | 狐種": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Cat Ver. | 猫種": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 600,
         "is_sale": false
       }
@@ -2135,7 +2155,18 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5133872": "Fox Ver. | 狐種",
+    "5133873": "Frog Ver. | カエル種",
+    "5133874": "Cat Ver. | 猫種",
+    "5133875": "Complete Set | 完全セット"
   }
 }

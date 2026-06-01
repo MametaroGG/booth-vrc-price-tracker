@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "HOUSEKI EYE": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 120,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "フルセット": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7544531": "KURAI EYE",
+    "7544564": "HOUSEKI EYE",
+    "7544565": "MADOROMI EYE",
+    "7544566": "フルセット",
+    "7544567": "がんばって！（※フルセットと内容は同じです）"
   }
 }

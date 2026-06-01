@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "Hair Preset / ヘア プリセット": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "7033175": "Black Hair Texture | 黒髪の質感",
+    "7617286": "Hair Preset / ヘア プリセット"
   }
 }

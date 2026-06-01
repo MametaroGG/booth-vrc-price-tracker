@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "②頭のみfbx": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 450,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7560615": "①素体fbx（頭と体）",
+    "7561723": "②頭のみfbx",
+    "7561724": "③身体のみfbx（頭なし）"
   }
 }

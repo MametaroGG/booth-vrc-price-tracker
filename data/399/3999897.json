@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Tiger+ワーカーのコーヒー代": [
@@ -856,7 +861,16 @@
         "date": "2026-05-30",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6674576": "Tiger",
+    "7740336": "Tiger+tip"
   }
 }

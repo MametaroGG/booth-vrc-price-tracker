@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Coordinate　A": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Coordinate　Ｃ": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6318610": "フルセット（A/B/C+おまけ）",
+    "6318634": "Coordinate　A",
+    "6318635": "Coordinate　Ｂ",
+    "6318636": "Coordinate　Ｃ",
+    "6318637": "応援する（フルセットと同内容）"
   }
 }

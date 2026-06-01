@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Type-A": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 750,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "Type-C": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 750,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7908361": "4種セット(complete set)",
+    "7909607": "Type-A",
+    "7909608": "Type-B",
+    "7909609": "Type-C",
+    "7909610": "Type-D"
   }
 }

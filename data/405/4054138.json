@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Slingshot Bikini (You & 1 Friend License (noncommercial) )": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1900,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Leopard Outfit Set (You & 1 Friend License (noncommercial)": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2800,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Cheerleader Outfit + PomPom (You & 1 Friend License (noncommercial)": [
@@ -2562,7 +2587,20 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6782234": "Slingshot Bikini (noncommercial)",
+    "6782337": "Slingshot Bikini (You & 1 Friend License (noncommercial) )",
+    "6782338": "Leopard Outfit Set",
+    "6782339": "Leopard Outfit Set (You & 1 Friend License (noncommercial)",
+    "6782340": "Cheerleader Outfit + PomPom (noncommercial)",
+    "6782341": "Cheerleader Outfit + PomPom (You & 1 Friend License (noncommercial)"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "QuestMedium(素体あり)版": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3000,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7297257": "おまけつき全部入りパック　※内容をよく確認してください",
+    "7383508": "Fallback(素体なし)版",
+    "7383509": "QuestMedium(素体あり)版"
   }
 }

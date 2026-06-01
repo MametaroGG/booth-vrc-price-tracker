@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Anon - あのん用": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 250,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6571169": "Ciel - シエル用",
+    "6571229": "Anon - あのん用",
+    "6571238": "兩種類購入(-50JPY)"
   }
 }

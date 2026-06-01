@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "LSbody": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1600,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "舞夜 [Maya]": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4943099": "フルセット [FullSets]",
+    "7545966": "LSbody",
+    "7545967": "あのん[Anon]",
+    "7545968": "舞夜 [Maya]"
   }
 }

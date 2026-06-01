@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "Submissive and Breedable Set": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 625,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 625,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 625,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 625,
+        "is_sale": false
       }
     ],
     "Versatile and Breedable Set": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 625,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 625,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5431954": "Full Breedable Crop Top Collection",
+    "5431973": "Submissive and Breedable Set",
+    "5431974": "Dominant and Breedable Set",
+    "5431975": "Versatile and Breedable Set"
   }
 }

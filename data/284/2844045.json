@@ -839,6 +839,11 @@
         "date": "2026-05-30",
         "price": 70000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 70000,
+        "is_sale": false
       }
     ],
     "通常価格（standard price）": [
@@ -846,7 +851,16 @@
         "date": "2026-05-30",
         "price": 70000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 70000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4685311": "通常価格（standard price）",
+    "4685417": "通常価格(standard plice）"
   }
 }

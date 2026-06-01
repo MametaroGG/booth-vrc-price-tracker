@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "杏里/Anri": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": true
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "Grus(Male Version)": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "7852260": "水瀬/Minase",
+    "7852688": "杏里/Anri",
+    "7852689": "碼希/Maki",
+    "7852690": "Grus(Male Version)"
   }
 }

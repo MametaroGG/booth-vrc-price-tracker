@@ -392,6 +392,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Top_01のみ": [
@@ -782,6 +787,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 350,
         "is_sale": false
       }
@@ -1176,6 +1186,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Jacket_01のみ": [
@@ -1566,6 +1581,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 350,
         "is_sale": false
       }
@@ -1960,6 +1980,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Shoes_02のみ": [
@@ -2352,7 +2377,20 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7807383": "Full Set",
+    "7808072": "Bottoms_01のみ",
+    "7808073": "Jacket_01のみ",
+    "7817690": "Shoes_01のみ",
+    "7842975": "Top_01のみ",
+    "7842976": "Shoes_02のみ"
   }
 }

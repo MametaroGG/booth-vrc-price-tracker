@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "➖Casual Street➖ (for maki まき ) + ビール代🍺": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1700,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "➖Casual Street➖ (for jaulaハウラ ) + ビール代🍺": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7461156": "➖Casual Street➖ (for maki まき )",
+    "7461195": "➖Casual Street➖ (for maki まき ) + ビール代🍺",
+    "7461196": "➖Casual Street➖ (for jaulaハウラ )",
+    "7461197": "➖Casual Street➖ (for jaulaハウラ ) + ビール代🍺"
   }
 }

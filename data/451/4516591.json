@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "ミント対応HOUSEKI EYE": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 120,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "ミント対応三種セット": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7564654": "ミント対応BOYA EYE",
+    "7564692": "ミント対応HOUSEKI EYE",
+    "7564693": "ミント対応MADOROMI EYE",
+    "7564694": "ミント対応三種セット"
   }
 }

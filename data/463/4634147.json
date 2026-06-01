@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "[3Dモデル] Urion (Rindo●竜胆専用)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "[3Dモデル] Urion (Selestia●セレスティア専用)": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7767137": "[3Dモデル] Urion (Rindo●竜胆専用)",
+    "7767140": "[3Dモデル] Urion (Kikyo●桔梗専用)",
+    "7767141": "[3Dモデル] Urion (Selestia●セレスティア専用)",
+    "7767142": "[3Dモデル] Urion - All -"
   }
 }

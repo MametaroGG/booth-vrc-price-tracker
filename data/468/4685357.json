@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "Meira": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3000,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7855631": "Meira & Harea",
+    "7855679": "Meira",
+    "7855680": "Harea"
   }
 }

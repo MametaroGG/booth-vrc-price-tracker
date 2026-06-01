@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "MAYA": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 250,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "FULLSET": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 540,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 540,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7615433": "KIKYO",
+    "7615572": "FULLSET",
+    "7615573": "FULLSET Support (❁´◡`❁)",
+    "7623641": "MAYA",
+    "7640495": "SELESTIA"
   }
 }

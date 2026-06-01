@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 180,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 180,
+        "is_sale": false
       }
     ],
     "【Part 2】 Winter Socks Set": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 180,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 180,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5796044": "【Part 1】 Christmas Socks Set",
+    "5859625": "【Part 2】 Winter Socks Set",
+    "5859626": "【Full Set】 Christmas & Winter Socks Set"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 4900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4900,
+        "is_sale": false
       }
     ],
     "【Shiro Base Only Ver . 】 | しろ（アバターのみ)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 5500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 5500,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "dlc.【NeonBunnyOnly Ver. 】| NeonBunnyのみ": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 4900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4806156": "【Shiro Base Only Ver . 】 | しろ（アバターのみ)",
+    "4808878": "【Outfits Only Ver. 】 | アウトフィットのみ",
+    "4808879": "【 Full Version. 】 | フルバージョン",
+    "6054772": "dlc.【NeonBunnyOnly Ver. 】| NeonBunnyのみ"
   }
 }

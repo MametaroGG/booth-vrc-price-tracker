@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2350,
+        "is_sale": false
       }
     ],
     "Kikyo WinterSuit": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2350,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 2350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2350,
+        "is_sale": false
       }
     ],
     "Rindo WinterSuit": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2350,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 2350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7653352": "Imeris WinterSuit",
+    "7653356": "Kikyo WinterSuit",
+    "7653357": "Maya WinterSuit",
+    "7653358": "Rindo WinterSuit",
+    "7653359": "Selestia WinterSuit"
   }
 }

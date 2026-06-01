@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "Nuibari用追加テクスチャパック": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4549751": "Nuibari本体",
+    "4549772": "Nuibari用追加テクスチャパック"
   }
 }

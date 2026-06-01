@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 195,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 195,
+        "is_sale": false
       }
     ],
     "サマーメークアップ [ Support version ]": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6369921": "サマーメークアップ [ Normal version ]",
+    "6369971": "サマーメークアップ [ Support version ]"
   }
 }

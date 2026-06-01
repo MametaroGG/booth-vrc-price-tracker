@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Just the Back": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 150,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 160,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 160,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6894924": "Just the Chest",
+    "6894960": "Just the Back",
+    "6894961": "Both Chest and Back 1 Texture"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Kiyo Tatsuki [FBX,VRM,VRchat&beatsaber]]": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 6000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 6000,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5907686": "Kiyo Tatsuki [FBX, VRM& VRchat]",
+    "5907861": "Kiyo Tatsuki [FBX,VRM,VRchat&beatsaber]]",
+    "6588279": "Kiyo Tatsuki BeatSaber + unitypackage"
   }
 }

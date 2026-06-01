@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 220,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 220,
+        "is_sale": false
       }
     ],
     "JP/無料版": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 0,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 220,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 220,
+        "is_sale": false
       }
     ],
     "EN/Free version": [
@@ -1708,7 +1723,16 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5573974": "JP/有料版 ローブ5層仕様 +ニーハイ, シュシュ",
+    "5574048": "EN/Paid version 5 Layers Robe +Thigh high socks, Scrunchie"
   }
 }

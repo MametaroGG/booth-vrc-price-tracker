@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "▲ＶＲＭ廉価版▲　　　VRM low-priced version": [
@@ -1680,6 +1685,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "▼PerfectSync対応VRM▼ PerfectSync compatible VRM": [
@@ -1687,6 +1697,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "■ヘアプリセット■ Hair presets": [
@@ -1694,7 +1709,18 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4627859": "●Unitypackage●",
+    "5464262": "▲ＶＲＭ廉価版▲ VRM low-priced version",
+    "5707469": "■ヘアプリセット■ Hair presets",
+    "11558396": "▼PerfectSync対応VRM▼ PerfectSync compatible VRM"
   }
 }

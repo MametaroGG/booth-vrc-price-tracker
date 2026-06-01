@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "🥼Jekyll and Hyde🧥 (for Jaula) + ビール代🍺": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "🥼Jekyll and Hyde🧥 (for  Maki)  + ビール代🍺": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7389969": "🥼Jekyll and Hyde🧥 (for Jaula)",
+    "7390176": "🥼Jekyll and Hyde🧥 (for Jaula) + ビール代🍺",
+    "7390177": "🥼Jekyll and Hyde🧥 (for  Maki)",
+    "7390178": "🥼Jekyll and Hyde🧥 (for  Maki)  + ビール代🍺"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "フルパック": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 5300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7147358": "Maya版",
+    "7147378": "フルパック"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Selestia - Finger Tattoo": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 150,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Your Love（Full Setと内容は同じです）": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6796036": "Finger Tattoo & Nail - Full Set",
+    "6796062": "Selestia - Finger Tattoo",
+    "6796063": "Selestia - Nail",
+    "6796064": "Your Love（Full Setと内容は同じです）"
   }
 }

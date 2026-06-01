@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2350,
+        "is_sale": false
       }
     ],
     "Kikyo RibbonDress": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2350,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 2350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2350,
+        "is_sale": false
       }
     ],
     "Rindo RibbonDress": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2350,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 2350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6811676": "Imeris RibbonDress",
+    "6811680": "Kikyo RibbonDress",
+    "6811681": "Maya RibbonDress",
+    "6811682": "Rindo RibbonDress",
+    "6811683": "Selestia RibbonDress"
   }
 }

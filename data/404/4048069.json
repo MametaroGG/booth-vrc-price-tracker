@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Supporter Pack/サポーターパック": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6770802": "Selestia Eye,Face,Body Textures/「セレスティア」アイ/フェイス/身体 テクスチャー",
+    "6771003": "Supporter Pack/サポーターパック"
   }
 }

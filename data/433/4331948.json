@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 950,
+        "is_sale": false
       }
     ],
     "support": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 11000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 11000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7260553": "kikyo_pattern_dress",
+    "7260676": "support"
   }
 }

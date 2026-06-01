@@ -446,6 +446,11 @@
         "date": "2026-05-30",
         "price": 30000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 30000,
+        "is_sale": false
       }
     ],
     "ノイ本体ver2.1.1": [
@@ -871,6 +876,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 5000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 5000,
         "is_sale": false
       }
@@ -1300,7 +1310,16 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6863895": "ノイ本体ver2.1.1",
+    "9008980": "ノイ本体[希望小売価格]"
   }
 }

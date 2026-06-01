@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Maya   /  舞夜": [
@@ -1278,6 +1283,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Rindo / 竜胆": [
@@ -1285,7 +1295,17 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5874626": "Haruki / はるき",
+    "5874655": "Maya / 舞夜",
+    "5874656": "Rindo / 竜胆"
   }
 }

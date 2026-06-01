@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ハイポリのみ（High only）": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 350,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7822679": "ハイポリ・ローポリセット（High Low set）",
+    "7829913": "ハイポリのみ（High only）",
+    "7829914": "ローポリのみ（Low only）"
   }
 }

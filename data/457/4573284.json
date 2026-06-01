@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "Sakura Tree Pack": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2400,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "SakuraB": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "SakuraD": [
@@ -2590,6 +2615,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -3024,7 +3054,21 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7659543": "Garden Pack",
+    "7689044": "SakuraA",
+    "7689045": "SakuraB",
+    "7689046": "SakuraC",
+    "7689047": "SakuraD",
+    "7689049": "Objects",
+    "9201529": "Sakura Tree Pack"
   }
 }

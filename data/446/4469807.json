@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "SELESTIA 対応": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "FULL SET！(SELESTIA&YUGIMIYO)": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 520,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 520,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7484958": "通常版",
+    "7485008": "SELESTIA 対応",
+    "7485009": "YUGIMIYO 対応",
+    "7485010": "FULL SET！(SELESTIA&YUGIMIYO)",
+    "7485011": "お金が欲しい（FULL SETと内容は同じです）"
   }
 }

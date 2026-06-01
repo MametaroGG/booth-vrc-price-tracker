@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 688,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 688,
+        "is_sale": false
       }
     ],
     "Nessie with acessori": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 963,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 963,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6724306": "Nessie",
+    "6724406": "Nessie with acessori"
   }
 }

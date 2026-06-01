@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 8000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 8000,
+        "is_sale": false
       }
     ],
     "Black": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 4000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Air": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 4000,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Metal": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 4000,
         "is_sale": false
       }
@@ -2989,6 +3019,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "camouflage": [
@@ -3414,6 +3449,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 4000,
         "is_sale": false
       }
@@ -3843,7 +3883,23 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5344126": "FullPackage",
+    "5344181": "Black",
+    "5344182": "White",
+    "5344183": "Air",
+    "5352861": "Air Cosmic",
+    "5352862": "Metal",
+    "5352863": "colorFull",
+    "5352864": "camouflage",
+    "5357467": "Denim"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Revolver94S v2.0 投げ銭版（Donation version）": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8044347": "Revolver94S v2.0 基本版（Basic version）",
+    "8044376": "Revolver94S v2.0 投げ銭版（Donation version）"
   }
 }

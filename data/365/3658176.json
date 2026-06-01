@@ -107,6 +107,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "有償": [
@@ -212,6 +217,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 330,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 330,
         "is_sale": false
       }
@@ -321,7 +331,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6086630": "有償",
+    "6086631": "作成支援"
   }
 }

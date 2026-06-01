@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "MMD用PMX": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 800,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "衣装作成用マネキン": [
@@ -1605,5 +1620,10 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7901129": "VRChat想定パッケージ&VRM",
+    "7903422": "MMD用PMX",
+    "7903423": "テクスチャの原本(PSDファイル)"
   }
 }

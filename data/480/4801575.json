@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2600,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2600,
+        "is_sale": true
       }
     ],
     "For Minase": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 1100,
         "is_sale": true
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1100,
+        "is_sale": true
       }
     ],
     "For Grus": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 1100,
         "is_sale": true
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1100,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "8052426": "For ALL",
+    "8052504": "For Minase",
+    "8052505": "For Shinra",
+    "8052506": "For Grus",
+    "8052507": "For Anri"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Commercial(商業用)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7231848": "Personal(個人用)",
+    "7332201": "Commercial(商業用)"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "セレスティア 衣装 (Selestia only)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1100,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7691554": "竜胆 衣装 (Rindo only)",
+    "7691649": "セレスティア 衣装 (Selestia only)",
+    "7691650": "竜胆&セレスティア(Two avatar's Cloth set)"
   }
 }

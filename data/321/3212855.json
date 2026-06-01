@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "リング付き水着  for Yawl": [
@@ -1276,6 +1281,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "リング付き水着 for Yawl": [
@@ -1283,7 +1293,17 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5328948": "リング付き水着 & 競泳水着 for Yawl",
+    "5328967": "リング付き水着 for Yawl",
+    "5328968": "競泳水着 for Yawl"
   }
 }

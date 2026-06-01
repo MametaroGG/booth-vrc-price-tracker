@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Bset": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "【商用/commercial use】allset": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 8000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 8000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6949927": "Aset",
+    "6950130": "Bset",
+    "6950131": "【個人/personal use】allset＋オマケ",
+    "6950132": "【商用/commercial use】allset"
   }
 }

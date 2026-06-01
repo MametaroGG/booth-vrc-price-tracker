@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "VAL【VRM+VRoid版】": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5119181": "VAL【VRC+VRM+VRoid版】※2022/01/08現在VRC最新版非対応",
+    "5119717": "VAL【VRM+VRoid版】"
   }
 }

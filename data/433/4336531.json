@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Sample (無料版-10個)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 0,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Pose Pack (A)": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Pose Pack (C)": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -2989,6 +3019,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Existing Buyer (1)": [
@@ -3414,6 +3449,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 10000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 10000,
         "is_sale": false
       }
@@ -3843,7 +3883,21 @@
         "date": "2026-05-30",
         "price": 10000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 10000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7268032": "Existing Buyer (1)",
+    "7268033": "Existing Buyer (2)",
+    "10737631": "FULL FACK (400個) + Bonus Pose (23個)",
+    "10737632": "Pose Pack (A)",
+    "10737633": "Pose Pack (B)",
+    "10737634": "Pose Pack (C)",
+    "10737635": "Pose Pack (D)"
   }
 }

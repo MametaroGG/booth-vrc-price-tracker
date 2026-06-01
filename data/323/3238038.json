@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2980,
+        "is_sale": false
       }
     ],
     "Bikini Jacket - ビキニジャケット": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1480,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1480,
+        "is_sale": false
       }
     ],
     "School Swimsuit - スクール水着": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5371543": "Full Set - フルセット",
+    "5376801": "Bikini Jacket - ビキニジャケット",
+    "5376802": "Neko Lingerie - 猫ランジェリー",
+    "5376803": "School Swimsuit - スクール水着"
   }
 }

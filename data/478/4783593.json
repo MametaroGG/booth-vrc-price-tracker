@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "Astraia_InnerOnly": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8020744": "Astraia(Fullset)",
+    "8020870": "Astraia_InnerOnly"
   }
 }

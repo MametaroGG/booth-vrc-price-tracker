@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "[3Dモデル] - Fortuna - (Moe●萌専用)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "[3Dモデル] - Fortuna - (Kikyo●桔梗専用)": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1500,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8014165": "[3Dモデル] - Fortuna - (Moe●萌専用)",
+    "8014201": "[3Dモデル] - Fortuna - (Shinra●森羅専用)",
+    "8014202": "[3Dモデル] - Fortuna - (Kikyo●桔梗専用)",
+    "8014203": "[3Dモデル] - Fortuna - (Selestia●セレスティア専用)",
+    "8014204": "[3Dモデル] - Fortuna - ALL"
   }
 }

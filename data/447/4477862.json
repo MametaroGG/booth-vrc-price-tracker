@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 9000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 9000,
+        "is_sale": false
       }
     ],
     "F16Block52nozzlepackage": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7498822": "F16block50",
+    "7673930": "F16Block52nozzlepackage"
   }
 }

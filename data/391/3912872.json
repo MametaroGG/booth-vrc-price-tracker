@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "sustaina:BLUE(スキンのみ)": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 120,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6517036": "Cyber Mori Style for Grus",
+    "7077568": "sustaina:BLUE(スキンのみ)"
   }
 }

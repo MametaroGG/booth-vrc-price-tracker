@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Bobo doll set(Commercial)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 5800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7823845": "Bobo doll set",
+    "8427842": "Bobo doll set(Commercial)"
   }
 }

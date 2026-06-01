@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "白猫×赤いリボンのみ(White Cat×Red Ribbon Only)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "三毛猫×黄色いリボンのみ(Calico Cat × Yellow Ribbon Only)": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6617009": "フルセット(Fullset)",
+    "7021383": "白猫×赤いリボンのみ(White Cat×Red Ribbon Only)",
+    "7021384": "黒猫×青いリボンのみ(Black Cat×Blue Ribbon Only)",
+    "7021385": "三毛猫×黄色いリボンのみ(Calico Cat × Yellow Ribbon Only)"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "A Purple Sky Clothes + Halloween (for anon)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "ALL A Purple Sky Clothes+ Halloween  (for kikyo, anon, Sion)": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7078275": "A Purple Sky Clothes + Halloween (for kikyo)",
+    "7078346": "A Purple Sky Clothes + Halloween (for anon)",
+    "7078347": "A Purple Sky Clothes+ Halloween  (for Sion)",
+    "7078348": "ALL A Purple Sky Clothes+ Halloween  (for kikyo, anon, Sion)"
   }
 }

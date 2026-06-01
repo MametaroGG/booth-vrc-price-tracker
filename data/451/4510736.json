@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Selestia": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1700,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Rindo": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7554335": "Kikyo",
+    "7556850": "Selestia",
+    "7556851": "YugiMiyo",
+    "7556852": "Rindo"
   }
 }

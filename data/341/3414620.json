@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "ZiggFiveRings_001disguise": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ZiggFiveRings_003racer": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ZiggFiveRings_005bite": [
@@ -2562,7 +2587,20 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5671401": "ZiggFiveRings_Fullset",
+    "5671488": "ZiggFiveRings_001disguise",
+    "5671489": "ZiggFiveRings_002square",
+    "5671490": "ZiggFiveRings_003racer",
+    "5671491": "ZiggFiveRings_004dear",
+    "5671492": "ZiggFiveRings_005bite"
   }
 }

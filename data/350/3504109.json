@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Lace Swimsuit 『レースの水着』for Mariel": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Lace Swimsuit 『レースの水着』for Kyoko & Saneko": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5821976": "Full Pack",
+    "5821991": "Lace Swimsuit 『レースの水着』for Mariel",
+    "5821992": "Lace Swimsuit 『レースの水着』for Wolferia",
+    "5821993": "Lace Swimsuit 『レースの水着』for Kyoko & Saneko"
   }
 }

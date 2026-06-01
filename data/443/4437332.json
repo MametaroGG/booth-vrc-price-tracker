@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "Kikyo  (PLUS package)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1900,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1900,
+        "is_sale": false
       }
     ],
     "Selestia  (Nomal package)": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1700,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Rindo (Nomal package)": [
@@ -2592,7 +2617,20 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7433619": "Rindo (Nomal package)",
+    "7433705": "Selestia  (Nomal package)",
+    "7433706": "Kikyo  (Nomal package)",
+    "7433707": "Rindo (PLUS package)",
+    "7433708": "Selestia  (PLUS package)",
+    "7433709": "Kikyo  (PLUS package)"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Sandal Only": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "6315915": "Full Set (Clothes + Sandal)",
+    "6316058": "Sandal Only"
   }
 }

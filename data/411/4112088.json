@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 125,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 125,
+        "is_sale": false
       }
     ],
     "Texture 2": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 125,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 125,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 125,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 125,
+        "is_sale": false
       }
     ],
     "Texture 4": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 125,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 125,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 350,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6877552": "Texture 1",
+    "6877559": "Texture 2",
+    "6877560": "Texture 3",
+    "6877561": "Texture 4",
+    "6877562": "Full Pack"
   }
 }

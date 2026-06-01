@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Anxious Feline Small": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 450,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Anxious Feline All Sizes": [
@@ -1728,7 +1743,17 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8016777": "Anxious Feline Small",
+    "8049012": "Anxious Feline Medium and Large",
+    "8049013": "Anxious Feline All Sizes"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3480,
+        "is_sale": false
       }
     ],
     "ビキニパーカー - Bikini Parker": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1480,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1980,
+        "is_sale": false
       }
     ],
     "レオタードセーター - Leotard Sweater": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6632859": "フルセット - Full Set",
+    "6632869": "ビキニパーカー - Bikini Parker",
+    "6632870": "バニースーツMKII - Bunny Suit MKII",
+    "6632871": "レオタードセーター - Leotard Sweater"
   }
 }

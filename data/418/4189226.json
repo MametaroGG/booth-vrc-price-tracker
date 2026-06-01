@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "Kikyo&Selestia": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1700,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Selestia": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7010165": "Kikyo&Selestia",
+    "7012684": "Kikyo",
+    "7012685": "Selestia",
+    "7045078": "Kikyo&Selestia&Maya",
+    "7045079": "Maya"
   }
 }

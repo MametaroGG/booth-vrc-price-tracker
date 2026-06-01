@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ORIOLIにラーメンおごるedition（中身は通常版と同じです）": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6554224": "通常版",
+    "6554288": "ORIOLIにラーメンおごるedition（中身は通常版と同じです）"
   }
 }

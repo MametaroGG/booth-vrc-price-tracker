@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2100,
+        "is_sale": false
       }
     ],
     "【Single】ギター": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8081462": "【Full Package】衣装 ＆ ギター",
+    "8081481": "【Single】ギター"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1065,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1065,
+        "is_sale": false
       }
     ],
     "Candles only": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 423,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 423,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 423,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 423,
+        "is_sale": false
       }
     ],
     "Candlestick for Christmas": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 423,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 423,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5377765": "full pack 3x items",
+    "5795759": "Candles only",
+    "5797496": "Bubble light",
+    "5797497": "Candlestick for Christmas"
   }
 }

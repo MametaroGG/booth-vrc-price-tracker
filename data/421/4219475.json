@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "PBR version": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3000,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7063957": "Cell Shaded version",
+    "7090811": "PBR version",
+    "7096099": "PBR & Cell Shaded Combo"
   }
 }

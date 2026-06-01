@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 4600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4600,
+        "is_sale": false
       }
     ],
     "Commercial Use Baller Mouse": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 20100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 20100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8019562": "Personal Use Baller Mouse",
+    "8021948": "Commercial Use Baller Mouse"
   }
 }

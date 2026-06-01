@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3800,
+        "is_sale": false
       }
     ],
     "Type-セキュリティ(本体+追加パック1)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 5000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 5000,
         "is_sale": false
       }
@@ -1281,7 +1291,13 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
-  }
+  },
+  "variation_keys": {}
 }

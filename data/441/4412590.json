@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Work expenses (Contents same) / 수고비 (내용물동일)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7393299": "maya cyborg texture / 마야 사이보그 텍스쳐",
+    "7393371": "Work expenses (Contents same) / 수고비 (내용물동일)"
   }
 }

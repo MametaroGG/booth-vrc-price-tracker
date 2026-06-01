@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Hair Texture Only | 髪のテクスチャのみ": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7562399": "Model + Hair | モデル+ヘア",
+    "7843467": "Hair Texture Only | 髪のテクスチャのみ"
   }
 }

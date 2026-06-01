@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "【B】個人向け targeted at individuals": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "法人向け(複数人の法人) For Multiple Corporations": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7191367": "【A】 個人向け targeted at individuals",
+    "7197390": "法人向け(複数人の法人) For Multiple Corporations",
+    "11443469": "【B】個人向け targeted at individuals",
+    "11443573": "【A&B】次回作も期待代！個人向け targeted at individuals"
   }
 }

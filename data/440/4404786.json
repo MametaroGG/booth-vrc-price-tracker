@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "②Vroidデータ服のみ（帽子ナシ）(.vroidcustomitem)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "④Vroid編集データ（.vroid）＆書き出しVRM(.vrm)": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7380551": "①書き出しVRMファイル(.vrm)",
+    "7380956": "②Vroidデータ服のみ（帽子ナシ）(.vroidcustomitem)",
+    "7380957": "③Vroidデータ髪のみ（帽子アリ）(.vroidcustomitem)",
+    "7380958": "④Vroid編集データ（.vroid）＆書き出しVRM(.vrm)",
+    "7566241": "⑤法人・商用版（内容は④と同じです）"
   }
 }

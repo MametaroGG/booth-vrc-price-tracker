@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "Casual Clothing + Underwear (R-18) Model": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5315028": "Casual Clothing Model",
+    "5315029": "Casual Clothing + Underwear (R-18) Model"
   }
 }

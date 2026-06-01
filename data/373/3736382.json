@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Bset": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1100,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Cset": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 450,
         "is_sale": false
       }
@@ -2110,7 +2130,19 @@
         "date": "2026-05-30",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 6000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6217337": "Aset",
+    "6291255": "Bset",
+    "6291256": "Cset",
+    "6776730": "【商用/commercial use】allset",
+    "8142522": "A,Cset"
   }
 }

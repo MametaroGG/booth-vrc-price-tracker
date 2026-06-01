@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 360,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 360,
+        "is_sale": false
       }
     ],
     "WereWolf Ears+Rework ears(No Metal)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 360,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 360,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "WereWolf Full Set(15% Discount)": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 950,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 950,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6661160": "WereWolf Full Set(15% Discount)",
+    "6661484": "WereWolf Tail",
+    "6661485": "WereWolf Gloves(Kikyo, Maya) Avatartool OK",
+    "6661486": "WereWolf Ears+Rework ears(No Metal)"
   }
 }

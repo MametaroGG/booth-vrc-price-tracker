@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "MochiFitter_for_Beryl-Terrsa": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6850665": "Beryl-Terrsa(ベリル・テルサ) ExF Ver.1.0.1",
+    "12905191": "MochiFitter_for_Beryl-Terrsa"
   }
 }

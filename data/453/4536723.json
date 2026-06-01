@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 215,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 215,
+        "is_sale": false
       }
     ],
     "Hair Color 2": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 215,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 215,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 215,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 215,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7598145": "Hair Color 1",
+    "7598174": "Hair Color 2",
+    "7598175": "Hair Color 3"
   }
 }

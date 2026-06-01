@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Uniform only (制服上下＋ジャージ)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7544661": "All pack (制服上下＋ジャージ＋ローファー＋靴)",
+    "7544709": "Uniform only (制服上下＋ジャージ)"
   }
 }

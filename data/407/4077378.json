@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 420,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 420,
+        "is_sale": false
       }
     ],
     "TYPE-P 個人利用ライセンス": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 420,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 420,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 2100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6821730": "TYPE-A/B 個人利用ライセンス",
+    "9435041": "法人利用/Publicアバター用ライセンス",
+    "12265520": "TYPE-P 個人利用ライセンス"
   }
 }

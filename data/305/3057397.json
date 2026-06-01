@@ -849,6 +849,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "フリルビキニ　-Frill-": [
@@ -1274,6 +1279,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1500,
         "is_sale": false
       }
@@ -1703,6 +1713,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Body_texture": [
@@ -2130,6 +2145,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "みずぎコレクション (水着3種+BodyTexture)": [
@@ -2137,7 +2157,19 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5056604": "みずぎコレクション (水着3種+BodyTexture)",
+    "5058602": "セーラースク水　-Sailor-",
+    "5058603": "フリルビキニ　-Frill-",
+    "5058604": "マイクロビキニ　‐Micro-",
+    "5058605": "Body_texture"
   }
 }

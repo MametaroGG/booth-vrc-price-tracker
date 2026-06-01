@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "SELESTIA 対応": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 370,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 370,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 450,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7843527": "通常版",
+    "7843555": "SELESTIA 対応",
+    "7843556": "お金が欲しい（対応版と内容は同じです"
   }
 }

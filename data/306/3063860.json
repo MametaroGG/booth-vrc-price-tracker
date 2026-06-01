@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "English (parameter)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 0,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "ご支援用/For support": [
@@ -1708,7 +1723,16 @@
         "date": "2026-05-30",
         "price": 220,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 220,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5070622": "エジプト風セット",
+    "5070623": "ご支援用/For support"
   }
 }

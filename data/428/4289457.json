@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "サポート用（本体と同じ）-Support (same content)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7186927": "Selestia dynamic expression Ver.2.02",
+    "7191047": "サポート用（本体と同じ）-Support (same content)"
   }
 }

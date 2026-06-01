@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 8000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 8000,
+        "is_sale": false
       }
     ],
     "コンバージョンキット / Conversion kit": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 6000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6579537": "通常版 / Standard",
+    "6633194": "コンバージョンキット / Conversion kit"
   }
 }

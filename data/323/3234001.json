@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "GHOST Full Set  (color : white)": [
@@ -1276,6 +1281,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "CAT Full Set (color : purple)": [
@@ -1701,6 +1711,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -2552,6 +2567,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "GHOST Full Set (color : white)": [
@@ -2559,6 +2579,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "SKELETON Full Set (color : black)": [
@@ -2566,7 +2591,19 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5364537": "GHOST Full Set (color : white)",
+    "5366981": "JACK O'LANTERN Full Set (color : orange)",
+    "5367123": "CAT Full Set (color : purple)",
+    "5367150": "SKELETON Full Set (color : black)",
+    "5372192": "LOLLIPOP HALLOWEEN COMPLETE Set"
   }
 }

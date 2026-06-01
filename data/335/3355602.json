@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "2)ブルー・ホワイト・ブルー・レッド（ポンポン有り）/Blue, white, blue, red (with pom-poms)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ブラック・メタルプレート": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5570318": "1)グレイ・ホワイト・グレイ（ポンポンなし）/Grey-white-grey (no pom-poms)",
+    "5570815": "2)ブルー・ホワイト・ブルー・レッド（ポンポン有り）/Blue, white, blue, red (with pom-poms)",
+    "5570816": "3)グレイ・ブルー・ホワイト・グレイ（ポンポン有り）/Gray, blue, white, and gray (with pom-poms)",
+    "5595325": "ブラック・メタルプレート"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Sport Swimsuit for Rufina「ルフィナ」": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Ring Swimsuit for Rufina「ルフィナ」": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7836661": "Full Pack for Rufina「ルフィナ」",
+    "7836673": "Sport Swimsuit for Rufina「ルフィナ」",
+    "7836674": "Lace Swimsuit for Rufina「ルフィナ」",
+    "7836675": "Ring Swimsuit for Rufina「ルフィナ」"
   }
 }

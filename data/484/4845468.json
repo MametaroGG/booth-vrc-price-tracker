@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1260,
+        "is_sale": true
       }
     ],
     "Kikyo": [
@@ -864,6 +869,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 630,
+        "is_sale": true
       }
     ],
     "Moe": [
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 630,
+        "is_sale": true
       }
     ],
     "Selestia": [
@@ -1728,6 +1743,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 630,
+        "is_sale": true
       }
     ],
     "TubeRose": [
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 630,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "8130932": "Kikyo",
+    "8131697": "Moe",
+    "8131698": "Selestia",
+    "8134968": "FULL PACK",
+    "8164485": "TubeRose"
   }
 }

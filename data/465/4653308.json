@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Wild Punk (for Grus)+ ビール代🍺": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Wild Punk (for Maki)+ ビール代🍺": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7802398": "Wild Punk (for Grus)",
+    "7802697": "Wild Punk (for Grus)+ ビール代🍺",
+    "7802698": "Wild Punk (for Maki)",
+    "7802699": "Wild Punk (for Maki)+ ビール代🍺"
   }
 }

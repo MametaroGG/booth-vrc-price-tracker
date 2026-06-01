@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "▲ＶＲＭ廉価版▲　　　VRM low-priced version": [
@@ -856,7 +861,16 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4762008": "●Unitypackage●",
+    "5464287": "▲ＶＲＭ廉価版▲ VRM low-priced version"
   }
 }

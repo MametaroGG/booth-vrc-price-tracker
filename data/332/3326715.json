@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "【 3 Stories of  Riding Hoods 】": [
@@ -856,7 +861,15 @@
         "date": "2026-05-30",
         "price": 850,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 850,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5520999": "【 3 Stories of Riding Hoods 】"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1280,
+        "is_sale": false
       }
     ],
     "Icarus_Arufa": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 900,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5899364": "Sneakers_Icarus_ALL",
+    "5899502": "Icarus_Arufa",
+    "5899503": "Icarus_Beta"
   }
 }

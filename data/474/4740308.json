@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Soie Blanche": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 3400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7947978": "DEVIL's MANIA!",
+    "7948183": "Soie Blanche",
+    "7951044": "DEVIMANI × SoieBlanche Set"
   }
 }

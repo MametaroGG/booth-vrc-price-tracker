@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 210,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 210,
+        "is_sale": false
       }
     ],
     "ブラック（BLACK）": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 210,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 210,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 210,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 210,
+        "is_sale": false
       }
     ],
     "ブルー（BLUE）": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 210,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 210,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7882543": "バイオレット(VIOLET/PURPLE)",
+    "7882763": "ブラック（BLACK）",
+    "7882764": "グリーン（BREEN）",
+    "7882765": "ブルー（BLUE）"
   }
 }

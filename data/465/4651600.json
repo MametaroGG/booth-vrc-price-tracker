@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Wild Punk (for  Minase) + ビール代🍺": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Wild Punk (for  Anri) + ビール代🍺": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7799210": "Wild Punk (for  Minase)",
+    "7799222": "Wild Punk (for  Minase) + ビール代🍺",
+    "7803272": "Wild Punk (for  Anri)",
+    "7803273": "Wild Punk (for  Anri) + ビール代🍺"
   }
 }

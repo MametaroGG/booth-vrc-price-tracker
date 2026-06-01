@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 520,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 520,
+        "is_sale": false
       }
     ],
     "Selestiaセレスティィア対応": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 200,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "GRUS対応": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7274102": "All",
+    "7274197": "Selestiaセレスティィア対応",
+    "7313813": "Kikyo桔梗対応",
+    "7313814": "GRUS対応"
   }
 }

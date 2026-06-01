@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "メカユニットのみ Only MechaUnit MKU07": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6015781": "(Default) ヴィーティア＆メカユニットセット Vetia & MechaUnit MKU07",
+    "6015873": "メカユニットのみ Only MechaUnit MKU07",
+    "6300539": "ヴィーティア＆メカユニットセット Vetia & MechaUnit MKU12"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 360,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 360,
+        "is_sale": false
       }
     ],
     "Only One Tail": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 360,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 360,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 380,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 380,
+        "is_sale": false
       }
     ],
     "Ears+One Tail": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 680,
         "is_sale": false
       }
@@ -2160,6 +2180,11 @@
         "date": "2026-05-30",
         "price": 690,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 690,
+        "is_sale": false
       }
     ],
     "Ears+One Tail+Nine Tail": [
@@ -2592,7 +2617,20 @@
         "date": "2026-05-30",
         "price": 740,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 740,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7949741": "Only Ears",
+    "7949966": "Only One Tail",
+    "7949967": "Only Nine Tails",
+    "7949968": "Ears+One Tail",
+    "7949969": "Ears+Nine Tails",
+    "7949970": "Ears+One Tail+Nine Tail"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Thank You!/ンキュー!  (寄付金)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Biggest Thank You!/ちょ～スーパーサンキュー! (寄付金)": [
@@ -1728,7 +1743,17 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7146323": "Thank You!/ンキュー!  (寄付金)",
+    "7146324": "Super Thank You!/スーパーサンキュー!  (寄付金)",
+    "7146325": "Biggest Thank You!/ちょ～スーパーサンキュー! (寄付金)"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Sport Swimsuit『競泳水着』 for Sapphy": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Ring Swimsuit『リング付き水着』 for Sapphy": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6723962": "Full Pack for Sapphy",
+    "6723985": "Sport Swimsuit『競泳水着』 for Sapphy",
+    "6723986": "Lace Swimsuit『レースの水着』 for Sapphy",
+    "6723987": "Ring Swimsuit『リング付き水着』 for Sapphy"
   }
 }

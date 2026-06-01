@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "B.TFS for Sapphy1.0/2.0 Basic+PE(Support Sapphy1.0 and 2.0)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7304960": "B.TFS for Sapphy1.0/2.0 Basic+PE(Support Sapphy1.0 and 2.0)",
+    "7305020": "砂糖入りのコーヒー(同じ内容→B.Sapphy1.0/2.0 Basic+PE)",
+    "8911765": "A.TFS for Sapphy1.0 Basic(Only support Sapphy1.0) (更新停止予定))"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1680,
+        "is_sale": false
       }
     ],
     "例のセーター - Open Back Sweater": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1180,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1180,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4966053": "フルセット - Full Set",
+    "4966096": "例のセーター - Open Back Sweater",
+    "4966097": "スクール水着 - School Swimsuit"
   }
 }

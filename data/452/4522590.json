@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 6000,
+        "is_sale": false
       }
     ],
     "Staticのみ(Sacc対応版は含みません)": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1800,
         "is_sale": false
       }
@@ -1296,7 +1306,16 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7574536": "YU-172(Sacc対応・Static)",
+    "7683682": "Staticのみ(Sacc対応版は含みません)"
   }
 }

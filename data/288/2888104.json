@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Rusk / ラスク Version": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1500,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "All In One / Mishe + Rusk + Hakka": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4759873": "Mishe / ミーシェ Version",
+    "4759937": "Rusk / ラスク Version",
+    "4759938": "Hakka / 薄荷 Version",
+    "4759939": "All In One / Mishe + Rusk + Hakka"
   }
 }

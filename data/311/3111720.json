@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2980,
+        "is_sale": false
       }
     ],
     "ビキニジャケット - Bikini Jacket": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1480,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1480,
+        "is_sale": false
       }
     ],
     "例のセーター - Open Back Sweater": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1280,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5151637": "フルセット - Full Set",
+    "5151807": "ビキニジャケット - Bikini Jacket",
+    "5151808": "猫ランジェリー - Neko Lingerie",
+    "5151809": "例のセーター - Open Back Sweater"
   }
 }

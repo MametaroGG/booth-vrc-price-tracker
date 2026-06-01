@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1980,
+        "is_sale": false
       }
     ],
     "猫ランジェリー - Neko Lingerie": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1480,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1480,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5467741": "フルセット - Full Set",
+    "5467755": "猫ランジェリー - Neko Lingerie",
+    "5467756": "ビキニジャケット - Bikini Jacket"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1980,
+        "is_sale": false
       }
     ],
     "Kikyo": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1250,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1250,
+        "is_sale": false
       }
     ],
     "Selestia": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1250,
         "is_sale": false
       }
@@ -2135,7 +2155,18 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6749388": "Kikyo・Mayaセット",
+    "6749466": "Kikyo",
+    "6749467": "Maya",
+    "6796197": "Selestia"
   }
 }

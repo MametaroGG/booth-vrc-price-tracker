@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 125,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 125,
+        "is_sale": false
       }
     ],
     "Darker Version": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 125,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 125,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 225,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 225,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6861057": "Darling Eyeliner",
+    "6861096": "Darker Version",
+    "6861097": "Both Versions!"
   }
 }

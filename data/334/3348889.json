@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2480,
+        "is_sale": false
       }
     ],
     "例のセーターB型 - Open Chest Sweater": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1980,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1280,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5558851": "フルセット - Full Set",
+    "5558911": "例のセーターB型 - Open Chest Sweater",
+    "5558912": "例のセーター - Open Back Sweater"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 340,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 340,
+        "is_sale": false
       }
     ],
     "白猫": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 340,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 340,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5071837": "黒猫",
+    "5072245": "白猫"
   }
 }

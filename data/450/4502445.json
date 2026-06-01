@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 125,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 125,
+        "is_sale": false
       }
     ],
     "Dark Version": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 125,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 125,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7539356": "Original",
+    "7539357": "Dark Version"
   }
 }

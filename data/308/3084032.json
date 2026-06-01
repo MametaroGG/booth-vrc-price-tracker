@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "milk-techのみ(v1.13)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2500,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5103304": "milk&rusk-tech(セット)",
+    "5103332": "milk-techのみ(v1.13)",
+    "5103333": "rusk-techのみ(v1.12)"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "服 + ルーズソックス、スニーカーセット (Clothing + loose socks and sneaker set)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7682640": "トップス＆スカート単体 (Sweater and skirt only)",
+    "7682672": "服 + ルーズソックス、スニーカーセット (Clothing + loose socks and sneaker set)"
   }
 }

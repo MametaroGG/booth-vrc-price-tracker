@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "舞夜(Maya)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 900,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "カリン(Karin)": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 900,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Grus": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 900,
         "is_sale": false
       }
@@ -2989,6 +3019,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "狐雪(Koyuki)": [
@@ -3416,7 +3451,22 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5927361": "ALL",
+    "5927363": "舞夜(Maya)",
+    "5968620": "竜胆(Rindo)",
+    "5968621": "カリン(Karin)",
+    "5968622": "まりえる(Mariel)",
+    "5968623": "Grus",
+    "5968624": "アッシュ(Ash)",
+    "5968625": "狐雪(Koyuki)"
   }
 }

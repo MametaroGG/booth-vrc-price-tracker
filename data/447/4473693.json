@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1050,
+        "is_sale": false
       }
     ],
     "セレスティア用 - SELESTIA": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1311,6 +1321,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "エポナちゃん用 - Epona": [
@@ -1746,6 +1761,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -2185,7 +2205,19 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7491776": "セレスティア用 - SELESTIA",
+    "7491815": "フルセット - Full set",
+    "7491816": "梅雨ちゃん用 - TSUYU",
+    "7491817": "エポナちゃん用 - Epona",
+    "7491818": "ティコちゃん用 - Tycho"
   }
 }

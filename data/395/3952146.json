@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2980,
+        "is_sale": false
       }
     ],
     "ビキニパーカー - Bikini Parker": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1480,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1280,
+        "is_sale": false
       }
     ],
     "ビキニジャケット - Bikini Jacket": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1480,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6585158": "フルセット - Full Set",
+    "6585243": "ビキニパーカー - Bikini Parker",
+    "6585244": "例のセーター - Open Back Sweater",
+    "6585245": "ビキニジャケット - Bikini Jacket"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "Oversize hoodie (あなたの愛)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6970574": "Oversize hoodie",
+    "6970578": "Oversize hoodie (あなたの愛)"
   }
 }

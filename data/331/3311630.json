@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3980,
+        "is_sale": false
       }
     ],
     "チャイナドレス - China Dress": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1980,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1680,
+        "is_sale": false
       }
     ],
     "ビキニジャケット - Bikini Jacket": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1480,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5494807": "フルセット - Full Set",
+    "5494840": "チャイナドレス - China Dress",
+    "5494841": "例のセーターC型 - Open Shoulder Sweater",
+    "5494842": "ビキニジャケット - Bikini Jacket"
   }
 }

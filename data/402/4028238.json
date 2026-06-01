@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3480,
+        "is_sale": false
       }
     ],
     "バニースーツMKII - Bunny Suit MKII": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1980,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1480,
+        "is_sale": false
       }
     ],
     "レオタードセーター - Leotard Sweater": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6737831": "フルセット - Full Set",
+    "6737854": "バニースーツMKII - Bunny Suit MKII",
+    "6737855": "メイドビキニ - Maid Bikini",
+    "6737856": "レオタードセーター - Leotard Sweater"
   }
 }

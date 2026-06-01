@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 275,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 275,
+        "is_sale": false
       }
     ],
     "Triple L Hoodie Yellow": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 275,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 275,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7086703": "Triple L Hoodie Blue",
+    "7086718": "Triple L Hoodie Yellow",
+    "7086719": "Full Set Triple L Hoodies"
   }
 }

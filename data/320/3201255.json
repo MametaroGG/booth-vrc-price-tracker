@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3480,
+        "is_sale": false
       }
     ],
     "猫ランジェリー - Neko Lingerie": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1480,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1280,
+        "is_sale": false
       }
     ],
     "ビキニオーバーオール - Bikini Overalls": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1480,
         "is_sale": false
       }
@@ -2135,7 +2155,19 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5308553": "フルセット - Full Set",
+    "5308585": "猫ランジェリー - Neko Lingerie",
+    "5308586": "例のセータ - Open Back Sweater",
+    "5308587": "ビキニオーバーオール - Bikini Overalls",
+    "5308588": "スクール水着 - School Swimsuit"
   }
 }

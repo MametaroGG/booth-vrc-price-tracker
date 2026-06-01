@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "利用規約": [
@@ -844,6 +849,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Quest対応版VRCHAT向けオリジナル3Dモデル\"黒兎さより\"": [
@@ -1266,7 +1276,16 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4670392": "VRCHAT向けオリジナル3Dモデル\"黒兎さより\"",
+    "6147636": "Quest対応版VRCHAT向けオリジナル3Dモデル\"黒兎さより\""
   }
 }

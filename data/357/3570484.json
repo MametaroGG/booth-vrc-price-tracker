@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "[Jacket] [Only]": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1100,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5931288": "[Jacket, Cap] [FULL SET]",
+    "5931388": "[Jacket] [Only]",
+    "5931389": "[Cap] [Only]"
   }
 }

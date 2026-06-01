@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3480,
+        "is_sale": false
       }
     ],
     "カジュアルゴシック - Casual Gothic": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1480,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1480,
+        "is_sale": false
       }
     ],
     "制服 - School Uniform": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1480,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7284357": "フルセット - Full Set",
+    "7284374": "カジュアルゴシック - Casual Gothic",
+    "7284375": "セーラースクール水着 - Sailor School Swimsuit",
+    "7284376": "制服 - School Uniform"
   }
 }

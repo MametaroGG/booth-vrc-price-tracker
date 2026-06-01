@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "for 桔梗": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 650,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "for セレスティア": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 650,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 650,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 650,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "8102832": "for 桔梗",
+    "8189434": "FULL BUNDLE !",
+    "8189435": "for セレスティア",
+    "8189436": "for 森羅",
+    "8189437": "for ラシューシャ"
   }
 }

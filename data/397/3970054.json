@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "RD学園服女子_shirt.skirt(Only)": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6617342": "RD学園服女子(Full set)",
+    "6617394": "RD学園服女子_shirt.skirt(Only)"
   }
 }

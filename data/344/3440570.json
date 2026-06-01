@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2980,
+        "is_sale": false
       }
     ],
     "例のセーターB型 - Open Chest Sweater": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1980,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1280,
+        "is_sale": false
       }
     ],
     "スクール水着 - School Swimsuit": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5715781": "フルセット - Full Set",
+    "5715893": "例のセーターB型 - Open Chest Sweater",
+    "5715894": "例のセーター - Open Back Sweater",
+    "5715895": "スクール水着 - School Swimsuit"
   }
 }

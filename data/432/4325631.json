@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ハオランーHAOLAN": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7250200": "Grus",
+    "7250209": "ハオランーHAOLAN"
   }
 }

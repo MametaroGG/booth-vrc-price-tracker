@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "raimonUniform_Hair": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2500,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "raimonUniform_Boots": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5723957": "raimonUniform_Allset",
+    "5723974": "raimonUniform_Hair",
+    "5723975": "raimonUniform_Wear",
+    "5723976": "raimonUniform_Boots"
   }
 }

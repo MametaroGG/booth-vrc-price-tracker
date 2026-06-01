@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "maya 舞夜": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "kikyo 桔梗": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6520944": "All one",
+    "6520973": "maya 舞夜",
+    "6520974": "rindo 竜胆",
+    "6520975": "kikyo 桔梗"
   }
 }

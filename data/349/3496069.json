@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "miltea用ナース服": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 900,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5809237": "Ladymoon用ナース服",
+    "5809343": "miltea用ナース服",
+    "5809344": "pato用ナース服"
   }
 }

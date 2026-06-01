@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "A:ワンピース＆靴/A:Onepiece＆shoes（セシル変身アプリ可/Cecil OK）": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "B:ワンピース＆靴/B:Onepiece＆shoes（セシル変身アプリ可/Cecil OK）": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5532891": "A:フルセット/A:Full outfits",
+    "5532944": "A:ワンピース＆靴/A:Onepiece＆shoes（セシル変身アプリ可/Cecil OK）",
+    "5533179": "B:フルセット/B:Full outfits",
+    "5533180": "B:ワンピース＆靴/B:Onepiece＆shoes（セシル変身アプリ可/Cecil OK）"
   }
 }

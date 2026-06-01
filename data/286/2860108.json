@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 960,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 960,
+        "is_sale": false
       }
     ],
     "【商用/commercial use】allset": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 8000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 8000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4712028": "【個人/personal use】allset",
+    "6666592": "【商用/commercial use】allset"
   }
 }

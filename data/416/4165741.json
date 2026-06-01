@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 560,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 560,
+        "is_sale": false
       }
     ],
     "Totem Tattoo Texture": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 450,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "お金が欲しい（Full Setと内容は同じです）": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6969429": "Full Set（Save of 20%！）",
+    "6969833": "Totem Tattoo Texture",
+    "6969834": "Totem Nails Texture",
+    "6969835": "お金が欲しい（Full Setと内容は同じです）"
   }
 }

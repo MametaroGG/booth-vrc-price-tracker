@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Type B": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ペアリング用Full Set": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 50000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 50000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5049296": "Type A",
+    "5051846": "Type B",
+    "5051847": "Type C",
+    "5051848": "ペアリング用Full Set"
   }
 }

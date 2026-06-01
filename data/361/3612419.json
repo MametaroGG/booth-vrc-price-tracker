@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Rose Apron Dress[grenn/purple]": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": true
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "6008364": "Rose Apron Dress[pink/blue]",
+    "6133133": "Rose Apron Dress[grenn/purple]",
+    "6133134": "all colors"
   }
 }

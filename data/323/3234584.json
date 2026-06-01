@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": true
       }
     ],
     "PC版": [
@@ -854,6 +859,11 @@
         "date": "2026-05-30",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": true
       }
     ],
     "Quest+PC フルセット版": [
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 7500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 6000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "5365514": "Quest版",
+    "5365984": "PC版",
+    "5365985": "Quest+PC フルセット版"
   }
 }

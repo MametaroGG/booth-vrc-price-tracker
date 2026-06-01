@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "한복 Hanbok 韓服 (for Jaula)  + ビール代🍺": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1700,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "한복 Hanbok 韓服 (for Maki) + ビール代🍺": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7513606": "한복 Hanbok 韓服 (for Jaula)",
+    "7513663": "한복 Hanbok 韓服 (for Jaula)  + ビール代🍺",
+    "7513664": "한복 Hanbok 韓服 (for Maki)",
+    "7513665": "한복 Hanbok 韓服 (for Maki) + ビール代🍺"
   }
 }

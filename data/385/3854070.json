@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ただの指輪！Nonactive Pair Ring": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6416286": "近付くと色が変わる！Reactive Pair Ring",
+    "6426352": "ただの指輪！Nonactive Pair Ring"
   }
 }

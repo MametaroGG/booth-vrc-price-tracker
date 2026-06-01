@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1150,
+        "is_sale": false
       }
     ],
     "Color1": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Color3": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6817273": "全色セット(Color1/Color2/Color3)",
+    "6817288": "Color1",
+    "6817289": "Color2",
+    "6817290": "Color3"
   }
 }

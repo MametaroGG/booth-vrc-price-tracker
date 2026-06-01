@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 480,
+        "is_sale": false
       }
     ],
     "Physics Chain Bat": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 330,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 330,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Lightening shoot": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5851158": "Full set (Discount price)",
+    "5871458": "Physics Chain Bat",
+    "5871459": "Lightening shoot",
+    "6382178": "Silver earring"
   }
 }

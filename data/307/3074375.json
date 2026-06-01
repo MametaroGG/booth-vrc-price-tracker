@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "donation": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "5087104": "main file",
+    "5087155": "donation"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "(2) F&B Set": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6347359": "(1) F&B_Texture Only",
+    "6347423": "(2) F&B Set"
   }
 }

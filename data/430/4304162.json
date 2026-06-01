@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Commercial Use": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 777,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 777,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7213751": "Personal Use",
+    "7221697": "Commercial Use"
   }
 }

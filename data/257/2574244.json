@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5500,
+        "is_sale": false
       }
     ],
     "ミニマム版(PC)(SDK3設定、追加コンテンツ無し/No SDK3 configuration, no additional content.)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3500,
         "is_sale": false
       }
@@ -1478,6 +1488,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Quest&Mobile版": [
@@ -1710,6 +1725,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "もちふぃった～プロファイル（順変換）": [
@@ -1872,7 +1892,18 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4222555": "フルセット版(Quest版同梱)",
+    "5606777": "ミニマム版(PC)(SDK3設定、追加コンテンツ無し/No SDK3 configuration, no additional content.)",
+    "6557446": "Quest&Mobile版",
+    "6557447": "PC版へアップグレードパッケージ(Quest版ご購入者様用)/Upgrade package to PC version(for those who purchased the Quest version)"
   }
 }

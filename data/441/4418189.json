@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "Hime Hairstyle ( 髪 ) NONCOMMERCIAL": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7403057": "「SALE」FULL SET ( 全部 ) NONCOMMERCIAL",
+    "7403058": "Hime Hairstyle ( 髪 ) NONCOMMERCIAL",
+    "7403059": "Hime Outfit Set ( 衣装 ) NONCOMMERCIAL"
   }
 }

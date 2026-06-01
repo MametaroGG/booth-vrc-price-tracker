@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "カクテル一杯おごりまっせ(Present a cocktail)": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7368258": "缶ビールをおごる(Present a beer)",
+    "7368295": "カクテル一杯おごりまっせ(Present a cocktail)"
   }
 }

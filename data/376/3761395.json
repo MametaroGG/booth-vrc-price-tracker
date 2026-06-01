@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Orange": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Green": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -2135,6 +2155,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Yellow": [
@@ -2560,6 +2585,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2000,
         "is_sale": false
       }
@@ -2989,6 +3019,11 @@
         "date": "2026-05-30",
         "price": 10000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 10000,
+        "is_sale": false
       }
     ],
     "Commercial Use": [
@@ -3416,7 +3451,22 @@
         "date": "2026-05-30",
         "price": 22000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 22000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6261491": "Purple",
+    "6261506": "Orange",
+    "6261507": "Red",
+    "6261508": "Green",
+    "6261509": "Blue",
+    "6261510": "Yellow",
+    "6261511": "All Colors",
+    "6261512": "Commercial Use"
   }
 }

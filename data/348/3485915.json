@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "ルルリア専用　for Luruleah": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "リーファ専用　for Leefa": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -2112,7 +2132,19 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5791552": "舞夜・竜胆・セフィラ・ウルフェリア・京狐専用 for Maya / Rindo / Sephira / Wolferia / Kyoko",
+    "6119550": "リーファ専用　for Leefa",
+    "6135947": "桔梗専用　for Kikyo",
+    "6267950": "ルルリア専用　for Luruleah",
+    "6780267": "セレスティア専用　for Selestia"
   }
 }

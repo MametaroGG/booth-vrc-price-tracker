@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Maya 舞夜": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 200,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 360,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 360,
+        "is_sale": false
       }
     ],
     "舞夜&桔梗 [Support ver.]": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 420,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 420,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6659232": "Kikyo 桔梗",
+    "6659283": "Maya 舞夜",
+    "6659284": "Fullset [ 舞夜&桔梗 ]",
+    "6659285": "舞夜&桔梗 [Support ver.]"
   }
 }

@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 120,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 120,
+        "is_sale": false
       }
     ],
     "碼希対応KURAIEYE": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 120,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7867859": "水瀬対応KURAIEYE",
+    "7867886": "碼希対応KURAIEYE",
+    "7867887": "フルセット"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 240,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 240,
+        "is_sale": false
       }
     ],
     "Seafoam Green": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 240,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 240,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 240,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 240,
+        "is_sale": false
       }
     ],
     "Dress Set": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 720,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 720,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5810136": "Fuchsia",
+    "5810155": "Seafoam Green",
+    "5810156": "Yellow",
+    "5810342": "Dress Set"
   }
 }

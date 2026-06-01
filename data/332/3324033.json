@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Misagonにチップをあげる": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 360,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 360,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5516499": "Misagonを褒める",
+    "5516536": "通常版",
+    "5518642": "Misagonにチップをあげる"
   }
 }

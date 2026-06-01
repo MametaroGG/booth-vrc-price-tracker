@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "VRChat PC用、イラスト用": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 660,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 660,
         "is_sale": false
       }
@@ -1281,7 +1291,17 @@
         "date": "2026-05-30",
         "price": 560,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 560,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5293439": "VRChat PC/Quest用、イラスト用セット",
+    "5293459": "VRChat PC用、イラスト用",
+    "5293460": "VRChat Quest用"
   }
 }

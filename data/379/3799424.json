@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Leefa eye and hair Ver.1.3": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -1283,7 +1293,17 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6326396": "Kikyo eye and hair Ver.1.3",
+    "6326420": "Leefa eye and hair Ver.1.3",
+    "6326421": "Kikyo and Leefa Ver.1.3"
   }
 }

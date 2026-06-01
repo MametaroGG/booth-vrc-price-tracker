@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 2980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2980,
+        "is_sale": false
       }
     ],
     "レオタードセーター - Leotard Sweater": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 980,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 1280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1280,
+        "is_sale": false
       }
     ],
     "制服 - School Uniform": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 1380,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1380,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6578848": "フルセット - Full Set",
+    "6578883": "レオタードセーター - Leotard Sweater",
+    "6578884": "例のセーター - Open Back Sweater",
+    "6578885": "制服 - School Uniform"
   }
 }

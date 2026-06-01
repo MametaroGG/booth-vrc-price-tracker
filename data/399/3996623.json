@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "PB2SB Converter (α版)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 0,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 130,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 130,
+        "is_sale": false
       }
     ],
     "開発者応援(中)": [
@@ -1706,6 +1721,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 560,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 560,
         "is_sale": false
       }
@@ -2135,7 +2155,17 @@
         "date": "2026-05-30",
         "price": 660,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 660,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6668867": "開発者応援(小)",
+    "6668868": "開発者応援(中)",
+    "6669019": "開発者応援(大)"
   }
 }

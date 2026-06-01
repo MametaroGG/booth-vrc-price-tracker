@@ -1273,6 +1273,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "2 Strawberry milk tea / Hair Preset / medium length hair": [
@@ -1280,6 +1285,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "3 Pistachio / Hair Preset / medium length hair": [
@@ -1287,7 +1297,17 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "5397629": "1 Caramel milk tea / Hair Preset / medium length hair",
+    "5399459": "2 Strawberry milk tea / Hair Preset / medium length hair",
+    "5399460": "3 Pistachio / Hair Preset / medium length hair"
   }
 }

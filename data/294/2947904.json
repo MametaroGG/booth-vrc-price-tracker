@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 3400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3400,
+        "is_sale": false
       }
     ],
     "Olivia": [
@@ -854,7 +859,16 @@
         "date": "2026-05-30",
         "price": 2900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4862006": "Olivia + Bunny Outfit",
+    "4862019": "Olivia"
   }
 }

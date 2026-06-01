@@ -412,6 +412,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "QUEST版": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 4000,
         "is_sale": false
       }
@@ -1276,6 +1286,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "PC+QUEST+VRM": [
@@ -1688,6 +1703,11 @@
         "date": "2026-05-30",
         "price": 8000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 8000,
+        "is_sale": false
       }
     ],
     "【SALE】PC版": [
@@ -1734,5 +1754,11 @@
         "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "7029032": "PC版",
+    "7029237": "QUEST版",
+    "7029238": "PC+QUEST+VRM",
+    "8988961": "VRM版"
   }
 }

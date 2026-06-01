@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 825,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 825,
+        "is_sale": false
       }
     ],
     "Seductive Dance Bottoms": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 525,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 525,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 325,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 325,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7001567": "Full Seductive Dance Outfit",
+    "7001586": "Seductive Dance Bottoms",
+    "7001587": "Body Chains"
   }
 }

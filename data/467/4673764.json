@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "ver3対応版サンダル単品 -var.3 sandals only-": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 600,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "ver3対応版バッグ単品 -var.3 sbag only-": [
@@ -1728,7 +1743,18 @@
         "date": "2026-05-30",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7836391": "ver2,ver3対応フルセット -Full set for ver2 and ver3-",
+    "7980017": "ver3対応版サンダル単品 -var.3 sandals only-",
+    "7980018": "ver3対応版セットアップ単品 -var.3 setup only-",
+    "7980019": "ver3対応版バッグ単品 -var.3 sbag only-"
   }
 }

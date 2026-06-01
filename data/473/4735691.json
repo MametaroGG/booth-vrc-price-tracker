@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "Circle Pack": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 900,
         "is_sale": false
       }
@@ -1296,6 +1306,11 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Sakura Pack": [
@@ -1726,6 +1741,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 900,
         "is_sale": false
       }
@@ -2160,7 +2180,19 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7940797": "Full Pack",
+    "7941038": "Circle Pack",
+    "7941039": "Square Pack",
+    "7941040": "Sakura Pack",
+    "9728225": "Shelf Pack"
   }
 }

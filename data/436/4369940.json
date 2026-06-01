@@ -437,6 +437,11 @@
         "date": "2026-05-30",
         "price": 10250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 10250,
+        "is_sale": false
       }
     ],
     "既定のモデル || DEFAULT MODEL": [
@@ -874,7 +879,16 @@
         "date": "2026-05-30",
         "price": 4780,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4780,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7323232": "フルパッケージ || FULL PACKAGE",
+    "7343342": "既定のモデル || DEFAULT MODEL"
   }
 }

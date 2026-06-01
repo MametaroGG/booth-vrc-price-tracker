@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 365,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 365,
+        "is_sale": false
       }
     ],
     "Hair Texture 2": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 365,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 365,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 365,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 365,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7289281": "Hair Texture 1",
+    "7289292": "Hair Texture 2",
+    "7289293": "Hair Texture 3"
   }
 }

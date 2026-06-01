@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 3700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3700,
+        "is_sale": false
       }
     ],
     "For commercial use": [
@@ -864,6 +869,11 @@
         "date": "2026-05-30",
         "price": 19000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 19000,
+        "is_sale": false
       }
     ],
     "Commission ( Photo, Color Change )": [
@@ -879,6 +889,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 36000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 36000,
         "is_sale": false
       }
@@ -898,7 +913,18 @@
         "date": "2026-05-30",
         "price": 46000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 46000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7894365": "Carrot Club",
+    "9314361": "For commercial use",
+    "14027408": "Commission ( Photo, Color Change )",
+    "14027433": "Commission ( Photo, Color Change , Add assets )"
   }
 }

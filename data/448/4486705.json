@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 650,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "【支援版/Cheering】PSD+Eye+SampleB Custom Item": [
@@ -862,6 +867,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 900,
         "is_sale": false
       }
@@ -1296,7 +1306,17 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7513998": "【通常版/standard】",
+    "7514174": "【支援版/Cheering】PSD+Eye+SampleB Custom Item",
+    "7514175": "【商用版/commercial】PSD+Eye+SampleB Custom Item"
   }
 }
