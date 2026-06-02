@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "ドレス&靴（葡萄色）/Dress&Shoes(Purple)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3431173": "ドレス&靴（深紅）/Dress&Shoes(Red)",
+    "3432190": "ドレス&靴（葡萄色）/Dress&Shoes(Purple)",
+    "3434428": "ドレス&靴（藍色）/Dress&Shoes(NavyBlue)"
   }
 }

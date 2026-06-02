@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Boost！(内容同じです／The contents are the same）": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4488684": "通常版(Normal Edition)",
+    "4489588": "Boost！(内容同じです／The contents are the same）"
   }
 }

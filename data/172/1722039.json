@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "#002-アニ目(clip,psb,psdファイル同梱)": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2738279": "#002-アニ目",
+    "2738316": "#002-アニ目(clip,psb,psdファイル同梱)"
   }
 }

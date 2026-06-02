@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "English (parameter)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 0,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 180,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 180,
+        "is_sale": false
       }
     ],
     "ご支援用/For support": [
@@ -1688,7 +1703,16 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4436632": "森ガール風セット",
+    "4436633": "ご支援用/For support"
   }
 }

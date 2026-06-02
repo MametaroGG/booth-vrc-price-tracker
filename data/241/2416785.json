@@ -417,6 +417,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "vroid用服テクスチャのみ": [
@@ -834,7 +839,16 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3955188": "アダム＆リズベット＋vroid用テクスチャ",
+    "3955213": "vroid用服テクスチャのみ"
   }
 }

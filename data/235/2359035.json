@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Gold Chain Set": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 680,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 680,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3856052": "All Color Set",
+    "3856171": "Gold Chain Set",
+    "3856172": "Silver Chain Set"
   }
 }

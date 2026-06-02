@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "3点セット　Arachne & Arachne parts for other avatars & spider": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3980,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 2450,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2450,
+        "is_sale": false
       }
     ],
     "キツネハエトリグモ　only Spider": [
@@ -1688,7 +1703,17 @@
         "date": "2026-05-30",
         "price": 930,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 930,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3870446": "3点セット　Arachne & Arachne parts for other avatars & spider",
+    "10412740": "アラクネのイナヤツマ only Arachne",
+    "10412741": "キツネハエトリグモ　only Spider"
   }
 }

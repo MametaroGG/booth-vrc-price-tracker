@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "追加投金用（内容物無し）": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3463063": "Hippop Wear v1.0.1",
+    "3472288": "追加投金用（内容物無し）"
   }
 }

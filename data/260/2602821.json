@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Cat Set": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 250,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Horn Set": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -2110,6 +2130,11 @@
         "date": "2026-05-30",
         "price": 125,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 125,
+        "is_sale": false
       }
     ],
     "Deer": [
@@ -2530,6 +2555,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 125,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 125,
         "is_sale": false
       }
@@ -2954,6 +2984,11 @@
         "date": "2026-05-30",
         "price": 125,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 125,
+        "is_sale": false
       }
     ],
     "Fox": [
@@ -3374,6 +3409,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 125,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 125,
         "is_sale": false
       }
@@ -3798,6 +3838,11 @@
         "date": "2026-05-30",
         "price": 125,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 125,
+        "is_sale": false
       }
     ],
     "Mouse": [
@@ -4218,6 +4263,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 125,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 125,
         "is_sale": false
       }
@@ -4642,7 +4692,25 @@
         "date": "2026-05-30",
         "price": 125,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 125,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4269517": "FULL SET",
+    "4269536": "Cat Set",
+    "4269537": "Dog Set",
+    "4269538": "Horn Set",
+    "4269539": "Bunny",
+    "4269540": "Deer",
+    "4269541": "Fennec Fox",
+    "4269542": "Fox",
+    "4269543": "Horse",
+    "4269544": "Mouse",
+    "4269545": "Squirrel"
   }
 }

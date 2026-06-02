@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5500,
+        "is_sale": false
       }
     ],
     "ミニマム版(V2)(PC)(SDK3設定、追加コンテンツ無し/No SDK3 configuration, no additional content.)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3500,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "1922316": "フルセット版(V2)(PC)",
+    "2488631": "Quest版マァオ(V1)単品版(V2版制作予定・現在はDL可能にするため残しております)",
+    "8914794": "ミニマム版(V2)(PC)(SDK3設定、追加コンテンツ無し/No SDK3 configuration, no additional content.)"
   }
 }

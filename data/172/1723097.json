@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "パーツ分離(Full)Ver.": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2739933": "パーツ結合(Simple)Ver.",
+    "2739974": "パーツ分離(Full)Ver."
   }
 }

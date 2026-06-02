@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "VRC向けアバター設定データ（ver1.3）": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2602564": "モデルデータ(ver1.3)",
+    "6480861": "VRC向けアバター設定データ（ver1.3）"
   }
 }

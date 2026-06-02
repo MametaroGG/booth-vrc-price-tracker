@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "髪型プリセット(HairstylePresets)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 300,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "キャラクター3Dモデル FBX&テクスチャーセット": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3162971": "テクスチャセット(TextureSet)",
+    "3163367": "髪型プリセット(HairstylePresets)",
+    "3163368": "キャラクター3DモデルVRM &テクスチャーセット",
+    "3163369": "キャラクター3Dモデル FBX&テクスチャーセット"
   }
 }

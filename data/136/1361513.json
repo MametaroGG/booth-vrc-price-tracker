@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "DempseyにJP-8をおごる（内容は通常版と同じ）": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 3100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2122549": "通常版",
+    "2194058": "DempseyにJP-8をおごる（内容は通常版と同じ）"
   }
 }

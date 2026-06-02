@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Indigo インディゴ": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 550,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "Blue ブルー": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 550,
         "is_sale": false
       }
@@ -2110,7 +2130,19 @@
         "date": "2026-05-30",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3929632": "Indigo インディゴ",
+    "3929765": "Black ブラック",
+    "3929766": "Blue ブルー",
+    "3929767": "White ホワイト",
+    "3929768": "6 Colors Set"
   }
 }

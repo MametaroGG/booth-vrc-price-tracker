@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 3520,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3520,
+        "is_sale": false
       }
     ],
     "アバターのみ(Avatar only)": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 2750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2750,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2345150": "フルセット(Full set)",
+    "2423809": "アバターのみ(Avatar only)"
   }
 }

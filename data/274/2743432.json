@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Chloe(クロエ)モデルデータ": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3000,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4515390": "Ciel(シエル)モデルデータ",
+    "4515420": "Chloe(クロエ)モデルデータ",
+    "4515421": "Ciel&Chloe(シエル&クロエ)セットデータ"
   }
 }

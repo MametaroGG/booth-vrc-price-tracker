@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "3色セット(赤・水色・グレー)_3 Colors Set(Red,SkyBlue,Gray)": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 550,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "3色セット(青・黒・黄色)_3 Colors Set(Blue,Black,Yellow)": [
@@ -1708,7 +1723,18 @@
         "date": "2026-05-30",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 550,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4248714": "全9色セット_All 9 Colors Set",
+    "4293737": "3色セット(赤・水色・グレー)_3 Colors Set(Red,SkyBlue,Gray)",
+    "4293738": "3色セット(青・黒・黄色)_3 Colors Set(Blue,Black,Yellow)",
+    "4293739": "3色セット(ピンク・紺色・緑)_3 Colors Set(Pink,DeepBlue,Green)"
   }
 }

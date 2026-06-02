@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "DX版": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 8500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 8500,
         "is_sale": false
       }
@@ -1266,7 +1276,16 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4793067": "Basic版",
+    "4793068": "DX版"
   }
 }

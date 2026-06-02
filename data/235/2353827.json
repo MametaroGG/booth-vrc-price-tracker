@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "(2)メリノ用 _Merino (v1.01)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1300,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "(4)イヨ用_Eyo": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3846443": "(1)京狐/沙猫用 _Kyoko&Saneko (v1.01)",
+    "3846515": "(2)メリノ用 _Merino (v1.01)",
+    "4266194": "(3)狐雪用_Koyuki (v1.02)",
+    "4604542": "(4)イヨ用_Eyo"
   }
 }

@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2280,
+        "is_sale": false
       }
     ],
     "ナース - Nurse": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1180,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1180,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ],
     "体操着 - Gym Uniform": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 880,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3924626": "フルセット - Full Set",
+    "3924707": "ナース - Nurse",
+    "3924708": "スクール水着 - School Swimsuit",
+    "3924709": "体操着 - Gym Uniform"
   }
 }

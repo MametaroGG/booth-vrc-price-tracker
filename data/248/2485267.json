@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 626,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 626,
+        "is_sale": false
       }
     ],
     "Dim's Deluxe pack": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 1670,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1670,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4072508": "Dim",
+    "4072554": "Dim's Deluxe pack"
   }
 }

@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2480,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2480,
+        "is_sale": false
       }
     ],
     "例のセーター - Open Back Sweater": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1180,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1180,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ],
     "ナース - Nurse": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 1180,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1180,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4186621": "フルセット - Full Set",
+    "4186653": "例のセーター - Open Back Sweater",
+    "4186654": "スクール水着 - School Swimwear",
+    "4186655": "ナース - Nurse"
   }
 }

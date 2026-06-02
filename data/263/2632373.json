@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "2.火魔法セット~Fire magic~(VRM+.vroidデータ)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 4000,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "4.水魔法セット~Water magic~(VRM+.vroidデータ)": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 4000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 4000,
         "is_sale": false
       }
@@ -2110,6 +2130,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "6.風魔法セット~Wind magic~(VRM+.vroidデータ)": [
@@ -2532,7 +2557,20 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4319836": "1.火魔法~Fire magic~(VRM)",
+    "4319863": "2.火魔法セット~Fire magic~(VRM+.vroidデータ)",
+    "4319864": "3.水魔法セット~Water magic~(VRM)",
+    "4319865": "4.水魔法セット~Water magic~(VRM+.vroidデータ)",
+    "4319866": "5.風魔法セット~Wind magic~(VRM)",
+    "4319867": "6.風魔法セット~Wind magic~(VRM+.vroidデータ)"
   }
 }

@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Cat Tights Black | ネコOTK  黒": [
@@ -1278,6 +1283,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Cat Tights White | ネコOTK 白": [
@@ -1285,7 +1295,16 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3836176": "Cat Tights Black | ネコOTK 黒",
+    "4205156": "Cat Tights White | ネコOTK 白"
   }
 }

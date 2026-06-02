@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2160,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2160,
+        "is_sale": false
       }
     ],
     "Kozono用追加テクスチャパック": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 540,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 540,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "1797987": "Kozono本体",
+    "1798011": "Kozono用追加テクスチャパック"
   }
 }

@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "夏/Summer": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": true
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "冬/Winter": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 500,
         "is_sale": true
       }
@@ -2110,7 +2130,19 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "4097307": "春/Spring",
+    "4097312": "夏/Summer",
+    "4097313": "秋/Autumn",
+    "4097314": "冬/Winter",
+    "4097315": "全色+黒/AllColors＆Black"
   }
 }

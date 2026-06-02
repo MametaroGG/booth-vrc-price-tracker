@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5500,
+        "is_sale": false
       }
     ],
     "ルーシュ(Ruche)-SummerStyle-": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 5500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 5500,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2070060": "ルーシュ(Ruche)-Standard-",
+    "2172564": "ルーシュ(Ruche)-SummerStyle-",
+    "2172565": "ルーシュ用夏服（衣装のみ）"
   }
 }

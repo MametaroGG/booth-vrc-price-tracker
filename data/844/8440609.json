@@ -1,0 +1,31 @@
+{
+  "id": "8440609",
+  "name": "Puddles VR Chat Expression Builder / パドルズ ToggleやRadialで切り替える",
+  "variations": {
+    "No Donation D: 支援なしでOK！It is Free Enjoy": [
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Donation 支援": [
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "Big Donation :3 大きい支援": [
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
+      }
+    ]
+  },
+  "variation_keys": {
+    "14093522": "Donation 支援",
+    "14093523": "Big Donation :3 大きい支援"
+  }
+}

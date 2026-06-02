@@ -614,6 +614,11 @@
         "date": "2026-05-30",
         "price": 4400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4400,
+        "is_sale": false
       }
     ],
     "通常版・VRM版セット": [
@@ -1226,6 +1231,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 3300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 3300,
         "is_sale": false
       }
@@ -1844,6 +1854,11 @@
         "date": "2026-05-30",
         "price": 6600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 6600,
+        "is_sale": false
       }
     ],
     "通常版 (PCVR ver.)・VRM版セット": [
@@ -2074,6 +2089,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 7700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 7700,
         "is_sale": false
       }
@@ -2308,6 +2328,11 @@
         "date": "2026-05-30",
         "price": 7700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 7700,
+        "is_sale": false
       }
     ],
     "通常版 (PCVR ver.)・VRM版・Android/iOS版セット": [
@@ -2540,7 +2565,20 @@
         "date": "2026-05-30",
         "price": 8800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 8800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3896215": "通常版 (PCVR ver.)",
+    "4691864": "VRM版（※素体は含まれておりません）",
+    "4691865": "通常版 (PCVR ver.)・VRM版セット",
+    "6012637": "Android/iOS版（※素体は含まれておりません）",
+    "6012638": "通常版 (PCVR ver.)・Android/iOS版セット",
+    "6012639": "通常版 (PCVR ver.)・VRM版・Android/iOS版セット"
   }
 }

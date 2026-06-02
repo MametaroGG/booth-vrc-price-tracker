@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "ルーナ　-Luna-": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 5000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 5000,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 9000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 9000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3581943": "リゼル　-Risel-",
+    "3587688": "ルーナ　-Luna-",
+    "3587689": "リゼル　-Risel- ＆ ルーナ　-Luna-　FullSet"
   }
 }

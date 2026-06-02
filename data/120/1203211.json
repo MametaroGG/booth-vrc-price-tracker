@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "髪テクスチャ20パターンセット（一般ユーザー／小規模事業者向け価格 ） Hair Texture 20 Set(General User/Small-Scale Enterprise)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -1266,7 +1276,16 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "1871379": "髪テクスチャ20パターンセット（一般ユーザー／小規模事業者向け価格 ） Hair Texture 20 Set(General User/Small-Scale Enterprise)",
+    "1871380": "髪テクスチャ20パターンセット（大規模事業者／中規模事業者向け価格） Hair Texture 20 Set(Large Entity/Medium Entity)"
   }
 }

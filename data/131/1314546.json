@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 12000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 12000,
+        "is_sale": false
       }
     ],
     "ハイポリ‐リメイク版_Highpoli_Ver1.3~2.0": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 8000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 8000,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2049561": "クロスグレード版_XGrade_AllDate",
+    "2185554": "ハイポリ‐リメイク版_Highpoli_Ver1.3~2.0",
+    "2185555": "ローポリ版_LowPoli"
   }
 }

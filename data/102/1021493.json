@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "CarvinFA-MAS　[単体]": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "BattleMaid　[衣装のみ]": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2500,
         "is_sale": false
       }
@@ -2110,6 +2130,11 @@
         "date": "2026-05-30",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "BattleMaidSinar　[高解像度版][VRM付き]": [
@@ -2532,7 +2557,20 @@
         "date": "2026-05-30",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "1568744": "WeaponCareerBit　[単体]",
+    "1568762": "CarvinFA-MAS　[単体]",
+    "1568763": "Electric lighting Raikiri　[単体]",
+    "1568764": "BattleMaid　[衣装のみ]",
+    "1568765": "BattleMaidSinar　[通常版][VRM付き]",
+    "1568766": "BattleMaidSinar　[高解像度版][VRM付き]"
   }
 }

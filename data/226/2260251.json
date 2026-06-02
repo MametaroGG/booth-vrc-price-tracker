@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1150,
+        "is_sale": false
       }
     ],
     "赤/Red": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1150,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1150,
+        "is_sale": false
       }
     ],
     "緑/Green": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1150,
         "is_sale": false
       }
@@ -2110,7 +2130,19 @@
         "date": "2026-05-30",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3676050": "青/Blue",
+    "3709036": "赤/Red",
+    "3709037": "グレー/Gray",
+    "3709038": "緑/Green",
+    "3710192": "全4色+ネイル/All 4 Colors+nail colors"
   }
 }

@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "カツオノエボシ(Portuguese Man O)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 150,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ボクセル製ダイオウグソクムシ(voxel-made giant isopod)": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3236008": "ダイオウグソクムシの殻(giant isopod)",
+    "3243561": "カツオノエボシ(Portuguese Man O)",
+    "3340957": "リュウグウノツカイ(Giant oarfish)",
+    "3642972": "ボクセル製ダイオウグソクムシ(voxel-made giant isopod)"
   }
 }

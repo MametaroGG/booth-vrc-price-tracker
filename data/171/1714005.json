@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "すべての品質（低からVRに対応) - All Qualities (Low to VR Ready)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 100,
         "is_sale": false
       }
@@ -1266,7 +1276,16 @@
         "date": "2026-05-30",
         "price": 20000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 20000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2733682": "すべての品質（低からVRに対応) - All Qualities (Low to VR Ready)",
+    "2733683": "商用利用 - Commercial Use"
   }
 }

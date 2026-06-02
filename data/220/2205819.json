@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "(2)幽狐族のお姉様用 -Yuuko zoku no oneesama": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1200,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "(4)シルヴィア用 -Silvia": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3578329": "(1)京狐用 -Kyoko",
+    "3747082": "(2)幽狐族のお姉様用 -Yuuko zoku no oneesama",
+    "4643163": "(3)イヨ用 -Eyo",
+    "5273699": "(4)シルヴィア用 -Silvia"
   }
 }

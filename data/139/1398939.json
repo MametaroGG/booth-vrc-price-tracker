@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "SteamPunkProps MegaPack -エンジン-": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1000,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "SteamPunkProps MegaPack -基本セット-": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2187963": "SteamPunkProps MegaPack -全部盛り-",
+    "2188079": "SteamPunkProps MegaPack -エンジン-",
+    "2188080": "SteamPunkProps MegaPack -ギア-",
+    "2188081": "SteamPunkProps MegaPack -基本セット-"
   }
 }

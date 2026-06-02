@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2280,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2280,
+        "is_sale": false
       }
     ],
     "スクール水着 - School Swimsuit": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 980,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 1180,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1180,
+        "is_sale": false
       }
     ],
     "体操着 - Gym Uniform": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 880,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3989480": "フルセット - Full Set",
+    "3989515": "スクール水着 - School Swimsuit",
+    "3989516": "ストリートジャージ - Street Jersey",
+    "3989517": "体操着 - Gym Uniform"
   }
 }

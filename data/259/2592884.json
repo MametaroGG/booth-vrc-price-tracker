@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1680,
+        "is_sale": false
       }
     ],
     "バニースーツ & Bunny Suit": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 980,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4253342": "フルセット - Full Set",
+    "4253367": "バニースーツ & Bunny Suit",
+    "4253368": "スクール水着 - School Swimsuit"
   }
 }

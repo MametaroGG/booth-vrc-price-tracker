@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "②完全版[Fullset]": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 5500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 5500,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 6000,
+        "is_sale": false
       }
     ],
     "④PSD、素体FBXのみ[PSD,FBX Only]": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4158006": "①VRChatPrefab,VRMのみ[VRChatPrefab&VRMOnly]",
+    "4161333": "②完全版[Fullset]",
+    "4161334": "③完全版＋牛丼おごる[Fullset+Give a treat to the author]",
+    "4161335": "④PSD、素体FBXのみ[PSD,FBX Only]"
   }
 }

@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ケープ＆リボン2種つき/Cape&2kinds of Ribbons": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "ひいらぎのリボンのみ/Only Holly for Riboon texture": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4140144": "ケープのみ/Only Bolero jacket",
+    "4140160": "ケープ＆リボン2種つき/Cape&2kinds of Ribbons",
+    "4140161": "リボン2種のみ/Only 2kinds of Ribbons",
+    "4156412": "ひいらぎのリボンのみ/Only Holly for Riboon texture"
   }
 }

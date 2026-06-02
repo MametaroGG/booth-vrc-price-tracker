@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 4980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4980,
+        "is_sale": false
       }
     ],
     "部位「耳」のみ(Ears only)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 480,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3278545": "「ぐれーず」(Avatar)",
+    "3360512": "部位「耳」のみ(Ears only)",
+    "3360513": "部位「足」のみ(Foot only)"
   }
 }

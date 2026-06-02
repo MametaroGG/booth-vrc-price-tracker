@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 3980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 3980,
+        "is_sale": false
       }
     ],
     "ストリートジャージー/ Street Jersey": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1180,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1180,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 1180,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1180,
+        "is_sale": false
       }
     ],
     "バニースーツ - Bunny Suit": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 980,
         "is_sale": false
       }
@@ -2110,6 +2130,11 @@
         "date": "2026-05-30",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "競泳水着 - Competition Swimsuit": [
@@ -2532,7 +2557,20 @@
         "date": "2026-05-30",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 980,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3848514": "フルセット - Full Set",
+    "3848553": "ストリートジャージー/ Street Jersey",
+    "3848554": "ナース - Nurse",
+    "3848555": "バニースーツ - Bunny Suit",
+    "3848556": "体操着 - Gym Unitform",
+    "3848557": "競泳水着 - Competition Swimsuit"
   }
 }

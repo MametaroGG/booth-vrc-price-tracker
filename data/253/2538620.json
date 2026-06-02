@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "フルセット（ワンピ+リボン+靴）/Full Set(Onepiece+Ribbon+Shoes)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 700,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4164412": "ワンピースのみ/Only Onpiece texture",
+    "4164518": "フルセット（ワンピ+リボン+靴）/Full Set(Onepiece+Ribbon+Shoes)",
+    "4252491": "リボン単品/Only the Ribbon"
   }
 }

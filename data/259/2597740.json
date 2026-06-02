@@ -427,6 +427,11 @@
         "date": "2026-05-30",
         "price": 220,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 220,
+        "is_sale": false
       }
     ],
     "JP/無料版": [
@@ -852,6 +857,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 0,
         "is_sale": false
       }
@@ -1281,6 +1291,11 @@
         "date": "2026-05-30",
         "price": 220,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 220,
+        "is_sale": false
       }
     ],
     "EN/Free version": [
@@ -1708,7 +1723,16 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4294256": "JP/有料版 +4種",
+    "4962294": "EN/Paid version +4 design"
   }
 }

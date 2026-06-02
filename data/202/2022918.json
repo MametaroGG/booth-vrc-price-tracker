@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "Full Version Nano SDK2": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 8000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 8000,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3249942": "Full Version Nano SDK2",
+    "3254209": "Standard Nano (No Animation) SDK2",
+    "3928823": "Full Version Nano Extension 6 Animations(Animation Extension Only for Full Version Nano) SDK2"
   }
 }

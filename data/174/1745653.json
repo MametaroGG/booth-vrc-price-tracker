@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "利用規約.txt": [
@@ -844,7 +849,15 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2778359": "本体(Ver1.0)"
   }
 }

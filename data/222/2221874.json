@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1980,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1980,
+        "is_sale": false
       }
     ],
     "バニースーツ - Bunny Suit": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 980,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 980,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 880,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 880,
+        "is_sale": false
       }
     ],
     "競泳水着 - Competition Swimsuit": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 780,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 780,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3606845": "バニースーツ - Bunny Suit",
+    "3606865": "フルセット - Full Set (Bunny, Gym, Swim)",
+    "3606866": "体操着 - Gym Uniform",
+    "3606867": "競泳水着 - Competition Swimsuit"
   }
 }

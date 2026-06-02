@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "PSD付き版": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 550,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 550,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3266628": "通常版（PSD無し）",
+    "3266886": "PSD付き版",
+    "3266887": "PSDのみ（通常版買った人向け）"
   }
 }

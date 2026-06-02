@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2350,
+        "is_sale": false
       }
     ],
     "7.62x51mm NATO": [
@@ -844,7 +849,15 @@
         "date": "2026-05-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3961663": "IC20 SSR Mod SFS"
   }
 }

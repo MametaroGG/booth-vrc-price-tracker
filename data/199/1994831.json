@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2130,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2130,
+        "is_sale": false
       }
     ],
     "VCCQuest対応軽量版のみ": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3201317": "SDK2版とVCCQuest対応軽量版のセット",
+    "8291740": "VCCQuest対応軽量版のみ"
   }
 }

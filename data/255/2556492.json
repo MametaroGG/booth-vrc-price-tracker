@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "アバター、VRM、.vroidセット": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4193931": "アバター、VRMのみ",
+    "4193948": "アバター、VRM、.vroidセット"
   }
 }

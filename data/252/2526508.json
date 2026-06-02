@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "上と同じ商品": [
@@ -844,6 +849,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "利用規約_Terms_of_use": [
@@ -1228,5 +1238,9 @@
         "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4144669": "フルセット(package&PSD付属)",
+    "4144930": "上と同じ商品"
   }
 }

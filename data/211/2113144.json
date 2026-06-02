@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "おごり(中身は同じ)": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2300,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3408831": "Room Set With 2018.4.20f1_Collider",
+    "3408901": "おごり(中身は同じ)",
+    "3474958": "Room Set(No Collider)"
   }
 }

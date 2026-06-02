@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 2750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 2750,
+        "is_sale": false
       }
     ],
     "Remon Halloween Version V1.0.0": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 2750,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 2750,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 4900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 4900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2648611": "Remon Original Version V1.0.0",
+    "2649399": "Remon Halloween Version V1.0.0",
+    "2649400": "Remon BundlePack"
   }
 }

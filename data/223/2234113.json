@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1150,
+        "is_sale": false
       }
     ],
     "青/Blue": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1150,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1150,
+        "is_sale": false
       }
     ],
     "紫/Purple": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 1150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3629357": "赤/Red",
+    "3629474": "青/Blue",
+    "3629475": "黒/Black",
+    "3629476": "紫/Purple"
   }
 }

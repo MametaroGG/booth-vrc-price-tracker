@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 380,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 380,
+        "is_sale": false
       }
     ],
     "フルセット（ワンピ+靴+タイツ）/FullSet（OP+Shoes+Pantyhose）": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 700,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4229596": "ワンピースのみ/Only Onpiece texture",
+    "4229622": "フルセット（ワンピ+靴+タイツ）/FullSet（OP+Shoes+Pantyhose）"
   }
 }

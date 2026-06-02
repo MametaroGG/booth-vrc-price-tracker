@@ -417,6 +417,11 @@
         "date": "2026-05-30",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 7000,
+        "is_sale": false
       }
     ],
     "アリーチェ for Quest": [
@@ -834,7 +839,16 @@
         "date": "2026-05-30",
         "price": 5500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4389197": "アリーチェ for PC",
+    "4389245": "アリーチェ for Quest"
   }
 }

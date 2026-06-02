@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 5400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 5400,
+        "is_sale": false
       }
     ],
     "Lycus Boy　単体": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 5400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 5400,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 8000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 8000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3066520": "Lycus Girl　単体",
+    "4125570": "Lycus Boy　単体",
+    "4125571": "Lycus Boy＆Girl Fullset"
   }
 }

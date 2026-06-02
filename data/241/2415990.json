@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "BlenderとAsepriteデータ込み": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3953833": "鉄筋結束機のデータ",
+    "3953876": "BlenderとAsepriteデータ込み"
   }
 }

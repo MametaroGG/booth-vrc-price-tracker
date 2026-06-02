@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 720,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 720,
+        "is_sale": false
       }
     ],
     "天使衣装一式セット（Angel）": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 720,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 720,
         "is_sale": false
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 1340,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1340,
+        "is_sale": false
       }
     ],
     "【商用/commercial use】allset": [
@@ -1688,7 +1703,18 @@
         "date": "2026-05-30",
         "price": 8000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 8000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3397382": "悪魔衣装一式セット（Demon）",
+    "3406073": "天使衣装一式セット（Angel）",
+    "6647798": "【商用/commercial use】allset",
+    "7601030": "お得【個人/personal use】allset"
   }
 }

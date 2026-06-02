@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "軍服　男女同梱版(Man&WomanSet)": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1800,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3763814": "軍服ズボンスタイル(pants_style)",
+    "3797953": "軍服　男女同梱版(Man&WomanSet)"
   }
 }

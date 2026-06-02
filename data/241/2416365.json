@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "ふわふわセット": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 400,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 400,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "3954384": "ふわふわセット",
+    "3954457": "さらさらセット",
+    "3954458": "All Color Set"
   }
 }

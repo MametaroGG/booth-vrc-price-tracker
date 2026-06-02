@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "商用利用 || Commercial Use v1.0": [
@@ -844,7 +849,16 @@
         "date": "2026-05-30",
         "price": 50000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 50000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2728550": "「セール！SALE!」パーソナル使い || Personal Use v1.0",
+    "2728574": "商用利用 || Commercial Use v1.0"
   }
 }

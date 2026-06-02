@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 220,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 220,
+        "is_sale": true
       }
     ],
     "アップル/Apple": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 220,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 220,
         "is_sale": true
       }
@@ -1266,6 +1276,11 @@
         "date": "2026-05-30",
         "price": 220,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 220,
+        "is_sale": true
       }
     ],
     "ピーチ/Peach": [
@@ -1686,6 +1701,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 220,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 220,
         "is_sale": true
       }
@@ -2110,6 +2130,11 @@
         "date": "2026-05-30",
         "price": 220,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 220,
+        "is_sale": true
       }
     ],
     "ストロベリー/Strawberry": [
@@ -2530,6 +2555,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 220,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
         "price": 220,
         "is_sale": true
       }
@@ -2954,7 +2984,21 @@
         "date": "2026-05-30",
         "price": 720,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-02",
+        "price": 720,
+        "is_sale": true
       }
     ]
+  },
+  "variation_keys": {
+    "4125128": "ミント/Mint",
+    "4125140": "アップル/Apple",
+    "4125141": "オレンジ/Orange",
+    "4152693": "ピーチ/Peach",
+    "4152694": "グレープ/Grape",
+    "4152695": "ストロベリー/Strawberry",
+    "4152696": "全色+黒/AllColors+Blackberry"
   }
 }

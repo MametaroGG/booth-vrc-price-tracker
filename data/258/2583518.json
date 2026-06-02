@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "(2)レイニィ用 -Rainy /v1.01": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 1300,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 1300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4237686": "(1)メリノ用 -Merino /v1.01",
+    "4237747": "(2)レイニィ用 -Rainy /v1.01",
+    "4237748": "(3)リーメ&リーバ用 - Leeme&Reeva /v1.01"
   }
 }

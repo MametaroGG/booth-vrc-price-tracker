@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 580,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 580,
+        "is_sale": false
       }
     ],
     "Raco'lo classic": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 480,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 480,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 900,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "2487663": "Raco'lo",
+    "2488037": "Raco'lo classic",
+    "2488038": "Raco'lo セット販売(Raco'lo +Raco'lo classic)"
   }
 }

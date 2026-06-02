@@ -422,6 +422,11 @@
         "date": "2026-05-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Chika Hair": [
@@ -842,6 +847,11 @@
       },
       {
         "date": "2026-05-30",
+        "price": 120,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
         "price": 120,
         "is_sale": false
       }
@@ -1266,7 +1276,17 @@
         "date": "2026-05-30",
         "price": 320,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 320,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "4544550": "Dress",
+    "4574714": "full model",
+    "4618726": "Chika Hair"
   }
 }
