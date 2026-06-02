@@ -32,10 +32,62 @@
         "date": "2026-05-31",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-02",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "Type「Square」のみ": [
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
+      }
+    ],
+    "【無料】Type「Wave」のみ": [
+      {
+        "date": "2026-06-02",
+        "price": 0,
+        "is_sale": true
+      }
+    ],
+    "Type「Oval」のみ": [
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
+      }
+    ],
+    "Type「Crystal」のみ": [
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
+      }
+    ],
+    "Type「Brick」のみ": [
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
+      }
+    ],
+    "Type「HoneyComb」のみ": [
+      {
+        "date": "2026-06-02",
+        "price": 200,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "13991630": "default"
+    "13991630": "default",
+    "14092404": "Type「Square」のみ",
+    "14092406": "Type「Oval」のみ",
+    "14092407": "Type「Crystal」のみ",
+    "14092408": "Type「Brick」のみ",
+    "14092409": "Type「HoneyComb」のみ"
   }
 }
