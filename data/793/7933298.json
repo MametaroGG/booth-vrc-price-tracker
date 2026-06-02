@@ -102,6 +102,11 @@
         "date": "2026-02-28",
         "price": 3800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-03",
+        "price": 3800,
+        "is_sale": false
       }
     ],
     "商用版(Commercial)": [
@@ -204,7 +209,16 @@
         "date": "2026-02-28",
         "price": 12000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-03",
+        "price": 12000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13285541": "通常版(Standard)",
+    "13285774": "商用版(Commercial)"
   }
 }
