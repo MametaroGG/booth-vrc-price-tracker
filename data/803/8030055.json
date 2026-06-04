@@ -373,6 +373,11 @@
         "date": "2026-06-02",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-04",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "Winter002_Anila": [
@@ -415,6 +420,11 @@
         "date": "2026-06-02",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-04",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "Winter002_Wolfram": [
@@ -457,12 +467,25 @@
         "date": "2026-06-02",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-04",
+        "price": 700,
+        "is_sale": true
+      }
+    ],
+    "Winter002_Fullset": [
+      {
+        "date": "2026-06-04",
+        "price": 1400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13442182": "Winter002_Baku",
     "13827617": "Winter002_Anila",
-    "13981011": "Winter002_Wolfram"
+    "13981011": "Winter002_Wolfram",
+    "14119283": "Winter002_Fullset"
   }
 }

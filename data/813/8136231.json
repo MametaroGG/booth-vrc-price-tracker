@@ -204,6 +204,11 @@
         "date": "2026-06-02",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-04",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "Spring001_Wolfram": [
@@ -246,11 +251,32 @@
         "date": "2026-06-02",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-04",
+        "price": 700,
+        "is_sale": true
+      }
+    ],
+    "Spring001_Fullset": [
+      {
+        "date": "2026-06-04",
+        "price": 1400,
+        "is_sale": false
+      }
+    ],
+    "Spring001_CarukiaRe": [
+      {
+        "date": "2026-06-04",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13618791": "Spring001_Marycia",
-    "13980984": "Spring001_Wolfram"
+    "13980984": "Spring001_Wolfram",
+    "14119828": "Spring001_Fullset",
+    "14119829": "Spring001_CarukiaRe"
   }
 }
