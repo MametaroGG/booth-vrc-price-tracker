@@ -7,12 +7,22 @@
         "date": "2026-06-02",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-04",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "【SALE】✧︎makeup & Blendshape": [
       {
         "date": "2026-06-02",
         "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-04",
+        "price": 350,
         "is_sale": false
       }
     ],
@@ -28,12 +38,25 @@
         "date": "2026-06-02",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-04",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "✧︎eye texture only": [
+      {
+        "date": "2026-06-04",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14037858": "【SALE】✧︎fullpack",
     "14037967": "【SALE】✧︎makeup & Blendshape",
+    "14037968": "✧︎eye texture only",
     "14037969": "【SALE】✧︎Blendshape only"
   }
 }

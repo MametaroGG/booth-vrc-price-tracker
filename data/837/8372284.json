@@ -32,6 +32,11 @@
         "date": "2026-06-02",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-04",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "⭑ Kuuta ⭑": [
@@ -62,6 +67,11 @@
       },
       {
         "date": "2026-06-02",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-04",
         "price": 500,
         "is_sale": false
       }
@@ -96,12 +106,25 @@
         "date": "2026-06-02",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-04",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "⭑ Lapwing ⭑": [
+      {
+        "date": "2026-06-04",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13985761": "⭑ Full Set ⭑",
     "13998503": "⭑ Kuuta ⭑",
-    "13998504": "⭑ Komano ⭑"
+    "13998504": "⭑ Komano ⭑",
+    "14116308": "⭑ Lapwing ⭑"
   }
 }
