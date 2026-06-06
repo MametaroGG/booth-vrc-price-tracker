@@ -57,6 +57,11 @@
         "date": "2026-01-30",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-06",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "ショートケーキテクスチャ": [
@@ -114,7 +119,16 @@
         "date": "2026-01-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-06",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "6253045": "choco cake umbrella",
+    "6253080": "ショートケーキテクスチャ"
   }
 }
