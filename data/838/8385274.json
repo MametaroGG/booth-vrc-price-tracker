@@ -32,6 +32,11 @@
         "date": "2026-06-04",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "Minase": [
@@ -62,6 +67,11 @@
       },
       {
         "date": "2026-06-04",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
         "price": 1400,
         "is_sale": false
       }
@@ -96,6 +106,11 @@
         "date": "2026-06-04",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Komano": [
@@ -126,6 +141,11 @@
       },
       {
         "date": "2026-06-04",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
         "price": 1400,
         "is_sale": false
       }
@@ -160,6 +180,18 @@
         "date": "2026-06-04",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1400,
+        "is_sale": false
+      }
+    ],
+    "Suzuya": [
+      {
+        "date": "2026-06-07",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
@@ -168,6 +200,7 @@
     "14005608": "Minase",
     "14005609": "Hanka",
     "14005610": "Komano",
-    "14005611": "Kanata"
+    "14005611": "Kanata",
+    "14130705": "Suzuya"
   }
 }

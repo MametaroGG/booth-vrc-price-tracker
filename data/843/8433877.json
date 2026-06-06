@@ -17,6 +17,11 @@
         "date": "2026-06-04",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 2800,
+        "is_sale": false
       }
     ],
     "CyberPunkOutert_Lapwing対応": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-06-04",
+        "price": 2300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
         "price": 2300,
         "is_sale": false
       }
@@ -51,8 +61,17 @@
         "date": "2026-06-04",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 2300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14081262": "CyberPunkOutert_Two set",
+    "14081423": "CyberPunkOutert_Lapwing対応",
+    "14081424": "CyberPunkOutert_Kuuta対応"
+  }
 }

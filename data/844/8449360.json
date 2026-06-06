@@ -7,11 +7,21 @@
         "date": "2026-06-04",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "✨NOCTAIRE [ 600->500 ]": [
       {
         "date": "2026-06-04",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
         "price": 500,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-06-04",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14108291": "✨Full Set 2 MAKE UP [ 1000->900 ]",
+    "14108365": "✨NOCTAIRE [ 600->500 ]",
+    "14108366": "✨TOXIC DARLING [ 600->500 ]"
+  }
 }

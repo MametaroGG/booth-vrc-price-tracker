@@ -8,9 +8,41 @@
         "price": 250,
         "is_sale": false
       }
+    ],
+    "milfy": [
+      {
+        "date": "2026-06-07",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "milltina": [
+      {
+        "date": "2026-06-07",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "chocolat": [
+      {
+        "date": "2026-06-07",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "full": [
+      {
+        "date": "2026-06-07",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "14107967": "default"
+    "14107967": "default",
+    "14119818": "milfy",
+    "14119819": "milltina",
+    "14119820": "chocolat",
+    "14119841": "full"
   }
 }

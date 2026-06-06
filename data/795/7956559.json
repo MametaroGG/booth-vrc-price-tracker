@@ -373,6 +373,11 @@
         "date": "2026-06-04",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Fullpack": [
@@ -510,6 +515,11 @@
         "date": "2026-06-04",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Fyuett only": [
@@ -647,6 +657,11 @@
         "date": "2026-06-04",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Cazalis only": [
@@ -749,6 +764,11 @@
         "date": "2026-06-04",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Lunary only": [
@@ -781,6 +801,25 @@
         "date": "2026-06-04",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 200,
+        "is_sale": true
+      }
+    ],
+    "Powari only": [
+      {
+        "date": "2026-06-07",
+        "price": 150,
+        "is_sale": true
+      }
+    ],
+    "Miria only": [
+      {
+        "date": "2026-06-07",
+        "price": 150,
+        "is_sale": true
       }
     ]
   },
@@ -789,6 +828,8 @@
     "13729284": "Wendy only",
     "13754921": "Fyuett only",
     "13831063": "Cazalis only",
-    "14022354": "Lunary only"
+    "14022354": "Lunary only",
+    "14132633": "Powari only",
+    "14132634": "Miria only"
   }
 }

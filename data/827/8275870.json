@@ -97,6 +97,11 @@
         "date": "2026-06-04",
         "price": 3300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 2900,
+        "is_sale": true
       }
     ],
     "Single_Iyori": [
@@ -194,6 +199,11 @@
         "date": "2026-06-04",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1500,
+        "is_sale": true
       }
     ],
     "Single_Anila": [
@@ -291,6 +301,11 @@
         "date": "2026-06-04",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1500,
+        "is_sale": true
       }
     ],
     "Single_Hanka": [
@@ -388,6 +403,11 @@
         "date": "2026-06-04",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1500,
+        "is_sale": true
       }
     ],
     "Single_Komano": [
@@ -485,6 +505,18 @@
         "date": "2026-06-04",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1500,
+        "is_sale": true
+      }
+    ],
+    "Single_Suzuya": [
+      {
+        "date": "2026-06-07",
+        "price": 1300,
+        "is_sale": true
       }
     ]
   },
@@ -493,6 +525,7 @@
     "13837798": "Single_Iyori",
     "13837799": "Single_Anila",
     "13837800": "Single_Hanka",
-    "13837801": "Single_Komano"
+    "13837801": "Single_Komano",
+    "14132045": "Single_Suzuya"
   }
 }

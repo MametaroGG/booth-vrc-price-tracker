@@ -264,10 +264,31 @@
         "date": "2026-06-04",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "♢MEN♢": [
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "♢WOMAN♢": [
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13863473": "お祝い代🎈（full pack版）"
+    "13863347": "♢MEN♢",
+    "13863473": "お祝い代🎈（full pack版）",
+    "14138188": "♢WOMAN♢"
   }
 }

@@ -197,10 +197,31 @@
         "date": "2026-06-04",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Andrew": [
+      {
+        "date": "2026-06-07",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Miria": [
+      {
+        "date": "2026-06-07",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13637914": "default"
+    "13637914": "default",
+    "14128428": "Andrew",
+    "14128429": "Miria"
   }
 }

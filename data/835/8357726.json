@@ -54,6 +54,11 @@
         "date": "2026-06-04",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 2000,
+        "is_sale": true
       }
     ],
     "マヌカ（manuka）": [
@@ -101,6 +106,11 @@
         "date": "2026-06-04",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "ミルフィ・エク（milfy_eku）": [
@@ -148,6 +158,11 @@
         "date": "2026-06-04",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "ミルティナ（Milltina）": [
@@ -195,6 +210,11 @@
         "date": "2026-06-04",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "リナシータ（Rinasciita）": [
@@ -289,6 +309,25 @@
         "date": "2026-06-04",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "限定無料版（リナシータ：Rinasciita）": [
+      {
+        "date": "2026-06-07",
+        "price": 0,
+        "is_sale": true
+      }
+    ],
+    "リナシータ：Rinasciita（限定無料版と一緒）": [
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": true
       }
     ]
   },
@@ -298,6 +337,7 @@
     "13983913": "ミルフィ・エク（milfy_eku）",
     "13983914": "ミルティナ（Milltina）",
     "13983915": "リナシータ（Rinasciita）",
-    "13983916": "しなの（Shinano）"
+    "13983916": "しなの（Shinano）",
+    "14123466": "リナシータ：Rinasciita（限定無料版と一緒）"
   }
 }

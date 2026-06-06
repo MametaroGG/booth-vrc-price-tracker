@@ -307,10 +307,55 @@
         "date": "2026-06-04",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 5000,
+        "is_sale": false
+      }
+    ],
+    "Lapwing": [
+      {
+        "date": "2026-06-07",
+        "price": 2600,
+        "is_sale": false
+      }
+    ],
+    "Lasyusha": [
+      {
+        "date": "2026-06-07",
+        "price": 2600,
+        "is_sale": false
+      }
+    ],
+    "LUMINA": [
+      {
+        "date": "2026-06-07",
+        "price": 2600,
+        "is_sale": false
+      }
+    ],
+    "Marycia": [
+      {
+        "date": "2026-06-07",
+        "price": 2600,
+        "is_sale": false
+      }
+    ],
+    "SHINRA": [
+      {
+        "date": "2026-06-07",
+        "price": 2600,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13460032": "default"
+    "13460032": "default",
+    "14129081": "Lapwing",
+    "14129082": "Lasyusha",
+    "14129083": "LUMINA",
+    "14129084": "Marycia",
+    "14129085": "SHINRA"
   }
 }

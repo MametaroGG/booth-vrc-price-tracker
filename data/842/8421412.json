@@ -12,6 +12,11 @@
         "date": "2026-06-04",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "汎用": [
@@ -23,6 +28,11 @@
       {
         "date": "2026-06-04",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
         "is_sale": false
       }
     ],
@@ -36,6 +46,11 @@
         "date": "2026-06-04",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Miltina": [
@@ -47,6 +62,11 @@
       {
         "date": "2026-06-04",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
         "is_sale": false
       }
     ],
@@ -60,6 +80,11 @@
         "date": "2026-06-04",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Mayo": [
@@ -71,6 +96,11 @@
       {
         "date": "2026-06-04",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
         "is_sale": false
       }
     ],
@@ -84,6 +114,11 @@
         "date": "2026-06-04",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Suzuya": [
@@ -91,8 +126,22 @@
         "date": "2026-06-04",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14061897": "Atelier Edition(Full Pack)",
+    "14061907": "Lumina",
+    "14061908": "Miltina",
+    "14061909": "Airi",
+    "14061910": "Mayo",
+    "14061911": "Mao",
+    "14085822": "汎用",
+    "14105672": "Suzuya"
+  }
 }

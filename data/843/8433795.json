@@ -12,6 +12,11 @@
         "date": "2026-06-04",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "AndallBodyM": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-06-04",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
         "price": 1000,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-06-04",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "ビーチボール": [
@@ -48,12 +63,33 @@
         "date": "2026-06-04",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Mania": [
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Enmetsu_Shiji_Kuchinashi": [
+      {
+        "date": "2026-06-07",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14081109": "Full Pack",
     "14081146": "IN(IN-Vitro,IN-Vivo,IN-Papyro)",
-    "14081147": "AndallBodyM"
+    "14081147": "AndallBodyM",
+    "14125481": "Mania",
+    "14125482": "Enmetsu_Shiji_Kuchinashi"
   }
 }

@@ -12,6 +12,11 @@
         "date": "2026-06-04",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Pixie's Gift": [
@@ -24,10 +29,16 @@
         "date": "2026-06-04",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14086477": "Essential Edition",
     "14086590": "Pixie's Gift"
   }
 }

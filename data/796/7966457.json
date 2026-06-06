@@ -187,6 +187,11 @@
         "date": "2026-06-04",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Nagiya Ruri": [
@@ -374,6 +379,11 @@
         "date": "2026-06-04",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Kipfel": [
@@ -561,6 +571,11 @@
         "date": "2026-06-04",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Coronet": [
@@ -748,6 +763,18 @@
         "date": "2026-06-04",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-07",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "Powari": [
+      {
+        "date": "2026-06-07",
+        "price": 300,
+        "is_sale": true
       }
     ]
   },
@@ -755,6 +782,7 @@
     "13341038": "Full Pack",
     "13655277": "Nagiya Ruri",
     "13655278": "Kipfel",
-    "13655279": "Coronet"
+    "13655279": "Coronet",
+    "14131420": "Powari"
   }
 }

@@ -7,11 +7,21 @@
         "date": "2026-06-04",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-07",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "まめふれんず - mameFriends": [
       {
         "date": "2026-06-04",
+        "price": 700,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-07",
         "price": 700,
         "is_sale": true
       }
@@ -21,11 +31,21 @@
         "date": "2026-06-04",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-07",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "みみのこ - miminoko": [
       {
         "date": "2026-06-04",
+        "price": 700,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-07",
         "price": 700,
         "is_sale": true
       }
@@ -35,8 +55,19 @@
         "date": "2026-06-04",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-07",
+        "price": 700,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14072262": "フルセット",
+    "14072323": "まめふれんず - mameFriends",
+    "14072324": "うささき - usasaki",
+    "14072325": "みみのこ - miminoko",
+    "14072326": "えも研素体 - emoLab"
+  }
 }
