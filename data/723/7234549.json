@@ -442,6 +442,11 @@
         "date": "2026-05-22",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "支援版 (無料版と同じ)/Donate (Same as Free)": [
@@ -884,7 +889,15 @@
         "date": "2026-05-22",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
+        "price": 150,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12580500": "支援版 (無料版と同じ)/Donate (Same as Free)"
   }
 }
