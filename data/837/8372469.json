@@ -37,10 +37,31 @@
         "date": "2026-06-07",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "lilSSRT+Mask": [
+      {
+        "date": "2026-06-09",
+        "price": 1300,
+        "is_sale": false
+      }
+    ],
+    "Mask": [
+      {
+        "date": "2026-06-09",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13986058": "default"
+    "13986058": "default",
+    "14154981": "Mask",
+    "14154982": "lilSSRT+Mask"
   }
 }

@@ -7,6 +7,11 @@
         "date": "2026-06-07",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Only Eyes( 24h free )": [
@@ -14,11 +19,21 @@
         "date": "2026-06-07",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Only Makeup": [
       {
         "date": "2026-06-07",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
         "price": 200,
         "is_sale": false
       }
@@ -28,11 +43,17 @@
         "date": "2026-06-07",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14128035": "Eyes + Makeup set",
+    "14128068": "Only Eyes( 24h free )",
     "14128069": "Only Makeup",
     "14128070": "支援版(Eyes + Makeup setと内容は同じです)"
   }

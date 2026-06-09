@@ -17,6 +17,11 @@
         "date": "2026-06-07",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "ショコラchocolat": [
@@ -33,6 +38,11 @@
       {
         "date": "2026-06-07",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
+        "price": 150,
         "is_sale": false
       }
     ],
@@ -51,8 +61,17 @@
         "date": "2026-06-07",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "13884092": "ミルフィmilfy",
+    "14080506": "ショコラchocolat",
+    "14080507": "full pack"
+  }
 }

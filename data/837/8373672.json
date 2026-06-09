@@ -47,6 +47,11 @@
         "date": "2026-06-07",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Commercial License": [
@@ -94,6 +99,11 @@
         "date": "2026-06-07",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-09",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "User guide & introduce": [
@@ -107,10 +117,18 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "Supporter License": [
+      {
+        "date": "2026-06-09",
+        "price": 4500,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
     "13987918": "Personal License",
-    "13988458": "Commercial License"
+    "13988458": "Commercial License",
+    "14160409": "Supporter License"
   }
 }
