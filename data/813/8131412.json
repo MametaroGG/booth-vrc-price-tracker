@@ -245,6 +245,11 @@
         "date": "2026-06-09",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "メイクテクスチャ - Makeup Texture": [
@@ -462,6 +467,11 @@
         "date": "2026-06-09",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "アイテクスチャ - Eye Texture": [
@@ -679,6 +689,11 @@
         "date": "2026-06-09",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "ねこにおやつをあげる！（中身はメイク&アイテクスチャと同じです） - donate": [
@@ -897,12 +912,44 @@
         "price": 800,
         "is_sale": false
       }
+    ],
+    "【2アバター】フルパック - Full pack": [
+      {
+        "date": "2026-06-11",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "【Lapwing対応 - Lapwing】メイク&アイテクスチャ - Makeup & Eye Texture": [
+      {
+        "date": "2026-06-11",
+        "price": 550,
+        "is_sale": true
+      }
+    ],
+    "【Lapwing対応 - Lapwing】メイクテクスチャ - Makeup Texture": [
+      {
+        "date": "2026-06-11",
+        "price": 300,
+        "is_sale": true
+      }
+    ],
+    "【Lapwing対応 - Lapwing】アイテクスチャ - Eye Texture": [
+      {
+        "date": "2026-06-11",
+        "price": 300,
+        "is_sale": true
+      }
     ]
   },
   "variation_keys": {
     "13610536": "アイテクスチャ - Eye Texture",
     "13610732": "メイクテクスチャ - Makeup Texture",
     "13610733": "メイク&アイテクスチャ - Makeup & Eye Texture",
-    "13610794": "ねこにおやつをあげる！（中身はメイク&アイテクスチャと同じです） - donate"
+    "13610794": "ねこにおやつをあげる！（中身はメイク&アイテクスチャと同じです） - donate",
+    "14179803": "【2アバター】フルパック - Full pack",
+    "14179804": "【Lapwing対応 - Lapwing】メイク&アイテクスチャ - Makeup & Eye Texture",
+    "14179805": "【Lapwing対応 - Lapwing】メイクテクスチャ - Makeup Texture",
+    "14179806": "【Lapwing対応 - Lapwing】アイテクスチャ - Eye Texture"
   }
 }

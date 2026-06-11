@@ -347,10 +347,23 @@
         "date": "2026-06-09",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 2000,
+        "is_sale": false
+      }
+    ],
+    "お靴Only": [
+      {
+        "date": "2026-06-11",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13262376": "default"
+    "13262376": "default",
+    "14177946": "お靴Only"
   }
 }

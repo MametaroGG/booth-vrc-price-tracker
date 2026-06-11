@@ -112,6 +112,11 @@
         "date": "2026-06-09",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 1500,
+        "is_sale": true
       }
     ],
     "プラム / Plum": [
@@ -224,6 +229,11 @@
         "date": "2026-06-09",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "キプフェル / Kipfel": [
@@ -336,12 +346,25 @@
         "date": "2026-06-09",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "ミルフィ / Milfy": [
+      {
+        "date": "2026-06-11",
+        "price": 770,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
     "13827600": "フルセット / Full_Package",
     "13827746": "プラム / Plum",
-    "13827747": "キプフェル / Kipfel"
+    "13827747": "キプフェル / Kipfel",
+    "14169028": "ミルフィ / Milfy"
   }
 }
