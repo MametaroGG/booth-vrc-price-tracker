@@ -12,6 +12,11 @@
         "date": "2026-06-09",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-11",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "make only": [
@@ -24,6 +29,11 @@
         "date": "2026-06-09",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-11",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "eye only": [
@@ -36,11 +46,17 @@
         "date": "2026-06-09",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-11",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14128832": "ふわmakeup&eye full",
-    "14128842": "make only"
+    "14128842": "make only",
+    "14128843": "eye only"
   }
 }

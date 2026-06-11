@@ -7,6 +7,11 @@
         "date": "2026-06-09",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "杖【無料】": [
@@ -14,8 +19,15 @@
         "date": "2026-06-09",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 0,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14149750": "衣装"
+  }
 }

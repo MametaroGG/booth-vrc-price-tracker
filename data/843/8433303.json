@@ -7,11 +7,21 @@
         "date": "2026-06-09",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "フィユエ対応": [
       {
         "date": "2026-06-09",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
         "price": 500,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-06-09",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "華夜対応": [
       {
         "date": "2026-06-09",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
         "price": 500,
         "is_sale": false
       }
@@ -35,11 +55,21 @@
         "date": "2026-06-09",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Lowtus対応": [
       {
         "date": "2026-06-09",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
         "price": 500,
         "is_sale": false
       }
@@ -49,11 +79,21 @@
         "date": "2026-06-09",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "MUMUS対応": [
       {
         "date": "2026-06-09",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
         "price": 500,
         "is_sale": false
       }
@@ -63,11 +103,21 @@
         "date": "2026-06-09",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "サバラム対応": [
       {
         "date": "2026-06-09",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
         "price": 500,
         "is_sale": false
       }
@@ -77,8 +127,33 @@
         "date": "2026-06-09",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-11",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "しなの対応": [
+      {
+        "date": "2026-06-11",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14080204": "フィユエ対応",
+    "14145840": "FullPack",
+    "14145841": "Grus対応",
+    "14145842": "華夜対応",
+    "14145843": "Lapwing対応",
+    "14145844": "Lowtus対応",
+    "14145845": "マリシア対応",
+    "14145846": "MUMUS対応",
+    "14145847": "ラムネ対応",
+    "14145848": "サバラム対応",
+    "14145849": "しらつめ対応",
+    "14161619": "しなの対応"
+  }
 }

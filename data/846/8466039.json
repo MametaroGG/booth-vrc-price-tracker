@@ -12,6 +12,11 @@
         "date": "2026-06-09",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-11",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "make only": [
@@ -24,6 +29,11 @@
         "date": "2026-06-09",
         "price": 450,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-11",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "eye only": [
@@ -36,11 +46,17 @@
         "date": "2026-06-09",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-11",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14128803": "Dark make full",
-    "14128829": "make only"
+    "14128829": "make only",
+    "14128830": "eye only"
   }
 }

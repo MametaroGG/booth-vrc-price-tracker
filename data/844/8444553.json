@@ -12,6 +12,11 @@
         "date": "2026-06-09",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-11",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "【支援版】Leaf_Umbrella※中身は変わりません": [
@@ -24,10 +29,16 @@
         "date": "2026-06-09",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-11",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14100335": "Leaf_Umbrella",
     "14100391": "【支援版】Leaf_Umbrella※中身は変わりません"
   }
 }
