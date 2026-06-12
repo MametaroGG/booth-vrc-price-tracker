@@ -483,7 +483,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "提供を提供する通常版": [
+      {
+        "date": "2026-06-12",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "お小遣い版（中身同じ）": [
+      {
+        "date": "2026-06-12",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14169113": "お小遣い版（中身同じ）"
+  }
 }
