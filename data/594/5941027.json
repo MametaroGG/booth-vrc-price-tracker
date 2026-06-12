@@ -1107,10 +1107,39 @@
         "date": "2026-06-10",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "Moe": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Kikyo": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Grs": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "10031058": "default"
+    "10031058": "default",
+    "14180580": "Moe",
+    "14180581": "Kikyo",
+    "14180582": "Grs"
   }
 }
