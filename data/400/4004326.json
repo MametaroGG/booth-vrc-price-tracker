@@ -1837,10 +1837,39 @@
         "date": "2026-06-11",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": true
+      }
+    ],
+    "Shinra": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Moe": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Leefa, Lunalitt": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "6685155": "default"
+    "6685155": "default",
+    "14189111": "Shinra",
+    "14189112": "Moe",
+    "14189113": "Leefa, Lunalitt"
   }
 }
