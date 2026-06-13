@@ -447,10 +447,79 @@
         "date": "2026-06-11",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": true
+      }
+    ],
+    "Shinra": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Kikyo": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Moe": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Selestia": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Karin": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Dami": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Rindo": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Mariel": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "5410369": "default"
+    "5410369": "default",
+    "14180362": "Kikyo",
+    "14180363": "Moe",
+    "14180364": "Selestia",
+    "14180365": "Karin",
+    "14180366": "Dami",
+    "14180367": "Rindo",
+    "14180368": "Mariel",
+    "14180453": "Shinra"
   }
 }

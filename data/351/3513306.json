@@ -2409,10 +2409,39 @@
         "date": "2026-06-11",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": true
+      }
+    ],
+    "Shinra": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Karin": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Mariel": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "5837972": "default"
+    "5837972": "default",
+    "14189335": "Shinra",
+    "14189336": "Karin",
+    "14189337": "Mariel"
   }
 }
