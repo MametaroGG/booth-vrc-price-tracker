@@ -1102,10 +1102,31 @@
         "date": "2026-06-10",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": true
+      }
+    ],
+    "Grus": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Maniel": [
+      {
+        "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "7448945": "default"
+    "7448945": "default",
+    "14188962": "Grus",
+    "14188963": "Maniel"
   }
 }

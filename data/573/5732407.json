@@ -452,6 +452,11 @@
         "date": "2026-06-10",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "森羅 対応": [
@@ -904,6 +909,11 @@
         "date": "2026-06-10",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "桔梗対応": [
@@ -1354,6 +1364,11 @@
       },
       {
         "date": "2026-06-10",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-13",
         "price": 1000,
         "is_sale": false
       }
@@ -1809,12 +1824,36 @@
         "price": 1000,
         "is_sale": false
       }
+    ],
+    "Full pack": [
+      {
+        "date": "2026-06-13",
+        "price": 2000,
+        "is_sale": false
+      }
+    ],
+    "Nanase.noir": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Marycia": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
     "9678487": "ラシューシャ対応",
     "9678621": "森羅 対応",
     "9678622": "桔梗対応",
-    "9678623": "かりん対応"
+    "9678623": "かりん対応",
+    "14186967": "Full pack",
+    "14186968": "Nanase.noir",
+    "14186969": "Marycia"
   }
 }

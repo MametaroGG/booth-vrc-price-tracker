@@ -1862,10 +1862,87 @@
         "date": "2026-06-10",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "Shinra": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Kikyo": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Selestia": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Moe": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Grus": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Karin": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Leefa, Lunalitt": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Wolferia": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Dami": [
+      {
+        "date": "2026-06-13",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "7709542": "default"
+    "7709542": "default",
+    "14180996": "Shinra",
+    "14180997": "Kikyo",
+    "14180998": "Selestia",
+    "14180999": "Moe",
+    "14181000": "Grus",
+    "14181001": "Karin",
+    "14181002": "Leefa, Lunalitt",
+    "14181003": "Wolferia",
+    "14181004": "Dami"
   }
 }
