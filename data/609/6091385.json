@@ -1902,10 +1902,23 @@
         "date": "2026-06-13",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-15",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "Moe": [
+      {
+        "date": "2026-06-15",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "10289648": "default"
+    "10289648": "default",
+    "14196349": "Moe"
   }
 }
