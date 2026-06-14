@@ -17,6 +17,11 @@
         "date": "2026-06-11",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "お菓子代": [
@@ -34,11 +39,32 @@
         "date": "2026-06-11",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "LUMINA": [
+      {
+        "date": "2026-06-14",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "HANKA": [
+      {
+        "date": "2026-06-14",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14140018": "斑霞-Hanka-",
-    "14140613": "お菓子代"
+    "14140613": "お菓子代",
+    "14178927": "LUMINA",
+    "14178928": "HANKA"
   }
 }

@@ -14,6 +14,11 @@
         "date": "2026-06-11",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Kipfel": [
@@ -21,6 +26,11 @@
         "date": "2026-06-11",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "Suzuya": [
@@ -28,6 +38,11 @@
         "date": "2026-06-11",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "Rurune": [
@@ -35,6 +50,32 @@
         "date": "2026-06-11",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 100,
+        "is_sale": true
+      }
+    ],
+    "ショコラ": [
+      {
+        "date": "2026-06-14",
+        "price": 100,
+        "is_sale": true
+      }
+    ],
+    "24h限定FREE ショコラちゃん※1color": [
+      {
+        "date": "2026-06-14",
+        "price": 0,
+        "is_sale": true
+      }
+    ],
+    "☎️終了 / 24h限定FREE ルルネちゃん※1color": [
+      {
+        "date": "2026-06-14",
+        "price": 0,
+        "is_sale": true
       }
     ]
   },
@@ -42,6 +83,7 @@
     "14163162": "Suzuya",
     "14163335": "Kipfel",
     "14163349": "Fullpack",
-    "14175382": "Rurune"
+    "14175382": "Rurune",
+    "14194409": "ショコラ"
   }
 }

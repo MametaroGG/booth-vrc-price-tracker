@@ -7,11 +7,21 @@
         "date": "2026-06-11",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "②ツートンカラー": [
       {
         "date": "2026-06-11",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
         "price": 300,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-06-11",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14176401": "①Hairグラデーション・メッシュ",
+    "14176445": "②ツートンカラー",
+    "14176446": "③フルセット(100円お得❣)"
+  }
 }

@@ -22,6 +22,11 @@
         "date": "2026-06-11",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-14",
+        "price": 2400,
+        "is_sale": true
       }
     ],
     "まめふれんず対応": [
@@ -44,8 +49,16 @@
         "date": "2026-06-11",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-14",
+        "price": 1120,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14079946": "FullPack(現状まめふれんず対応のみ)",
+    "14106828": "まめふれんず対応"
+  }
 }

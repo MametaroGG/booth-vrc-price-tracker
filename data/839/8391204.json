@@ -14,6 +14,11 @@
         "date": "2026-06-11",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 550,
+        "is_sale": true
       }
     ],
     "Makeup+Blendshape": [
@@ -21,6 +26,11 @@
         "date": "2026-06-11",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "Eye+Blendshape": [
@@ -28,8 +38,24 @@
         "date": "2026-06-11",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 350,
+        "is_sale": true
+      }
+    ],
+    "Free BlackColor🖤": [
+      {
+        "date": "2026-06-14",
+        "price": 0,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14061889": "Fullset+Blendshape&PSD",
+    "14061890": "Makeup+Blendshape",
+    "14061891": "Eye+Blendshape"
+  }
 }

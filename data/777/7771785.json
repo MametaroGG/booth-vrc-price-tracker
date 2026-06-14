@@ -672,9 +672,24 @@
         "price": 200,
         "is_sale": true
       }
+    ],
+    "無料": [
+      {
+        "date": "2026-06-14",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "応援板": [
+      {
+        "date": "2026-06-14",
+        "price": 200,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "13020425": "default"
+    "13020425": "default",
+    "14187074": "応援板"
   }
 }

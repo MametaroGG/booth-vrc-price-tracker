@@ -28,6 +28,11 @@
         "date": "2026-06-11",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "Eku Milfy": [
@@ -35,8 +40,48 @@
         "date": "2026-06-11",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 800,
+        "is_sale": true
+      }
+    ],
+    "Fullset": [
+      {
+        "date": "2026-06-14",
+        "price": 1800,
+        "is_sale": false
+      }
+    ],
+    "Shinano": [
+      {
+        "date": "2026-06-14",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "Fyuett": [
+      {
+        "date": "2026-06-14",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "Komado(Chiffon　Chocolat　Lime　Plum)": [
+      {
+        "date": "2026-06-14",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14150006": "Fullset",
+    "14172007": "Shinano",
+    "14172008": "Komado(Chiffon　Chocolat　Lime　Plum)",
+    "14172009": "Manuka",
+    "14172010": "Eku Milfy",
+    "14191643": "Fyuett"
+  }
 }

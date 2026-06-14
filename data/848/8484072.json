@@ -12,6 +12,11 @@
         "date": "2026-06-11",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 1800,
+        "is_sale": true
       }
     ],
     "水瀬-minase-": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-06-11",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
         "price": 680,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-06-11",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "泣夜-Nakiya-": [
@@ -46,6 +61,11 @@
       },
       {
         "date": "2026-06-11",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
         "price": 680,
         "is_sale": false
       }
@@ -60,6 +80,11 @@
         "date": "2026-06-11",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "-ヴェルノ-Velno": [
@@ -70,6 +95,11 @@
       },
       {
         "date": "2026-06-11",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
         "price": 680,
         "is_sale": false
       }
@@ -84,6 +114,11 @@
         "date": "2026-06-11",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "ゼヴ-Zev-": [
@@ -94,6 +129,11 @@
       },
       {
         "date": "2026-06-11",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
         "price": 680,
         "is_sale": false
       }
@@ -108,6 +148,11 @@
         "date": "2026-06-11",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "斑霞-Hanka-": [
@@ -118,6 +163,11 @@
       },
       {
         "date": "2026-06-11",
+        "price": 680,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
         "price": 680,
         "is_sale": false
       }
@@ -132,6 +182,11 @@
         "date": "2026-06-11",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 680,
+        "is_sale": false
       }
     ],
     "アルエ-Alué-": [
@@ -144,8 +199,34 @@
         "date": "2026-06-11",
         "price": 680,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 680,
+        "is_sale": false
+      }
+    ],
+    "シキ-Shiki-": [
+      {
+        "date": "2026-06-14",
+        "price": 680,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14156200": "Fullpack",
+    "14156348": "水瀬-minase-",
+    "14156421": "アキト-Akit-",
+    "14156422": "-ヴェルノ-Velno",
+    "14156423": "紗夜-Suzuya-",
+    "14156424": "泣夜-Nakiya-",
+    "14156425": "ゼヴ-Zev-",
+    "14156426": "獏 -Baku-",
+    "14156427": "狛乃-Komano-",
+    "14156428": "斑霞-Hanka-",
+    "14156429": "彼方-Kanata- #BLUESTELLA",
+    "14156430": "アルエ-Alué-",
+    "14190492": "シキ-Shiki-"
+  }
 }

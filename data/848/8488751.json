@@ -7,6 +7,11 @@
         "date": "2026-06-11",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-14",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Fyuett": [
@@ -14,6 +19,11 @@
         "date": "2026-06-11",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-14",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Popo": [
@@ -21,12 +31,25 @@
         "date": "2026-06-11",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-14",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Full set": [
+      {
+        "date": "2026-06-14",
+        "price": 1800,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14164265": "Pochi",
     "14164311": "Fyuett",
-    "14164312": "Popo"
+    "14164312": "Popo",
+    "14192929": "Full set"
   }
 }

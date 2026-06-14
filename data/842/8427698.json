@@ -7,11 +7,21 @@
         "date": "2026-06-11",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "キプフェル Kipfel専用": [
       {
         "date": "2026-06-11",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
         "price": 1000,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-06-11",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "『ひゃっこ』専用": [
       {
         "date": "2026-06-11",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
         "price": 1000,
         "is_sale": false
       }
@@ -35,8 +55,19 @@
         "date": "2026-06-11",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14071570": "全部いりフルパック",
+    "14071951": "キプフェル Kipfel専用",
+    "14071952": "うささき Usasaki 専用",
+    "14092164": "『ひゃっこ』専用",
+    "14092165": "えも研アバター専用『アズキ』『コロネ』『クララ』"
+  }
 }

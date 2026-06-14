@@ -7,6 +7,11 @@
         "date": "2026-06-11",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "商用利用チケット【本体は含まれません】": [
@@ -14,8 +19,16 @@
         "date": "2026-06-11",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14172978": "Summerconnection【セール】",
+    "14173549": "商用利用チケット【本体は含まれません】"
+  }
 }

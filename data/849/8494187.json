@@ -8,7 +8,24 @@
         "price": 300,
         "is_sale": false
       }
+    ],
+    "通常 版": [
+      {
+        "date": "2026-06-14",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "SUPPRT 版 わんわんくびわ付き": [
+      {
+        "date": "2026-06-14",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14172356": "通常 版",
+    "14186808": "SUPPRT 版 わんわんくびわ付き"
+  }
 }

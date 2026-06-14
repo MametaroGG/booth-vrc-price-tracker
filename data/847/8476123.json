@@ -12,6 +12,11 @@
         "date": "2026-06-11",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 2500,
+        "is_sale": true
       }
     ],
     "Misaki": [
@@ -24,6 +29,11 @@
         "date": "2026-06-11",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Lumina": [
@@ -36,6 +46,11 @@
         "date": "2026-06-11",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Linne": [
@@ -48,6 +63,11 @@
         "date": "2026-06-11",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Cazalis": [
@@ -60,8 +80,19 @@
         "date": "2026-06-11",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 900,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14141946": "Misaki",
+    "14157134": "Fullpack",
+    "14157135": "Lumina",
+    "14157136": "Linne",
+    "14157137": "Cazalis"
+  }
 }

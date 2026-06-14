@@ -207,12 +207,22 @@
         "date": "2026-06-09",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Andrew": [
       {
         "date": "2026-06-07",
         "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 350,
         "is_sale": false
       }
     ],
@@ -222,11 +232,20 @@
         "price": 300,
         "is_sale": false
       }
+    ],
+    "miria": [
+      {
+        "date": "2026-06-14",
+        "price": 350,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
     "13637914": "default",
     "14128428": "Andrew",
-    "14128429": "Miria"
+    "14128429": "Miria",
+    "14189921": "Andrew",
+    "14189922": "miria"
   }
 }
