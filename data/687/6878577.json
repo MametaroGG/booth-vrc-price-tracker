@@ -482,6 +482,11 @@
         "date": "2026-06-12",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Zil S ジル S 用": [
@@ -962,6 +967,11 @@
       },
       {
         "date": "2026-06-12",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
         "price": 1000,
         "is_sale": false
       }
@@ -1446,12 +1456,25 @@
         "date": "2026-06-12",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-14",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Alumy アルミィ": [
+      {
+        "date": "2026-06-14",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "11554510": "Lehner 用",
     "11554639": "Zil S ジル S 用",
-    "11554640": "haishima 灰島 用"
+    "11554640": "haishima 灰島 用",
+    "14194261": "Alumy アルミィ"
   }
 }
