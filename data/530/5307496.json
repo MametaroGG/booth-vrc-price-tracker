@@ -2165,12 +2165,25 @@
         "date": "2026-06-13",
         "price": 3400,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-15",
+        "price": 1800,
+        "is_sale": true
+      }
+    ],
+    "Kikyo": [
+      {
+        "date": "2026-06-15",
+        "price": 1800,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "8953083": "MermaidDress_Pattern_1",
     "8953236": "MermaidDress_Pattern_2",
-    "8953239": "MermaidDress/ACC_All"
+    "8953239": "MermaidDress/ACC_All",
+    "14189490": "Kikyo"
   }
 }

@@ -1867,10 +1867,39 @@
         "date": "2026-06-13",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-15",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "Kikyo": [
+      {
+        "date": "2026-06-15",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Moe": [
+      {
+        "date": "2026-06-15",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Sio": [
+      {
+        "date": "2026-06-15",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "9570326": "default"
+    "9570326": "default",
+    "14189424": "Kikyo",
+    "14189425": "Moe",
+    "14196711": "Sio"
   }
 }
