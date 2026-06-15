@@ -1842,11 +1842,21 @@
         "date": "2026-06-13",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-15",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Shinra": [
       {
         "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-15",
         "price": 900,
         "is_sale": false
       }
@@ -1856,11 +1866,28 @@
         "date": "2026-06-13",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-15",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Leefa, Lunalitt": [
       {
         "date": "2026-06-13",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-15",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Sio": [
+      {
+        "date": "2026-06-15",
         "price": 900,
         "is_sale": false
       }
@@ -1870,6 +1897,7 @@
     "6685155": "default",
     "14189111": "Shinra",
     "14189112": "Moe",
-    "14189113": "Leefa, Lunalitt"
+    "14189113": "Leefa, Lunalitt",
+    "14196811": "Sio"
   }
 }
