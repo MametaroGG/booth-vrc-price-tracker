@@ -32,10 +32,23 @@
         "date": "2026-06-14",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-17",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "テクスチャのみ": [
+      {
+        "date": "2026-06-17",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14085981": "default"
+    "14085981": "default",
+    "14205841": "テクスチャのみ"
   }
 }

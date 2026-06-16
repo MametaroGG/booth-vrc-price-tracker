@@ -147,10 +147,23 @@
         "date": "2026-06-14",
         "price": 980,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-17",
+        "price": 1400,
+        "is_sale": true
+      }
+    ],
+    "Miriam": [
+      {
+        "date": "2026-06-17",
+        "price": 1400,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "13753105": "default"
+    "13753105": "default",
+    "14211883": "Miriam"
   }
 }
