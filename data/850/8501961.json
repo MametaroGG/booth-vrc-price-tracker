@@ -7,12 +7,22 @@
         "date": "2026-06-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "milfy": [
       {
         "date": "2026-06-14",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
         "is_sale": false
       }
     ],
@@ -21,12 +31,22 @@
         "date": "2026-06-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "mao": [
       {
         "date": "2026-06-14",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
         "is_sale": false
       }
     ],
@@ -35,12 +55,22 @@
         "date": "2026-06-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "ryuna": [
       {
         "date": "2026-06-14",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
         "is_sale": false
       }
     ],
@@ -49,12 +79,22 @@
         "date": "2026-06-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "marycia": [
       {
         "date": "2026-06-14",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
         "is_sale": false
       }
     ],
@@ -63,12 +103,22 @@
         "date": "2026-06-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "milltina": [
       {
         "date": "2026-06-14",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
         "is_sale": false
       }
     ],
@@ -77,12 +127,22 @@
         "date": "2026-06-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "shinra": [
       {
         "date": "2026-06-14",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
         "is_sale": false
       }
     ],
@@ -91,8 +151,35 @@
         "date": "2026-06-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "FullPack": [
+      {
+        "date": "2026-06-16",
+        "price": 2000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14185818": "lumina",
+    "14186230": "milfy",
+    "14186231": "rurune",
+    "14186232": "mao",
+    "14186233": "merotron",
+    "14186234": "ryuna",
+    "14186235": "shinano",
+    "14186236": "marycia",
+    "14186237": "manuka",
+    "14186238": "milltina",
+    "14186239": "luve",
+    "14189839": "shinra",
+    "14191410": "misaki",
+    "14204245": "FullPack"
+  }
 }

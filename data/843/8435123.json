@@ -7,10 +7,23 @@
         "date": "2026-06-14",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-16",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "通常版": [
+      {
+        "date": "2026-06-16",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14083385": "default"
+    "14083385": "default",
+    "14197027": "通常版"
   }
 }

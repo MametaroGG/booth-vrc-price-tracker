@@ -19,6 +19,11 @@
         "date": "2026-06-14",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-16",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Kipfel": [
@@ -31,6 +36,11 @@
         "date": "2026-06-14",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-16",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Suzuya": [
@@ -43,6 +53,11 @@
         "date": "2026-06-14",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-16",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Rurune": [
@@ -55,6 +70,11 @@
         "date": "2026-06-14",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-16",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "ショコラ": [
@@ -62,6 +82,11 @@
         "date": "2026-06-14",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-16",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "24h限定FREE ショコラちゃん※1color": [
@@ -77,6 +102,20 @@
         "price": 0,
         "is_sale": true
       }
+    ],
+    "☎️コーヒー代 / ※中身は変わりません": [
+      {
+        "date": "2026-06-16",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "終了 / 24h限定FREE ※1color": [
+      {
+        "date": "2026-06-16",
+        "price": 0,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
@@ -84,6 +123,7 @@
     "14163335": "Kipfel",
     "14163349": "Fullpack",
     "14175382": "Rurune",
-    "14194409": "ショコラ"
+    "14194409": "ショコラ",
+    "14206425": "☎️コーヒー代 / ※中身は変わりません"
   }
 }

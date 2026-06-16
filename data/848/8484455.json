@@ -12,6 +12,11 @@
         "date": "2026-06-14",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-16",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "manuka needy make only": [
@@ -24,6 +29,11 @@
         "date": "2026-06-14",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-16",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "manuka needy make 傷only": [
@@ -36,6 +46,11 @@
         "date": "2026-06-14",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-16",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "manuka needy make eye": [
@@ -48,12 +63,18 @@
         "date": "2026-06-14",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-16",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14156880": "manuka needy make full",
     "14156919": "manuka needy make only",
-    "14156920": "manuka needy make 傷only"
+    "14156920": "manuka needy make 傷only",
+    "14156921": "manuka needy make eye"
   }
 }
