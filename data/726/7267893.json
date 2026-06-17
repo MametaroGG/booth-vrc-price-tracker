@@ -1182,10 +1182,23 @@
         "date": "2026-06-14",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-17",
+        "price": 900,
+        "is_sale": true
+      }
+    ],
+    "Sio": [
+      {
+        "date": "2026-06-17",
+        "price": 900,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12175059": "default"
+    "12175059": "default",
+    "14196593": "Sio"
   }
 }

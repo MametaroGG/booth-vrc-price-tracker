@@ -492,10 +492,31 @@
         "date": "2026-06-14",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-17",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "Kipfel": [
+      {
+        "date": "2026-06-17",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Lapwing": [
+      {
+        "date": "2026-06-17",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13153689": "default"
+    "13153689": "default",
+    "14199290": "Kipfel",
+    "14199291": "Lapwing"
   }
 }
