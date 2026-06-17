@@ -387,6 +387,11 @@
         "date": "2026-06-14",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-17",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Nakiya": [
@@ -772,6 +777,11 @@
       },
       {
         "date": "2026-06-14",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-17",
         "price": 100,
         "is_sale": false
       }
@@ -1161,6 +1171,11 @@
         "date": "2026-06-14",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-17",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Ririe": [
@@ -1238,6 +1253,11 @@
         "date": "2026-06-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-17",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Misaki": [
@@ -1310,12 +1330,19 @@
         "date": "2026-06-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-17",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "12254959": "Alué",
     "12255336": "支援版(⚠︎内容おなじ)",
-    "13364908": "Nakiya"
+    "13364908": "Nakiya",
+    "13961187": "Ririe",
+    "13966804": "Misaki"
   }
 }
