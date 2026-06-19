@@ -27,10 +27,23 @@
         "date": "2026-06-17",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
+        "price": 5000,
+        "is_sale": false
+      }
+    ],
+    "追加髪型セット": [
+      {
+        "date": "2026-06-19",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14028574": "default"
+    "14028574": "default",
+    "14226276": "追加髪型セット"
   }
 }

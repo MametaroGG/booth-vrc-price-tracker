@@ -7,11 +7,21 @@
         "date": "2026-06-16",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "マヌカ対応": [
       {
         "date": "2026-06-16",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
         "price": 300,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-06-16",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "シフォン対応": [
       {
         "date": "2026-06-16",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
         "price": 300,
         "is_sale": false
       }
@@ -35,11 +55,21 @@
         "date": "2026-06-16",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "プラム対応": [
       {
         "date": "2026-06-16",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
         "price": 300,
         "is_sale": false
       }
@@ -49,8 +79,21 @@
         "date": "2026-06-16",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14194172": "Fullset",
+    "14194853": "マヌカ対応",
+    "14194854": "ルルネ対応",
+    "14194855": "シフォン対応",
+    "14194856": "ショコラ対応",
+    "14194857": "プラム対応",
+    "14194858": "ミルフィ対応"
+  }
 }

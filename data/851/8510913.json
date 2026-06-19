@@ -8,7 +8,24 @@
         "price": 500,
         "is_sale": false
       }
+    ],
+    "通常版": [
+      {
+        "date": "2026-06-19",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "缶バッジ付き": [
+      {
+        "date": "2026-06-19",
+        "price": 800,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14201737": "通常版",
+    "14213357": "缶バッジ付き"
+  }
 }

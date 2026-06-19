@@ -12,6 +12,11 @@
         "date": "2026-06-16",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "【記念セール】6/26(金)まで": [
@@ -24,8 +29,16 @@
         "date": "2026-06-16",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14158330": "通常版",
+    "14186178": "【記念セール】6/26(金)まで"
+  }
 }

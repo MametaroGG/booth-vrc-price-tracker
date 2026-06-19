@@ -7,11 +7,21 @@
         "date": "2026-06-16",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-19",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "【マヌカ】manuka": [
       {
         "date": "2026-06-16",
+        "price": 420,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-19",
         "price": 420,
         "is_sale": true
       }
@@ -21,11 +31,21 @@
         "date": "2026-06-16",
         "price": 420,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-19",
+        "price": 420,
+        "is_sale": true
       }
     ],
     "【狛乃】komano": [
       {
         "date": "2026-06-16",
+        "price": 420,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-19",
         "price": 420,
         "is_sale": true
       }
@@ -35,6 +55,11 @@
         "date": "2026-06-16",
         "price": 420,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-19",
+        "price": 420,
+        "is_sale": true
       }
     ],
     "【しお】Sio": [
@@ -42,8 +67,20 @@
         "date": "2026-06-16",
         "price": 420,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-19",
+        "price": 420,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14196209": "【フルパック】FullPack",
+    "14196906": "【マヌカ】manuka",
+    "14196907": "【ルミナ 】Lumina",
+    "14196908": "【狛乃】komano",
+    "14196909": "【しなの】Shinano",
+    "14196910": "【しお】Sio"
+  }
 }

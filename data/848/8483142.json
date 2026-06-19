@@ -7,6 +7,11 @@
         "date": "2026-06-16",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "【3日間限定 無料】No.001 Type-A - AQUALUME -": [
@@ -21,11 +26,24 @@
         "date": "2026-06-16",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
+        "price": 300,
+        "is_sale": true
+      }
+    ],
+    "【50%OFFセール】No.001 Type-A - AQUALUME -": [
+      {
+        "date": "2026-06-19",
+        "price": 300,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
     "14161313": "【50%OFFセール】No.001 ペアリングセット（Type-A・Type-B）",
+    "14196971": "【50%OFFセール】No.001 Type-A - AQUALUME -",
     "14196972": "【50%OFFセール】No.001 Type-B - AQUALUME -"
   }
 }

@@ -57,10 +57,23 @@
         "date": "2026-06-17",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-19",
+        "price": 800,
+        "is_sale": true
+      }
+    ],
+    "ショコラ　20%OFF": [
+      {
+        "date": "2026-06-19",
+        "price": 800,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "14016077": "default"
+    "14016077": "default",
+    "14214925": "ショコラ　20%OFF"
   }
 }
