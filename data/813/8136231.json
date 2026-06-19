@@ -234,6 +234,11 @@
         "date": "2026-06-17",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-20",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Spring001_Wolfram": [
@@ -306,6 +311,11 @@
         "date": "2026-06-17",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-20",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Spring001_Fullset": [
@@ -336,6 +346,11 @@
       },
       {
         "date": "2026-06-17",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-20",
         "price": 2000,
         "is_sale": false
       }
@@ -370,6 +385,25 @@
         "date": "2026-06-17",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-20",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Spring001_Ricorine": [
+      {
+        "date": "2026-06-20",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "Spring001_Mururu": [
+      {
+        "date": "2026-06-20",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
@@ -377,6 +411,8 @@
     "13618791": "Spring001_Marycia",
     "13980984": "Spring001_Wolfram",
     "14119828": "Spring001_Fullset",
-    "14119829": "Spring001_CarukiaRe"
+    "14119829": "Spring001_CarukiaRe",
+    "14222970": "Spring001_Ricorine",
+    "14222971": "Spring001_Mururu"
   }
 }
