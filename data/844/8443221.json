@@ -17,6 +17,11 @@
         "date": "2026-06-19",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-22",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "TREDS（スニーカー単体）": [
@@ -34,8 +39,16 @@
         "date": "2026-06-19",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-22",
+        "price": 1500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14098056": "TREDS PRIME（スニーカーチャーム付き）",
+    "14143710": "TREDS（スニーカー単体）"
+  }
 }

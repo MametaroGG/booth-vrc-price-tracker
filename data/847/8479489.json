@@ -27,10 +27,23 @@
         "date": "2026-06-19",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-22",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Nanodevi": [
+      {
+        "date": "2026-06-22",
+        "price": 350,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14147824": "default"
+    "14147824": "default",
+    "14236091": "Nanodevi"
   }
 }

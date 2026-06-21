@@ -17,6 +17,11 @@
         "date": "2026-06-19",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-22",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "FullPack (支援版)": [
@@ -34,6 +39,11 @@
         "date": "2026-06-19",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-22",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Eku / エク": [
@@ -51,6 +61,11 @@
         "date": "2026-06-19",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-22",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Mao / 真央": [
@@ -68,10 +83,16 @@
         "date": "2026-06-19",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-22",
+        "price": 150,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14170175": "FullPack",
     "14183109": "Eku / エク",
     "14183110": "Mao / 真央",
     "14183964": "FullPack (支援版)"

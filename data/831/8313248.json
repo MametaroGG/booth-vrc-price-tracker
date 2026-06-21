@@ -22,6 +22,11 @@
         "date": "2026-06-19",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-22",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "✨Rinassita": [
@@ -42,6 +47,11 @@
       },
       {
         "date": "2026-06-19",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-22",
         "price": 300,
         "is_sale": false
       }
@@ -66,12 +76,33 @@
         "date": "2026-06-19",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-22",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "✨Full Package✨": [
+      {
+        "date": "2026-06-22",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "✨Milltima": [
+      {
+        "date": "2026-06-22",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13894158": "✨Hanka",
     "14174710": "✨Rinassita",
-    "14178299": "✨Miriam"
+    "14178299": "✨Miriam",
+    "14233066": "✨Full Package✨",
+    "14233067": "✨Milltima"
   }
 }

@@ -13,7 +13,24 @@
         "price": 0,
         "is_sale": true
       }
+    ],
+    "ミルティナ対応": [
+      {
+        "date": "2026-06-22",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "しお対応": [
+      {
+        "date": "2026-06-22",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14204102": "ミルティナ対応",
+    "14235975": "しお対応"
+  }
 }

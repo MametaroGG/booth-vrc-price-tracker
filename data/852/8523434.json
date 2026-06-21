@@ -8,7 +8,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "通常版": [
+      {
+        "date": "2026-06-22",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "応援代": [
+      {
+        "date": "2026-06-22",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14232236": "応援代"
+  }
 }

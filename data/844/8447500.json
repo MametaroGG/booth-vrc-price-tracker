@@ -18,7 +18,24 @@
         "price": 0,
         "is_sale": true
       }
+    ],
+    "glass vein": [
+      {
+        "date": "2026-06-22",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "おやつ代(中身は本体といっしょです！)": [
+      {
+        "date": "2026-06-22",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14105428": "glass vein",
+    "14228498": "おやつ代(中身は本体といっしょです！)"
+  }
 }
