@@ -502,10 +502,23 @@
         "date": "2026-06-20",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-22",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Ceratia版": [
+      {
+        "date": "2026-06-22",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12535264": "default"
+    "12535264": "default",
+    "14238382": "Ceratia版"
   }
 }

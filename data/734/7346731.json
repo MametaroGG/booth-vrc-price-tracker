@@ -502,10 +502,23 @@
         "date": "2026-06-20",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-22",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "通常": [
+      {
+        "date": "2026-06-22",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12313193": "default"
+    "12313193": "default",
+    "14235995": "通常"
   }
 }
