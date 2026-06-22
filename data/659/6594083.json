@@ -492,10 +492,23 @@
         "date": "2026-06-20",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-22",
+        "price": 1500,
+        "is_sale": true
+      }
+    ],
+    "[DPS+SPS]Package Download Fix": [
+      {
+        "date": "2026-06-22",
+        "price": 99999,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "11108421": "default"
+    "11108421": "default",
+    "14240467": "[DPS+SPS]Package Download Fix"
   }
 }
