@@ -42,10 +42,31 @@
         "date": "2026-06-22",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "FullPack": [
+      {
+        "date": "2026-06-24",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Nyuma": [
+      {
+        "date": "2026-06-24",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14111963": "default"
+    "14111963": "default",
+    "14250830": "FullPack",
+    "14250831": "Nyuma"
   }
 }

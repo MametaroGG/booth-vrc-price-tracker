@@ -7,11 +7,21 @@
         "date": "2026-06-22",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Fyuett unitypackage": [
       {
         "date": "2026-06-22",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
         "price": 200,
         "is_sale": false
       }
@@ -21,12 +31,25 @@
         "date": "2026-06-22",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "【New】Misaki unitypackage": [
+      {
+        "date": "2026-06-24",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14228538": "Full Pack Fyuett（今後ぽわり、海咲対応予定）",
     "14229496": "Fyuett unitypackage",
-    "14229497": "texture only"
+    "14229497": "texture only",
+    "14243935": "【New】Misaki unitypackage"
   }
 }

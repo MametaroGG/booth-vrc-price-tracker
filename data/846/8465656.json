@@ -12,6 +12,11 @@
         "date": "2026-06-22",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "LUMINA": [
@@ -24,6 +29,11 @@
         "date": "2026-06-22",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Shinra": [
@@ -36,6 +46,11 @@
         "date": "2026-06-22",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Velnica": [
@@ -48,6 +63,11 @@
         "date": "2026-06-22",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Misaki": [
@@ -60,6 +80,11 @@
         "date": "2026-06-22",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Minase": [
@@ -72,6 +97,11 @@
         "date": "2026-06-22",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Hanka": [
@@ -84,8 +114,21 @@
         "date": "2026-06-22",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 500,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14128019": "Full Pack",
+    "14128031": "LUMINA",
+    "14128042": "Shinra",
+    "14128043": "Velnica",
+    "14128044": "Misaki",
+    "14128045": "Minase",
+    "14128046": "Hanka"
+  }
 }

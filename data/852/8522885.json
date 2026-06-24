@@ -7,12 +7,22 @@
         "date": "2026-06-19",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Milfy,Eku": [
       {
         "date": "2026-06-19",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 200,
         "is_sale": false
       }
     ],
@@ -21,12 +31,22 @@
         "date": "2026-06-19",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Misaki": [
       {
         "date": "2026-06-19",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 200,
         "is_sale": false
       }
     ],
@@ -63,8 +83,40 @@
         "date": "2026-06-22",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-24",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Full Pack (+ PSD)": [
+      {
+        "date": "2026-06-24",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Lumina": [
+      {
+        "date": "2026-06-24",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Lunary": [
+      {
+        "date": "2026-06-24",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14221766": "Fyuett",
+    "14222066": "Milfy,Eku",
+    "14227111": "Miriam",
+    "14227245": "Misaki",
+    "14244994": "Full Pack (+ PSD)"
+  }
 }
