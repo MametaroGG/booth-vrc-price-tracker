@@ -499,6 +499,11 @@
         "date": "2026-06-22",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-25",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "alue": [
@@ -579,6 +584,11 @@
       },
       {
         "date": "2026-06-22",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-25",
         "price": 1000,
         "is_sale": false
       }
@@ -663,12 +673,33 @@
         "date": "2026-06-22",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-25",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "milfy": [
+      {
+        "date": "2026-06-25",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "shinano": [
+      {
+        "date": "2026-06-25",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "10590197": "Kuuta",
     "13986575": "alue",
-    "13986576": "bokusei"
+    "13986576": "bokusei",
+    "14245844": "milfy",
+    "14245845": "shinano"
   }
 }
