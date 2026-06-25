@@ -13,7 +13,24 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "通常版（先着価格）": [
+      {
+        "date": "2026-06-26",
+        "price": 1200,
+        "is_sale": false
+      }
+    ],
+    "開発支援版": [
+      {
+        "date": "2026-06-26",
+        "price": 1500,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14228826": "通常版（先着価格）",
+    "14252222": "開発支援版"
+  }
 }
