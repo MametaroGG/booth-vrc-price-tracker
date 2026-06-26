@@ -24,6 +24,11 @@
         "date": "2026-06-24",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-26",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "支援(内容物は同じです)": [
@@ -36,10 +41,23 @@
         "date": "2026-06-24",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-26",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "MZLC ver.f1": [
+      {
+        "date": "2026-06-26",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14230113": "MZLC ver.f1",
     "14231102": "支援(内容物は同じです)"
   }
 }

@@ -112,10 +112,23 @@
         "date": "2026-06-24",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-26",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "ribbon Tops+accessory": [
+      {
+        "date": "2026-06-26",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13895891": "default"
+    "13895891": "default",
+    "14254037": "ribbon Tops+accessory"
   }
 }
