@@ -507,6 +507,11 @@
         "date": "2026-06-24",
         "price": 8550,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-27",
+        "price": 10000,
+        "is_sale": false
       }
     ],
     "Tactical Variation": [
@@ -1014,6 +1019,11 @@
         "date": "2026-06-24",
         "price": 5700,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-27",
+        "price": 6300,
+        "is_sale": false
       }
     ],
     "Casual Variation": [
@@ -1519,6 +1529,11 @@
       },
       {
         "date": "2026-06-24",
+        "price": 3600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-27",
         "price": 3600,
         "is_sale": false
       }
@@ -2028,12 +2043,25 @@
         "date": "2026-06-24",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-27",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "VERKA Variation": [
+      {
+        "date": "2026-06-27",
+        "price": 6300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "11460058": "Full Package",
     "11460126": "Tactical Variation",
-    "11460127": "Casual Variation"
+    "11460127": "Casual Variation",
+    "14265457": "VERKA Variation"
   }
 }
