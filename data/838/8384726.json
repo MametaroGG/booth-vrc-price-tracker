@@ -82,10 +82,63 @@
         "date": "2026-06-26",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
+        "price": 720,
+        "is_sale": true
+      }
+    ],
+    "フルセット✦FullSet": [
+      {
+        "date": "2026-06-28",
+        "price": 1440,
+        "is_sale": false
+      }
+    ],
+    "マヌカ✦MANUKA": [
+      {
+        "date": "2026-06-28",
+        "price": 720,
+        "is_sale": false
+      }
+    ],
+    "ルルネ✦rurune": [
+      {
+        "date": "2026-06-28",
+        "price": 720,
+        "is_sale": false
+      }
+    ],
+    "ミルティナ✦Milltina": [
+      {
+        "date": "2026-06-28",
+        "price": 720,
+        "is_sale": false
+      }
+    ],
+    "ショコラ✦Chocolat": [
+      {
+        "date": "2026-06-28",
+        "price": 720,
+        "is_sale": false
+      }
+    ],
+    "エク✦Eku": [
+      {
+        "date": "2026-06-28",
+        "price": 720,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14004640": "default"
+    "14004640": "default",
+    "14272596": "フルセット✦FullSet",
+    "14272597": "マヌカ✦MANUKA",
+    "14272598": "ルルネ✦rurune",
+    "14272599": "ミルティナ✦Milltina",
+    "14272600": "ショコラ✦Chocolat",
+    "14272601": "エク✦Eku"
   }
 }

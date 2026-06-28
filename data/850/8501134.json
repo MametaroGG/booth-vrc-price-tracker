@@ -7,11 +7,21 @@
         "date": "2026-06-26",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "ラルージー -WRALUGEE-": [
       {
         "date": "2026-06-26",
+        "price": 1800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
         "price": 1800,
         "is_sale": false
       }
@@ -21,6 +31,11 @@
         "date": "2026-06-26",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "斑霞-Hanka- & 士堂 -Shidou-": [
@@ -28,8 +43,18 @@
         "date": "2026-06-26",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
+        "price": 1800,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14184381": "フルセット",
+    "14257205": "ラルージー -WRALUGEE-",
+    "14257206": "狛乃-Komano-",
+    "14257207": "斑霞-Hanka- & 士堂 -Shidou-"
+  }
 }

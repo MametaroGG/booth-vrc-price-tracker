@@ -12,6 +12,11 @@
         "date": "2026-06-26",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "斑霞専用": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-06-26",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
         "price": 1300,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-06-26",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "くうた専用": [
@@ -46,6 +61,11 @@
       },
       {
         "date": "2026-06-26",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
         "price": 1300,
         "is_sale": false
       }
@@ -60,6 +80,11 @@
         "date": "2026-06-26",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "雫峰（PlusHead）": [
@@ -72,8 +97,20 @@
         "date": "2026-06-26",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
+        "price": 1300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14155437": "全部入りフルパック",
+    "14155571": "斑霞専用",
+    "14155572": "狛乃",
+    "14155573": "くうた専用",
+    "14155574": "凛仁",
+    "14155575": "雫峰（PlusHead）"
+  }
 }

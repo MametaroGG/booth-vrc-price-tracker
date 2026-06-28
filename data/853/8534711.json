@@ -7,11 +7,21 @@
         "date": "2026-06-26",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-28",
+        "price": 1600,
+        "is_sale": true
       }
     ],
     "Komano": [
       {
         "date": "2026-06-26",
+        "price": 700,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-28",
         "price": 700,
         "is_sale": true
       }
@@ -21,11 +31,21 @@
         "date": "2026-06-26",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-28",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "Nakiya": [
       {
         "date": "2026-06-26",
+        "price": 700,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-28",
         "price": 700,
         "is_sale": true
       }
@@ -35,11 +55,21 @@
         "date": "2026-06-26",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-28",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "Maki": [
       {
         "date": "2026-06-26",
+        "price": 700,
+        "is_sale": true
+      },
+      {
+        "date": "2026-06-28",
         "price": 700,
         "is_sale": true
       }
@@ -49,8 +79,21 @@
         "date": "2026-06-26",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-28",
+        "price": 700,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14242779": "ALLPack",
+    "14243087": "Komano",
+    "14243088": "Kanata",
+    "14243089": "Nakiya",
+    "14243090": "Kuuta",
+    "14243091": "Maki",
+    "14243092": "Hanka"
+  }
 }

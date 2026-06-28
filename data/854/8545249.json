@@ -7,11 +7,21 @@
         "date": "2026-06-26",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Shinano Set": [
       {
         "date": "2026-06-26",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
         "price": 300,
         "is_sale": false
       }
@@ -21,12 +31,25 @@
         "date": "2026-06-26",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-28",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Manuka Set": [
+      {
+        "date": "2026-06-28",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14261041": "Full set",
     "14264961": "Shinano Set",
-    "14264962": "Sio Set"
+    "14264962": "Sio Set",
+    "14272423": "Manuka Set"
   }
 }
