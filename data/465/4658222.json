@@ -487,10 +487,23 @@
         "date": "2026-06-27",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-30",
+        "price": 4000,
+        "is_sale": false
+      }
+    ],
+    "Fuill:RE単体": [
+      {
+        "date": "2026-06-30",
+        "price": 4000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "7811438": "default"
+    "7811438": "default",
+    "14285371": "Fuill:RE単体"
   }
 }
