@@ -122,10 +122,63 @@
         "date": "2026-06-28",
         "price": 990,
         "is_sale": true
+      },
+      {
+        "date": "2026-06-30",
+        "price": 990,
+        "is_sale": false
+      }
+    ],
+    "Komano": [
+      {
+        "date": "2026-06-30",
+        "price": 990,
+        "is_sale": false
+      }
+    ],
+    "Alue(＋Head共通素体)": [
+      {
+        "date": "2026-06-30",
+        "price": 990,
+        "is_sale": false
+      }
+    ],
+    "Suzuya": [
+      {
+        "date": "2026-06-30",
+        "price": 990,
+        "is_sale": false
+      }
+    ],
+    "Hanka": [
+      {
+        "date": "2026-06-30",
+        "price": 990,
+        "is_sale": false
+      }
+    ],
+    "社畜の連成さん(珍飯亭共通男性素体)": [
+      {
+        "date": "2026-06-30",
+        "price": 990,
+        "is_sale": false
+      }
+    ],
+    "フルセット": [
+      {
+        "date": "2026-06-30",
+        "price": 1990,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13909744": "default"
+    "13909744": "default",
+    "14283416": "Komano",
+    "14285783": "Alue(＋Head共通素体)",
+    "14286166": "フルセット",
+    "14290947": "Suzuya",
+    "14291697": "Hanka",
+    "14292220": "社畜の連成さん(珍飯亭共通男性素体)"
   }
 }

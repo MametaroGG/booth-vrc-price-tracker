@@ -62,6 +62,11 @@
         "date": "2026-06-28",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-30",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "利用規約": [
@@ -124,10 +129,31 @@
         "date": "2026-06-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-06-30",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Milfy / Eku": [
+      {
+        "date": "2026-06-30",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Full": [
+      {
+        "date": "2026-06-30",
+        "price": 1200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14093025": "Chito（ちと）"
+    "14093025": "Chito（ちと）",
+    "14283200": "Milfy / Eku",
+    "14283201": "Full"
   }
 }
