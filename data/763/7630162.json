@@ -522,6 +522,11 @@
         "date": "2026-06-29",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-01",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "『朝』Morning": [
@@ -1042,6 +1047,11 @@
       },
       {
         "date": "2026-06-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-01",
         "price": 1500,
         "is_sale": false
       }
@@ -1566,6 +1576,11 @@
         "date": "2026-06-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "『夜』Night": [
@@ -2086,6 +2101,11 @@
       },
       {
         "date": "2026-06-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-01",
         "price": 1500,
         "is_sale": false
       }
@@ -2610,6 +2630,11 @@
         "date": "2026-06-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-01",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "『曇』Cloudy": [
@@ -3130,6 +3155,11 @@
       },
       {
         "date": "2026-06-29",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-01",
         "price": 1500,
         "is_sale": false
       }
@@ -3654,6 +3684,25 @@
         "date": "2026-06-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-01",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "『夏空』SummerSky": [
+      {
+        "date": "2026-07-01",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "企業・チームライセンス（Corporate / Team License）": [
+      {
+        "date": "2026-07-01",
+        "price": 10000,
+        "is_sale": false
       }
     ]
   },
@@ -3664,6 +3713,8 @@
     "12778744": "『夜』Night",
     "12778745": "『晴』Sunny",
     "12778746": "『曇』Cloudy",
-    "12778747": "『雨』Rain"
+    "12778747": "『雨』Rain",
+    "14292606": "企業・チームライセンス（Corporate / Team License）",
+    "14292730": "『夏空』SummerSky"
   }
 }
