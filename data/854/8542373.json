@@ -18,7 +18,48 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "フルセット": [
+      {
+        "date": "2026-07-03",
+        "price": 1200,
+        "is_sale": false
+      }
+    ],
+    "mao": [
+      {
+        "date": "2026-07-03",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "ショコラ": [
+      {
+        "date": "2026-07-03",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "sio": [
+      {
+        "date": "2026-07-03",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "rurune": [
+      {
+        "date": "2026-07-03",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14256098": "フルセット",
+    "14299931": "mao",
+    "14299932": "ショコラ",
+    "14299933": "sio",
+    "14299934": "rurune"
+  }
 }

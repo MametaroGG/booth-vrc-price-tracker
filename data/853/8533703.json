@@ -36,10 +36,23 @@
         "date": "2026-06-30",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-03",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "通常版 ver. 1.1.0": [
+      {
+        "date": "2026-07-03",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14240850": "通常版 ver. 1.1.0",
     "14269106": "【先行】支援版 ver. 1.1.0 (VRCFury-Toggle対応や言語切替機能の先行公開を含む)"
   }
 }

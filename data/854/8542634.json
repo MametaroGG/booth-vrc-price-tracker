@@ -17,6 +17,11 @@
         "date": "2026-06-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Sio": [
@@ -29,11 +34,42 @@
         "date": "2026-06-30",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Manuka": [
       {
         "date": "2026-06-30",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "Full Pack": [
+      {
+        "date": "2026-07-03",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Milfy": [
+      {
+        "date": "2026-07-03",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "Milltina": [
+      {
+        "date": "2026-07-03",
         "price": 100,
         "is_sale": false
       }
@@ -42,6 +78,9 @@
   "variation_keys": {
     "14256463": "default",
     "14265832": "Sio",
-    "14280333": "Manuka"
+    "14280333": "Manuka",
+    "14299991": "Full Pack",
+    "14299992": "Milfy",
+    "14299993": "Milltina"
   }
 }

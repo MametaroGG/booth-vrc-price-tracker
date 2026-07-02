@@ -7,6 +7,11 @@
         "date": "2026-06-30",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "ノラフィリカ - NoraFirika（まめふれんず）": [
@@ -14,6 +19,11 @@
         "date": "2026-06-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "くぅにゃん - Qunyan": [
@@ -21,8 +31,17 @@
         "date": "2026-06-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 375,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14289367": "ノラフィリカ - NoraFirika（まめふれんず）",
+    "14289398": "フルパック- FullPack",
+    "14289399": "くぅにゃん - Qunyan"
+  }
 }

@@ -12,6 +12,11 @@
         "date": "2026-06-30",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "リオ - Lio - 用": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-06-30",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
         "price": 1200,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-06-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "フェティーニャ -Fetinja- 用": [
@@ -48,8 +63,18 @@
         "date": "2026-06-30",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 1200,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14145075": "リオ - Lio - 用",
+    "14145215": "フルセット",
+    "14271953": "リナ - Lina- 用",
+    "14294777": "フェティーニャ -Fetinja- 用"
+  }
 }

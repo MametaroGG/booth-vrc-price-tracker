@@ -34,6 +34,11 @@
         "date": "2026-06-30",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 2500,
+        "is_sale": true
       }
     ],
     "利用規約": [
@@ -46,6 +51,11 @@
         "date": "2026-06-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "もちふぃった～変換プロファイル": [
@@ -53,8 +63,15 @@
         "date": "2026-06-30",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 0,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14221848": "オリジナル3Dモデル「メロパン」-Meropan-"
+  }
 }

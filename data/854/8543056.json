@@ -17,6 +17,11 @@
         "date": "2026-06-30",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "チップ（内容物は同じ）": [
@@ -34,8 +39,16 @@
         "date": "2026-06-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-03",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14257114": "通常版",
+    "14257133": "チップ（内容物は同じ）"
+  }
 }
