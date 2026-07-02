@@ -483,7 +483,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "無料版": [
+      {
+        "date": "2026-07-02",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "ブースト（内容は同じ）": [
+      {
+        "date": "2026-07-02",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14294408": "ブースト（内容は同じ）"
+  }
 }
