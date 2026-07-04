@@ -7,11 +7,21 @@
         "date": "2026-07-03",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-05",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Alldeta版(水着/シャツ/height system付)": [
       {
         "date": "2026-07-03",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-05",
         "price": 800,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-07-03",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-05",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14209674": "normal版(メイド服のみ)",
+    "14210221": "Alldeta版(水着/シャツ/height system付)",
+    "14210222": "only cloth版(※アバターは付属しません/水着/シャツのみ)"
+  }
 }

@@ -14,8 +14,22 @@
         "date": "2026-07-03",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-05",
+        "price": 100,
+        "is_sale": true
+      }
+    ],
+    "通常版(期間限定無料)": [
+      {
+        "date": "2026-07-05",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14273771": "次回作の応援🪄(通常版と内容は同じ)"
+  }
 }

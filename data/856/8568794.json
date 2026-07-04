@@ -7,11 +7,21 @@
         "date": "2026-07-03",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-05",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "[MAKEUP Only]": [
       {
         "date": "2026-07-03",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-05",
         "price": 300,
         "is_sale": false
       }
@@ -21,12 +31,18 @@
         "date": "2026-07-03",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-05",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14300948": "[MAKEUP+EYE]",
     "14301099": "[MAKEUP Only]",
-    "14301100": "[EYE Only]"
+    "14301100": "[EYE Only]",
+    "14315213": "[MAKEUP+EYE]"
   }
 }

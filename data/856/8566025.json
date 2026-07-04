@@ -7,11 +7,21 @@
         "date": "2026-07-03",
         "price": 450,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-05",
+        "price": 450,
+        "is_sale": true
       }
     ],
     "🤍 MAKE UP 🤍": [
       {
         "date": "2026-07-03",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-07-05",
         "price": 300,
         "is_sale": true
       }
@@ -21,11 +31,17 @@
         "date": "2026-07-03",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-05",
+        "price": 200,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
     "14295884": "🤍 FULL PACK 🤍",
-    "14298447": "🤍 MAKE UP 🤍"
+    "14298447": "🤍 MAKE UP 🤍",
+    "14298448": "🤍 EYE 🤍"
   }
 }
