@@ -1252,6 +1252,11 @@
         "date": "2026-07-04",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-06",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Shinra": [
@@ -1297,6 +1302,11 @@
       },
       {
         "date": "2026-07-04",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-06",
         "price": 300,
         "is_sale": false
       }
@@ -1346,12 +1356,25 @@
         "date": "2026-07-04",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-06",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Airi": [
+      {
+        "date": "2026-07-06",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "8291342": "default",
     "14189537": "Shinra",
-    "14189538": "Selestia"
+    "14189538": "Selestia",
+    "14326288": "Airi"
   }
 }

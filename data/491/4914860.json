@@ -502,10 +502,23 @@
         "date": "2026-07-04",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-06",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "しなの": [
+      {
+        "date": "2026-07-06",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "8257888": "default"
+    "8257888": "default",
+    "14317336": "しなの"
   }
 }
