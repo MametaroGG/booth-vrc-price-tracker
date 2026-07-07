@@ -1227,6 +1227,11 @@
         "date": "2026-07-05",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Sio": [
@@ -1274,11 +1279,24 @@
         "date": "2026-07-05",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Manuka": [
+      {
+        "date": "2026-07-07",
+        "price": 900,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "12175059": "default",
-    "14196593": "Sio"
+    "14196593": "Sio",
+    "14331254": "Manuka"
   }
 }
