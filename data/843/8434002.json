@@ -77,6 +77,11 @@
         "date": "2026-07-05",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Eyes only": [
@@ -152,6 +157,11 @@
       },
       {
         "date": "2026-07-05",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
         "price": 500,
         "is_sale": false
       }
@@ -231,12 +241,33 @@
         "date": "2026-07-05",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "【セレナ対応】Eyes only": [
+      {
+        "date": "2026-07-07",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "【セレナ対応】Makeup only": [
+      {
+        "date": "2026-07-07",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14081451": "Fullset",
     "14083197": "Eyes only",
-    "14087369": "Makeup only"
+    "14087369": "Makeup only",
+    "14325217": "【セレナ対応】Eyes only",
+    "14325218": "【セレナ対応】Makeup only"
   }
 }

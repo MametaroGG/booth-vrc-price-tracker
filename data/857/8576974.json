@@ -14,12 +14,22 @@
         "date": "2026-07-05",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "🎸『しなの』-Shinano🎸": [
       {
         "date": "2026-07-05",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 900,
         "is_sale": false
       }
     ],
@@ -28,6 +38,11 @@
         "date": "2026-07-05",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "🎸『まよ』 - Mayo🎸": [
@@ -35,8 +50,34 @@
         "date": "2026-07-05",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "🎸Full Pack🎸": [
+      {
+        "date": "2026-07-07",
+        "price": 2500,
+        "is_sale": false
+      }
+    ],
+    "🎸『ユーフォリカ』 Euphorika🎸": [
+      {
+        "date": "2026-07-07",
+        "price": 900,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14315149": "🎸Full Pack🎸",
+    "14315190": "🎸『ウルキ』-Uruki🎸",
+    "14315191": "🎸『しなの』-Shinano🎸",
+    "14315192": "🎸『ミルティナ』- Milltina🎸",
+    "14315193": "🎸『まよ』 - Mayo🎸",
+    "14320859": "🎸『ユーフォリカ』 Euphorika🎸"
+  }
 }

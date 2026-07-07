@@ -128,11 +128,21 @@
         "date": "2026-07-05",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-07",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "【期間限定無料】チョコ": [
       {
         "date": "2026-07-05",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
         "price": 0,
         "is_sale": false
       }

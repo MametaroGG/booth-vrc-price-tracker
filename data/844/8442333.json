@@ -72,10 +72,39 @@
         "date": "2026-07-05",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "しなの -Shinano-": [
+      {
+        "date": "2026-07-07",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "マヌカ -Manuka-": [
+      {
+        "date": "2026-07-07",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "イチゴ -Ichigo-": [
+      {
+        "date": "2026-07-07",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14096398": "default"
+    "14096398": "default",
+    "14330296": "しなの -Shinano-",
+    "14330297": "マヌカ -Manuka-",
+    "14330298": "イチゴ -Ichigo-"
   }
 }

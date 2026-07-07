@@ -68,9 +68,24 @@
         "price": 300,
         "is_sale": false
       }
+    ],
+    "Free Version": [
+      {
+        "date": "2026-07-07",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Support Version(Same File": [
+      {
+        "date": "2026-07-07",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "14130400": "default"
+    "14130400": "default",
+    "14331942": "Support Version(Same File"
   }
 }

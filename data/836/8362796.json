@@ -107,10 +107,47 @@
         "date": "2026-07-05",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "フルパック - FullPack -": [
+      {
+        "date": "2026-07-07",
+        "price": 1800,
+        "is_sale": false
+      }
+    ],
+    "ひかるん & リュミィ - Hikarun & Ryumii -": [
+      {
+        "date": "2026-07-07",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "ネメシス & エルシオン - Nemesis & ELusion -": [
+      {
+        "date": "2026-07-07",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "うささき - Usasaki -": [
+      {
+        "date": "2026-07-07",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13984959": "default"
+    "13984959": "default",
+    "14322880": "ひかるん & リュミィ - Hikarun & Ryumii -",
+    "14322908": "フルパック - FullPack -",
+    "14330101": "ネメシス & エルシオン - Nemesis & ELusion -",
+    "14331799": "うささき - Usasaki -"
   }
 }

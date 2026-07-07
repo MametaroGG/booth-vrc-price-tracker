@@ -27,10 +27,47 @@
         "date": "2026-07-05",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "FullPack": [
+      {
+        "date": "2026-07-07",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Hanka": [
+      {
+        "date": "2026-07-07",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Lasyusya": [
+      {
+        "date": "2026-07-07",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Misaki": [
+      {
+        "date": "2026-07-07",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14173281": "default"
+    "14173281": "default",
+    "14327755": "Hanka",
+    "14327756": "Lasyusya",
+    "14327757": "Misaki",
+    "14327764": "FullPack"
   }
 }

@@ -438,6 +438,11 @@
         "date": "2026-07-05",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-07",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Fullpack": [
@@ -638,6 +643,11 @@
       },
       {
         "date": "2026-07-05",
+        "price": 250,
+        "is_sale": true
+      },
+      {
+        "date": "2026-07-07",
         "price": 250,
         "is_sale": true
       }
@@ -842,6 +852,11 @@
         "date": "2026-07-05",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-07",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Cazalis only": [
@@ -1009,6 +1024,11 @@
         "date": "2026-07-05",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-07",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Lunary only": [
@@ -1106,6 +1126,11 @@
         "date": "2026-07-05",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-07",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Powari only": [
@@ -1171,6 +1196,11 @@
       },
       {
         "date": "2026-07-05",
+        "price": 200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-07-07",
         "price": 200,
         "is_sale": true
       }
@@ -1240,6 +1270,11 @@
         "date": "2026-07-05",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-07",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Sumiha only": [
@@ -1282,11 +1317,28 @@
         "date": "2026-07-05",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-07",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "komane only": [
       {
         "date": "2026-07-05",
+        "price": 150,
+        "is_sale": true
+      },
+      {
+        "date": "2026-07-07",
+        "price": 150,
+        "is_sale": true
+      }
+    ],
+    "selena only": [
+      {
+        "date": "2026-07-07",
         "price": 150,
         "is_sale": true
       }
@@ -1301,6 +1353,7 @@
     "14132633": "Powari only",
     "14132634": "Miria only",
     "14227290": "Sumiha only",
-    "14316056": "komane only"
+    "14316056": "komane only",
+    "14325243": "selena only"
   }
 }

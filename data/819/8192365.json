@@ -209,6 +209,11 @@
         "date": "2026-07-05",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Shinra": [
@@ -326,6 +331,11 @@
         "date": "2026-07-05",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Fyuett": [
@@ -443,12 +453,33 @@
         "date": "2026-07-05",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-07",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "Selena": [
+      {
+        "date": "2026-07-07",
+        "price": 300,
+        "is_sale": true
+      }
+    ],
+    "fullpack": [
+      {
+        "date": "2026-07-07",
+        "price": 600,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
     "13714865": "Fyuett",
     "13965393": "Misaki",
-    "13965394": "Shinra"
+    "13965394": "Shinra",
+    "14334206": "Selena",
+    "14334207": "fullpack"
   }
 }
