@@ -1357,6 +1357,11 @@
         "date": "2026-07-05",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-08",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Moe": [
@@ -1409,11 +1414,24 @@
         "date": "2026-07-05",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-08",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Airi": [
+      {
+        "date": "2026-07-08",
+        "price": 900,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "10578899": "default",
-    "14196398": "Moe"
+    "14196398": "Moe",
+    "14326128": "Airi"
   }
 }
