@@ -17,6 +17,11 @@
         "date": "2026-07-07",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-09",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "支援版": [
@@ -34,11 +39,24 @@
         "date": "2026-07-07",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-09",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "CZR100_TARMAC ASSAULT対応": [
+      {
+        "date": "2026-07-09",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14297406": "【セール中】SiuSiu対応",
-    "14297540": "支援版"
+    "14297540": "支援版",
+    "14343250": "CZR100_TARMAC ASSAULT対応"
   }
 }

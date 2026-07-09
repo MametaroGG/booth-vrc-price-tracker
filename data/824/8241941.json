@@ -198,7 +198,31 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "通常版": [
+      {
+        "date": "2026-07-09",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "【支援版】": [
+      {
+        "date": "2026-07-09",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "【お酒代】": [
+      {
+        "date": "2026-07-09",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14345342": "【支援版】",
+    "14345343": "【お酒代】"
+  }
 }

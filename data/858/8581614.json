@@ -7,11 +7,21 @@
         "date": "2026-07-07",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-09",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "make": [
       {
         "date": "2026-07-07",
+        "price": 400,
+        "is_sale": true
+      },
+      {
+        "date": "2026-07-09",
         "price": 400,
         "is_sale": true
       }
@@ -21,8 +31,17 @@
         "date": "2026-07-07",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-09",
+        "price": 300,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14322585": "make+eye",
+    "14322755": "make",
+    "14322756": "eye"
+  }
 }

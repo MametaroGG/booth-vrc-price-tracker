@@ -14,10 +14,47 @@
         "date": "2026-07-07",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-09",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Chocolat/ショコラ": [
+      {
+        "date": "2026-07-09",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Ramune/ラムネ": [
+      {
+        "date": "2026-07-09",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Powari/ぽわり": [
+      {
+        "date": "2026-07-09",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Selena/セレナ": [
+      {
+        "date": "2026-07-09",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14333199": "おいしいご飯代（フルセット有料版）"
+    "14333199": "おいしいご飯代（フルセット有料版）",
+    "14335819": "Chocolat/ショコラ",
+    "14335820": "Ramune/ラムネ",
+    "14335821": "Powari/ぽわり",
+    "14335822": "Selena/セレナ"
   }
 }

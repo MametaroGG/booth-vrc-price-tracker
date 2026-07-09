@@ -82,10 +82,31 @@
         "date": "2026-07-07",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-09",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "キプフェル": [
+      {
+        "date": "2026-07-09",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "【SALE】ちびノエル": [
+      {
+        "date": "2026-07-09",
+        "price": 300,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "14061267": "default"
+    "14061267": "default",
+    "14343808": "キプフェル",
+    "14343809": "【SALE】ちびノエル"
   }
 }

@@ -12,6 +12,11 @@
         "date": "2026-07-07",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-09",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Rurune": [
@@ -24,6 +29,11 @@
         "date": "2026-07-07",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-09",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "応援(Ruruneと内容は変わりません)": [
@@ -36,10 +46,16 @@
         "date": "2026-07-07",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-09",
+        "price": 250,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14270393": "Rurune",
     "14270394": "応援(Ruruneと内容は変わりません)"
   }
 }
