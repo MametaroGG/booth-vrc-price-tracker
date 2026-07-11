@@ -37,6 +37,11 @@
         "date": "2026-07-09",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "FullPack": [
@@ -47,6 +52,11 @@
       },
       {
         "date": "2026-07-09",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
         "price": 600,
         "is_sale": false
       }
@@ -61,6 +71,11 @@
         "date": "2026-07-09",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Lasyusya": [
@@ -71,6 +86,11 @@
       },
       {
         "date": "2026-07-09",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
         "price": 300,
         "is_sale": false
       }
@@ -85,6 +105,18 @@
         "date": "2026-07-09",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Komano": [
+      {
+        "date": "2026-07-11",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
@@ -93,6 +125,7 @@
     "14327755": "Hanka",
     "14327756": "Lasyusya",
     "14327757": "Misaki",
-    "14327764": "FullPack"
+    "14327764": "FullPack",
+    "14349148": "Komano"
   }
 }

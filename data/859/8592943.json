@@ -7,6 +7,11 @@
         "date": "2026-07-09",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "donate (内容物は同じです)": [
@@ -14,8 +19,16 @@
         "date": "2026-07-09",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14340239": "standard (7color)",
+    "14340463": "donate (内容物は同じです)"
+  }
 }

@@ -82,6 +82,11 @@
         "date": "2026-07-09",
         "price": 6500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 4500,
+        "is_sale": true
       }
     ],
     "るま単体版 -Ruma only-": [
@@ -164,6 +169,11 @@
         "date": "2026-07-09",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 4000,
+        "is_sale": true
       }
     ],
     "ころ単体版 -Coro only-": [
@@ -246,8 +256,17 @@
         "date": "2026-07-09",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 4000,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "13282590": "るま単体版 -Ruma only-",
+    "14047190": "ふたごのるまころ -Twins Ruma&Coro-",
+    "14047191": "ころ単体版 -Coro only-"
+  }
 }
