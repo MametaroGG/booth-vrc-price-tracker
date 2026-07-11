@@ -527,6 +527,11 @@
         "date": "2026-07-10",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-12",
+        "price": 3000,
+        "is_sale": true
       }
     ],
     "Grus": [
@@ -1053,6 +1058,11 @@
       {
         "date": "2026-07-10",
         "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-12",
+        "price": 2000,
         "is_sale": false
       }
     ],
@@ -1581,6 +1591,11 @@
         "date": "2026-07-10",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-12",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Helvetica": [
@@ -2108,6 +2123,11 @@
         "date": "2026-07-10",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-12",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Yoll": [
@@ -2634,6 +2654,11 @@
       {
         "date": "2026-07-10",
         "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-12",
+        "price": 2000,
         "is_sale": false
       }
     ],
@@ -3689,6 +3714,11 @@
         "date": "2026-07-10",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-12",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "利用規約": [
@@ -4216,6 +4246,18 @@
         "date": "2026-07-10",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-12",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "DLC(アニメーションセット)": [
+      {
+        "date": "2026-07-12",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
@@ -4226,6 +4268,7 @@
     "10378276": "Yoll",
     "10378277": "Fullset",
     "10440183": "Cygnet",
-    "10440184": "Lowtus"
+    "10440184": "Lowtus",
+    "14362050": "DLC(アニメーションセット)"
   }
 }
