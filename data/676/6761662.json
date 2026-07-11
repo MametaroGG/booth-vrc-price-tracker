@@ -676,6 +676,11 @@
         "date": "2026-07-09",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Aden支援用(おまけ付)": [
@@ -1078,6 +1083,11 @@
         "date": "2026-07-09",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "後日追加　Yomura": [
@@ -1504,6 +1514,11 @@
         "date": "2026-07-09",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Yomura支援用(おまけ付)": [
@@ -1886,6 +1901,11 @@
         "date": "2026-07-09",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "Suzuya(セール)": [
@@ -1968,6 +1988,11 @@
         "date": "2026-07-09",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Suzuya(発光付)(セール)": [
@@ -2050,6 +2075,25 @@
         "date": "2026-07-09",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-11",
+        "price": 400,
+        "is_sale": true
+      }
+    ],
+    "Gomi": [
+      {
+        "date": "2026-07-11",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Gomi(発光付)": [
+      {
+        "date": "2026-07-11",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
@@ -2059,6 +2103,8 @@
     "13416844": "Yomura",
     "13416845": "Yomura支援用(おまけ付)",
     "14117221": "Suzuya(セール)",
-    "14117222": "Suzuya(発光付)(セール)"
+    "14117222": "Suzuya(発光付)(セール)",
+    "14351857": "Gomi",
+    "14351858": "Gomi(発光付)"
   }
 }
