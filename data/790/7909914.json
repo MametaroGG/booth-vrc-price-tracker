@@ -467,10 +467,23 @@
         "date": "2026-07-11",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-13",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "五味": [
+      {
+        "date": "2026-07-13",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13245037": "default"
+    "13245037": "default",
+    "14362407": "五味"
   }
 }

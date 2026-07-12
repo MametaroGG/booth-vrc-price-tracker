@@ -8,7 +8,23 @@
         "price": 0,
         "is_sale": true
       }
+    ],
+    "ゆったり部屋着": [
+      {
+        "date": "2026-07-13",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "prefabのみ": [
+      {
+        "date": "2026-07-13",
+        "price": 0,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14341439": "ゆったり部屋着"
+  }
 }

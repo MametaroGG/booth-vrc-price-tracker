@@ -152,10 +152,23 @@
         "date": "2026-07-11",
         "price": 7500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-13",
+        "price": 2500,
+        "is_sale": true
+      }
+    ],
+    "Vroidデータのみ": [
+      {
+        "date": "2026-07-13",
+        "price": 3500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13885598": "default"
+    "13885598": "default",
+    "14364527": "Vroidデータのみ"
   }
 }

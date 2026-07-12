@@ -174,10 +174,23 @@
         "date": "2026-07-11",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-13",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "通常版": [
+      {
+        "date": "2026-07-13",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13854906": "default"
+    "13854906": "default",
+    "14353188": "おやつ代(無料と同じ)"
   }
 }

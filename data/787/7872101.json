@@ -586,10 +586,23 @@
         "date": "2026-07-11",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-13",
+        "price": 700,
+        "is_sale": true
+      }
+    ],
+    "Vketセール価格　~7/26終了": [
+      {
+        "date": "2026-07-13",
+        "price": 500,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "13180572": "default"
+    "13180572": "default",
+    "14358925": "Vketセール価格　~7/26終了"
   }
 }

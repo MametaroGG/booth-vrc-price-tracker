@@ -27,6 +27,11 @@
         "date": "2026-07-11",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-13",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Makeup only": [
@@ -54,6 +59,11 @@
         "date": "2026-07-11",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-13",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Eyes only": [
@@ -81,11 +91,17 @@
         "date": "2026-07-11",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-13",
+        "price": 150,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14306165": "Makeup & Eyes set (+ OMAKE)",
-    "14306216": "Makeup only"
+    "14306216": "Makeup only",
+    "14306217": "Eyes only"
   }
 }

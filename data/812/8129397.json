@@ -292,10 +292,23 @@
         "date": "2026-07-11",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-13",
+        "price": 700,
+        "is_sale": true
+      }
+    ],
+    "20%OFF版": [
+      {
+        "date": "2026-07-13",
+        "price": 560,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "13606797": "default"
+    "13606797": "default",
+    "14359435": "20%OFF版"
   }
 }

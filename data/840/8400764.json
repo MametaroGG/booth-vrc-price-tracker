@@ -102,6 +102,11 @@
         "date": "2026-07-11",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-13",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "shinra": [
@@ -202,6 +207,11 @@
       },
       {
         "date": "2026-07-11",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-13",
         "price": 1500,
         "is_sale": false
       }
@@ -306,6 +316,11 @@
         "date": "2026-07-11",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-13",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "mayo": [
@@ -406,6 +421,11 @@
       },
       {
         "date": "2026-07-11",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-13",
         "price": 1500,
         "is_sale": false
       }
@@ -510,6 +530,25 @@
         "date": "2026-07-11",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-13",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "manuka": [
+      {
+        "date": "2026-07-13",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "lasyusha": [
+      {
+        "date": "2026-07-13",
+        "price": 1500,
+        "is_sale": false
       }
     ]
   },
@@ -518,6 +557,8 @@
     "14056089": "shinra",
     "14058355": "shinano",
     "14058356": "mayo",
-    "14058357": "milltina"
+    "14058357": "milltina",
+    "14360249": "manuka",
+    "14360250": "lasyusha"
   }
 }
