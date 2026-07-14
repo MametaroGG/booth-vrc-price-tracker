@@ -37,6 +37,11 @@
         "date": "2026-07-13",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-14",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "フェイストラッキング（VRCFT）追加データ ※要「Wylie」": [
@@ -74,8 +79,16 @@
         "date": "2026-07-13",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-14",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14262826": "アバター本体（PC・Quest・iOS）",
+    "14272181": "フェイストラッキング（VRCFT）追加データ ※要「Wylie」"
+  }
 }
