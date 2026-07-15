@@ -2142,10 +2142,95 @@
         "date": "2026-07-13",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-15",
+        "price": 950,
+        "is_sale": true
+      }
+    ],
+    "Shinano": [
+      {
+        "date": "2026-07-15",
+        "price": 950,
+        "is_sale": false
+      }
+    ],
+    "Lumina": [
+      {
+        "date": "2026-07-15",
+        "price": 950,
+        "is_sale": false
+      }
+    ],
+    "Marycia": [
+      {
+        "date": "2026-07-15",
+        "price": 950,
+        "is_sale": false
+      }
+    ],
+    "Shinra": [
+      {
+        "date": "2026-07-15",
+        "price": 950,
+        "is_sale": false
+      }
+    ],
+    "Manuka": [
+      {
+        "date": "2026-07-15",
+        "price": 950,
+        "is_sale": false
+      }
+    ],
+    "Moe": [
+      {
+        "date": "2026-07-15",
+        "price": 950,
+        "is_sale": false
+      }
+    ],
+    "Sio": [
+      {
+        "date": "2026-07-15",
+        "price": 950,
+        "is_sale": false
+      }
+    ],
+    "Kikyo": [
+      {
+        "date": "2026-07-15",
+        "price": 950,
+        "is_sale": false
+      }
+    ],
+    "Grs": [
+      {
+        "date": "2026-07-15",
+        "price": 950,
+        "is_sale": false
+      }
+    ],
+    "Airi": [
+      {
+        "date": "2026-07-15",
+        "price": 950,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "10385105": "default"
+    "10385105": "default",
+    "14380323": "Shinano",
+    "14380324": "Lumina",
+    "14380325": "Marycia",
+    "14380326": "Shinra",
+    "14380327": "Manuka",
+    "14380328": "Moe",
+    "14380329": "Sio",
+    "14380330": "Kikyo",
+    "14380331": "Grs",
+    "14380332": "Airi"
   }
 }
