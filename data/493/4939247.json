@@ -1317,6 +1317,11 @@
         "date": "2026-07-14",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-15",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Shinra": [
@@ -1389,11 +1394,56 @@
         "date": "2026-07-14",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-15",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Shinano": [
+      {
+        "date": "2026-07-15",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Lumina": [
+      {
+        "date": "2026-07-15",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Marycia": [
+      {
+        "date": "2026-07-15",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Manuka": [
+      {
+        "date": "2026-07-15",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Lime / Komado": [
+      {
+        "date": "2026-07-15",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "8302768": "default",
-    "14196438": "Shinra"
+    "14196438": "Shinra",
+    "14380903": "Shinano",
+    "14380904": "Marycia",
+    "14380905": "Manuka",
+    "14380906": "Lime / Komado",
+    "14380947": "Lumina"
   }
 }
