@@ -263,9 +263,24 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "無料版": [
+      {
+        "date": "2026-07-16",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "コーヒー代(無料版)": [
+      {
+        "date": "2026-07-16",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "13595328": "default"
+    "13595328": "default",
+    "14386433": "コーヒー代(無料版)"
   }
 }
