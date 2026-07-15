@@ -522,10 +522,23 @@
         "date": "2026-07-14",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-15",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "軽量版 / Lite": [
+      {
+        "date": "2026-07-15",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "4876900": "default"
+    "4876900": "default",
+    "14384729": "軽量版 / Lite"
   }
 }
