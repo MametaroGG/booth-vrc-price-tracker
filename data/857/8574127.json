@@ -27,6 +27,11 @@
         "date": "2026-07-14",
         "price": 590,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-16",
+        "price": 590,
+        "is_sale": false
       }
     ],
     "Kipfel(Eye&Makeup)": [
@@ -52,6 +57,11 @@
       },
       {
         "date": "2026-07-14",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-16",
         "price": 400,
         "is_sale": false
       }
@@ -81,12 +91,25 @@
         "date": "2026-07-14",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-16",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "Kaguya(Eye&Makeup)": [
+      {
+        "date": "2026-07-16",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14316364": "Full Set",
     "14316365": "Kipfel(Eye&Makeup)",
-    "14317017": "Hikarun(Eye&Makeup)"
+    "14317017": "Hikarun(Eye&Makeup)",
+    "14380959": "Kaguya(Eye&Makeup)"
   }
 }

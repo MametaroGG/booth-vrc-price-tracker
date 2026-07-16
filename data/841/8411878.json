@@ -92,6 +92,11 @@
         "date": "2026-07-14",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-16",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "応援版(中身変わりません)": [
@@ -185,10 +190,18 @@
         "price": 1000,
         "is_sale": false
       }
+    ],
+    "PostProcessTool単体": [
+      {
+        "date": "2026-07-16",
+        "price": 150,
+        "is_sale": true
+      }
     ]
   },
   "variation_keys": {
     "14046968": "通常版",
-    "14119629": "応援版(中身変わりません)"
+    "14119629": "応援版(中身変わりません)",
+    "14382354": "PostProcessTool単体"
   }
 }
