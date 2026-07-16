@@ -532,10 +532,23 @@
         "date": "2026-07-15",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-17",
+        "price": 2000,
+        "is_sale": false
+      }
+    ],
+    "+DoF": [
+      {
+        "date": "2026-07-17",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "9305566": "default"
+    "9305566": "default",
+    "14386806": "+DoF"
   }
 }
