@@ -562,10 +562,23 @@
         "date": "2026-07-15",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-16",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "まめひなた専用": [
+      {
+        "date": "2026-07-16",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12254974": "default"
+    "12254974": "default",
+    "14386186": "まめひなた専用"
   }
 }
