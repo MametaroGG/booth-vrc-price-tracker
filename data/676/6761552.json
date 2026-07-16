@@ -554,6 +554,11 @@
         "date": "2026-07-15",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-16",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Yomura(後日追加)": [
@@ -973,6 +978,11 @@
         "date": "2026-07-15",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-16",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Suzuya(予定地)": [
@@ -1077,12 +1087,25 @@
         "date": "2026-07-15",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-16",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "Gomi": [
+      {
+        "date": "2026-07-16",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "11374760": "Aden",
     "13416858": "Yomura",
-    "14099458": "Suzuya"
+    "14099458": "Suzuya",
+    "14387302": "Gomi"
   }
 }
