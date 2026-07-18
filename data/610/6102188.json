@@ -904,6 +904,11 @@
         "date": "2026-07-17",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-18",
+        "price": 990,
+        "is_sale": false
       }
     ],
     "SPS_DLC (Only DLC)": [
@@ -1451,6 +1456,11 @@
         "date": "2026-07-17",
         "price": 410,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-18",
+        "price": 390,
+        "is_sale": true
       }
     ],
     "Donate(同じ内容)": [
@@ -1996,6 +2006,11 @@
       },
       {
         "date": "2026-07-17",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-18",
         "price": 1500,
         "is_sale": false
       }
@@ -2545,6 +2560,11 @@
         "date": "2026-07-17",
         "price": 99999,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-18",
+        "price": 99999,
+        "is_sale": false
       }
     ],
     "Full Package (SPS+DLC)": [
@@ -2737,6 +2757,18 @@
         "date": "2026-07-17",
         "price": 1090,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-18",
+        "price": 1090,
+        "is_sale": false
+      }
+    ],
+    "SPS_DLC2 (Upgrade package)": [
+      {
+        "date": "2026-07-18",
+        "price": 490,
+        "is_sale": false
       }
     ]
   },
@@ -2745,6 +2777,7 @@
     "10307213": "Donate(同じ内容)",
     "10367649": "Full Package (SPS+DLC)",
     "10367650": "SPS_DLC (Only DLC)",
-    "13102398": "【2026NewYear!!】SPS+DLC 1/1~1/3"
+    "13102398": "【2026NewYear!!】SPS+DLC 1/1~1/3",
+    "14395012": "SPS_DLC2 (Upgrade package)"
   }
 }
