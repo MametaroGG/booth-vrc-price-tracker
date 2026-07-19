@@ -28,9 +28,24 @@
         "price": 100,
         "is_sale": false
       }
+    ],
+    "無料": [
+      {
+        "date": "2026-07-19",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "支援版": [
+      {
+        "date": "2026-07-19",
+        "price": 200,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "14354107": "default"
+    "14354107": "default",
+    "14403489": "支援版"
   }
 }

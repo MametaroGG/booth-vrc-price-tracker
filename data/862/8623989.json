@@ -7,11 +7,21 @@
         "date": "2026-07-17",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-19",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Eye only pack": [
       {
         "date": "2026-07-17",
+        "price": 250,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-19",
         "price": 250,
         "is_sale": false
       }
@@ -21,6 +31,11 @@
         "date": "2026-07-17",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-19",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "支援版": [
@@ -28,8 +43,18 @@
         "date": "2026-07-17",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-19",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14394916": "Eye & Make pack",
+    "14395104": "Eye only pack",
+    "14395105": "Make only pack",
+    "14395106": "支援版"
+  }
 }

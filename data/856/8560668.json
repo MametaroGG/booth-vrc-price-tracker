@@ -52,10 +52,23 @@
         "date": "2026-07-17",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-19",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "商用利用ライセンス版": [
+      {
+        "date": "2026-07-19",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14287118": "default"
+    "14287118": "default",
+    "14399205": "商用利用ライセンス版"
   }
 }

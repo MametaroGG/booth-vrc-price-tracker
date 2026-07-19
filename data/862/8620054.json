@@ -7,6 +7,11 @@
         "date": "2026-07-17",
         "price": 890,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-19",
+        "price": 890,
+        "is_sale": true
       }
     ],
     "Full Package + ♥️": [
@@ -14,8 +19,16 @@
         "date": "2026-07-17",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-19",
+        "price": 1300,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14388164": "Full Package",
+    "14388601": "Full Package + ♥️"
+  }
 }
