@@ -402,6 +402,11 @@
         "date": "2026-07-17",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-19",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "EYE": [
@@ -804,6 +809,11 @@
         "date": "2026-07-17",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-19",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "MAKEUP": [
@@ -1206,6 +1216,11 @@
         "date": "2026-07-17",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-19",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "おやつ代(FULLPACKと同じ内容です)": [
@@ -1610,6 +1625,18 @@
         "date": "2026-07-17",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-19",
+        "price": 1500,
+        "is_sale": true
+      }
+    ],
+    "ルルネ＆輝夜 FULLPACK セット（SALE!!）": [
+      {
+        "date": "2026-07-19",
+        "price": 1200,
+        "is_sale": true
       }
     ]
   },
@@ -1617,6 +1644,7 @@
     "13460344": "FULLPACK",
     "13460345": "EYE",
     "13460346": "MAKEUP",
-    "13460347": "支援(FULLPACKと同じ内容です)"
+    "13460347": "支援(FULLPACKと同じ内容です)",
+    "14401072": "ルルネ＆輝夜 FULLPACK セット（SALE!!）"
   }
 }
