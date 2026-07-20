@@ -1192,6 +1192,11 @@
         "date": "2026-07-18",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-20",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Grus": [
@@ -1282,6 +1287,11 @@
       },
       {
         "date": "2026-07-18",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-20",
         "price": 900,
         "is_sale": false
       }
@@ -1376,12 +1386,65 @@
         "date": "2026-07-18",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-20",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Shinano": [
+      {
+        "date": "2026-07-20",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Marycia": [
+      {
+        "date": "2026-07-20",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Lumina": [
+      {
+        "date": "2026-07-20",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Milltina": [
+      {
+        "date": "2026-07-20",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Lapwing": [
+      {
+        "date": "2026-07-20",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Manuka": [
+      {
+        "date": "2026-07-20",
+        "price": 900,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "7448945": "default",
     "14188962": "Grus",
-    "14188963": "Maniel"
+    "14188963": "Maniel",
+    "14409631": "Shinano",
+    "14409632": "Marycia",
+    "14409633": "Lumina",
+    "14409634": "Milltina",
+    "14409635": "Lapwing",
+    "14409636": "Manuka"
   }
 }
