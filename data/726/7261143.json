@@ -579,6 +579,11 @@
         "date": "2026-07-19",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-21",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "【II. Pack A】 （合計35個）": [
@@ -811,6 +816,11 @@
         "date": "2026-07-19",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-21",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "【III. Pack B】（合計40個）": [
@@ -1043,12 +1053,25 @@
         "date": "2026-07-19",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-21",
+        "price": 350,
+        "is_sale": true
+      }
+    ],
+    "もっと応援したい！（Full Packと同じ内容物）": [
+      {
+        "date": "2026-07-21",
+        "price": 800,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
     "12163701": "【I. Full Pack】（合計75個）",
     "13770818": "【II. Pack A】 （合計35個）",
-    "13770819": "【III. Pack B】（合計40個）"
+    "13770819": "【III. Pack B】（合計40個）",
+    "14411329": "もっと応援したい！（Full Packと同じ内容物）"
   }
 }

@@ -577,10 +577,23 @@
         "date": "2026-07-19",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-21",
+        "price": 400,
+        "is_sale": true
+      }
+    ],
+    "もっと応援したい！（Full Packと同じ内容物）": [
+      {
+        "date": "2026-07-21",
+        "price": 600,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "12529770": "default"
+    "12529770": "default",
+    "14411322": "もっと応援したい！（Full Packと同じ内容物）"
   }
 }
