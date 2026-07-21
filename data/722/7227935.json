@@ -577,6 +577,11 @@
         "date": "2026-07-20",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-21",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "フォーテ - forte": [
@@ -1152,6 +1157,11 @@
       },
       {
         "date": "2026-07-20",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-21",
         "price": 300,
         "is_sale": false
       }
@@ -1731,12 +1741,25 @@
         "date": "2026-07-20",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-21",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "へなちこ - Henachiko": [
+      {
+        "date": "2026-07-21",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "12109611": "ソフィナ - Sophina",
     "12110424": "フォーテ - forte",
-    "12110425": "ダテノ - dateno"
+    "12110425": "ダテノ - dateno",
+    "14413038": "へなちこ - Henachiko"
   }
 }
