@@ -129,7 +129,16 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "default": [
+      {
+        "date": "2026-07-21",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14354509": "default"
+  }
 }

@@ -64,10 +64,23 @@
         "date": "2026-07-19",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-21",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "「Shooting_star」": [
+      {
+        "date": "2026-07-21",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14358064": "「Shooting_star」",
     "14358125": "支援版(UV展開済みモデル追加予定※時期未定)"
   }
 }
