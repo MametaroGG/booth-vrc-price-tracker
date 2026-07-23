@@ -22,6 +22,11 @@
         "date": "2026-07-21",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "【SALE】おちびちゃんズ kaguya (Sister\"Z\")": [
@@ -44,6 +49,11 @@
         "date": "2026-07-21",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "【SALE】おちびちゃんズ kaguya FullSet": [
@@ -66,8 +76,17 @@
         "date": "2026-07-21",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
+        "price": 1500,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "11220322": "【SALE】おちびちゃんズ kaguya (normal)",
+    "14384747": "【SALE】おちびちゃんズ kaguya (Sister\"Z\")",
+    "14384748": "【SALE】おちびちゃんズ kaguya FullSet"
+  }
 }

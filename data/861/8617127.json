@@ -23,9 +23,24 @@
         "price": 500,
         "is_sale": false
       }
+    ],
+    "Free": [
+      {
+        "date": "2026-07-23",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Donation": [
+      {
+        "date": "2026-07-23",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "14383070": "default"
+    "14383070": "default",
+    "14425743": "Donation"
   }
 }

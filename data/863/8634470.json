@@ -7,11 +7,21 @@
         "date": "2026-07-21",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Komano": [
       {
         "date": "2026-07-21",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
         "price": 1000,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-07-21",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Kanata": [
       {
         "date": "2026-07-21",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
         "price": 1000,
         "is_sale": false
       }
@@ -35,11 +55,21 @@
         "date": "2026-07-21",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "+Head": [
       {
         "date": "2026-07-21",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
         "price": 1000,
         "is_sale": false
       }
@@ -49,11 +79,21 @@
         "date": "2026-07-21",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "商用利用 個人用 Licenses 1人": [
       {
         "date": "2026-07-21",
+        "price": 3000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
         "price": 3000,
         "is_sale": false
       }
@@ -63,8 +103,23 @@
         "date": "2026-07-21",
         "price": 30000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
+        "price": 30000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14413862": "Minase",
+    "14413957": "Komano",
+    "14413958": "Hanka",
+    "14413959": "Kanata",
+    "14413960": "Kuuta",
+    "14413961": "+Head",
+    "14413962": "Full",
+    "14413963": "商用利用 個人用 Licenses 1人",
+    "14413964": "商用利用 企業向け Licenses 1人"
+  }
 }

@@ -14,10 +14,31 @@
         "date": "2026-07-21",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-23",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "【通常版】AZURE REGALIA": [
+      {
+        "date": "2026-07-23",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "【くりゅたんを支援する版】AZURE REGALIA（通常版と同じ内容）": [
+      {
+        "date": "2026-07-23",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14406775": "【支援版】AZURE REGALIA（通常版と同じ内容）"
+    "14400722": "【通常版】AZURE REGALIA",
+    "14406775": "【支援版】AZURE REGALIA（通常版と同じ内容）",
+    "14422283": "【くりゅたんを支援する版】AZURE REGALIA（通常版と同じ内容）"
   }
 }
