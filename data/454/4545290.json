@@ -417,6 +417,11 @@
         "date": "2026-05-23",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-24",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "cluster対応VRM": [
@@ -834,7 +839,16 @@
         "date": "2026-05-23",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-24",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "7612398": "cluster対応VRM",
+    "9043918": "VRChat想定アバター"
   }
 }
