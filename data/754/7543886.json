@@ -587,6 +587,11 @@
         "date": "2026-07-23",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Pattern_2": [
@@ -2816,6 +2821,55 @@
         "price": 3300,
         "is_sale": false
       }
+    ],
+    "Marycia": [
+      {
+        "date": "2026-07-25",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Lumina": [
+      {
+        "date": "2026-07-25",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Milltina": [
+      {
+        "date": "2026-07-25",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Lapwing": [
+      {
+        "date": "2026-07-25",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Manuka": [
+      {
+        "date": "2026-07-25",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Lime / Komado": [
+      {
+        "date": "2026-07-25",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Airi": [
+      {
+        "date": "2026-07-25",
+        "price": 1000,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
@@ -2823,6 +2877,13 @@
     "12628694": "Pattern_2",
     "12628695": "Pattern_3",
     "12628696": "Pattern_4",
-    "12628697": "Pattern_All"
+    "12628697": "Pattern_All",
+    "14440866": "Marycia",
+    "14440867": "Lumina",
+    "14440868": "Milltina",
+    "14440869": "Lapwing",
+    "14440870": "Manuka",
+    "14440871": "Lime / Komado",
+    "14440872": "Airi"
   }
 }
