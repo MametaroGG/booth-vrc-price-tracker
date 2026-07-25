@@ -37,6 +37,11 @@
         "date": "2026-07-23",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-25",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "通常版（商品の中身は同じです）": [
@@ -74,8 +79,16 @@
         "date": "2026-07-23",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-25",
+        "price": 500,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14366067": "発売記念SALE版",
+    "14366232": "通常版（商品の中身は同じです）"
+  }
 }

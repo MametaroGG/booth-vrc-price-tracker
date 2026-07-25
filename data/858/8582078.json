@@ -7,11 +7,21 @@
         "date": "2026-07-23",
         "price": 2300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 2300,
+        "is_sale": false
       }
     ],
     "狛乃専用": [
       {
         "date": "2026-07-23",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
         "price": 1200,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-07-23",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "斑霞専用": [
       {
         "date": "2026-07-23",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
         "price": 1200,
         "is_sale": false
       }
@@ -35,8 +55,19 @@
         "date": "2026-07-23",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1200,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14323265": "全部入りフルパック",
+    "14323309": "狛乃専用",
+    "14323310": "墨惺専用",
+    "14323311": "斑霞専用",
+    "14323312": "凛仁専用"
+  }
 }

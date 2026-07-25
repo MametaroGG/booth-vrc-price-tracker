@@ -22,10 +22,23 @@
         "date": "2026-07-23",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "type2 アイテクスチャ": [
+      {
+        "date": "2026-07-25",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14369690": "default"
+    "14369690": "default",
+    "14432790": "type2 アイテクスチャ"
   }
 }

@@ -7,11 +7,21 @@
         "date": "2026-07-23",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "水瀬 専用": [
       {
         "date": "2026-07-23",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
         "price": 1200,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-07-23",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "斑霞専用": [
       {
         "date": "2026-07-23",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
         "price": 1200,
         "is_sale": false
       }
@@ -35,6 +55,11 @@
         "date": "2026-07-23",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "雫峰": [
@@ -42,8 +67,20 @@
         "date": "2026-07-23",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1200,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14328165": "全部入りフルパック",
+    "14328208": "水瀬 専用",
+    "14328209": "墨惺専用",
+    "14328210": "斑霞専用",
+    "14328211": "夜邑専用",
+    "14328212": "雫峰"
+  }
 }

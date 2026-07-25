@@ -7,11 +7,21 @@
         "date": "2026-07-23",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1800,
+        "is_sale": false
       }
     ],
     "斑霞専用": [
       {
         "date": "2026-07-23",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
         "price": 1000,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-07-23",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Head専用": [
       {
         "date": "2026-07-23",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
         "price": 1000,
         "is_sale": false
       }
@@ -35,6 +55,11 @@
         "date": "2026-07-23",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Lasyusha専用": [
@@ -42,8 +67,20 @@
         "date": "2026-07-23",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14328074": "全部入りフルパック",
+    "14354755": "斑霞専用",
+    "14354756": "紗夜専用",
+    "14354757": "Head専用",
+    "14354758": "Lapwing専用",
+    "14354759": "Lasyusha専用"
+  }
 }

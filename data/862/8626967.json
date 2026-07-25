@@ -17,10 +17,23 @@
         "date": "2026-07-23",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "支援版(やる気出ちゃう)": [
+      {
+        "date": "2026-07-25",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14400375": "default"
+    "14400375": "default",
+    "14434360": "支援版(やる気出ちゃう)"
   }
 }

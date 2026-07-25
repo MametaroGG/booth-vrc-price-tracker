@@ -502,6 +502,11 @@
         "date": "2026-07-23",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "五味": [
@@ -539,11 +544,24 @@
         "date": "2026-07-23",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Ayumu": [
+      {
+        "date": "2026-07-25",
+        "price": 150,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13245037": "default",
-    "14362407": "五味"
+    "14362407": "五味",
+    "14439645": "Ayumu"
   }
 }

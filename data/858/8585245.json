@@ -7,11 +7,21 @@
         "date": "2026-07-23",
         "price": 2600,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 2600,
+        "is_sale": false
       }
     ],
     "凛仁専用": [
       {
         "date": "2026-07-23",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
         "price": 1400,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-07-23",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "士堂専用": [
       {
         "date": "2026-07-23",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
         "price": 1400,
         "is_sale": false
       }
@@ -35,8 +55,19 @@
         "date": "2026-07-23",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1400,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14328118": "全部入りフルパック",
+    "14328134": "凛仁専用",
+    "14328135": "雫峰専用",
+    "14328136": "士堂専用",
+    "14328137": "墨惺専用"
+  }
 }

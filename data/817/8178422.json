@@ -167,10 +167,31 @@
         "date": "2026-07-23",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "Shinano": [
+      {
+        "date": "2026-07-25",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "Lumina": [
+      {
+        "date": "2026-07-25",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13692451": "default"
+    "13692451": "default",
+    "14440958": "Shinano",
+    "14440959": "Lumina"
   }
 }

@@ -247,10 +247,47 @@
         "date": "2026-07-23",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 250,
+        "is_sale": true
+      }
+    ],
+    "Shinano": [
+      {
+        "date": "2026-07-25",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "Marycia": [
+      {
+        "date": "2026-07-25",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "Lumina": [
+      {
+        "date": "2026-07-25",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "Lapwing": [
+      {
+        "date": "2026-07-25",
+        "price": 250,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13692359": "default"
+    "13692359": "default",
+    "14440973": "Shinano",
+    "14440974": "Marycia",
+    "14440975": "Lumina",
+    "14440976": "Lapwing"
   }
 }

@@ -184,10 +184,46 @@
         "date": "2026-07-23",
         "price": 399,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 399,
+        "is_sale": false
+      }
+    ],
+    "MLAT-01 無料版": [
+      {
+        "date": "2026-07-25",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "MLAT-01 軽量版": [
+      {
+        "date": "2026-07-25",
+        "price": 149,
+        "is_sale": false
+      }
+    ],
+    "MLAT-01 CN 版": [
+      {
+        "date": "2026-07-25",
+        "price": 249,
+        "is_sale": false
+      }
+    ],
+    "MLAT-01 JP 版": [
+      {
+        "date": "2026-07-25",
+        "price": 249,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14227304": "MLAT-01 - STANDARD（通常版）"
+    "14227304": "MLAT-01 - STANDARD（通常版）",
+    "14440098": "MLAT-01 軽量版",
+    "14440099": "MLAT-01 CN 版",
+    "14440100": "MLAT-01 JP 版"
   }
 }

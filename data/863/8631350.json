@@ -12,6 +12,11 @@
         "date": "2026-07-23",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Dark make&eye full": [
@@ -24,6 +29,11 @@
         "date": "2026-07-23",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Dark make only": [
@@ -36,11 +46,17 @@
         "date": "2026-07-23",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14408172": "Dark make&eye full",
-    "14408199": "Dark make only"
+    "14408199": "Dark make only",
+    "14408200": "Dark eye only"
   }
 }

@@ -82,10 +82,39 @@
         "date": "2026-07-23",
         "price": 1800,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-25",
+        "price": 1800,
+        "is_sale": false
+      }
+    ],
+    "Uruki": [
+      {
+        "date": "2026-07-25",
+        "price": 1800,
+        "is_sale": false
+      }
+    ],
+    "ICHIGO": [
+      {
+        "date": "2026-07-25",
+        "price": 1800,
+        "is_sale": false
+      }
+    ],
+    "Manuka": [
+      {
+        "date": "2026-07-25",
+        "price": 1800,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14244818": "default"
+    "14244818": "default",
+    "14437745": "Uruki",
+    "14437746": "ICHIGO",
+    "14437747": "Manuka"
   }
 }
