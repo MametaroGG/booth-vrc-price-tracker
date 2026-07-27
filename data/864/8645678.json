@@ -7,11 +7,21 @@
         "date": "2026-07-25",
         "price": 680,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-27",
+        "price": 680,
+        "is_sale": true
       }
     ],
     "Base Module (Sweat Only)": [
       {
         "date": "2026-07-25",
+        "price": 480,
+        "is_sale": true
+      },
+      {
+        "date": "2026-07-27",
         "price": 480,
         "is_sale": true
       }
@@ -21,12 +31,25 @@
         "date": "2026-07-25",
         "price": 480,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-27",
+        "price": 480,
+        "is_sale": true
+      }
+    ],
+    "Full Pack + Game & App Integration & Distribution License": [
+      {
+        "date": "2026-07-27",
+        "price": 6800,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
     "14433816": "Full Pack (Base + Effects)",
     "14434567": "Base Module (Sweat Only)",
-    "14434571": "Effects Module"
+    "14434571": "Effects Module",
+    "14446790": "Full Pack + Game & App Integration & Distribution License"
   }
 }

@@ -257,10 +257,23 @@
         "date": "2026-07-25",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 300,
+        "is_sale": true
+      }
+    ],
+    "【SALE】フィニシフ対応【8/1まで】": [
+      {
+        "date": "2026-07-27",
+        "price": 200,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "13756121": "default"
+    "13756121": "default",
+    "14444661": "【SALE】フィニシフ対応【8/1まで】"
   }
 }

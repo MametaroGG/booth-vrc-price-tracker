@@ -44,6 +44,11 @@
         "date": "2026-07-25",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "わさびMAX": [
@@ -64,6 +69,11 @@
       },
       {
         "date": "2026-07-25",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
         "price": 200,
         "is_sale": false
       }
@@ -88,10 +98,23 @@
         "date": "2026-07-25",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "プレーン": [
+      {
+        "date": "2026-07-27",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14399557": "プレーン",
     "14399627": "激辛MAX",
     "14399628": "わさびMAX",
     "14399629": "全部入り（プレーン/激辛MAX/わさびMAX）"

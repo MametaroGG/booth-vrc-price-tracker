@@ -7,6 +7,11 @@
         "date": "2026-07-25",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 4000,
+        "is_sale": true
       }
     ],
     "もちふぃった～プロファイル(順逆)": [
@@ -14,8 +19,15 @@
         "date": "2026-07-25",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14401661": "聡子/Satoko"
+  }
 }

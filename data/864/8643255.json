@@ -7,11 +7,21 @@
         "date": "2026-07-25",
         "price": 1300,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-27",
+        "price": 1300,
+        "is_sale": true
       }
     ],
     "Aqua_まめキプ・リルレオ": [
       {
         "date": "2026-07-25",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-07-27",
         "price": 500,
         "is_sale": true
       }
@@ -21,11 +31,21 @@
         "date": "2026-07-25",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-27",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Ocean_まめキプ・リルレオ": [
       {
         "date": "2026-07-25",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-07-27",
         "price": 500,
         "is_sale": true
       }
@@ -35,11 +55,21 @@
         "date": "2026-07-25",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-27",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Diver_みみのこ": [
       {
         "date": "2026-07-25",
+        "price": 500,
+        "is_sale": true
+      },
+      {
+        "date": "2026-07-27",
         "price": 500,
         "is_sale": true
       }
@@ -49,8 +79,21 @@
         "date": "2026-07-25",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-27",
+        "price": 500,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14429124": "fullset/(Aqua.Diver.Ocean)_まめキプ・リルレオ・みみのこ",
+    "14429413": "Aqua_まめキプ・リルレオ",
+    "14429414": "Diver_まめキプ・リルレオ",
+    "14429415": "Ocean_まめキプ・リルレオ",
+    "14429416": "Aqua_みみのこ",
+    "14429417": "Diver_みみのこ",
+    "14429418": "Ocean_みみのこ"
+  }
 }

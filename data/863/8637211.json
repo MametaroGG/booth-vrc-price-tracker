@@ -7,6 +7,11 @@
         "date": "2026-07-25",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 2200,
+        "is_sale": true
       }
     ],
     "Komano": [
@@ -14,6 +19,11 @@
         "date": "2026-07-25",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "+Head": [
@@ -21,6 +31,11 @@
         "date": "2026-07-25",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Kanata": [
@@ -28,6 +43,11 @@
         "date": "2026-07-25",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Kuuta": [
@@ -35,6 +55,11 @@
         "date": "2026-07-25",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Hanka": [
@@ -42,6 +67,11 @@
         "date": "2026-07-25",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Nakiya": [
@@ -49,6 +79,11 @@
         "date": "2026-07-25",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Maki": [
@@ -56,8 +91,22 @@
         "date": "2026-07-25",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 1200,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14418946": "ALLPack",
+    "14419093": "Komano",
+    "14419094": "+Head",
+    "14419095": "Kanata",
+    "14419096": "Kuuta",
+    "14419097": "Hanka",
+    "14419098": "Nakiya",
+    "14419099": "Maki"
+  }
 }

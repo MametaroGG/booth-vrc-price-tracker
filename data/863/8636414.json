@@ -12,6 +12,11 @@
         "date": "2026-07-25",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "☕ 『ミルティナ』- Milltina ☕": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-07-25",
+        "price": 900,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
         "price": 900,
         "is_sale": false
       }
@@ -36,12 +46,25 @@
         "date": "2026-07-25",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-27",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "『ウルキ』-Uruki": [
+      {
+        "date": "2026-07-27",
+        "price": 900,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14417576": "☕ Full Pack ☕",
     "14417602": "☕ 『ミルティナ』- Milltina ☕",
-    "14417603": "☕ 『ユーフォリカ』-Euphorika ☕"
+    "14417603": "☕ 『ユーフォリカ』-Euphorika ☕",
+    "14446781": "『ウルキ』-Uruki"
   }
 }
