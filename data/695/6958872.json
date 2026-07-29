@@ -597,6 +597,11 @@
         "date": "2026-07-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "2.RedSet": [
@@ -1194,6 +1199,11 @@
         "date": "2026-07-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "3.BlackSet": [
@@ -1791,6 +1801,11 @@
         "date": "2026-07-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "all(支援版)": [
@@ -2387,6 +2402,13 @@
       {
         "date": "2026-07-28",
         "price": 400,
+        "is_sale": false
+      }
+    ],
+    "all(支援版)　400円→0円": [
+      {
+        "date": "2026-07-29",
+        "price": 0,
         "is_sale": false
       }
     ]
