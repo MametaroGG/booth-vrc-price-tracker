@@ -587,6 +587,11 @@
         "date": "2026-07-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-30",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "Gray&Navy": [
@@ -1174,6 +1179,11 @@
         "date": "2026-07-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-30",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "Red&Yellow": [
@@ -1761,6 +1771,11 @@
         "date": "2026-07-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-30",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "Pink&Lightblue": [
@@ -2348,6 +2363,11 @@
         "date": "2026-07-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-30",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "all(支援版)": [
@@ -2934,6 +2954,13 @@
       {
         "date": "2026-07-28",
         "price": 500,
+        "is_sale": false
+      }
+    ],
+    "all(支援版)　500円→0円": [
+      {
+        "date": "2026-07-30",
+        "price": 0,
         "is_sale": false
       }
     ]

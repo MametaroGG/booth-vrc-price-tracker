@@ -587,6 +587,11 @@
         "date": "2026-07-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-30",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "Green&Red": [
@@ -1174,6 +1179,11 @@
         "date": "2026-07-28",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-30",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "all(支援版)": [
@@ -1760,6 +1770,13 @@
       {
         "date": "2026-07-28",
         "price": 300,
+        "is_sale": false
+      }
+    ],
+    "all(支援版)　300円→0円": [
+      {
+        "date": "2026-07-30",
+        "price": 0,
         "is_sale": false
       }
     ]
