@@ -22,6 +22,11 @@
         "date": "2026-07-27",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 1500,
+        "is_sale": true
       }
     ],
     "しなの(Shinano)": [
@@ -44,6 +49,11 @@
         "date": "2026-07-27",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "マヌカ(Manuka)": [
@@ -66,6 +76,11 @@
         "date": "2026-07-27",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "ミルティナ(Miltina)": [
@@ -88,6 +103,11 @@
         "date": "2026-07-27",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "ライム(Lime)/シフォン(Chiffon)/ショコラ(Chocolat)/プラム(Plum)": [
@@ -110,6 +130,11 @@
         "date": "2026-07-27",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "ミルフィ(Milfy)/エク(Eku)": [
@@ -132,6 +157,11 @@
         "date": "2026-07-27",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "真央(Mao)": [
@@ -154,6 +184,11 @@
         "date": "2026-07-27",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "ネモ(Nemo)/マオン(Maon)": [
@@ -176,6 +211,11 @@
         "date": "2026-07-27",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "ヒビキ(Hibiki)": [
@@ -198,8 +238,23 @@
         "date": "2026-07-27",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-29",
+        "price": 900,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14407470": "フルセット(FullSet)",
+    "14407593": "しなの(Shinano)",
+    "14407594": "マヌカ(Manuka)",
+    "14407595": "ミルティナ(Miltina)",
+    "14407596": "ライム(Lime)/シフォン(Chiffon)/ショコラ(Chocolat)/プラム(Plum)",
+    "14407597": "ミルフィ(Milfy)/エク(Eku)",
+    "14407598": "真央(Mao)",
+    "14407599": "ネモ(Nemo)/マオン(Maon)",
+    "14407600": "ヒビキ(Hibiki)"
+  }
 }
