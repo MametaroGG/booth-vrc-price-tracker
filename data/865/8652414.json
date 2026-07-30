@@ -12,6 +12,11 @@
         "date": "2026-07-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ラシューシャ - Lasyusha -": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-07-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
         "price": 300,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-07-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "森羅 - Shinra -": [
@@ -46,6 +61,11 @@
       },
       {
         "date": "2026-07-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
         "price": 300,
         "is_sale": false
       }
@@ -60,6 +80,11 @@
         "date": "2026-07-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "コマネ - komane -": [
@@ -70,6 +95,11 @@
       },
       {
         "date": "2026-07-29",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
         "price": 300,
         "is_sale": false
       }
@@ -84,6 +114,11 @@
         "date": "2026-07-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "泣夜 - Nakiya -": [
@@ -96,8 +131,22 @@
         "date": "2026-07-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14445761": "フルパック - FullPack -",
+    "14451416": "ラシューシャ - Lasyusha -",
+    "14451417": "ミルティナ - Milltina -",
+    "14451418": "森羅 - Shinra -",
+    "14451419": "ルミナ - Lumina -",
+    "14451420": "コマネ - komane -",
+    "14451421": "彼方 - Kanata -",
+    "14451422": "泣夜 - Nakiya -"
+  }
 }

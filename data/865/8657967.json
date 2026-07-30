@@ -7,6 +7,11 @@
         "date": "2026-07-29",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "ショコラ Chocolat": [
@@ -14,6 +19,11 @@
         "date": "2026-07-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "【期間限定無料】キプフェル Kipfel": [
@@ -28,6 +38,11 @@
         "date": "2026-07-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "ミルフィ Milfy": [
@@ -35,6 +50,11 @@
         "date": "2026-07-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "リナシータ Rinasciita": [
@@ -42,6 +62,11 @@
         "date": "2026-07-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "ルルネ rurune": [
@@ -49,12 +74,25 @@
         "date": "2026-07-29",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-07-31",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "キプフェル Kipfel": [
+      {
+        "date": "2026-07-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14454871": "ALL",
     "14455087": "ショコラ Chocolat",
+    "14455088": "キプフェル Kipfel",
     "14455089": "ルミナ LUMINA",
     "14455090": "ミルフィ Milfy",
     "14455091": "リナシータ Rinasciita",

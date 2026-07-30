@@ -17,8 +17,15 @@
         "date": "2026-07-29",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
+        "price": 2200,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14421311": "default"
+  }
 }

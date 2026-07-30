@@ -107,6 +107,11 @@
         "date": "2026-07-29",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Dragon Scale Texture おまけ付き": [
@@ -215,10 +220,26 @@
         "price": 700,
         "is_sale": false
       }
+    ],
+    "【SALE】Dragon Scale Texture - Full Set": [
+      {
+        "date": "2026-07-31",
+        "price": 100,
+        "is_sale": true
+      }
+    ],
+    "【SALE】Dragon Scale Texture - Suiha": [
+      {
+        "date": "2026-07-31",
+        "price": 350,
+        "is_sale": true
+      }
     ]
   },
   "variation_keys": {
     "14206395": "Dragon Scale Texture",
-    "14206483": "Dragon Scale Texture おまけ付き"
+    "14206483": "Dragon Scale Texture おまけ付き",
+    "14472083": "【SALE】Dragon Scale Texture - Full Set",
+    "14472084": "【SALE】Dragon Scale Texture - Suiha"
   }
 }

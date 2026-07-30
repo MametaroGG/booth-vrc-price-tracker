@@ -22,6 +22,11 @@
         "date": "2026-07-29",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "+Head PlusHead": [
@@ -44,6 +49,11 @@
         "date": "2026-07-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Komano - 狛乃": [
@@ -66,6 +76,11 @@
         "date": "2026-07-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Minase - 水瀬": [
@@ -88,8 +103,18 @@
         "date": "2026-07-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-31",
+        "price": 500,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14427769": "フルパック - Full Pack",
+    "14427912": "+Head PlusHead",
+    "14427913": "Komano - 狛乃",
+    "14427914": "Minase - 水瀬"
+  }
 }
