@@ -29,6 +29,11 @@
         "date": "2026-07-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-07-30",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "【29日まで！一週間無料！】VRsync for Clip": [
@@ -47,9 +52,17 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "VRsync for Clip 通常版": [
+      {
+        "date": "2026-07-30",
+        "price": 300,
+        "is_sale": true
+      }
     ]
   },
   "variation_keys": {
+    "14423135": "VRsync for Clip 通常版",
     "14423183": "VRsync for Clip 支援版"
   }
 }
