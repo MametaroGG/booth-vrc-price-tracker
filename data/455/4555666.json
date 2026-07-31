@@ -572,10 +572,23 @@
         "date": "2026-07-30",
         "price": 4000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 4000,
+        "is_sale": false
+      }
+    ],
+    "Seull:RE単体": [
+      {
+        "date": "2026-08-01",
+        "price": 4000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "7629756": "default"
+    "7629756": "default",
+    "14472033": "Seull:RE単体"
   }
 }
