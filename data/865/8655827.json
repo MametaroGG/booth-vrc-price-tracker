@@ -7,6 +7,11 @@
         "date": "2026-07-31",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "Fullset+PSD+Blendshape": [
@@ -14,6 +19,11 @@
         "date": "2026-07-31",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "Makeup(PNGのみ)": [
@@ -21,6 +31,11 @@
         "date": "2026-07-31",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "Eye(PNGのみ)": [
@@ -28,8 +43,17 @@
         "date": "2026-07-31",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 350,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14451328": "Fullset+PSD+Blendshape",
+    "14451375": "Makeup(PNGのみ)",
+    "14451376": "Eye(PNGのみ)"
+  }
 }

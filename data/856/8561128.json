@@ -12,6 +12,11 @@
         "date": "2026-07-31",
         "price": 4000,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-01",
+        "price": 4000,
+        "is_sale": true
       }
     ],
     "UMoffPenからのアップグレード版*1": [
@@ -24,8 +29,16 @@
         "date": "2026-07-31",
         "price": 2000,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-01",
+        "price": 2000,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14287857": "通常版",
+    "14420690": "UMoffPenからのアップグレード版*1"
+  }
 }

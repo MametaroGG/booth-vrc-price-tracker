@@ -7,6 +7,11 @@
         "date": "2026-07-31",
         "price": 1960,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 1960,
+        "is_sale": true
       }
     ],
     "For Hanka": [
@@ -14,6 +19,11 @@
         "date": "2026-07-31",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 1050,
+        "is_sale": true
       }
     ],
     "For Rei": [
@@ -21,6 +31,11 @@
         "date": "2026-07-31",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 1050,
+        "is_sale": true
       }
     ],
     "For Suzuya": [
@@ -28,6 +43,11 @@
         "date": "2026-07-31",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 1050,
+        "is_sale": true
       }
     ],
     "For Komano": [
@@ -35,8 +55,19 @@
         "date": "2026-07-31",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 1050,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14459069": "Full Pack",
+    "14461651": "For Hanka",
+    "14461652": "For Rei",
+    "14461653": "For Suzuya",
+    "14461654": "For Komano"
+  }
 }

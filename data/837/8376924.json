@@ -12,6 +12,11 @@
         "date": "2026-07-31",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "衣装のみ": [
@@ -24,8 +29,16 @@
         "date": "2026-07-31",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "13992581": "アバター",
+    "14247546": "衣装のみ"
+  }
 }

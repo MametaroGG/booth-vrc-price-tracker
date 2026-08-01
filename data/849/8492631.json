@@ -107,6 +107,11 @@
         "date": "2026-07-31",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Rei": [
@@ -212,6 +217,11 @@
       },
       {
         "date": "2026-07-31",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
         "price": 500,
         "is_sale": false
       }
@@ -321,12 +331,25 @@
         "date": "2026-07-31",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Gifter": [
+      {
+        "date": "2026-08-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14169176": "FULLPACK",
     "14172662": "Rei",
-    "14228996": "Suzuya"
+    "14228996": "Suzuya",
+    "14481076": "Gifter"
   }
 }
