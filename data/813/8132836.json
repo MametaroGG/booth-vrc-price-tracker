@@ -342,6 +342,11 @@
         "date": "2026-07-31",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Hanka": [
@@ -683,6 +688,11 @@
       {
         "date": "2026-07-31",
         "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 400,
         "is_sale": false
       }
     ],
@@ -1026,6 +1036,11 @@
         "date": "2026-07-31",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Shidou": [
@@ -1367,6 +1382,11 @@
       {
         "date": "2026-07-31",
         "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 400,
         "is_sale": false
       }
     ],
@@ -1737,6 +1757,18 @@
         "date": "2026-07-31",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-01",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Gifter": [
+      {
+        "date": "2026-08-01",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
@@ -1745,6 +1777,7 @@
     "13612940": "Hanka",
     "13612941": "Rei",
     "13612942": "Shidou",
-    "13613109": "汎用ボディー"
+    "13613109": "汎用ボディー",
+    "14481059": "Gifter"
   }
 }
