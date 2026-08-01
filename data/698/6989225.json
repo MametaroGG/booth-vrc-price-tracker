@@ -12,6 +12,11 @@
         "date": "2026-07-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-02",
+        "price": 1500,
+        "is_sale": true
       }
     ],
     "マヌカ-Manuka-": [
@@ -24,6 +29,11 @@
         "date": "2026-07-31",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-02",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "ミルフィ&エク-Milfy&Eku-": [
@@ -36,6 +46,11 @@
         "date": "2026-07-31",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-02",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "プラム-Plum-": [
@@ -48,6 +63,11 @@
         "date": "2026-07-31",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-02",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "lapwing": [
@@ -60,6 +80,11 @@
         "date": "2026-07-31",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-02",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "うらら-Urara-": [
@@ -79,6 +104,11 @@
         "date": "2026-07-31",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-02",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "まめふれんず-MameFriends-": [
@@ -89,6 +119,11 @@
       },
       {
         "date": "2026-07-31",
+        "price": 600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-02",
         "price": 600,
         "is_sale": true
       }
@@ -103,6 +138,11 @@
         "date": "2026-07-31",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-02",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "えも研共通素体-Emolab-": [
@@ -115,6 +155,11 @@
         "date": "2026-07-31",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-02",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "エルシオン&ネメシス-Elusion&Nemesis-": [
@@ -127,6 +172,11 @@
         "date": "2026-07-31",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-02",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "ひかるん&リュミイ-Hikarun&Ryumii-": [
@@ -139,8 +189,25 @@
         "date": "2026-07-31",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-02",
+        "price": 600,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "11730774": "まめふれんず-MameFriends-",
+    "14386041": "FullPack",
+    "14461932": "マヌカ-Manuka-",
+    "14461933": "ミルフィ&エク-Milfy&Eku-",
+    "14461934": "プラム-Plum-",
+    "14461935": "lapwing",
+    "14461937": "フィユエ&しらつめ-Fyuett&Shirratsume-",
+    "14461938": "みみのこ-Miminoko-",
+    "14461939": "えも研共通素体-Emolab-",
+    "14461940": "エルシオン&ネメシス-Elusion&Nemesis-",
+    "14461941": "ひかるん&リュミイ-Hikarun&Ryumii-"
+  }
 }
