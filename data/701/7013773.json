@@ -612,6 +612,11 @@
         "date": "2026-08-02",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-04",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "POLYCOLIA": [
@@ -1224,6 +1229,11 @@
         "date": "2026-08-02",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-04",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "COMPLETE": [
@@ -1834,6 +1844,11 @@
       },
       {
         "date": "2026-08-02",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-04",
         "price": 500,
         "is_sale": false
       }
@@ -2449,12 +2464,52 @@
         "price": 600,
         "is_sale": false
       }
+    ],
+    "fullset": [
+      {
+        "date": "2026-08-04",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "hanka_normal": [
+      {
+        "date": "2026-08-04",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "hanka_polycolia": [
+      {
+        "date": "2026-08-04",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "hanka_complete": [
+      {
+        "date": "2026-08-04",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "nuko_polycolia": [
+      {
+        "date": "2026-08-04",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
     "11769123": "NORMAL",
     "11769383": "POLYCOLIA",
     "11769384": "COMPLETE",
-    "11769385": "支援版（Complete verと同じです）"
+    "11769385": "支援版（Complete verと同じです）",
+    "14490370": "hanka_normal",
+    "14490371": "hanka_polycolia",
+    "14490372": "hanka_complete",
+    "14490373": "nuko_polycolia",
+    "14490374": "fullset"
   }
 }
