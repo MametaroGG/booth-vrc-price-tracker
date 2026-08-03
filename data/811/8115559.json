@@ -367,10 +367,47 @@
         "date": "2026-08-01",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 2000,
+        "is_sale": false
+      }
+    ],
+    "Mizuki": [
+      {
+        "date": "2026-08-03",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Shinano": [
+      {
+        "date": "2026-08-03",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Wolfram": [
+      {
+        "date": "2026-08-03",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Rei": [
+      {
+        "date": "2026-08-03",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13582324": "default"
+    "13582324": "default",
+    "14490841": "Mizuki",
+    "14490842": "Shinano",
+    "14490843": "Wolfram",
+    "14490844": "Rei"
   }
 }

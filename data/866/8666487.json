@@ -12,6 +12,11 @@
         "date": "2026-08-01",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "支援版（通常版と中身は一緒です）": [
@@ -24,8 +29,16 @@
         "date": "2026-08-01",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14470372": "通常版",
+    "14470527": "支援版（通常版と中身は一緒です）"
+  }
 }

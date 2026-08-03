@@ -7,6 +7,11 @@
         "date": "2026-08-01",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "商用利用権": [
@@ -14,8 +19,16 @@
         "date": "2026-08-01",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 3000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14471903": "白珠真-shiratama- 本体",
+    "14478881": "商用利用権"
+  }
 }

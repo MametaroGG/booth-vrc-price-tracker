@@ -222,10 +222,23 @@
         "date": "2026-08-01",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 2000,
+        "is_sale": false
+      }
+    ],
+    "モデルデータのみ": [
+      {
+        "date": "2026-08-03",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13868203": "default"
+    "13868203": "default",
+    "14490451": "モデルデータのみ"
   }
 }

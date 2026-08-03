@@ -18,7 +18,24 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "make up": [
+      {
+        "date": "2026-08-03",
+        "price": 100,
+        "is_sale": true
+      }
+    ],
+    "支援版(内容物は同じです)": [
+      {
+        "date": "2026-08-03",
+        "price": 200,
+        "is_sale": true
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14457453": "make up",
+    "14487080": "支援版(内容物は同じです)"
+  }
 }

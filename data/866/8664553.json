@@ -7,6 +7,11 @@
         "date": "2026-08-01",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 2000,
+        "is_sale": true
       }
     ],
     "Lapwing対応": [
@@ -14,6 +19,11 @@
         "date": "2026-08-01",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Marycia対応": [
@@ -21,6 +31,11 @@
         "date": "2026-08-01",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "しらつめ対応": [
@@ -28,6 +43,11 @@
         "date": "2026-08-01",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "MUMUS対応": [
@@ -35,6 +55,11 @@
         "date": "2026-08-01",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "マヌカ対応": [
@@ -42,6 +67,11 @@
         "date": "2026-08-01",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "キプフェル対応": [
@@ -49,8 +79,21 @@
         "date": "2026-08-01",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-03",
+        "price": 1000,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14466633": "full pack",
+    "14466702": "Lapwing対応",
+    "14466703": "Marycia対応",
+    "14466704": "しらつめ対応",
+    "14466705": "MUMUS対応",
+    "14466706": "マヌカ対応",
+    "14466707": "キプフェル対応"
+  }
 }

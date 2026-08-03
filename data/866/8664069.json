@@ -13,7 +13,64 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "フルセット": [
+      {
+        "date": "2026-08-03",
+        "price": 700,
+        "is_sale": true
+      }
+    ],
+    "Shinano": [
+      {
+        "date": "2026-08-03",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "Eku": [
+      {
+        "date": "2026-08-03",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "Manuka": [
+      {
+        "date": "2026-08-03",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "Linne": [
+      {
+        "date": "2026-08-03",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "Chiffon": [
+      {
+        "date": "2026-08-03",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "Rurune": [
+      {
+        "date": "2026-08-03",
+        "price": 500,
+        "is_sale": true
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14465558": "フルセット",
+    "14486540": "Shinano",
+    "14486541": "Eku",
+    "14486542": "Manuka",
+    "14486543": "Linne",
+    "14486544": "Chiffon",
+    "14486545": "Rurune"
+  }
 }
