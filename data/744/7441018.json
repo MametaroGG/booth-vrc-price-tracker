@@ -617,10 +617,23 @@
         "date": "2026-08-03",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-05",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "ぬいぐるみ単品": [
+      {
+        "date": "2026-08-05",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12456748": "default"
+    "12456748": "default",
+    "14504038": "ぬいぐるみ単品"
   }
 }
