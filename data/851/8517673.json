@@ -122,10 +122,31 @@
         "date": "2026-08-03",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-05",
+        "price": 1300,
+        "is_sale": false
+      }
+    ],
+    "Flander_Manuka_Clothing Set": [
+      {
+        "date": "2026-08-05",
+        "price": 1100,
+        "is_sale": false
+      }
+    ],
+    "Flander_Milltina_Clothing Set": [
+      {
+        "date": "2026-08-05",
+        "price": 1100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14213927": "default"
+    "14213927": "default",
+    "14495165": "Flander_Manuka_Clothing Set",
+    "14495166": "Flander_Milltina_Clothing Set"
   }
 }

@@ -7,10 +7,23 @@
         "date": "2026-08-03",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-05",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "投げ銭用": [
+      {
+        "date": "2026-08-05",
+        "price": 3000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14492527": "default"
+    "14492527": "default",
+    "14502697": "投げ銭用"
   }
 }
