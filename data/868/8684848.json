@@ -7,6 +7,11 @@
         "date": "2026-08-05",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-07",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "🍟POTATO Tip🍟": [
@@ -14,8 +19,16 @@
         "date": "2026-08-05",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-07",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14502702": "MuchioParts",
+    "14502723": "🍟POTATO Tip🍟"
+  }
 }

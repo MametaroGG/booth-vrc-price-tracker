@@ -14,8 +14,23 @@
         "date": "2026-08-05",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-07",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "ださいTシャツ": [
+      {
+        "date": "2026-08-07",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14500026": "ださいTシャツ",
+    "14500221": "酒代（内容物は同じです）"
+  }
 }

@@ -124,6 +124,11 @@
         "date": "2026-08-05",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-07",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "MakeOnly": [
@@ -186,6 +191,11 @@
         "date": "2026-08-05",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-07",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "お菓子代（無料終了後から）": [
@@ -249,7 +259,26 @@
         "price": 0,
         "is_sale": true
       }
+    ],
+    "FullPack(PSD)": [
+      {
+        "date": "2026-08-07",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "お菓子代": [
+      {
+        "date": "2026-08-07",
+        "price": 1000,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14354514": "FullPack(PSD)",
+    "14376893": "EyeOnly",
+    "14376894": "MakeOnly",
+    "14376895": "お菓子代"
+  }
 }

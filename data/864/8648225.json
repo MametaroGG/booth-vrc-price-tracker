@@ -12,6 +12,11 @@
         "date": "2026-08-05",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-07",
+        "price": 1040,
+        "is_sale": true
       }
     ],
     "フルセット(F型砲塔付)": [
@@ -24,8 +29,16 @@
         "date": "2026-08-05",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-07",
+        "price": 1360,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14438318": "通常版",
+    "14476076": "フルセット(F型砲塔付)"
+  }
 }
