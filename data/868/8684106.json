@@ -7,10 +7,23 @@
         "date": "2026-08-05",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-07",
+        "price": 200,
+        "is_sale": true
+      }
+    ],
+    "通常版": [
+      {
+        "date": "2026-08-07",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14501533": "default"
+    "14501533": "default",
+    "14511752": "通常版"
   }
 }
