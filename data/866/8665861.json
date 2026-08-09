@@ -27,6 +27,11 @@
         "date": "2026-08-07",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "kipfel": [
@@ -54,11 +59,24 @@
         "date": "2026-08-07",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "urara": [
+      {
+        "date": "2026-08-09",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14469298": "Full(urara販売開始後追加予定)",
-    "14469299": "kipfel"
+    "14469299": "kipfel",
+    "14523602": "urara"
   }
 }

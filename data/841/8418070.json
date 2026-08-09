@@ -177,6 +177,11 @@
         "date": "2026-08-07",
         "price": 4200,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 3500,
+        "is_sale": true
       }
     ],
     "ラムネ / Ramune": [
@@ -354,11 +359,24 @@
         "date": "2026-08-07",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-09",
+        "price": 1500,
+        "is_sale": true
+      }
+    ],
+    "マヌカ / MANUKA": [
+      {
+        "date": "2026-08-09",
+        "price": 1500,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
     "14056550": "フルセット(後日追加対応します)",
-    "14056875": "ラムネ / Ramune"
+    "14056875": "ラムネ / Ramune",
+    "14518351": "マヌカ / MANUKA"
   }
 }
