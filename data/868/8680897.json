@@ -13,9 +13,24 @@
         "price": 500,
         "is_sale": false
       }
+    ],
+    "サンプル版": [
+      {
+        "date": "2026-08-10",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "製品版": [
+      {
+        "date": "2026-08-10",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "14496190": "default"
+    "14496190": "default",
+    "14531303": "製品版"
   }
 }

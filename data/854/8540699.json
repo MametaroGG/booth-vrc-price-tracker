@@ -122,10 +122,23 @@
         "date": "2026-08-09",
         "price": 980,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-10",
+        "price": 1200,
+        "is_sale": true
+      }
+    ],
+    "作者支援": [
+      {
+        "date": "2026-08-10",
+        "price": 1800,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "14253203": "default"
+    "14253203": "default",
+    "14529551": "作者支援"
   }
 }
