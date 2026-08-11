@@ -22,10 +22,39 @@
         "date": "2026-08-10",
         "price": 360,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 720,
+        "is_sale": false
+      }
+    ],
+    "kaguya": [
+      {
+        "date": "2026-08-12",
+        "price": 360,
+        "is_sale": false
+      }
+    ],
+    "rurune": [
+      {
+        "date": "2026-08-12",
+        "price": 360,
+        "is_sale": false
+      }
+    ],
+    "shinano": [
+      {
+        "date": "2026-08-12",
+        "price": 360,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14499910": "default"
+    "14499910": "default",
+    "14533674": "kaguya",
+    "14533675": "rurune",
+    "14533676": "shinano"
   }
 }

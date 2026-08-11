@@ -32,6 +32,11 @@
         "date": "2026-08-10",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Basilisk": [
@@ -64,11 +69,24 @@
         "date": "2026-08-10",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "Unito": [
+      {
+        "date": "2026-08-12",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14473171": "Nyanyasi",
-    "14473194": "Basilisk"
+    "14473194": "Basilisk",
+    "14537262": "Unito"
   }
 }

@@ -13,7 +13,24 @@
         "price": 0,
         "is_sale": true
       }
+    ],
+    "通常版": [
+      {
+        "date": "2026-08-12",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "支援版(おまけ付き)": [
+      {
+        "date": "2026-08-12",
+        "price": 400,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14522478": "通常版",
+    "14539750": "支援版(おまけ付き)"
+  }
 }
