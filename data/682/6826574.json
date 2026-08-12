@@ -658,6 +658,11 @@
         "date": "2026-08-11",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "ver1.1": [
@@ -950,8 +955,16 @@
         "date": "2026-08-11",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-12",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "11474567": "ver1",
+    "13768993": "ver1.1"
+  }
 }
