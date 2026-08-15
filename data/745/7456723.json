@@ -647,10 +647,23 @@
         "date": "2026-08-14",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 450,
+        "is_sale": false
+      }
+    ],
+    "専用海パン": [
+      {
+        "date": "2026-08-15",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12481908": "default"
+    "12481908": "default",
+    "14555469": "専用海パン"
   }
 }
