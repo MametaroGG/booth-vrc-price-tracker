@@ -12,6 +12,11 @@
         "date": "2026-08-13",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 2500,
+        "is_sale": true
       }
     ],
     "斑霞・Hanka": [
@@ -24,6 +29,11 @@
         "date": "2026-08-13",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 1300,
+        "is_sale": true
       }
     ],
     "水瀬・Minase": [
@@ -36,6 +46,11 @@
         "date": "2026-08-13",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 1300,
+        "is_sale": true
       }
     ],
     "狛乃・Komano": [
@@ -48,6 +63,11 @@
         "date": "2026-08-13",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 1300,
+        "is_sale": true
       }
     ],
     "アルエ・Alue": [
@@ -60,6 +80,11 @@
         "date": "2026-08-13",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 1300,
+        "is_sale": true
       }
     ],
     "紗夜・Suzuya": [
@@ -72,6 +97,11 @@
         "date": "2026-08-13",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 1300,
+        "is_sale": true
       }
     ],
     "彼方・Kanata": [
@@ -84,8 +114,21 @@
         "date": "2026-08-13",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 1300,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14529201": "FullPack/フルパック",
+    "14529430": "斑霞・Hanka",
+    "14529431": "水瀬・Minase",
+    "14529432": "狛乃・Komano",
+    "14529433": "アルエ・Alue",
+    "14529434": "紗夜・Suzuya",
+    "14533316": "彼方・Kanata"
+  }
 }

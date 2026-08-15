@@ -14,8 +14,23 @@
         "date": "2026-08-13",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-15",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "通常版 《夏休みSALE》": [
+      {
+        "date": "2026-08-15",
+        "price": 400,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14546043": "通常版 《夏休みSALE》",
+    "14546056": "次回作の応援🪄(通常版と内容は同じ)"
+  }
 }

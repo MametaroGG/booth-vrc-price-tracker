@@ -15,9 +15,17 @@
         "price": 300,
         "is_sale": true
       }
+    ],
+    "default": [
+      {
+        "date": "2026-08-15",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
+    "14528903": "default",
     "14545863": "ハイタッチパーティクルanimation有"
   }
 }

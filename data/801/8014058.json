@@ -212,6 +212,11 @@
         "date": "2026-04-20",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "柄なしカクテル": [
@@ -422,6 +427,11 @@
       },
       {
         "date": "2026-04-20",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
         "price": 1000,
         "is_sale": false
       }
@@ -636,7 +646,17 @@
         "date": "2026-04-20",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 2000,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13415204": "OriginalCocktail",
+    "13415800": "柄なしカクテル",
+    "13415801": "グラデーションのみカクテル"
   }
 }

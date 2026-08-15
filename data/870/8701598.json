@@ -7,11 +7,21 @@
         "date": "2026-08-13",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-15",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "耳・尻尾・お面パック": [
       {
         "date": "2026-08-13",
+        "price": 100,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-15",
         "price": 100,
         "is_sale": true
       }
@@ -21,8 +31,16 @@
         "date": "2026-08-13",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-15",
+        "price": 0,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14532129": "全部入りフルパック",
+    "14532245": "耳・尻尾・お面パック"
+  }
 }

@@ -7,11 +7,21 @@
         "date": "2026-08-13",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "フィニシフ": [
       {
         "date": "2026-08-13",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
         "price": 300,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-08-13",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14372129": "フルセット",
+    "14457924": "吉嗣",
+    "14457925": "フィニシフ"
+  }
 }

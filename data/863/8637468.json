@@ -67,10 +67,23 @@
         "date": "2026-08-13",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-15",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "専用バニー衣装": [
+      {
+        "date": "2026-08-15",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14419390": "default"
+    "14419390": "default",
+    "14555619": "専用バニー衣装"
   }
 }
