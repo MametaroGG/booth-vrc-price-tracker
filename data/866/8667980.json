@@ -12,6 +12,11 @@
         "date": "2026-08-15",
         "price": 1700,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
+        "price": 1700,
+        "is_sale": true
       }
     ],
     "Shinano | しなの": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-08-15",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
         "price": 1200,
         "is_sale": true
       }
@@ -36,6 +46,11 @@
         "date": "2026-08-15",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Fyuett | フィユエ": [
@@ -46,6 +61,11 @@
       },
       {
         "date": "2026-08-15",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
         "price": 1200,
         "is_sale": true
       }
@@ -60,6 +80,11 @@
         "date": "2026-08-15",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Eku | エク": [
@@ -72,8 +97,20 @@
         "date": "2026-08-15",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
+        "price": 1200,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14473305": "✧FULLPACK✧",
+    "14543401": "Shinano | しなの",
+    "14543402": "MUMUS | ムムス",
+    "14543403": "Fyuett | フィユエ",
+    "14543404": "Kaguya | 輝夜",
+    "14543405": "Eku | エク"
+  }
 }

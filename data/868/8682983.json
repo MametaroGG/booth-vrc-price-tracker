@@ -37,10 +37,23 @@
         "date": "2026-08-15",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "wish ring": [
+      {
+        "date": "2026-08-16",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14499668": "default"
+    "14499668": "default",
+    "14560410": "wish ring"
   }
 }

@@ -17,6 +17,11 @@
         "date": "2026-08-15",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
+        "price": 1500,
+        "is_sale": true
       }
     ],
     "Shinano": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-08-15",
+        "price": 800,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
         "price": 800,
         "is_sale": true
       }
@@ -51,6 +61,11 @@
         "date": "2026-08-15",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "MAYO": [
@@ -66,6 +81,11 @@
       },
       {
         "date": "2026-08-15",
+        "price": 1200,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
         "price": 1200,
         "is_sale": true
       }
@@ -85,6 +105,11 @@
         "date": "2026-08-15",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "CHOCOLAT＆CHIFFON": [
@@ -102,8 +127,20 @@
         "date": "2026-08-15",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-16",
+        "price": 800,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14340486": "FULL SET",
+    "14340510": "Shinano",
+    "14340520": "AIRI",
+    "14519201": "MAYO",
+    "14519202": "MILLTINA",
+    "14519203": "CHOCOLAT＆CHIFFON"
+  }
 }

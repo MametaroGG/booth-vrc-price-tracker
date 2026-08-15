@@ -598,6 +598,11 @@
         "date": "2026-08-15",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "泣夜版": [
@@ -984,6 +989,11 @@
       {
         "date": "2026-08-15",
         "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 300,
         "is_sale": false
       }
     ],
@@ -1372,12 +1382,41 @@
         "date": "2026-08-15",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Lapwing": [
+      {
+        "date": "2026-08-16",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Grus": [
+      {
+        "date": "2026-08-16",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Alue(PlusHesd)": [
+      {
+        "date": "2026-08-16",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13330457": "フルセット",
     "13614616": "泣夜版",
-    "13614617": "ANIMA版"
+    "13614617": "ANIMA版",
+    "14560379": "Lapwing",
+    "14560380": "Grus",
+    "14560381": "Alue(PlusHesd)"
   }
 }

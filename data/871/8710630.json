@@ -8,9 +8,24 @@
         "price": 1000,
         "is_sale": false
       }
+    ],
+    "衣装ふぃった～": [
+      {
+        "date": "2026-08-16",
+        "price": 400,
+        "is_sale": true
+      }
+    ],
+    "ライセンス": [
+      {
+        "date": "2026-08-16",
+        "price": 0,
+        "is_sale": true
+      }
     ]
   },
   "variation_keys": {
-    "14547421": "default"
+    "14547421": "default",
+    "14563097": "衣装ふぃった～"
   }
 }

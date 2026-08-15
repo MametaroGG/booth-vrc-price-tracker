@@ -87,6 +87,11 @@
         "date": "2026-08-15",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "Shinra": [
@@ -172,6 +177,11 @@
       },
       {
         "date": "2026-08-15",
+        "price": 1300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-16",
         "price": 1300,
         "is_sale": false
       }
@@ -261,6 +271,11 @@
         "date": "2026-08-15",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 1300,
+        "is_sale": false
       }
     ],
     "Lumina": [
@@ -348,6 +363,18 @@
         "date": "2026-08-15",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-16",
+        "price": 1300,
+        "is_sale": false
+      }
+    ],
+    "Urara": [
+      {
+        "date": "2026-08-16",
+        "price": 990,
+        "is_sale": false
       }
     ]
   },
@@ -355,6 +382,7 @@
     "14387121": "Fullpack",
     "14387672": "Shinra",
     "14387673": "Shinano",
-    "14387674": "Lumina"
+    "14387674": "Lumina",
+    "14562588": "Urara"
   }
 }
