@@ -785,6 +785,24 @@
         "price": 500,
         "is_sale": false
       }
+    ],
+    "nomal": [
+      {
+        "date": "2026-08-17",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Tip": [
+      {
+        "date": "2026-08-17",
+        "price": 500,
+        "is_sale": false
+      }
     ]
+  },
+  "variation_keys": {
+    "12017163": "nomal",
+    "12017520": "Tip"
   }
 }
