@@ -633,7 +633,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "通常版": [
+      {
+        "date": "2026-08-16",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "応援版（内容は同じ）": [
+      {
+        "date": "2026-08-16",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14565228": "応援版（内容は同じ）"
+  }
 }
