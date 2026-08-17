@@ -12,6 +12,11 @@
         "date": "2026-08-16",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "lonely heart make only": [
@@ -24,6 +29,11 @@
         "date": "2026-08-16",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "lonely heart eye": [
@@ -36,11 +46,17 @@
         "date": "2026-08-16",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14494031": "lonely heart make full",
-    "14551647": "lonely heart make only"
+    "14551647": "lonely heart make only",
+    "14551648": "lonely heart eye"
   }
 }

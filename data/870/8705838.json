@@ -17,6 +17,11 @@
         "date": "2026-08-16",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Mayo対応": [
@@ -33,6 +38,11 @@
       {
         "date": "2026-08-16",
         "price": 0,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 200,
         "is_sale": true
       }
     ],
@@ -51,6 +61,11 @@
         "date": "2026-08-16",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Shinra対応": [
@@ -67,6 +82,11 @@
       {
         "date": "2026-08-16",
         "price": 0,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 200,
         "is_sale": true
       }
     ],
@@ -85,6 +105,11 @@
         "date": "2026-08-16",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Basilisk対応": [
@@ -101,6 +126,11 @@
       {
         "date": "2026-08-16",
         "price": 0,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 200,
         "is_sale": true
       }
     ],
@@ -119,12 +149,22 @@
         "date": "2026-08-16",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Shinano対応": [
       {
         "date": "2026-08-16",
         "price": 0,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 200,
         "is_sale": true
       }
     ],
@@ -133,8 +173,23 @@
         "date": "2026-08-16",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-17",
+        "price": 200,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14539464": "Sio対応",
+    "14545830": "Mayo対応",
+    "14545831": "Misaki対応",
+    "14545832": "Shinra対応",
+    "14545833": "Tonnerru対応",
+    "14545834": "Basilisk対応",
+    "14545835": "Nyanyashi対応",
+    "14559124": "Shinano対応",
+    "14562290": "Ramune対応"
+  }
 }

@@ -34,10 +34,23 @@
         "date": "2026-08-16",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "通常版/Regular version": [
+      {
+        "date": "2026-08-17",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14547898": "通常版/Regular version",
     "14547970": "応援版/Support version (中身は同じです)"
   }
 }

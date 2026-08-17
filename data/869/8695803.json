@@ -32,6 +32,11 @@
         "date": "2026-08-16",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "【期間限定無料】キュートさかなくん": [
@@ -65,7 +70,16 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "キュートさかなくん": [
+      {
+        "date": "2026-08-17",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14522165": "キュートさかなくん"
+  }
 }

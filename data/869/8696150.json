@@ -39,6 +39,11 @@
         "date": "2026-08-16",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "期間限定【無料】版　-FREE-": [
@@ -57,9 +62,17 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "通常版 -Nomal Edition-": [
+      {
+        "date": "2026-08-17",
+        "price": 200,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
+    "14522818": "通常版 -Nomal Edition-",
     "14526672": "支援版"
   }
 }

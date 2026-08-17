@@ -107,6 +107,11 @@
         "date": "2026-08-16",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Rurune": [
@@ -212,6 +217,11 @@
       },
       {
         "date": "2026-08-16",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-17",
         "price": 100,
         "is_sale": false
       }
@@ -321,11 +331,32 @@
         "date": "2026-08-16",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-17",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "Full Pack(追加する予定有)": [
+      {
+        "date": "2026-08-17",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "K02": [
+      {
+        "date": "2026-08-17",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14270750": "Rurune",
-    "14270751": "応援(Ruruneと内容変わりません)"
+    "14270751": "応援(Ruruneと内容変わりません)",
+    "14570491": "Full Pack(追加する予定有)",
+    "14570492": "K02"
   }
 }
