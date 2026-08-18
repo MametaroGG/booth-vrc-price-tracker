@@ -577,6 +577,11 @@
         "date": "2026-08-17",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "技術援助": [
@@ -1154,11 +1159,54 @@
         "date": "2026-08-17",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 3000,
+        "is_sale": false
+      }
+    ],
+    "manuka": [
+      {
+        "date": "2026-08-19",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "mayo": [
+      {
+        "date": "2026-08-19",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Lasyusha": [
+      {
+        "date": "2026-08-19",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Alue": [
+      {
+        "date": "2026-08-19",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Komano": [
+      {
+        "date": "2026-08-19",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13302029": "通常価格",
-    "13303003": "技術援助"
+    "13303003": "技術援助",
+    "14574630": "manuka",
+    "14574631": "mayo",
+    "14574632": "Lasyusha"
   }
 }

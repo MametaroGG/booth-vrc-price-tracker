@@ -109,6 +109,11 @@
         "date": "2026-06-14",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "応援版 / Support": [
@@ -187,10 +192,18 @@
         "price": 500,
         "is_sale": false
       }
+    ],
+    "カラーパック版（プリセットカラー同梱） / Color Pack Edition (Pre-made Colors Included)": [
+      {
+        "date": "2026-08-19",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
     "13862030": "通常版 / Standard",
-    "13951847": "応援版 / Support"
+    "13951847": "応援版 / Support",
+    "14437377": "カラーパック版（プリセットカラー同梱） / Color Pack Edition (Pre-made Colors Included)"
   }
 }

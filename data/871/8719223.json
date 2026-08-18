@@ -14,10 +14,39 @@
         "date": "2026-08-17",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 600,
+        "is_sale": true
+      }
+    ],
+    "✦プラム -Plum-✦": [
+      {
+        "date": "2026-08-19",
+        "price": 400,
+        "is_sale": true
+      }
+    ],
+    "✦輝夜 -Kaguya-✦": [
+      {
+        "date": "2026-08-19",
+        "price": 400,
+        "is_sale": true
+      }
+    ],
+    "✦ミルティナ -Milltina-✦": [
+      {
+        "date": "2026-08-19",
+        "price": 400,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "14564315": "SALE！✦フルセット Full Set✦"
+    "14564315": "SALE！✦フルセット Full Set✦",
+    "14575203": "✦プラム -Plum-✦",
+    "14575204": "✦輝夜 -Kaguya-✦",
+    "14575205": "✦ミルティナ -Milltina-✦"
   }
 }

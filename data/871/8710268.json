@@ -34,6 +34,11 @@
         "date": "2026-08-17",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 550,
+        "is_sale": true
       }
     ],
     "通常版": [
@@ -51,11 +56,24 @@
         "date": "2026-08-17",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-19",
+        "price": 400,
+        "is_sale": true
+      }
+    ],
+    "BlendShape": [
+      {
+        "date": "2026-08-19",
+        "price": 200,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
     "14546896": "支援版(ボディスケール付き✨)",
-    "14546940": "通常版"
+    "14546940": "通常版",
+    "14546941": "BlendShape"
   }
 }

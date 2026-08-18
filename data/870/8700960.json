@@ -1,0 +1,24 @@
+{
+  "id": "8700960",
+  "name": "【VRC向け販売ワールド】Cosy Loft Home",
+  "variations": {
+    "CosyLoftHome_Furnished(家具付き)": [
+      {
+        "date": "2026-08-19",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "CosyLoftHome_Unfurnished(家具無し)": [
+      {
+        "date": "2026-08-19",
+        "price": 500,
+        "is_sale": false
+      }
+    ]
+  },
+  "variation_keys": {
+    "14531006": "CosyLoftHome_Furnished(家具付き)",
+    "14567842": "CosyLoftHome_Unfurnished(家具無し)"
+  }
+}
