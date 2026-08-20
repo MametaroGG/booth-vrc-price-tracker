@@ -662,6 +662,11 @@
         "date": "2026-08-19",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "✧︎makeup only": [
@@ -1329,6 +1334,11 @@
         "date": "2026-08-19",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "✧︎eye texture only": [
@@ -1996,6 +2006,11 @@
         "date": "2026-08-19",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "【1周年SALE】 ✧︎fullpack": [
@@ -2015,6 +2030,11 @@
         "date": "2026-08-19",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "【SALE】✧︎makeup only(Kaguya)": [
@@ -2027,6 +2047,11 @@
         "date": "2026-08-19",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "【３日間限定無料】✧︎eye texture only(Kaguya)": [
@@ -2040,6 +2065,13 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "✧︎eye texture only(Kaguya)": [
+      {
+        "date": "2026-08-20",
+        "price": 200,
+        "is_sale": true
+      }
     ]
   },
   "variation_keys": {
@@ -2047,6 +2079,7 @@
     "12078768": "✧︎makeup only",
     "12078769": "✧︎eye texture only",
     "14568051": "【SALE】✧︎fullpack(Kaguya)",
-    "14568052": "【SALE】✧︎makeup only(Kaguya)"
+    "14568052": "【SALE】✧︎makeup only(Kaguya)",
+    "14568053": "✧︎eye texture only(Kaguya)"
   }
 }
