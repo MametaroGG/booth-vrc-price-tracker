@@ -72,10 +72,79 @@
         "date": "2026-08-19",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 2500,
+        "is_sale": false
+      }
+    ],
+    "MINASE": [
+      {
+        "date": "2026-08-20",
+        "price": 1900,
+        "is_sale": false
+      }
+    ],
+    "KOMANO": [
+      {
+        "date": "2026-08-20",
+        "price": 1900,
+        "is_sale": false
+      }
+    ],
+    "ALUE (+HEAD)": [
+      {
+        "date": "2026-08-20",
+        "price": 1900,
+        "is_sale": false
+      }
+    ],
+    "KANATA": [
+      {
+        "date": "2026-08-20",
+        "price": 1900,
+        "is_sale": false
+      }
+    ],
+    "IYORI (珍飯亭)": [
+      {
+        "date": "2026-08-20",
+        "price": 1900,
+        "is_sale": false
+      }
+    ],
+    "MAO": [
+      {
+        "date": "2026-08-20",
+        "price": 1900,
+        "is_sale": false
+      }
+    ],
+    "HANKA": [
+      {
+        "date": "2026-08-20",
+        "price": 1900,
+        "is_sale": false
+      }
+    ],
+    "KIPFEL (まめふれんず)": [
+      {
+        "date": "2026-08-20",
+        "price": 1500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14457372": "default"
+    "14457372": "default",
+    "14590510": "MINASE",
+    "14590511": "KOMANO",
+    "14590512": "ALUE (+HEAD)",
+    "14590513": "KANATA",
+    "14590514": "IYORI (珍飯亭)",
+    "14590515": "MAO",
+    "14590516": "HANKA",
+    "14590517": "KIPFEL (まめふれんず)"
   }
 }

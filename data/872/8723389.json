@@ -12,6 +12,11 @@
         "date": "2026-08-19",
         "price": 15000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 15000,
+        "is_sale": false
       }
     ],
     "チームライセンス": [
@@ -24,8 +29,16 @@
         "date": "2026-08-19",
         "price": 30000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-20",
+        "price": 30000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14567572": "一般ライセンス",
+    "14569704": "チームライセンス"
+  }
 }
