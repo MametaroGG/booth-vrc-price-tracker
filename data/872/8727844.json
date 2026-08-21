@@ -7,11 +7,21 @@
         "date": "2026-08-20",
         "price": 4500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 4500,
+        "is_sale": false
       }
     ],
     "【SALE】邪竜覚醒版（付属ギミックでメルヴィが覚醒します）OVERDRIVE Edition": [
       {
         "date": "2026-08-20",
+        "price": 6500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
         "price": 6500,
         "is_sale": false
       }
@@ -21,8 +31,25 @@
         "date": "2026-08-20",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 3500,
+        "is_sale": false
+      }
+    ],
+    "尻尾もぎもぎギミック": [
+      {
+        "date": "2026-08-21",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14574361": "【SALE】通常版 Normal Edition",
+    "14574497": "【SALE】邪竜覚醒版（付属ギミックでメルヴィが覚醒します）OVERDRIVE Edition",
+    "14574498": "覚醒ギミック単体パック（ケモハンド付き）（アバター本体は付属しません）GImmicks Only",
+    "14594792": "尻尾もぎもぎギミック"
+  }
 }

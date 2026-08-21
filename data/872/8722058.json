@@ -34,6 +34,11 @@
         "date": "2026-08-20",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "ミルティナ-MILLTINA-": [
@@ -49,6 +54,11 @@
       },
       {
         "date": "2026-08-20",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
         "price": 1700,
         "is_sale": false
       }
@@ -68,6 +78,11 @@
         "date": "2026-08-20",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "ミルフィ/エク-MILFY/EKU-": [
@@ -83,6 +98,11 @@
       },
       {
         "date": "2026-08-20",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
         "price": 1700,
         "is_sale": false
       }
@@ -102,6 +122,11 @@
         "date": "2026-08-20",
         "price": 1700,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 1700,
+        "is_sale": false
       }
     ],
     "マヌカ-MANUKA-": [
@@ -117,6 +142,11 @@
       },
       {
         "date": "2026-08-20",
+        "price": 1700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
         "price": 1700,
         "is_sale": false
       }
@@ -154,7 +184,22 @@
         "price": 1700,
         "is_sale": false
       }
+    ],
+    "FULLPACK(ショコラ/ルルネは後日追加)": [
+      {
+        "date": "2026-08-21",
+        "price": 3600,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14565502": "FULLPACK(ショコラ/ルルネは後日追加)",
+    "14566419": "しなの-SHINANO-",
+    "14566420": "ミルティナ-MILLTINA-",
+    "14566421": "ルミナ-LUMINA-",
+    "14566422": "ミルフィ/エク-MILFY/EKU-",
+    "14566423": "まよ-MAYO-",
+    "14566424": "マヌカ-MANUKA-"
+  }
 }

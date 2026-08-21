@@ -7,6 +7,11 @@
         "date": "2026-08-20",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 2200,
+        "is_sale": true
       }
     ],
     "Kaguya/Rurune/Mizuki": [
@@ -14,6 +19,11 @@
         "date": "2026-08-20",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Shinano": [
@@ -21,6 +31,11 @@
         "date": "2026-08-20",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Milfy/Eku": [
@@ -28,6 +43,11 @@
         "date": "2026-08-20",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Chocolat/Chiffon/Plum/Lime": [
@@ -35,6 +55,11 @@
         "date": "2026-08-20",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Milltina": [
@@ -42,6 +67,11 @@
         "date": "2026-08-20",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Manuka": [
@@ -49,6 +79,11 @@
         "date": "2026-08-20",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Mao/Ririka": [
@@ -56,6 +91,11 @@
         "date": "2026-08-20",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Sio": [
@@ -63,6 +103,11 @@
         "date": "2026-08-20",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Lumina": [
@@ -70,6 +115,11 @@
         "date": "2026-08-20",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 990,
+        "is_sale": true
       }
     ],
     "Airi": [
@@ -77,8 +127,25 @@
         "date": "2026-08-20",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 990,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14482875": "FullPack",
+    "14494414": "Kaguya/Rurune/Mizuki",
+    "14494415": "Shinano",
+    "14494416": "Milfy/Eku",
+    "14494417": "Chocolat/Chiffon/Plum/Lime",
+    "14494418": "Milltina",
+    "14494419": "Manuka",
+    "14494420": "Mao/Ririka",
+    "14494421": "Sio",
+    "14494422": "Lumina",
+    "14494423": "Airi"
+  }
 }

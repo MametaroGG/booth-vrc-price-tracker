@@ -12,6 +12,11 @@
         "date": "2026-08-20",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "✨無料期間✨": [
@@ -37,9 +42,40 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "1 color free": [
+      {
+        "date": "2026-08-21",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "rurune&kaguya": [
+      {
+        "date": "2026-08-21",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "shinano": [
+      {
+        "date": "2026-08-21",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "chocolat": [
+      {
+        "date": "2026-08-21",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "14580950": "通常料金"
+    "14580950": "通常料金",
+    "14597280": "rurune&kaguya",
+    "14597281": "shinano",
+    "14597282": "chocolat"
   }
 }

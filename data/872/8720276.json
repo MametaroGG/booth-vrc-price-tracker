@@ -7,10 +7,31 @@
         "date": "2026-08-16",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "SIUSIU対応": [
+      {
+        "date": "2026-08-21",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "K02対応": [
+      {
+        "date": "2026-08-21",
+        "price": 250,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14563028": "default"
+    "14563028": "default",
+    "14566081": "SIUSIU対応",
+    "14566082": "K02対応"
   }
 }

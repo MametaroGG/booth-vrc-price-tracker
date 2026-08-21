@@ -62,6 +62,11 @@
         "date": "2026-08-20",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "しなの - shinano -": [
@@ -122,6 +127,11 @@
       },
       {
         "date": "2026-08-20",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
         "price": 800,
         "is_sale": false
       }
@@ -223,6 +233,11 @@
         "date": "2026-08-20",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "輝夜-kaguya-": [
@@ -283,6 +298,11 @@
       },
       {
         "date": "2026-08-20",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
         "price": 800,
         "is_sale": false
       }
@@ -347,6 +367,11 @@
         "date": "2026-08-20",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Alué - アルエ": [
@@ -406,11 +431,21 @@
         "date": "2026-08-20",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "メルヴィ - Melvii": [
       {
         "date": "2026-08-20",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
         "price": 800,
         "is_sale": false
       }
@@ -420,8 +455,30 @@
         "date": "2026-08-20",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-21",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "キプフェル・まめフレンズ": [
+      {
+        "date": "2026-08-21",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14484253": "フルセット（リリース記念ディスカウント8月31日まで）",
+    "14485302": "しなの - shinano -",
+    "14485331": "ミルティナ -Milltina -",
+    "14485332": "輝夜-kaguya-",
+    "14489802": "狛乃 - Komano",
+    "14499390": "Alué - アルエ プラスヘッド +head",
+    "14592284": "メルヴィ - Melvii",
+    "14592378": "ミルフィ - Milfy",
+    "14601366": "キプフェル・まめフレンズ"
+  }
 }
