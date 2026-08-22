@@ -662,6 +662,11 @@
         "date": "2026-08-21",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-22",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "Fireplace + Tip": [
@@ -1324,11 +1329,24 @@
         "date": "2026-08-21",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-22",
+        "price": 350,
+        "is_sale": false
+      }
+    ],
+    "Short Time SALE Fireplace": [
+      {
+        "date": "2026-08-22",
+        "price": 150,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "11141759": "Fireplace",
-    "12717505": "Fireplace + Tip"
+    "12717505": "Fireplace + Tip",
+    "14605671": "Short Time SALE Fireplace"
   }
 }
