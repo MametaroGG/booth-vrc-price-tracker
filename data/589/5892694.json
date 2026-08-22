@@ -642,6 +642,11 @@
         "date": "2026-08-21",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-22",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "森羅 - Shinra": [
@@ -1284,6 +1289,11 @@
         "date": "2026-08-21",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-22",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "企業向け Licenses - ラシューシャ(Lasyusha)": [
@@ -1315,12 +1325,29 @@
         "date": "2026-08-21",
         "price": 11500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-22",
+        "price": 11500,
+        "is_sale": false
       }
     ],
     "商用利用 - 森羅 / Shinra": [
       {
         "date": "2026-08-21",
         "price": 11500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-22",
+        "price": 11500,
+        "is_sale": false
+      }
+    ],
+    "商用利用ライセンス - License Only": [
+      {
+        "date": "2026-08-22",
+        "price": 10000,
         "is_sale": false
       }
     ]
@@ -1331,6 +1358,7 @@
     "14181396": "企業向け Licenses - ラシューシャ(Lasyusha)",
     "14181397": "企業向け Licenses - 森羅(Shinra)",
     "14596154": "商用利用 - ラシューシャ/ Lasyusha",
-    "14596155": "商用利用 - 森羅 / Shinra"
+    "14596155": "商用利用 - 森羅 / Shinra",
+    "14604153": "商用利用ライセンス - License Only"
   }
 }
