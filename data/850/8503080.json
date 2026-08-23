@@ -12,6 +12,11 @@
         "date": "2026-08-21",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-23",
+        "price": 3500,
+        "is_sale": false
       }
     ],
     "Lapwing [Sale Price]": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-08-21",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-23",
         "price": 1200,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-08-21",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-23",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Grus [Sale Price]": [
@@ -46,6 +61,11 @@
       },
       {
         "date": "2026-08-21",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-23",
         "price": 1200,
         "is_sale": false
       }
@@ -60,6 +80,11 @@
         "date": "2026-08-21",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-23",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Sou [Sale Price]": [
@@ -72,8 +97,20 @@
         "date": "2026-08-21",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-23",
+        "price": 1200,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14187857": "FullPack [Sale Price]",
+    "14585641": "Lapwing [Sale Price]",
+    "14585642": "Marycia [Sale Price]",
+    "14585643": "Grus [Sale Price]",
+    "14585644": "Manuka [Sale Price]",
+    "14585645": "Sou [Sale Price]"
+  }
 }

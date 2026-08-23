@@ -117,10 +117,31 @@
         "date": "2026-08-21",
         "price": 5600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-23",
+        "price": 5600,
+        "is_sale": false
+      }
+    ],
+    "Pro add-on — role matrix (requires Standard)": [
+      {
+        "date": "2026-08-23",
+        "price": 3200,
+        "is_sale": false
+      }
+    ],
+    "Complete — Standard + Pro": [
+      {
+        "date": "2026-08-23",
+        "price": 6400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14379546": "default"
+    "14379546": "default",
+    "14608959": "Pro add-on — role matrix (requires Standard)",
+    "14608960": "Complete — Standard + Pro"
   }
 }

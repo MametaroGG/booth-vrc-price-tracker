@@ -427,10 +427,23 @@
         "date": "2026-08-21",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-23",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "ムチォ対応": [
+      {
+        "date": "2026-08-23",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13591944": "default"
+    "13591944": "default",
+    "14608006": "ムチォ対応"
   }
 }

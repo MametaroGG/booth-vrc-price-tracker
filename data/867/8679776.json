@@ -37,6 +37,11 @@
         "date": "2026-08-21",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-23",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "通常版+【しゃぼん玉ヘイロー / Bubble Halo】セット": [
@@ -74,6 +79,11 @@
         "date": "2026-08-21",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-23",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "無料版(Light版)": [
@@ -109,10 +119,18 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "Lite版": [
+      {
+        "date": "2026-08-23",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
     "14493985": "通常版",
-    "14494143": "通常版+【しゃぼん玉ヘイロー / Bubble Halo】セット"
+    "14494143": "通常版+【しゃぼん玉ヘイロー / Bubble Halo】セット",
+    "14556378": "Lite版"
   }
 }
