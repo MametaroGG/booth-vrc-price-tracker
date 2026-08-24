@@ -7,6 +7,11 @@
         "date": "2026-08-23",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-24",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "支援版": [
@@ -14,10 +19,16 @@
         "date": "2026-08-23",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-24",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14598080": "通常版",
     "14598425": "支援版"
   }
 }

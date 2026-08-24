@@ -32,10 +32,23 @@
         "date": "2026-08-23",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-24",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "Eye (png+emission)": [
+      {
+        "date": "2026-08-24",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13113871": "default"
+    "13113871": "default",
+    "14619433": "Eye (png+emission)"
   }
 }

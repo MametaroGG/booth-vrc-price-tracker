@@ -7,11 +7,21 @@
         "date": "2026-08-23",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-24",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Eyes": [
       {
         "date": "2026-08-23",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-24",
         "price": 500,
         "is_sale": false
       }
@@ -21,12 +31,29 @@
         "date": "2026-08-23",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-24",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "All": [
       {
         "date": "2026-08-23",
         "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-24",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "MakeUp+Eyes": [
+      {
+        "date": "2026-08-24",
+        "price": 700,
         "is_sale": false
       }
     ]
@@ -35,6 +62,7 @@
     "14605365": "MakeUp",
     "14605404": "Eyes",
     "14605405": "BlendShapes",
-    "14605406": "All"
+    "14605406": "All",
+    "14619335": "MakeUp+Eyes"
   }
 }

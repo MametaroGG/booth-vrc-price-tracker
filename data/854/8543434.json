@@ -162,6 +162,11 @@
         "date": "2026-08-23",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-24",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "Makeup": [
@@ -324,6 +329,11 @@
         "date": "2026-08-23",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-24",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "Eye": [
@@ -486,12 +496,41 @@
         "date": "2026-08-23",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-24",
+        "price": 250,
+        "is_sale": true
+      }
+    ],
+    "Misaki Full Pack(+PSD+eye5color)": [
+      {
+        "date": "2026-08-24",
+        "price": 400,
+        "is_sale": true
+      }
+    ],
+    "Misaki Makeup": [
+      {
+        "date": "2026-08-24",
+        "price": 350,
+        "is_sale": true
+      }
+    ],
+    "Misaki eye": [
+      {
+        "date": "2026-08-24",
+        "price": 250,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
     "14257753": "Full Pack(+PSD+eye5color)",
     "14257777": "Makeup",
-    "14257778": "Eye"
+    "14257778": "Eye",
+    "14615788": "Misaki Full Pack(+PSD+eye5color)",
+    "14615789": "Misaki Makeup",
+    "14615790": "Misaki eye"
   }
 }

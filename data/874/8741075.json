@@ -24,6 +24,11 @@
         "date": "2026-08-23",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-24",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Sio": [
@@ -35,6 +40,11 @@
       {
         "date": "2026-08-23",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-24",
+        "price": 200,
         "is_sale": false
       }
     ],
@@ -48,6 +58,11 @@
         "date": "2026-08-23",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-24",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Lumina": [
@@ -60,8 +75,26 @@
         "date": "2026-08-23",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-24",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Full Pack(PSD調整中）": [
+      {
+        "date": "2026-08-24",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14596498": "Milfy ,Eku",
+    "14597904": "Sio",
+    "14597905": "Kipfel",
+    "14597906": "Lumina",
+    "14597914": "Full Pack(PSD調整中）"
+  }
 }

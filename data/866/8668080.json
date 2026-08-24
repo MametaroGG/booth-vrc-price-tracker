@@ -83,7 +83,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "β版": [
+      {
+        "date": "2026-08-24",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "正式版": [
+      {
+        "date": "2026-08-24",
+        "price": 1000,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14618481": "正式版"
+  }
 }
