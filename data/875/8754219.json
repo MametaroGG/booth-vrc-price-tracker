@@ -8,9 +8,25 @@
         "price": 400,
         "is_sale": false
       }
+    ],
+    "Fullset": [
+      {
+        "date": "2026-08-26",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "Makeuponly": [
+      {
+        "date": "2026-08-26",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "14618556": "default"
+    "14618556": "default",
+    "14621952": "Fullset",
+    "14627849": "Makeuponly"
   }
 }

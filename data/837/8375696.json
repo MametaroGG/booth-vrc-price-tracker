@@ -177,10 +177,31 @@
         "date": "2026-08-24",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-26",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Fullset": [
+      {
+        "date": "2026-08-26",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "For Marycia": [
+      {
+        "date": "2026-08-26",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13990697": "default"
+    "13990697": "default",
+    "14628290": "Fullset",
+    "14628291": "For Marycia"
   }
 }
