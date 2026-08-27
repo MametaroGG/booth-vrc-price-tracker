@@ -8,9 +8,24 @@
         "price": 300,
         "is_sale": true
       }
+    ],
+    "無料版": [
+      {
+        "date": "2026-08-27",
+        "price": 0,
+        "is_sale": true
+      }
+    ],
+    "有料版": [
+      {
+        "date": "2026-08-27",
+        "price": 200,
+        "is_sale": true
+      }
     ]
   },
   "variation_keys": {
-    "14609526": "default"
+    "14609526": "default",
+    "14639135": "有料版"
   }
 }
