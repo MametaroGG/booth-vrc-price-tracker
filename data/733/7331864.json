@@ -697,10 +697,23 @@
         "date": "2026-08-26",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-29",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "Re.Stella": [
+      {
+        "date": "2026-08-29",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12276991": "default"
+    "12276991": "default",
+    "14638323": "Re.Stella"
   }
 }
