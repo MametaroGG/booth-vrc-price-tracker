@@ -12,6 +12,11 @@
         "date": "2026-08-27",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-30",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "利用規約": [
@@ -24,10 +29,31 @@
         "date": "2026-08-27",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-30",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Prisma（単体では動作しません）": [
+      {
+        "date": "2026-08-30",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "Memoria／Prismaセット": [
+      {
+        "date": "2026-08-30",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14626470": "Memoria本体"
+    "14626470": "Memoria本体",
+    "14658756": "Prisma（単体では動作しません）",
+    "14658757": "Memoria／Prismaセット"
   }
 }

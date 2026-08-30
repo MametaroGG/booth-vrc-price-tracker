@@ -228,7 +228,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "無料": [
+      {
+        "date": "2026-08-30",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "開発支援": [
+      {
+        "date": "2026-08-30",
+        "price": 200,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14670752": "開発支援"
+  }
 }
