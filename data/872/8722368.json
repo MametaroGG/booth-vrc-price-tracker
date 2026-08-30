@@ -42,10 +42,31 @@
         "date": "2026-08-27",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "eye": [
+      {
+        "date": "2026-08-31",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "make": [
+      {
+        "date": "2026-08-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14566017": "default"
+    "14566017": "default",
+    "14664743": "eye",
+    "14664744": "make"
   }
 }

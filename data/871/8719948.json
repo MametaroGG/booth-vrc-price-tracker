@@ -14,6 +14,11 @@
         "date": "2026-08-27",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "【Support】Full Pack + 2 PAIR POSES": [
@@ -21,8 +26,23 @@
         "date": "2026-08-27",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "【Free】2 POSES (水瀬対応単品のみ)": [
+      {
+        "date": "2026-08-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14562432": "【Full Pack】50 POSES + 1 Post Process",
+    "14562433": "【Support】Full Pack + 2 PAIR POSES"
+  }
 }

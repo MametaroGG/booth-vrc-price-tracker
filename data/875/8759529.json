@@ -7,12 +7,22 @@
         "date": "2026-08-27",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-31",
+        "price": 2200,
+        "is_sale": true
       }
     ],
     "セレスティア【Selestia】": [
       {
         "date": "2026-08-27",
         "price": 900,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-31",
+        "price": 1200,
         "is_sale": true
       }
     ],
@@ -21,12 +31,22 @@
         "date": "2026-08-27",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "ミルティナ【Miltina】": [
       {
         "date": "2026-08-27",
         "price": 900,
+        "is_sale": true
+      },
+      {
+        "date": "2026-08-31",
+        "price": 1200,
         "is_sale": true
       }
     ],
@@ -35,6 +55,11 @@
         "date": "2026-08-27",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-31",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "だるビス【Darubis】": [
@@ -42,8 +67,20 @@
         "date": "2026-08-27",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-31",
+        "price": 1200,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14627008": "Full Package",
+    "14633213": "セレスティア【Selestia】",
+    "14633214": "しなの【Shinano】",
+    "14633215": "ミルティナ【Miltina】",
+    "14633216": "シャンテト【Shantet】",
+    "14633217": "だるビス【Darubis】"
+  }
 }

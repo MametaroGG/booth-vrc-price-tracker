@@ -7,6 +7,11 @@
         "date": "2026-08-27",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-31",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Rurune(期間限定無料100円→0円)": [
@@ -21,10 +26,23 @@
         "date": "2026-08-27",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-31",
+        "price": 150,
+        "is_sale": false
+      }
+    ],
+    "Rurune": [
+      {
+        "date": "2026-08-31",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14638224": "Rurune",
     "14638225": "応援(内容はRuruneと変わりません)"
   }
 }

@@ -94,6 +94,11 @@
         "date": "2026-08-27",
         "price": 4000,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-31",
+        "price": 4000,
+        "is_sale": false
       }
     ],
     "まめふれんず衣装のみ": [
@@ -136,6 +141,11 @@
         "date": "2026-08-27",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-08-31",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "取扱説明書Instructions": [
@@ -146,6 +156,11 @@
       },
       {
         "date": "2026-08-27",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
         "price": 0,
         "is_sale": false
       }
@@ -160,8 +175,16 @@
         "date": "2026-08-27",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14479129": "通常版",
+    "14566292": "まめふれんず衣装のみ"
+  }
 }

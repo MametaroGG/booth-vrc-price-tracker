@@ -7,12 +7,22 @@
         "date": "2026-08-27",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Lapwing": [
       {
         "date": "2026-08-27",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 300,
         "is_sale": false
       }
     ],
@@ -21,12 +31,22 @@
         "date": "2026-08-27",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "K02": [
       {
         "date": "2026-08-27",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 300,
         "is_sale": false
       }
     ],
@@ -35,8 +55,26 @@
         "date": "2026-08-27",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Ruty": [
+      {
+        "date": "2026-08-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14634647": "サシミ＝ホーミィ",
+    "14634876": "Lapwing",
+    "14634877": "Fullpack (今後も対応アバターを順次追加していく予定)",
+    "14638385": "Kumaly",
+    "14641458": "K02"
+  }
 }
