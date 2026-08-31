@@ -697,6 +697,11 @@
         "date": "2026-08-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 1600,
+        "is_sale": true
       }
     ],
     "Chocolat＆Chiffon": [
@@ -1394,6 +1399,11 @@
         "date": "2026-08-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Manuka": [
@@ -2091,6 +2101,11 @@
         "date": "2026-08-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Shinano": [
@@ -2788,6 +2803,11 @@
         "date": "2026-08-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Shinra": [
@@ -3485,6 +3505,11 @@
         "date": "2026-08-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Sio": [
@@ -4182,6 +4207,18 @@
         "date": "2026-08-29",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-08-31",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "Airi": [
+      {
+        "date": "2026-08-31",
+        "price": 800,
+        "is_sale": true
       }
     ]
   },
@@ -4191,6 +4228,7 @@
     "12118068": "Manuka",
     "12118069": "Shinano",
     "12118070": "Shinra",
-    "12118071": "Sio"
+    "12118071": "Sio",
+    "14673405": "Airi"
   }
 }
