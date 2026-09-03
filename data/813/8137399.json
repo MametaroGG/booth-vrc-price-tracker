@@ -297,6 +297,11 @@
         "date": "2026-08-31",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-04",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "🍭Candy Make up": [
@@ -592,6 +597,11 @@
       },
       {
         "date": "2026-08-31",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-04",
         "price": 600,
         "is_sale": false
       }
@@ -891,12 +901,25 @@
         "date": "2026-08-31",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-04",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "상업용 라이선스 / 商用ライセンス / Commercial License": [
+      {
+        "date": "2026-09-04",
+        "price": 2000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13621237": "🍭Full Set Candy & Sandy",
     "13621407": "🍭Candy Make up",
-    "13621408": "🍭Sandy Make up"
+    "13621408": "🍭Sandy Make up",
+    "14696645": "상업용 라이선스 / 商用ライセンス / Commercial License"
   }
 }
