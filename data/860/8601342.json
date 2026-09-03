@@ -157,6 +157,11 @@
         "date": "2026-08-31",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "鹿屋": [
@@ -314,6 +319,11 @@
         "date": "2026-08-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "しなの": [
@@ -471,6 +481,11 @@
         "date": "2026-08-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Lapwing": [
@@ -543,6 +558,11 @@
         "date": "2026-08-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "華夜": [
@@ -615,6 +635,11 @@
         "date": "2026-08-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Plushead": [
@@ -687,6 +712,11 @@
         "date": "2026-08-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "CLZtype1": [
@@ -759,6 +789,11 @@
         "date": "2026-08-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "斑霞": [
@@ -831,6 +866,11 @@
         "date": "2026-08-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "SiuSiu": [
@@ -903,6 +943,11 @@
         "date": "2026-08-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "泣夜": [
@@ -970,6 +1015,11 @@
         "date": "2026-08-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Marubody": [
@@ -1037,6 +1087,11 @@
         "date": "2026-08-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "狛乃": [
@@ -1104,8 +1159,26 @@
         "date": "2026-08-31",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 900,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14355155": "FULLset",
+    "14355241": "鹿屋",
+    "14355242": "しなの",
+    "14527105": "Lapwing",
+    "14527106": "華夜",
+    "14527107": "Plushead",
+    "14527108": "CLZtype1",
+    "14528282": "斑霞",
+    "14528283": "SiuSiu",
+    "14533602": "泣夜",
+    "14533603": "Marubody",
+    "14533604": "狛乃"
+  }
 }
