@@ -17,6 +17,11 @@
         "date": "2026-08-31",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-03",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Make upTexture": [
@@ -34,8 +39,16 @@
         "date": "2026-08-31",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-03",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14616162": "EyeTexture",
+    "14616241": "Make upTexture"
+  }
 }

@@ -22,6 +22,11 @@
         "date": "2026-08-31",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "通常版": [
@@ -44,8 +49,16 @@
         "date": "2026-08-31",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-03",
+        "price": 2000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14615014": "早期購入特典",
+    "14619887": "通常版"
+  }
 }
