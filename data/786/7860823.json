@@ -702,6 +702,11 @@
         "date": "2026-08-31",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-04",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "MARUBODY用": [
@@ -1404,11 +1409,24 @@
         "date": "2026-08-31",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-04",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "オレンジ瞳": [
+      {
+        "date": "2026-09-04",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13165175": "メロトロン用",
-    "13177956": "MARUBODY用"
+    "13177956": "MARUBODY用",
+    "14687690": "オレンジ瞳"
   }
 }

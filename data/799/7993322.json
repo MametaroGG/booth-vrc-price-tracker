@@ -568,7 +568,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "無料版": [
+      {
+        "date": "2026-09-04",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "開発費版": [
+      {
+        "date": "2026-09-04",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14701481": "開発費版"
+  }
 }
