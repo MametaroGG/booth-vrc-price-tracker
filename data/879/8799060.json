@@ -7,6 +7,11 @@
         "date": "2026-09-03",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "-通常版-": [
@@ -14,8 +19,16 @@
         "date": "2026-09-03",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14697421": "Boostパック(反転目カラーマスク入り)",
+    "14697595": "-通常版-"
+  }
 }

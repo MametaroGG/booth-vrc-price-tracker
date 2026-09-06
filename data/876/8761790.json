@@ -12,6 +12,11 @@
         "date": "2026-09-03",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "【24時間限定30%OFF】Fullset": [
@@ -25,7 +30,16 @@
         "price": 1000,
         "is_sale": false
       }
+    ],
+    "【3日間限定20%OFF】Fullset": [
+      {
+        "date": "2026-09-06",
+        "price": 800,
+        "is_sale": true
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14630964": "【3日間限定20%OFF】Fullset"
+  }
 }

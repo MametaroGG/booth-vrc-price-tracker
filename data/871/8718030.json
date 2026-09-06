@@ -57,10 +57,31 @@
         "date": "2026-09-03",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 1300,
+        "is_sale": false
+      }
+    ],
+    "まめふれんず(Mamefriends)": [
+      {
+        "date": "2026-09-06",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "リュミィ(Ryumii)": [
+      {
+        "date": "2026-09-06",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14559237": "default"
+    "14559237": "default",
+    "14706314": "まめふれんず(Mamefriends)",
+    "14706315": "リュミィ(Ryumii)"
   }
 }

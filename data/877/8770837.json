@@ -24,10 +24,39 @@
         "date": "2026-09-03",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 600,
+        "is_sale": true
+      }
+    ],
+    "Full Pack (2 Avater)": [
+      {
+        "date": "2026-09-06",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "for Lapwing": [
+      {
+        "date": "2026-09-06",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "for Kipfel": [
+      {
+        "date": "2026-09-06",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14647892": "活動支援用(中身は変わりません)"
+    "14647008": "for Lapwing",
+    "14647892": "活動支援用(中身は変わりません)",
+    "14709520": "Full Pack (2 Avater)",
+    "14709521": "for Kipfel"
   }
 }

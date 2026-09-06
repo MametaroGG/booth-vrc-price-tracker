@@ -7,6 +7,11 @@
         "date": "2026-09-03",
         "price": 890,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-06",
+        "price": 890,
+        "is_sale": true
       }
     ],
     "Full Package + ♥️": [
@@ -14,8 +19,16 @@
         "date": "2026-09-03",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 1300,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14688188": "Full Package",
+    "14688272": "Full Package + ♥️"
+  }
 }

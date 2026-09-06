@@ -14,6 +14,11 @@
         "date": "2026-09-03",
         "price": 350,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-06",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "支援用": [
@@ -21,8 +26,16 @@
         "date": "2026-09-03",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-06",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14695878": "Alluring eye",
+    "14695984": "支援用"
+  }
 }

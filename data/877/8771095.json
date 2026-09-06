@@ -12,6 +12,11 @@
         "date": "2026-09-03",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-06",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "VitaminStick": [
@@ -24,6 +29,11 @@
         "date": "2026-09-03",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-06",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "がおーはんど": [
@@ -36,11 +46,17 @@
         "date": "2026-09-03",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-06",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14647674": "VitaminStick",
+    "14660387": "VitaminStick+がおーはんど",
     "14660388": "がおーはんど"
   }
 }

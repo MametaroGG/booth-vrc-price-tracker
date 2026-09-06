@@ -12,6 +12,11 @@
         "date": "2026-09-03",
         "price": 750,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-06",
+        "price": 850,
+        "is_sale": false
       }
     ],
     "ルティ-Ruty-": [
@@ -24,11 +29,24 @@
         "date": "2026-09-03",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "シラハ-SHIRAHA-": [
+      {
+        "date": "2026-09-06",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14667614": "Vol.3_フルパッケージ-FULLPACKAGE-",
-    "14667838": "ルティ-Ruty-"
+    "14667838": "ルティ-Ruty-",
+    "14712909": "シラハ-SHIRAHA-"
   }
 }

@@ -62,10 +62,31 @@
         "date": "2026-09-03",
         "price": 250,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Texture Only(※マテリアルは付属しません)": [
+      {
+        "date": "2026-09-06",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "Material Only(※textureは付属しません。後からマテリアルも欲しくなった人向け)": [
+      {
+        "date": "2026-09-06",
+        "price": 250,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14552565": "default"
+    "14552565": "default",
+    "14714948": "Texture Only(※マテリアルは付属しません)",
+    "14714949": "Material Only(※textureは付属しません。後からマテリアルも欲しくなった人向け)"
   }
 }

@@ -7,12 +7,22 @@
         "date": "2026-09-03",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "キプフェル対応": [
       {
         "date": "2026-09-03",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 200,
         "is_sale": false
       }
     ],
@@ -21,8 +31,17 @@
         "date": "2026-09-03",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14675794": "フルパック",
+    "14675829": "まめひなた対応",
+    "14675830": "キプフェル対応"
+  }
 }
