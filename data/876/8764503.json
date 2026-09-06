@@ -29,6 +29,11 @@
         "date": "2026-09-03",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-06",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ver0.2.0": [
@@ -41,6 +46,13 @@
     "ver0.3.0": [
       {
         "date": "2026-09-03",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "ver0.5.0": [
+      {
+        "date": "2026-09-06",
         "price": 0,
         "is_sale": false
       }
