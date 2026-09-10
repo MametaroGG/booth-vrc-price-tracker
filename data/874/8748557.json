@@ -36,11 +36,24 @@
         "date": "2026-09-06",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-10",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "メイクのみ （PSD、PNG）": [
+      {
+        "date": "2026-09-10",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14609526": "default",
-    "14639135": "有料版"
+    "14639135": "有料版",
+    "14739932": "メイクのみ （PSD、PNG）"
   }
 }

@@ -152,10 +152,23 @@
         "date": "2026-09-06",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-10",
+        "price": 150,
+        "is_sale": true
+      }
+    ],
+    "ルティ対応": [
+      {
+        "date": "2026-09-10",
+        "price": 150,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "14380587": "default"
+    "14380587": "default",
+    "14733510": "ルティ対応"
   }
 }

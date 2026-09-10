@@ -7,6 +7,11 @@
         "date": "2026-09-06",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-10",
+        "price": 350,
+        "is_sale": true
       }
     ],
     "【SALE】✧︎makeup only": [
@@ -14,6 +19,11 @@
         "date": "2026-09-06",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-10",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "【3日間限定無料】 ✧︎eye texture only": [
@@ -22,10 +32,18 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "【SALE】 ✧︎eye texture only": [
+      {
+        "date": "2026-09-10",
+        "price": 100,
+        "is_sale": true
+      }
     ]
   },
   "variation_keys": {
     "14545362": "【SALE】 ✧︎fullpack",
-    "14694832": "【SALE】✧︎makeup only"
+    "14694832": "【SALE】✧︎makeup only",
+    "14694845": "【SALE】 ✧︎eye texture only"
   }
 }
