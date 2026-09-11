@@ -702,10 +702,23 @@
         "date": "2026-09-08",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-11",
+        "price": 880,
+        "is_sale": false
+      }
+    ],
+    "だるついん単体": [
+      {
+        "date": "2026-09-11",
+        "price": 750,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "11256601": "default"
+    "11256601": "default",
+    "14743796": "だるついん単体"
   }
 }
