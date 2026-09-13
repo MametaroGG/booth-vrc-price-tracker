@@ -13,7 +13,40 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "NoGimmick版 スイーツドライバー": [
+      {
+        "date": "2026-09-14",
+        "price": 100,
+        "is_sale": true
+      }
+    ],
+    "ヨシミのヘイロー": [
+      {
+        "date": "2026-09-14",
+        "price": 100,
+        "is_sale": true
+      }
+    ],
+    "Gimmick＆MA対応版　スイーツドライバー": [
+      {
+        "date": "2026-09-14",
+        "price": 400,
+        "is_sale": true
+      }
+    ],
+    "フルセット": [
+      {
+        "date": "2026-09-14",
+        "price": 500,
+        "is_sale": true
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14711702": "NoGimmick版 スイーツドライバー",
+    "14760318": "ヨシミのヘイロー",
+    "14760319": "Gimmick＆MA対応版　スイーツドライバー",
+    "14760320": "フルセット"
+  }
 }

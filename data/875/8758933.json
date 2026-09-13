@@ -27,6 +27,11 @@
         "date": "2026-09-10",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Make up only": [
@@ -54,11 +59,40 @@
         "date": "2026-09-10",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Mayo (makeup+blendshape)": [
+      {
+        "date": "2026-09-14",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Mayo Make up only": [
+      {
+        "date": "2026-09-14",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "ALL": [
+      {
+        "date": "2026-09-14",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14626101": "FULL (make up+blendshape)",
-    "14627712": "Make up only"
+    "14627712": "Make up only",
+    "14749962": "Mayo (makeup+blendshape)",
+    "14749963": "Mayo Make up only",
+    "14749964": "ALL"
   }
 }

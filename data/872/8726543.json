@@ -17,6 +17,11 @@
         "date": "2026-09-06",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "《セットB》": [
@@ -34,6 +39,11 @@
         "date": "2026-09-06",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "《セットC》": [
@@ -49,6 +59,11 @@
       },
       {
         "date": "2026-09-06",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
         "price": 100,
         "is_sale": false
       }
@@ -69,11 +84,57 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "《ALL》": [
+      {
+        "date": "2026-09-14",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "SiuSiu対応《FULL SET》": [
+      {
+        "date": "2026-09-14",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "SiuSiu対応《SINGLE SET》": [
+      {
+        "date": "2026-09-14",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "SiuSiu対応《ODD EYE SET》": [
+      {
+        "date": "2026-09-14",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "メロパン対応《無料お試しセット》": [
+      {
+        "date": "2026-09-14",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "SiuSiu対応《無料お試しセット》": [
+      {
+        "date": "2026-09-14",
+        "price": 0,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
     "14572344": "《セットA》",
     "14601598": "《セットB》",
-    "14601599": "《セットC》"
+    "14601599": "《セットC》",
+    "14740918": "《ALL》",
+    "14740919": "SiuSiu対応《FULL SET》",
+    "14740920": "SiuSiu対応《SINGLE SET》",
+    "14740921": "SiuSiu対応《ODD EYE SET》"
   }
 }

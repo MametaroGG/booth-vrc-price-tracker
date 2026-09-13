@@ -29,6 +29,11 @@
         "date": "2026-09-10",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Free": [
@@ -46,10 +51,23 @@
         "date": "2026-09-10",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "応援(Full Packと内容変わりません)": [
+      {
+        "date": "2026-09-14",
+        "price": 1250,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14635374": "Full Pack(1,000円→500円)"
+    "14635374": "Full Pack(1,000円→500円)",
+    "14746581": "応援(Full Packと内容変わりません)"
   }
 }

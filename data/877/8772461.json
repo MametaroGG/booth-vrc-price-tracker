@@ -24,6 +24,11 @@
         "date": "2026-09-10",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "ルミナ - Lumina": [
@@ -39,6 +44,11 @@
       },
       {
         "date": "2026-09-10",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
         "price": 600,
         "is_sale": false
       }
@@ -58,6 +68,11 @@
         "date": "2026-09-10",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "ヴェルニカ - Velnica": [
@@ -73,6 +88,11 @@
       },
       {
         "date": "2026-09-10",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
         "price": 600,
         "is_sale": false
       }
@@ -92,6 +112,18 @@
         "date": "2026-09-10",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "森羅 - Shinra": [
+      {
+        "date": "2026-09-14",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
@@ -101,6 +133,7 @@
     "14691982": "ヴェルニカ - Velnica",
     "14696351": "Fullpack",
     "14696352": "ルミナ - Lumina",
-    "14696353": "ミルティナ - Milltina"
+    "14696353": "ミルティナ - Milltina",
+    "14764838": "森羅 - Shinra"
   }
 }

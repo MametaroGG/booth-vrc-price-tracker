@@ -24,10 +24,23 @@
         "date": "2026-09-10",
         "price": 200,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-14",
+        "price": 450,
+        "is_sale": false
+      }
+    ],
+    "通常版": [
+      {
+        "date": "2026-09-14",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14698421": "通常版",
     "14698425": "支援版【PSD付き】"
   }
 }

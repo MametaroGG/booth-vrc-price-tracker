@@ -102,6 +102,11 @@
         "date": "2026-09-10",
         "price": 720,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 780,
+        "is_sale": false
       }
     ],
     "kaguya": [
@@ -182,6 +187,11 @@
       },
       {
         "date": "2026-09-10",
+        "price": 360,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
         "price": 360,
         "is_sale": false
       }
@@ -266,6 +276,11 @@
         "date": "2026-09-10",
         "price": 360,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 360,
+        "is_sale": false
       }
     ],
     "shinano": [
@@ -348,6 +363,18 @@
         "date": "2026-09-10",
         "price": 360,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 360,
+        "is_sale": false
+      }
+    ],
+    "黑见": [
+      {
+        "date": "2026-09-14",
+        "price": 360,
+        "is_sale": false
       }
     ]
   },
@@ -355,6 +382,7 @@
     "14499910": "default",
     "14533674": "kaguya",
     "14533675": "rurune",
-    "14533676": "shinano"
+    "14533676": "shinano",
+    "14743856": "黑见"
   }
 }

@@ -14,6 +14,11 @@
         "date": "2026-09-10",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "支援版": [
@@ -22,7 +27,16 @@
         "price": 100,
         "is_sale": false
       }
+    ],
+    "明日のごはん代": [
+      {
+        "date": "2026-09-14",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14746929": "明日のごはん代"
+  }
 }

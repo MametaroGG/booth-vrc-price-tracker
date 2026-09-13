@@ -7,6 +7,11 @@
         "date": "2026-09-10",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-14",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "PCVR版 V001": [
@@ -14,8 +19,16 @@
         "date": "2026-09-10",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-14",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14726746": "デスクトップ版 V63",
+    "14732676": "PCVR版 V001"
+  }
 }

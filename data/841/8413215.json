@@ -14,10 +14,23 @@
         "date": "2026-09-10",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "通常": [
+      {
+        "date": "2026-09-14",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14048739": "通常",
     "14728072": "おやつ代(PSDが同封されます)"
   }
 }

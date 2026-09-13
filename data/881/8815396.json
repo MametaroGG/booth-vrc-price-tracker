@@ -7,6 +7,11 @@
         "date": "2026-09-10",
         "price": 480,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 480,
+        "is_sale": true
       }
     ],
     "Kuroki対応": [
@@ -21,8 +26,72 @@
         "date": "2026-09-10",
         "price": 1480,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 1480,
+        "is_sale": true
+      }
+    ],
+    "クラエナ対応": [
+      {
+        "date": "2026-09-14",
+        "price": 480,
+        "is_sale": true
+      }
+    ],
+    "MARUBODY対応": [
+      {
+        "date": "2026-09-14",
+        "price": 480,
+        "is_sale": true
+      }
+    ],
+    "まめふれんず対応": [
+      {
+        "date": "2026-09-14",
+        "price": 480,
+        "is_sale": true
+      }
+    ],
+    "EWBody(EasternWind)対応": [
+      {
+        "date": "2026-09-14",
+        "price": 480,
+        "is_sale": true
+      }
+    ],
+    "Mayo対応": [
+      {
+        "date": "2026-09-14",
+        "price": 480,
+        "is_sale": true
+      }
+    ],
+    "Sio対応": [
+      {
+        "date": "2026-09-14",
+        "price": 480,
+        "is_sale": true
+      }
+    ],
+    "ミルティナ対応": [
+      {
+        "date": "2026-09-14",
+        "price": 480,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14723925": "bodyset2対応",
+    "14724018": "フルパック(今後対応のものも含む)",
+    "14742250": "クラエナ対応",
+    "14743749": "MARUBODY対応",
+    "14747488": "まめふれんず対応",
+    "14747872": "EWBody(EasternWind)対応",
+    "14748983": "Mayo対応",
+    "14753202": "Sio対応",
+    "14753466": "ミルティナ対応"
+  }
 }

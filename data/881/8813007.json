@@ -7,10 +7,23 @@
         "date": "2026-09-10",
         "price": 180,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-14",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "支援版（中身は同一）": [
+      {
+        "date": "2026-09-14",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14720064": "default"
+    "14720064": "default",
+    "14743522": "支援版（中身は同一）"
   }
 }
