@@ -967,9 +967,24 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "体験版 旧版": [
+      {
+        "date": "2026-09-13",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "支援 OpenVR版": [
+      {
+        "date": "2026-09-13",
+        "price": 1000,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "12807715": "支援"
+    "12807715": "支援",
+    "14134098": "支援 OpenVR版"
   }
 }
