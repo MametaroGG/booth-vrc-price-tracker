@@ -724,6 +724,11 @@
         "date": "2026-09-11",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-15",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Maon用": [
@@ -1386,11 +1391,24 @@
         "date": "2026-09-11",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-15",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "こごみ用": [
+      {
+        "date": "2026-09-15",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "12014342": "Nemo用",
-    "13280197": "Maon用"
+    "13280197": "Maon用",
+    "14755895": "こごみ用"
   }
 }
