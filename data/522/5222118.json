@@ -683,7 +683,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "基本無料": [
+      {
+        "date": "2026-09-16",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "電気代（中身は同じ）": [
+      {
+        "date": "2026-09-16",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14778233": "電気代（中身は同じ）"
+  }
 }
