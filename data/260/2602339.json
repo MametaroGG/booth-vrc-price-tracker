@@ -668,9 +668,24 @@
         "price": 300,
         "is_sale": false
       }
+    ],
+    "基本無料": [
+      {
+        "date": "2026-09-18",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "エサ代": [
+      {
+        "date": "2026-09-18",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "4268686": "default"
+    "4268686": "default",
+    "14778207": "エサ代"
   }
 }
