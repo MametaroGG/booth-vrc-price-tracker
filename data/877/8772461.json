@@ -29,6 +29,11 @@
         "date": "2026-09-14",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-18",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "ルミナ - Lumina": [
@@ -51,6 +56,11 @@
         "date": "2026-09-14",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "ミルティナ - Milltina": [
@@ -73,6 +83,11 @@
         "date": "2026-09-14",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "ヴェルニカ - Velnica": [
@@ -95,6 +110,11 @@
         "date": "2026-09-14",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "しお - Sio": [
@@ -117,12 +137,36 @@
         "date": "2026-09-14",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "森羅 - Shinra": [
       {
         "date": "2026-09-14",
         "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 400,
+        "is_sale": true
+      }
+    ],
+    "悠莉 - Yuri": [
+      {
+        "date": "2026-09-18",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "斑霞 - Hanka": [
+      {
+        "date": "2026-09-18",
+        "price": 400,
         "is_sale": false
       }
     ]
@@ -134,6 +178,8 @@
     "14696351": "Fullpack",
     "14696352": "ルミナ - Lumina",
     "14696353": "ミルティナ - Milltina",
-    "14764838": "森羅 - Shinra"
+    "14764838": "森羅 - Shinra",
+    "14770767": "悠莉 - Yuri",
+    "14779068": "斑霞 - Hanka"
   }
 }

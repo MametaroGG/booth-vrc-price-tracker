@@ -13,7 +13,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "お試し用": [
+      {
+        "date": "2026-09-18",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "投げ銭": [
+      {
+        "date": "2026-09-18",
+        "price": 200,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14817172": "投げ銭"
+  }
 }

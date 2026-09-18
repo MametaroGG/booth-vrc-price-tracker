@@ -12,6 +12,11 @@
         "date": "2026-09-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "しお - Sio": [
@@ -23,6 +28,11 @@
       {
         "date": "2026-09-14",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 300,
         "is_sale": false
       }
     ],
@@ -36,6 +46,11 @@
         "date": "2026-09-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ミルティナ - Milltina": [
@@ -47,6 +62,11 @@
       {
         "date": "2026-09-14",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 300,
         "is_sale": false
       }
     ],
@@ -60,6 +80,11 @@
         "date": "2026-09-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "森羅 - Shinra": [
@@ -72,8 +97,20 @@
         "date": "2026-09-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14726866": "フルパック - Full pack",
+    "14727246": "しお - Sio",
+    "14727247": "Lapwing",
+    "14727248": "ミルティナ - Milltina",
+    "14727249": "マヌカ - Manuka",
+    "14727250": "森羅 - Shinra"
+  }
 }

@@ -72,10 +72,23 @@
         "date": "2026-09-14",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "ラーメン代": [
+      {
+        "date": "2026-09-18",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14563372": "default"
+    "14563372": "default",
+    "14782186": "ラーメン代"
   }
 }

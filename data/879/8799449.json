@@ -17,6 +17,11 @@
         "date": "2026-09-14",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Marycia": [
@@ -34,6 +39,11 @@
         "date": "2026-09-14",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "Shinano": [
@@ -51,6 +61,11 @@
         "date": "2026-09-14",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "Mafuyu / Cian": [
@@ -68,6 +83,11 @@
         "date": "2026-09-14",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "Ramune": [
@@ -85,8 +105,19 @@
         "date": "2026-09-14",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 600,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14698082": "Marycia",
+    "14698094": "Shinano",
+    "14698095": "Mafuyu / Cian",
+    "14698096": "Ramune",
+    "14716439": "FullPack"
+  }
 }
