@@ -7,11 +7,21 @@
         "date": "2026-09-14",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-18",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "マヌカ -Manuka-": [
       {
         "date": "2026-09-14",
+        "price": 900,
+        "is_sale": true
+      },
+      {
+        "date": "2026-09-18",
         "price": 900,
         "is_sale": true
       }
@@ -21,6 +31,11 @@
         "date": "2026-09-14",
         "price": 900,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-18",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "Fullset": [
@@ -28,12 +43,41 @@
         "date": "2026-09-14",
         "price": 1700,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1700,
+        "is_sale": true
+      }
+    ],
+    "ルルネ -Rurune-": [
+      {
+        "date": "2026-09-18",
+        "price": 900,
+        "is_sale": true
+      }
+    ],
+    "リナシータ -Rinasciita-": [
+      {
+        "date": "2026-09-18",
+        "price": 900,
+        "is_sale": true
+      }
+    ],
+    "しろいの素体 -SiroinoSotai-": [
+      {
+        "date": "2026-09-18",
+        "price": 900,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
     "14748359": "マヌカ -Manuka-",
     "14748467": "キプフェル -Kipfel-",
-    "14750766": "Fullset"
+    "14750766": "Fullset",
+    "14772062": "ルルネ -Rurune-",
+    "14772149": "リナシータ -Rinasciita-",
+    "14782667": "しろいの素体 -SiroinoSotai-"
   }
 }

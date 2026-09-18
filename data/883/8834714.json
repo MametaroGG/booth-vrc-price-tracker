@@ -14,11 +14,21 @@
         "date": "2026-09-14",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "make＆bodytextureのみ": [
       {
         "date": "2026-09-14",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
         "price": 100,
         "is_sale": false
       }
@@ -28,12 +38,25 @@
         "date": "2026-09-14",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Eye textureのみ": [
+      {
+        "date": "2026-09-18",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14757001": "FullSet（おまけBlendshape付き）",
     "14757002": "make＆bodytextureのみ",
-    "14757003": "おやつ代（FullSet＋おまけ版と同じ内容）"
+    "14757003": "おやつ代（FullSet＋おまけ版と同じ内容）",
+    "14782713": "Eye textureのみ"
   }
 }

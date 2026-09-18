@@ -7,6 +7,11 @@
         "date": "2026-09-14",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "おやつ代": [
@@ -14,8 +19,16 @@
         "date": "2026-09-14",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14747795": "百合　タトゥーテクスチャ",
+    "14747805": "おやつ代"
+  }
 }

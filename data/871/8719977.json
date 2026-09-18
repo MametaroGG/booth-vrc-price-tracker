@@ -7,11 +7,21 @@
         "date": "2026-09-14",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "-RenNo- 蓮乃": [
       {
         "date": "2026-09-14",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
         "price": 800,
         "is_sale": false
       }
@@ -21,6 +31,11 @@
         "date": "2026-09-14",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "-Shinano- しなの": [
@@ -28,8 +43,18 @@
         "date": "2026-09-14",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14562445": "-Full Pack- フルパック",
+    "14562590": "-RenNo- 蓮乃",
+    "14562591": "-Shinano- しなの",
+    "14562592": "-Lapwing- ラップウィング"
+  }
 }

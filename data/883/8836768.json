@@ -7,10 +7,23 @@
         "date": "2026-09-14",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "カフェラテを差し入れ": [
+      {
+        "date": "2026-09-18",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14760104": "default"
+    "14760104": "default",
+    "14814528": "カフェラテを差し入れ"
   }
 }

@@ -7,6 +7,11 @@
         "date": "2026-09-14",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "チームライセンス": [
@@ -14,8 +19,16 @@
         "date": "2026-09-14",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-18",
+        "price": 3000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14333117": "個人ライセンス",
+    "14333142": "チームライセンス"
+  }
 }
