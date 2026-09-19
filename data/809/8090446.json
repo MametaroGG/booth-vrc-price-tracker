@@ -492,6 +492,11 @@
         "date": "2026-09-14",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-19",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "rurune仮面": [
@@ -982,6 +987,11 @@
       },
       {
         "date": "2026-09-14",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-19",
         "price": 200,
         "is_sale": false
       }
@@ -1476,12 +1486,25 @@
         "date": "2026-09-14",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-19",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "Binah仮面": [
+      {
+        "date": "2026-09-19",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13545340": "rurune仮面",
     "13545549": "mao仮面",
-    "13545550": "mao,rurune仮面セット"
+    "13545550": "mao,rurune仮面セット",
+    "14816757": "Binah仮面"
   }
 }
