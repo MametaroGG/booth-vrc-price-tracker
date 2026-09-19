@@ -722,10 +722,23 @@
         "date": "2026-09-15",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-19",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "投げ銭用": [
+      {
+        "date": "2026-09-19",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "11640119": "default"
+    "11640119": "default",
+    "14817223": "投げ銭用"
   }
 }
