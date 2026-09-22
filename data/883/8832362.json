@@ -24,10 +24,23 @@
         "date": "2026-09-18",
         "price": 100,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-22",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "eye only": [
+      {
+        "date": "2026-09-22",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14753164": "eye only",
     "14753195": "Full pack（eye＆make up＆shapekey)"
   }
 }

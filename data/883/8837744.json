@@ -7,6 +7,11 @@
         "date": "2026-09-18",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-22",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Donation": [
@@ -14,8 +19,16 @@
         "date": "2026-09-18",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-22",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14761547": "Normal",
+    "14761557": "Donation"
+  }
 }

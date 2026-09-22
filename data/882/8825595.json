@@ -7,11 +7,21 @@
         "date": "2026-09-18",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-22",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "シプ -Siipu-": [
       {
         "date": "2026-09-18",
+        "price": 300,
+        "is_sale": true
+      },
+      {
+        "date": "2026-09-22",
         "price": 300,
         "is_sale": true
       }
@@ -21,6 +31,11 @@
         "date": "2026-09-18",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-22",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "くうた -Kuuta-": [
@@ -28,8 +43,18 @@
         "date": "2026-09-18",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-09-22",
+        "price": 300,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14741794": "【特典付き】フルパック -Fullpack-",
+    "14746365": "シプ -Siipu-",
+    "14746366": "アルエ -Alué-",
+    "14746367": "くうた -Kuuta-"
+  }
 }

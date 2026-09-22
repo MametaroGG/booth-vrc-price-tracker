@@ -7,10 +7,39 @@
         "date": "2026-09-18",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-22",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "lapwing支援版": [
+      {
+        "date": "2026-09-22",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "MilltinaFC通常版": [
+      {
+        "date": "2026-09-22",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "MilltinaFC支援版": [
+      {
+        "date": "2026-09-22",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14788302": "default"
+    "14788302": "default",
+    "14819435": "lapwing支援版",
+    "14827019": "MilltinaFC通常版",
+    "14827020": "MilltinaFC支援版"
   }
 }

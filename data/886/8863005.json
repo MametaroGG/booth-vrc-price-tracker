@@ -7,10 +7,23 @@
         "date": "2026-09-18",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-22",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "SiuSiu": [
+      {
+        "date": "2026-09-22",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14811475": "default"
+    "14811475": "default",
+    "14828673": "SiuSiu"
   }
 }

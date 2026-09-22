@@ -7,11 +7,21 @@
         "date": "2026-09-18",
         "price": 550,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-22",
+        "price": 550,
+        "is_sale": false
       }
     ],
     "Eye": [
       {
         "date": "2026-09-18",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-22",
         "price": 200,
         "is_sale": false
       }
@@ -21,6 +31,11 @@
         "date": "2026-09-18",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-22",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Tatoo": [
@@ -28,11 +43,18 @@
         "date": "2026-09-18",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-22",
+        "price": 150,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14749011": "Fullset【CLIP/PSD付】＋blendshape",
-    "14779781": "Eye"
+    "14779781": "Eye",
+    "14779782": "Make",
+    "14779783": "Tatoo"
   }
 }

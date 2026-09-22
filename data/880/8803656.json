@@ -22,6 +22,11 @@
         "date": "2026-09-18",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-22",
+        "price": 1099,
+        "is_sale": false
       }
     ],
     "Noir Gothic Streatwear + Support Creator": [
@@ -44,11 +49,55 @@
         "date": "2026-09-18",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-22",
+        "price": 1399,
+        "is_sale": true
+      }
+    ],
+    "目のサンプル Eye Sample": [
+      {
+        "date": "2026-09-22",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Bottoms | ボトムス": [
+      {
+        "date": "2026-09-22",
+        "price": 449,
+        "is_sale": false
+      }
+    ],
+    "Shoes | 靴": [
+      {
+        "date": "2026-09-22",
+        "price": 299,
+        "is_sale": false
+      }
+    ],
+    "Socks | ソックス": [
+      {
+        "date": "2026-09-22",
+        "price": 299,
+        "is_sale": false
+      }
+    ],
+    "Tops | トップス": [
+      {
+        "date": "2026-09-22",
+        "price": 449,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14705178": "Noir Gothic Streatwear",
-    "14705231": "Noir Gothic Streatwear + Support Creator"
+    "14705231": "Noir Gothic Streatwear + Support Creator",
+    "14834282": "Bottoms | ボトムス",
+    "14834283": "Shoes | 靴",
+    "14834284": "Socks | ソックス",
+    "14834285": "Tops | トップス"
   }
 }
