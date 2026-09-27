@@ -7,6 +7,11 @@
         "date": "2026-09-22",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "【NORMALパック】（オッドアイなし）": [
@@ -14,8 +19,16 @@
         "date": "2026-09-22",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14819846": "【FULLパック】（オッドアイ完全対応）",
+    "14820227": "【NORMALパック】（オッドアイなし）"
+  }
 }

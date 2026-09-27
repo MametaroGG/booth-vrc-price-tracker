@@ -7,6 +7,11 @@
         "date": "2026-09-22",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 3500,
+        "is_sale": true
       }
     ],
     "Hanka": [
@@ -14,6 +19,11 @@
         "date": "2026-09-22",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Baku": [
@@ -21,6 +31,11 @@
         "date": "2026-09-22",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Komano": [
@@ -28,6 +43,11 @@
         "date": "2026-09-22",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Kanata": [
@@ -35,6 +55,11 @@
         "date": "2026-09-22",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Nakiya": [
@@ -42,6 +67,11 @@
         "date": "2026-09-22",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "PlusHead(Alue，Kalne)": [
@@ -49,6 +79,11 @@
         "date": "2026-09-22",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "Kuuta": [
@@ -56,6 +91,11 @@
         "date": "2026-09-22",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "NeoBody(Ruty)": [
@@ -63,6 +103,11 @@
         "date": "2026-09-22",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1200,
+        "is_sale": true
       }
     ],
     "MameFriends(Kipfel)": [
@@ -70,8 +115,24 @@
         "date": "2026-09-22",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 1200,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14687623": "Full Pack(おまけ付き)",
+    "14750719": "Hanka",
+    "14750720": "Baku",
+    "14750721": "Komano",
+    "14750722": "Kanata",
+    "14750723": "Nakiya",
+    "14750724": "PlusHead(Alue，Kalne)",
+    "14750725": "Kuuta",
+    "14750726": "NeoBody(Ruty)",
+    "14750727": "MameFriends(Kipfel)"
+  }
 }

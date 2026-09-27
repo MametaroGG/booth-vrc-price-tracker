@@ -7,6 +7,11 @@
         "date": "2026-09-22",
         "price": 690,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 690,
+        "is_sale": true
       }
     ],
     "Full Package + Support🪷": [
@@ -14,8 +19,16 @@
         "date": "2026-09-22",
         "price": 790,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 790,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14782709": "Full Package【14Avatars】",
+    "14837259": "Full Package + Support🪷"
+  }
 }

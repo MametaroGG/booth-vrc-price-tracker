@@ -1,0 +1,40 @@
+{
+  "id": "8888235",
+  "name": "07 - lapwing // eye+makeup",
+  "variations": {
+    "eye+makeup": [
+      {
+        "date": "2026-09-28",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "eye": [
+      {
+        "date": "2026-09-28",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "makeup": [
+      {
+        "date": "2026-09-28",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "donation": [
+      {
+        "date": "2026-09-28",
+        "price": 1000,
+        "is_sale": false
+      }
+    ]
+  },
+  "variation_keys": {
+    "14853150": "eye+makeup",
+    "14853427": "eye",
+    "14853428": "makeup",
+    "14853429": "donation"
+  }
+}

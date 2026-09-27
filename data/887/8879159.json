@@ -7,6 +7,11 @@
         "date": "2026-09-22",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "mao": [
@@ -14,8 +19,24 @@
         "date": "2026-09-22",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "フルセット": [
+      {
+        "date": "2026-09-28",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14837922": "フルセット",
+    "14838356": "mao",
+    "14847240": "rurune"
+  }
 }
