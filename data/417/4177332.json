@@ -1404,10 +1404,31 @@
         "date": "2026-09-22",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-27",
+        "price": 9999,
+        "is_sale": false
+      }
+    ],
+    "v3": [
+      {
+        "date": "2026-09-27",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "v1 (サポート終了/End of life)": [
+      {
+        "date": "2026-09-27",
+        "price": 9999,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "7039602": "Plus版"
+    "6989713": "v1 (サポート終了/End of life)",
+    "7039602": "Plus版",
+    "14855719": "v3"
   }
 }
