@@ -142,6 +142,11 @@
         "date": "2026-09-22",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "Minase": [
@@ -284,6 +289,11 @@
         "date": "2026-09-22",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Shinra": [
@@ -426,6 +436,11 @@
         "date": "2026-09-22",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Hanka": [
@@ -568,6 +583,11 @@
         "date": "2026-09-22",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Komano": [
@@ -710,6 +730,11 @@
         "date": "2026-09-22",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "Linne": [
@@ -852,6 +877,18 @@
         "date": "2026-09-22",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-28",
+        "price": 200,
+        "is_sale": true
+      }
+    ],
+    "Yuri": [
+      {
+        "date": "2026-09-28",
+        "price": 200,
+        "is_sale": true
       }
     ]
   },
@@ -861,6 +898,7 @@
     "14437800": "Shinra",
     "14437801": "Hanka",
     "14437802": "Komano",
-    "14437803": "Linne"
+    "14437803": "Linne",
+    "14880444": "Yuri"
   }
 }
