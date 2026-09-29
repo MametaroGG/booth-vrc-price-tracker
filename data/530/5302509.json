@@ -699,6 +699,11 @@
         "date": "2026-09-26",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Tears For Selestia": [
@@ -1006,10 +1011,31 @@
         "date": "2026-09-26",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Tears For Chocolat": [
+      {
+        "date": "2026-09-29",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Tears For Misaki": [
+      {
+        "date": "2026-09-29",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13957939": "Tears For Selestia"
+    "13957939": "Tears For Selestia",
+    "14877107": "Tears For Chocolat",
+    "14877108": "Tears For Misaki"
   }
 }

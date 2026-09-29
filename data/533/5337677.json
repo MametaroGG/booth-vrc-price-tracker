@@ -377,6 +377,11 @@
         "date": "2026-05-06",
         "price": 2200,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 2200,
+        "is_sale": false
       }
     ],
     "マヌカ/Manuka": [
@@ -752,6 +757,11 @@
       },
       {
         "date": "2026-05-06",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
         "price": 1100,
         "is_sale": false
       }
@@ -1131,6 +1141,11 @@
         "date": "2026-05-06",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "森羅/Shinra": [
@@ -1506,6 +1521,11 @@
       },
       {
         "date": "2026-05-06",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
         "price": 1100,
         "is_sale": false
       }
@@ -1885,6 +1905,11 @@
         "date": "2026-05-06",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "セレスティア/Selestia": [
@@ -2262,7 +2287,20 @@
         "date": "2026-05-06",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 1100,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9009938": "Full-Set",
+    "9009962": "マヌカ/Manuka",
+    "9009963": "萌/Moe",
+    "9009964": "森羅/Shinra",
+    "9009965": "桔梗/Kikyo",
+    "9009966": "セレスティア/Selestia"
   }
 }
