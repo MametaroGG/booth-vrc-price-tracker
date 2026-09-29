@@ -714,6 +714,11 @@
         "date": "2026-09-25",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Eclipse For Selestia": [
@@ -1411,10 +1416,39 @@
         "date": "2026-09-25",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Eclipse For Chocolat": [
+      {
+        "date": "2026-09-29",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Eclipse For Misaki": [
+      {
+        "date": "2026-09-29",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Eclipse For Ramune": [
+      {
+        "date": "2026-09-29",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13228303": "Eclipse For Selestia"
+    "13228303": "Eclipse For Selestia",
+    "14877084": "Eclipse For Chocolat",
+    "14877085": "Eclipse For Misaki",
+    "14877086": "Eclipse For Ramune"
   }
 }

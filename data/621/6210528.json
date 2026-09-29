@@ -714,6 +714,11 @@
         "date": "2026-09-25",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Feral For Selestia": [
@@ -1026,10 +1031,31 @@
         "date": "2026-09-25",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Feral For Chocolat": [
+      {
+        "date": "2026-09-29",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Feral For Misaki": [
+      {
+        "date": "2026-09-29",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13957944": "Feral For Selestia"
+    "13957944": "Feral For Selestia",
+    "14877095": "Feral For Chocolat",
+    "14877096": "Feral For Misaki"
   }
 }

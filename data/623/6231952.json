@@ -714,6 +714,11 @@
         "date": "2026-09-25",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Wicked For Selestia": [
@@ -1026,10 +1031,31 @@
         "date": "2026-09-25",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-09-29",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Wicked for Chocolat": [
+      {
+        "date": "2026-09-29",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Wicked for Misaki": [
+      {
+        "date": "2026-09-29",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13957971": "Wicked For Selestia"
+    "13957971": "Wicked For Selestia",
+    "14877055": "Wicked for Chocolat",
+    "14877056": "Wicked for Misaki"
   }
 }
