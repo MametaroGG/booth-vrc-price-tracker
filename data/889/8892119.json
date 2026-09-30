@@ -8,7 +8,24 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "通常版 / Standard": [
+      {
+        "date": "2026-10-01",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "支援版 / Supporter｜内容同一": [
+      {
+        "date": "2026-10-01",
+        "price": 400,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14859465": "通常版 / Standard",
+    "14903313": "支援版 / Supporter｜内容同一"
+  }
 }

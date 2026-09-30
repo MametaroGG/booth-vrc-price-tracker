@@ -7,6 +7,11 @@
         "date": "2026-09-28",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "【期間限定無料】まずはこちら！Pro版！": [
@@ -21,10 +26,23 @@
         "date": "2026-09-28",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-01",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "Pro版": [
+      {
+        "date": "2026-10-01",
+        "price": 450,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14882923": "Pro版",
     "14882924": "開発支援版！【Pro版と内容は同じです。】"
   }
 }

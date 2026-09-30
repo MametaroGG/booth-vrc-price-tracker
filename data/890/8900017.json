@@ -7,11 +7,21 @@
         "date": "2026-09-28",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "【A-set】Light": [
       {
         "date": "2026-09-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
         "price": 500,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-09-28",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "【C-set】Dark": [
       {
         "date": "2026-09-28",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
         "price": 500,
         "is_sale": false
       }
@@ -35,8 +55,19 @@
         "date": "2026-09-28",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14873898": "【Full Pack】おまけつき",
+    "14873943": "【A-set】Light",
+    "14873944": "【B-set】Deep",
+    "14873945": "【C-set】Dark",
+    "14873946": "【Support】Full Packと中身は同じ"
+  }
 }
