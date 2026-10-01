@@ -737,10 +737,31 @@
         "date": "2026-09-28",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 2500,
+        "is_sale": false
+      }
+    ],
+    "マリシア対応 - Marycia": [
+      {
+        "date": "2026-10-01",
+        "price": 1300,
+        "is_sale": false
+      }
+    ],
+    "しなの対応 - Shinano": [
+      {
+        "date": "2026-10-01",
+        "price": 1300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13131878": "default"
+    "13131878": "default",
+    "14912824": "マリシア対応 - Marycia",
+    "14912825": "しなの対応 - Shinano"
   }
 }
