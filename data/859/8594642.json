@@ -197,6 +197,11 @@
         "date": "2026-09-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "KIPFEL": [
@@ -364,11 +369,32 @@
         "date": "2026-09-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "イチゴ": [
+      {
+        "date": "2026-10-01",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "MITSU": [
+      {
+        "date": "2026-10-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14343399": "default",
-    "14398765": "KIPFEL"
+    "14398765": "KIPFEL",
+    "14890620": "イチゴ",
+    "14898959": "MITSU"
   }
 }

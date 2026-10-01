@@ -42,6 +42,11 @@
         "date": "2026-09-22",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "Café.MaG-Fullpack+UpdateProgram": [
@@ -82,6 +87,11 @@
       },
       {
         "date": "2026-09-22",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
         "price": 500,
         "is_sale": false
       }
@@ -126,11 +136,24 @@
         "date": "2026-09-22",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "Café.MaG.Vol1-Fullpack": [
+      {
+        "date": "2026-10-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14621091": "[♡Donation♡] ミルクティーを奢る",
-    "14629555": "Café.MaG-Fullpack+UpdateProgram"
+    "14629555": "Café.MaG-Fullpack+UpdateProgram",
+    "14900561": "Café.MaG.Vol1-Fullpack"
   }
 }

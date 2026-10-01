@@ -44,6 +44,11 @@
         "date": "2026-09-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "開発費版": [
@@ -61,8 +66,15 @@
         "date": "2026-09-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14784029": "開発費版"
+  }
 }

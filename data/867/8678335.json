@@ -62,6 +62,11 @@
         "date": "2026-09-28",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "個人利用版/Personal use version": [
@@ -122,6 +127,11 @@
       },
       {
         "date": "2026-09-28",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
         "price": 1200,
         "is_sale": false
       }
@@ -186,11 +196,24 @@
         "date": "2026-09-28",
         "price": 2980,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-01",
+        "price": 2980,
+        "is_sale": false
+      }
+    ],
+    "1color　個人利用版/Personal use version": [
+      {
+        "date": "2026-10-01",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14491527": "個人利用版/Personal use version",
-    "14491528": "商用利用版/Commercial use version-中身同じ"
+    "14491528": "商用利用版/Commercial use version-中身同じ",
+    "14896599": "1color　個人利用版/Personal use version"
   }
 }
