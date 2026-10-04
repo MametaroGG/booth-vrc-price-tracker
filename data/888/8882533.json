@@ -25,9 +25,17 @@
         "price": 100,
         "is_sale": false
       }
+    ],
+    "default": [
+      {
+        "date": "2026-10-04",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
+    "14843751": "default",
     "14843994": "制作応援（内容は同じです）"
   }
 }
