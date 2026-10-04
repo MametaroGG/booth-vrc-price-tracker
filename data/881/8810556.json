@@ -17,10 +17,39 @@
         "date": "2026-10-01",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-05",
+        "price": 300,
+        "is_sale": true
+      }
+    ],
+    "Full Set": [
+      {
+        "date": "2026-10-05",
+        "price": 300,
+        "is_sale": true
+      }
+    ],
+    "Lapwing": [
+      {
+        "date": "2026-10-05",
+        "price": 300,
+        "is_sale": true
+      }
+    ],
+    "マリシア": [
+      {
+        "date": "2026-10-05",
+        "price": 300,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "14893863": "default"
+    "14893863": "default",
+    "14919057": "Lapwing",
+    "14919731": "Full Set",
+    "14919732": "マリシア"
   }
 }

@@ -22,10 +22,31 @@
         "date": "2026-10-01",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Personal Commercial License": [
+      {
+        "date": "2026-10-05",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "Corporate Commercial License": [
+      {
+        "date": "2026-10-05",
+        "price": 10000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14779410": "default"
+    "14779410": "default",
+    "14917175": "Personal Commercial License",
+    "14917176": "Corporate Commercial License"
   }
 }

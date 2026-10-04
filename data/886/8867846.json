@@ -17,6 +17,11 @@
         "date": "2026-10-01",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "【NORMALパック】（オッドアイなし）": [
@@ -34,11 +39,24 @@
         "date": "2026-10-01",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 100,
+        "is_sale": true
+      }
+    ],
+    "支援版(【FULLパック】同じ)Support Edition (Same content)": [
+      {
+        "date": "2026-10-05",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14819846": "【FULLパック】（オッドアイ完全対応）",
-    "14820227": "【NORMALパック】（オッドアイなし）"
+    "14820227": "【NORMALパック】（オッドアイなし）",
+    "14915987": "支援版(【FULLパック】同じ)Support Edition (Same content)"
   }
 }

@@ -12,6 +12,11 @@
         "date": "2026-10-01",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-05",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Motion/モーションデータ(vrma)": [
@@ -24,10 +29,24 @@
         "date": "2026-10-01",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-05",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Pose & Motion/ポーズ・モーションセット": [
+      {
+        "date": "2026-10-05",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14881234": "Motion/モーションデータ(vrma)"
+    "14857901": "Pose/ポーズデータ(json/anim/vrma)",
+    "14881234": "Motion/モーションデータ(vrma)",
+    "14918464": "Pose & Motion/ポーズ・モーションセット"
   }
 }

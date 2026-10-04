@@ -7,6 +7,11 @@
         "date": "2026-10-01",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-05",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Chocolate -ショコラ-": [
@@ -14,6 +19,11 @@
         "date": "2026-10-01",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-05",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Kipfel -キプフェル-": [
@@ -21,6 +31,11 @@
         "date": "2026-10-01",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-05",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Milltina -ミルティナ-": [
@@ -28,6 +43,11 @@
         "date": "2026-10-01",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-05",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Rurune -ルルネ-": [
@@ -35,8 +55,19 @@
         "date": "2026-10-01",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-05",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14907750": "-FULLPACK-",
+    "14908453": "Chocolate -ショコラ-",
+    "14908454": "Kipfel -キプフェル-",
+    "14908455": "Milltina -ミルティナ-",
+    "14908456": "Rurune -ルルネ-"
+  }
 }

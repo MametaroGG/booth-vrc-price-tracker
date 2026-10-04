@@ -45,9 +45,17 @@
         "price": 200,
         "is_sale": true
       }
+    ],
+    "default": [
+      {
+        "date": "2026-10-05",
+        "price": 200,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
+    "14792448": "default",
     "14793012": "おかし代（中身は同じです）"
   }
 }

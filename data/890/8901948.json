@@ -12,6 +12,11 @@
         "date": "2026-10-01",
         "price": 450,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 450,
+        "is_sale": false
       }
     ],
     "Type_1 star_Eye": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-10-01",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
         "price": 300,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-10-01",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "エサ代※フルセットと内容物は同じです。": [
@@ -48,8 +63,18 @@
         "date": "2026-10-01",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14878264": "フルセット",
+    "14878446": "Type_1 star_Eye",
+    "14878447": "Type_2 heart_Eye",
+    "14878477": "エサ代※フルセットと内容物は同じです。"
+  }
 }

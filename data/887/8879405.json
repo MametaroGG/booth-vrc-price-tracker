@@ -7,6 +7,11 @@
         "date": "2026-10-01",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "(sale🎉¥650→¥300)make+body": [
@@ -14,12 +19,22 @@
         "date": "2026-10-01",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "(sale🎉¥300→¥150)eye": [
       {
         "date": "2026-10-01",
         "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 300,
         "is_sale": false
       }
     ]
