@@ -12,32 +12,72 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 360
     env:
       TZ: Asia/Tokyo
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+      SCRAPER_RESERVATION_ID: ${{ github.run_id }}-${{ github.run_attempt }}
     permissions:
       contents: write
     steps:
+      - name: Record job start
+        timeout-minutes: 1
+        run: |
+          echo "SCRAPER_JOB_STARTED_AT=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_ENV"
+          # All runs share one durable request-budget ledger.
+          if [[ -z "$DEFAULT_BRANCH" || "$GITHUB_REF" != "refs/heads/$DEFAULT_BRANCH" ]]; then
+            echo "::error::Scraping is only allowed on the repository's default branch."
+            exit 1
+          fi
+
       - name: Checkout
         uses: actions/checkout@v4
+        timeout-minutes: 20
         with:
-          fetch-depth: 0
+          fetch-depth: 1
+          # A queued run's event SHA may predate the preceding reservation.
+          ref: ${{ env.DEFAULT_BRANCH }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
+        timeout-minutes: 5
         with:
           node-version: '20'
 
       - name: Install dependencies
+        timeout-minutes: 5
         run: npm ci
 
+      - name: Run tests
+        timeout-minutes: 5
+        run: npm test
+
+      - name: Reserve request budget
+        timeout-minutes: 1
+        run: node src/reserve-budget.js
+
+      - name: Commit reservation
+        timeout-minutes: 5
+        # No BOOTH request is permitted until this durable reservation is pushed.
+        run: |
+          bash scripts/push-data.sh "chore: reserve scrape request budget"
+
       - name: Run Scraper
+        id: scraper
+        # The scraper has a five-hour cap and stops at job start + 5h30m,
+        # whichever comes first. This backstop also leaves time to save data.
+        timeout-minutes: 305
+        continue-on-error: true
         run: node src/scraper.js
 
       - name: Commit and Push
+        if: ${{ !cancelled() && (steps.scraper.outcome == 'success' || steps.scraper.outcome == 'failure') }}
+        timeout-minutes: 10
+        run: bash scripts/push-data.sh
+
+      - name: Report scraper failure
+        if: ${{ always() && steps.scraper.outcome == 'failure' }}
+        timeout-minutes: 1
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git commit -m "chore: update product data [$(date +'%Y-%m-%d')]" || exit 0
-          git pull --rebase origin main
-          git push
+          echo "::error::Scraper failed. Saving any completed data and checkpoints was attempted above."
+          exit 1
