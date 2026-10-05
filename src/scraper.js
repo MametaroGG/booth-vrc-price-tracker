@@ -9,7 +9,7 @@ const SEARCH_URLS = [
 ];
 
 const {
-    getStopTargetTime, jstDate, writeJson
+    CollectionStop, createRequestClient, getStopTargetTime, jstDate, writeJson
 } = require('./collection-runtime');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
@@ -66,6 +66,7 @@ async function scrapeProductDetails(productId, client) {
         if (response.status === 404 || response.status === 410) {
             return { kind: 'unavailable', id: productId, status: response.status };
         }
+        if (response.status !== 200) throw new Error(`Product returned HTTP ${response.status}`);
         const $ = cheerio.load(response.data);
 
         // New selector: h2 is the title
@@ -140,9 +141,12 @@ async function saveProductData(product, { dataDir = DATA_DIR, today = jstDate(Da
             if (existing && typeof existing === 'object' && !Array.isArray(existing)) {
                 const record = value => value && typeof value === 'object' && !Array.isArray(value);
                 if ((existing.variations !== undefined && (!record(existing.variations) ||
-                    !Object.values(existing.variations).every(Array.isArray))) ||
+                    !Object.values(existing.variations).every(history => Array.isArray(history) && history.every(entry =>
+                        record(entry) && typeof entry.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(entry.date) &&
+                        Number.isFinite(entry.price) && entry.price >= 0)))) ||
                     (existing.variation_keys !== undefined && (!record(existing.variation_keys) ||
-                        !Object.values(existing.variation_keys).every(key => typeof key === 'string')))) {
+                        !Object.values(existing.variation_keys).every(key => typeof key === 'string' &&
+                            record(existing.variations) && Object.hasOwn(existing.variations, key))))) {
                     throw new Error('History has incompatible variation records');
                 }
                 result = existing;
@@ -155,20 +159,20 @@ async function saveProductData(product, { dataDir = DATA_DIR, today = jstDate(Da
             }
         } catch (e) {
             const error = new Error(`Cannot read existing history for ${product.id}: ${e.message}`, { cause: e });
-            error.code = e.code;
+            // A single malformed legacy record must not pin the entire crawl.
+            // Real I/O failures keep their system code and stop collection.
+            error.code = e.code || 'HISTORY_CORRUPT';
             throw error;
         }
     }
 
-    if (!result.variations) {
-        result.variations = {};
-    }
+    // Shop-provided names and variant IDs may legitimately be "constructor" or
+    // "__proto__". Treat every key as data, never as an inherited property.
+    result.variations = Object.assign(Object.create(null), result.variations || {});
     // Map of BOOTH's stable variation ID -> the canonical key we store its history under.
     // Anchoring identity to the ID means a shop renaming a variation (sale badges, emoji,
     // reworded names) can never split one variation into multiple keys / chart lines.
-    if (!result.variation_keys) {
-        result.variation_keys = {};
-    }
+    result.variation_keys = Object.assign(Object.create(null), result.variation_keys || {});
 
     // Update each variation
     product.variations.forEach(v => {
@@ -220,16 +224,235 @@ async function saveProductData(product, { dataDir = DATA_DIR, today = jstDate(Da
     writeJson(filePath, result);
 }
 
-function loadState(stateFile) {
-    return require('./collector').loadDiscoveryState(stateFile);
+const BATCH_SIZE = 5;
+const RETRY_BASE_MS = 60 * 60 * 1000;
+const RETRY_MAX_MS = 24 * RETRY_BASE_MS;
+const validId = id => typeof id === 'string' && /^[1-9]\d*$/.test(id);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+function loadState(stateFile = path.join(DATA_DIR, 'crawl_state.json'), { categories = SEARCH_URLS.length, maxPages = MAX_PAGES } = {}) {
+    if (!fs.existsSync(stateFile)) return { urlIndex: 0, page: 1, retries: [] };
+    const state = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+    const pending = state?.pendingIds;
+    const retries = state?.retries;
+    if (!state || Array.isArray(state) || !Number.isSafeInteger(state.urlIndex) || state.urlIndex < 0 || state.urlIndex > categories ||
+        !Number.isSafeInteger(state.page) || state.page < 1 || state.page > maxPages + 1 ||
+        (pending !== undefined && (!Array.isArray(pending) || !pending.every(validId) || new Set(pending).size !== pending.length)) ||
+        (retries !== undefined && (!Array.isArray(retries) || !retries.every(entry => entry && validId(entry.id) &&
+            Number.isSafeInteger(entry.failures) && entry.failures > 0 && Number.isSafeInteger(entry.nextAttemptAt) && entry.nextAttemptAt >= 0) ||
+            new Set(retries.map(entry => entry.id)).size !== retries.length)) ||
+        (state.urlIndex === categories && (state.page !== 1 || pending !== undefined)) ||
+        (state.page > maxPages && pending !== undefined)) {
+        throw new Error('Invalid crawl checkpoint; refusing to reset it');
+    }
+    return { urlIndex: state.urlIndex, page: state.page, ...(pending === undefined ? {} : { pendingIds: pending }), retries: retries || [] };
 }
 
-async function main(options = {}) {
-    return require('./collector').runCollector({
-        dataDir: DATA_DIR, searchUrls: SEARCH_URLS, maxPages: MAX_PAGES,
-        get: axios.get, search: scrapeSearchPage, detail: scrapeProductDetails, save: saveProductData,
-        ...options
+async function main({
+    dataDir = DATA_DIR, searchUrls = SEARCH_URLS, maxPages = MAX_PAGES,
+    get = axios.get, search = scrapeSearchPage, detail = scrapeProductDetails, save = saveProductData,
+    now = Date.now, wait = sleep, client: suppliedClient, requestIntervalMs,
+    jobStartedAt = process.env.SCRAPER_JOB_STARTED_AT, reservationId = process.env.SCRAPER_RESERVATION_ID,
+    log = console.log, logError = console.error
+} = {}) {
+    const startedAt = now();
+    const deadline = getStopTargetTime(startedAt, jobStartedAt ?? startedAt).getTime();
+    const stateFile = path.join(dataDir, 'crawl_state.json');
+    // Load before constructing a client: corrupt state must never start HTTP or
+    // be silently replaced with a fresh cursor.
+    let state = loadState(stateFile, { categories: searchUrls.length, maxPages });
+    fs.mkdirSync(dataDir, { recursive: true });
+    const client = suppliedClient || createRequestClient({
+        get, budgetFile: path.join(dataDir, 'request_budget.json'), deadline, now, wait, reservationId,
+        ...(requestIntervalMs === undefined ? {} : { intervalMs: requestIntervalMs })
     });
+    const initialBudget = client.getBudget?.();
+    const processedIds = new Set();
+    const metrics = { searchPages: 0, searchFailures: 0, itemSuccess: 0, itemFailures: 0, unavailable: 0, retries: 0, duplicatesAvoided: 0 };
+    let haltError;
+    let fatalError;
+
+    function halt(error) {
+        // A failed disk write is more serious than a normal time/quota pause.
+        if (!haltError || (!(error instanceof CollectionStop) || error.failed)) haltError = error;
+        client.stop?.(error.reason || 'storage', error.message, !(error instanceof CollectionStop) || error.failed);
+    }
+    function checkpoint(next = state) {
+        try {
+            writeJson(stateFile, next);
+            state = next;
+        } catch (error) {
+            fatalError = error;
+            halt(error);
+            throw error;
+        }
+    }
+    function check() {
+        if (haltError) throw haltError;
+        if (now() >= deadline) throw new CollectionStop('deadline', 'Collection time budget reached');
+        client.check?.();
+    }
+    async function pause(ms) {
+        check();
+        if (now() + ms >= deadline) throw new CollectionStop('deadline', 'Not enough collection time for crawl delay');
+        await wait(ms);
+        check();
+    }
+    function nextPage() {
+        const page = state.page + 1;
+        checkpoint({ urlIndex: state.urlIndex + (page > maxPages ? 1 : 0), page: page > maxPages ? 1 : page, retries: state.retries });
+    }
+    function retryEntry(id, unavailable) {
+        const previous = state.retries.find(entry => entry.id === id);
+        const failures = Math.min(Number.MAX_SAFE_INTEGER, (previous?.failures || 0) + 1);
+        const delay = unavailable ? RETRY_MAX_MS : Math.min(RETRY_MAX_MS, RETRY_BASE_MS * 2 ** Math.min(failures - 1, 5));
+        return { id, failures, nextAttemptAt: now() + delay };
+    }
+
+    async function batch(ids, retry = false) {
+        check();
+        // Each worker resolves with an outcome. Promise.all remains the original
+        // five-item barrier, including after a stop or a save failure. No final
+        // checkpoint or quota refund can race an already-started request.
+        const results = await Promise.all(ids.map(async id => {
+            try {
+                if (processedIds.has(id)) {
+                    metrics.duplicatesAvoided++;
+                    return { id, kind: 'skipped' };
+                }
+                // Its already-durable retry entry makes skipping safe without
+                // bypassing backoff when the same product appears in search.
+                if (state.retries.some(entry => entry.id === id && entry.nextAttemptAt > now())) return { id, kind: 'skipped' };
+                check();
+                processedIds.add(id);
+                const result = await detail(id, client);
+                if (result?.kind === 'success') {
+                    try {
+                        await save(result.product, { dataDir, today: jstDate(now()) });
+                    } catch (error) {
+                        if (error.code === 'HISTORY_CORRUPT') {
+                            logError(`Item ${id}: ${error.message}`);
+                            return { id, kind: 'failure' };
+                        }
+                        fatalError = error;
+                        halt(error);
+                        return { id, kind: 'stopped' };
+                    }
+                    return { id, kind: 'success' };
+                }
+                if (result?.kind === 'unavailable' && [404, 410].includes(result.status)) return { id, kind: 'unavailable' };
+                throw result?.error || new Error('Invalid product outcome');
+            } catch (error) {
+                if ((error instanceof CollectionStop && !['redirect', 'http'].includes(error.reason)) || haltError) {
+                    halt(error);
+                    return { id, kind: 'stopped' };
+                }
+                logError(`Item ${id}: ${error.message}`);
+                return { id, kind: 'failure' };
+            }
+        }));
+        const settledIds = new Set();
+        const retries = new Map(state.retries.map(entry => [entry.id, entry]));
+        for (const result of results) {
+            if (result.kind === 'stopped') continue;
+            settledIds.add(result.id);
+            if (result.kind === 'skipped') continue;
+            if (retry) metrics.retries++;
+            if (result.kind === 'success') {
+                metrics.itemSuccess++;
+                retries.delete(result.id);
+            } else {
+                if (result.kind === 'unavailable') metrics.unavailable++;
+                else metrics.itemFailures++;
+                retries.set(result.id, retryEntry(result.id, result.kind === 'unavailable'));
+            }
+        }
+        // History writes finished above. A failed item leaves pendingIds only
+        // in the same atomic checkpoint that durably adds its retry entry.
+        checkpoint({ ...state, retries: [...retries.values()],
+            ...(state.pendingIds === undefined ? {} : { pendingIds: state.pendingIds.filter(id => !settledIds.has(id)) }) });
+        check();
+        await pause(1000);
+    }
+
+    async function retryBatch() {
+        const ids = state.retries.filter(entry => entry.nextAttemptAt <= now() && !processedIds.has(entry.id))
+            .sort((a, b) => a.nextAttemptAt - b.nextAttemptAt).slice(0, BATCH_SIZE).map(entry => entry.id);
+        if (!ids.length) return false;
+        await batch(ids, true);
+        return true;
+    }
+
+    let result;
+    try {
+        // A completed sweep starts over on the next run, as in the original
+        // crawler. Only failed IDs survive; there is no catalog/success ledger.
+        if (state.urlIndex === searchUrls.length) checkpoint({ urlIndex: 0, page: 1, retries: state.retries });
+        else checkpoint();
+        await retryBatch();
+        while (state.urlIndex < searchUrls.length) {
+            check();
+            if (state.page > maxPages) {
+                checkpoint({ urlIndex: state.urlIndex + 1, page: 1, retries: state.retries });
+                continue;
+            }
+            if (state.pendingIds === undefined) {
+                const url = `${searchUrls[state.urlIndex]}&page=${state.page}`;
+                let found;
+                try { found = await search(url, client); }
+                catch (error) { found = { kind: 'failure', error }; }
+                metrics.searchPages++;
+                if (found?.kind === 'empty') {
+                    checkpoint({ urlIndex: state.urlIndex + 1, page: 1, retries: state.retries });
+                    await retryBatch();
+                    continue;
+                }
+                if (found?.kind !== 'success' || !Array.isArray(found.ids) || !found.ids.length || !found.ids.every(validId)) {
+                    metrics.searchFailures++;
+                    const error = found?.error || new Error('Invalid search outcome');
+                    if (error instanceof CollectionStop) throw error;
+                    throw new CollectionStop('search-failure', `Search page failed; cursor preserved: ${error.message}`, true);
+                }
+                // Persist every discovered ID before starting its details.
+                checkpoint({ ...state, pendingIds: [...new Set(found.ids)] });
+            }
+            while (state.pendingIds.length) await batch(state.pendingIds.slice(0, BATCH_SIZE));
+            nextPage();
+            await pause(2000);
+            // A bounded retry batch between pages guarantees retry progress
+            // without replacing or starving the sequential search crawl.
+            await retryBatch();
+        }
+        while (await retryBatch()) { /* Drain due failures after the normal sweep. */ }
+        checkpoint({ urlIndex: 0, page: 1, retries: state.retries });
+        result = { status: state.retries.length ? 'partial' : 'completed',
+            ...(state.retries.length ? { reason: 'retry-pending' } : {}), failed: metrics.itemFailures > 0 };
+    } catch (error) {
+        halt(error);
+        logError(error.message);
+        result = error instanceof CollectionStop
+            ? { status: error.failed ? 'partial' : 'paused', reason: error.reason, failed: error.failed }
+            : { status: 'failed', reason: 'storage', failed: true };
+    } finally {
+        // All batch work was drained before reaching this point, including
+        // successes which arrived after another request tripped the circuit.
+        let checkpointSaved = false;
+        try { checkpoint(); checkpointSaved = true; } catch { /* Keep the durable reservation charged until recovery. */ }
+        if (checkpointSaved) {
+            try { client.finish?.(); }
+            catch (error) { fatalError = error; logError(`Cannot finish request budget: ${error.message}`); }
+        }
+    }
+    if (fatalError) result = { status: 'failed', reason: 'storage', failed: true };
+    const finalBudget = client.getBudget?.();
+    const actualRequests = budget => budget.requests - (budget.reservation && !budget.reservation.completed
+        ? budget.reservation.limit - budget.reservation.used : 0);
+    metrics.chargedHttpAttempts = initialBudget && finalBudget ? finalBudget.reservation && initialBudget.reservation
+        ? finalBudget.reservation.used - initialBudget.reservation.used : actualRequests(finalBudget) - actualRequests(initialBudget) : null;
+    metrics.dailyChargedRequests = finalBudget ? actualRequests(finalBudget) : null;
+    log(`Collection ${result.status}; saved ${metrics.itemSuccess}, queued retries ${state.retries.length}` +
+        (metrics.chargedHttpAttempts === null ? '' : `; charged HTTP attempts ${metrics.chargedHttpAttempts}, daily charged total ${metrics.dailyChargedRequests}`));
+    return { ...result, metrics };
 }
 
 // Importing the module for offline tests never starts network collection.

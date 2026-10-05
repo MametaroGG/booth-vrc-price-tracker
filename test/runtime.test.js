@@ -162,16 +162,21 @@ test('every allowed redirect is paced and budgeted; non-BOOTH redirects fail', a
     await assert.rejects(bad.get('https://booth.pm/a'), error => error.reason === 'redirect');
 });
 
-test('JST midnight renews the request allowance while preserving server cooldown', async t => {
+test('JST midnight requires a new reservation and preserves the server cooldown', async t => {
     const f = fixture(t);
     writeJson(f.budgetFile, { date: '2026-10-04', requests: 48000, blockedUntil: START + 2 * 3600000 });
     f.setTime(Date.parse('2026-10-04T15:00:00Z'));
     const client = f.makeClient();
     await assert.rejects(client.get('https://booth.pm/a'), error => error.reason === 'cooldown');
+    assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'paused', now: f.now() }), /Requests paused/);
     f.setTime(START + 2 * 3600000);
-    await client.get('https://booth.pm/a');
-    assert.equal(client.getBudget().date, '2026-10-05');
-    assert.equal(client.getBudget().requests, 1);
+    await assert.rejects(client.get('https://booth.pm/a'), error => error.reason === 'day-boundary');
+    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'new-day', now: f.now() });
+    const next = f.makeClient({ reservationId: 'new-day' });
+    await next.get('https://booth.pm/a');
+    next.finish();
+    assert.equal(next.getBudget().date, '2026-10-05');
+    assert.equal(next.getBudget().requests, 1);
     assert.equal(jstDate(Date.parse('2026-10-04T14:59:59Z')), '2026-10-04');
 });
 
@@ -319,214 +324,58 @@ test('operator-reconciled abandoned quota stays charged and never lowers a verif
     assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'fresh-day', now: START + 24 * 3600000 }).limit, 48000);
 });
 
-test('production pacing starts at most two HTTP attempts per second across both lanes', async t => {
+test('default pacing preserves a simultaneous five-request batch while persisting every start', async t => {
     const f = fixture(t);
-    const client = f.makeClient({ intervalMs: undefined, laneBudgets: true });
-    await Promise.all(Array.from({ length: 8 }, (_, index) => client.get(`https://booth.pm/${index}`, {
-        lane: index % 2 ? 'discovery' : 'refresh'
-    })));
-    assert.equal(REQUEST_INTERVAL_MS, 500);
-    assert.deepEqual(f.calls.map(call => call.time - START), [0, 500, 1000, 1500, 2000, 2500, 3000, 3500]);
-    assert.deepEqual(client.getBudget().laneUsage, { refresh: 4, discovery: 4 });
-});
-
-test('lane budgets protect 90/10 while work remains and lane exhaustion is not a global stop', async t => {
-    const f = fixture(t);
-    const client = f.makeClient({ laneBudgets: true, dailyLimit: 10 });
-    assert.equal(client.remaining('refresh'), 9);
-    assert.equal(client.remaining('discovery'), 1);
-    for (let i = 0; i < 9; i++) await client.get('https://booth.pm/detail');
-    assert.equal(client.remaining('refresh'), 0);
-    assert.equal(client.remaining('discovery'), 1);
-    assert.doesNotThrow(() => client.check());
-    assert.throws(() => client.checkLane('refresh'), error => error.reason === 'lane-budget' && error.failed === false);
-    await assert.rejects(client.get('https://booth.pm/detail'), error => error.reason === 'lane-budget');
-    assert.equal(f.calls.length, 9);
-    await client.get('https://booth.pm/search', { lane: 'discovery' });
-    assert.equal(client.remaining(), 0);
-    assert.deepEqual(client.getBudget().laneUsage, { refresh: 9, discovery: 1 });
-    assert.throws(() => client.check(), error => error.reason === 'request-budget');
-});
-
-test('a lane can borrow only after the other lane is explicitly released', async t => {
-    const f = fixture(t);
-    const client = f.makeClient({ laneBudgets: true, dailyLimit: 10 });
-    await client.get('https://booth.pm/search', { lane: 'discovery' });
-    await assert.rejects(client.get('https://booth.pm/search', { lane: 'discovery' }), error => error.reason === 'lane-budget');
-    client.releaseLane('discovery');
-    assert.equal(client.remaining('discovery'), 0, 'releasing your own lane grants no loan to yourself');
-    assert.equal(client.remaining('refresh'), 9);
-    assert.equal(client.releaseLane('refresh'), 9);
-    await client.get('https://booth.pm/search', { lane: 'discovery' });
-    assert.equal(client.remaining('discovery'), 8);
-    assert.deepEqual(JSON.parse(fs.readFileSync(f.budgetFile)).laneReleased, { refresh: true, discovery: true });
-});
-
-test('retries and redirects spend the originating lane and obey its allowance', async t => {
-    const f = fixture(t);
-    const times = [];
-    const client = f.makeClient({ laneBudgets: true, dailyLimit: 30, intervalMs: undefined, get: async () => {
-        times.push(f.now());
-        if (times.length === 1) return { status: 302, headers: { location: 'https://shop.booth.pm/items/1' } };
-        if (times.length === 2) throw httpError(503);
-        return ok();
+    const releases = [];
+    const persisted = [];
+    const client = f.makeClient({ intervalMs: undefined, get: () => {
+        persisted.push(JSON.parse(fs.readFileSync(f.budgetFile)).requests);
+        return new Promise(resolve => releases.push(() => resolve(ok())));
     } });
-    await client.get('https://booth.pm/search', { lane: 'discovery' });
-    assert.deepEqual(client.getBudget().laneUsage, { refresh: 0, discovery: 3 });
-    assert.deepEqual(times.map(time => time - START), [0, 500, 2000]);
-    await assert.rejects(client.get('https://booth.pm/search', { lane: 'discovery' }), error => error.reason === 'lane-budget');
-    assert.equal(times.length, 3);
-    assert.equal(client.remaining('refresh'), 27);
+    const batch = Array.from({ length: 5 }, () => client.get('https://booth.pm/a'));
+    // The start gate must release before an HTTP response completes, so all five
+    // requests can be in flight together as in the original scraper.
+    await new Promise(resolve => setImmediate(resolve));
+    assert.equal(REQUEST_INTERVAL_MS, 0);
+    assert.equal(releases.length, 5);
+    assert.deepEqual(persisted, [1, 2, 3, 4, 5]);
+    assert.deepEqual(f.waits, []);
+    releases.forEach(release => release());
+    await Promise.all(batch);
 });
 
-test('a retry cannot borrow the other lane when its originating allowance runs out', async t => {
-    const f = fixture(t);
-    const client = f.makeClient({ laneBudgets: true, dailyLimit: 10, get: async () => { throw httpError(503); } });
-    await assert.rejects(client.get('https://booth.pm/search', { lane: 'discovery' }), error => error.reason === 'lane-budget');
-    assert.deepEqual(client.getBudget().laneUsage, { refresh: 0, discovery: 1 });
-    assert.equal(client.remaining('refresh'), 9);
-    assert.doesNotThrow(() => client.check());
-});
-
-test('lane shares use actual consumption rather than the full reservation precharge', async t => {
-    const f = fixture(t);
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'lanes', now: START });
-    const client = f.makeClient({ reservationId: 'lanes', laneBudgets: true });
-    assert.equal(client.getBudget().requests, 48000);
-    assert.equal(client.remaining('refresh'), 43200);
-    assert.equal(client.remaining('discovery'), 4800);
-    await client.get('https://booth.pm/a');
-    assert.equal(client.getBudget().requests, 48000);
-    assert.equal(client.getBudget().reservation.used, 1);
-    assert.equal(client.remaining('refresh'), 43199);
-    assert.equal(client.remaining('discovery'), 4800);
-});
-
-test('lane usage spans completed jobs, and release state survives a client restart', async t => {
-    const f = fixture(t);
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'first', now: START });
-    const first = f.makeClient({ reservationId: 'first', laneBudgets: true, dailyLimit: 10 });
-    for (let i = 0; i < 4; i++) await first.get('https://booth.pm/detail');
-    await first.get('https://booth.pm/search', { lane: 'discovery' });
-    first.finish();
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'second', now: f.now() });
-    const second = f.makeClient({ reservationId: 'second', laneBudgets: true, dailyLimit: 10 });
-    assert.equal(second.remaining('refresh'), 5);
-    assert.equal(second.remaining('discovery'), 0);
-    assert.deepEqual(second.getBudget().laneUsage, { refresh: 4, discovery: 1 });
-    second.releaseLane('refresh');
-    second.finish();
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'third', now: f.now() });
-    const third = f.makeClient({ reservationId: 'third', laneBudgets: true, dailyLimit: 10 });
-    assert.equal(third.remaining('discovery'), 5);
-    for (let i = 0; i < 5; i++) await third.get('https://booth.pm/search', { lane: 'discovery' });
-    third.finish();
-    assert.equal(third.getBudget().requests, 10);
-    assert.deepEqual(third.getBudget().laneUsage, { refresh: 4, discovery: 6 });
-});
-
-test('legacy unattributed requests reduce the shareable allowance without being reset or double-counted', async t => {
+test('concurrent search and detail requests share the full remaining allowance', async t => {
     const f = fixture(t);
     writeJson(f.budgetFile, { date: jstDate(START), requests: 47990, blockedUntil: 0 });
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'legacy', now: START });
-    const client = f.makeClient({ reservationId: 'legacy', laneBudgets: true });
-    assert.equal(client.remaining('refresh'), 9);
-    assert.equal(client.remaining('discovery'), 1);
-    for (let i = 0; i < 3; i++) await client.get('https://booth.pm/detail');
-    client.finish();
-    assert.equal(client.getBudget().requests, 47993);
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'legacy-next', now: f.now() });
-    const second = f.makeClient({ reservationId: 'legacy-next', laneBudgets: true });
-    assert.equal(second.remaining('refresh'), 6);
-    assert.equal(second.remaining('discovery'), 1);
-    assert.equal(second.getBudget().reservation.limit, 7);
-});
-
-test('an old active reservation without lane usage conservatively accounts already-used attempts', t => {
-    const f = fixture(t);
-    writeJson(f.budgetFile, { date: jstDate(START), requests: 48000, blockedUntil: 0,
-        reservation: { id: 'old-active', limit: 48000, used: 1000, completed: false } });
-    const client = f.makeClient({ reservationId: 'old-active', laneBudgets: true });
-    assert.equal(client.remaining('refresh'), 42300);
-    assert.equal(client.remaining('discovery'), 4700);
-    assert.deepEqual(client.getBudget().laneUsage, { refresh: 0, discovery: 0 });
-    assert.throws(() => f.makeClient({ laneBudgets: true }), /reservation ID/);
-});
-
-test('concurrent lane requests never increase the approved 48,000 daily maximum', async t => {
-    const f = fixture(t);
-    writeJson(f.budgetFile, { date: jstDate(START), requests: 47990, blockedUntil: 0,
-        laneUsage: { refresh: 43191, discovery: 4799 }, laneReleased: { refresh: false, discovery: false } });
     reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'near-cap', now: START });
-    const client = f.makeClient({ reservationId: 'near-cap', laneBudgets: true });
+    const client = f.makeClient({ reservationId: 'near-cap', intervalMs: undefined });
+    assert.equal(client.remaining(), 10);
     const results = await Promise.allSettled(Array.from({ length: 30 }, (_, index) =>
-        client.get('https://booth.pm/a', { lane: index % 3 ? 'refresh' : 'discovery' })));
+        client.get(index % 2 ? 'https://booth.pm/ja/items/1' : 'https://booth.pm/ja/search')));
     assert.equal(results.filter(result => result.status === 'fulfilled').length, 10);
     assert.equal(f.calls.length, 10);
-    assert.deepEqual(client.getBudget().laneUsage, { refresh: 43200, discovery: 4800 });
+    assert.equal(client.remaining(), 0);
     client.finish();
     assert.equal(client.getBudget().requests, DAILY_REQUEST_LIMIT);
     assert.throws(() => f.makeClient({ dailyLimit: 48001 }), /Daily request limit/);
     assert.throws(() => f.makeClient({ maxAttempts: 4 }), /retry limit/);
 });
 
-test('an explicit lane loan can fill the day but cannot exceed the all-HTTP cap', async t => {
+test('remaining quota excludes the durable precharge and spans completed runs', async t => {
     const f = fixture(t);
-    writeJson(f.budgetFile, { date: jstDate(START), requests: 47990, blockedUntil: 0 });
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'loan', now: START });
-    const client = f.makeClient({ reservationId: 'loan', laneBudgets: true });
-    assert.equal(client.releaseLane('discovery'), 10);
-    const results = await Promise.allSettled(Array.from({ length: 20 }, () => client.get('https://booth.pm/detail')));
-    assert.equal(results.filter(result => result.status === 'fulfilled').length, 10);
-    client.finish();
-    assert.equal(client.getBudget().requests, 48000);
-    assert.deepEqual(client.getBudget().laneUsage, { refresh: 10, discovery: 0 });
-});
-
-test('a lost reservation remains fully charged after operator reconciliation despite lane metadata', async t => {
-    const f = fixture(t);
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'lost-lane', now: START });
-    const client = f.makeClient({ reservationId: 'lost-lane', laneBudgets: true });
-    await client.get('https://booth.pm/a');
-    client.releaseLane('discovery');
-    assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'blocked', now: f.now() }), /unresolved/);
-    const persisted = JSON.parse(fs.readFileSync(f.budgetFile));
-    persisted.reservation.completed = true; // Reviewed recovery intentionally preserves the full charge.
-    writeJson(f.budgetFile, persisted);
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'reconciled', now: f.now() }).limit, 0);
-    const second = f.makeClient({ reservationId: 'reconciled', laneBudgets: true });
-    assert.equal(second.remaining('refresh'), 0);
-    assert.equal(second.remaining('discovery'), 0);
-    assert.equal(second.getBudget().requests, 48000);
-});
-
-test('new-day reservation resets both lane fields; crossing midnight cannot spend unreserved quota', async t => {
-    const f = fixture(t);
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'before-midnight', now: START });
-    const client = f.makeClient({ reservationId: 'before-midnight', laneBudgets: true });
-    await client.get('https://booth.pm/a');
-    client.releaseLane('discovery');
-    f.setTime(Date.parse('2026-10-04T15:00:00Z'));
-    await assert.rejects(client.get('https://booth.pm/b'), error => error.reason === 'day-boundary');
-    assert.equal(client.remaining('refresh'), 0);
-    client.finish();
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'after-midnight', now: f.now() });
-    const second = f.makeClient({ reservationId: 'after-midnight', laneBudgets: true });
-    assert.deepEqual(second.getBudget().laneUsage, { refresh: 0, discovery: 0 });
-    assert.deepEqual(second.getBudget().laneReleased, { refresh: false, discovery: false });
-    assert.equal(second.remaining('refresh'), 43200);
-    assert.equal(second.remaining('discovery'), 4800);
-});
-
-test('corrupt lane counts and release flags fail closed', t => {
-    const f = fixture(t);
-    for (const laneUsage of [{ refresh: -1, discovery: 0 }, { refresh: 2, discovery: 0 }, { refresh: 0 }]) {
-        writeJson(f.budgetFile, { date: jstDate(START), requests: 1, blockedUntil: 0, laneUsage });
-        assert.throws(() => f.makeClient({ laneBudgets: true }), /Invalid lane usage/);
-    }
-    writeJson(f.budgetFile, { date: jstDate(START), requests: 1, blockedUntil: 0,
-        laneReleased: { refresh: 'false', discovery: false } });
-    assert.throws(() => f.makeClient({ laneBudgets: true }), /Invalid lane release state/);
+    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'first', now: START });
+    const first = f.makeClient({ reservationId: 'first' });
+    assert.equal(first.getBudget().requests, 48000);
+    assert.equal(first.remaining(), 48000);
+    await first.get('https://booth.pm/ja/search');
+    await first.get('https://booth.pm/ja/items/1');
+    assert.equal(first.remaining(), 47998);
+    first.finish();
+    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'second', now: f.now() });
+    const second = f.makeClient({ reservationId: 'second' });
+    assert.equal(second.remaining(), 47998);
+    assert.equal(second.getBudget().reservation.limit, 47998);
+    assert.throws(() => f.makeClient(), /reservation ID/);
 });
 
 test('explicit stop blocks queued starts without inventing a cooldown and allows active responses to drain', async t => {
@@ -535,8 +384,8 @@ test('explicit stop blocks queued starts without inventing a cooldown and allows
     let complete;
     let announce;
     const started = new Promise(resolve => { announce = resolve; });
-    const client = f.makeClient({ laneBudgets: true, wait: async () => {
-        client.stop('metadata-write', 'Failed to save registry');
+    const client = f.makeClient({ wait: async () => {
+        client.stop('metadata-write', 'Failed to save products');
     }, get: () => {
         starts++;
         announce();
@@ -544,7 +393,7 @@ test('explicit stop blocks queued starts without inventing a cooldown and allows
     } });
     const first = client.get('https://booth.pm/a');
     await started;
-    const queued = client.get('https://booth.pm/b', { lane: 'discovery' });
+    const queued = client.get('https://booth.pm/b');
     await assert.rejects(queued, error => error.reason === 'metadata-write' && error.failed === true);
     complete(ok());
     assert.equal((await first).status, 200);
@@ -554,25 +403,24 @@ test('explicit stop blocks queued starts without inventing a cooldown and allows
     await assert.rejects(client.get('https://booth.pm/c'), error => error.reason === 'metadata-write');
 });
 
-test('lane-aware 429 cooldown stops all queued roles before another attempt starts', async t => {
+test('429 cooldown stops queued starts at the default zero interval', async t => {
     const f = fixture(t);
     let starts = 0;
-    const client = f.makeClient({ laneBudgets: true, get: async () => {
+    const client = f.makeClient({ intervalMs: undefined, get: async () => {
         starts++;
         throw httpError(429, { 'retry-after': '120' });
     } });
-    const results = await Promise.allSettled(Array.from({ length: 10 }, (_, index) =>
-        client.get('https://booth.pm/a', { lane: index % 2 ? 'refresh' : 'discovery' })));
+    const results = await Promise.allSettled(Array.from({ length: 10 }, () => client.get('https://booth.pm/a')));
     assert.equal(starts, 1);
     assert.ok(results.every(result => result.status === 'rejected' && result.reason.reason === 'rate-limit'));
-    assert.deepEqual(client.getBudget().laneUsage, { refresh: 0, discovery: 1 });
+    assert.equal(client.getBudget().requests, 1);
     assert.ok(client.getBudget().blockedUntil >= START + 120000);
 });
 
 test('budget persistence failure stops queued calls before sending unrecorded HTTP', async t => {
     const f = fixture(t);
     reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'disk-failure', now: START });
-    const client = f.makeClient({ reservationId: 'disk-failure', laneBudgets: true });
+    const client = f.makeClient({ reservationId: 'disk-failure' });
     fs.mkdirSync(`${f.budgetFile}.tmp`);
     const results = await Promise.allSettled(Array.from({ length: 4 }, () => client.get('https://booth.pm/a')));
     assert.ok(results.every(result => result.status === 'rejected' && result.reason.reason === 'budget-write'));
@@ -645,9 +493,9 @@ test('same-url redirects preserve filtered search identity while allowing query 
         urls.push(url);
         return urls.length === 1 ? { status: 302, headers: { location: target } } : ok();
     } });
-    await client.get(original, { lane: 'discovery', redirectPolicy: 'same-url' });
+    await client.get(original, { redirectPolicy: 'same-url' });
     assert.deepEqual(urls, [original, target]);
-    assert.deepEqual(client.getBudget().laneUsage, { refresh: 0, discovery: 2 });
+    assert.equal(client.getBudget().requests, 2);
 });
 
 test('same-url policy rejects filter loss or source changes before following a redirect', async t => {
@@ -745,19 +593,19 @@ test('attempt hook observes each persisted retry and redirect immediately before
     assert.equal(starts, 3);
 });
 
-test('lane-budget and global-budget denials never invoke a queued attempt hook', async t => {
+test('shared budget denials never invoke a queued attempt hook', async t => {
     const f = fixture(t);
     let attempts = 0;
-    const client = f.makeClient({ laneBudgets: true, dailyLimit: 10 });
+    const client = f.makeClient({ dailyLimit: 3, intervalMs: undefined });
     const onAttempt = () => { attempts++; };
-    const results = await Promise.allSettled(Array.from({ length: 5 }, () =>
-        client.get('https://booth.pm/search', { lane: 'discovery', onAttempt })));
-    assert.equal(results.filter(result => result.status === 'fulfilled').length, 1);
-    assert.equal(attempts, 1);
-    for (let i = 0; i < 9; i++) await client.get('https://booth.pm/ja/items/123', { onAttempt });
-    await assert.rejects(client.get('https://booth.pm/search', { onAttempt }), error => error.reason === 'request-budget');
-    assert.equal(attempts, 10);
-    assert.equal(f.calls.length, 10);
+    const results = await Promise.allSettled(Array.from({ length: 10 }, () =>
+        client.get('https://booth.pm/search', { onAttempt })));
+    assert.equal(results.filter(result => result.status === 'fulfilled').length, 3);
+    assert.equal(attempts, 3);
+    assert.equal(f.calls.length, 3);
+    await assert.rejects(client.get('https://booth.pm/ja/items/123', { onAttempt }),
+        error => error.reason === 'request-budget');
+    assert.equal(attempts, 3);
 });
 
 test('attempt hook failure halts all queued starts instead of being retried as a network error', async t => {
@@ -784,11 +632,11 @@ test('invalid and asynchronous attempt hooks cannot cause an HTTP start', async 
     assert.equal(f.calls.length, 0);
 });
 
-test('403 stop carries only the actual failing URL and prevents queued hooks from running', async t => {
+test('403 stops queued hooks at the default zero interval and retains the failing URL', async t => {
     const f = fixture(t);
     let observed = 0;
     let starts = 0;
-    const client = f.makeClient({ get: async () => {
+    const client = f.makeClient({ intervalMs: undefined, get: async () => {
         starts++;
         throw httpError(403, { 'retry-after': '86400' });
     } });
@@ -806,7 +654,7 @@ test('403 stop carries only the actual failing URL and prevents queued hooks fro
 test('a slow synchronous attempt hook cannot bunch subsequent HTTP starts', async t => {
     const f = fixture(t);
     let observed = 0;
-    const client = f.makeClient({ intervalMs: undefined });
+    const client = f.makeClient({ intervalMs: 500 });
     const onAttempt = () => { if (++observed === 1) f.setTime(f.now() + 1000); };
     await Promise.all(Array.from({ length: 3 }, () => client.get('https://booth.pm/ja/items/123', { onAttempt })));
     assert.deepEqual(f.calls.map(call => call.time - START), [1000, 1500, 2000]);
@@ -829,4 +677,105 @@ test('an observer crossing the deadline cannot start HTTP after it', async t => 
     await assert.rejects(client.get('https://booth.pm/a', { onAttempt: () => f.setTime(START + 2) }),
         error => error.reason === 'deadline');
     assert.equal(f.calls.length, 0);
+});
+
+
+test('the fifth transient failure blocks queued starts at the default zero interval', async t => {
+    const f = fixture(t);
+    let starts = 0;
+    const client = f.makeClient({ intervalMs: undefined, maxAttempts: 1, get: async () => {
+        starts++;
+        throw httpError(503);
+    } });
+    const results = await Promise.allSettled(Array.from({ length: 10 }, () => client.get('https://booth.pm/a')));
+    assert.equal(starts, 5);
+    assert.equal(client.getBudget().requests, 5);
+    assert.ok(results.slice(4).every(result => result.status === 'rejected' && result.reason.reason === 'circuit-breaker'));
+});
+
+test('a synchronous transport rejection also stops queued requests before the next start', async t => {
+    const f = fixture(t);
+    let starts = 0;
+    const client = f.makeClient({ intervalMs: undefined, get: () => {
+        starts++;
+        throw httpError(403);
+    } });
+    const results = await Promise.allSettled(Array.from({ length: 5 }, () => client.get('https://booth.pm/a')));
+    assert.equal(starts, 1);
+    assert.ok(results.every(result => result.status === 'rejected' && result.reason.reason === 'forbidden'));
+});
+
+test('an active later rate-limit response preserves the first stop and extends its durable cooldown', async t => {
+    const f = fixture(t);
+    const rejects = [];
+    const client = f.makeClient({ intervalMs: undefined, get: () => new Promise((resolve, reject) => rejects.push(reject)) });
+    const first = client.get('https://booth.pm/a').catch(error => error);
+    const second = client.get('https://booth.pm/b').catch(error => error);
+    await new Promise(resolve => setImmediate(resolve));
+    assert.equal(rejects.length, 2);
+    rejects[0](httpError(429, { 'retry-after': '120' }));
+    const stopped = await first;
+    rejects[1](httpError(429, { 'retry-after': '900' }));
+    assert.equal(await second, stopped);
+    assert.equal(client.getBudget().blockedUntil, START + 900000);
+    assert.equal(JSON.parse(fs.readFileSync(f.budgetFile)).blockedUntil, START + 900000);
+    await assert.rejects(client.get('https://booth.pm/c'), error => error === stopped);
+    assert.equal(client.getBudget().requests, 2);
+});
+
+
+test('overflowing Retry-After durations saturate at a valid far-future timestamp', () => {
+    const maximumTimestamp = 8640000000000000;
+    for (const header of ['1e308', '1e999', '9'.repeat(400), '100000000000000', 1e308]) {
+        const delay = retryAfterMs(header, START);
+        assert.ok(Number.isFinite(delay));
+        assert.equal(START + delay, maximumTimestamp);
+        assert.doesNotThrow(() => new Date(START + delay).toISOString());
+    }
+    for (const header of ['not-a-duration', '1e+', '1 second']) {
+        assert.equal(retryAfterMs(header, START), 60000);
+    }
+});
+
+test('huge Retry-After on 429 and 403 remains a valid durable hold after finish and restart', async t => {
+    for (const status of [429, 403]) {
+        for (const header of ['1e308', '1e999', '9'.repeat(400), '100000000000000']) {
+            const f = fixture(t);
+            let starts = 0;
+            reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'huge-cooldown', now: START });
+            const client = f.makeClient({ reservationId: 'huge-cooldown', intervalMs: undefined, get: async () => {
+                starts++;
+                throw httpError(status, { 'retry-after': header });
+            } });
+            const results = await Promise.allSettled(Array.from({ length: 5 }, () => client.get('https://booth.pm/a')));
+            const reason = status === 403 ? 'forbidden' : 'rate-limit';
+            assert.ok(results.every(result => result.status === 'rejected' && result.reason.reason === reason));
+            assert.equal(starts, 1);
+            assert.equal(client.getBudget().blockedUntil, 8640000000000000);
+            client.finish();
+            const persisted = JSON.parse(fs.readFileSync(f.budgetFile));
+            assert.equal(persisted.reservation.completed, true);
+            assert.equal(persisted.requests, 1);
+            assert.equal(persisted.blockedUntil, 8640000000000000);
+            assert.doesNotThrow(() => new Date(persisted.blockedUntil).toISOString());
+            const restarted = f.makeClient();
+            await assert.rejects(restarted.get('https://booth.pm/b'), error => error.reason === 'cooldown');
+            assert.equal(restarted.remaining(), 0);
+            assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'next-run', now: START }), /Requests paused/);
+            assert.equal(f.calls.length, 0);
+            assert.equal(starts, 1);
+        }
+    }
+});
+
+test('out-of-range persisted cooldowns fail validation without changing the ledger', t => {
+    const f = fixture(t);
+    for (const blockedUntil of [8640000000000001, 1e308]) {
+        writeJson(f.budgetFile, { date: jstDate(START), requests: 1, blockedUntil });
+        const original = fs.readFileSync(f.budgetFile, 'utf8');
+        assert.throws(() => f.makeClient(), /Invalid request budget/);
+        assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'invalid-cooldown', now: START }), /Invalid request budget/);
+        assert.equal(fs.readFileSync(f.budgetFile, 'utf8'), original);
+        assert.equal(f.calls.length, 0);
+    }
 });

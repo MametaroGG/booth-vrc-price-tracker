@@ -7,4 +7,6 @@ for (const start of ['2026-02-10T14:00:00+09:00', '2026-02-10T01:00:00+09:00',
     const startTime = Date.parse(start);
     assert.equal(getStopTargetTime(startTime).getTime(), startTime + 5 * 60 * 60 * 1000);
 }
+const start = Date.parse('2026-10-04T23:32:00+09:00');
+assert.equal(getStopTargetTime(start, start - 60 * 60 * 1000).getTime(), start + 4.5 * 60 * 60 * 1000);
 console.log('Production deadline checks passed. Run npm test for full offline coverage.');

@@ -8,10 +8,10 @@ const SAVE_BUFFER_MS = 30 * 60 * 1000;
 // and retries across all scheduled runs. This is not a BOOTH-published limit.
 const DAILY_REQUEST_LIMIT = 48000;
 const REQUEST_TIMEOUT_MS = 30000;
-// One start gate covers search, detail, retry and redirect attempts. Two starts
-// per second is deliberately conservative; concurrency does not bypass pacing.
-const REQUEST_INTERVAL_MS = 500;
-const LANES = ['refresh', 'discovery'];
+const MAX_TIMESTAMP_MS = 8640000000000000; // Maximum timestamp supported by Date.
+// Serialize accounting and stop checks without changing the scraper's original
+// five-request batches, one-second batch waits, and two-second page waits.
+const REQUEST_INTERVAL_MS = 0;
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 function jstDate(time) {
@@ -51,11 +51,16 @@ class CollectionStop extends Error {
 }
 
 function retryAfterMs(value, now) {
-    if (value == null || value === '') return 60000;
-    const seconds = Number(value);
-    if (Number.isFinite(seconds) && seconds >= 0) return Math.max(60000, seconds * 1000);
-    const date = Date.parse(value);
-    return Number.isFinite(date) ? Math.max(60000, date - now) : 60000;
+    // An overflowing duration still means a long hold. Saturate at the latest
+    // representable timestamp so formatting and JSON persistence stay valid.
+    const bound = milliseconds => Math.min(MAX_TIMESTAMP_MS - now, Math.max(60000, milliseconds));
+    if (value == null || String(value).trim() === '') return bound(60000);
+    const text = String(value).trim();
+    if (/^\+?(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?$/i.test(text)) {
+        return bound(Number(text) * 1000);
+    }
+    const date = Date.parse(text);
+    return bound(Number.isFinite(date) ? date - now : 60000);
 }
 
 function urlIdentity(url) {
@@ -69,7 +74,7 @@ function urlIdentity(url) {
 function validateBudget(budget) {
     if (!budget || !/^\d{4}-\d{2}-\d{2}$/.test(budget.date) ||
         !Number.isSafeInteger(budget.requests) || budget.requests < 0 ||
-        !Number.isFinite(budget.blockedUntil) || budget.blockedUntil < 0 ||
+        !Number.isFinite(budget.blockedUntil) || budget.blockedUntil < 0 || budget.blockedUntil > MAX_TIMESTAMP_MS ||
         !Number.isFinite(Date.parse(`${budget.date}T00:00:00Z`)) ||
         new Date(`${budget.date}T00:00:00Z`).toISOString().slice(0, 10) !== budget.date) {
         throw new Error('Invalid request budget; refusing to reset it');
@@ -82,34 +87,18 @@ function validateBudget(budget) {
         (!reservation.completed && budget.requests < reservation.limit))) {
         throw new Error('Invalid request reservation; refusing to reset it');
     }
-    if (budget.laneUsage !== undefined && (!budget.laneUsage ||
-        LANES.some(lane => !Number.isSafeInteger(budget.laneUsage[lane]) || budget.laneUsage[lane] < 0) ||
-        budget.laneUsage.refresh + budget.laneUsage.discovery > actualRequests(budget))) {
-        throw new Error('Invalid lane usage; refusing to reset it');
-    }
-    if (budget.laneReleased !== undefined && (!budget.laneReleased ||
-        LANES.some(lane => typeof budget.laneReleased[lane] !== 'boolean'))) {
-        throw new Error('Invalid lane release state; refusing to reset it');
-    }
     return budget;
 }
 
 function actualRequests(budget) {
     // requests includes an entire durable reservation until finish(). Its
-    // unused precharge is not historical traffic and must not shrink lane caps.
+    // unused precharge is not historical traffic.
     const reservation = budget.reservation;
     return budget.requests - (reservation && !reservation.completed ? reservation.limit - reservation.used : 0);
 }
 
-function initializeLanes(budget) {
-    budget.laneUsage ??= { refresh: 0, discovery: 0 };
-    budget.laneReleased ??= { refresh: false, discovery: false };
-    return budget;
-}
-
 function resetDay(budget, date) {
-    return { ...budget, date, requests: 0, laneUsage: { refresh: 0, discovery: 0 },
-        laneReleased: { refresh: false, discovery: false } };
+    return { ...budget, date, requests: 0 };
 }
 
 function reserveDailyAllowance({ budgetFile, reservationId, now = Date.now() }) {
@@ -130,7 +119,6 @@ function reserveDailyAllowance({ budgetFile, reservationId, now = Date.now() }) 
     const date = jstDate(now);
     if (date < budget.date) throw new Error('Request budget date is in the future');
     if (date !== budget.date) budget = resetDay(budget, date);
-    initializeLanes(budget);
     const limit = Math.max(0, DAILY_REQUEST_LIMIT - budget.requests);
     budget.requests += limit;
     budget.reservation = { id: reservationId, limit, used: 0, completed: false };
@@ -144,8 +132,7 @@ function reserveDailyAllowance({ budgetFile, reservationId, now = Date.now() }) 
 function createRequestClient({
     get, budgetFile, deadline, now = Date.now, wait = sleep,
     dailyLimit = DAILY_REQUEST_LIMIT, intervalMs = REQUEST_INTERVAL_MS,
-    timeoutMs = REQUEST_TIMEOUT_MS, maxAttempts = 3, failureThreshold = 5, reservationId,
-    laneBudgets = false
+    timeoutMs = REQUEST_TIMEOUT_MS, maxAttempts = 3, failureThreshold = 5, reservationId
 }) {
     if (!Number.isSafeInteger(dailyLimit) || dailyLimit < 0 || dailyLimit > DAILY_REQUEST_LIMIT) {
         throw new Error(`Daily request limit must be between 0 and ${DAILY_REQUEST_LIMIT}`);
@@ -153,14 +140,13 @@ function createRequestClient({
     if (!Number.isFinite(intervalMs) || intervalMs < 0 || !Number.isSafeInteger(maxAttempts) || maxAttempts < 1 || maxAttempts > 3) {
         throw new Error('Invalid request pacing or retry limit');
     }
-    let budget = validateBudget(readJson(budgetFile, { date: jstDate(now()), requests: 0, blockedUntil: 0 }));
+    const budget = validateBudget(readJson(budgetFile, { date: jstDate(now()), requests: 0, blockedUntil: 0 }));
     if (reservationId && (budget.reservation?.id !== reservationId || budget.reservation.completed)) {
         throw new Error('Missing active request reservation for this run');
     }
     if (!reservationId && budget.reservation && !budget.reservation.completed) {
         throw new Error('Active request reservation requires its reservation ID');
     }
-    initializeLanes(budget);
     let nextStart = 0;
     let gate = Promise.resolve();
     let consecutiveFailures = 0;
@@ -176,42 +162,17 @@ function createRequestClient({
         }
         const date = jstDate(now());
         if (date < budget.date) throw new Error('Request budget date is in the future');
-        if (reservationId || laneBudgets) {
-            if (date !== budget.date) throw new CollectionStop('day-boundary', 'JST day changed; a new durable reservation is required');
-            if (reservationId && budget.reservation.used >= budget.reservation.limit) throw new CollectionStop('request-budget', 'Reserved request allowance reached');
-        } else {
-            if (date !== budget.date) budget = resetDay(budget, date);
+        if (date !== budget.date) throw new CollectionStop('day-boundary', 'JST day changed; a new durable reservation is required');
+        if (reservationId && budget.reservation.used >= budget.reservation.limit) {
+            throw new CollectionStop('request-budget', 'Reserved request allowance reached');
         }
         if (actualRequests(budget) >= dailyLimit) throw new CollectionStop('request-budget', 'JST daily request budget reached');
     }
 
-    function validateLane(lane) {
-        if (!LANES.includes(lane)) throw new Error(`Unknown request lane: ${lane}`);
-    }
-
-    function remaining(lane) {
-        if (lane !== undefined) validateLane(lane);
+    function remaining() {
         if (finished || stopped || now() >= deadline || budget.blockedUntil > now() || jstDate(now()) !== budget.date) return 0;
-        const global = Math.max(0, Math.min(dailyLimit - actualRequests(budget),
+        return Math.max(0, Math.min(dailyLimit - actualRequests(budget),
             reservationId ? budget.reservation.limit - budget.reservation.used : dailyLimit));
-        if (!laneBudgets || lane === undefined) return global;
-        const other = lane === 'refresh' ? 'discovery' : 'refresh';
-        if (budget.laneReleased[other]) return global;
-        // Legacy or operator-reconciled traffic with no proven lane remains
-        // fully charged. Split only the capacity left after that traffic.
-        const unattributed = actualRequests(budget) - budget.laneUsage.refresh - budget.laneUsage.discovery;
-        const attributableLimit = Math.max(0, dailyLimit - unattributed);
-        const refreshLimit = Math.floor(attributableLimit * 9 / 10);
-        const limit = lane === 'refresh' ? refreshLimit : attributableLimit - refreshLimit;
-        return Math.max(0, Math.min(global, limit - budget.laneUsage[lane]));
-    }
-
-    function checkLane(lane = 'refresh') {
-        validateLane(lane);
-        check();
-        if (laneBudgets && remaining(lane) <= 0) {
-            throw new CollectionStop('lane-budget', `Protected ${lane} request allowance reached`);
-        }
     }
 
     function stop(reason, message, failed = true) {
@@ -227,20 +188,6 @@ function createRequestClient({
         }
     }
 
-    function releaseLane(lane) {
-        validateLane(lane);
-        if (finished) throw new CollectionStop('finished', 'Request client is already finished', true);
-        if (stopped) throw stopped;
-        if (jstDate(now()) !== budget.date) throw new CollectionStop('day-boundary', 'JST day changed; a new durable reservation is required');
-        // The orchestrator may call this only after proving the lane has no
-        // currently eligible queued or in-flight work. Exhaustion is not proof.
-        if (!budget.laneReleased[lane]) {
-            budget.laneReleased[lane] = true;
-            persistBudget();
-        }
-        return remaining(lane === 'refresh' ? 'discovery' : 'refresh');
-    }
-
     async function delay(ms) {
         check();
         if (now() + ms >= deadline) throw new CollectionStop('deadline', 'Not enough collection time for backoff');
@@ -248,16 +195,15 @@ function createRequestClient({
         check();
     }
 
-    async function reserve(start, lane) {
+    async function reserve(start) {
         // Serialize starts, not whole HTTP calls. Queued calls recheck the circuit,
         // deadline and budget before sending, including after another call fails.
         const reservation = gate.then(async () => {
-            checkLane(lane);
+            check();
             if (nextStart > now()) await delay(nextStart - now());
-            checkLane(lane);
+            check();
             if (reservationId) budget.reservation.used++;
             else budget.requests++;
-            budget.laneUsage[lane]++;
             persistBudget(); // Count attempts before sending, even on crash.
             // Start HTTP inside the gate so timer/microtask ordering cannot bunch starts.
             return { pending: start() };
@@ -267,15 +213,43 @@ function createRequestClient({
     }
 
     function block(reason, milliseconds, message, details = {}) {
-        budget.blockedUntil = Math.max(budget.blockedUntil, now() + milliseconds);
-        stopped = Object.assign(new CollectionStop(reason,
+        budget.blockedUntil = Math.min(MAX_TIMESTAMP_MS, Math.max(budget.blockedUntil, now() + milliseconds));
+        stopped ??= Object.assign(new CollectionStop(reason,
             `${message}; requests paused until ${new Date(budget.blockedUntil).toISOString()}`, true), details);
         persistBudget();
         return stopped;
     }
 
-    async function request(url, { lane = 'refresh', redirectPolicy = 'booth-host', productId, onAttempt } = {}) {
-        validateLane(lane);
+    function observeFailure(error, url) {
+        if (error instanceof CollectionStop) throw error;
+        const status = error.response?.status;
+        if (status === 403) {
+            throw block('forbidden', Math.max(6 * 60 * 60 * 1000, retryAfterMs(error.response?.headers?.['retry-after'], now())),
+                'HTTP 403: stopping rather than retrying access', { triggeringUrl: url });
+        }
+        if (status === 429) {
+            throw block('rate-limit', retryAfterMs(error.response?.headers?.['retry-after'], now()),
+                'HTTP 429: stopping and preserving Retry-After cooldown');
+        }
+        // Missing/removed items are explicit terminal outcomes, not failures.
+        if (status === 404 || status === 410) {
+            consecutiveFailures = 0;
+            return { status, data: '' };
+        }
+        const transient = !status || status === 408 || status >= 500;
+        if (!transient) throw error;
+        // An already-active failure may arrive while the pool drains.
+        // Keep the first global stop and its proven triggering request.
+        if (stopped) throw stopped;
+        consecutiveFailures++;
+        if (consecutiveFailures >= failureThreshold) {
+            throw block('circuit-breaker', 60000, 'Repeated request failures: circuit opened',
+                { triggeringUrl: url });
+        }
+        throw error;
+    }
+
+    async function request(url, { redirectPolicy = 'booth-host', productId, onAttempt } = {}) {
         if (!['booth-host', 'same-url'].includes(redirectPolicy)) throw new Error(`Unknown redirect policy: ${redirectPolicy}`);
         if (onAttempt !== undefined && typeof onAttempt !== 'function') throw new Error('onAttempt must be a function');
         if (productId !== undefined && (typeof productId !== 'string' || !/^[1-9]\d*$/.test(productId))) {
@@ -311,17 +285,28 @@ function createRequestClient({
                     if (budget.blockedUntil > now()) throw new CollectionStop('cooldown', 'Requests are paused', true);
                     const timeout = Math.max(1, Math.min(timeoutMs, deadline - now()));
                     nextStart = now() + intervalMs;
-                    return get(currentUrl, {
-                        timeout,
-                        signal: AbortSignal.timeout(timeout),
-                        // Handle redirects explicitly so every network hop is budgeted.
-                        maxRedirects: 0,
-                        validateStatus: status => status >= 200 && status < 400,
-                        headers: {
-                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-                        }
-                    });
-                }, lane);
+                    let pending;
+                    try {
+                        pending = get(currentUrl, {
+                            timeout,
+                            signal: AbortSignal.timeout(timeout),
+                            // Handle redirects explicitly so every network hop is budgeted.
+                            maxRedirects: 0,
+                            validateStatus: status => status >= 200 && status < 400,
+                            headers: {
+                                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+                            }
+                        });
+                    } catch (error) {
+                        return observeFailure(error, url);
+                    }
+                    // Observe the transport outcome before releasing further
+                    // queued starts, including when no start interval is set.
+                    return Promise.resolve(pending).then(response => {
+                        if ([200, 404, 410].includes(response.status)) consecutiveFailures = 0;
+                        return response;
+                    }, error => observeFailure(error, url));
+                });
                 const response = await pending;
                 if ([301, 302, 303, 307, 308].includes(response.status)) {
                     const location = response.headers?.location;
@@ -344,35 +329,14 @@ function createRequestClient({
                     attempt--; // Redirects count toward the daily cap, not retry allowance.
                     continue;
                 }
+                if ([404, 410].includes(response.status)) return response;
                 if (response.status !== 200) throw new CollectionStop('http', `Unexpected HTTP ${response.status}`, true);
-                consecutiveFailures = 0;
                 return response;
             } catch (error) {
                 if (error instanceof CollectionStop) throw error;
                 const status = error.response?.status;
-                if (status === 403) {
-                    throw block('forbidden', Math.max(6 * 60 * 60 * 1000, retryAfterMs(error.response?.headers?.['retry-after'], now())),
-                        'HTTP 403: stopping rather than retrying access', { triggeringUrl: url });
-                }
-                if (status === 429) {
-                    throw block('rate-limit', retryAfterMs(error.response?.headers?.['retry-after'], now()),
-                        'HTTP 429: stopping and preserving Retry-After cooldown');
-                }
-                // Missing/removed items are explicit terminal outcomes, not failures.
-                if (status === 404 || status === 410) {
-                    consecutiveFailures = 0;
-                    return { status, data: '' };
-                }
-                const transient = !status || status === 408 || status >= 500;
-                if (!transient) throw error;
-                // An already-active failure may arrive while the pool drains.
-                // Keep the first global stop and its proven triggering request.
+                if (status && status !== 408 && status < 500) throw error;
                 if (stopped) throw stopped;
-                consecutiveFailures++;
-                if (consecutiveFailures >= failureThreshold) {
-                    throw block('circuit-breaker', 60000, 'Repeated request failures: circuit opened',
-                        { triggeringUrl: url });
-                }
                 if (attempt === maxAttempts) throw error;
                 const backoff = Math.max(1500 * 2 ** (attempt - 1),
                     error.response?.headers?.['retry-after'] == null ? 0 :
@@ -391,7 +355,7 @@ function createRequestClient({
         }
     }
 
-    return { get: request, check, checkLane, remaining, releaseLane, stop, finish, getBudget: () => structuredClone(budget) };
+    return { get: request, check, remaining, stop, finish, getBudget: () => structuredClone(budget) };
 }
 
 module.exports = {
