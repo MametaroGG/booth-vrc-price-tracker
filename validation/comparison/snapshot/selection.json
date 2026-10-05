@@ -1,0 +1,380 @@
+{
+  "schema_version": 1,
+  "source": {
+    "repository": "MametaroGG/booth-vrc-price-tracker",
+    "commit": "abe8b896c2165004b5ccbc618cf97da4a9ab4f26"
+  },
+  "runtime_commit": "4aedd907f01f10ce5eb36f69401fff4dadf89383",
+  "sampling": {
+    "population_count": 195040,
+    "sample_size": 40,
+    "numeric_sort": "ascending positive numeric ID, by decimal-string length then lexical order",
+    "bins": 40,
+    "midpoint_formula": "rank_zero_based = floor((2 * bin_zero_based + 1) * population_count / 80)",
+    "equal_bin_size": 4876,
+    "samples_per_numeric_id_decile": 4,
+    "selection_exclusions": []
+  },
+  "products": [
+    {
+      "index": 0,
+      "bin": 1,
+      "decile": 1,
+      "rank_zero_based": 2438,
+      "id": "1352804",
+      "path": "data/135/1352804.json",
+      "git_blob_sha": "cb735d51f1d0dacdb0972219a62f3056c5b8fb1e"
+    },
+    {
+      "index": 1,
+      "bin": 2,
+      "decile": 1,
+      "rank_zero_based": 7314,
+      "id": "2026607",
+      "path": "data/202/2026607.json",
+      "git_blob_sha": "b6440622508c5eb164d6a0e5b147a40292b72061"
+    },
+    {
+      "index": 2,
+      "bin": 3,
+      "decile": 1,
+      "rank_zero_based": 12190,
+      "id": "2603225",
+      "path": "data/260/2603225.json",
+      "git_blob_sha": "d6bf5354c748f3b6e863f025848a2b59766df624"
+    },
+    {
+      "index": 3,
+      "bin": 4,
+      "decile": 1,
+      "rank_zero_based": 17066,
+      "id": "3041995",
+      "path": "data/304/3041995.json",
+      "git_blob_sha": "96814b253059294190d33eb0c65193385909b47e"
+    },
+    {
+      "index": 4,
+      "bin": 5,
+      "decile": 2,
+      "rank_zero_based": 21942,
+      "id": "3398034",
+      "path": "data/339/3398034.json",
+      "git_blob_sha": "69dc924d60db278a1e53988cfaa6bb6361ea2d12"
+    },
+    {
+      "index": 5,
+      "bin": 6,
+      "decile": 2,
+      "rank_zero_based": 26818,
+      "id": "3700263",
+      "path": "data/370/3700263.json",
+      "git_blob_sha": "74a34f68f9744ba00508d292f80fc223648f372e"
+    },
+    {
+      "index": 6,
+      "bin": 7,
+      "decile": 2,
+      "rank_zero_based": 31694,
+      "id": "3954674",
+      "path": "data/395/3954674.json",
+      "git_blob_sha": "29cdd728ecf7289da552ea64b0d5b3e54331a785"
+    },
+    {
+      "index": 7,
+      "bin": 8,
+      "decile": 2,
+      "rank_zero_based": 36570,
+      "id": "4187999",
+      "path": "data/418/4187999.json",
+      "git_blob_sha": "db28884f7e1bf4cf6ee7f1ea552cb9f41557d842"
+    },
+    {
+      "index": 8,
+      "bin": 9,
+      "decile": 3,
+      "rank_zero_based": 41446,
+      "id": "4387012",
+      "path": "data/438/4387012.json",
+      "git_blob_sha": "ccab756af85a1518a99f98fd18caec43a33cbf7c"
+    },
+    {
+      "index": 9,
+      "bin": 10,
+      "decile": 3,
+      "rank_zero_based": 46322,
+      "id": "4565178",
+      "path": "data/456/4565178.json",
+      "git_blob_sha": "93eef921072fb93dfb41a729b3f9ae7ab46de5f3"
+    },
+    {
+      "index": 10,
+      "bin": 11,
+      "decile": 3,
+      "rank_zero_based": 51198,
+      "id": "4735257",
+      "path": "data/473/4735257.json",
+      "git_blob_sha": "1ba21901e6071aa9cbc07201f53aac0ee9e91796"
+    },
+    {
+      "index": 11,
+      "bin": 12,
+      "decile": 3,
+      "rank_zero_based": 56074,
+      "id": "4932427",
+      "path": "data/493/4932427.json",
+      "git_blob_sha": "e26832dfd1cf87dffb7439901374b9cec4a0974e"
+    },
+    {
+      "index": 12,
+      "bin": 13,
+      "decile": 4,
+      "rank_zero_based": 60950,
+      "id": "5120333",
+      "path": "data/512/5120333.json",
+      "git_blob_sha": "8492ee5d87337d9bc4a9b0d3129ea8423867433b"
+    },
+    {
+      "index": 13,
+      "bin": 14,
+      "decile": 4,
+      "rank_zero_based": 65826,
+      "id": "5315174",
+      "path": "data/531/5315174.json",
+      "git_blob_sha": "f73c2ee622e477963ebfe4619ca70ef7ecc9210e"
+    },
+    {
+      "index": 14,
+      "bin": 15,
+      "decile": 4,
+      "rank_zero_based": 70702,
+      "id": "5516492",
+      "path": "data/551/5516492.json",
+      "git_blob_sha": "de24167f06f8b3e09e9b9195a05041b8eb2e495e"
+    },
+    {
+      "index": 15,
+      "bin": 16,
+      "decile": 4,
+      "rank_zero_based": 75578,
+      "id": "5711999",
+      "path": "data/571/5711999.json",
+      "git_blob_sha": "f9118dcd923119ecd4bccedebd99da2df7119e86"
+    },
+    {
+      "index": 16,
+      "bin": 17,
+      "decile": 5,
+      "rank_zero_based": 80454,
+      "id": "5929142",
+      "path": "data/592/5929142.json",
+      "git_blob_sha": "adf33c6893ce11349f65492e15e9a863b3f63ebc"
+    },
+    {
+      "index": 17,
+      "bin": 18,
+      "decile": 5,
+      "rank_zero_based": 85330,
+      "id": "6109475",
+      "path": "data/610/6109475.json",
+      "git_blob_sha": "a513c577838c60ebf81869205bc113bbcdfb40f9"
+    },
+    {
+      "index": 18,
+      "bin": 19,
+      "decile": 5,
+      "rank_zero_based": 90206,
+      "id": "6252577",
+      "path": "data/625/6252577.json",
+      "git_blob_sha": "74364fc2d60a63719bd003c21a3d021e51f45aa5"
+    },
+    {
+      "index": 19,
+      "bin": 20,
+      "decile": 5,
+      "rank_zero_based": 95082,
+      "id": "6395718",
+      "path": "data/639/6395718.json",
+      "git_blob_sha": "841f22572ead58d92d3b27db89ceb2394bc42f05"
+    },
+    {
+      "index": 20,
+      "bin": 21,
+      "decile": 6,
+      "rank_zero_based": 99958,
+      "id": "6523886",
+      "path": "data/652/6523886.json",
+      "git_blob_sha": "184aaf1d371932fcdaaecd1518f629c711af7753"
+    },
+    {
+      "index": 21,
+      "bin": 22,
+      "decile": 6,
+      "rank_zero_based": 104834,
+      "id": "6644956",
+      "path": "data/664/6644956.json",
+      "git_blob_sha": "70f199c30d8fa3bae58a077b7caded9d4d98d1fe"
+    },
+    {
+      "index": 22,
+      "bin": 23,
+      "decile": 6,
+      "rank_zero_based": 109710,
+      "id": "6779464",
+      "path": "data/677/6779464.json",
+      "git_blob_sha": "6f2ea6c3b6dd41b1119da923690306df76671a2f"
+    },
+    {
+      "index": 23,
+      "bin": 24,
+      "decile": 6,
+      "rank_zero_based": 114586,
+      "id": "6916003",
+      "path": "data/691/6916003.json",
+      "git_blob_sha": "02c563570f6d939f0e966b6325e8ec6f94f6a1f9"
+    },
+    {
+      "index": 24,
+      "bin": 25,
+      "decile": 7,
+      "rank_zero_based": 119462,
+      "id": "7053481",
+      "path": "data/705/7053481.json",
+      "git_blob_sha": "8275e051e75a64a37921ffdc6a93d8e07c6ede0a"
+    },
+    {
+      "index": 25,
+      "bin": 26,
+      "decile": 7,
+      "rank_zero_based": 124338,
+      "id": "7194942",
+      "path": "data/719/7194942.json",
+      "git_blob_sha": "c937d1ee31790146df515b50e8f64b39dda4cd34"
+    },
+    {
+      "index": 26,
+      "bin": 27,
+      "decile": 7,
+      "rank_zero_based": 129214,
+      "id": "7326203",
+      "path": "data/732/7326203.json",
+      "git_blob_sha": "a4932b830bbbea9f0beb2af39e65002e01ca4d43"
+    },
+    {
+      "index": 27,
+      "bin": 28,
+      "decile": 7,
+      "rank_zero_based": 134090,
+      "id": "7444474",
+      "path": "data/744/7444474.json",
+      "git_blob_sha": "3cb97c36e2ef52fc2565183f25daa0d55d40f0a1"
+    },
+    {
+      "index": 28,
+      "bin": 29,
+      "decile": 8,
+      "rank_zero_based": 138966,
+      "id": "7559891",
+      "path": "data/755/7559891.json",
+      "git_blob_sha": "818b754dd6b45b3b4f1a7e239fc735f2f92670e2"
+    },
+    {
+      "index": 29,
+      "bin": 30,
+      "decile": 8,
+      "rank_zero_based": 143842,
+      "id": "7679187",
+      "path": "data/767/7679187.json",
+      "git_blob_sha": "fdcc7adcb409da4f0ddf83cfa7d080f97acf4f47"
+    },
+    {
+      "index": 30,
+      "bin": 31,
+      "decile": 8,
+      "rank_zero_based": 148718,
+      "id": "7803211",
+      "path": "data/780/7803211.json",
+      "git_blob_sha": "f6cb793712dce8c69790b0623ccdbcd1fa52db1c"
+    },
+    {
+      "index": 31,
+      "bin": 32,
+      "decile": 8,
+      "rank_zero_based": 153594,
+      "id": "7919381",
+      "path": "data/791/7919381.json",
+      "git_blob_sha": "59615dd5faefede91a634b5bf5fe154067223597"
+    },
+    {
+      "index": 32,
+      "bin": 33,
+      "decile": 9,
+      "rank_zero_based": 158470,
+      "id": "8031910",
+      "path": "data/803/8031910.json",
+      "git_blob_sha": "9931735dfd539fe48eb0c5e7c0c99c9860c5ac17"
+    },
+    {
+      "index": 33,
+      "bin": 34,
+      "decile": 9,
+      "rank_zero_based": 163346,
+      "id": "8140211",
+      "path": "data/814/8140211.json",
+      "git_blob_sha": "4456b5e277f4ecec90ffbc0e154ee3d693303964"
+    },
+    {
+      "index": 34,
+      "bin": 35,
+      "decile": 9,
+      "rank_zero_based": 168222,
+      "id": "8276894",
+      "path": "data/827/8276894.json",
+      "git_blob_sha": "c12d89ebd9c0b37bdc08259752d90cce8d4d1cf8"
+    },
+    {
+      "index": 35,
+      "bin": 36,
+      "decile": 9,
+      "rank_zero_based": 173098,
+      "id": "8423844",
+      "path": "data/842/8423844.json",
+      "git_blob_sha": "8e848e5d058ed64259c7ff06a1933299980cf286"
+    },
+    {
+      "index": 36,
+      "bin": 37,
+      "decile": 10,
+      "rank_zero_based": 177974,
+      "id": "8550108",
+      "path": "data/855/8550108.json",
+      "git_blob_sha": "7f80bbc32013ad3592cea809a6333853963927dd"
+    },
+    {
+      "index": 37,
+      "bin": 38,
+      "decile": 10,
+      "rank_zero_based": 182850,
+      "id": "8655474",
+      "path": "data/865/8655474.json",
+      "git_blob_sha": "3efd4f9266f94f1246146ac91c4342eea93ac80c"
+    },
+    {
+      "index": 38,
+      "bin": 39,
+      "decile": 10,
+      "rank_zero_based": 187726,
+      "id": "8763031",
+      "path": "data/876/8763031.json",
+      "git_blob_sha": "2f7db0560266e3501fdcd1eb6fe669047a29082b"
+    },
+    {
+      "index": 39,
+      "bin": 40,
+      "decile": 10,
+      "rank_zero_based": 192602,
+      "id": "8883506",
+      "path": "data/888/8883506.json",
+      "git_blob_sha": "aa468e45d2f5dfe29d5a3f25480f9825940016be"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+name: Bounded scheduler comparison 20261005
+
+on:
+  push:
+    branches: ['test/booth-scheduler-comparison-20261005']
+    paths: ['validation/comparison/activation.json']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: scrape-group
+  cancel-in-progress: false
+
+jobs:
+  compare:
+    if: >-
+      github.repository == 'MametaroGG/booth-vrc-price-tracker' &&
+      github.ref == 'refs/heads/test/booth-scheduler-comparison-20261005' &&
+      github.event_name == 'push' &&
+      github.event.before == '4aedd907f01f10ce5eb36f69401fff4dadf89383' &&
+      !github.event.created && !github.event.deleted &&
+      github.run_number == '1' && github.run_attempt == '1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: Asia/Tokyo
+    steps:
+      - name: Record comparison job start
+        timeout-minutes: 1
+        run: echo "COMPARISON_JOB_STARTED_AT=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_ENV"
+
+      - name: Checkout isolated comparison source
+        uses: actions/checkout@v4
+        timeout-minutes: 4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 3
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /src/
+            /test/
+            /scripts/push-data.sh
+            /.github/workflows/
+            /validation/comparison/
+            /package.json
+            /package-lock.json
+            /.gitignore
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        timeout-minutes: 2
+        with:
+          node-version: '20'
+
+      - name: Install locked dependencies without lifecycle scripts
+        timeout-minutes: 2
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Verify offline checks and prepare isolated inputs
+        timeout-minutes: 2
+        run: |
+          set -euo pipefail
+          npm test
+          mkdir "$RUNNER_TEMP/boopa-comparison" "$RUNNER_TEMP/boopa-comparison-results"
+          cp -R validation/comparison/. "$RUNNER_TEMP/boopa-comparison/"
+          cd "$RUNNER_TEMP/boopa-comparison"
+          BOOPA_REPO="$GITHUB_WORKSPACE" BOOPA_SNAPSHOT="$RUNNER_TEMP/boopa-comparison/snapshot" \
+            node --require ./offline-only.cjs --test comparison.test.js gate.test.js
+          cp initial-ledger.json "$RUNNER_TEMP/boopa-comparison-results/working-ledger.json"
+
+      - name: Verify exclusivity and compare the two schedulers
+        timeout-minutes: 19
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/boopa-comparison"
+          node gate.js activation.json | tee preflight.json
+          DAY=$(node -p "require('./activation.json').expectedJstDay")
+          UNTIL=$(node -p "require('./activation.json').exclusiveUntil")
+          node comparison.js --execute --repo "$GITHUB_WORKSPACE" \
+            --manifest "$RUNNER_TEMP/boopa-comparison/snapshot/manifest.json" \
+            --snapshot-root "$RUNNER_TEMP/boopa-comparison/snapshot" \
+            --output-dir "$RUNNER_TEMP/boopa-comparison-results" \
+            --budget-file "$RUNNER_TEMP/boopa-comparison-results/working-ledger.json" \
+            --expected-jst-day "$DAY" --exclusive-until "$UNTIL" 2>&1 | tee comparison.log
+
+      - name: Preserve terminal accounting in job logs
+        if: ${{ always() }}
+        timeout-minutes: 1
+        run: |
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const root = path.join(process.env.RUNNER_TEMP, 'boopa-comparison-results');
+          for (const file of ['working-ledger.json', 'summary.json', 'completion.json', 'watchdog.json']) {
+            const p = path.join(root, file);
+            if (fs.existsSync(p)) console.log(file + '\n' + fs.readFileSync(p, 'utf8'));
+          }
+          NODE
+
+      - name: Preserve isolated comparison results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        timeout-minutes: 1
+        with:
+          name: booth-scheduler-comparison-${{ github.run_id }}
+          retention-days: 7
+          if-no-files-found: warn
+          path: |
+            ${{ runner.temp }}/boopa-comparison/preflight.json
+            ${{ runner.temp }}/boopa-comparison/comparison.log
+            ${{ runner.temp }}/boopa-comparison-results/working-ledger.json
+            ${{ runner.temp }}/boopa-comparison-results/summary.json
+            ${{ runner.temp }}/boopa-comparison-results/requests.jsonl
+            ${{ runner.temp }}/boopa-comparison-results/comparison.lock
+            ${{ runner.temp }}/boopa-comparison-results/completion.json
+            ${{ runner.temp }}/boopa-comparison-results/watchdog.json
+            ${{ runner.temp }}/boopa-comparison-results/block-*/result.json
+            ${{ runner.temp }}/boopa-comparison-results/block-*/checkpoint.json
