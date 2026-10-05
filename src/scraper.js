@@ -8,68 +8,37 @@ const SEARCH_URLS = [
     'https://booth.pm/ja/browse/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2?sort=new&tags%5B%5D=VRChat&type=digital'
 ];
 
+const {
+    CollectionStop, createRequestClient, getStopTargetTime, jstDate, writeJson
+} = require('./collection-runtime');
+
 const DATA_DIR = path.join(__dirname, '..', 'data');
-const TODAY = new Intl.DateTimeFormat('ja-JP', {
-    timeZone: 'Asia/Tokyo',
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit'
-}).format(new Date()).replace(/\//g, '-');
-const MAX_PAGES = 3333; // BOOTH's search limit
-const DELAY_MS = 1500;
-const MAX_EXECUTION_TIME_MS = 5 * 60 * 60 * 1000; // 5 hours
-const STATE_FILE = path.join(DATA_DIR, 'crawl_state.json');
-const SCHEDULE_HOURS = [0, 6, 12, 18]; // JST schedule
+const MAX_PAGES = 3333; // BOOTH's search limit; keep both full categories.
 
-/**
- * Calculates the target time to stop the scraper.
- * It should be at most 5 hours from start, or 30 minutes before the next scheduled run.
- */
-function getStopTargetTime(startTime) {
-    const now = new Date(startTime);
-
-    // Find the next scheduled run in JST
-    // Since TZ=Asia/Tokyo is set in environment, Date methods use JST
-    const currentHour = now.getHours();
-    let nextHour = SCHEDULE_HOURS.find(h => h > currentHour);
-    const nextRun = new Date(now);
-
-    if (nextHour === undefined) {
-        nextHour = SCHEDULE_HOURS[0];
-        nextRun.setDate(nextRun.getDate() + 1);
-    }
-    nextRun.setHours(nextHour, 0, 0, 0);
-
-    // 30 minutes before next run
-    const targetStopBeforeNextRun = new Date(nextRun.getTime() - 30 * 60 * 1000);
-
-    // 5 hours from start
-    const hardExecutionLimit = new Date(startTime + MAX_EXECUTION_TIME_MS);
-
-    // Use whichever comes first
-    return targetStopBeforeNextRun < hardExecutionLimit ? targetStopBeforeNextRun : hardExecutionLimit;
-}
-
-async function scrapeSearchPage(url) {
+async function scrapeSearchPage(url, client) {
     try {
         console.log(`Scraping Search: ${url}`);
-        const response = await axios.get(url, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-            }
-        });
+        const response = await client.get(url, { redirectPolicy: 'same-url' });
+        if (response.status !== 200) throw new Error(`Search returned HTTP ${response.status}`);
         const $ = cheerio.load(response.data);
         const productIds = [];
-
+        let invalidCard = false;
         $('.item-card').each((i, el) => {
             const id = $(el).attr('data-product-id');
-            if (id) productIds.push(id);
+            if (id && /^[1-9]\d*$/.test(id)) productIds.push(id);
+            else invalidCard = true;
         });
-
-        return productIds;
+        if (invalidCard) throw new Error('Search card is missing a valid product ID');
+        if (productIds.length > 0) return { kind: 'success', ids: [...new Set(productIds)] };
+        // A failed/challenge/unrecognized response is not proof of an empty page.
+        const searchShell = $('title').text().includes('BOOTH') &&
+            $('a[href*="/browse/"], form[action*="/search"], form[action*="/browse/"]').length > 0;
+        const explicitEmpty = /(?:商品が見つかりませんでした|検索結果はありません|検索結果がありません|該当する商品[はが]ありません)/.test($('body').text());
+        if (!searchShell || !explicitEmpty) throw new Error('Unrecognized search page markup');
+        return { kind: 'empty', ids: [] };
     } catch (error) {
         console.error(`Error scraping search ${url}:`, error.message);
-        return [];
+        return { kind: 'failure', error };
     }
 }
 
@@ -90,14 +59,14 @@ function normalizeVariationName(name) {
         .trim();
 }
 
-async function scrapeProductDetails(productId) {
+async function scrapeProductDetails(productId, client) {
     const url = `https://booth.pm/ja/items/${productId}`;
     try {
-        const response = await axios.get(url, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-            }
-        });
+        const response = await client.get(url, { productId: String(productId) });
+        if (response.status === 404 || response.status === 410) {
+            return { kind: 'unavailable', id: productId, status: response.status };
+        }
+        if (response.status !== 200) throw new Error(`Product returned HTTP ${response.status}`);
         const $ = cheerio.load(response.data);
 
         // New selector: h2 is the title
@@ -117,8 +86,8 @@ async function scrapeProductDetails(productId) {
             // presence of that badge (not mere whitespace cleanup) tells us it's on sale.
             const vName = normalizeVariationName(rawName);
             const nameImpliesSale = SALE_BADGE_RE.test(rawName);
-            const priceText = $(el).find('.variation-price, .price, .text-20.font-bold').text();
-            const price = parseInt(priceText.replace(/[^\d]/g, ''), 10);
+            const priceText = $(el).find('.variation-price, .price, .text-20.font-bold').first().text();
+            const price = /^\s*無料\s*$/.test(priceText) ? 0 : parseInt(priceText.replace(/[^\d]/g, ''), 10);
 
             // Check for sale class or indicator
             const isSale = nameImpliesSale ||
@@ -133,7 +102,7 @@ async function scrapeProductDetails(productId) {
         // Fallback for older or different layouts if any
         if (variations.length === 0) {
             const priceText = $('.item-detail__price .price, .price, .text-20.font-bold').first().text();
-            const price = parseInt(priceText.replace(/[^\d]/g, ''), 10);
+            const price = /^\s*無料\s*$/.test(priceText) ? 0 : parseInt(priceText.replace(/[^\d]/g, ''), 10);
             const isSale = $('.price').hasClass('is-sale') || $('.is-sale').length > 0;
             if (!isNaN(price)) {
                 variations.push({ name: 'default', price, isSale });
@@ -144,16 +113,17 @@ async function scrapeProductDetails(productId) {
         const saleKeywords = ['sale', 'セール', '割引', '期間限定', 'off'];
         const hasSaleKeyword = saleKeywords.some(k => name.toLowerCase().includes(k));
 
-        return { id: productId, name, variations, hasSaleKeyword };
+        if (!name || variations.length === 0) throw new Error('Unrecognized product page or missing price');
+        return { kind: 'success', product: { id: productId, name, variations, hasSaleKeyword } };
     } catch (error) {
         console.error(`Error scraping item ${productId}:`, error.message);
-        return null;
+        return { kind: 'failure', error };
     }
 }
 
-async function saveProductData(product) {
+async function saveProductData(product, { dataDir = DATA_DIR, today = jstDate(Date.now()) } = {}) {
     const shard = product.id.toString().substring(0, 3);
-    const shardDir = path.join(DATA_DIR, shard);
+    const shardDir = path.join(dataDir, shard);
     if (!fs.existsSync(shardDir)) {
         fs.mkdirSync(shardDir, { recursive: true });
     }
@@ -168,27 +138,41 @@ async function saveProductData(product) {
     if (fs.existsSync(filePath)) {
         try {
             const existing = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-            if (existing && typeof existing === 'object') {
+            if (existing && typeof existing === 'object' && !Array.isArray(existing)) {
+                const record = value => value && typeof value === 'object' && !Array.isArray(value);
+                if ((existing.variations !== undefined && (!record(existing.variations) ||
+                    !Object.values(existing.variations).every(history => Array.isArray(history) && history.every(entry =>
+                        record(entry) && typeof entry.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(entry.date) &&
+                        Number.isFinite(entry.price) && entry.price >= 0)))) ||
+                    (existing.variation_keys !== undefined && (!record(existing.variation_keys) ||
+                        !Object.values(existing.variation_keys).every(key => typeof key === 'string' &&
+                            record(existing.variations) && Object.hasOwn(existing.variations, key))))) {
+                    throw new Error('History has incompatible variation records');
+                }
                 result = existing;
                 // [Self-Healing] Update name if it's missing or empty
                 if (product.name && (!result.name || result.name.trim() === "")) {
                     result.name = product.name;
                 }
+            } else {
+                throw new Error('History must be a JSON object');
             }
         } catch (e) {
-            console.error(`Error parsing existing data for ${product.id}`);
+            const error = new Error(`Cannot read existing history for ${product.id}: ${e.message}`, { cause: e });
+            // A single malformed legacy record must not pin the entire crawl.
+            // Real I/O failures keep their system code and stop collection.
+            error.code = e.code || 'HISTORY_CORRUPT';
+            throw error;
         }
     }
 
-    if (!result.variations) {
-        result.variations = {};
-    }
+    // Shop-provided names and variant IDs may legitimately be "constructor" or
+    // "__proto__". Treat every key as data, never as an inherited property.
+    result.variations = Object.assign(Object.create(null), result.variations || {});
     // Map of BOOTH's stable variation ID -> the canonical key we store its history under.
     // Anchoring identity to the ID means a shop renaming a variation (sale badges, emoji,
     // reworded names) can never split one variation into multiple keys / chart lines.
-    if (!result.variation_keys) {
-        result.variation_keys = {};
-    }
+    result.variation_keys = Object.assign(Object.create(null), result.variation_keys || {});
 
     // Update each variation
     product.variations.forEach(v => {
@@ -214,17 +198,17 @@ async function saveProductData(product) {
         }
 
         const history = result.variations[key];
-        const existingEntryIndex = history.findIndex(entry => entry.date === TODAY);
+        const existingEntryIndex = history.findIndex(entry => entry.date === today);
 
         // Price drop heuristic
-        const lastValidEntry = [...history].reverse().find(entry => entry.date !== TODAY);
+        const lastValidEntry = [...history].reverse().find(entry => entry.date !== today);
         let isSaleFinal = v.isSale || product.hasSaleKeyword;
         if (!isSaleFinal && lastValidEntry && v.price < lastValidEntry.price) {
             isSaleFinal = true;
         }
 
         const newEntry = {
-            date: TODAY,
+            date: today,
             price: v.price,
             is_sale: isSaleFinal
         };
@@ -237,98 +221,257 @@ async function saveProductData(product) {
         history.sort((a, b) => a.date.localeCompare(b.date));
     });
 
-    fs.writeFileSync(filePath, JSON.stringify(result, null, 2));
+    writeJson(filePath, result);
 }
 
-function loadState() {
-    if (fs.existsSync(STATE_FILE)) {
-        try {
-            return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
-        } catch (e) {
-            console.error('Failed to load state file:', e);
-        }
+const BATCH_SIZE = 5;
+const RETRY_BASE_MS = 60 * 60 * 1000;
+const RETRY_MAX_MS = 24 * RETRY_BASE_MS;
+const validId = id => typeof id === 'string' && /^[1-9]\d*$/.test(id);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+function loadState(stateFile = path.join(DATA_DIR, 'crawl_state.json'), { categories = SEARCH_URLS.length, maxPages = MAX_PAGES } = {}) {
+    if (!fs.existsSync(stateFile)) return { urlIndex: 0, page: 1, retries: [] };
+    const state = JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+    const pending = state?.pendingIds;
+    const retries = state?.retries;
+    if (!state || Array.isArray(state) || !Number.isSafeInteger(state.urlIndex) || state.urlIndex < 0 || state.urlIndex > categories ||
+        !Number.isSafeInteger(state.page) || state.page < 1 || state.page > maxPages + 1 ||
+        (pending !== undefined && (!Array.isArray(pending) || !pending.every(validId) || new Set(pending).size !== pending.length)) ||
+        (retries !== undefined && (!Array.isArray(retries) || !retries.every(entry => entry && validId(entry.id) &&
+            Number.isSafeInteger(entry.failures) && entry.failures > 0 && Number.isSafeInteger(entry.nextAttemptAt) && entry.nextAttemptAt >= 0) ||
+            new Set(retries.map(entry => entry.id)).size !== retries.length)) ||
+        (state.urlIndex === categories && (state.page !== 1 || pending !== undefined)) ||
+        (state.page > maxPages && pending !== undefined)) {
+        throw new Error('Invalid crawl checkpoint; refusing to reset it');
     }
-    return { urlIndex: 0, page: 1 };
+    return { urlIndex: state.urlIndex, page: state.page, ...(pending === undefined ? {} : { pendingIds: pending }), retries: retries || [] };
 }
 
-function saveState(urlIndex, page) {
-    fs.writeFileSync(STATE_FILE, JSON.stringify({ urlIndex, page }, null, 2));
-}
-
-async function main() {
-    if (!fs.existsSync(DATA_DIR)) {
-        fs.mkdirSync(DATA_DIR, { recursive: true });
-    }
-
+async function main({
+    dataDir = DATA_DIR, searchUrls = SEARCH_URLS, maxPages = MAX_PAGES,
+    get = axios.get, search = scrapeSearchPage, detail = scrapeProductDetails, save = saveProductData,
+    now = Date.now, wait = sleep, client: suppliedClient, requestIntervalMs,
+    jobStartedAt = process.env.SCRAPER_JOB_STARTED_AT, reservationId = process.env.SCRAPER_RESERVATION_ID,
+    log = console.log, logError = console.error
+} = {}) {
+    const startedAt = now();
+    const deadline = getStopTargetTime(startedAt, jobStartedAt ?? startedAt).getTime();
+    const stateFile = path.join(dataDir, 'crawl_state.json');
+    // Load before constructing a client: corrupt state must never start HTTP or
+    // be silently replaced with a fresh cursor.
+    let state = loadState(stateFile, { categories: searchUrls.length, maxPages });
+    fs.mkdirSync(dataDir, { recursive: true });
+    const client = suppliedClient || createRequestClient({
+        get, budgetFile: path.join(dataDir, 'request_budget.json'), deadline, now, wait, reservationId,
+        ...(requestIntervalMs === undefined ? {} : { intervalMs: requestIntervalMs })
+    });
+    const initialBudget = client.getBudget?.();
     const processedIds = new Set();
-    const startTime = Date.now();
-    const stopTargetTime = getStopTargetTime(startTime);
-    let state = loadState();
+    const metrics = { searchPages: 0, searchFailures: 0, itemSuccess: 0, itemFailures: 0, unavailable: 0, retries: 0, duplicatesAvoided: 0 };
+    let haltError;
+    let fatalError;
 
-    console.log(`Current Time: ${new Date(startTime).toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}`);
-    console.log(`Target Stop Time: ${stopTargetTime.toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}`);
-    console.log(`Resuming from URL Index: ${state.urlIndex}, Page: ${state.page}`);
-
-    for (let uIdx = state.urlIndex; uIdx < SEARCH_URLS.length; uIdx++) {
-        const baseUrl = SEARCH_URLS[uIdx];
-        console.log(`Starting crawl for URL [${uIdx}]: ${baseUrl}`);
-
-        // Start from saved page if resuming, otherwise page 1
-        const startPage = (uIdx === state.urlIndex) ? state.page : 1;
-
-        for (let page = startPage; page <= MAX_PAGES; page++) {
-            // Check time limit
-            if (Date.now() > stopTargetTime.getTime()) {
-                console.log(`[Time Limit] Target stop time reached (${stopTargetTime.toLocaleString()}). Saving state and stopping safely.`);
-                saveState(uIdx, page);
-                return;
-            }
-
-            const url = `${baseUrl}&page=${page}`;
-            const ids = await scrapeSearchPage(url);
-            if (ids.length === 0) {
-                console.log(`No more items found at page ${page}. Moving to next category.`);
-                break;
-            }
-
-            // Parallel processing in batches
-            const CONCURRENCY = 5;
-            for (let i = 0; i < ids.length; i += CONCURRENCY) {
-                const chunk = ids.slice(i, i + CONCURRENCY);
-                const promises = chunk.map(async (id) => {
-                    if (processedIds.has(id)) return;
-
-                    const details = await scrapeProductDetails(id);
-                    if (details) {
-                        await saveProductData(details);
-                        console.log(`Saved: [${id}] ${details.name} (${details.variations.length} vars)`);
-                    }
-                    processedIds.add(id);
-                });
-
-                await Promise.all(promises);
-
-                // Reduced delay for faster processing
-                await new Promise(resolve => setTimeout(resolve, 1000));
-            }
-
-            // Save state after every successful page crawl
-            saveState(uIdx, page + 1);
-
-            // Small delay between search pages
-            await new Promise(resolve => setTimeout(resolve, 2000));
+    function halt(error) {
+        // A failed disk write is more serious than a normal time/quota pause.
+        if (!haltError || (!(error instanceof CollectionStop) || error.failed)) haltError = error;
+        client.stop?.(error.reason || 'storage', error.message, !(error instanceof CollectionStop) || error.failed);
+    }
+    function checkpoint(next = state) {
+        try {
+            writeJson(stateFile, next);
+            state = next;
+        } catch (error) {
+            fatalError = error;
+            halt(error);
+            throw error;
         }
     }
-
-    console.log('Scraping completed. Clearing state.');
-    if (fs.existsSync(STATE_FILE)) {
-        fs.unlinkSync(STATE_FILE);
+    function check() {
+        if (haltError) throw haltError;
+        if (now() >= deadline) throw new CollectionStop('deadline', 'Collection time budget reached');
+        client.check?.();
     }
+    async function pause(ms) {
+        check();
+        if (now() + ms >= deadline) throw new CollectionStop('deadline', 'Not enough collection time for crawl delay');
+        await wait(ms);
+        check();
+    }
+    function nextPage() {
+        const page = state.page + 1;
+        checkpoint({ urlIndex: state.urlIndex + (page > maxPages ? 1 : 0), page: page > maxPages ? 1 : page, retries: state.retries });
+    }
+    function retryEntry(id, unavailable) {
+        const previous = state.retries.find(entry => entry.id === id);
+        const failures = Math.min(Number.MAX_SAFE_INTEGER, (previous?.failures || 0) + 1);
+        const delay = unavailable ? RETRY_MAX_MS : Math.min(RETRY_MAX_MS, RETRY_BASE_MS * 2 ** Math.min(failures - 1, 5));
+        return { id, failures, nextAttemptAt: now() + delay };
+    }
+
+    async function batch(ids, retry = false) {
+        check();
+        // Each worker resolves with an outcome. Promise.all remains the original
+        // five-item barrier, including after a stop or a save failure. No final
+        // checkpoint or quota refund can race an already-started request.
+        const results = await Promise.all(ids.map(async id => {
+            try {
+                if (processedIds.has(id)) {
+                    metrics.duplicatesAvoided++;
+                    return { id, kind: 'skipped' };
+                }
+                // Its already-durable retry entry makes skipping safe without
+                // bypassing backoff when the same product appears in search.
+                if (state.retries.some(entry => entry.id === id && entry.nextAttemptAt > now())) return { id, kind: 'skipped' };
+                check();
+                processedIds.add(id);
+                const result = await detail(id, client);
+                if (result?.kind === 'success') {
+                    try {
+                        await save(result.product, { dataDir, today: jstDate(now()) });
+                    } catch (error) {
+                        if (error.code === 'HISTORY_CORRUPT') {
+                            logError(`Item ${id}: ${error.message}`);
+                            return { id, kind: 'failure' };
+                        }
+                        fatalError = error;
+                        halt(error);
+                        return { id, kind: 'stopped' };
+                    }
+                    return { id, kind: 'success' };
+                }
+                if (result?.kind === 'unavailable' && [404, 410].includes(result.status)) return { id, kind: 'unavailable' };
+                throw result?.error || new Error('Invalid product outcome');
+            } catch (error) {
+                if ((error instanceof CollectionStop && !['redirect', 'http'].includes(error.reason)) || haltError) {
+                    halt(error);
+                    return { id, kind: 'stopped' };
+                }
+                logError(`Item ${id}: ${error.message}`);
+                return { id, kind: 'failure' };
+            }
+        }));
+        const settledIds = new Set();
+        const retries = new Map(state.retries.map(entry => [entry.id, entry]));
+        for (const result of results) {
+            if (result.kind === 'stopped') continue;
+            settledIds.add(result.id);
+            if (result.kind === 'skipped') continue;
+            if (retry) metrics.retries++;
+            if (result.kind === 'success') {
+                metrics.itemSuccess++;
+                retries.delete(result.id);
+            } else {
+                if (result.kind === 'unavailable') metrics.unavailable++;
+                else metrics.itemFailures++;
+                retries.set(result.id, retryEntry(result.id, result.kind === 'unavailable'));
+            }
+        }
+        // History writes finished above. A failed item leaves pendingIds only
+        // in the same atomic checkpoint that durably adds its retry entry.
+        checkpoint({ ...state, retries: [...retries.values()],
+            ...(state.pendingIds === undefined ? {} : { pendingIds: state.pendingIds.filter(id => !settledIds.has(id)) }) });
+        check();
+        await pause(1000);
+    }
+
+    async function retryBatch() {
+        const ids = state.retries.filter(entry => entry.nextAttemptAt <= now() && !processedIds.has(entry.id))
+            .sort((a, b) => a.nextAttemptAt - b.nextAttemptAt).slice(0, BATCH_SIZE).map(entry => entry.id);
+        if (!ids.length) return false;
+        await batch(ids, true);
+        return true;
+    }
+
+    let result;
+    try {
+        // A completed sweep starts over on the next run, as in the original
+        // crawler. Only failed IDs survive; there is no catalog/success ledger.
+        if (state.urlIndex === searchUrls.length) checkpoint({ urlIndex: 0, page: 1, retries: state.retries });
+        else checkpoint();
+        await retryBatch();
+        while (state.urlIndex < searchUrls.length) {
+            check();
+            if (state.page > maxPages) {
+                checkpoint({ urlIndex: state.urlIndex + 1, page: 1, retries: state.retries });
+                continue;
+            }
+            if (state.pendingIds === undefined) {
+                const url = `${searchUrls[state.urlIndex]}&page=${state.page}`;
+                let found;
+                try { found = await search(url, client); }
+                catch (error) { found = { kind: 'failure', error }; }
+                metrics.searchPages++;
+                if (found?.kind === 'empty') {
+                    checkpoint({ urlIndex: state.urlIndex + 1, page: 1, retries: state.retries });
+                    await retryBatch();
+                    continue;
+                }
+                if (found?.kind !== 'success' || !Array.isArray(found.ids) || !found.ids.length || !found.ids.every(validId)) {
+                    metrics.searchFailures++;
+                    const error = found?.error || new Error('Invalid search outcome');
+                    if (error instanceof CollectionStop) throw error;
+                    throw new CollectionStop('search-failure', `Search page failed; cursor preserved: ${error.message}`, true);
+                }
+                // Persist every discovered ID before starting its details.
+                checkpoint({ ...state, pendingIds: [...new Set(found.ids)] });
+            }
+            while (state.pendingIds.length) await batch(state.pendingIds.slice(0, BATCH_SIZE));
+            nextPage();
+            await pause(2000);
+            // A bounded retry batch between pages guarantees retry progress
+            // without replacing or starving the sequential search crawl.
+            await retryBatch();
+        }
+        while (await retryBatch()) { /* Drain due failures after the normal sweep. */ }
+        checkpoint({ urlIndex: 0, page: 1, retries: state.retries });
+        result = { status: state.retries.length ? 'partial' : 'completed',
+            ...(state.retries.length ? { reason: 'retry-pending' } : {}), failed: metrics.itemFailures > 0 };
+    } catch (error) {
+        halt(error);
+        logError(error.message);
+        result = error instanceof CollectionStop
+            ? { status: error.failed ? 'partial' : 'paused', reason: error.reason, failed: error.failed }
+            : { status: 'failed', reason: 'storage', failed: true };
+    } finally {
+        // All batch work was drained before reaching this point, including
+        // successes which arrived after another request tripped the circuit.
+        let checkpointSaved = false;
+        try { checkpoint(); checkpointSaved = true; } catch { /* Keep the durable reservation charged until recovery. */ }
+        if (checkpointSaved) {
+            try { client.finish?.(); }
+            catch (error) { fatalError = error; logError(`Cannot finish request budget: ${error.message}`); }
+        }
+    }
+    if (fatalError) result = { status: 'failed', reason: 'storage', failed: true };
+    const finalBudget = client.getBudget?.();
+    const actualRequests = budget => budget.requests - (budget.reservation && !budget.reservation.completed
+        ? budget.reservation.limit - budget.reservation.used : 0);
+    metrics.chargedHttpAttempts = initialBudget && finalBudget ? finalBudget.reservation && initialBudget.reservation
+        ? finalBudget.reservation.used - initialBudget.reservation.used : actualRequests(finalBudget) - actualRequests(initialBudget) : null;
+    metrics.dailyChargedRequests = finalBudget ? actualRequests(finalBudget) : null;
+    log(`Collection ${result.status}; saved ${metrics.itemSuccess}, queued retries ${state.retries.length}` +
+        (metrics.chargedHttpAttempts === null ? '' : `; charged HTTP attempts ${metrics.chargedHttpAttempts}, daily charged total ${metrics.dailyChargedRequests}`));
+    return { ...result, metrics };
 }
 
-// Only auto-run when executed directly (node src/scraper.js), not when required by tests.
+// Importing the module for offline tests never starts network collection.
 if (require.main === module) {
-    main();
+    // Workflow reserves and pushes quota before starting. Refuse an accidental
+    // unbudgeted manual CLI collection; tests use the injected main() interface.
+    const run = process.env.SCRAPER_RESERVATION_ID
+        ? main()
+        : Promise.reject(new Error('Run through the workflow with a committed request reservation'));
+    run.then(result => {
+        console.log(`Collection result: ${result.status}${result.reason ? ` (${result.reason})` : ''}`);
+        if (result.failed || result.status === 'failed') process.exitCode = 1;
+    }).catch(error => {
+        console.error('Scraper failed:', error);
+        process.exitCode = 1;
+    });
 }
 
-module.exports = { normalizeVariationName, scrapeProductDetails, saveProductData };
+module.exports = {
+    normalizeVariationName, scrapeSearchPage, scrapeProductDetails, saveProductData,
+    loadState, main, getStopTargetTime
+};
