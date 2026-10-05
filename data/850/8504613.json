@@ -257,6 +257,11 @@
         "date": "2026-10-01",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "シフォン-Chiffon": [
@@ -514,6 +519,11 @@
         "date": "2026-10-01",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 200,
+        "is_sale": true
       }
     ],
     "ラムネ-Ramune": [
@@ -771,12 +781,25 @@
         "date": "2026-10-01",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 200,
+        "is_sale": true
+      }
+    ],
+    "りこりす": [
+      {
+        "date": "2026-10-05",
+        "price": 200,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
     "14190753": "フルパック",
     "14191009": "シフォン-Chiffon",
-    "14191010": "ラムネ-Ramune"
+    "14191010": "ラムネ-Ramune",
+    "14922113": "りこりす"
   }
 }

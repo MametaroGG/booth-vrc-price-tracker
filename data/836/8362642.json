@@ -317,10 +317,23 @@
         "date": "2026-10-01",
         "price": 6000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-05",
+        "price": 4500,
+        "is_sale": true
+      }
+    ],
+    "+Head対応DLC衣装のみセット": [
+      {
+        "date": "2026-10-05",
+        "price": 3000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13970630": "default"
+    "13970630": "default",
+    "14937162": "+Head対応DLC衣装のみセット"
   }
 }
