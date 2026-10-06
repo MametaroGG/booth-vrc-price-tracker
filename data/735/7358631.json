@@ -742,10 +742,39 @@
         "date": "2026-10-02",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-07",
+        "price": 1400,
+        "is_sale": false
+      }
+    ],
+    "M@ROON": [
+      {
+        "date": "2026-10-07",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Grus": [
+      {
+        "date": "2026-10-07",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Lapwing": [
+      {
+        "date": "2026-10-07",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12322165": "default"
+    "12322165": "default",
+    "14927121": "M@ROON",
+    "14927122": "Grus",
+    "14927123": "Lapwing"
   }
 }

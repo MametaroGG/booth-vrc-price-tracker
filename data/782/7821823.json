@@ -577,6 +577,11 @@
         "date": "2026-10-01",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-07",
+        "price": 980,
+        "is_sale": false
       }
     ],
     "今日まで発売記念価格！！！": [
@@ -592,9 +597,17 @@
         "price": 980,
         "is_sale": true
       }
+    ],
+    "支援版": [
+      {
+        "date": "2026-10-07",
+        "price": 1200,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "13499794": "default"
+    "13499794": "default",
+    "14950960": "支援版"
   }
 }

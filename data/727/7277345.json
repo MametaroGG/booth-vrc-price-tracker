@@ -742,10 +742,31 @@
         "date": "2026-10-02",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-07",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Veknica (ヴェルニカ) 対応": [
+      {
+        "date": "2026-10-07",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Mayo (まよ) 対応": [
+      {
+        "date": "2026-10-07",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12190996": "default"
+    "12190996": "default",
+    "14947040": "Veknica (ヴェルニカ) 対応",
+    "14947052": "Mayo (まよ) 対応"
   }
 }

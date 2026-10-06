@@ -742,10 +742,31 @@
         "date": "2026-10-01",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-07",
+        "price": 700,
+        "is_sale": true
+      }
+    ],
+    "キプフェル": [
+      {
+        "date": "2026-10-07",
+        "price": 800,
+        "is_sale": true
+      }
+    ],
+    "【SALE】えも研": [
+      {
+        "date": "2026-10-07",
+        "price": 500,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "13188089": "default"
+    "13188089": "default",
+    "14945951": "キプフェル",
+    "14945952": "【SALE】えも研"
   }
 }
