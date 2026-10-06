@@ -31,9 +31,39 @@ function fixture(t) {
     return {
         dataDir, stateFile, budgetFile,
         readState: () => JSON.parse(fs.readFileSync(stateFile, 'utf8')),
-        run: options => main({ dataDir, now: () => START, client: clientFor(''), wait: async () => {}, log: () => {}, logError: () => {}, ...options })
+        run: options => {
+            // Actions exports its real job start. Keep fixture job metadata
+            // consistent with the injected clock instead of inheriting it.
+            const now = options?.now || (() => START);
+            return main({ dataDir, now, jobStartedAt: now(), reservationId: null,
+                client: clientFor(''), wait: async () => {}, log: () => {}, logError: () => {}, ...options });
+        }
     };
 }
+
+test('inherited workflow metadata cannot replace a fixture clock or reservation', async t => {
+    const f = fixture(t);
+    const names = ['SCRAPER_JOB_STARTED_AT', 'SCRAPER_RESERVATION_ID'];
+    const previous = names.map(name => process.env[name]);
+    try {
+        process.env.SCRAPER_JOB_STARTED_AT = '2099-01-01T00:00:00Z';
+        process.env.SCRAPER_RESERVATION_ID = 'unrelated-workflow-reservation';
+        writeJson(f.budgetFile, { date: jstDate(START), requests: 0, blockedUntil: 0 });
+        let requests = 0;
+        const result = await f.run({ client: undefined, get: async () => {
+            requests++;
+            return { status: 200, data: emptyHtml };
+        } });
+        assert.equal(result.status, 'completed');
+        assert.equal(requests, 2);
+        assert.equal(result.metrics.chargedHttpAttempts, 2);
+    } finally {
+        names.forEach((name, index) => {
+            if (previous[index] === undefined) delete process.env[name];
+            else process.env[name] = previous[index];
+        });
+    }
+});
 
 test('search distinguishes products, explicit empty, HTTP errors and malformed HTML', async () => {
     assert.deepEqual(await scrapeSearchPage('fixture', clientFor('<div class="item-card" data-product-id="123"></div>')), page(['123']));
@@ -324,7 +354,7 @@ test('reserved daily budget checkpoints partial batches and resumes only unfinis
         return { status: 200, data: url.includes('/items/') ? productHtml : calls.length === 1
             ? ids.map(id => `<div class="item-card" data-product-id="${id}"></div>`).join('') : emptyHtml };
     };
-    const run = reservationId => main({ dataDir: f.dataDir, now: () => time, reservationId,
+    const run = reservationId => main({ dataDir: f.dataDir, now: () => time, jobStartedAt: time, reservationId,
         wait: async () => {}, log: () => {}, logError: () => {},
         client: createRequestClient({ get, budgetFile: f.budgetFile, reservationId, now: () => time, deadline: time + HOUR, intervalMs: 0 }) });
     writeJson(f.budgetFile, { date: jstDate(time), requests: 47995, blockedUntil: 0 });
