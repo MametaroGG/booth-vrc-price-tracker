@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: '0 15,21,3,9 * * *' # JST 00:00, 06:00, 12:00, 18:00
   workflow_dispatch:
+  repository_dispatch:
+    types: [continue-scrape]
 
 concurrency:
   group: scrape-group
@@ -24,7 +26,7 @@ jobs:
         timeout-minutes: 1
         run: |
           echo "SCRAPER_JOB_STARTED_AT=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_ENV"
-          # All runs share one durable request-budget ledger.
+          # All runs share the same durable request session and cooldown state.
           if [[ -z "$DEFAULT_BRANCH" || "$GITHUB_REF" != "refs/heads/$DEFAULT_BRANCH" ]]; then
             echo "::error::Scraping is only allowed on the repository's default branch."
             exit 1
@@ -71,6 +73,7 @@ jobs:
         run: node src/scraper.js
 
       - name: Commit and Push
+        id: save
         if: ${{ !cancelled() && (steps.scraper.outcome == 'success' || steps.scraper.outcome == 'failure') }}
         timeout-minutes: 10
         run: bash scripts/push-data.sh
@@ -81,3 +84,13 @@ jobs:
         run: |
           echo "::error::Scraper failed. Saving any completed data and checkpoints was attempted above."
           exit 1
+
+      - name: Continue collection
+        # A failed scraper can have a successful conclusion because of
+        # continue-on-error. Check its original outcome and the final push.
+        if: ${{ success() && steps.scraper.outcome == 'success' && steps.save.outcome == 'success' && steps.scraper.outputs.continue_collection == 'true' }}
+        timeout-minutes: 1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        # One dispatch, no retries after an uncertain response. Cron is fallback.
+        run: node src/continuation.js

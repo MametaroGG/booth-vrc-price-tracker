@@ -108,10 +108,23 @@ test('workflow budgets setup and saving, tests first, and exposes scraper failur
     assert.match(step('Report scraper failure'), /always\(\).*steps\.scraper\.outcome == 'failure'/);
     assert.match(script('Report scraper failure'), /exit 1/);
     const timeouts = [...workflow.matchAll(/^        timeout-minutes: (\d+)$/gm)].map((match) => Number(match[1]));
-    assert.equal(timeouts.length, 10);
-    assert.equal(timeouts.reduce((sum, minutes) => sum + minutes, 0), 358);
+    assert.equal(timeouts.length, 11);
+    assert.equal(timeouts.reduce((sum, minutes) => sum + minutes, 0), 359);
     assert.ok(timeouts.reduce((sum, minutes) => sum + minutes, 0) < 360);
     assert.doesNotMatch(commitScript, /(?:--force|git pull|--unshallow)/);
+});
+
+test('continuation requires a successful scraper, final save and explicit safe output without added permissions', () => {
+    assert.match(workflow, /repository_dispatch:\s+types: \[continue-scrape\]/);
+    assert.match(workflow, /group: scrape-group\s+cancel-in-progress: false/);
+    assert.match(step('Commit and Push'), /id: save/);
+    const continuation = step('Continue collection');
+    assert.ok(workflow.indexOf('- name: Commit and Push') < workflow.indexOf('- name: Continue collection'));
+    assert.match(continuation, /success\(\).*steps\.scraper\.outcome == 'success'.*steps\.save\.outcome == 'success'.*steps\.scraper\.outputs\.continue_collection == 'true'/);
+    assert.match(continuation, /run: node src\/continuation\.js/);
+    assert.match(continuation, /GITHUB_TOKEN: \$\{\{ github\.token \}\}/);
+    assert.match(workflow, /permissions:\s+contents: write/);
+    assert.doesNotMatch(workflow, /actions: write|secrets\./);
 });
 
 test('recording job start permits only the default branch', (t) => {

@@ -11,6 +11,7 @@ const SEARCH_URLS = [
 const {
     CollectionStop, createRequestClient, getStopTargetTime, jstDate, writeJson
 } = require('./collection-runtime');
+const { shouldContinueCollection } = require('./continuation');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const MAX_PAGES = 3333; // BOOTH's search limit; keep both full categories.
@@ -261,6 +262,7 @@ async function main({
     // Load before constructing a client: corrupt state must never start HTTP or
     // be silently replaced with a fresh cursor.
     let state = loadState(stateFile, { categories: searchUrls.length, maxPages });
+    const startedMidSweep = state.urlIndex > 0 || state.page > 1 || Boolean(state.pendingIds?.length);
     fs.mkdirSync(dataDir, { recursive: true });
     const client = suppliedClient || createRequestClient({
         get, budgetFile: path.join(dataDir, 'request_budget.json'), deadline, now, wait, reservationId,
@@ -408,9 +410,9 @@ async function main({
                     continue;
                 }
                 if (found?.kind !== 'success' || !Array.isArray(found.ids) || !found.ids.length || !found.ids.every(validId)) {
-                    metrics.searchFailures++;
                     const error = found?.error || new Error('Invalid search outcome');
                     if (error instanceof CollectionStop) throw error;
+                    metrics.searchFailures++;
                     throw new CollectionStop('search-failure', `Search page failed; cursor preserved: ${error.message}`, true);
                 }
                 // Persist every discovered ID before starting its details.
@@ -445,25 +447,30 @@ async function main({
     }
     if (fatalError) result = { status: 'failed', reason: 'storage', failed: true };
     const finalBudget = client.getBudget?.();
-    const actualRequests = budget => budget.requests - (budget.reservation && !budget.reservation.completed
+    const actualRequests = budget => budget.requests - (budget.reservation && !budget.reservation.completed && budget.reservation.limit !== null
         ? budget.reservation.limit - budget.reservation.used : 0);
-    metrics.chargedHttpAttempts = initialBudget && finalBudget ? finalBudget.reservation && initialBudget.reservation
-        ? finalBudget.reservation.used - initialBudget.reservation.used : actualRequests(finalBudget) - actualRequests(initialBudget) : null;
-    metrics.dailyChargedRequests = finalBudget ? actualRequests(finalBudget) : null;
+    metrics.chargedHttpAttempts = client.getAttemptCount?.() ?? (initialBudget && finalBudget ? finalBudget.reservation && initialBudget.reservation
+        ? finalBudget.reservation.used - initialBudget.reservation.used : actualRequests(finalBudget) - actualRequests(initialBudget) : null);
+    metrics.dailyChargedRequests = client.getActualRequests?.() ?? (finalBudget ? actualRequests(finalBudget) : null);
     log(`Collection ${result.status}; saved ${metrics.itemSuccess}, queued retries ${state.retries.length}` +
         (metrics.chargedHttpAttempts === null ? '' : `; charged HTTP attempts ${metrics.chargedHttpAttempts}, daily charged total ${metrics.dailyChargedRequests}`));
-    return { ...result, metrics };
+    const continueCollection = shouldContinueCollection({ result, metrics, startedAt, stoppedAt: now(), deadline,
+        blockedUntil: finalBudget?.blockedUntil, startedMidSweep });
+    return { ...result, metrics, continueCollection };
 }
 
 // Importing the module for offline tests never starts network collection.
 if (require.main === module) {
-    // Workflow reserves and pushes quota before starting. Refuse an accidental
-    // unbudgeted manual CLI collection; tests use the injected main() interface.
+    // Workflow pushes its active request session before starting. Refuse an
+    // accidental untracked CLI collection; tests use the injected main() interface.
     const run = process.env.SCRAPER_RESERVATION_ID
         ? main()
         : Promise.reject(new Error('Run through the workflow with a committed request reservation'));
     run.then(result => {
         console.log(`Collection result: ${result.status}${result.reason ? ` (${result.reason})` : ''}`);
+        if (process.env.GITHUB_OUTPUT) {
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, `continue_collection=${result.continueCollection === true}\n`);
+        }
         if (result.failed || result.status === 'failed') process.exitCode = 1;
     }).catch(error => {
         console.error('Scraper failed:', error);

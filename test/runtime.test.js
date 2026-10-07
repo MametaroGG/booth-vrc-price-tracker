@@ -137,7 +137,8 @@ test('deadline prevents requests and retries, and timeout is bounded by remainin
     assert.equal(f.calls[0].config.timeout, 700);
     assert.ok(f.calls[0].config.signal instanceof AbortSignal);
     const client = f.makeClient({ deadline: START + 1000, get: async () => { throw httpError(503); } });
-    await assert.rejects(client.get('https://booth.pm/a'), error => error.reason === 'deadline');
+    await assert.rejects(client.get('https://booth.pm/a'), error => error.reason === 'retry-backoff');
+    assert.equal(client.getBudget().blockedUntil, START + 1500);
     assert.equal(f.waits.length, 0);
 });
 
@@ -192,18 +193,18 @@ test('corrupt/malformed/future budget cannot silently grant fresh allowance', t 
     assert.throws(() => f.makeClient().check(), /future/);
 });
 
-test('durable reservations bound each run and all retries, refunding unused allowance only at finish', async t => {
+test('optional finite reservations refund unused allowance only at finish', async t => {
     const f = fixture(t);
-    const reservation = reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'run-1', now: START });
+    const reservation = reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'run-1', now: START, dailyLimit: 48000 });
     assert.equal(reservation.limit, 48000);
-    const client = f.makeClient({ reservationId: 'run-1' });
+    const client = f.makeClient({ reservationId: 'run-1', dailyLimit: 48000 });
     await client.get('https://booth.pm/a');
     assert.equal(client.getBudget().requests, 48000);
     assert.equal(client.getBudget().reservation.used, 1);
     client.finish();
     assert.equal(client.getBudget().requests, 1);
     assert.equal(client.getBudget().reservation.completed, true);
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'run-2', now: START }).limit, 47999);
+    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'run-2', now: START, dailyLimit: 48000 }).limit, 47999);
 });
 
 test('lost final checkpoint fails closed instead of replenishing quota, including the next day', t => {
@@ -215,27 +216,68 @@ test('lost final checkpoint fails closed instead of replenishing quota, includin
     assert.throws(() => f.makeClient({ reservationId: 'different-run' }), /Missing active/);
 });
 
-test('last daily reservation is clamped to remaining quota and resumes count correctly', async t => {
+test('unresolved legacy nonzero reservations keep their hold when unlimited mode is enabled', t => {
+    const f = fixture(t);
+    for (const used of [0, 123, 48000]) {
+        writeJson(f.budgetFile, { date: jstDate(START), requests: 48000, blockedUntil: 0,
+            reservation: { id: 'legacy-lost', limit: 48000, used, completed: false } });
+        const original = fs.readFileSync(f.budgetFile, 'utf8');
+        for (const now of [START, START + 24 * 3600000]) {
+            assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'new-run', now }), /unresolved/);
+            assert.equal(fs.readFileSync(f.budgetFile, 'utf8'), original);
+        }
+        assert.throws(() => f.makeClient(), /reservation ID/);
+        assert.equal(f.calls.length, 0);
+    }
+});
+
+test('unlimited sessions reject malformed counters or mode markers without resetting the ledger', t => {
+    const f = fixture(t);
+    const valid = { id: 'active', mode: 'unlimited', limit: null, used: 5, completed: false };
+    for (const reservation of [null,
+        { ...valid, mode: undefined }, { ...valid, mode: 'other' }, { ...valid, limit: 48000 },
+        { ...valid, used: -1 }, { ...valid, used: 6 }, { ...valid, used: 0.5 },
+        { ...valid, used: Number.MAX_SAFE_INTEGER + 1 }, { ...valid, completed: 'false' }
+    ]) {
+        writeJson(f.budgetFile, { date: jstDate(START), requests: 5, blockedUntil: 0, reservation });
+        const original = fs.readFileSync(f.budgetFile, 'utf8');
+        assert.throws(() => f.makeClient({ reservationId: 'active' }), /Invalid request reservation/);
+        assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'new-run', now: START }), /Invalid request reservation/);
+        assert.equal(fs.readFileSync(f.budgetFile, 'utf8'), original);
+    }
+    assert.equal(f.calls.length, 0);
+});
+
+test('optional finite daily reservation is clamped to remaining quota and resumes count correctly', async t => {
     const f = fixture(t);
     writeJson(f.budgetFile, { date: jstDate(START), requests: 47998, blockedUntil: 0 });
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'last', now: START }).limit, 2);
-    const client = f.makeClient({ reservationId: 'last' });
+    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'last', now: START, dailyLimit: 48000 }).limit, 2);
+    const client = f.makeClient({ reservationId: 'last', dailyLimit: 48000 });
     await client.get('https://booth.pm/a');
     await client.get('https://booth.pm/b');
     await assert.rejects(client.get('https://booth.pm/c'), error => error.reason === 'request-budget');
     client.finish();
     assert.equal(client.getBudget().requests, 48000);
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'empty', now: START }).limit, 0);
+    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'empty', now: START, dailyLimit: 48000 }).limit, 0);
 });
 
-test('a reserved run stops at JST midnight instead of borrowing unreserved next-day quota', async t => {
+test('an unlimited session checkpoints at JST midnight and records the new day in its next session', async t => {
     const f = fixture(t);
     reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'midnight', now: START });
     const client = f.makeClient({ reservationId: 'midnight' });
+    await client.get('https://booth.pm/a');
     f.setTime(Date.parse('2026-10-04T15:00:00Z'));
     await assert.rejects(client.get('https://booth.pm/a'), error => error.reason === 'day-boundary');
     client.finish();
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'next-day', now: f.now() }).limit, 48000);
+    assert.equal(client.getBudget().requests, 1);
+    assert.equal(client.getBudget().reservation.completed, true);
+    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'next-day', now: f.now() }).limit, null);
+    const next = f.makeClient({ reservationId: 'next-day' });
+    assert.equal(next.getActualRequests(), 0);
+    await next.get('https://booth.pm/b');
+    assert.equal(next.getActualRequests(), 1);
+    assert.equal(next.getBudget().date, '2026-10-05');
+    assert.equal(next.getAttemptCount(), 1);
 });
 
 test('cooldown blocks quota reservations as well as requests', t => {
@@ -244,12 +286,20 @@ test('cooldown blocks quota reservations as well as requests', t => {
     assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'blocked', now: START }), /Requests paused/);
 });
 
-test('first deployment cannot add unmeasured traffic to the current JST day', t => {
+test('default unlimited bootstrap records a durable session and can collect on the first day', async t => {
     const f = fixture(t);
     fs.unlinkSync(f.budgetFile);
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'bootstrap', now: START }).limit, 0);
-    f.makeClient({ reservationId: 'bootstrap' }).finish();
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'new-day', now: START + 24 * 3600000 }).limit, 48000);
+    assert.deepEqual(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'bootstrap', now: START }),
+        { id: 'bootstrap', mode: 'unlimited', limit: null, used: 0, completed: false });
+    const saved = JSON.parse(fs.readFileSync(f.budgetFile));
+    assert.equal(saved.requests, 0, 'an unbounded session is never precharged');
+    assert.equal(saved.reservation.completed, false);
+    const client = f.makeClient({ reservationId: 'bootstrap' });
+    assert.equal(client.remaining(), Infinity);
+    await client.get('https://booth.pm/a');
+    client.finish();
+    assert.equal(client.getBudget().requests, 1);
+    assert.equal(client.getBudget().reservation.completed, true);
 });
 
 test('403 respects a Retry-After longer than the default six-hour pause', async t => {
@@ -287,32 +337,41 @@ test('calendar-invalid budget dates fail closed', t => {
     }
 });
 
-test('one job can use more than 10,000 requests within the approved remaining daily allowance', async t => {
+test('default unlimited session continues beyond 48,000 observed attempts in the same JST day', async t => {
     const f = fixture(t);
     const reservation = reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'long-run', now: START });
-    assert.equal(reservation.limit, 48000);
+    assert.equal(reservation.limit, null);
     const persisted = JSON.parse(fs.readFileSync(f.budgetFile));
-    persisted.reservation.used = 10000;
+    persisted.requests = 48000;
+    persisted.reservation.used = 48000;
     writeJson(f.budgetFile, persisted);
-    const client = f.makeClient({ reservationId: 'long-run' });
-    await client.get('https://booth.pm/a');
-    assert.equal(client.getBudget().reservation.used, 10001);
+    const client = f.makeClient({ reservationId: 'long-run', intervalMs: undefined });
+    await Promise.all(Array.from({ length: 5 }, () => client.get('https://booth.pm/a')));
+    assert.equal(client.getBudget().reservation.used, 48005);
+    assert.equal(client.getAttemptCount(), 5);
+    assert.equal(client.getActualRequests(), 48005);
+    assert.equal(client.remaining(), Infinity);
+    assert.equal(JSON.parse(fs.readFileSync(f.budgetFile)).requests, 48005);
     client.finish();
-    assert.equal(client.getBudget().requests, 10001);
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'following-run', now: START }).limit, 37999);
+    assert.equal(client.getBudget().requests, 48005);
+    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'following-run', now: START }).limit, null);
+    const following = f.makeClient({ reservationId: 'following-run' });
+    await following.get('https://booth.pm/b');
+    assert.equal(following.getActualRequests(), 48006);
+    assert.equal(following.getAttemptCount(), 1);
 });
 
-test('a lost zero-allowance run recovers automatically because it could not send requests', t => {
+test('a legacy lost zero-allowance run recovers automatically because it could not send requests', t => {
     const f = fixture(t);
-    fs.unlinkSync(f.budgetFile);
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'bootstrap-crash', now: START }).limit, 0);
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'next-day', now: START + 24 * 3600000 }).limit, 48000);
+    writeJson(f.budgetFile, { date: jstDate(START), requests: 48000, blockedUntil: 0,
+        reservation: { id: 'bootstrap-crash', limit: 0, used: 0, completed: false } });
+    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'next-day', now: START + 24 * 3600000 }).limit, null);
 });
 
-test('operator-reconciled abandoned quota stays charged and never lowers a verified cooldown', t => {
+test('completed legacy reservations migrate at the old daily ceiling without lowering a verified cooldown', async t => {
     const f = fixture(t);
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'abandoned', now: START });
-    const budget = JSON.parse(fs.readFileSync(f.budgetFile));
+    const budget = { date: jstDate(START), requests: 48000, blockedUntil: 0,
+        reservation: { id: 'abandoned', limit: 48000, used: 123, completed: false } };
     // Recovery procedure after confirming the old job ended and reviewing logs:
     // keep requests/limit/used unchanged, close the reservation, preserve cooldown.
     budget.reservation.completed = true;
@@ -320,8 +379,14 @@ test('operator-reconciled abandoned quota stays charged and never lowers a verif
     writeJson(f.budgetFile, budget);
     assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'too-soon', now: START }), /Requests paused/);
     assert.equal(JSON.parse(fs.readFileSync(f.budgetFile)).requests, 48000);
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'same-day', now: START + 60000 }).limit, 0);
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'fresh-day', now: START + 24 * 3600000 }).limit, 48000);
+    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'same-day', now: START + 60000 }).limit, null);
+    f.setTime(START + 60000);
+    const client = f.makeClient({ reservationId: 'same-day' });
+    await client.get('https://booth.pm/a');
+    client.finish();
+    assert.equal(client.getBudget().requests, 48001);
+    assert.equal(client.getBudget().blockedUntil, START + 60000);
+    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'fresh-day', now: START + 24 * 3600000 }).limit, null);
 });
 
 test('default pacing preserves a simultaneous five-request batch while persisting every start', async t => {
@@ -347,8 +412,8 @@ test('default pacing preserves a simultaneous five-request batch while persistin
 test('concurrent search and detail requests share the full remaining allowance', async t => {
     const f = fixture(t);
     writeJson(f.budgetFile, { date: jstDate(START), requests: 47990, blockedUntil: 0 });
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'near-cap', now: START });
-    const client = f.makeClient({ reservationId: 'near-cap', intervalMs: undefined });
+    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'near-cap', now: START, dailyLimit: 48000 });
+    const client = f.makeClient({ reservationId: 'near-cap', intervalMs: undefined, dailyLimit: 48000 });
     assert.equal(client.remaining(), 10);
     const results = await Promise.allSettled(Array.from({ length: 30 }, (_, index) =>
         client.get(index % 2 ? 'https://booth.pm/ja/items/1' : 'https://booth.pm/ja/search')));
@@ -363,16 +428,16 @@ test('concurrent search and detail requests share the full remaining allowance',
 
 test('remaining quota excludes the durable precharge and spans completed runs', async t => {
     const f = fixture(t);
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'first', now: START });
-    const first = f.makeClient({ reservationId: 'first' });
+    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'first', now: START, dailyLimit: 48000 });
+    const first = f.makeClient({ reservationId: 'first', dailyLimit: 48000 });
     assert.equal(first.getBudget().requests, 48000);
     assert.equal(first.remaining(), 48000);
     await first.get('https://booth.pm/ja/search');
     await first.get('https://booth.pm/ja/items/1');
     assert.equal(first.remaining(), 47998);
     first.finish();
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'second', now: f.now() });
-    const second = f.makeClient({ reservationId: 'second' });
+    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'second', now: f.now(), dailyLimit: 48000 });
+    const second = f.makeClient({ reservationId: 'second', dailyLimit: 48000 });
     assert.equal(second.remaining(), 47998);
     assert.equal(second.getBudget().reservation.limit, 47998);
     assert.throws(() => f.makeClient(), /reservation ID/);
@@ -426,7 +491,9 @@ test('budget persistence failure stops queued calls before sending unrecorded HT
     assert.ok(results.every(result => result.status === 'rejected' && result.reason.reason === 'budget-write'));
     assert.equal(f.calls.length, 0);
     const persisted = JSON.parse(fs.readFileSync(f.budgetFile));
-    assert.equal(persisted.requests, 48000);
+    assert.equal(persisted.requests, 0);
+    assert.equal(persisted.reservation.mode, 'unlimited');
+    assert.equal(persisted.reservation.used, 0);
     assert.equal(persisted.reservation.completed, false);
     assert.equal(persisted.blockedUntil, 0);
 });
@@ -778,4 +845,136 @@ test('out-of-range persisted cooldowns fail validation without changing the ledg
         assert.equal(fs.readFileSync(f.budgetFile, 'utf8'), original);
         assert.equal(f.calls.length, 0);
     }
+});
+
+test('retry backoff beyond the deadline remains durable after finishing and blocks the next session', async t => {
+    for (const header of ['120', 'Mon, 05 Oct 2026 02:00:00 GMT', '1e999']) {
+        const f = fixture(t);
+        reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'backoff', now: START });
+        let starts = 0;
+        const client = f.makeClient({ reservationId: 'backoff', deadline: START + 1000,
+            get: async () => { starts++; throw httpError(503, { 'retry-after': header }); } });
+        await assert.rejects(client.get('https://booth.pm/a'),
+            error => error.reason === 'retry-backoff' && error.failed === true);
+        const blockedUntil = START + retryAfterMs(header, START);
+        assert.equal(client.getBudget().blockedUntil, blockedUntil);
+        assert.equal(client.remaining(), 0);
+        assert.equal(starts, 1);
+        assert.deepEqual(f.waits, []);
+        client.finish();
+        const persisted = JSON.parse(fs.readFileSync(f.budgetFile));
+        assert.equal(persisted.reservation.completed, true);
+        assert.equal(persisted.blockedUntil, blockedUntil);
+        assert.equal(persisted.requests, 1);
+        assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'next-run', now: START + 1001 }), /Requests paused/);
+        assert.equal(fs.readFileSync(f.budgetFile, 'utf8'), JSON.stringify(persisted, null, 2));
+    }
+});
+
+test('retry backoff crossing JST midnight is held across the next day and can resume only after it expires', async t => {
+    const f = fixture(t);
+    const midnight = Date.parse('2026-10-04T15:00:00Z');
+    f.setTime(midnight - 1000);
+    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'midnight-backoff', now: f.now() });
+    const client = f.makeClient({ reservationId: 'midnight-backoff', get: async () => { throw httpError(500, { 'retry-after': '120' }); } });
+    await assert.rejects(client.get('https://booth.pm/a'), error => error.reason === 'retry-backoff' && error.failed === true);
+    client.finish();
+    const blockedUntil = midnight + 119000;
+    assert.equal(client.getBudget().blockedUntil, blockedUntil);
+    assert.deepEqual(f.waits, []);
+    assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'too-soon', now: midnight }), /Requests paused/);
+    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'resumed', now: blockedUntil });
+    f.setTime(blockedUntil);
+    const next = f.makeClient({ reservationId: 'resumed' });
+    await next.get('https://booth.pm/a');
+    assert.equal(next.getBudget().date, '2026-10-05');
+    assert.equal(next.getBudget().blockedUntil, blockedUntil);
+    assert.equal(next.getActualRequests(), 1);
+});
+
+test('request pacing beyond the deadline remains a normal stop without inventing a cooldown', async t => {
+    const f = fixture(t);
+    const client = f.makeClient({ deadline: START + 100, intervalMs: 200 });
+    await client.get('https://booth.pm/a');
+    await assert.rejects(client.get('https://booth.pm/b'), error => error.reason === 'deadline' && error.failed === false);
+    assert.equal(client.getBudget().blockedUntil, 0);
+    assert.equal(client.getAttemptCount(), 1);
+    assert.equal(f.calls.length, 1);
+});
+
+test('the final transient retry preserves its Retry-After cooldown for the next session', async t => {
+    const f = fixture(t);
+    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'retry-exhausted', now: START });
+    let starts = 0;
+    const client = f.makeClient({ reservationId: 'retry-exhausted', get: async () => {
+        starts++;
+        throw httpError(503, { 'retry-after': '120' });
+    } });
+    await assert.rejects(client.get('https://booth.pm/a'), error => error.reason === 'retry-backoff' && error.failed === true);
+    assert.equal(starts, 3);
+    assert.deepEqual(f.waits, [120000, 120000]);
+    const blockedUntil = f.now() + 120000;
+    client.finish();
+    assert.equal(JSON.parse(fs.readFileSync(f.budgetFile)).blockedUntil, blockedUntil);
+    assert.equal(client.getBudget().reservation.completed, true);
+    assert.equal(client.getActualRequests(), 3);
+    assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'too-soon', now: f.now() }), /Requests paused/);
+    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'after-hold', now: blockedUntil }).limit, null);
+});
+
+test('circuit opening honors server Retry-After longer than its default minute', async t => {
+    for (const header of ['120', '1e999']) {
+        const f = fixture(t);
+        reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'circuit', now: START });
+        const client = f.makeClient({ reservationId: 'circuit', failureThreshold: 1,
+            get: async () => { throw httpError(500, { 'retry-after': header }); } });
+        await assert.rejects(client.get('https://booth.pm/a'), error => error.reason === 'circuit-breaker' && error.triggeringUrl === 'https://booth.pm/a');
+        client.finish();
+        const blockedUntil = START + retryAfterMs(header, START);
+        assert.equal(JSON.parse(fs.readFileSync(f.budgetFile)).blockedUntil, blockedUntil);
+        assert.equal(client.getAttemptCount(), 1);
+        assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'next-run', now: START + 60001 }), /Requests paused/);
+    }
+});
+
+test('a draining transient failure can extend the server hold without replacing the first stop', async t => {
+    const f = fixture(t);
+    const rejects = [];
+    const client = f.makeClient({ intervalMs: undefined, failureThreshold: 1,
+        get: () => new Promise((resolve, reject) => rejects.push(reject)) });
+    const first = client.get('https://booth.pm/a').catch(error => error);
+    const second = client.get('https://booth.pm/b').catch(error => error);
+    await new Promise(resolve => setImmediate(resolve));
+    assert.equal(rejects.length, 2);
+    rejects[0](httpError(500));
+    const stopped = await first;
+    rejects[1](httpError(503, { 'retry-after': '900' }));
+    assert.equal(await second, stopped);
+    assert.equal(stopped.reason, 'circuit-breaker');
+    assert.equal(stopped.triggeringUrl, 'https://booth.pm/a');
+    assert.equal(JSON.parse(fs.readFileSync(f.budgetFile)).blockedUntil, START + 900000);
+    assert.equal(client.getAttemptCount(), 2);
+});
+
+test('a transient Retry-After survives a concurrent stop before its outer catch handles the failure', async t => {
+    const f = fixture(t);
+    const rejects = [];
+    const client = f.makeClient({ intervalMs: undefined,
+        get: () => new Promise((resolve, reject) => rejects.push(reject)) });
+    const first = client.get('https://booth.pm/earlier-transient').catch(error => error);
+    const second = client.get('https://booth.pm/later-rate-limit').catch(error => error);
+    await new Promise(resolve => setImmediate(resolve));
+    assert.equal(rejects.length, 2);
+    // Settle both before either outer catch runs. The transient is observed
+    // first, but the following 429 establishes the stop before it is handled.
+    rejects[0](httpError(503, { 'retry-after': '900' }));
+    rejects[1](httpError(429, { 'retry-after': '60' }));
+    const [firstStop, secondStop] = await Promise.all([first, second]);
+    assert.equal(firstStop, secondStop);
+    assert.equal(firstStop.reason, 'rate-limit');
+    assert.equal(JSON.parse(fs.readFileSync(f.budgetFile)).blockedUntil, START + 900000);
+    assert.equal(client.getBudget().blockedUntil, START + 900000);
+    assert.equal(client.getAttemptCount(), 2);
+    assert.deepEqual(f.waits, []);
+    assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'next-run', now: START + 60001 }), /Requests paused/);
 });

@@ -6,13 +6,15 @@ if (require.main === module) {
     try {
         const budgetFile = path.join(__dirname, '..', 'data', 'request_budget.json');
         if (!fs.existsSync(budgetFile)) {
-            console.log('Initializing request budget: earlier traffic is unknown, so collection waits until the next JST day.');
+            console.log('Initializing request accounting: unlimited daily collection can start immediately.');
         }
         const reservation = reserveDailyAllowance({
             budgetFile,
             reservationId: process.env.SCRAPER_RESERVATION_ID
         });
-        console.log(`Reserved at most ${reservation.limit} requests for this run, including searches, redirects and retries.`);
+        console.log(reservation.mode === 'unlimited'
+            ? 'Opened an unlimited daily collection session; all searches, redirects and retries remain recorded.'
+            : `Reserved at most ${reservation.limit} requests for this run, including searches, redirects and retries.`);
     } catch (error) {
         console.error(`Cannot reserve request budget: ${error.message}`);
         process.exitCode = 1;
