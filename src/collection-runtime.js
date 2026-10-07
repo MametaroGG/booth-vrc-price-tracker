@@ -4,8 +4,8 @@ const path = require('node:path');
 const MAX_EXECUTION_TIME_MS = 5 * 60 * 60 * 1000;
 const JOB_TIMEOUT_MS = 6 * 60 * 60 * 1000;
 const SAVE_BUFFER_MS = 30 * 60 * 1000;
-// Provisional daily ceiling, shared by searches, details, redirects
-// and retries across all scheduled runs. This is not a BOOTH-published limit.
+// Legacy/optional finite ceiling. Production sessions have no daily request cap;
+// every attempt is still recorded and server cooldowns remain mandatory.
 const DAILY_REQUEST_LIMIT = 48000;
 const REQUEST_TIMEOUT_MS = 30000;
 const MAX_TIMESTAMP_MS = 8640000000000000; // Maximum timestamp supported by Date.
@@ -80,12 +80,17 @@ function validateBudget(budget) {
         throw new Error('Invalid request budget; refusing to reset it');
     }
     const reservation = budget.reservation;
-    if (reservation !== undefined && (!reservation || typeof reservation.id !== 'string' || !reservation.id ||
-        typeof reservation.completed !== 'boolean' || !Number.isSafeInteger(reservation.limit) ||
-        reservation.limit < 0 || reservation.limit > DAILY_REQUEST_LIMIT || !Number.isSafeInteger(reservation.used) ||
-        reservation.used < 0 || reservation.used > reservation.limit ||
-        (!reservation.completed && budget.requests < reservation.limit))) {
-        throw new Error('Invalid request reservation; refusing to reset it');
+    if (reservation !== undefined) {
+        const unlimited = reservation?.mode === 'unlimited';
+        const validLimit = reservation && (unlimited ? reservation.limit === null && reservation.used <= budget.requests
+            : (reservation?.mode === undefined || reservation.mode === 'finite') &&
+                Number.isSafeInteger(reservation.limit) && reservation.limit >= 0 && reservation.limit <= DAILY_REQUEST_LIMIT &&
+                reservation.used <= reservation.limit && (reservation.completed || budget.requests >= reservation.limit));
+        if (!reservation || typeof reservation.id !== 'string' || !reservation.id ||
+            typeof reservation.completed !== 'boolean' || !Number.isSafeInteger(reservation.used) ||
+            reservation.used < 0 || !validLimit) {
+            throw new Error('Invalid request reservation; refusing to reset it');
+        }
     }
     return budget;
 }
@@ -94,36 +99,46 @@ function actualRequests(budget) {
     // requests includes an entire durable reservation until finish(). Its
     // unused precharge is not historical traffic.
     const reservation = budget.reservation;
-    return budget.requests - (reservation && !reservation.completed ? reservation.limit - reservation.used : 0);
+    return budget.requests - (reservation && !reservation.completed && reservation.limit !== null
+        ? reservation.limit - reservation.used : 0);
 }
 
 function resetDay(budget, date) {
     return { ...budget, date, requests: 0 };
 }
 
-function reserveDailyAllowance({ budgetFile, reservationId, now = Date.now() }) {
+function validateDailyLimit(dailyLimit) {
+    if (dailyLimit !== null && (!Number.isSafeInteger(dailyLimit) || dailyLimit < 0 || dailyLimit > DAILY_REQUEST_LIMIT)) {
+        throw new Error(`Daily request limit must be null (unlimited) or between 0 and ${DAILY_REQUEST_LIMIT}`);
+    }
+}
+
+function reserveDailyAllowance({ budgetFile, reservationId, now = Date.now(), dailyLimit = null }) {
     if (!reservationId) throw new Error('SCRAPER_RESERVATION_ID is required');
+    validateDailyLimit(dailyLimit);
     // Existing same-day traffic predates this ledger and cannot be measured here.
-    // Bootstrap with no allowance until the next JST day to avoid a rollout spike.
-    let budget = validateBudget(readJson(budgetFile, { date: jstDate(now), requests: DAILY_REQUEST_LIMIT, blockedUntil: 0 }));
+    // An optional finite mode starts conservatively. Unlimited sessions can start
+    // immediately; their count records only traffic observed by this ledger.
+    let budget = validateBudget(readJson(budgetFile, { date: jstDate(now), requests: dailyLimit ?? 0, blockedUntil: 0 }));
     if (budget.reservation && !budget.reservation.completed) {
         if (budget.reservation.limit === 0) {
             // No request could have started, so no response/cooldown evidence was
             // lost. A crashed quota-exhausted/bootstrap run must not block forever.
             budget.reservation.completed = true;
         } else {
-            throw new Error('Previous request reservation is unresolved (unknown outcome/cooldown). Keep its full charge and review recovery instructions before collecting again.');
+            throw new Error('Previous request reservation is unresolved (unknown outcome/cooldown). Preserve its accounting and review recovery instructions before collecting again.');
         }
     }
     if (budget.blockedUntil > now) throw new Error(`Requests paused until ${new Date(budget.blockedUntil).toISOString()}`);
     const date = jstDate(now);
     if (date < budget.date) throw new Error('Request budget date is in the future');
     if (date !== budget.date) budget = resetDay(budget, date);
-    const limit = Math.max(0, DAILY_REQUEST_LIMIT - budget.requests);
-    budget.requests += limit;
-    budget.reservation = { id: reservationId, limit, used: 0, completed: false };
+    const limit = dailyLimit === null ? null : Math.max(0, dailyLimit - budget.requests);
+    if (limit !== null) budget.requests += limit;
+    budget.reservation = { id: reservationId, mode: limit === null ? 'unlimited' : 'finite', limit, used: 0, completed: false };
     // The workflow must push this reservation successfully before collecting.
-    // Losing the final checkpoint cannot replenish quota or forget a cooldown:
+    // No unbounded allowance is precharged. Losing the final checkpoint cannot
+    // forget an unknown response/cooldown, even when the saved used count is zero:
     // the unresolved reservation blocks the next run until explicitly reviewed.
     writeJson(budgetFile, budget);
     return budget.reservation;
@@ -131,12 +146,10 @@ function reserveDailyAllowance({ budgetFile, reservationId, now = Date.now() }) 
 
 function createRequestClient({
     get, budgetFile, deadline, now = Date.now, wait = sleep,
-    dailyLimit = DAILY_REQUEST_LIMIT, intervalMs = REQUEST_INTERVAL_MS,
+    dailyLimit = null, intervalMs = REQUEST_INTERVAL_MS,
     timeoutMs = REQUEST_TIMEOUT_MS, maxAttempts = 3, failureThreshold = 5, reservationId
 }) {
-    if (!Number.isSafeInteger(dailyLimit) || dailyLimit < 0 || dailyLimit > DAILY_REQUEST_LIMIT) {
-        throw new Error(`Daily request limit must be between 0 and ${DAILY_REQUEST_LIMIT}`);
-    }
+    validateDailyLimit(dailyLimit);
     if (!Number.isFinite(intervalMs) || intervalMs < 0 || !Number.isSafeInteger(maxAttempts) || maxAttempts < 1 || maxAttempts > 3) {
         throw new Error('Invalid request pacing or retry limit');
     }
@@ -152,6 +165,7 @@ function createRequestClient({
     let consecutiveFailures = 0;
     let stopped;
     let finished = false;
+    let attemptCount = 0;
 
     function check() {
         if (finished) throw new CollectionStop('finished', 'Request client is already finished', true);
@@ -163,16 +177,16 @@ function createRequestClient({
         const date = jstDate(now());
         if (date < budget.date) throw new Error('Request budget date is in the future');
         if (date !== budget.date) throw new CollectionStop('day-boundary', 'JST day changed; a new durable reservation is required');
-        if (reservationId && budget.reservation.used >= budget.reservation.limit) {
+        if (reservationId && budget.reservation.limit !== null && budget.reservation.used >= budget.reservation.limit) {
             throw new CollectionStop('request-budget', 'Reserved request allowance reached');
         }
-        if (actualRequests(budget) >= dailyLimit) throw new CollectionStop('request-budget', 'JST daily request budget reached');
+        if (dailyLimit !== null && actualRequests(budget) >= dailyLimit) throw new CollectionStop('request-budget', 'JST daily request budget reached');
     }
 
     function remaining() {
         if (finished || stopped || now() >= deadline || budget.blockedUntil > now() || jstDate(now()) !== budget.date) return 0;
-        return Math.max(0, Math.min(dailyLimit - actualRequests(budget),
-            reservationId ? budget.reservation.limit - budget.reservation.used : dailyLimit));
+        return Math.max(0, Math.min(dailyLimit === null ? Infinity : dailyLimit - actualRequests(budget),
+            reservationId && budget.reservation.limit !== null ? budget.reservation.limit - budget.reservation.used : Infinity));
     }
 
     function stop(reason, message, failed = true) {
@@ -202,8 +216,12 @@ function createRequestClient({
             check();
             if (nextStart > now()) await delay(nextStart - now());
             check();
+            if (actualRequests(budget) >= Number.MAX_SAFE_INTEGER || budget.reservation?.used >= Number.MAX_SAFE_INTEGER) {
+                throw stop('request-accounting', 'Request count cannot be recorded safely');
+            }
             if (reservationId) budget.reservation.used++;
-            else budget.requests++;
+            if (!reservationId || budget.reservation.limit === null) budget.requests++;
+            attemptCount++;
             persistBudget(); // Count attempts before sending, even on crash.
             // Start HTTP inside the gate so timer/microtask ordering cannot bunch starts.
             return { pending: start() };
@@ -238,12 +256,18 @@ function createRequestClient({
         }
         const transient = !status || status === 408 || status >= 500;
         if (!transient) throw error;
+        const serverBackoff = error.response?.headers?.['retry-after'] == null ? 0
+            : retryAfterMs(error.response.headers['retry-after'], now());
         // An already-active failure may arrive while the pool drains.
-        // Keep the first global stop and its proven triggering request.
-        if (stopped) throw stopped;
+        // Keep the first global stop and its proven triggering request, while
+        // preserving any longer server hold returned by a draining request.
+        if (stopped) {
+            if (serverBackoff) block('retry-backoff', serverBackoff, 'Preserving server Retry-After cooldown');
+            throw stopped;
+        }
         consecutiveFailures++;
         if (consecutiveFailures >= failureThreshold) {
-            throw block('circuit-breaker', 60000, 'Repeated request failures: circuit opened',
+            throw block('circuit-breaker', Math.max(60000, serverBackoff), 'Repeated request failures: circuit opened',
                 { triggeringUrl: url });
         }
         throw error;
@@ -326,7 +350,7 @@ function createRequestClient({
                         throw new CollectionStop('redirect', 'Unrecognized or excessive BOOTH redirect', true);
                     }
                     currentUrl = target.href;
-                    attempt--; // Redirects count toward the daily cap, not retry allowance.
+                    attempt--; // Redirects are recorded separately from the retry allowance.
                     continue;
                 }
                 if ([404, 410].includes(response.status)) return response;
@@ -336,11 +360,32 @@ function createRequestClient({
                 if (error instanceof CollectionStop) throw error;
                 const status = error.response?.status;
                 if (status && status !== 408 && status < 500) throw error;
-                if (stopped) throw stopped;
-                if (attempt === maxAttempts) throw error;
+                if (stopped) {
+                    // Another response can stop the client between observing
+                    // this failure and reaching this catch. Its earlier server
+                    // hold still applies even though this request cannot retry.
+                    if (error.response?.headers?.['retry-after'] != null) {
+                        block('retry-backoff', retryAfterMs(error.response.headers['retry-after'], now()),
+                            'Preserving server Retry-After cooldown');
+                    }
+                    throw stopped;
+                }
+                if (attempt === maxAttempts) {
+                    if (error.response?.headers?.['retry-after'] != null) {
+                        throw block('retry-backoff', retryAfterMs(error.response.headers['retry-after'], now()),
+                            'Retry limit reached; preserving server Retry-After cooldown', { triggeringUrl: url });
+                    }
+                    throw error;
+                }
                 const backoff = Math.max(1500 * 2 ** (attempt - 1),
                     error.response?.headers?.['retry-after'] == null ? 0 :
                         retryAfterMs(error.response.headers['retry-after'], now()));
+                // A new run must not bypass an unfinished retry wait. Keep the
+                // hold durable when this run cannot wait through its deadline or
+                // day boundary; ordinary request pacing still uses delay alone.
+                if (now() + backoff >= deadline || jstDate(now() + backoff) !== budget.date) {
+                    throw block('retry-backoff', backoff, 'Retry backoff continues beyond this collection run');
+                }
                 await delay(backoff);
             }
         }
@@ -349,13 +394,14 @@ function createRequestClient({
     function finish() {
         finished = true;
         if (reservationId && !budget.reservation.completed) {
-            budget.requests -= budget.reservation.limit - budget.reservation.used;
+            if (budget.reservation.limit !== null) budget.requests -= budget.reservation.limit - budget.reservation.used;
             budget.reservation.completed = true;
             persistBudget();
         }
     }
 
-    return { get: request, check, remaining, stop, finish, getBudget: () => structuredClone(budget) };
+    return { get: request, check, remaining, stop, finish, getBudget: () => structuredClone(budget),
+        getAttemptCount: () => attemptCount, getActualRequests: () => actualRequests(budget) };
 }
 
 module.exports = {

@@ -41,6 +41,84 @@ function fixture(t) {
     };
 }
 
+test('unlimited five-hour runs exceed the old daily cap and resume only their pending items', async t => {
+    const f = fixture(t);
+    let time = Date.parse('2026-10-07T00:00:00Z');
+    let detailTime = HOUR;
+    const detailIds = [];
+    const get = async url => {
+        const id = url.match(/\/items\/(\d+)/)?.[1];
+        if (id) {
+            detailIds.push(id);
+            time += detailTime;
+            return { status: 200, data: productHtml };
+        }
+        return { status: 200, data: [1, 2, 3, 4, 5, 6].map(id => `<div class="item-card" data-product-id="${id}"></div>`).join('') };
+    };
+    writeJson(f.budgetFile, { date: jstDate(time), requests: 48000, blockedUntil: 0,
+        reservation: { id: 'previous', limit: 48000, used: 48000, completed: true } });
+    const run = id => {
+        reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: id, now: time });
+        return f.run({ client: undefined, get, now: () => time, jobStartedAt: time, reservationId: id,
+            searchUrls: ['https://booth.pm/ja/browse/test?sort=new'], maxPages: 1,
+            wait: async ms => { time += ms; } });
+    };
+    const first = await run('first-unlimited');
+    assert.equal(first.status, 'paused');
+    assert.equal(first.reason, 'deadline');
+    assert.equal(first.continueCollection, true);
+    assert.equal(first.metrics.itemSuccess, 5);
+    assert.equal(first.metrics.chargedHttpAttempts, 6);
+    assert.equal(first.metrics.dailyChargedRequests, 48006);
+    assert.deepEqual(f.readState().pendingIds, ['6']);
+    detailTime = 1000;
+    const second = await run('next-unlimited');
+    assert.equal(second.status, 'completed');
+    assert.equal(second.metrics.chargedHttpAttempts, 1);
+    assert.equal(second.metrics.itemSuccess, 1);
+    assert.equal(second.continueCollection, true); // Short final segment of the existing sweep.
+    assert.deepEqual(detailIds, ['1', '2', '3', '4', '5', '6']);
+    const state = JSON.parse(fs.readFileSync(f.budgetFile));
+    assert.equal(state.requests, 48007);
+    assert.equal(state.reservation.mode, 'unlimited');
+    assert.equal(state.reservation.limit, null);
+    assert.equal(state.reservation.completed, true);
+});
+
+test('unlimited midnight pause saves progress, chains once and resets only daily observations', async t => {
+    const f = fixture(t);
+    let time = Date.parse('2026-10-07T14:59:59Z');
+    const ids = [];
+    const get = async url => {
+        const id = url.match(/\/items\/(\d+)/)?.[1];
+        if (id) {
+            ids.push(id);
+            time += 2000;
+            return { status: 200, data: productHtml };
+        }
+        return { status: 200, data: '<div class="item-card" data-product-id="1"></div><div class="item-card" data-product-id="2"></div>' };
+    };
+    const run = id => {
+        reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: id, now: time });
+        return f.run({ client: undefined, get, now: () => time, jobStartedAt: time, reservationId: id,
+            searchUrls: ['https://booth.pm/ja/browse/test?sort=new'], maxPages: 1,
+            wait: async ms => { time += ms; } });
+    };
+    const first = await run('before-midnight');
+    assert.equal(first.reason, 'day-boundary');
+    assert.equal(first.failed, false);
+    assert.equal(first.continueCollection, true);
+    assert.deepEqual(f.readState().pendingIds, ['2']);
+    const second = await run('after-midnight');
+    assert.equal(second.status, 'completed');
+    assert.equal(second.metrics.chargedHttpAttempts, 1);
+    assert.deepEqual(ids, ['1', '2']);
+    const budget = JSON.parse(fs.readFileSync(f.budgetFile));
+    assert.equal(budget.date, '2026-10-08');
+    assert.equal(budget.requests, 1);
+    assert.equal(budget.reservation.completed, true);
+});
+
 test('inherited workflow metadata cannot replace a fixture clock or reservation', async t => {
     const f = fixture(t);
     const names = ['SCRAPER_JOB_STARTED_AT', 'SCRAPER_RESERVATION_ID'];
@@ -358,7 +436,7 @@ test('reserved daily budget checkpoints partial batches and resumes only unfinis
         wait: async () => {}, log: () => {}, logError: () => {},
         client: createRequestClient({ get, budgetFile: f.budgetFile, reservationId, now: () => time, deadline: time + HOUR, intervalMs: 0 }) });
     writeJson(f.budgetFile, { date: jstDate(time), requests: 47995, blockedUntil: 0 });
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'first', now: time }).limit, 5);
+    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'first', now: time, dailyLimit: 48000 }).limit, 5);
     const firstResult = await run('first');
     assert.equal(firstResult.status, 'paused');
     assert.equal(firstResult.metrics.chargedHttpAttempts, 5);
@@ -367,10 +445,10 @@ test('reserved daily budget checkpoints partial batches and resumes only unfinis
     assert.equal(f.readState().page, 1);
     const first = JSON.parse(fs.readFileSync(f.budgetFile));
     assert.equal(first.requests, 48000);
-    assert.deepEqual(first.reservation, { id: 'first', limit: 5, used: 5, completed: true });
+    assert.deepEqual(first.reservation, { id: 'first', mode: 'finite', limit: 5, used: 5, completed: true });
     assert.equal(calls.length, 5);
     time += 24 * HOUR;
-    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'second', now: time }).limit, 48000);
+    assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'second', now: time, dailyLimit: 48000 }).limit, 48000);
     const secondResult = await run('second');
     assert.equal(secondResult.status, 'completed');
     assert.equal(secondResult.metrics.chargedHttpAttempts, 4);
@@ -378,7 +456,7 @@ test('reserved daily budget checkpoints partial batches and resumes only unfinis
     assert.deepEqual(calls.slice(5).filter(url => url.includes('/items/')).map(url => url.split('/').at(-1)), ['105', '106']);
     const second = JSON.parse(fs.readFileSync(f.budgetFile));
     assert.equal(second.requests, 4);
-    assert.deepEqual(second.reservation, { id: 'second', limit: 48000, used: 4, completed: true });
+    assert.deepEqual(second.reservation, { id: 'second', mode: 'finite', limit: 48000, used: 4, completed: true });
     assert.match(calls[7], /page=2$/);
 });
 
@@ -471,7 +549,7 @@ test('failed final checkpoint keeps a durable reservation unresolved instead of 
     const f = fixture(t);
     writeJson(f.stateFile, { urlIndex: 0, page: 1, pendingIds: ['123'] });
     writeJson(f.budgetFile, { date: jstDate(START), requests: 0, blockedUntil: 0 });
-    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'held', now: START });
+    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'held', now: START, dailyLimit: 48000 });
     const original = fs.renameSync;
     let failCheckpoint = false;
     t.mock.method(fs, 'renameSync', function (from, to) {

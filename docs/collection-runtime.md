@@ -1,43 +1,64 @@
-# Search crawler: runtime limits, checkpoints and recovery
+# Search crawler: continuous runs, checkpoints and recovery
 
-## Scope
+## Scope and runtime
 
-The crawler keeps the original two filtered VRChat/digital search URLs, category/page order, 3,333-page limit, five-item `Promise.all` batches, one-second wait after a batch, and two-second wait between search pages. HTTP starts have no additional fixed interval. One Actions concurrency group serializes runs and one writer saves results. There is no known-ID catalog migration, oldest-first refresh, discovery/refresh quota split, or refill pool.
+The original two filtered VRChat/digital searches, category/page order, 3,333-page limit, five-item Promise.all batches, one-second batch wait, and two-second page wait remain. There is no extra HTTP start interval, known-ID registry, priority lane, or refill pool. Products absent from filtered search results may still be missed.
 
-Search remains the source of collection candidates. Products absent from those filtered results may not be revisited. The changes improve delayed-start handling, failure/resume behavior, and saving; no throughput gain or full-known-catalog coverage is claimed.
+Each run collects for at most five hours and also stops by job start + five hours thirty minutes. The six-hour job timeout and thirty-minute save margin remain. The shared scrape-group with cancel-in-progress:false serializes jobs; every job checks out the latest default branch at depth one.
 
-## Runtime and saving
+Removing the daily ceiling allows more running time. It does not make individual requests faster, guarantee a daily full sweep, or establish BOOTH's permitted request volume.
 
-The collection deadline is the earlier of script start + five hours and job start + five hours thirty minutes. A delayed checkout cannot produce a deadline already in the past simply because the next cron is close. The six-hour job timeout and thirty-minute saving margin remain. The existing `scrape-group` concurrency serializes jobs; each job checks out the latest default-branch state with depth one.
+## Automatic continuation
 
-Completed histories are written atomically. Existing corrupt or incompatible history is retained and reported, rather than overwritten. The page cursor and unfinished IDs are checkpointed; completed details are removed only after their history is saved. A failure-only retry queue contains IDs obtained from the filtered search. It is not a registry of all products.
+After a productive run reaches its actual time boundary, the workflow saves and pushes the final data, cursor and request state, then makes one repository_dispatch request for the next run. Scraper outcome, final push and an explicit continuation output must all be successful. A failed step masked by continue-on-error cannot trigger continuation.
 
-Search failure or unrecognized markup retains its cursor and fails the run; it is not treated as an empty result or the end of a category. Recognized empty results advance to the next category. Individual detail failures are retained for a later bounded retry while the crawl continues. Retry batches use the same concurrency and waits. Completed page/category traversal can restart normally on a later run even if some items remain in backoff.
+A normal JST-midnight checkpoint can continue too. A healthy full-sweep completion may repeat when it started partway through the sweep, or when a complete sweep from page one took at least an hour. This lets a short final segment hand over while preventing repeated tiny full sweeps. Empty work, unknown results, global failures, active cooldowns and failed saves do not chain. Isolated item failures already stored in the retry queue do not prevent a normal deadline handover.
 
-A stop for quota, deadline, day boundary, 403/429 or storage failure leaves unfinished work resumable. Already-started work drains before the final checkpoint. The workflow attempts to save partial results after an ordinary scraper failure, then reports that failure. A conflicting Git update is never overwritten or force-pushed. Shallow-safe replay fetches only the new branch tip and refuses conflicting request-budget state.
+The original six-hour cron remains a fallback. A dispatch is attempted once, with a thirty-second timeout and no retry after an uncertain result. Pending cron and continuation runs can replace one another under the existing concurrency rule; the active run is not interrupted and the successor reads the newest saved state.
 
-## Shared request budget
+This uses the existing contents:write GITHUB_TOKEN permission. No PAT, new secret or actions:write is needed. The repository_dispatch listener must be on the default branch. Runner queues, checkout, saving, service delays and required server cooldowns still create gaps; literal uninterrupted 24-hour operation is not guaranteed.
 
-The provisional limit is **48,000 total HTTP attempts per JST day**, across all scheduled runs. It includes search, detail, retries and redirects. This is an operator-selected ceiling, not a BOOTH-published allowance. Keeping this prior constraint requires `data/request_budget.json` even in the smaller repair. There is no separate per-job cutoff or per-lane allocation.
+## Saved progress and history
 
-Before HTTP work, the workflow reserves the remaining daily allowance and must push that reservation successfully. Usage is incremented before every HTTP transmission. A normal final checkpoint completes the reservation and refunds only verified unused capacity. Crossing JST midnight stops the run before using an unreserved next-day allowance.
+Histories are written atomically. Existing corrupt or incompatible histories are retained and reported, not overwritten. A page's pending IDs are persisted before details start and removed only after their history is saved. Failure-only retry entries come from the filtered searches.
 
-The final log reports this run’s charged HTTP attempts and the day’s charged total. A charge persisted immediately before an interrupted dispatch remains conservative; it is not proof that BOOTH received that request.
+A search error or unrecognized markup preserves its cursor and fails the run. Recognized empty results advance the category. Individual detail failures are deferred with bounded backoff while other items continue. Already-started requests drain before the final checkpoint.
 
-Each HTTP attempt times out after at most thirty seconds, shortened by the runtime remaining. Network/408/5xx errors receive at most three attempts with backoff. Redirect hops are counted and restricted to the same requested product identity or exact filtered-search identity. HTTP 403/429 stop new requests globally: 403 pauses at least six hours, and 429 respects Retry-After with a sixty-second minimum. Five consecutive transient failures open the shared circuit. Retries remain inside the same daily ceiling and five-item batches.
+The workflow attempts to save partial results after ordinary scraper failures and then exposes the failure. Shallow-safe push replay refuses conflicting request-state changes, without force-pushing or overwriting unrelated updates.
+
+## Observations, sessions and server limits
+
+There is no production daily request ceiling. The former 48,000/JST-day limit was an operator-selected provisional ceiling, not a BOOTH-published allowance. An optional finite injected runtime mode remains for compatibility tests; production uses unlimited mode.
+
+The existing data/request_budget.json records daily observed attempts, server cooldowns and an active run marker. Before BOOTH access, the workflow pushes a session with mode:unlimited, limit:null, used:0 and completed:false. Each search, detail, retry and redirect increments session used and daily requests before transmission. It does not precharge an infinite allowance. The final checkpoint completes the session.
+
+JST midnight ends the current session at a safe checkpoint. A successor preserves its cursor and cooldown, then starts a new session with a new daily observation counter. A missing ledger can start immediately at zero observed requests; this does not claim that no earlier untracked traffic occurred. Counts are conservative accounting, not packet traces. A lost final save can leave remote observations incomplete.
+
+Each HTTP attempt has at most a 30-second timeout, shortened by time remaining. Network/408/5xx errors get at most three attempts with backoff. Redirects are bounded and restricted to the same product or exact filtered-search identity. HTTP 403 stops new requests for at least six hours; HTTP 429 respects Retry-After with a 60-second minimum. Five consecutive transient failures open the shared circuit.
+
+Retry waits extending beyond the runtime or JST boundary persist a cooldown and stop continuation. Terminal transient errors, circuit stops and draining concurrent failures retain any longer Retry-After. Removing the daily ceiling does not remove these protections.
 
 ## Rollout and recovery
 
-For a clean rollout, let the old collector finish before a verified JST-day boundary and start the new version afterward. Preserve product histories and the existing crawl cursor. A verified last old-collector date may be seeded with `requests: 48000`, the latest known `blockedUntil`, and no reservation. When the current JST date is later, the new allowance is available. Confirm that no old run crossed the boundary first.
+Let an existing collector finish and verify its final save before deployment. Preserve histories, cursor, observation counts, migration metadata and blockedUntil. A completed old finite reservation migrates directly, including a daily count already at 48,000. No next-day wait or ledger reset is required.
 
-For a midday rollout, an upper bound for all earlier HTTP traffic is required. Saved-product counts alone omit searches, retries and redirects. If earlier traffic is unknown, the default marks that day fully used and starts collecting on the next JST day. Never delete an existing ledger to replenish quota.
+An unresolved old nonzero reservation or any unresolved unlimited session blocks collection, even if its remote used count is zero: request outcomes and server cooldowns may have been lost. Confirm that the prior run is terminal and inspect its saved state/logs before marking it completed and retaining the maximum verified cooldown. If the cooldown is unknown, the hold remains; an arbitrary wait cannot prove an unknown Retry-After expired. Only a legacy zero-allowance finite reservation can recover automatically.
 
-If a run loses its final save, a nonzero remote reservation remains fully charged and collection pauses. Confirm the previous run is terminal and inspect its saved results/logs for cooldown information. Once the outcome is verified, keep the recorded requests and reservation charge, mark the abandoned reservation completed, and retain the maximum verified cooldown. The charge is not refunded. If the cooldown cannot be established, the hold remains; an arbitrary wait cannot prove an unknown Retry-After has expired. A zero-allowance reservation recovers automatically because no request could have been sent.
-
-Corrupt checkpoints or systemic storage errors fail closed. Repair them from verified history/checkpoints; do not advance a cursor without its saved results. No additional Actions permissions or cross-run artifact recovery service is introduced.
+Corrupt checkpoints and systemic storage errors fail closed. Repair from verified state, without advancing a cursor beyond saved results. A continuous chain may therefore need operator recovery after a genuine failure.
 
 ## Validation
 
-`npm test` and `node scripts/test_timeout.js` run without BOOTH access. Tests cover delayed starts, exact filtered URLs, batch/page waits, typed search outcomes, pending-page resume, failed-item retries, unavailable products, atomic history preservation, request accounting, redirects, timeout/backoff, 403/429, JST boundaries, lost reservations and shallow Git push races/conflicts.
+Offline tests cover the original filters/pacing, five-hour boundary, request observations above 48,000, completed legacy migration, unresolved holds, rollover, cursor restart, history preservation, bounded retries, server cooldowns, shallow push conflicts and one-attempt dispatch behavior. Run npm test and node scripts/test_timeout.js with mocked networking. Include production-like SCRAPER_JOB_STARTED_AT and SCRAPER_RESERVATION_ID to verify test-fixture isolation.
 
-The prior refill benchmark measured a different design. Its roughly three-percent result does not predict the performance of this minimal repair. Real HTTP compatibility was checked separately on a small fixed sample; a full production cycle of this narrowed version has not been run.
+After deployment, verify a saved normal run, one accepted dispatch and its successor resuming the newest cursor. Offline tests cannot prove GitHub event delivery. Prior capped production runs proved their saving/restart behavior, not this new continuation mechanism.
+
+## GitHub references
+
+- [GITHUB_TOKEN dispatch exception](https://docs.github.com/en/actions/concepts/security/github_token)
+- [Repository dispatch permission](https://docs.github.com/en/rest/repos/repos#create-a-repository-dispatch-event)
+- [Event and default-branch requirements](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#repository_dispatch)
+- [Concurrency behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency)
+- [Hosted-job execution limit](https://docs.github.com/en/actions/reference/limits)
+- [Public-runner billing](https://docs.github.com/en/billing/concepts/product-billing/github-actions)
+
+Standard ubuntu-latest usage in this public repository is currently free. No paid runner or plan change is introduced.
