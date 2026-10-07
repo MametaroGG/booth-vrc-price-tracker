@@ -16,6 +16,80 @@ const { shouldContinueCollection } = require('./continuation');
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const MAX_PAGES = 3333; // BOOTH's search limit; keep both full categories.
 
+function isPastLastSearchPage($, requestedUrl) {
+    // BOOTH can render its normal search shell and an empty card list beyond
+    // the final page without an empty-results message. Require affirmative
+    // pagination evidence for this exact filtered search, not merely no cards.
+    try {
+        decodeURI(requestedUrl); // URLSearchParams otherwise repairs malformed escapes.
+        const requested = new URL(requestedUrl);
+        const pageNumber = url => {
+            const values = url.searchParams.getAll('page');
+            if (values.length !== 1 || !/^[1-9]\d*$/.test(values[0])) return null;
+            const number = Number(values[0]);
+            return Number.isSafeInteger(number) ? number : null;
+        };
+        const page = pageNumber(requested);
+        if (requested.origin !== 'https://booth.pm' || !requested.pathname.startsWith('/ja/browse/') ||
+            requested.username || requested.password || requested.hash || page === null) return false;
+        const title = $('title');
+        const titlePage = title.text().match(/^([1-9]\d*)ページ目\s*-/);
+        if (title.length !== 1 || !/\s-\sBOOTH\s*$/.test(title.text()) ||
+            !titlePage || Number(titlePage[1]) !== page) return false;
+
+        const grid = $('.l-market-grid');
+        if (grid.length !== 1) return false;
+        const heading = grid.parent().find('h1');
+        if (heading.length !== 1 || !/の検索結果\s*$/.test(heading.text())) return false;
+        const counts = grid.parent().find('b').map((_, el) => $(el).text().trim())
+            .get().filter(text => /^対象商品\s+(?:[1-9]\d*|[1-9]\d{0,2}(?:,\d{3})+)\s+件$/.test(text));
+        if (counts.length !== 1) return false;
+        const total = Number(counts[0].replace(/[^0-9]/g, ''));
+        if (!Number.isSafeInteger(total) || total < 1) return false;
+
+        const items = grid.find('.market-items');
+        const cards = items.find('ul.l-cards-5cols');
+        const pager = items.find('.pager');
+        const last = pager.find('a.nav-item.last-page');
+        if (items.length !== 1 || cards.length !== 1 || cards.children().length !== 0 ||
+            cards.text().trim() || pager.length !== 1 || last.length !== 1) return false;
+        const lastHref = last.attr('href');
+        if (!lastHref) return false;
+        decodeURI(lastHref);
+        const lastUrl = new URL(lastHref, requested);
+        const lastPage = pageNumber(lastUrl);
+        const filters = url => JSON.stringify([...url.searchParams.entries()]
+            .filter(([key]) => key !== 'page').sort(([ak, av], [bk, bv]) => ak.localeCompare(bk) || av.localeCompare(bv)));
+        const sameSearch = url => url.origin === requested.origin && url.pathname === requested.pathname &&
+            !url.username && !url.password && !url.hash && filters(url) === filters(requested);
+        if (!sameSearch(lastUrl) ||
+            lastPage === null || lastPage >= page || lastPage > total) return false;
+
+        // Corroborate the final-page control with its visible numbered link.
+        // A rel=next link is still present on BOOTH's out-of-range pages.
+        const numbered = pager.find('a.nav-item')
+            .not('.first-page, .last-page, [rel~="prev"], [rel~="next"]').toArray();
+        let finalPageShown = false;
+        const consistent = numbered.length > 0 && numbered.every(el => {
+            const link = $(el);
+            const label = link.text().trim();
+            if (!/^[1-9]\d*$/.test(label)) return false;
+            const number = Number(label);
+            if (!Number.isSafeInteger(number) || number > lastPage) return false;
+            const href = link.attr('href');
+            if (!href) return false;
+            decodeURI(href);
+            const url = new URL(href, requested);
+            if (!sameSearch(url) || pageNumber(url) !== number) return false;
+            if (number === lastPage) finalPageShown = true;
+            return true;
+        });
+        return consistent && finalPageShown;
+    } catch {
+        return false;
+    }
+}
+
 async function scrapeSearchPage(url, client) {
     try {
         console.log(`Scraping Search: ${url}`);
@@ -35,7 +109,9 @@ async function scrapeSearchPage(url, client) {
         const searchShell = $('title').text().includes('BOOTH') &&
             $('a[href*="/browse/"], form[action*="/search"], form[action*="/browse/"]').length > 0;
         const explicitEmpty = /(?:商品が見つかりませんでした|検索結果はありません|検索結果がありません|該当する商品[はが]ありません)/.test($('body').text());
-        if (!searchShell || !explicitEmpty) throw new Error('Unrecognized search page markup');
+        if (!searchShell || (!explicitEmpty && !isPastLastSearchPage($, url))) {
+            throw new Error('Unrecognized search page markup');
+        }
         return { kind: 'empty', ids: [] };
     } catch (error) {
         console.error(`Error scraping search ${url}:`, error.message);
