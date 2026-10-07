@@ -190,7 +190,9 @@ function createRequestClient({
     }
 
     function stop(reason, message, failed = true) {
-        stopped ??= new CollectionStop(reason, message, failed);
+        // A draining request/storage failure takes priority over a normal
+        // deadline pause, while the first actual failure keeps its identity.
+        if (!stopped || (!stopped.failed && failed)) stopped = new CollectionStop(reason, message, failed);
         return stopped;
     }
 
@@ -232,13 +234,15 @@ function createRequestClient({
 
     function block(reason, milliseconds, message, details = {}) {
         budget.blockedUntil = Math.min(MAX_TIMESTAMP_MS, Math.max(budget.blockedUntil, now() + milliseconds));
-        stopped ??= Object.assign(new CollectionStop(reason,
-            `${message}; requests paused until ${new Date(budget.blockedUntil).toISOString()}`, true), details);
+        if (!stopped || !stopped.failed) {
+            stopped = Object.assign(new CollectionStop(reason,
+                `${message}; requests paused until ${new Date(budget.blockedUntil).toISOString()}`, true), details);
+        }
         persistBudget();
         return stopped;
     }
 
-    function observeFailure(error, url) {
+    function observeFailure(error, url, deadlineLimited = false, signal) {
         if (error instanceof CollectionStop) throw error;
         const status = error.response?.status;
         if (status === 403) {
@@ -248,6 +252,17 @@ function createRequestClient({
         if (status === 429) {
             throw block('rate-limit', retryAfterMs(error.response?.headers?.['retry-after'], now()),
                 'HTTP 429: stopping and preserving Retry-After cooldown');
+        }
+        // A request's timer is shortened to the collection deadline. Its own
+        // cancellation is a normal pause, not a failed retry/circuit strike.
+        // Its own timeout signal also proves this when timer and wall-clock
+        // precision differ slightly. Arbitrary earlier cancellations, real HTTP
+        // responses and ordinary transport timeouts retain failure handling.
+        const ownDeadlineTimeout = signal?.aborted && signal.reason?.name === 'TimeoutError';
+        if (deadlineLimited && (now() >= deadline || ownDeadlineTimeout) && error.response == null &&
+            (['ERR_CANCELED', 'ECONNABORTED', 'ETIMEDOUT'].includes(error.code) ||
+                ['AbortError', 'TimeoutError'].includes(error.name))) {
+            throw stop('deadline', 'Collection time budget reached', false);
         }
         // Missing/removed items are explicit terminal outcomes, not failures.
         if (status === 404 || status === 410) {
@@ -307,13 +322,16 @@ function createRequestClient({
                     if (now() >= deadline) throw new CollectionStop('deadline', 'Collection time budget reached');
                     if (jstDate(now()) !== chargedDate) throw new CollectionStop('day-boundary', 'JST day changed before HTTP start');
                     if (budget.blockedUntil > now()) throw new CollectionStop('cooldown', 'Requests are paused', true);
-                    const timeout = Math.max(1, Math.min(timeoutMs, deadline - now()));
+                    const remainingTime = deadline - now();
+                    const deadlineLimited = remainingTime <= timeoutMs;
+                    const timeout = Math.max(1, Math.min(timeoutMs, remainingTime));
+                    const signal = AbortSignal.timeout(timeout);
                     nextStart = now() + intervalMs;
                     let pending;
                     try {
                         pending = get(currentUrl, {
                             timeout,
-                            signal: AbortSignal.timeout(timeout),
+                            signal,
                             // Handle redirects explicitly so every network hop is budgeted.
                             maxRedirects: 0,
                             validateStatus: status => status >= 200 && status < 400,
@@ -322,14 +340,14 @@ function createRequestClient({
                             }
                         });
                     } catch (error) {
-                        return observeFailure(error, url);
+                        return observeFailure(error, url, deadlineLimited, signal);
                     }
                     // Observe the transport outcome before releasing further
                     // queued starts, including when no start interval is set.
                     return Promise.resolve(pending).then(response => {
                         if ([200, 404, 410].includes(response.status)) consecutiveFailures = 0;
                         return response;
-                    }, error => observeFailure(error, url));
+                    }, error => observeFailure(error, url, deadlineLimited, signal));
                 });
                 const response = await pending;
                 if ([301, 302, 303, 307, 308].includes(response.status)) {

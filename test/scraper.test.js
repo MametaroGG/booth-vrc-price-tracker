@@ -119,6 +119,36 @@ test('unlimited midnight pause saves progress, chains once and resets only daily
     assert.equal(budget.reservation.completed, true);
 });
 
+test('a deadline-limited cancellation retains pending work and permits the saved handover', async t => {
+    const f = fixture(t);
+    const start = Date.parse('2026-10-07T00:00:00Z');
+    let time = start;
+    reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'deadline-cancel', now: time });
+    const get = async (url, config) => {
+        if (url.includes('/items/1')) return { status: 200, data: productHtml };
+        if (url.includes('/items/2')) {
+            assert.equal(config.timeout, 10);
+            time = start + 5 * HOUR;
+            throw Object.assign(new Error('canceled at collection deadline'), { code: 'ERR_CANCELED' });
+        }
+        const pageNumber = Number(new URL(url).searchParams.get('page'));
+        if (pageNumber === 2) time = start + 5 * HOUR - 10;
+        return { status: 200, data: `<div class="item-card" data-product-id="${pageNumber}"></div>` };
+    };
+    const result = await f.run({ client: undefined, get, now: () => time, jobStartedAt: start,
+        reservationId: 'deadline-cancel', searchUrls: ['https://booth.pm/ja/browse/test?sort=new'], maxPages: 2,
+        wait: async ms => { time += ms; } });
+    assert.equal(result.status, 'paused');
+    assert.equal(result.reason, 'deadline');
+    assert.equal(result.failed, false);
+    assert.equal(result.continueCollection, true);
+    assert.equal(result.metrics.itemSuccess, 1);
+    assert.deepEqual(f.readState().pendingIds, ['2']);
+    const budget = JSON.parse(fs.readFileSync(f.budgetFile));
+    assert.equal(budget.blockedUntil, 0);
+    assert.equal(budget.reservation.completed, true);
+});
+
 test('inherited workflow metadata cannot replace a fixture clock or reservation', async t => {
     const f = fixture(t);
     const names = ['SCRAPER_JOB_STARTED_AT', 'SCRAPER_RESERVATION_ID'];
