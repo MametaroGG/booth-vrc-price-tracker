@@ -978,3 +978,200 @@ test('a transient Retry-After survives a concurrent stop before its outer catch 
     assert.deepEqual(f.waits, []);
     assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'next-run', now: START + 60001 }), /Requests paused/);
 });
+
+test('one or five requests cancelled by the shortened deadline stop normally without retry or circuit cooldown', async t => {
+    for (const count of [1, 5]) {
+        for (const identity of [{ code: 'ERR_CANCELED' }, { code: 'ECONNABORTED' }, { code: 'ETIMEDOUT' },
+            { name: 'AbortError' }, { name: 'TimeoutError' }]) {
+            const f = fixture(t);
+            reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'deadline-run', now: START });
+            const rejects = [];
+            const client = f.makeClient({ reservationId: 'deadline-run', deadline: START + 1000, intervalMs: undefined,
+                get: (url, config) => {
+                    assert.equal(config.timeout, 1000);
+                    return new Promise((resolve, reject) => rejects.push(reject));
+                } });
+            const requests = Array.from({ length: count }, () => client.get('https://booth.pm/a').catch(error => error));
+            await new Promise(resolve => setImmediate(resolve));
+            assert.equal(rejects.length, count);
+            f.setTime(START + 1000);
+            rejects.forEach(reject => reject(Object.assign(new Error('Request timed out'), identity)));
+            const results = await Promise.all(requests);
+            assert.ok(results.every(error => error instanceof CollectionStop && error.reason === 'deadline' && !error.failed));
+            assert.deepEqual(f.waits, []);
+            assert.equal(client.getAttemptCount(), count);
+            assert.equal(client.getBudget().blockedUntil, 0);
+            client.finish();
+            const persisted = JSON.parse(fs.readFileSync(f.budgetFile));
+            assert.equal(persisted.reservation.completed, true);
+            assert.equal(persisted.requests, count);
+            assert.equal(persisted.blockedUntil, 0);
+            assert.equal(reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'following-run', now: f.now() }).limit, null);
+        }
+    }
+});
+
+test('ordinary 30-second timeouts before the deadline still retry at most three times', async t => {
+    const f = fixture(t);
+    let starts = 0;
+    const client = f.makeClient({ intervalMs: undefined, get: async (url, config) => {
+        starts++;
+        assert.equal(config.timeout, 30000);
+        f.setTime(f.now() + config.timeout);
+        throw Object.assign(new Error('Transport timeout'), { code: 'ECONNABORTED' });
+    } });
+    await assert.rejects(client.get('https://booth.pm/a'), error => error.code === 'ECONNABORTED');
+    assert.equal(starts, 3);
+    assert.deepEqual(f.waits, [1500, 3000]);
+    assert.equal(client.getBudget().blockedUntil, 0);
+});
+
+test('an early cancellation or an unshortened timeout does not become a normal deadline stop', async t => {
+    for (const { deadline, rejectionTime } of [
+        { deadline: START + 1000, rejectionTime: START + 999 },
+        { deadline: START + 31000, rejectionTime: START + 31000 }
+    ]) {
+        const f = fixture(t);
+        const client = f.makeClient({ deadline, get: async () => {
+            f.setTime(rejectionTime);
+            throw Object.assign(new Error('Transport cancellation'), { code: 'ERR_CANCELED' });
+        } });
+        await assert.rejects(client.get('https://booth.pm/a'), error => error.reason === 'retry-backoff' && error.failed);
+        assert.equal(client.getBudget().blockedUntil, rejectionTime + 1500);
+        assert.equal(client.getAttemptCount(), 1);
+    }
+});
+
+test('deadline cancellation never hides a real late HTTP response or its Retry-After', async t => {
+    for (const status of [403, 429, 503]) {
+        const f = fixture(t);
+        reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'late-response', now: START });
+        const rejects = [];
+        const client = f.makeClient({ reservationId: 'late-response', deadline: START + 1000, intervalMs: undefined,
+            get: () => new Promise((resolve, reject) => rejects.push(reject)) });
+        const first = client.get('https://booth.pm/deadline').catch(error => error);
+        const second = client.get('https://booth.pm/late-response').catch(error => error);
+        await new Promise(resolve => setImmediate(resolve));
+        f.setTime(START + 1000);
+        rejects[0](Object.assign(new Error('Deadline cancellation'), { code: 'ERR_CANCELED' }));
+        const normalStop = await first;
+        assert.equal(normalStop.reason, 'deadline');
+        assert.equal(normalStop.failed, false);
+        // Even a response carrying a cancellation code is a real HTTP response.
+        rejects[1](Object.assign(httpError(status, { 'retry-after': '900' }), { code: 'ERR_CANCELED' }));
+        const failedStop = await second;
+        assert.equal(failedStop.reason, status === 403 ? 'forbidden' : status === 429 ? 'rate-limit' : 'retry-backoff');
+        assert.equal(failedStop.failed, true);
+        assert.notEqual(failedStop, normalStop);
+        const blockedUntil = f.now() + (status === 403 ? 6 * 3600000 : 900000);
+        assert.equal(client.getBudget().blockedUntil, blockedUntil);
+        await assert.rejects(client.get('https://booth.pm/later'), error => error === failedStop);
+        client.finish();
+        assert.equal(JSON.parse(fs.readFileSync(f.budgetFile)).blockedUntil, blockedUntil);
+        assert.throws(() => reserveDailyAllowance({ budgetFile: f.budgetFile, reservationId: 'following-run', now: f.now() }), /Requests paused/);
+        assert.equal(client.getAttemptCount(), 2);
+    }
+});
+
+test('a deadline cancellation retains an existing failed global stop and its server cooldown', async t => {
+    const f = fixture(t);
+    const rejects = [];
+    const client = f.makeClient({ deadline: START + 1000, intervalMs: undefined,
+        get: () => new Promise((resolve, reject) => rejects.push(reject)) });
+    const first = client.get('https://booth.pm/forbidden').catch(error => error);
+    const second = client.get('https://booth.pm/deadline').catch(error => error);
+    await new Promise(resolve => setImmediate(resolve));
+    rejects[0](httpError(403));
+    const forbidden = await first;
+    f.setTime(START + 1000);
+    rejects[1](Object.assign(new Error('Deadline cancellation'), { code: 'ERR_CANCELED' }));
+    assert.equal(await second, forbidden);
+    assert.equal(forbidden.reason, 'forbidden');
+    assert.equal(forbidden.failed, true);
+    assert.equal(client.getBudget().blockedUntil, START + 6 * 3600000);
+});
+
+test('the request own deadline timeout signal proves a normal stop even when the wall clock is one millisecond early', async t => {
+    const f = fixture(t);
+    const deadline = START + 15;
+    const client = f.makeClient({ deadline, intervalMs: undefined, get: (url, { signal }) => new Promise((resolve, reject) => {
+        signal.addEventListener('abort', () => {
+            f.setTime(deadline - 1);
+            assert.equal(signal.reason.name, 'TimeoutError');
+            reject(Object.assign(new Error('Own timeout'), { code: 'ERR_CANCELED' }));
+        }, { once: true });
+    }) });
+    // AbortSignal timers are unref'ed; keep the offline test process alive.
+    const keepAlive = setTimeout(() => {}, 1000);
+    try {
+        await assert.rejects(client.get('https://booth.pm/a'), error => error.reason === 'deadline' && !error.failed);
+    } finally {
+        clearTimeout(keepAlive);
+    }
+    assert.equal(f.now(), deadline - 1);
+    assert.equal(client.getBudget().blockedUntil, 0);
+    assert.equal(client.getAttemptCount(), 1);
+    assert.deepEqual(f.waits, []);
+});
+
+test('an external timeout signal before the deadline does not prove the request own deadline timer fired', async t => {
+    const f = fixture(t);
+    const external = new AbortController();
+    external.abort(new DOMException('Other timeout', 'TimeoutError'));
+    const deadline = START + 1000;
+    const client = f.makeClient({ deadline, get: async (url, { signal }) => {
+        f.setTime(deadline - 1);
+        assert.equal(signal.aborted, false);
+        throw Object.assign(new Error('Other cancellation'), { code: 'ERR_CANCELED', signal: external.signal });
+    } });
+    await assert.rejects(client.get('https://booth.pm/a'), error => error.reason === 'retry-backoff' && error.failed);
+    assert.equal(client.getBudget().blockedUntil, deadline - 1 + 1500);
+});
+
+test('an own ordinary timeout signal still fails when its timeout was not shortened by the collection deadline', async t => {
+    const f = fixture(t);
+    const client = f.makeClient({ deadline: START + 10000, timeoutMs: 10, maxAttempts: 1,
+        get: (url, { signal }) => new Promise((resolve, reject) => {
+            signal.addEventListener('abort', () => {
+                f.setTime(START + 10);
+                reject(Object.assign(new Error('Ordinary timeout'), { code: 'ERR_CANCELED' }));
+            }, { once: true });
+        }) });
+    const keepAlive = setTimeout(() => {}, 1000);
+    try {
+        await assert.rejects(client.get('https://booth.pm/a'), error => error.code === 'ERR_CANCELED' && !(error instanceof CollectionStop));
+    } finally {
+        clearTimeout(keepAlive);
+    }
+    assert.equal(client.getBudget().blockedUntil, 0);
+    assert.equal(client.getAttemptCount(), 1);
+});
+
+test('real deadline timers drain five simultaneous mock requests without creating a cooldown', async t => {
+    for (let trial = 0; trial < 6; trial++) {
+        const f = fixture(t);
+        const start = Date.now();
+        writeJson(f.budgetFile, { date: jstDate(start), requests: 0, blockedUntil: 0 });
+        let starts = 0;
+        // Leave enough startup time for five atomic accounting writes on a
+        // busy runner; the separate injected-signal test covers the 1ms edge.
+        const client = f.makeClient({ deadline: start + 500, now: Date.now, intervalMs: undefined,
+            get: (url, { signal }) => {
+                starts++;
+                return new Promise((resolve, reject) => signal.addEventListener('abort', () => {
+                    reject(Object.assign(new Error('Timed out'), { code: 'ERR_CANCELED' }));
+                }, { once: true }));
+            } });
+        const keepAlive = setTimeout(() => {}, 5000);
+        try {
+            const results = await Promise.allSettled(Array.from({ length: 5 }, () => client.get('https://booth.pm/a')));
+            assert.equal(starts, 5);
+            assert.ok(results.every(result => result.status === 'rejected' && result.reason.reason === 'deadline' && !result.reason.failed));
+            assert.equal(client.getBudget().blockedUntil, 0);
+            assert.equal(client.getAttemptCount(), 5);
+            assert.deepEqual(f.waits, []);
+        } finally {
+            clearTimeout(keepAlive);
+        }
+    }
+});
