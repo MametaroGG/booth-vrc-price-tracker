@@ -24,6 +24,8 @@ Histories are written atomically. Existing corrupt or incompatible histories are
 
 A search error or unrecognized markup preserves its cursor and fails the run. Recognized empty results advance the category. Individual detail failures are deferred with bounded backoff while other items continue. Already-started requests drain before the final checkpoint.
 
+BOOTH also renders a normal search page beyond its last page without an empty-results message. This case advances only when the page title matches the requested page, the search heading and positive result count are present, the unique result-card list is empty, and a final-page control plus its numbered link identify an earlier page with the same origin, category and complete non-page filters. Missing, malformed, conflicting or unrelated pagination remains a failure. A `rel=next` link can still exist beyond the last page and does not override the final-page evidence. The reduced real-DOM fixture under `test/fixtures` documents this case.
+
 The workflow attempts to save partial results after ordinary scraper failures and then exposes the failure. Shallow-safe push replay refuses conflicting request-state changes, without force-pushing or overwriting unrelated updates.
 
 ## Observations, sessions and server limits
