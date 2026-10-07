@@ -7,9 +7,10 @@
     "reason": "Conservative full-day migration charge, not a measured HTTP count. Earlier collector traffic was not fully counted."
   },
   "reservation": {
-    "id": "37550852260-1",
-    "limit": 0,
+    "id": "37552688212-1",
+    "mode": "unlimited",
+    "limit": null,
     "used": 0,
-    "completed": true
+    "completed": false
   }
 }
