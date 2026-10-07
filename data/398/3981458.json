@@ -702,6 +702,11 @@
         "date": "2026-10-04",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-07",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "おひねり Personal Use Including Tip": [
@@ -1403,6 +1408,11 @@
       {
         "date": "2026-10-04",
         "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-07",
+        "price": 1500,
         "is_sale": false
       }
     ],
@@ -2106,12 +2116,41 @@
         "date": "2026-10-04",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-07",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "[個人] Rider-Waite Smith版タロット単品": [
+      {
+        "date": "2026-10-07",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "[個人] オリジナル版タロット単品": [
+      {
+        "date": "2026-10-07",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "[個人] オリジナル版ルノルマン単品": [
+      {
+        "date": "2026-10-07",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "6640379": "通常版 Personal Use",
     "10252345": "おひねり Personal Use Including Tip",
-    "11969267": "チームライセンス Team License"
+    "11969267": "チームライセンス Team License",
+    "14935909": "[個人] Rider-Waite Smith版タロット単品",
+    "14935910": "[個人] オリジナル版タロット単品",
+    "14935911": "[個人] オリジナル版ルノルマン単品"
   }
 }
