@@ -471,10 +471,23 @@
         "date": "2026-10-05",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "支援版": [
+      {
+        "date": "2026-10-08",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13796416": "default"
+    "13796416": "default",
+    "14950955": "支援版"
   }
 }

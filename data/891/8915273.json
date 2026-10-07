@@ -7,11 +7,21 @@
         "date": "2026-10-05",
         "price": 2200,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-08",
+        "price": 2200,
+        "is_sale": true
       }
     ],
     "Shinano「しなの」": [
       {
         "date": "2026-10-05",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-10-08",
         "price": 1000,
         "is_sale": true
       }
@@ -21,11 +31,21 @@
         "date": "2026-10-05",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Manuka「マヌカ」": [
       {
         "date": "2026-10-05",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-10-08",
         "price": 1000,
         "is_sale": true
       }
@@ -35,11 +55,21 @@
         "date": "2026-10-05",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Sio「しお」": [
       {
         "date": "2026-10-05",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-10-08",
         "price": 1000,
         "is_sale": true
       }
@@ -49,6 +79,11 @@
         "date": "2026-10-05",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Lasa「ラサ」": [
@@ -56,11 +91,21 @@
         "date": "2026-10-05",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Kipfel「キプフェル」": [
       {
         "date": "2026-10-05",
+        "price": 1000,
+        "is_sale": true
+      },
+      {
+        "date": "2026-10-08",
         "price": 1000,
         "is_sale": true
       }
@@ -71,7 +116,25 @@
         "price": 1000,
         "is_sale": true
       }
+    ],
+    "SiuSiu「シウシウ」": [
+      {
+        "date": "2026-10-08",
+        "price": 1000,
+        "is_sale": true
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14898812": "FullPack【9アバター対応】",
+    "14920283": "Shinano「しなの」",
+    "14920284": "Ramune「ラムネ」",
+    "14920285": "Manuka「マヌカ」",
+    "14920286": "Rurune「ルルネ」",
+    "14920287": "Sio「しお」",
+    "14920288": "Milltina「ミルティナ」",
+    "14920289": "Lasa「ラサ」",
+    "14920290": "Kipfel「キプフェル」",
+    "14920291": "SiuSiu「シウシウ」"
+  }
 }

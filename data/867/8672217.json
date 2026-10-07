@@ -57,6 +57,11 @@
         "date": "2026-10-05",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Chocolat": [
@@ -112,6 +117,11 @@
       },
       {
         "date": "2026-10-05",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
         "price": 200,
         "is_sale": false
       }
@@ -171,6 +181,11 @@
         "date": "2026-10-05",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "ELusion": [
@@ -226,6 +241,11 @@
       },
       {
         "date": "2026-10-05",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
         "price": 200,
         "is_sale": false
       }
@@ -285,6 +305,11 @@
         "date": "2026-10-05",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Kipfel": [
@@ -340,6 +365,11 @@
       },
       {
         "date": "2026-10-05",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
         "price": 200,
         "is_sale": false
       }
@@ -399,6 +429,25 @@
         "date": "2026-10-05",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Kaguya": [
+      {
+        "date": "2026-10-08",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Sio": [
+      {
+        "date": "2026-10-08",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
@@ -409,6 +458,8 @@
     "14482045": "Kanata",
     "14482046": "Chocolat",
     "14482047": "Kipfel",
-    "14482048": "Shinano"
+    "14482048": "Shinano",
+    "14950712": "Kaguya",
+    "14950713": "Sio"
   }
 }

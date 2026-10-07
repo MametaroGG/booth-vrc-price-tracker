@@ -292,6 +292,11 @@
         "date": "2026-10-05",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "🌃Midnight": [
@@ -584,11 +589,24 @@
         "date": "2026-10-05",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "ドリンク代（中身はMidnightと同じ）": [
+      {
+        "date": "2026-10-08",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13969705": "💠First Sip",
-    "13992854": "🌃Midnight"
+    "13992854": "🌃Midnight",
+    "14946406": "ドリンク代（中身はMidnightと同じ）"
   }
 }

@@ -7,10 +7,31 @@
         "date": "2026-10-05",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "English": [
+      {
+        "date": "2026-10-08",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "한국어": [
+      {
+        "date": "2026-10-08",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14934528": "default"
+    "14934528": "default",
+    "14946709": "English",
+    "14946710": "한국어"
   }
 }

@@ -7,6 +7,11 @@
         "date": "2026-10-05",
         "price": 2190,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1990,
+        "is_sale": true
       }
     ],
     "Only Bangle": [
@@ -14,6 +19,11 @@
         "date": "2026-10-05",
         "price": 490,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 390,
+        "is_sale": true
       }
     ],
     "Moon": [
@@ -21,6 +31,11 @@
         "date": "2026-10-05",
         "price": 1190,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1190,
+        "is_sale": true
       }
     ],
     "Sakura": [
@@ -28,6 +43,11 @@
         "date": "2026-10-05",
         "price": 1190,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1190,
+        "is_sale": true
       }
     ],
     "EvilEye": [
@@ -35,6 +55,11 @@
         "date": "2026-10-05",
         "price": 1190,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1190,
+        "is_sale": true
       }
     ],
     "PCB": [
@@ -42,6 +67,11 @@
         "date": "2026-10-05",
         "price": 1190,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1190,
+        "is_sale": true
       }
     ],
     "Snow": [
@@ -49,6 +79,11 @@
         "date": "2026-10-05",
         "price": 1190,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-08",
+        "price": 1190,
+        "is_sale": true
       }
     ],
     "Rune": [
@@ -57,7 +92,23 @@
         "price": 1190,
         "is_sale": false
       }
+    ],
+    "RuneCircle": [
+      {
+        "date": "2026-10-08",
+        "price": 1190,
+        "is_sale": true
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14901576": "Full set",
+    "14904431": "Only Bangle",
+    "14904432": "Moon",
+    "14904433": "Sakura",
+    "14904434": "EvilEye",
+    "14904435": "PCB",
+    "14904436": "Snow",
+    "14904437": "RuneCircle"
+  }
 }
