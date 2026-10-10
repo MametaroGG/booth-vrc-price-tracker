@@ -17,6 +17,11 @@
         "date": "2026-10-09",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "SWTF_Revenue license (package not included)": [
@@ -34,8 +39,16 @@
         "date": "2026-10-09",
         "price": 2800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 2800,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14852277": "SWTF_liltoon/Poiyomi",
+    "14898676": "SWTF_Revenue license (package not included)"
+  }
 }

@@ -19,11 +19,21 @@
         "date": "2026-10-09",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "MameFriends": [
       {
         "date": "2026-10-09",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
         "price": 600,
         "is_sale": false
       }
@@ -33,11 +43,21 @@
         "date": "2026-10-09",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Emoken": [
       {
         "date": "2026-10-09",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
         "price": 600,
         "is_sale": false
       }
@@ -47,11 +67,21 @@
         "date": "2026-10-09",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Melvii": [
       {
         "date": "2026-10-09",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
         "price": 600,
         "is_sale": false
       }
@@ -61,8 +91,20 @@
         "date": "2026-10-09",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14935034": "フルセット",
+    "14966865": "MameFriends",
+    "14966866": "ELusion_Nemesis",
+    "14966867": "Emoken",
+    "14966868": "Hikarun_Ryumii",
+    "14966869": "Melvii"
+  }
 }

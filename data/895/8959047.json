@@ -14,6 +14,11 @@
         "date": "2026-10-09",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 650,
+        "is_sale": true
       }
     ],
     "まよ│MAYO": [
@@ -21,6 +26,11 @@
         "date": "2026-10-09",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 650,
+        "is_sale": true
       }
     ],
     "瑞希&ルルネ│mizuki&rurune": [
@@ -28,10 +38,23 @@
         "date": "2026-10-09",
         "price": 1300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 650,
+        "is_sale": true
+      }
+    ],
+    "FULL SET": [
+      {
+        "date": "2026-10-10",
+        "price": 1300,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
+    "14970469": "FULL SET",
     "14970470": "しなの│shinano",
     "14970471": "まよ│MAYO",
     "14970472": "瑞希&ルルネ│mizuki&rurune"

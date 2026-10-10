@@ -13,9 +13,24 @@
         "price": 200,
         "is_sale": false
       }
+    ],
+    "通常": [
+      {
+        "date": "2026-10-10",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "投げ銭": [
+      {
+        "date": "2026-10-10",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "14960861": "default"
+    "14960861": "default",
+    "14970969": "投げ銭"
   }
 }

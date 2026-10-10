@@ -7,6 +7,11 @@
         "date": "2026-10-09",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "love(内容物は同じです)": [
@@ -14,8 +19,16 @@
         "date": "2026-10-09",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-10",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14948963": "material",
+    "14949000": "love(内容物は同じです)"
+  }
 }
