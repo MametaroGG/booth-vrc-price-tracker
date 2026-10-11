@@ -24,7 +24,8 @@ $FilesToInclude = @(
     "content.css",
     "icon16.png",
     "icon48.png",
-    "icon128.png"
+    "icon128.png",
+    "_locales"
 )
 
 # Create temporary folder for bundling
@@ -34,7 +35,7 @@ New-Item -ItemType Directory -Path $TempDir
 
 foreach ($file in $FilesToInclude) {
     if (Test-Path "$SourceDir\$file") {
-        Copy-Item "$SourceDir\$file" "$TempDir\$file"
+        Copy-Item "$SourceDir\$file" "$TempDir\$file" -Recurse
         Write-Host "  Included: $file"
     }
     else {

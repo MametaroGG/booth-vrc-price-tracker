@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Boopa - BOOTH Price Tracker for VRChat",
+    "name": "__MSG_extensionName__",
     "version": "1.2.0",
-    "description": "BOOTHのVRChat関連商品の価格推移を表示します",
+    "description": "__MSG_extensionDescription__",
     "permissions": [
         "storage"
     ],
@@ -34,5 +34,6 @@
         "16": "icon16.png",
         "48": "icon48.png",
         "128": "icon128.png"
-    }
+    },
+    "default_locale": "ja"
 }
