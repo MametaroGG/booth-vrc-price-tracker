@@ -1,7 +1,8 @@
 # BOOTH Price Tracker for VRChat - Extension Bundler
 $SourceDir = "extension"
 $OutputDir = "dist"
-$ZipFile = "booth-vrc-price-tracker-v1.0.2.zip"
+$Version = (Get-Content "$SourceDir/manifest.json" -Raw | ConvertFrom-Json).version
+$ZipFile = "boopa-v$Version-chrome-web-store.zip"
 
 # Create output directory if it doesn't exist
 if (!(Test-Path $OutputDir)) {
@@ -18,13 +19,12 @@ Write-Host "Bundling extension files..." -ForegroundColor Cyan
 # Files to include (explicitly)
 $FilesToInclude = @(
     "manifest.json",
+    "background.js",
     "content.js",
     "content.css",
     "icon16.png",
     "icon48.png",
-    "icon128.png",
-    "promo_small.png",
-    "promo_marquee.png"
+    "icon128.png"
 )
 
 # Create temporary folder for bundling
@@ -38,7 +38,7 @@ foreach ($file in $FilesToInclude) {
         Write-Host "  Included: $file"
     }
     else {
-        Write-Warning "  Missing: $file (skipped)"
+        throw "Required extension file missing: $file"
     }
 }
 

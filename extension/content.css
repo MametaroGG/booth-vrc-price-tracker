@@ -6,6 +6,16 @@
     border-bottom: 1px solid rgba(128, 128, 128, 0.2);
     position: relative;
     color: inherit;
+    /* Shop .cart-btns/.variations center their contents; marketplace does not.
+       Own the widget's typography without overriding the shop's theme colors. */
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, Avenir, "Helvetica Neue", "Segoe UI", Arial, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-transform: none;
 }
 
 .booth-chart-tooltip {
@@ -34,7 +44,7 @@
     gap: 8px;
 }
 
-.booth-price-tracker-title span {
+.booth-price-heading-row > span {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -55,7 +65,19 @@
 }
 
 .booth-price-range-btn {
+    appearance: none;
+    box-sizing: border-box;
+    font-family: inherit;
     font-size: 11px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: none;
+    margin: 0;
+    min-width: 0;
+    min-height: 0;
+    box-shadow: none;
     padding: 2px 8px;
     background: rgba(128, 128, 128, 0.1);
     border: 1px solid rgba(128, 128, 128, 0.3);
@@ -194,4 +216,231 @@
     border-radius: 4px;
     font-size: 11px;
     white-space: nowrap;
+}
+
+/* Keep the compact switch beside the heading; date ranges retain their own row. */
+.booth-price-heading-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    width: 100%;
+    min-width: 0;
+    /* Size against the available widget column, not the viewport or hostname. */
+    container: boopa-history / inline-size;
+}
+.booth-price-scale-controls {
+    display: flex;
+    align-items: center;
+}
+.booth-price-scale-status {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+.booth-price-tracker-container .booth-price-scale-btn {
+    appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    background-image: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    min-height: 36px;
+    padding: 7px 2px;
+    font: inherit;
+    font-size: 11px;
+    font-weight: normal;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+.booth-price-scale-btn[hidden], .booth-price-overflow-details[hidden] {
+    display: none;
+}
+/* Reference motion: the knob stretches across the pill, then its trailing edge
+   catches up. ▲ = normal-range zoom; ● = all recorded prices. */
+.booth-price-scale-track {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    border-radius: 999px;
+    background: var(--boopa-switch-track, #fff);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12);
+    isolation: isolate;
+}
+.booth-price-scale-knob {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    border-radius: 999px;
+    background: var(--boopa-switch-ink, #333);
+    /* Both endpoint boxes are exactly 24×24, centered on the 12px symbols.
+       A 1px paint bleed covers the track underlay's antialias fringe. The
+       track supplies the ONE external clip; the bleed never changes layout
+       or the 48×24 visible pill, including at full stretch and on reversal. */
+    box-shadow: 0 0 0 1px var(--boopa-switch-ink, #333);
+}
+.booth-price-scale-btn[aria-checked="true"] .booth-price-scale-knob {
+    left: 50%;
+    right: 0;
+}
+.booth-price-scale-btn[data-animated="true"] .booth-price-scale-knob {
+    transition: left 280ms ease-in-out, right 280ms ease-in-out 820ms;
+}
+.booth-price-scale-btn[data-animated="true"][aria-checked="true"] .booth-price-scale-knob {
+    transition: right 280ms ease-in-out, left 280ms ease-in-out 820ms;
+}
+.booth-price-scale-symbol {
+    position: absolute;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    display: block;
+    fill: currentColor;
+    pointer-events: none;
+}
+.booth-price-scale-triangle {
+    left: 6px;
+    color: var(--boopa-switch-track, #fff);
+}
+.booth-price-scale-circle {
+    right: 6px;
+    color: var(--boopa-switch-ink, #333);
+}
+.booth-price-scale-btn[aria-checked="true"] .booth-price-scale-triangle { color: var(--boopa-switch-ink, #333); }
+.booth-price-scale-btn[aria-checked="true"] .booth-price-scale-circle { color: var(--boopa-switch-track, #fff); }
+.booth-price-scale-btn[data-animated="true"] .booth-price-scale-triangle,
+.booth-price-scale-btn[data-animated="true"][aria-checked="true"] .booth-price-scale-circle {
+    transition: color 280ms ease-in-out;
+}
+.booth-price-scale-btn[data-animated="true"] .booth-price-scale-circle,
+.booth-price-scale-btn[data-animated="true"][aria-checked="true"] .booth-price-scale-triangle {
+    transition: color 280ms ease-in-out 820ms;
+}
+/* Host themes sometimes decorate every button or its pseudo-elements. Keep this
+   pill's edge independent, while retaining a clear keyboard-only focus ring. */
+.booth-price-tracker-container .booth-price-scale-btn::before,
+.booth-price-tracker-container .booth-price-scale-btn::after { content: none; }
+.booth-price-tracker-container .booth-price-scale-btn:focus:not(:focus-visible) { outline: none; box-shadow: none; }
+.booth-price-tracker-container .booth-price-scale-btn:focus-visible, .booth-price-overflow-details summary:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+.booth-price-overflow-details {
+    min-width: 0;
+    max-width: 100%;
+    font-size: 11px;
+    font-weight: normal;
+    overflow-wrap: anywhere;
+}
+.booth-price-overflow-details[open] {
+    flex-basis: 100%;
+}
+.booth-price-overflow-details summary {
+    cursor: pointer;
+    padding: 8px 0;
+    min-height: 20px;
+}
+.booth-price-overflow-details .booth-price-history-scroll {
+    max-width: 100%;
+    max-height: 180px;
+    overflow: auto;
+    margin: 4px 0 8px;
+    border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+    border-radius: 4px;
+}
+.booth-price-history-scroll:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+.booth-price-overflow-details .booth-price-history-table {
+    width: 100%;
+    min-width: 0;
+    border-collapse: collapse;
+    margin: 0;
+    color: inherit;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+}
+.booth-price-history-table th,
+.booth-price-history-table td {
+    /* BOOTH shop themes use an ID-scoped td/th rule. Protect only our cells. */
+    padding: 7px 10px !important;
+    text-align: left !important;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+    border-right: 1px solid color-mix(in srgb, currentColor 10%, transparent);
+    vertical-align: top;
+}
+.booth-price-history-table th {
+    text-align: left;
+    font-weight: 600;
+    background: color-mix(in srgb, currentColor 8%, transparent);
+}
+.booth-price-history-table tbody tr:nth-child(even) {
+    background: color-mix(in srgb, currentColor 3%, transparent);
+}
+.booth-price-history-table td:first-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    font-weight: 500;
+}
+.booth-price-history-table th:nth-child(n+2),
+.booth-price-history-table td:nth-child(n+2) {
+    /* Reserve only the content width for dates/prices; names take the rest. */
+    width: 1%;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+.booth-price-history-table th:last-child,
+.booth-price-history-table td:last-child {
+    text-align: right !important;
+    border-right: 0;
+}
+.booth-price-history-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+/* Shop columns are commonly ~295px; marketplace columns ~346px. A narrow
+   marketplace/mobile column gets the same treatment, and a wide shop keeps
+   the roomier spacing. Local scroll remains a last resort for extreme values. */
+@container boopa-history (max-width: 340px) {
+    .booth-price-history-table th,
+    .booth-price-history-table td {
+        padding: 7px 4px !important;
+    }
+}
+@media (pointer: coarse) {
+    .booth-price-tracker-container .booth-price-scale-btn { min-width: 44px; min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .booth-price-scale-btn[data-animated="true"][aria-checked] .booth-price-scale-knob,
+    .booth-price-scale-btn[data-animated="true"][aria-checked] .booth-price-scale-symbol {
+        transition: none;
+    }
 }
