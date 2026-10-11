@@ -17,6 +17,11 @@
         "date": "2026-10-10",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-11",
+        "price": 800,
+        "is_sale": true
       }
     ],
     "Fancy": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-10-10",
+        "price": 700,
+        "is_sale": true
+      },
+      {
+        "date": "2026-10-11",
         "price": 700,
         "is_sale": true
       }
@@ -51,6 +61,11 @@
         "date": "2026-10-10",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-11",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "Velvet": [
@@ -68,8 +83,18 @@
         "date": "2026-10-10",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-11",
+        "price": 700,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14814430": "【セール！】🐟Full Set🫧",
+    "14814446": "Fancy",
+    "14814447": "Sugar",
+    "14814448": "Velvet"
+  }
 }
