@@ -28,9 +28,40 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "個人・非商用ライセンス / Personal & Non-commercial (FREE)": [
+      {
+        "date": "2026-10-12",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "応援・寄付 / Donation ¥200": [
+      {
+        "date": "2026-10-12",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "応援・寄付 / Donation ¥400": [
+      {
+        "date": "2026-10-12",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "商用利用ライセンス / Commercial Use License": [
+      {
+        "date": "2026-10-12",
+        "price": 980,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "14703922": "default"
+    "14703922": "default",
+    "14992389": "応援・寄付 / Donation ¥200",
+    "14992390": "応援・寄付 / Donation ¥400",
+    "14992391": "商用利用ライセンス / Commercial Use License"
   }
 }

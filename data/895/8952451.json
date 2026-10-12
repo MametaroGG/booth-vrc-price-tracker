@@ -12,6 +12,11 @@
         "date": "2026-10-11",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-12",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Chocolat ｜ ショコラ": [
@@ -23,6 +28,11 @@
       {
         "date": "2026-10-11",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-12",
+        "price": 150,
         "is_sale": false
       }
     ],
@@ -36,6 +46,11 @@
         "date": "2026-10-11",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-12",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Eku ｜ エク": [
@@ -47,6 +62,11 @@
       {
         "date": "2026-10-11",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-12",
+        "price": 150,
         "is_sale": false
       }
     ],
@@ -60,6 +80,11 @@
         "date": "2026-10-11",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-12",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "Fullpack": [
@@ -70,6 +95,11 @@
       },
       {
         "date": "2026-10-11",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-12",
         "price": 300,
         "is_sale": false
       }
@@ -84,10 +114,21 @@
         "date": "2026-10-11",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-12",
+        "price": 150,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14972978": "Fullpack"
+    "14959657": "Shinano ｜ しなの",
+    "14972476": "Chocolat ｜ ショコラ",
+    "14972477": "Kaguya ｜ 輝夜",
+    "14972478": "Eku ｜ エク",
+    "14972479": "Yumeka ｜ ゆめか",
+    "14972978": "Fullpack",
+    "14977100": "Milfy ｜ ミルフィ"
   }
 }
