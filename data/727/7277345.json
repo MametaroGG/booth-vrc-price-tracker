@@ -767,6 +767,11 @@
         "date": "2026-10-11",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-12",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Veknica (ヴェルニカ) 対応": [
@@ -792,6 +797,11 @@
       },
       {
         "date": "2026-10-11",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-12",
         "price": 500,
         "is_sale": false
       }
@@ -821,12 +831,25 @@
         "date": "2026-10-11",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-12",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Nakiya (泣夜) 対応": [
+      {
+        "date": "2026-10-12",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "12190996": "default",
     "14947040": "Veknica (ヴェルニカ) 対応",
-    "14947052": "Mayo (まよ) 対応"
+    "14947052": "Mayo (まよ) 対応",
+    "14997231": "Nakiya (泣夜) 対応"
   }
 }
