@@ -551,10 +551,39 @@
         "date": "2026-10-12",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "Dance Installer": [
+      {
+        "date": "2026-10-13",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "Converter VMD": [
+      {
+        "date": "2026-10-13",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "Camera Converter": [
+      {
+        "date": "2026-10-13",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13561421": "default"
+    "13561421": "default",
+    "15002687": "Dance Installer",
+    "15002688": "Converter VMD",
+    "15002689": "Camera Converter"
   }
 }

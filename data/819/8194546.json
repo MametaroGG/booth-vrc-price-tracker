@@ -32,6 +32,11 @@
         "date": "2026-04-21",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-13",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "◎スペシャル版（Special Pack）厳選5色+限定色1色〈全6色〉": [
@@ -64,7 +69,16 @@
         "date": "2026-04-21",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1500,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "13718147": "◎ベーシック版（Basic Pack）厳選5色パック",
+    "13718212": "◎スペシャル版（Special Pack）厳選5色+限定色1色〈全6色〉"
   }
 }

@@ -7,11 +7,21 @@
         "date": "2026-10-12",
         "price": 3800,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-13",
+        "price": 3800,
+        "is_sale": true
       }
     ],
     "森羅：Shinra": [
       {
         "date": "2026-10-12",
+        "price": 1600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-10-13",
         "price": 1600,
         "is_sale": true
       }
@@ -21,11 +31,21 @@
         "date": "2026-10-12",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1600,
+        "is_sale": true
       }
     ],
     "ラシューシャ：Lasyusha": [
       {
         "date": "2026-10-12",
+        "price": 1600,
+        "is_sale": true
+      },
+      {
+        "date": "2026-10-13",
         "price": 1600,
         "is_sale": true
       }
@@ -35,6 +55,11 @@
         "date": "2026-10-12",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1600,
+        "is_sale": true
       }
     ],
     "海咲：Misaki": [
@@ -42,8 +67,20 @@
         "date": "2026-10-12",
         "price": 1600,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-13",
+        "price": 1600,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14987997": "Full Pack (5Avatars)",
+    "14988141": "森羅：Shinra",
+    "14988142": "しなの：Shinano",
+    "14988143": "ラシューシャ：Lasyusha",
+    "14988144": "ルミナ：Lumina",
+    "14988145": "海咲：Misaki"
+  }
 }
