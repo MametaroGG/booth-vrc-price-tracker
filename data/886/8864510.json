@@ -57,10 +57,47 @@
         "date": "2026-10-13",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-14",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "Baku": [
+      {
+        "date": "2026-10-14",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Hanka": [
+      {
+        "date": "2026-10-14",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Komano": [
+      {
+        "date": "2026-10-14",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Yuri": [
+      {
+        "date": "2026-10-14",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14814062": "default"
+    "14814062": "default",
+    "15009565": "Baku",
+    "15009566": "Hanka",
+    "15009567": "Komano",
+    "15009568": "Yuri"
   }
 }

@@ -7,6 +7,11 @@
         "date": "2026-10-13",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-14",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "救援物資(中身は同じです)": [
@@ -14,10 +19,16 @@
         "date": "2026-10-13",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-14",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14992637": "titanblade",
     "14992660": "救援物資(中身は同じです)"
   }
 }

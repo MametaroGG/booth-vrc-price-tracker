@@ -507,10 +507,23 @@
         "date": "2026-10-13",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-14",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "ラーメン代(サンキュ！)": [
+      {
+        "date": "2026-10-14",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "13622338": "default"
+    "13622338": "default",
+    "15005121": "ラーメン代(サンキュ！)"
   }
 }
