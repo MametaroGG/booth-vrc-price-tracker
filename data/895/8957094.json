@@ -32,10 +32,31 @@
         "date": "2026-10-14",
         "price": 1500,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1500,
+        "is_sale": true
+      }
+    ],
+    "VRChat单体": [
+      {
+        "date": "2026-10-15",
+        "price": 1500,
+        "is_sale": true
+      }
+    ],
+    "同捆FullSet": [
+      {
+        "date": "2026-10-15",
+        "price": 2500,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "14967284": "default"
+    "14967284": "default",
+    "15017931": "VRChat单体",
+    "15017932": "同捆FullSet"
   }
 }

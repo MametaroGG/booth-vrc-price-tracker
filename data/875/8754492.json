@@ -102,10 +102,63 @@
         "date": "2026-10-14",
         "price": 980,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 980,
+        "is_sale": false
+      }
+    ],
+    "Part-Decorative Items": [
+      {
+        "date": "2026-10-15",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Part-Kitchen": [
+      {
+        "date": "2026-10-15",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Part-Kitchen Utensils": [
+      {
+        "date": "2026-10-15",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Part-Lamps": [
+      {
+        "date": "2026-10-15",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "Part-Living Room and Bedroom": [
+      {
+        "date": "2026-10-15",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Part-Plants": [
+      {
+        "date": "2026-10-15",
+        "price": 150,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14619121": "default"
+    "14619121": "default",
+    "15020065": "Part-Decorative Items",
+    "15020066": "Part-Kitchen",
+    "15020067": "Part-Kitchen Utensils",
+    "15020068": "Part-Lamps",
+    "15020069": "Part-Living Room and Bedroom",
+    "15020070": "Part-Plants"
   }
 }

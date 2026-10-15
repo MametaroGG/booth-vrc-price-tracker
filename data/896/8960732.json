@@ -27,10 +27,47 @@
         "date": "2026-10-14",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1200,
+        "is_sale": false
+      }
+    ],
+    "milltina": [
+      {
+        "date": "2026-10-15",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "V2_lumina": [
+      {
+        "date": "2026-10-15",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "rurune": [
+      {
+        "date": "2026-10-15",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "mayo": [
+      {
+        "date": "2026-10-15",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14972997": "default"
+    "14972997": "default",
+    "15015747": "milltina",
+    "15015748": "V2_lumina",
+    "15015749": "rurune",
+    "15015750": "mayo"
   }
 }

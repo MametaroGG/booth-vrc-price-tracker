@@ -17,6 +17,11 @@
         "date": "2026-10-14",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "支援版 / Support（内容は同じです）": [
@@ -24,11 +29,24 @@
         "date": "2026-10-14",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "割引版 / Discount（内容は同じです）": [
+      {
+        "date": "2026-10-15",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14972635": "default",
-    "15010622": "支援版 / Support（内容は同じです）"
+    "15010622": "支援版 / Support（内容は同じです）",
+    "15014377": "割引版 / Discount（内容は同じです）"
   }
 }

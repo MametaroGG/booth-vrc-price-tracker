@@ -7,12 +7,22 @@
         "date": "2026-10-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "Red": [
       {
         "date": "2026-10-14",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 300,
         "is_sale": false
       }
     ],
@@ -21,12 +31,22 @@
         "date": "2026-10-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Yellow": [
       {
         "date": "2026-10-14",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 300,
         "is_sale": false
       }
     ],
@@ -35,12 +55,22 @@
         "date": "2026-10-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Pink": [
       {
         "date": "2026-10-14",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 300,
         "is_sale": false
       }
     ],
@@ -49,6 +79,11 @@
         "date": "2026-10-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Orange": [
@@ -56,8 +91,22 @@
         "date": "2026-10-14",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-15",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14991115": "Fullset",
+    "15010527": "Red",
+    "15010528": "Blue",
+    "15010529": "Yellow",
+    "15010530": "Green",
+    "15010531": "Pink",
+    "15010532": "White",
+    "15012279": "Orange"
+  }
 }

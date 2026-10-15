@@ -12,6 +12,11 @@
         "date": "2026-10-14",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-15",
+        "price": 150,
+        "is_sale": true
       }
     ],
     "支援版(改変例Blendshapeあり)": [
@@ -24,8 +29,16 @@
         "date": "2026-10-14",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-15",
+        "price": 250,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14934903": "通常版(改変例Blendshapeなし)",
+    "14934949": "支援版(改変例Blendshapeあり)"
+  }
 }
