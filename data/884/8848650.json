@@ -68,7 +68,23 @@
         "price": 0,
         "is_sale": true
       }
+    ],
+    "cofee mix vending machine(FREE)": [
+      {
+        "date": "2026-10-16",
+        "price": 0,
+        "is_sale": true
+      }
+    ],
+    "Support (Same Contents as Free Version)": [
+      {
+        "date": "2026-10-16",
+        "price": 100,
+        "is_sale": true
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15024561": "Support (Same Contents as Free Version)"
+  }
 }
