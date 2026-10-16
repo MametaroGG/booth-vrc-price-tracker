@@ -778,9 +778,24 @@
         "price": 100,
         "is_sale": false
       }
+    ],
+    "-free-": [
+      {
+        "date": "2026-10-16",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "ちゅーる代（中身は同じ）": [
+      {
+        "date": "2026-10-16",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "11371733": "default"
+    "11371733": "default",
+    "15030130": "ちゅーる代（中身は同じ）"
   }
 }
