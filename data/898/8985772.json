@@ -12,6 +12,11 @@
         "date": "2026-10-16",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "【SALE!】まめひなた": [
@@ -24,6 +29,11 @@
         "date": "2026-10-16",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "【SALE!】キプフェル": [
@@ -36,6 +46,11 @@
         "date": "2026-10-16",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "【SALE!】うささき": [
@@ -48,6 +63,11 @@
         "date": "2026-10-16",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "【SALE!】コロネ": [
@@ -60,6 +80,11 @@
         "date": "2026-10-16",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "【SALE!】りこりす": [
@@ -72,6 +97,11 @@
         "date": "2026-10-16",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "【SALE!】ColofulRabbit": [
@@ -84,8 +114,21 @@
         "date": "2026-10-16",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 300,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15011356": "【SALE!】フルセット",
+    "15013316": "【SALE!】まめひなた",
+    "15013317": "【SALE!】キプフェル",
+    "15013318": "【SALE!】うささき",
+    "15013319": "【SALE!】コロネ",
+    "15013320": "【SALE!】りこりす",
+    "15013321": "【SALE!】ColofulRabbit"
+  }
 }

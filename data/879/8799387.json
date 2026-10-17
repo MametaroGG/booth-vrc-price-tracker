@@ -87,10 +87,23 @@
         "date": "2026-10-16",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "LG-S02-ROKUSHOUGE": [
+      {
+        "date": "2026-10-17",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14697987": "default"
+    "14697987": "default",
+    "15032957": "LG-S02-ROKUSHOUGE"
   }
 }

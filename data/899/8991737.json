@@ -7,11 +7,21 @@
         "date": "2026-10-16",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Kipfel.Mamehinata": [
       {
         "date": "2026-10-16",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
         "price": 700,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-10-16",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Melvii": [
       {
         "date": "2026-10-16",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
         "price": 700,
         "is_sale": false
       }
@@ -35,8 +55,19 @@
         "date": "2026-10-16",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15021536": "フルセット対応",
+    "15021576": "Kipfel.Mamehinata",
+    "15021577": "Hikarun.Ryumii",
+    "15021578": "Melvii",
+    "15021579": "Elusion.Nemesis"
+  }
 }

@@ -17,6 +17,11 @@
         "date": "2026-10-16",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 1100,
+        "is_sale": true
       }
     ],
     "まめふれんず / mamefriends": [
@@ -34,6 +39,11 @@
         "date": "2026-10-16",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "えも研 - クララ・コロネ・アズキ / emoken": [
@@ -51,6 +61,11 @@
         "date": "2026-10-16",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "ネメシス・エルシオン / nemesis elusion": [
@@ -68,6 +83,11 @@
         "date": "2026-10-16",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "くるるんキッズ - ひかるん・リュミィ・ゆめみる / kululun kids": [
@@ -85,6 +105,11 @@
         "date": "2026-10-16",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "みみのこ / miminoko": [
@@ -102,8 +127,20 @@
         "date": "2026-10-16",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 750,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15007428": "まめふれんず / mamefriends",
+    "15007623": "えも研 - クララ・コロネ・アズキ / emoken",
+    "15007624": "ネメシス・エルシオン / nemesis elusion",
+    "15007625": "くるるんキッズ - ひかるん・リュミィ・ゆめみる / kululun kids",
+    "15007641": "フルセット / full set",
+    "15007676": "みみのこ / miminoko"
+  }
 }

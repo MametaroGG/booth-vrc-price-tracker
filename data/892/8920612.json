@@ -57,10 +57,30 @@
         "date": "2026-10-16",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-17",
+        "price": 1200,
+        "is_sale": true
+      }
+    ],
+    "白雪天使用": [
+      {
+        "date": "2026-10-17",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "license": [
+      {
+        "date": "2026-10-17",
+        "price": 0,
+        "is_sale": true
       }
     ]
   },
   "variation_keys": {
-    "14907487": "default"
+    "14907487": "default",
+    "15035414": "白雪天使用"
   }
 }
