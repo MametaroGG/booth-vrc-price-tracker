@@ -74,10 +74,23 @@
         "date": "2026-10-17",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-18",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Base": [
+      {
+        "date": "2026-10-18",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14978764": "Base",
     "14979003": "【お誕生日おめでとう‼】Plus"
   }
 }

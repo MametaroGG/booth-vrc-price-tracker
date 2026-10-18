@@ -33,7 +33,24 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "EROI-OBASAN 【SiroinoSotai】": [
+      {
+        "date": "2026-10-18",
+        "price": 500,
+        "is_sale": true
+      }
+    ],
+    "EROI-OBASAN 【SiroinoSotai】【応援版】": [
+      {
+        "date": "2026-10-18",
+        "price": 1000,
+        "is_sale": true
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14990788": "EROI-OBASAN 【SiroinoSotai】",
+    "15045297": "EROI-OBASAN 【SiroinoSotai】【応援版】"
+  }
 }

@@ -32,6 +32,11 @@
         "date": "2026-10-17",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-18",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Fullpack": [
@@ -57,6 +62,11 @@
       },
       {
         "date": "2026-10-17",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-18",
         "price": 1000,
         "is_sale": false
       }
@@ -86,12 +96,25 @@
         "date": "2026-10-17",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-18",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "スノゥ　Snow": [
+      {
+        "date": "2026-10-18",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14682279": "default",
     "14994877": "Fullpack",
-    "14994878": "ラシューシャ　Lasyusha"
+    "14994878": "ラシューシャ　Lasyusha",
+    "15039565": "スノゥ　Snow"
   }
 }

@@ -24,6 +24,11 @@
         "date": "2026-10-17",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-18",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "応援(内容はRuruneと変わりません)": [
@@ -36,11 +41,47 @@
         "date": "2026-10-17",
         "price": 300,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-18",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Free": [
+      {
+        "date": "2026-10-18",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Rurune/ルルネ": [
+      {
+        "date": "2026-10-18",
+        "price": 150,
+        "is_sale": false
+      }
+    ],
+    "Rinasciita/リナシ―タ": [
+      {
+        "date": "2026-10-18",
+        "price": 150,
+        "is_sale": false
+      }
+    ],
+    "Nedux/ネドゥ": [
+      {
+        "date": "2026-10-18",
+        "price": 150,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "14337592": "Rurune/ルルネ",
     "14337617": "応援(内容はRuruneと変わりません)",
-    "15024566": "FullPack(現在ルルネのみ/きっと増えるぞ！にかけてくれる方✨)"
+    "15024566": "FullPack(現在ルルネのみ/きっと増えるぞ！にかけてくれる方✨)",
+    "15040311": "Rinasciita/リナシ―タ",
+    "15040312": "Nedux/ネドゥ"
   }
 }
