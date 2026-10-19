@@ -24,6 +24,11 @@
         "date": "2026-10-18",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-19",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "SurfaceClock v1.2": [
@@ -36,8 +41,15 @@
         "date": "2026-10-18",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-19",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15023598": "SurfaceClock v1.2"
+  }
 }

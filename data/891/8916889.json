@@ -67,6 +67,11 @@
         "date": "2026-10-18",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-19",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "カプリィナ": [
@@ -94,11 +99,24 @@
         "date": "2026-10-18",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-19",
+        "price": 0,
+        "is_sale": true
+      }
+    ],
+    "full": [
+      {
+        "date": "2026-10-19",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14901600": "default",
-    "15010980": "カプリィナ"
+    "15010980": "カプリィナ",
+    "15050615": "full"
   }
 }

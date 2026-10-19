@@ -7,11 +7,21 @@
         "date": "2026-10-18",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-19",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "Personal Commercial License": [
       {
         "date": "2026-10-18",
+        "price": 1500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-19",
         "price": 1500,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-10-18",
         "price": 10000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-19",
+        "price": 10000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15039644": "NaturalGazeHair029",
+    "15039703": "Personal Commercial License",
+    "15039704": "Corporate Commercial License"
+  }
 }

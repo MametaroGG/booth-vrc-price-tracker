@@ -12,6 +12,11 @@
         "date": "2026-10-18",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-19",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "FULL pack《期間限定無料‼️》": [
@@ -25,7 +30,16 @@
         "price": 0,
         "is_sale": true
       }
+    ],
+    "FULL pack": [
+      {
+        "date": "2026-10-19",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15028225": "FULL pack"
+  }
 }
