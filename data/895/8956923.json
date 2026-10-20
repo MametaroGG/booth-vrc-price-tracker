@@ -12,6 +12,11 @@
         "date": "2026-10-19",
         "price": 980,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-20",
+        "price": 980,
+        "is_sale": true
       }
     ],
     "フィユエ_Fyuett": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-10-19",
+        "price": 700,
+        "is_sale": true
+      },
+      {
+        "date": "2026-10-20",
         "price": 700,
         "is_sale": true
       }
@@ -36,6 +46,11 @@
         "date": "2026-10-19",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-20",
+        "price": 700,
+        "is_sale": true
       }
     ],
     "りこりす_Licolis": [
@@ -48,8 +63,18 @@
         "date": "2026-10-19",
         "price": 700,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-20",
+        "price": 700,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14966934": "フルパック_Fullpack",
+    "15038357": "フィユエ_Fyuett",
+    "15038358": "キプフェル_kipfel",
+    "15038359": "りこりす_Licolis"
+  }
 }

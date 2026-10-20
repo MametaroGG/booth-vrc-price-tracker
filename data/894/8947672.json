@@ -62,10 +62,23 @@
         "date": "2026-10-19",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-20",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "milfy": [
+      {
+        "date": "2026-10-20",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14952415": "default"
+    "14952415": "default",
+    "15063423": "milfy"
   }
 }

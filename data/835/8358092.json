@@ -137,6 +137,11 @@
         "date": "2026-10-19",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-20",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "無料版": [
@@ -529,10 +534,18 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "オレンジ": [
+      {
+        "date": "2026-10-20",
+        "price": 200,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
     "14074461": "支援する",
-    "14747598": "default"
+    "14747598": "default",
+    "14777152": "オレンジ"
   }
 }

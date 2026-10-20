@@ -346,6 +346,11 @@
         "date": "2026-10-19",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-20",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "レッド": [
@@ -433,11 +438,17 @@
         "date": "2026-10-19",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-20",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14107140": "支援する",
-    "14742599": "default"
+    "14742599": "default",
+    "14842453": "レッド"
   }
 }
