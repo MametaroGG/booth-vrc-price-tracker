@@ -778,9 +778,32 @@
         "price": 2200,
         "is_sale": false
       }
+    ],
+    "v1.17": [
+      {
+        "date": "2026-10-20",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Donation (上と同じ)": [
+      {
+        "date": "2026-10-20",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Donation x2 (上と同じ)": [
+      {
+        "date": "2026-10-20",
+        "price": 2000,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "9578683": "default"
+    "9578683": "default",
+    "15058729": "Donation (上と同じ)",
+    "15058730": "Donation x2 (上と同じ)"
   }
 }
