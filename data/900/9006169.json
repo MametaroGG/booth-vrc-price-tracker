@@ -17,6 +17,11 @@
         "date": "2026-10-20",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-21",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "【50%OFFセール】No.006 Type-A -Snow Flower -": [
@@ -34,6 +39,11 @@
         "date": "2026-10-20",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-21",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "【三日間限定無料】No.006 Type-B -Snow Flower -": [
@@ -52,10 +62,18 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "【50%OFFセール】No.006 Type-B -Snow Flower -": [
+      {
+        "date": "2026-10-21",
+        "price": 300,
+        "is_sale": true
+      }
     ]
   },
   "variation_keys": {
     "15046072": "【50%OFFセール】No.006 ペアリングセット（Type-A・Type-B）",
-    "15046334": "【50%OFFセール】No.006 Type-A -Snow Flower -"
+    "15046334": "【50%OFFセール】No.006 Type-A -Snow Flower -",
+    "15046335": "【50%OFFセール】No.006 Type-B -Snow Flower -"
   }
 }

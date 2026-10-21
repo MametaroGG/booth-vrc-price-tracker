@@ -78,7 +78,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "無料版": [
+      {
+        "date": "2026-10-21",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "おやつ代(特典付き)": [
+      {
+        "date": "2026-10-21",
+        "price": 200,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15068919": "おやつ代(特典付き)"
+  }
 }

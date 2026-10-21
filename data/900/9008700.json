@@ -24,10 +24,31 @@
         "date": "2026-10-20",
         "price": 390,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-21",
+        "price": 380,
+        "is_sale": true
+      }
+    ],
+    "male": [
+      {
+        "date": "2026-10-21",
+        "price": 190,
+        "is_sale": false
+      }
+    ],
+    "female": [
+      {
+        "date": "2026-10-21",
+        "price": 190,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15050495": "通常版"
+    "15050495": "通常版",
+    "15063726": "male",
+    "15063727": "female"
   }
 }

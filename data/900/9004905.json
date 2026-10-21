@@ -17,10 +17,30 @@
         "date": "2026-10-20",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-21",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "siusiu": [
+      {
+        "date": "2026-10-21",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "blender sp": [
+      {
+        "date": "2026-10-21",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15044183": "default"
+    "15044183": "default",
+    "15069924": "siusiu"
   }
 }

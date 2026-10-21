@@ -72,6 +72,11 @@
         "date": "2026-10-20",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-21",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "5点まとめ 100本(イヤリング・ヘアピン・耳・羽しっぽ・頭飾り)": [
@@ -79,11 +84,21 @@
         "date": "2026-10-20",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-21",
+        "price": 750,
+        "is_sale": true
       }
     ],
     "1色だけの無料版(5本)": [
       {
         "date": "2026-10-20",
+        "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-21",
         "price": 0,
         "is_sale": false
       }
