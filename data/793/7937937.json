@@ -15,9 +15,17 @@
         "price": 100,
         "is_sale": false
       }
+    ],
+    "default": [
+      {
+        "date": "2026-10-22",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
+    "13293626": "default",
     "15048807": "海底アイテクスチャ"
   }
 }

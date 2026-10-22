@@ -29,6 +29,11 @@
         "date": "2026-10-21",
         "price": 380,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-22",
+        "price": 380,
+        "is_sale": false
       }
     ],
     "male": [
@@ -36,11 +41,21 @@
         "date": "2026-10-21",
         "price": 190,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-22",
+        "price": 190,
+        "is_sale": false
       }
     ],
     "female": [
       {
         "date": "2026-10-21",
+        "price": 190,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-22",
         "price": 190,
         "is_sale": false
       }
