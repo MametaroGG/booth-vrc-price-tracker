@@ -9,7 +9,7 @@ test('Chrome manifest declares Japanese default and localized name/description',
     assert.equal(manifest.default_locale, 'ja');
     assert.equal(manifest.name, '__MSG_extensionName__');
     assert.equal(manifest.description, '__MSG_extensionDescription__');
-    assert.equal(manifest.version, '1.2.0');
+    assert.equal(manifest.version, '1.2.1');
     assert.equal(require('../package.json').version, manifest.version);
     assert.equal(require('../package-lock.json').version, manifest.version);
 });
