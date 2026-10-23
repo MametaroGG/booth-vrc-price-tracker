@@ -1,1 +1,233 @@
-Y29uc3QgYXNzZXJ0ID0gcmVxdWlyZSgnbm9kZTphc3NlcnQvc3RyaWN0Jyk7CmNvbnN0IGZzID0gcmVxdWlyZSgnbm9kZTpmcycpOwpjb25zdCBvcyA9IHJlcXVpcmUoJ25vZGU6b3MnKTsKY29uc3QgcGF0aCA9IHJlcXVpcmUoJ25vZGU6cGF0aCcpOwpjb25zdCB0ZXN0ID0gcmVxdWlyZSgnbm9kZTp0ZXN0Jyk7Cgpjb25zdCB7CiAgICBwYXJzZUl0ZW1Kc29uLCBidWlsZFJlY29yZCwgcmVzaXplZEltYWdlLCBmZXRjaEl0ZW1NZXRhLCByZWFkQWN0aXZpdHksIGJ1aWxkV29ya0xpc3QsIG1haW4KfSA9IHJlcXVpcmUoJy4uL3NyYy9tZXRhLXNjcmFwZXInKTsKY29uc3QgeyBqc3REYXRlIH0gPSByZXF1aXJlKCcuLi9zcmMvY29sbGVjdGlvbi1ydW50aW1lJyk7CmNvbnN0IGZpeHR1cmUgPSBKU09OLnBhcnNlKGZzLnJlYWRGaWxlU3luYyhwYXRoLmpvaW4oX19kaXJuYW1lLCAnZml4dHVyZXMnLCAnYm9vdGgtaXRlbS03OTE4MzA4Lmpzb24nKSwgJ3V0ZjgnKSk7Cgp0ZXN0KCdwYXJzZUl0ZW1Kc29uIGV4dHJhY3RzIHRhZ3MsIGNhdGVnb3J5LCBhbmQgdGhlIHdpc2gtbGlzdCBjb3VudCcsICgpID0+IHsKICAgIGNvbnN0IHBhcnNlZCA9IHBhcnNlSXRlbUpzb24oJzc5MTgzMDgnLCBmaXh0dXJlKTsKICAgIGFzc2VydC5lcXVhbChwYXJzZWQuaWQsICc3OTE4MzA4Jyk7CiAgICBhc3NlcnQuZXF1YWwocGFyc2VkLm5hbWUsIGZpeHR1cmUubmFtZSk7CiAgICBhc3NlcnQuZXF1YWwocGFyc2VkLnNob3Auc3ViZG9tYWluLCAnYXppZWwnKTsKICAgIGFzc2VydC5lcXVhbChwYXJzZWQubGlrZXMsIDM5KTsKICAgIGFzc2VydC5lcXVhbChwYXJzZWQuY2F0ZWdvcnkubmFtZSwgJzNE5bCP6YGT5YW3Jyk7CiAgICBhc3NlcnQuZXF1YWwocGFyc2VkLmNhdGVnb3J5LnBhcmVudCwgJzNE44Oi44OH44OrJyk7CiAgICBhc3NlcnQub2socGFyc2VkLnRhZ3MuaW5jbHVkZXMoJ1ZSQ2hhdCcpKTsKICAgIGFzc2VydC5lcXVhbChwYXJzZWQudGFncy5sZW5ndGgsIGZpeHR1cmUudGFncy5sZW5ndGgpOwogICAgYXNzZXJ0Lm9rKHBhcnNlZC5pbWFnZS5zdGFydHNXaXRoKCdodHRwczovL2Jvb3RoLnB4aW1nLm5ldC8nKSk7CiAgICBhc3NlcnQub2socGFyc2VkLmltYWdlX3Jlc2l6ZWQuaW5jbHVkZXMoJy9jLzYyMHg2MjAvJykpOwogICAgYXNzZXJ0LmVxdWFsKHBhcnNlZC5wdWJsaXNoZWRfYXQsIGZpeHR1cmUucHVibGlzaGVkX2F0KTsKfSk7Cgp0ZXN0KCdwYXJzZUl0ZW1Kc29uIHJlamVjdHMgZm9yZWlnbiBvciBzaGFwZWxlc3MgcGF5bG9hZHMnLCAoKSA9PiB7CiAgICBhc3NlcnQudGhyb3dzKCgpID0+IHBhcnNlSXRlbUpzb24oJzc5MTgzMDgnLCB7IC4uLmZpeHR1cmUsIGlkOiAxMjMgfSksIC9pZCBtaXNtYXRjaC8pOwogICAgYXNzZXJ0LnRocm93cygoKSA9PiBwYXJzZUl0ZW1Kc29uKCc3OTE4MzA4JywgbnVsbCksIC9VbnJlY29nbml6ZWQvKTsKICAgIGFzc2VydC50aHJvd3MoKCkgPT4gcGFyc2VJdGVtSnNvbignNzkxODMwOCcsIHsgaWQ6IDc5MTgzMDgsIG5hbWU6ICcnIH0pLCAvbWlzc2luZyBhIG5hbWUvKTsKfSk7Cgp0ZXN0KCdyZXNpemVkSW1hZ2Ugb25seSByZXdyaXRlcyB0aGUgY2Fub25pY2FsIHB4aW1nIHNoYXBlJywgKCkgPT4gewogICAgYXNzZXJ0LmVxdWFsKAogICAgICAgIHJlc2l6ZWRJbWFnZSgnaHR0cHM6Ly9ib290aC5weGltZy5uZXQvYWY5YjM3YmUtMDc3Yi00OGIxLWI3YjItMjliNDU0MDcyNDFlL2kvNzkxODMwOC94X2Jhc2VfcmVzaXplZC5qcGcnKSwKICAgICAgICAnaHR0cHM6Ly9ib290aC5weGltZy5uZXQvYy82MjB4NjIwL2FmOWIzN2JlLTA3N2ItNDhiMS1iN2IyLTI5YjQ1NDA3MjQxZS9pLzc5MTgzMDgveF9iYXNlX3Jlc2l6ZWQuanBnJyk7CiAgICBhc3NlcnQuZXF1YWwocmVzaXplZEltYWdlKCdodHRwczovL2V4YW1wbGUuY29tL2EuanBnJyksICdodHRwczovL2V4YW1wbGUuY29tL2EuanBnJyk7CiAgICBhc3NlcnQuZXF1YWwocmVzaXplZEltYWdlKCcnKSwgJycpOwp9KTsKCnRlc3QoJ2J1aWxkUmVjb3JkIGFwcGVuZHMgYW5kIHJlcGxhY2VzIGxpa2VzIHNuYXBzaG90cyBieSBkYXRlJywgKCkgPT4gewogICAgY29uc3QgcGFyc2VkID0gcGFyc2VJdGVtSnNvbignNzkxODMwOCcsIGZpeHR1cmUpOwogICAgY29uc3QgZmlyc3QgPSBidWlsZFJlY29yZChwYXJzZWQsIHsgdG9kYXk6ICcyMDI2LTEwLTIzJyB9KTsKICAgIGFzc2VydC5kZWVwRXF1YWwoZmlyc3QubGlrZXNfaGlzdG9yeSwgW3sgZGF0ZTogJzIwMjYtMTAtMjMnLCBjb3VudDogMzkgfV0pOwogICAgY29uc3Qgc2FtZURheSA9IGJ1aWxkUmVjb3JkKHsgLi4ucGFyc2VkLCBsaWtlczogNDEgfSwgeyB0b2RheTogJzIwMjYtMTAtMjMnLCBwcmV2aW91czogZmlyc3QgfSk7CiAgICBhc3NlcnQuZGVlcEVxdWFsKHNhbWVEYXkubGlrZXNfaGlzdG9yeSwgW3sgZGF0ZTogJzIwMjYtMTAtMjMnLCBjb3VudDogNDEgfV0pOwogICAgY29uc3QgbmV4dERheSA9IGJ1aWxkUmVjb3JkKHsgLi4ucGFyc2VkLCBsaWtlczogNDUgfSwgeyB0b2RheTogJzIwMjYtMTAtMjQnLCBwcmV2aW91czogc2FtZURheSB9KTsKICAgIGFzc2VydC5kZWVwRXF1YWwobmV4dERheS5saWtlc19oaXN0b3J5LCBbCiAgICAgICAgeyBkYXRlOiAnMjAyNi0xMC0yMycsIGNvdW50OiA0MSB9LCB7IGRhdGU6ICcyMDI2LTEwLTI0JywgY291bnQ6IDQ1IH1dKTsKICAgIGNvbnN0IHVua25vd24gPSBidWlsZFJlY29yZCh7IC4uLnBhcnNlZCwgbGlrZXM6IG51bGwgfSwgeyB0b2RheTogJzIwMjYtMTAtMjUnLCBwcmV2aW91czogbmV4dERheSB9KTsKICAgIGFzc2VydC5lcXVhbCh1bmtub3duLmxpa2VzX2hpc3RvcnkubGVuZ3RoLCAyKTsKfSk7Cgp0ZXN0KCdmZXRjaEl0ZW1NZXRhIG1hcHMgc3RhdHVzZXMgYW5kIHBhcnNlcyBzdHJpbmcgcGF5bG9hZHMnLCBhc3luYyAoKSA9PiB7CiAgICBjb25zdCBvayA9IGF3YWl0IGZldGNoSXRlbU1ldGEoJzc5MTgzMDgnLCB7CiAgICAgICAgZ2V0OiBhc3luYyAoKSA9PiAoeyBzdGF0dXM6IDIwMCwgZGF0YTogSlNPTi5zdHJpbmdpZnkoZml4dHVyZSkgfSkKICAgIH0pOwogICAgYXNzZXJ0LmVxdWFsKG9rLmtpbmQsICdzdWNjZXNzJyk7CiAgICBhc3NlcnQuZXF1YWwob2subWV0YS5saWtlcywgMzkpOwogICAgY29uc3QgZ29uZSA9IGF3YWl0IGZldGNoSXRlbU1ldGEoJzc5MTgzMDgnLCB7IGdldDogYXN5bmMgKCkgPT4gKHsgc3RhdHVzOiA0MDQsIGRhdGE6ICcnIH0pIH0pOwogICAgYXNzZXJ0LmRlZXBFcXVhbChnb25lLCB7IGtpbmQ6ICd1bmF2YWlsYWJsZScsIGlkOiAnNzkxODMwOCcsIHN0YXR1czogNDA0IH0pOwogICAgY29uc3QgcmVqZWN0ZWQgPSBhd2FpdCBmZXRjaEl0ZW1NZXRhKCc3OTE4MzA4JywgewogICAgICAgIGdldDogYXN5bmMgKCkgPT4geyBjb25zdCBlID0gbmV3IEVycm9yKCdub3BlJyk7IGUucmVzcG9uc2UgPSB7IHN0YXR1czogNDEwIH07IHRocm93IGU7IH0KICAgIH0pOwogICAgYXNzZXJ0LmVxdWFsKHJlamVjdGVkLmtpbmQsICd1bmF2YWlsYWJsZScpOwogICAgY29uc3QgZmFpbGVkID0gYXdhaXQgZmV0Y2hJdGVtTWV0YSgnNzkxODMwOCcsIHsgZ2V0OiBhc3luYyAoKSA9PiB7IHRocm93IG5ldyBFcnJvcignYm9vbScpOyB9IH0pOwogICAgYXNzZXJ0LmVxdWFsKGZhaWxlZC5raW5kLCAnZmFpbHVyZScpOwp9KTsKCmZ1bmN0aW9uIHRlbXBUcmVlKHQpIHsKICAgIGNvbnN0IHJvb3QgPSBmcy5ta2R0ZW1wU3luYyhwYXRoLmpvaW4ob3MudG1wZGlyKCksICdib29wYS1tZXRhLScpKTsKICAgIHQuYWZ0ZXIoKCkgPT4gZnMucm1TeW5jKHJvb3QsIHsgcmVjdXJzaXZlOiB0cnVlLCBmb3JjZTogdHJ1ZSB9KSk7CiAgICBjb25zdCBkYXRhRGlyID0gcGF0aC5qb2luKHJvb3QsICdkYXRhJyk7CiAgICBjb25zdCBtZXRhRGlyID0gcGF0aC5qb2luKHJvb3QsICdtZXRhJyk7CiAgICBjb25zdCBwcm9kdWN0ID0gaWQgPT4gewogICAgICAgIGNvbnN0IGRpciA9IHBhdGguam9pbihkYXRhRGlyLCBpZC5zdWJzdHJpbmcoMCwgMykpOwogICAgICAgIGZzLm1rZGlyU3luYyhkaXIsIHsgcmVjdXJzaXZlOiB0cnVlIH0pOwogICAgICAgIGZzLndyaXRlRmlsZVN5bmMocGF0aC5qb2luKGRpciwgYCR7aWR9Lmpzb25gKSwgJ3siaWQiOicgKyBpZCArICd9Jyk7CiAgICB9OwogICAgY29uc3QgbWV0YSA9IChpZCwgcmVjb3JkKSA9PiB7CiAgICAgICAgY29uc3QgZGlyID0gcGF0aC5qb2luKG1ldGFEaXIsIGlkLnN1YnN0cmluZygwLCAzKSk7CiAgICAgICAgZnMubWtkaXJTeW5jKGRpciwgeyByZWN1cnNpdmU6IHRydWUgfSk7CiAgICAgICAgZnMud3JpdGVGaWxlU3luYyhwYXRoLmpvaW4oZGlyLCBgJHtpZH0uanNvbmApLCBKU09OLnN0cmluZ2lmeShyZWNvcmQpKTsKICAgIH07CiAgICByZXR1cm4geyBkYXRhRGlyLCBtZXRhRGlyLCBwcm9kdWN0LCBtZXRhIH07Cn0KCnRlc3QoJ2J1aWxkV29ya0xpc3QgcHJpb3JpdGl6ZXMgbWlzc2luZyAobmV3ZXN0IGZpcnN0KSwgdGhlbiBzdGFsZXN0IHJlZnJlc2hlcycsIHQgPT4gewogICAgY29uc3QgeyBkYXRhRGlyLCBtZXRhRGlyLCBwcm9kdWN0LCBtZXRhIH0gPSB0ZW1wVHJlZSh0KTsKICAgIGZvciAoY29uc3QgaWQgb2YgWycxMDAwMDAxJywgJzEwMDAwMDknLCAnMTAwMDAwNScsICcxMDAwMDAzJywgJzEwMDAwMDcnXSkgcHJvZHVjdChpZCk7CiAgICBtZXRhKCcxMDAwMDA1JywgeyBpZDogJzEwMDAwMDUnLCBmZXRjaGVkX2F0OiAnMjAyNi0xMC0yMicgfSk7IC8vIGZyZXNoOiBza2lwcGVkCiAgICBtZXRhKCcxMDAwMDAzJywgeyBpZDogJzEwMDAwMDMnLCBmZXRjaGVkX2F0OiAnMjAyNi0wOS0wMScgfSk7IC8vIHN0YWxlIHJlZnJlc2gKICAgIG1ldGEoJzEwMDAwMDcnLCB7IGlkOiAnMTAwMDAwNycsIHVuYXZhaWxhYmxlOiB0cnVlLCBmZXRjaGVkX2F0OiAnMjAyNi0xMC0wMScgfSk7IC8vIHRvbyBzb29uIHRvIHJldHJ5CiAgICBjb25zdCB3b3JrID0gYnVpbGRXb3JrTGlzdCh7IGRhdGFEaXIsIG1ldGFEaXIsIHRvZGF5OiAnMjAyNi0xMC0yMycsIHJ1bkNhcDogMTAgfSk7CiAgICBhc3NlcnQuZGVlcEVxdWFsKHdvcmsubWFwKHcgPT4gdy5pZCksIFsnMTAwMDAwOScsICcxMDAwMDAxJywgJzEwMDAwMDMnXSk7CiAgICBjb25zdCBjYXBwZWQgPSBidWlsZFdvcmtMaXN0KHsgZGF0YURpciwgbWV0YURpciwgdG9kYXk6ICcyMDI2LTEwLTIzJywgcnVuQ2FwOiAyIH0pOwogICAgYXNzZXJ0LmRlZXBFcXVhbChjYXBwZWQubWFwKHcgPT4gdy5pZCksIFsnMTAwMDAwOScsICcxMDAwMDAxJ10pOwp9KTsKCnRlc3QoJ3JlYWRBY3Rpdml0eSBkZXRlY3RzIHNhbGUsIHByaWNlIGNoYW5nZSwgYW5kIG5ld25lc3MgaW5zaWRlIHRoZSB3aW5kb3cnLCB0ID0+IHsKICAgIGNvbnN0IHsgZGF0YURpciwgcHJvZHVjdCB9ID0gdGVtcFRyZWUodCk7CiAgICBjb25zdCB3cml0ZSA9IChpZCwgZW50cmllcykgPT4gewogICAgICAgIGNvbnN0IGRpciA9IHBhdGguam9pbihkYXRhRGlyLCBpZC5zdWJzdHJpbmcoMCwgMykpOwogICAgICAgIGZzLm1rZGlyU3luYyhkaXIsIHsgcmVjdXJzaXZlOiB0cnVlIH0pOwogICAgICAgIGZzLndyaXRlRmlsZVN5bmMocGF0aC5qb2luKGRpciwgYCR7aWR9Lmpzb25gKSwKICAgICAgICAgICAgSlNPTi5zdHJpbmdpZnkoeyBpZDogTnVtYmVyKGlkKSwgdmFyaWF0aW9uczogeyBkZWZhdWx0OiBlbnRyaWVzIH0gfSkpOwogICAgfTsKICAgIGNvbnN0IGN1dG9mZiA9ICcyMDI2LTEwLTA5JzsgLy8gdG9kYXkgMjAyNi0xMC0yMywgMTQtZGF5IHdpbmRvdwogICAgd3JpdGUoJzIwMDAwMDEnLCBbeyBkYXRlOiAnMjAyNi0wOC0wMScsIHByaWNlOiA1MDAsIGlzX3NhbGU6IGZhbHNlIH0sCiAgICAgICAgeyBkYXRlOiAnMjAyNi0xMC0yMCcsIHByaWNlOiA1MDAsIGlzX3NhbGU6IHRydWUgfV0pOwogICAgYXNzZXJ0LmVxdWFsKHJlYWRBY3Rpdml0eShkYXRhRGlyLCAnMjAwMDAwMScsIGN1dG9mZiksIHRydWUpOyAvLyBvbiBzYWxlIG5vdwogICAgd3JpdGUoJzIwMDAwMDInLCBbeyBkYXRlOiAnMjAyNi0wOC0wMScsIHByaWNlOiA1MDAsIGlzX3NhbGU6IGZhbHNlIH0sCiAgICAgICAgeyBkYXRlOiAnMjAyNi0xMC0xNScsIHByaWNlOiA0MDAsIGlzX3NhbGU6IGZhbHNlIH1dKTsKICAgIGFzc2VydC5lcXVhbChyZWFkQWN0aXZpdHkoZGF0YURpciwgJzIwMDAwMDInLCBjdXRvZmYpLCB0cnVlKTsgLy8gcHJpY2UgY2hhbmdlZCBpbiB3aW5kb3cKICAgIHdyaXRlKCcyMDAwMDAzJywgW3sgZGF0ZTogJzIwMjYtMTAtMjEnLCBwcmljZTogNTAwLCBpc19zYWxlOiBmYWxzZSB9XSk7CiAgICBhc3NlcnQuZXF1YWwocmVhZEFjdGl2aXR5KGRhdGFEaXIsICcyMDAwMDAzJywgY3V0b2ZmKSwgdHJ1ZSk7IC8vIG5ld2x5IHRyYWNrZWQKICAgIHdyaXRlKCcyMDAwMDA0JywgW3sgZGF0ZTogJzIwMjYtMDgtMDEnLCBwcmljZTogNTAwLCBpc19zYWxlOiBmYWxzZSB9LAogICAgICAgIHsgZGF0ZTogJzIwMjYtMTAtMjAnLCBwcmljZTogNTAwLCBpc19zYWxlOiBmYWxzZSB9XSk7CiAgICBhc3NlcnQuZXF1YWwocmVhZEFjdGl2aXR5KGRhdGFEaXIsICcyMDAwMDA0JywgY3V0b2ZmKSwgZmFsc2UpOyAvLyBxdWlldAogICAgd3JpdGUoJzIwMDAwMDUnLCBbeyBkYXRlOiAnMjAyNi0wOC0wMScsIHByaWNlOiA1MDAsIGlzX3NhbGU6IHRydWUgfSwKICAgICAgICB7IGRhdGU6ICcyMDI2LTA5LTAxJywgcHJpY2U6IDUwMCwgaXNfc2FsZTogdHJ1ZSB9XSk7CiAgICBhc3NlcnQuZXF1YWwocmVhZEFjdGl2aXR5KGRhdGFEaXIsICcyMDAwMDA1JywgY3V0b2ZmKSwgZmFsc2UpOyAvLyBzYWxlIGlzIHN0YWxlIG5ld3MKICAgIHByb2R1Y3QoJzIwMDAwMDYnKTsgLy8gc2hhcGVsZXNzIHByaWNlIGZpbGUgbXVzdCBub3QgdGhyb3cKICAgIGFzc2VydC5lcXVhbChyZWFkQWN0aXZpdHkoZGF0YURpciwgJzIwMDAwMDYnLCBjdXRvZmYpLCBmYWxzZSk7Cn0pOwoKdGVzdCgnYnVpbGRXb3JrTGlzdCBnaXZlcyBob3QgaXRlbXMgYSBkYWlseSBzbmFwc2hvdCBhaGVhZCBvZiB0aGUgcXVpZXQgcmVmcmVzaCcsIHQgPT4gewogICAgY29uc3QgeyBkYXRhRGlyLCBtZXRhRGlyLCBtZXRhIH0gPSB0ZW1wVHJlZSh0KTsKICAgIGNvbnN0IHdyaXRlID0gKGlkLCBlbnRyaWVzKSA9PiB7CiAgICAgICAgY29uc3QgZGlyID0gcGF0aC5qb2luKGRhdGFEaXIsIGlkLnN1YnN0cmluZygwLCAzKSk7CiAgICAgICAgZnMubWtkaXJTeW5jKGRpciwgeyByZWN1cnNpdmU6IHRydWUgfSk7CiAgICAgICAgZnMud3JpdGVGaWxlU3luYyhwYXRoLmpvaW4oZGlyLCBgJHtpZH0uanNvbmApLAogICAgICAgICAgICBKU09OLnN0cmluZ2lmeSh7IGlkOiBOdW1iZXIoaWQpLCB2YXJpYXRpb25zOiB7IGRlZmF1bHQ6IGVudHJpZXMgfSB9KSk7CiAgICB9OwogICAgd3JpdGUoJzMwMDAwMDEnLCBbeyBkYXRlOiAnMjAyNi0wOC0wMScsIHByaWNlOiA1MDAsIGlzX3NhbGU6IGZhbHNlIH0sCiAgICAgICAgeyBkYXRlOiAnMjAyNi0xMC0yMicsIHByaWNlOiA1MDAsIGlzX3NhbGU6IHRydWUgfV0pOyAvLyBob3QsIG1ldGEgZnJvbSB5ZXN0ZXJkYXkKICAgIHdyaXRlKCczMDAwMDAyJywgW3sgZGF0ZTogJzIwMjYtMDgtMDEnLCBwcmljZTogNTAwLCBpc19zYWxlOiBmYWxzZSB9LAogICAgICAgIHsgZGF0ZTogJzIwMjYtMTAtMjInLCBwcmljZTogNTAwLCBpc19zYWxlOiBmYWxzZSB9XSk7IC8vIHF1aWV0LCBtZXRhIDIgZGF5cyBvbGQKICAgIHdyaXRlKCczMDAwMDAzJywgW3sgZGF0ZTogJzIwMjYtMDgtMDEnLCBwcmljZTogNTAwLCBpc19zYWxlOiBmYWxzZSB9LAogICAgICAgIHsgZGF0ZTogJzIwMjYtMDktMDEnLCBwcmljZTogNTAwLCBpc19zYWxlOiBmYWxzZSB9XSk7IC8vIHF1aWV0LCBtZXRhIDMwIGRheXMgb2xkCiAgICBtZXRhKCczMDAwMDAxJywgeyBpZDogJzMwMDAwMDEnLCBmZXRjaGVkX2F0OiAnMjAyNi0xMC0yMicgfSk7CiAgICBtZXRhKCczMDAwMDAyJywgeyBpZDogJzMwMDAwMDInLCBmZXRjaGVkX2F0OiAnMjAyNi0xMC0yMScgfSk7CiAgICBtZXRhKCczMDAwMDAzJywgeyBpZDogJzMwMDAwMDMnLCBmZXRjaGVkX2F0OiAnMjAyNi0wOS0yMycgfSk7CiAgICBjb25zdCB3b3JrID0gYnVpbGRXb3JrTGlzdCh7IGRhdGFEaXIsIG1ldGFEaXIsIHRvZGF5OiAnMjAyNi0xMC0yMycsIHJ1bkNhcDogMTAgfSk7CiAgICBhc3NlcnQuZGVlcEVxdWFsKHdvcmsubWFwKHcgPT4gdy5pZCksIFsnMzAwMDAwMScsICczMDAwMDAzJ10pOwp9KTsKCnRlc3QoJ21haW4gcmUtY29sbGVjdHMgYSBob3QgaXRlbSB0aGUgbmV4dCBkYXkgc28gbGlrZXMgZGVsdGFzIGFjY3J1ZScsIGFzeW5jIHQgPT4gewogICAgY29uc3QgeyBkYXRhRGlyLCBtZXRhRGlyLCBtZXRhIH0gPSB0ZW1wVHJlZSh0KTsKICAgIGNvbnN0IHRvZGF5ID0ganN0RGF0ZShEYXRlLm5vdygpKTsKICAgIGNvbnN0IHllc3RlcmRheSA9IG5ldyBEYXRlKERhdGUucGFyc2UoYCR7dG9kYXl9VDAwOjAwOjAwWmApIC0gODY0MDAwMDApLnRvSVNPU3RyaW5nKCkuc2xpY2UoMCwgMTApOwogICAgY29uc3QgZGlyID0gcGF0aC5qb2luKGRhdGFEaXIsICc3OTEnKTsKICAgIGZzLm1rZGlyU3luYyhkaXIsIHsgcmVjdXJzaXZlOiB0cnVlIH0pOwogICAgZnMud3JpdGVGaWxlU3luYyhwYXRoLmpvaW4oZGlyLCAnNzkxODMwOC5qc29uJyksIEpTT04uc3RyaW5naWZ5KHsKICAgICAgICBpZDogNzkxODMwOCwKICAgICAgICB2YXJpYXRpb25zOiB7IGRlZmF1bHQ6IFt7IGRhdGU6IHllc3RlcmRheSwgcHJpY2U6IDAsIGlzX3NhbGU6IHRydWUgfV0gfQogICAgfSkpOwogICAgbWV0YSgnNzkxODMwOCcsIHsKICAgICAgICBpZDogJzc5MTgzMDgnLCBuYW1lOiBmaXh0dXJlLm5hbWUsIGxpa2VzOiAzMCwKICAgICAgICBsaWtlc19oaXN0b3J5OiBbeyBkYXRlOiB5ZXN0ZXJkYXksIGNvdW50OiAzMCB9XSwgZmV0Y2hlZF9hdDogeWVzdGVyZGF5CiAgICB9KTsKICAgIGNvbnN0IGdldCA9IGFzeW5jICgpID0+ICh7IHN0YXR1czogMjAwLCBkYXRhOiBmaXh0dXJlLCBoZWFkZXJzOiB7fSB9KTsKICAgIGNvbnN0IHJlc3VsdCA9IGF3YWl0IG1haW4oeyBkYXRhRGlyLCBtZXRhRGlyLCBnZXQsIHdhaXQ6IGFzeW5jICgpID0+IHt9LCBsb2c6ICgpID0+IHt9LCBsb2dFcnJvcjogKCkgPT4ge30gfSk7CiAgICBhc3NlcnQuZXF1YWwocmVzdWx0Lm1ldHJpY3Muc3VjY2VzcywgMSk7CiAgICBjb25zdCBzYXZlZCA9IEpTT04ucGFyc2UoZnMucmVhZEZpbGVTeW5jKHBhdGguam9pbihtZXRhRGlyLCAnNzkxJywgJzc5MTgzMDguanNvbicpLCAndXRmOCcpKTsKICAgIGFzc2VydC5kZWVwRXF1YWwoc2F2ZWQubGlrZXNfaGlzdG9yeSwgWwogICAgICAgIHsgZGF0ZTogeWVzdGVyZGF5LCBjb3VudDogMzAgfSwgeyBkYXRlOiB0b2RheSwgY291bnQ6IDM5IH1dKTsKfSk7Cgp0ZXN0KCdtYWluIGNvbnRpbnVhdGlvbiBpcyBncmFudGVkIGZvciBhIGNhcC1ib3VuZCBydW4gb2Ygc3VjY2Vzc2VzJywgYXN5bmMgdCA9PiB7CiAgICBjb25zdCB7IGRhdGFEaXIsIG1ldGFEaXIsIHByb2R1Y3QgfSA9IHRlbXBUcmVlKHQpOwogICAgcHJvZHVjdCgnNzkxODMwOCcpOwogICAgcHJvZHVjdCgnODMyODc5NScpOwogICAgcHJvZHVjdCgnODYzOTg4NycpOwogICAgY29uc3QgcGFyc2VkID0gcGFyc2VJdGVtSnNvbignNzkxODMwOCcsIGZpeHR1cmUpOwogICAgY29uc3QgZmV0Y2hNZXRhID0gYXN5bmMgaWQgPT4gKHsga2luZDogJ3N1Y2Nlc3MnLCBtZXRhOiB7IC4uLnBhcnNlZCwgaWQgfSB9KTsKICAgIC8vIGZldGNoTWV0YSBieXBhc3NlcyB0aGUgdHJhbnNwb3J0LCBzbyB0aGUgY2xpZW50IHN0dWIgcmVwb3J0cyB0aGUKICAgIC8vIGF0dGVtcHRzIHRoZSByZWFsIGNsaWVudCB3b3VsZCBoYXZlIGNvdW50ZWQuCiAgICBjb25zdCBjbGllbnQgPSB7CiAgICAgICAgY2hlY2soKSB7fSwgZmluaXNoKCkge30sCiAgICAgICAgZ2V0QXR0ZW1wdENvdW50OiAoKSA9PiAyLAogICAgICAgIGdldEJ1ZGdldDogKCkgPT4gKHsgYmxvY2tlZFVudGlsOiAwIH0pCiAgICB9OwogICAgY29uc3QgcmVzdWx0ID0gYXdhaXQgbWFpbih7CiAgICAgICAgZGF0YURpciwgbWV0YURpciwgZmV0Y2hNZXRhLCBjbGllbnQsIHJ1bkNhcDogMiwgd2FpdDogYXN5bmMgKCkgPT4ge30sIGxvZzogKCkgPT4ge30sIGxvZ0Vycm9yOiAoKSA9PiB7fQogICAgfSk7CiAgICBhc3NlcnQuZXF1YWwocmVzdWx0LnN0YXR1cywgJ2NvbXBsZXRlZCcpOwogICAgYXNzZXJ0LmVxdWFsKHJlc3VsdC5tZXRyaWNzLnN1Y2Nlc3MsIDIpOwogICAgYXNzZXJ0LmVxdWFsKHJlc3VsdC5jb250aW51ZUNvbGxlY3Rpb24sIHRydWUpOwogICAgY29uc3QgZHJhaW5lZCA9IGF3YWl0IG1haW4oewogICAgICAgIGRhdGFEaXIsIG1ldGFEaXIsIGZldGNoTWV0YSwgY2xpZW50LCB3YWl0OiBhc3luYyAoKSA9PiB7fSwgbG9nOiAoKSA9PiB7fSwgbG9nRXJyb3I6ICgpID0+IHt9CiAgICB9KTsKICAgIGFzc2VydC5lcXVhbChkcmFpbmVkLmNvbnRpbnVlQ29sbGVjdGlvbiwgZmFsc2UpOyAvLyBvbmUgaXRlbSByZW1haW5lZDsgbm93IGRyYWluZWQKfSk7Cgp0ZXN0KCdtYWluIHN0b3BzIGdyYWNlZnVsbHkgYXQgaXRzIG93biBydW4gY2FwIGluc3RlYWQgb2YgYmVpbmcgaGFyZC1raWxsZWQnLCBhc3luYyB0ID0+IHsKICAgIGNvbnN0IHsgZGF0YURpciwgbWV0YURpciwgcHJvZHVjdCB9ID0gdGVtcFRyZWUodCk7CiAgICBwcm9kdWN0KCc3OTE4MzA4Jyk7CiAgICBjb25zdCBnZXQgPSBhc3luYyAoKSA9PiAoeyBzdGF0dXM6IDIwMCwgZGF0YTogZml4dHVyZSwgaGVhZGVyczoge30gfSk7CiAgICBjb25zdCByZXN1bHQgPSBhd2FpdCBtYWluKHsKICAgICAgICBkYXRhRGlyLCBtZXRhRGlyLCBnZXQsIG1heFJ1bk1zOiAwLCB3YWl0OiBhc3luYyAoKSA9PiB7fSwgbG9nOiAoKSA9PiB7fSwgbG9nRXJyb3I6ICgpID0+IHt9CiAgICB9KTsKICAgIGFzc2VydC5lcXVhbChyZXN1bHQuc3RhdHVzLCAncGF1c2VkJyk7CiAgICBhc3NlcnQuZXF1YWwocmVzdWx0LnJlYXNvbiwgJ2RlYWRsaW5lJyk7CiAgICBhc3NlcnQuZXF1YWwocmVzdWx0Lm1ldHJpY3Muc3VjY2VzcywgMCk7CiAgICBjb25zdCBzdGF0ZSA9IEpTT04ucGFyc2UoZnMucmVhZEZpbGVTeW5jKHBhdGguam9pbihtZXRhRGlyLCAnbWV0YV9zdGF0ZS5qc29uJyksICd1dGY4JykpOwogICAgYXNzZXJ0LmVxdWFsKHN0YXRlLnN0YXR1cywgJ3BhdXNlZCcpOwp9KTsKCnRlc3QoJ21haW4gY29sbGVjdHMgaW50byBtZXRhLyB0aHJvdWdoIGFuIGluamVjdGVkIHRyYW5zcG9ydCcsIGFzeW5jIHQgPT4gewogICAgY29uc3QgeyBkYXRhRGlyLCBtZXRhRGlyLCBwcm9kdWN0IH0gPSB0ZW1wVHJlZSh0KTsKICAgIHByb2R1Y3QoJzc5MTgzMDgnKTsKICAgIHByb2R1Y3QoJzU2MjA5NDAnKTsgLy8gZGVsZXRlZCBvbiBCT09USCBpbiByZWFsaXR5OyBoZXJlIHRoZSBmYWtlIHJldHVybnMgNDA0CiAgICBjb25zdCBnZXQgPSBhc3luYyB1cmwgPT4gewogICAgICAgIGlmICh1cmwuZW5kc1dpdGgoJy83OTE4MzA4Lmpzb24nKSkgcmV0dXJuIHsgc3RhdHVzOiAyMDAsIGRhdGE6IGZpeHR1cmUsIGhlYWRlcnM6IHt9IH07CiAgICAgICAgY29uc3QgZXJyb3IgPSBuZXcgRXJyb3IoJ25vdCBmb3VuZCcpOwogICAgICAgIGVycm9yLnJlc3BvbnNlID0geyBzdGF0dXM6IDQwNCwgaGVhZGVyczoge30gfTsKICAgICAgICB0aHJvdyBlcnJvcjsKICAgIH07CiAgICBjb25zdCByZXN1bHQgPSBhd2FpdCBtYWluKHsgZGF0YURpciwgbWV0YURpciwgZ2V0LCB3YWl0OiBhc3luYyAoKSA9PiB7fSwgbG9nOiAoKSA9PiB7fSwgbG9nRXJyb3I6ICgpID0+IHt9IH0pOwogICAgYXNzZXJ0LmVxdWFsKHJlc3VsdC5zdGF0dXMsICdjb21wbGV0ZWQnKTsKICAgIGFzc2VydC5lcXVhbChyZXN1bHQuY29udGludWVDb2xsZWN0aW9uLCBmYWxzZSk7IC8vIGRyYWluZWQgYmVsb3cgdGhlIGNhcAogICAgY29uc3Qgc2F2ZWQgPSBKU09OLnBhcnNlKGZzLnJlYWRGaWxlU3luYyhwYXRoLmpvaW4obWV0YURpciwgJzc5MScsICc3OTE4MzA4Lmpzb24nKSwgJ3V0ZjgnKSk7CiAgICBhc3NlcnQuZXF1YWwoc2F2ZWQubGlrZXMsIDM5KTsKICAgIGFzc2VydC5lcXVhbChzYXZlZC5jYXRlZ29yeS5wYXJlbnQsICczROODouODh+ODqycpOwogICAgYXNzZXJ0LmRlZXBFcXVhbChzYXZlZC5saWtlc19oaXN0b3J5LCBbeyBkYXRlOiBzYXZlZC5mZXRjaGVkX2F0LCBjb3VudDogMzkgfV0pOwogICAgY29uc3QgbWlzc2luZyA9IEpTT04ucGFyc2UoZnMucmVhZEZpbGVTeW5jKHBhdGguam9pbihtZXRhRGlyLCAnNTYyJywgJzU2MjA5NDAuanNvbicpLCAndXRmOCcpKTsKICAgIGFzc2VydC5lcXVhbChtaXNzaW5nLnVuYXZhaWxhYmxlLCB0cnVlKTsKICAgIGNvbnN0IHN0YXRlID0gSlNPTi5wYXJzZShmcy5yZWFkRmlsZVN5bmMocGF0aC5qb2luKG1ldGFEaXIsICdtZXRhX3N0YXRlLmpzb24nKSwgJ3V0ZjgnKSk7CiAgICBhc3NlcnQuZXF1YWwoc3RhdGUuc3VjY2VzcywgMSk7CiAgICBhc3NlcnQuZXF1YWwoc3RhdGUudW5hdmFpbGFibGUsIDEpOwp9KTsK
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
+const test = require('node:test');
+
+const {
+    parseItemJson, buildRecord, resizedImage, fetchItemMeta, readActivity, buildWorkList, main
+} = require('../src/meta-scraper');
+const { jstDate } = require('../src/collection-runtime');
+const fixture = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures', 'booth-item-7918308.json'), 'utf8'));
+
+test('parseItemJson extracts tags, category, and the wish-list count', () => {
+    const parsed = parseItemJson('7918308', fixture);
+    assert.equal(parsed.id, '7918308');
+    assert.equal(parsed.name, fixture.name);
+    assert.equal(parsed.shop.subdomain, 'aziel');
+    assert.equal(parsed.likes, 39);
+    assert.equal(parsed.category.name, '3D小道具');
+    assert.equal(parsed.category.parent, '3Dモデル');
+    assert.ok(parsed.tags.includes('VRChat'));
+    assert.equal(parsed.tags.length, fixture.tags.length);
+    assert.ok(parsed.image.startsWith('https://booth.pximg.net/'));
+    assert.ok(parsed.image_resized.includes('/c/620x620/'));
+    assert.equal(parsed.published_at, fixture.published_at);
+});
+
+test('parseItemJson rejects foreign or shapeless payloads', () => {
+    assert.throws(() => parseItemJson('7918308', { ...fixture, id: 123 }), /id mismatch/);
+    assert.throws(() => parseItemJson('7918308', null), /Unrecognized/);
+    assert.throws(() => parseItemJson('7918308', { id: 7918308, name: '' }), /missing a name/);
+});
+
+test('resizedImage only rewrites the canonical pximg shape', () => {
+    assert.equal(
+        resizedImage('https://booth.pximg.net/af9b37be-077b-48b1-b7b2-29b45407241e/i/7918308/x_base_resized.jpg'),
+        'https://booth.pximg.net/c/620x620/af9b37be-077b-48b1-b7b2-29b45407241e/i/7918308/x_base_resized.jpg');
+    assert.equal(resizedImage('https://example.com/a.jpg'), 'https://example.com/a.jpg');
+    assert.equal(resizedImage(''), '');
+});
+
+test('buildRecord appends and replaces likes snapshots by date', () => {
+    const parsed = parseItemJson('7918308', fixture);
+    const first = buildRecord(parsed, { today: '2026-10-23' });
+    assert.deepEqual(first.likes_history, [{ date: '2026-10-23', count: 39 }]);
+    const sameDay = buildRecord({ ...parsed, likes: 41 }, { today: '2026-10-23', previous: first });
+    assert.deepEqual(sameDay.likes_history, [{ date: '2026-10-23', count: 41 }]);
+    const nextDay = buildRecord({ ...parsed, likes: 45 }, { today: '2026-10-24', previous: sameDay });
+    assert.deepEqual(nextDay.likes_history, [
+        { date: '2026-10-23', count: 41 }, { date: '2026-10-24', count: 45 }]);
+    const unknown = buildRecord({ ...parsed, likes: null }, { today: '2026-10-25', previous: nextDay });
+    assert.equal(unknown.likes_history.length, 2);
+});
+
+test('fetchItemMeta maps statuses and parses string payloads', async () => {
+    const ok = await fetchItemMeta('7918308', {
+        get: async () => ({ status: 200, data: JSON.stringify(fixture) })
+    });
+    assert.equal(ok.kind, 'success');
+    assert.equal(ok.meta.likes, 39);
+    const gone = await fetchItemMeta('7918308', { get: async () => ({ status: 404, data: '' }) });
+    assert.deepEqual(gone, { kind: 'unavailable', id: '7918308', status: 404 });
+    const rejected = await fetchItemMeta('7918308', {
+        get: async () => { const e = new Error('nope'); e.response = { status: 410 }; throw e; }
+    });
+    assert.equal(rejected.kind, 'unavailable');
+    const failed = await fetchItemMeta('7918308', { get: async () => { throw new Error('boom'); } });
+    assert.equal(failed.kind, 'failure');
+});
+
+function tempTree(t) {
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'boopa-meta-'));
+    t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+    const dataDir = path.join(root, 'data');
+    const metaDir = path.join(root, 'meta');
+    const product = id => {
+        const dir = path.join(dataDir, id.substring(0, 3));
+        fs.mkdirSync(dir, { recursive: true });
+        fs.writeFileSync(path.join(dir, `${id}.json`), '{"id":' + id + '}');
+    };
+    const meta = (id, record) => {
+        const dir = path.join(metaDir, id.substring(0, 3));
+        fs.mkdirSync(dir, { recursive: true });
+        fs.writeFileSync(path.join(dir, `${id}.json`), JSON.stringify(record));
+    };
+    return { dataDir, metaDir, product, meta };
+}
+
+test('buildWorkList prioritizes missing (newest first), then stalest refreshes', t => {
+    const { dataDir, metaDir, product, meta } = tempTree(t);
+    for (const id of ['1000001', '1000009', '1000005', '1000003', '1000007']) product(id);
+    meta('1000005', { id: '1000005', fetched_at: '2026-10-22' }); // fresh: skipped
+    meta('1000003', { id: '1000003', fetched_at: '2026-09-01' }); // stale refresh
+    meta('1000007', { id: '1000007', unavailable: true, fetched_at: '2026-10-01' }); // too soon to retry
+    const work = buildWorkList({ dataDir, metaDir, today: '2026-10-23', runCap: 10 });
+    assert.deepEqual(work.map(w => w.id), ['1000009', '1000001', '1000003']);
+    const capped = buildWorkList({ dataDir, metaDir, today: '2026-10-23', runCap: 2 });
+    assert.deepEqual(capped.map(w => w.id), ['1000009', '1000001']);
+});
+
+test('readActivity detects sale, price change, and newness inside the window', t => {
+    const { dataDir, product } = tempTree(t);
+    const write = (id, entries) => {
+        const dir = path.join(dataDir, id.substring(0, 3));
+        fs.mkdirSync(dir, { recursive: true });
+        fs.writeFileSync(path.join(dir, `${id}.json`),
+            JSON.stringify({ id: Number(id), variations: { default: entries } }));
+    };
+    const cutoff = '2026-10-09'; // today 2026-10-23, 14-day window
+    write('2000001', [{ date: '2026-08-01', price: 500, is_sale: false },
+        { date: '2026-10-20', price: 500, is_sale: true }]);
+    assert.equal(readActivity(dataDir, '2000001', cutoff), true); // on sale now
+    write('2000002', [{ date: '2026-08-01', price: 500, is_sale: false },
+        { date: '2026-10-15', price: 400, is_sale: false }]);
+    assert.equal(readActivity(dataDir, '2000002', cutoff), true); // price changed in window
+    write('2000003', [{ date: '2026-10-21', price: 500, is_sale: false }]);
+    assert.equal(readActivity(dataDir, '2000003', cutoff), true); // newly tracked
+    write('2000004', [{ date: '2026-08-01', price: 500, is_sale: false },
+        { date: '2026-10-20', price: 500, is_sale: false }]);
+    assert.equal(readActivity(dataDir, '2000004', cutoff), false); // quiet
+    write('2000005', [{ date: '2026-08-01', price: 500, is_sale: true },
+        { date: '2026-09-01', price: 500, is_sale: true }]);
+    assert.equal(readActivity(dataDir, '2000005', cutoff), false); // sale is stale news
+    product('2000006'); // shapeless price file must not throw
+    assert.equal(readActivity(dataDir, '2000006', cutoff), false);
+});
+
+test('buildWorkList gives hot items a daily snapshot ahead of the quiet refresh', t => {
+    const { dataDir, metaDir, meta } = tempTree(t);
+    const write = (id, entries) => {
+        const dir = path.join(dataDir, id.substring(0, 3));
+        fs.mkdirSync(dir, { recursive: true });
+        fs.writeFileSync(path.join(dir, `${id}.json`),
+            JSON.stringify({ id: Number(id), variations: { default: entries } }));
+    };
+    write('3000001', [{ date: '2026-08-01', price: 500, is_sale: false },
+        { date: '2026-10-22', price: 500, is_sale: true }]); // hot, meta from yesterday
+    write('3000002', [{ date: '2026-08-01', price: 500, is_sale: false },
+        { date: '2026-10-22', price: 500, is_sale: false }]); // quiet, meta 2 days old
+    write('3000003', [{ date: '2026-08-01', price: 500, is_sale: false },
+        { date: '2026-09-01', price: 500, is_sale: false }]); // quiet, meta 30 days old
+    meta('3000001', { id: '3000001', fetched_at: '2026-10-22' });
+    meta('3000002', { id: '3000002', fetched_at: '2026-10-21' });
+    meta('3000003', { id: '3000003', fetched_at: '2026-09-23' });
+    const work = buildWorkList({ dataDir, metaDir, today: '2026-10-23', runCap: 10 });
+    assert.deepEqual(work.map(w => w.id), ['3000001', '3000003']);
+});
+
+test('main re-collects a hot item the next day so likes deltas accrue', async t => {
+    const { dataDir, metaDir, meta } = tempTree(t);
+    const today = jstDate(Date.now());
+    const yesterday = new Date(Date.parse(`${today}T00:00:00Z`) - 86400000).toISOString().slice(0, 10);
+    const dir = path.join(dataDir, '791');
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, '7918308.json'), JSON.stringify({
+        id: 7918308,
+        variations: { default: [{ date: yesterday, price: 0, is_sale: true }] }
+    }));
+    meta('7918308', {
+        id: '7918308', name: fixture.name, likes: 30,
+        likes_history: [{ date: yesterday, count: 30 }], fetched_at: yesterday
+    });
+    const get = async () => ({ status: 200, data: fixture, headers: {} });
+    const result = await main({ dataDir, metaDir, get, wait: async () => {}, log: () => {}, logError: () => {} });
+    assert.equal(result.metrics.success, 1);
+    const saved = JSON.parse(fs.readFileSync(path.join(metaDir, '791', '7918308.json'), 'utf8'));
+    assert.deepEqual(saved.likes_history, [
+        { date: yesterday, count: 30 }, { date: today, count: 39 }]);
+});
+
+test('main continuation is granted for a cap-bound run of successes', async t => {
+    const { dataDir, metaDir, product } = tempTree(t);
+    product('7918308');
+    product('8328795');
+    product('8639887');
+    const parsed = parseItemJson('7918308', fixture);
+    const fetchMeta = async id => ({ kind: 'success', meta: { ...parsed, id } });
+    // fetchMeta bypasses the transport, so the client stub reports the
+    // attempts the real client would have counted.
+    const client = {
+        check() {}, finish() {},
+        getAttemptCount: () => 2,
+        getBudget: () => ({ blockedUntil: 0 })
+    };
+    const result = await main({
+        dataDir, metaDir, fetchMeta, client, runCap: 2, wait: async () => {}, log: () => {}, logError: () => {}
+    });
+    assert.equal(result.status, 'completed');
+    assert.equal(result.metrics.success, 2);
+    assert.equal(result.continueCollection, true);
+    const drained = await main({
+        dataDir, metaDir, fetchMeta, client, wait: async () => {}, log: () => {}, logError: () => {}
+    });
+    assert.equal(drained.continueCollection, false); // one item remained; now drained
+});
+
+test('main stops gracefully at its own run cap instead of being hard-killed', async t => {
+    const { dataDir, metaDir, product } = tempTree(t);
+    product('7918308');
+    const get = async () => ({ status: 200, data: fixture, headers: {} });
+    const result = await main({
+        dataDir, metaDir, get, maxRunMs: 0, wait: async () => {}, log: () => {}, logError: () => {}
+    });
+    assert.equal(result.status, 'paused');
+    assert.equal(result.reason, 'deadline');
+    assert.equal(result.metrics.success, 0);
+    const state = JSON.parse(fs.readFileSync(path.join(metaDir, 'meta_state.json'), 'utf8'));
+    assert.equal(state.status, 'paused');
+});
+
+test('main collects into meta/ through an injected transport', async t => {
+    const { dataDir, metaDir, product } = tempTree(t);
+    product('7918308');
+    product('5620940'); // deleted on BOOTH in reality; here the fake returns 404
+    const get = async url => {
+        if (url.endsWith('/7918308.json')) return { status: 200, data: fixture, headers: {} };
+        const error = new Error('not found');
+        error.response = { status: 404, headers: {} };
+        throw error;
+    };
+    const result = await main({ dataDir, metaDir, get, wait: async () => {}, log: () => {}, logError: () => {} });
+    assert.equal(result.status, 'completed');
+    assert.equal(result.continueCollection, false); // drained below the cap
+    const saved = JSON.parse(fs.readFileSync(path.join(metaDir, '791', '7918308.json'), 'utf8'));
+    assert.equal(saved.likes, 39);
+    assert.equal(saved.category.parent, '3Dモデル');
+    assert.deepEqual(saved.likes_history, [{ date: saved.fetched_at, count: 39 }]);
+    const missing = JSON.parse(fs.readFileSync(path.join(metaDir, '562', '5620940.json'), 'utf8'));
+    assert.equal(missing.unavailable, true);
+    const state = JSON.parse(fs.readFileSync(path.join(metaDir, 'meta_state.json'), 'utf8'));
+    assert.equal(state.success, 1);
+    assert.equal(state.unavailable, 1);
+});

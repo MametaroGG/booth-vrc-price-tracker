@@ -1,1 +1,136 @@
-Y29uc3QgYXNzZXJ0ID0gcmVxdWlyZSgnbm9kZTphc3NlcnQvc3RyaWN0Jyk7CmNvbnN0IHsgRXZlbnRFbWl0dGVyIH0gPSByZXF1aXJlKCdub2RlOmV2ZW50cycpOwpjb25zdCB0ZXN0ID0gcmVxdWlyZSgnbm9kZTp0ZXN0Jyk7Cgpjb25zdCB7IHNob3VsZENvbnRpbnVlTWV0YSwgZGlzcGF0Y2hNZXRhQ29udGludWF0aW9uIH0gPSByZXF1aXJlKCcuLi9zcmMvbWV0YS1jb250aW51YXRpb24nKTsKCmNvbnN0IEhPVVIgPSA2MCAqIDYwICogMTAwMDsKZnVuY3Rpb24gYmFzZU9wdGlvbnMob3ZlcnJpZGVzID0ge30pIHsKICAgIHJldHVybiB7CiAgICAgICAgcmVzdWx0OiB7IHN0YXR1czogJ2NvbXBsZXRlZCcsIGZhaWxlZDogZmFsc2UgfSwKICAgICAgICBtZXRyaWNzOiB7CiAgICAgICAgICAgIGNoYXJnZWRIdHRwQXR0ZW1wdHM6IDkwMDAsIHN1Y2Nlc3M6IDgwMDAsIHVuYXZhaWxhYmxlOiA1MDAsCiAgICAgICAgICAgIGZhaWx1cmVzOiAwLCBwbGFubmVkOiAxMDAwMCwgcHJvY2Vzc2VkOiA4NTAwCiAgICAgICAgfSwKICAgICAgICBzdGFydGVkQXQ6IDAsCiAgICAgICAgc3RvcHBlZEF0OiAzICogSE9VUiwKICAgICAgICBkZWFkbGluZTogNC41ICogSE9VUiwKICAgICAgICBibG9ja2VkVW50aWw6IDAsCiAgICAgICAgY2FwUmVhY2hlZDogdHJ1ZSwKICAgICAgICAuLi5vdmVycmlkZXMKICAgIH07Cn0KCnRlc3QoJ3Nob3VsZENvbnRpbnVlTWV0YSBjaGFpbnMgYSBjYXAtYm91bmQgY29tcGxldGVkIHJ1biBvbmx5JywgKCkgPT4gewogICAgYXNzZXJ0LmVxdWFsKHNob3VsZENvbnRpbnVlTWV0YShiYXNlT3B0aW9ucygpKSwgdHJ1ZSk7CiAgICBhc3NlcnQuZXF1YWwoc2hvdWxkQ29udGludWVNZXRhKGJhc2VPcHRpb25zKHsgY2FwUmVhY2hlZDogZmFsc2UgfSkpLCBmYWxzZSk7Cn0pOwoKdGVzdCgnc2hvdWxkQ29udGludWVNZXRhIGhhbmRzIG92ZXIgYXQgdGhlIHJlYWwgZGVhZGxpbmUgd2l0aCB3b3JrIGxlZnQnLCAoKSA9PiB7CiAgICBjb25zdCBhdEJvdW5kYXJ5ID0gYmFzZU9wdGlvbnMoewogICAgICAgIHJlc3VsdDogeyBzdGF0dXM6ICdwYXVzZWQnLCByZWFzb246ICdkZWFkbGluZScsIGZhaWxlZDogZmFsc2UgfSwKICAgICAgICBzdG9wcGVkQXQ6IDQuNSAqIEhPVVIsCiAgICAgICAgY2FwUmVhY2hlZDogZmFsc2UKICAgIH0pOwogICAgYXNzZXJ0LmVxdWFsKHNob3VsZENvbnRpbnVlTWV0YShhdEJvdW5kYXJ5KSwgdHJ1ZSk7IC8vIHByb2Nlc3NlZCA8IHBsYW5uZWQKICAgIGNvbnN0IGRyYWluZWQgPSBiYXNlT3B0aW9ucyh7CiAgICAgICAgcmVzdWx0OiB7IHN0YXR1czogJ3BhdXNlZCcsIHJlYXNvbjogJ2RlYWRsaW5lJywgZmFpbGVkOiBmYWxzZSB9LAogICAgICAgIHN0b3BwZWRBdDogNC41ICogSE9VUiwKICAgICAgICBjYXBSZWFjaGVkOiBmYWxzZSwKICAgICAgICBtZXRyaWNzOiB7CiAgICAgICAgICAgIGNoYXJnZWRIdHRwQXR0ZW1wdHM6IDEwMCwgc3VjY2VzczogOTAsIHVuYXZhaWxhYmxlOiAxMCwKICAgICAgICAgICAgZmFpbHVyZXM6IDAsIHBsYW5uZWQ6IDEwMCwgcHJvY2Vzc2VkOiAxMDAKICAgICAgICB9CiAgICB9KTsKICAgIGFzc2VydC5lcXVhbChzaG91bGRDb250aW51ZU1ldGEoZHJhaW5lZCksIGZhbHNlKTsKICAgIGNvbnN0IGVhcmx5ID0gYmFzZU9wdGlvbnMoewogICAgICAgIHJlc3VsdDogeyBzdGF0dXM6ICdwYXVzZWQnLCByZWFzb246ICdkZWFkbGluZScsIGZhaWxlZDogZmFsc2UgfSwKICAgICAgICBzdG9wcGVkQXQ6IDEgKiBIT1VSCiAgICB9KTsKICAgIGFzc2VydC5lcXVhbChzaG91bGRDb250aW51ZU1ldGEoZWFybHkpLCBmYWxzZSk7IC8vIG5vdCBhdCB0aGUgYm91bmRhcnkKfSk7Cgp0ZXN0KCdzaG91bGRDb250aW51ZU1ldGEgY29udGludWVzIGFjcm9zcyBhIGRheSBib3VuZGFyeSBidXQgbmV2ZXIgaW50byBhIGhvbGQgb3IgYnVkZ2V0IHN0b3AnLCAoKSA9PiB7CiAgICBhc3NlcnQuZXF1YWwoc2hvdWxkQ29udGludWVNZXRhKGJhc2VPcHRpb25zKHsKICAgICAgICByZXN1bHQ6IHsgc3RhdHVzOiAncGF1c2VkJywgcmVhc29uOiAnZGF5LWJvdW5kYXJ5JywgZmFpbGVkOiBmYWxzZSB9LCBjYXBSZWFjaGVkOiBmYWxzZQogICAgfSkpLCB0cnVlKTsKICAgIGFzc2VydC5lcXVhbChzaG91bGRDb250aW51ZU1ldGEoYmFzZU9wdGlvbnMoewogICAgICAgIHJlc3VsdDogeyBzdGF0dXM6ICdwYXVzZWQnLCByZWFzb246ICdyZXF1ZXN0LWJ1ZGdldCcsIGZhaWxlZDogZmFsc2UgfQogICAgfSkpLCBmYWxzZSk7CiAgICBhc3NlcnQuZXF1YWwoc2hvdWxkQ29udGludWVNZXRhKGJhc2VPcHRpb25zKHsKICAgICAgICByZXN1bHQ6IHsgc3RhdHVzOiAncGF1c2VkJywgcmVhc29uOiAnY29vbGRvd24nLCBmYWlsZWQ6IGZhbHNlIH0sIGJsb2NrZWRVbnRpbDogMAogICAgfSkpLCBmYWxzZSk7CiAgICBhc3NlcnQuZXF1YWwoc2hvdWxkQ29udGludWVNZXRhKGJhc2VPcHRpb25zKHsgYmxvY2tlZFVudGlsOiA0ICogSE9VUiB9KSksIGZhbHNlKTsgLy8gYWN0aXZlIGhvbGQKfSk7Cgp0ZXN0KCdzaG91bGRDb250aW51ZU1ldGEgcmVmdXNlcyBmYWlsZWQsIGVtcHR5LCBvciBtYWxmb3JtZWQgcnVucycsICgpID0+IHsKICAgIGFzc2VydC5lcXVhbChzaG91bGRDb250aW51ZU1ldGEoYmFzZU9wdGlvbnMoewogICAgICAgIHJlc3VsdDogeyBzdGF0dXM6ICdwYXJ0aWFsJywgcmVhc29uOiB1bmRlZmluZWQsIGZhaWxlZDogdHJ1ZSB9CiAgICB9KSksIGZhbHNlKTsKICAgIGFzc2VydC5lcXVhbChzaG91bGRDb250aW51ZU1ldGEoYmFzZU9wdGlvbnMoewogICAgICAgIG1ldHJpY3M6IHsKICAgICAgICAgICAgY2hhcmdlZEh0dHBBdHRlbXB0czogMCwgc3VjY2VzczogMCwgdW5hdmFpbGFibGU6IDAsCiAgICAgICAgICAgIGZhaWx1cmVzOiAwLCBwbGFubmVkOiAwLCBwcm9jZXNzZWQ6IDAKICAgICAgICB9CiAgICB9KSksIGZhbHNlKTsKICAgIGFzc2VydC5lcXVhbChzaG91bGRDb250aW51ZU1ldGEoYmFzZU9wdGlvbnMoewogICAgICAgIG1ldHJpY3M6IHsKICAgICAgICAgICAgY2hhcmdlZEh0dHBBdHRlbXB0czogNSwgc3VjY2VzczogMCwgdW5hdmFpbGFibGU6IDAsCiAgICAgICAgICAgIGZhaWx1cmVzOiAwLCBwbGFubmVkOiAzLCBwcm9jZXNzZWQ6IDAKICAgICAgICB9CiAgICB9KSksIGZhbHNlKTsKICAgIGFzc2VydC5lcXVhbChzaG91bGRDb250aW51ZU1ldGEobnVsbCksIGZhbHNlKTsKICAgIGFzc2VydC5lcXVhbChzaG91bGRDb250aW51ZU1ldGEoe30pLCBmYWxzZSk7CiAgICBhc3NlcnQuZXF1YWwoc2hvdWxkQ29udGludWVNZXRhKGJhc2VPcHRpb25zKHsgY2FwUmVhY2hlZDogJ3llcycgfSkpLCBmYWxzZSk7Cn0pOwoKY29uc3QgdmFsaWRFbnYgPSB7CiAgICBHSVRIVUJfQUNUSU9OUzogJ3RydWUnLAogICAgREVGQVVMVF9CUkFOQ0g6ICdtYWluJywKICAgIEdJVEhVQl9SRUY6ICdyZWZzL2hlYWRzL21haW4nLAogICAgR0lUSFVCX1JFUE9TSVRPUlk6ICdNYW1ldGFyb0dHL2Jvb3RoLXZyYy1wcmljZS10cmFja2VyJywKICAgIEdJVEhVQl9SVU5fSUQ6ICcxMjM0NScsCiAgICBHSVRIVUJfVE9LRU46ICd0ZXN0LXRva2VuJwp9OwoKZnVuY3Rpb24gZmFrZVJlcXVlc3Qoc3RhdHVzQ29kZSwgY2FwdHVyZSkgewogICAgcmV0dXJuICh1cmwsIG9wdGlvbnMsIGNhbGxiYWNrKSA9PiB7CiAgICAgICAgY29uc3QgcGVuZGluZyA9IG5ldyBFdmVudEVtaXR0ZXIoKTsKICAgICAgICBwZW5kaW5nLmRlc3Ryb3kgPSAoKSA9PiB7fTsKICAgICAgICBwZW5kaW5nLmVuZCA9IGJvZHkgPT4gewogICAgICAgICAgICBjYXB0dXJlLnB1c2goeyB1cmw6IFN0cmluZyh1cmwpLCBvcHRpb25zLCBib2R5IH0pOwogICAgICAgICAgICBjb25zdCByZXNwb25zZSA9IG5ldyBFdmVudEVtaXR0ZXIoKTsKICAgICAgICAgICAgcmVzcG9uc2Uuc3RhdHVzQ29kZSA9IHN0YXR1c0NvZGU7CiAgICAgICAgICAgIHJlc3BvbnNlLnJlc3VtZSA9ICgpID0+IHt9OwogICAgICAgICAgICByZXNwb25zZS5kZXN0cm95ID0gKCkgPT4ge307CiAgICAgICAgICAgIGNhbGxiYWNrKHJlc3BvbnNlKTsKICAgICAgICB9OwogICAgICAgIHJldHVybiBwZW5kaW5nOwogICAgfTsKfQoKdGVzdCgnZGlzcGF0Y2hNZXRhQ29udGludWF0aW9uIHBvc3RzIG9uZSBjb250aW51ZS1tZXRhIGRpc3BhdGNoJywgYXN5bmMgKCkgPT4gewogICAgY29uc3QgY2FwdHVyZSA9IFtdOwogICAgY29uc3QgcmVzdWx0ID0gYXdhaXQgZGlzcGF0Y2hNZXRhQ29udGludWF0aW9uKHsgZW52OiB2YWxpZEVudiwgcmVxdWVzdDogZmFrZVJlcXVlc3QoMjA0LCBjYXB0dXJlKSB9KTsKICAgIGFzc2VydC5kZWVwRXF1YWwocmVzdWx0LCB7IHN0YXR1c0NvZGU6IDIwNCB9KTsKICAgIGFzc2VydC5lcXVhbChjYXB0dXJlLmxlbmd0aCwgMSk7CiAgICBhc3NlcnQuZXF1YWwoY2FwdHVyZVswXS51cmwsICdodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zL01hbWV0YXJvR0cvYm9vdGgtdnJjLXByaWNlLXRyYWNrZXIvZGlzcGF0Y2hlcycpOwogICAgY29uc3QgYm9keSA9IEpTT04ucGFyc2UoY2FwdHVyZVswXS5ib2R5KTsKICAgIGFzc2VydC5lcXVhbChib2R5LmV2ZW50X3R5cGUsICdjb250aW51ZS1tZXRhJyk7CiAgICBhc3NlcnQuZXF1YWwoYm9keS5jbGllbnRfcGF5bG9hZC5wcmVkZWNlc3Nvcl9ydW5faWQsICcxMjM0NScpOwogICAgYXNzZXJ0LmVxdWFsKGNhcHR1cmVbMF0ub3B0aW9ucy5oZWFkZXJzLkF1dGhvcml6YXRpb24sICdCZWFyZXIgdGVzdC10b2tlbicpOwp9KTsKCnRlc3QoJ2Rpc3BhdGNoTWV0YUNvbnRpbnVhdGlvbiB2YWxpZGF0ZXMgdGhlIGVudmlyb25tZW50IGFuZCBuZXZlciByZXRyaWVzIGEgcmVmdXNhbCcsIGFzeW5jICgpID0+IHsKICAgIGF3YWl0IGFzc2VydC5yZWplY3RzKAogICAgICAgIGRpc3BhdGNoTWV0YUNvbnRpbnVhdGlvbih7IGVudjogeyAuLi52YWxpZEVudiwgR0lUSFVCX0FDVElPTlM6ICdmYWxzZScgfSwgcmVxdWVzdDogZmFrZVJlcXVlc3QoMjA0LCBbXSkgfSksCiAgICAgICAgL3JlcXVpcmVzIEdpdEh1YiBBY3Rpb25zLyk7CiAgICBhd2FpdCBhc3NlcnQucmVqZWN0cygKICAgICAgICBkaXNwYXRjaE1ldGFDb250aW51YXRpb24oeyBlbnY6IHsgLi4udmFsaWRFbnYsIEdJVEhVQl9SRUY6ICdyZWZzL2hlYWRzL290aGVyJyB9LCByZXF1ZXN0OiBmYWtlUmVxdWVzdCgyMDQsIFtdKSB9KSwKICAgICAgICAvZGVmYXVsdCBicmFuY2gvKTsKICAgIGNvbnN0IGNhcHR1cmUgPSBbXTsKICAgIGF3YWl0IGFzc2VydC5yZWplY3RzKAogICAgICAgIGRpc3BhdGNoTWV0YUNvbnRpbnVhdGlvbih7IGVudjogdmFsaWRFbnYsIHJlcXVlc3Q6IGZha2VSZXF1ZXN0KDQwMywgY2FwdHVyZSkgfSksCiAgICAgICAgL3dhcyBub3QgY29uZmlybWVkIFwoSFRUUCA0MDNcKTsgbm8gcmV0cnkgd2FzIGF0dGVtcHRlZC8pOwogICAgYXNzZXJ0LmVxdWFsKGNhcHR1cmUubGVuZ3RoLCAxKTsKfSk7Cg==
+const assert = require('node:assert/strict');
+const { EventEmitter } = require('node:events');
+const test = require('node:test');
+
+const { shouldContinueMeta, dispatchMetaContinuation } = require('../src/meta-continuation');
+
+const HOUR = 60 * 60 * 1000;
+function baseOptions(overrides = {}) {
+    return {
+        result: { status: 'completed', failed: false },
+        metrics: {
+            chargedHttpAttempts: 9000, success: 8000, unavailable: 500,
+            failures: 0, planned: 10000, processed: 8500
+        },
+        startedAt: 0,
+        stoppedAt: 3 * HOUR,
+        deadline: 4.5 * HOUR,
+        blockedUntil: 0,
+        capReached: true,
+        ...overrides
+    };
+}
+
+test('shouldContinueMeta chains a cap-bound completed run only', () => {
+    assert.equal(shouldContinueMeta(baseOptions()), true);
+    assert.equal(shouldContinueMeta(baseOptions({ capReached: false })), false);
+});
+
+test('shouldContinueMeta hands over at the real deadline with work left', () => {
+    const atBoundary = baseOptions({
+        result: { status: 'paused', reason: 'deadline', failed: false },
+        stoppedAt: 4.5 * HOUR,
+        capReached: false
+    });
+    assert.equal(shouldContinueMeta(atBoundary), true); // processed < planned
+    const drained = baseOptions({
+        result: { status: 'paused', reason: 'deadline', failed: false },
+        stoppedAt: 4.5 * HOUR,
+        capReached: false,
+        metrics: {
+            chargedHttpAttempts: 100, success: 90, unavailable: 10,
+            failures: 0, planned: 100, processed: 100
+        }
+    });
+    assert.equal(shouldContinueMeta(drained), false);
+    const early = baseOptions({
+        result: { status: 'paused', reason: 'deadline', failed: false },
+        stoppedAt: 1 * HOUR
+    });
+    assert.equal(shouldContinueMeta(early), false); // not at the boundary
+});
+
+test('shouldContinueMeta continues across a day boundary but never into a hold or budget stop', () => {
+    assert.equal(shouldContinueMeta(baseOptions({
+        result: { status: 'paused', reason: 'day-boundary', failed: false }, capReached: false
+    })), true);
+    assert.equal(shouldContinueMeta(baseOptions({
+        result: { status: 'paused', reason: 'request-budget', failed: false }
+    })), false);
+    assert.equal(shouldContinueMeta(baseOptions({
+        result: { status: 'paused', reason: 'cooldown', failed: false }, blockedUntil: 0
+    })), false);
+    assert.equal(shouldContinueMeta(baseOptions({ blockedUntil: 4 * HOUR })), false); // active hold
+});
+
+test('shouldContinueMeta refuses failed, empty, or malformed runs', () => {
+    assert.equal(shouldContinueMeta(baseOptions({
+        result: { status: 'partial', reason: undefined, failed: true }
+    })), false);
+    assert.equal(shouldContinueMeta(baseOptions({
+        metrics: {
+            chargedHttpAttempts: 0, success: 0, unavailable: 0,
+            failures: 0, planned: 0, processed: 0
+        }
+    })), false);
+    assert.equal(shouldContinueMeta(baseOptions({
+        metrics: {
+            chargedHttpAttempts: 5, success: 0, unavailable: 0,
+            failures: 0, planned: 3, processed: 0
+        }
+    })), false);
+    assert.equal(shouldContinueMeta(null), false);
+    assert.equal(shouldContinueMeta({}), false);
+    assert.equal(shouldContinueMeta(baseOptions({ capReached: 'yes' })), false);
+});
+
+const validEnv = {
+    GITHUB_ACTIONS: 'true',
+    DEFAULT_BRANCH: 'main',
+    GITHUB_REF: 'refs/heads/main',
+    GITHUB_REPOSITORY: 'MametaroGG/booth-vrc-price-tracker',
+    GITHUB_RUN_ID: '12345',
+    GITHUB_TOKEN: 'test-token'
+};
+
+function fakeRequest(statusCode, capture) {
+    return (url, options, callback) => {
+        const pending = new EventEmitter();
+        pending.destroy = () => {};
+        pending.end = body => {
+            capture.push({ url: String(url), options, body });
+            const response = new EventEmitter();
+            response.statusCode = statusCode;
+            response.resume = () => {};
+            response.destroy = () => {};
+            callback(response);
+        };
+        return pending;
+    };
+}
+
+test('dispatchMetaContinuation posts one continue-meta dispatch', async () => {
+    const capture = [];
+    const result = await dispatchMetaContinuation({ env: validEnv, request: fakeRequest(204, capture) });
+    assert.deepEqual(result, { statusCode: 204 });
+    assert.equal(capture.length, 1);
+    assert.equal(capture[0].url, 'https://api.github.com/repos/MametaroGG/booth-vrc-price-tracker/dispatches');
+    const body = JSON.parse(capture[0].body);
+    assert.equal(body.event_type, 'continue-meta');
+    assert.equal(body.client_payload.predecessor_run_id, '12345');
+    assert.equal(capture[0].options.headers.Authorization, 'Bearer test-token');
+});
+
+test('dispatchMetaContinuation validates the environment and never retries a refusal', async () => {
+    await assert.rejects(
+        dispatchMetaContinuation({ env: { ...validEnv, GITHUB_ACTIONS: 'false' }, request: fakeRequest(204, []) }),
+        /requires GitHub Actions/);
+    await assert.rejects(
+        dispatchMetaContinuation({ env: { ...validEnv, GITHUB_REF: 'refs/heads/other' }, request: fakeRequest(204, []) }),
+        /default branch/);
+    const capture = [];
+    await assert.rejects(
+        dispatchMetaContinuation({ env: validEnv, request: fakeRequest(403, capture) }),
+        /was not confirmed \(HTTP 403\); no retry was attempted/);
+    assert.equal(capture.length, 1);
+});

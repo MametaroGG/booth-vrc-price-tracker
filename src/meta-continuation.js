@@ -1,1 +1,156 @@
-Y29uc3QgaHR0cHMgPSByZXF1aXJlKCdub2RlOmh0dHBzJyk7CgovLyBNaXJyb3JzIHNyYy9jb250aW51YXRpb24uanMgKHRoZSBwcmljZSBwaXBlbGluZSkgZm9yIHRoZSBtZXRhZGF0YSBqb2I6Ci8vIGEgc3RyaWN0LCBmYWlsLWNsb3NlZCBkZWNpc2lvbiBhYm91dCB3aGV0aGVyIGEgZmluaXNoZWQgcnVuIHNob3VsZCBoYW5kCi8vIG92ZXIgdG8gYSBzdWNjZXNzb3IsIGFuZCBhIHNpbmdsZS1hdHRlbXB0IHJlcG9zaXRvcnlfZGlzcGF0Y2ggdG8gc3RhcnQKLy8gdGhhdCBzdWNjZXNzb3IuIENyb24gcmVtYWlucyB0aGUgZmFsbGJhY2ssIHNvIGFuIHVuY2VydGFpbiBkaXNwYXRjaCBpcwovLyBuZXZlciByZXRyaWVkLgoKY29uc3QgRElTUEFUQ0hfVElNRU9VVF9NUyA9IDMwMDAwOwpjb25zdCBNSU5fREVBRExJTkVfUlVOX01TID0gNjAwMDA7CmNvbnN0IERFQURMSU5FX1RPTEVSQU5DRV9NUyA9IDIwMDA7CmNvbnN0IHJlY29yZCA9IHZhbHVlID0+IHZhbHVlICE9PSBudWxsICYmIHR5cGVvZiB2YWx1ZSA9PT0gJ29iamVjdCcgJiYgIUFycmF5LmlzQXJyYXkodmFsdWUpOwpjb25zdCBjb3VudCA9IHZhbHVlID0+IE51bWJlci5pc1NhZmVJbnRlZ2VyKHZhbHVlKSAmJiB2YWx1ZSA+PSAwOwoKZnVuY3Rpb24gc2hvdWxkQ29udGludWVNZXRhKG9wdGlvbnMgPSB7fSkgewogICAgaWYgKCFyZWNvcmQob3B0aW9ucykpIHJldHVybiBmYWxzZTsKICAgIGNvbnN0IHsgcmVzdWx0LCBtZXRyaWNzLCBzdGFydGVkQXQsIHN0b3BwZWRBdCwgZGVhZGxpbmUsIGJsb2NrZWRVbnRpbCwgY2FwUmVhY2hlZCB9ID0gb3B0aW9uczsKICAgIGlmICghcmVjb3JkKHJlc3VsdCkgfHwgIXJlY29yZChtZXRyaWNzKSB8fCByZXN1bHQuZmFpbGVkICE9PSBmYWxzZSB8fAogICAgICAgIHR5cGVvZiBjYXBSZWFjaGVkICE9PSAnYm9vbGVhbicgfHwKICAgICAgICAhW3N0YXJ0ZWRBdCwgc3RvcHBlZEF0LCBkZWFkbGluZSwgYmxvY2tlZFVudGlsXS5ldmVyeShOdW1iZXIuaXNGaW5pdGUpIHx8CiAgICAgICAgc3RhcnRlZEF0IDwgMCB8fCBzdG9wcGVkQXQgPCBzdGFydGVkQXQgfHwgZGVhZGxpbmUgPD0gc3RhcnRlZEF0IHx8CiAgICAgICAgYmxvY2tlZFVudGlsIDwgMCB8fCBibG9ja2VkVW50aWwgPiBzdG9wcGVkQXQgfHwKICAgICAgICAhY291bnQobWV0cmljcy5jaGFyZ2VkSHR0cEF0dGVtcHRzKSB8fCBtZXRyaWNzLmNoYXJnZWRIdHRwQXR0ZW1wdHMgPT09IDAgfHwKICAgICAgICAhY291bnQobWV0cmljcy5zdWNjZXNzKSB8fCAhY291bnQobWV0cmljcy51bmF2YWlsYWJsZSkgfHwKICAgICAgICBtZXRyaWNzLnN1Y2Nlc3MgKyBtZXRyaWNzLnVuYXZhaWxhYmxlID09PSAwIHx8CiAgICAgICAgIWNvdW50KG1ldHJpY3MuZmFpbHVyZXMpIHx8ICFjb3VudChtZXRyaWNzLnBsYW5uZWQpIHx8ICFjb3VudChtZXRyaWNzLnByb2Nlc3NlZCkpIHJldHVybiBmYWxzZTsKCiAgICAvLyBJbmRpdmlkdWFsIGl0ZW0gZmFpbHVyZXMgc3RheSBpbiB0aGUgd29yayBsaXN0IGFuZCBhcmUgcmV0cmllZCBieSBhCiAgICAvLyBsYXRlciBzY2hlZHVsZWQgcnVuOyB0aGV5IG1ha2UgdGhlIHJlc3VsdCAncGFydGlhbCcgKGZhaWxlZCksIHdoaWNoCiAgICAvLyB0aGUgY2hlY2sgYWJvdmUgYWxyZWFkeSBleGNsdWRlcyBmcm9tIGNoYWluaW5nLgoKICAgIGNvbnN0IGVsYXBzZWQgPSBzdG9wcGVkQXQgLSBzdGFydGVkQXQ7CiAgICBpZiAocmVzdWx0LnN0YXR1cyA9PT0gJ3BhdXNlZCcgJiYgcmVzdWx0LnJlYXNvbiA9PT0gJ2RlYWRsaW5lJykgewogICAgICAgIC8vIEEgbG9uZyBiYXRjaCBkZWxheSBjYW4gYWxzbyByZXBvcnQgImRlYWRsaW5lIiBiZWZvcmUgY29sbGVjdGlvbgogICAgICAgIC8vIHRpbWUgaXMgZXhoYXVzdGVkLiBPbmx5IGhhbmQgb3ZlciBhdCB0aGUgcmVhbCBib3VuZGFyeSwgYW5kIG9ubHkKICAgICAgICAvLyB3aGVuIHdvcmsgd2FzIGxlZnQgYmVoaW5kOiB1bnByb2Nlc3NlZCBpdGVtcyBpbiB0aGlzIHJ1bidzIHBsYW4sCiAgICAgICAgLy8gb3IgYSBmdWxsIHBsYW4gdGhhdCBpbXBsaWVzIGEgYmFja2xvZyBiZWhpbmQgdGhlIGNhcC4KICAgICAgICByZXR1cm4gZWxhcHNlZCA+PSBNSU5fREVBRExJTkVfUlVOX01TICYmIHN0b3BwZWRBdCA+PSBkZWFkbGluZSAtIERFQURMSU5FX1RPTEVSQU5DRV9NUyAmJgogICAgICAgICAgICAobWV0cmljcy5wcm9jZXNzZWQgPCBtZXRyaWNzLnBsYW5uZWQgfHwgY2FwUmVhY2hlZCk7CiAgICB9CiAgICBpZiAocmVzdWx0LnN0YXR1cyA9PT0gJ3BhdXNlZCcgJiYgcmVzdWx0LnJlYXNvbiA9PT0gJ2RheS1ib3VuZGFyeScpIHJldHVybiB0cnVlOwogICAgaWYgKHJlc3VsdC5zdGF0dXMgPT09ICdjb21wbGV0ZWQnICYmIHJlc3VsdC5yZWFzb24gPT09IHVuZGVmaW5lZCkgewogICAgICAgIC8vIERyYWluZWQgYmVsb3cgdGhlIGNhcDogbm90aGluZyBmb3IgYSBzdWNjZXNzb3IgdG8gZG8gdG9kYXkuCiAgICAgICAgLy8gQ2FwLWJvdW5kOiBhIGJhY2tsb2cgcmVtYWlucyBhbmQgdGhlIHN1Y2Nlc3NvciBwaWNrcyBpdCB1cDsgdGhlCiAgICAgICAgLy8gZGFpbHkgcmVxdWVzdCBidWRnZXQgc3RpbGwgYm91bmRzIHRoZSB3aG9sZSBjaGFpbiwgYmVjYXVzZSBlYWNoCiAgICAgICAgLy8gc3VjY2Vzc29yIHJlc2VydmVzIG9ubHkgd2hhdCBpcyBsZWZ0IG9mIHRvZGF5J3MgYWxsb3dhbmNlLgogICAgICAgIHJldHVybiBjYXBSZWFjaGVkOwogICAgfQogICAgcmV0dXJuIGZhbHNlOwp9CgpmdW5jdGlvbiBkaXNwYXRjaEVudmlyb25tZW50KGVudikgewogICAgaWYgKCFyZWNvcmQoZW52KSB8fCBlbnYuR0lUSFVCX0FDVElPTlMgIT09ICd0cnVlJykgewogICAgICAgIHRocm93IG5ldyBFcnJvcignQ29udGludWF0aW9uIGRpc3BhdGNoIHJlcXVpcmVzIEdpdEh1YiBBY3Rpb25zJyk7CiAgICB9CiAgICBjb25zdCBicmFuY2ggPSBlbnYuREVGQVVMVF9CUkFOQ0g7CiAgICBpZiAodHlwZW9mIGJyYW5jaCAhPT0gJ3N0cmluZycgfHwgIWJyYW5jaCB8fCAvW1xzXHgwMC1ceDFmXHg3Zl0vLnRlc3QoYnJhbmNoKSB8fAogICAgICAgIGVudi5HSVRIVUJfUkVGICE9PSBgcmVmcy9oZWFkcy8ke2JyYW5jaH1gKSB7CiAgICAgICAgdGhyb3cgbmV3IEVycm9yKCdDb250aW51YXRpb24gZGlzcGF0Y2ggcmVxdWlyZXMgdGhlIGRlZmF1bHQgYnJhbmNoJyk7CiAgICB9CiAgICBjb25zdCByZXBvc2l0b3J5ID0gZW52LkdJVEhVQl9SRVBPU0lUT1JZOwogICAgY29uc3QgcGFydHMgPSB0eXBlb2YgcmVwb3NpdG9yeSA9PT0gJ3N0cmluZycgPyByZXBvc2l0b3J5LnNwbGl0KCcvJykgOiBbXTsKICAgIGlmIChwYXJ0cy5sZW5ndGggIT09IDIgfHwgIS9eW0EtWmEtejAtOV0oPzpbQS1aYS16MC05LV17MCwzN31bQS1aYS16MC05XSk/JC8udGVzdChwYXJ0c1swXSkgfHwKICAgICAgICAhL15bQS1aYS16MC05Xy4tXXsxLDEwMH0kLy50ZXN0KHBhcnRzWzFdKSB8fCBbJy4nLCAnLi4nXS5pbmNsdWRlcyhwYXJ0c1sxXSkpIHsKICAgICAgICB0aHJvdyBuZXcgRXJyb3IoJ0NvbnRpbnVhdGlvbiBkaXNwYXRjaCByZXF1aXJlcyBhIHZhbGlkIEdpdEh1YiByZXBvc2l0b3J5Jyk7CiAgICB9CiAgICBpZiAodHlwZW9mIGVudi5HSVRIVUJfUlVOX0lEICE9PSAnc3RyaW5nJyB8fCAhL15bMS05XVxkezAsMTl9JC8udGVzdChlbnYuR0lUSFVCX1JVTl9JRCkpIHsKICAgICAgICB0aHJvdyBuZXcgRXJyb3IoJ0NvbnRpbnVhdGlvbiBkaXNwYXRjaCByZXF1aXJlcyBhIHZhbGlkIHJ1biBJRCcpOwogICAgfQogICAgaWYgKHR5cGVvZiBlbnYuR0lUSFVCX1RPS0VOICE9PSAnc3RyaW5nJyB8fCAhZW52LkdJVEhVQl9UT0tFTiB8fCAvW1xzXHgwMC1ceDFmXHg3Zl0vLnRlc3QoZW52LkdJVEhVQl9UT0tFTikpIHsKICAgICAgICB0aHJvdyBuZXcgRXJyb3IoJ0NvbnRpbnVhdGlvbiBkaXNwYXRjaCByZXF1aXJlcyBHSVRIVUJfVE9LRU4nKTsKICAgIH0KICAgIGlmIChlbnYuR0lUSFVCX0FQSV9VUkwgIT09IHVuZGVmaW5lZCAmJiBlbnYuR0lUSFVCX0FQSV9VUkwgIT09ICdodHRwczovL2FwaS5naXRodWIuY29tJykgewogICAgICAgIHRocm93IG5ldyBFcnJvcignQ29udGludWF0aW9uIGRpc3BhdGNoIG9ubHkgc3VwcG9ydHMgdGhlIHB1YmxpYyBHaXRIdWIgQVBJJyk7CiAgICB9CiAgICByZXR1cm4geyByZXBvc2l0b3J5LCBydW5JZDogZW52LkdJVEhVQl9SVU5fSUQsIHRva2VuOiBlbnYuR0lUSFVCX1RPS0VOIH07Cn0KCmFzeW5jIGZ1bmN0aW9uIGRpc3BhdGNoTWV0YUNvbnRpbnVhdGlvbih7IGVudiA9IHByb2Nlc3MuZW52LCByZXF1ZXN0ID0gaHR0cHMucmVxdWVzdCB9ID0ge30pIHsKICAgIGNvbnN0IHsgcmVwb3NpdG9yeSwgcnVuSWQsIHRva2VuIH0gPSBkaXNwYXRjaEVudmlyb25tZW50KGVudik7CiAgICBpZiAodHlwZW9mIHJlcXVlc3QgIT09ICdmdW5jdGlvbicpIHRocm93IG5ldyBFcnJvcignSW52YWxpZCBjb250aW51YXRpb24gcmVxdWVzdCB0cmFuc3BvcnQnKTsKICAgIGNvbnN0IGJvZHkgPSBKU09OLnN0cmluZ2lmeSh7CiAgICAgICAgZXZlbnRfdHlwZTogJ2NvbnRpbnVlLW1ldGEnLAogICAgICAgIGNsaWVudF9wYXlsb2FkOiB7IHByZWRlY2Vzc29yX3J1bl9pZDogcnVuSWQgfQogICAgfSk7CiAgICBjb25zdCB1cmwgPSBuZXcgVVJMKGBodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyR7cmVwb3NpdG9yeX0vZGlzcGF0Y2hlc2ApOwoKICAgIC8vIFRoaXMgUE9TVCBpcyBkZWxpYmVyYXRlbHkgYXR0ZW1wdGVkIG9uY2UuIEEgZHJvcHBlZCByZXNwb25zZSBjYW4gbWVhbgogICAgLy8gR2l0SHViIGFscmVhZHkgYWNjZXB0ZWQgaXQ7IGNyb24gcHJvdmlkZXMgcmVjb3Zlcnkgd2l0aG91dCBkdXBsaWNhdGUgUE9TVHMuCiAgICByZXR1cm4gbmV3IFByb21pc2UoKHJlc29sdmUsIHJlamVjdCkgPT4gewogICAgICAgIGxldCBwZW5kaW5nOwogICAgICAgIGxldCBzZXR0bGVkID0gZmFsc2U7CiAgICAgICAgY29uc3QgZmluaXNoID0gZXJyb3IgPT4gewogICAgICAgICAgICBpZiAoc2V0dGxlZCkgcmV0dXJuOwogICAgICAgICAgICBzZXR0bGVkID0gdHJ1ZTsKICAgICAgICAgICAgY2xlYXJUaW1lb3V0KHRpbWVyKTsKICAgICAgICAgICAgaWYgKGVycm9yKSByZWplY3QoZXJyb3IpOwogICAgICAgICAgICBlbHNlIHJlc29sdmUoeyBzdGF0dXNDb2RlOiAyMDQgfSk7CiAgICAgICAgfTsKICAgICAgICBjb25zdCBvblRpbWVvdXQgPSAoKSA9PiB7CiAgICAgICAgICAgIGlmIChzZXR0bGVkKSByZXR1cm47CiAgICAgICAgICAgIGZpbmlzaChuZXcgRXJyb3IoJ0NvbnRpbnVhdGlvbiBkaXNwYXRjaCB0aW1lZCBvdXQ7IGFjY2VwdGFuY2UgaXMgdW5rbm93biBhbmQgbm8gcmV0cnkgd2FzIGF0dGVtcHRlZCcpKTsKICAgICAgICAgICAgcGVuZGluZz8uZGVzdHJveSgpOwogICAgICAgIH07CiAgICAgICAgY29uc3Qgb25OZXR3b3JrRXJyb3IgPSAoKSA9PiBmaW5pc2gobmV3IEVycm9yKCdDb250aW51YXRpb24gZGlzcGF0Y2ggZmFpbGVkOyBhY2NlcHRhbmNlIGlzIHVua25vd24gYW5kIG5vIHJldHJ5IHdhcyBhdHRlbXB0ZWQnKSk7CiAgICAgICAgLy8gQW4gYWJzb2x1dGUgZGVhZGxpbmUgYWxzbyBjb3ZlcnMgRE5TLCBjb25uZWN0aW9uLCBhbmQgVExTIHNldHVwLgogICAgICAgIGNvbnN0IHRpbWVyID0gc2V0VGltZW91dChvblRpbWVvdXQsIERJU1BBVENIX1RJTUVPVVRfTVMpOwogICAgICAgIHRyeSB7CiAgICAgICAgICAgIHBlbmRpbmcgPSByZXF1ZXN0KHVybCwgewogICAgICAgICAgICAgICAgbWV0aG9kOiAnUE9TVCcsCiAgICAgICAgICAgICAgICB0aW1lb3V0OiBESVNQQVRDSF9USU1FT1VUX01TLAogICAgICAgICAgICAgICAgaGVhZGVyczogewogICAgICAgICAgICAgICAgICAgIEFjY2VwdDogJ2FwcGxpY2F0aW9uL3ZuZC5naXRodWIranNvbicsCiAgICAgICAgICAgICAgICAgICAgQXV0aG9yaXphdGlvbjogYEJlYXJlciAke3Rva2VufWAsCiAgICAgICAgICAgICAgICAgICAgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJywKICAgICAgICAgICAgICAgICAgICAnQ29udGVudC1MZW5ndGgnOiBCdWZmZXIuYnl0ZUxlbmd0aChib2R5KSwKICAgICAgICAgICAgICAgICAgICAnVXNlci1BZ2VudCc6ICdib290aC12cmMtcHJpY2UtdHJhY2tlcicsCiAgICAgICAgICAgICAgICAgICAgJ1gtR2l0SHViLUFwaS1WZXJzaW9uJzogJzIwMjItMTEtMjgnCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0sIHJlc3BvbnNlID0+IHsKICAgICAgICAgICAgICAgIC8vIG5vZGU6aHR0cHMgZG9lcyBub3QgZm9sbG93IHJlZGlyZWN0cy4gTmV2ZXIgbG9nIHJlc3BvbnNlCiAgICAgICAgICAgICAgICAvLyBib2RpZXMgb3IgcmF3IHRyYW5zcG9ydCBlcnJvcnMsIHdoaWNoIGNvdWxkIGV4cG9zZSBjcmVkZW50aWFscy4KICAgICAgICAgICAgICAgIHJlc3BvbnNlLm9uY2UoJ2Vycm9yJywgb25OZXR3b3JrRXJyb3IpOwogICAgICAgICAgICAgICAgaWYgKHNldHRsZWQpIHsKICAgICAgICAgICAgICAgICAgICByZXNwb25zZS5kZXN0cm95KCk7CiAgICAgICAgICAgICAgICAgICAgcmV0dXJuOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgaWYgKHJlc3BvbnNlLnN0YXR1c0NvZGUgPT09IDIwNCkgewogICAgICAgICAgICAgICAgICAgIHJlc3BvbnNlLnJlc3VtZSgpOwogICAgICAgICAgICAgICAgICAgIGZpbmlzaCgpOwogICAgICAgICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgICAgICAgICBjb25zdCBzdGF0dXMgPSBOdW1iZXIuaXNJbnRlZ2VyKHJlc3BvbnNlLnN0YXR1c0NvZGUpID8gcmVzcG9uc2Uuc3RhdHVzQ29kZSA6ICd1bmtub3duJzsKICAgICAgICAgICAgICAgICAgICByZXNwb25zZS5kZXN0cm95KCk7CiAgICAgICAgICAgICAgICAgICAgZmluaXNoKG5ldyBFcnJvcihgQ29udGludWF0aW9uIGRpc3BhdGNoIHdhcyBub3QgY29uZmlybWVkIChIVFRQICR7c3RhdHVzfSk7IG5vIHJldHJ5IHdhcyBhdHRlbXB0ZWRgKSk7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0pOwogICAgICAgICAgICBwZW5kaW5nLm9uY2UoJ2Vycm9yJywgb25OZXR3b3JrRXJyb3IpOwogICAgICAgICAgICBwZW5kaW5nLm9uY2UoJ3RpbWVvdXQnLCBvblRpbWVvdXQpOwogICAgICAgICAgICBwZW5kaW5nLmVuZChib2R5KTsKICAgICAgICB9IGNhdGNoIHsKICAgICAgICAgICAgZmluaXNoKG5ldyBFcnJvcignQ29udGludWF0aW9uIGRpc3BhdGNoIGZhaWxlZDsgYWNjZXB0YW5jZSBpcyB1bmtub3duIGFuZCBubyByZXRyeSB3YXMgYXR0ZW1wdGVkJykpOwogICAgICAgICAgICBwZW5kaW5nPy5kZXN0cm95KCk7CiAgICAgICAgfQogICAgfSk7Cn0KCmlmIChyZXF1aXJlLm1haW4gPT09IG1vZHVsZSkgewogICAgZGlzcGF0Y2hNZXRhQ29udGludWF0aW9uKCkudGhlbigoKSA9PiB7CiAgICAgICAgY29uc29sZS5sb2coJ01ldGFkYXRhIGNvbnRpbnVhdGlvbiByZXF1ZXN0ZWQuJyk7CiAgICB9KS5jYXRjaChlcnJvciA9PiB7CiAgICAgICAgY29uc29sZS5lcnJvcihlcnJvci5tZXNzYWdlKTsKICAgICAgICBwcm9jZXNzLmV4aXRDb2RlID0gMTsKICAgIH0pOwp9Cgptb2R1bGUuZXhwb3J0cyA9IHsgc2hvdWxkQ29udGludWVNZXRhLCBkaXNwYXRjaE1ldGFDb250aW51YXRpb24gfTsK
+const https = require('node:https');
+
+// Mirrors src/continuation.js (the price pipeline) for the metadata job:
+// a strict, fail-closed decision about whether a finished run should hand
+// over to a successor, and a single-attempt repository_dispatch to start
+// that successor. Cron remains the fallback, so an uncertain dispatch is
+// never retried.
+
+const DISPATCH_TIMEOUT_MS = 30000;
+const MIN_DEADLINE_RUN_MS = 60000;
+const DEADLINE_TOLERANCE_MS = 2000;
+const record = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+const count = value => Number.isSafeInteger(value) && value >= 0;
+
+function shouldContinueMeta(options = {}) {
+    if (!record(options)) return false;
+    const { result, metrics, startedAt, stoppedAt, deadline, blockedUntil, capReached } = options;
+    if (!record(result) || !record(metrics) || result.failed !== false ||
+        typeof capReached !== 'boolean' ||
+        ![startedAt, stoppedAt, deadline, blockedUntil].every(Number.isFinite) ||
+        startedAt < 0 || stoppedAt < startedAt || deadline <= startedAt ||
+        blockedUntil < 0 || blockedUntil > stoppedAt ||
+        !count(metrics.chargedHttpAttempts) || metrics.chargedHttpAttempts === 0 ||
+        !count(metrics.success) || !count(metrics.unavailable) ||
+        metrics.success + metrics.unavailable === 0 ||
+        !count(metrics.failures) || !count(metrics.planned) || !count(metrics.processed)) return false;
+
+    // Individual item failures stay in the work list and are retried by a
+    // later scheduled run; they make the result 'partial' (failed), which
+    // the check above already excludes from chaining.
+
+    const elapsed = stoppedAt - startedAt;
+    if (result.status === 'paused' && result.reason === 'deadline') {
+        // A long batch delay can also report "deadline" before collection
+        // time is exhausted. Only hand over at the real boundary, and only
+        // when work was left behind: unprocessed items in this run's plan,
+        // or a full plan that implies a backlog behind the cap.
+        return elapsed >= MIN_DEADLINE_RUN_MS && stoppedAt >= deadline - DEADLINE_TOLERANCE_MS &&
+            (metrics.processed < metrics.planned || capReached);
+    }
+    if (result.status === 'paused' && result.reason === 'day-boundary') return true;
+    if (result.status === 'completed' && result.reason === undefined) {
+        // Drained below the cap: nothing for a successor to do today.
+        // Cap-bound: a backlog remains and the successor picks it up; the
+        // daily request budget still bounds the whole chain, because each
+        // successor reserves only what is left of today's allowance.
+        return capReached;
+    }
+    return false;
+}
+
+function dispatchEnvironment(env) {
+    if (!record(env) || env.GITHUB_ACTIONS !== 'true') {
+        throw new Error('Continuation dispatch requires GitHub Actions');
+    }
+    const branch = env.DEFAULT_BRANCH;
+    if (typeof branch !== 'string' || !branch || /[\s\x00-\x1f\x7f]/.test(branch) ||
+        env.GITHUB_REF !== `refs/heads/${branch}`) {
+        throw new Error('Continuation dispatch requires the default branch');
+    }
+    const repository = env.GITHUB_REPOSITORY;
+    const parts = typeof repository === 'string' ? repository.split('/') : [];
+    if (parts.length !== 2 || !/^[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?$/.test(parts[0]) ||
+        !/^[A-Za-z0-9_.-]{1,100}$/.test(parts[1]) || ['.', '..'].includes(parts[1])) {
+        throw new Error('Continuation dispatch requires a valid GitHub repository');
+    }
+    if (typeof env.GITHUB_RUN_ID !== 'string' || !/^[1-9]\d{0,19}$/.test(env.GITHUB_RUN_ID)) {
+        throw new Error('Continuation dispatch requires a valid run ID');
+    }
+    if (typeof env.GITHUB_TOKEN !== 'string' || !env.GITHUB_TOKEN || /[\s\x00-\x1f\x7f]/.test(env.GITHUB_TOKEN)) {
+        throw new Error('Continuation dispatch requires GITHUB_TOKEN');
+    }
+    if (env.GITHUB_API_URL !== undefined && env.GITHUB_API_URL !== 'https://api.github.com') {
+        throw new Error('Continuation dispatch only supports the public GitHub API');
+    }
+    return { repository, runId: env.GITHUB_RUN_ID, token: env.GITHUB_TOKEN };
+}
+
+async function dispatchMetaContinuation({ env = process.env, request = https.request } = {}) {
+    const { repository, runId, token } = dispatchEnvironment(env);
+    if (typeof request !== 'function') throw new Error('Invalid continuation request transport');
+    const body = JSON.stringify({
+        event_type: 'continue-meta',
+        client_payload: { predecessor_run_id: runId }
+    });
+    const url = new URL(`https://api.github.com/repos/${repository}/dispatches`);
+
+    // This POST is deliberately attempted once. A dropped response can mean
+    // GitHub already accepted it; cron provides recovery without duplicate POSTs.
+    return new Promise((resolve, reject) => {
+        let pending;
+        let settled = false;
+        const finish = error => {
+            if (settled) return;
+            settled = true;
+            clearTimeout(timer);
+            if (error) reject(error);
+            else resolve({ statusCode: 204 });
+        };
+        const onTimeout = () => {
+            if (settled) return;
+            finish(new Error('Continuation dispatch timed out; acceptance is unknown and no retry was attempted'));
+            pending?.destroy();
+        };
+        const onNetworkError = () => finish(new Error('Continuation dispatch failed; acceptance is unknown and no retry was attempted'));
+        // An absolute deadline also covers DNS, connection, and TLS setup.
+        const timer = setTimeout(onTimeout, DISPATCH_TIMEOUT_MS);
+        try {
+            pending = request(url, {
+                method: 'POST',
+                timeout: DISPATCH_TIMEOUT_MS,
+                headers: {
+                    Accept: 'application/vnd.github+json',
+                    Authorization: `Bearer ${token}`,
+                    'Content-Type': 'application/json',
+                    'Content-Length': Buffer.byteLength(body),
+                    'User-Agent': 'booth-vrc-price-tracker',
+                    'X-GitHub-Api-Version': '2022-11-28'
+                }
+            }, response => {
+                // node:https does not follow redirects. Never log response
+                // bodies or raw transport errors, which could expose credentials.
+                response.once('error', onNetworkError);
+                if (settled) {
+                    response.destroy();
+                    return;
+                }
+                if (response.statusCode === 204) {
+                    response.resume();
+                    finish();
+                } else {
+                    const status = Number.isInteger(response.statusCode) ? response.statusCode : 'unknown';
+                    response.destroy();
+                    finish(new Error(`Continuation dispatch was not confirmed (HTTP ${status}); no retry was attempted`));
+                }
+            });
+            pending.once('error', onNetworkError);
+            pending.once('timeout', onTimeout);
+            pending.end(body);
+        } catch {
+            finish(new Error('Continuation dispatch failed; acceptance is unknown and no retry was attempted'));
+            pending?.destroy();
+        }
+    });
+}
+
+if (require.main === module) {
+    dispatchMetaContinuation().then(() => {
+        console.log('Metadata continuation requested.');
+    }).catch(error => {
+        console.error(error.message);
+        process.exitCode = 1;
+    });
+}
+
+module.exports = { shouldContinueMeta, dispatchMetaContinuation };

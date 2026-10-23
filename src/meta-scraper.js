@@ -1,1 +1,372 @@
-Y29uc3QgYXhpb3MgPSByZXF1aXJlKCdheGlvcycpOwpjb25zdCBmcyA9IHJlcXVpcmUoJ2ZzJyk7CmNvbnN0IHBhdGggPSByZXF1aXJlKCdwYXRoJyk7Cgpjb25zdCB7CiAgICBDb2xsZWN0aW9uU3RvcCwgY3JlYXRlUmVxdWVzdENsaWVudCwgZ2V0U3RvcFRhcmdldFRpbWUsIGpzdERhdGUsIHdyaXRlSnNvbgp9ID0gcmVxdWlyZSgnLi9jb2xsZWN0aW9uLXJ1bnRpbWUnKTsKY29uc3QgeyBzaG91bGRDb250aW51ZU1ldGEgfSA9IHJlcXVpcmUoJy4vbWV0YS1jb250aW51YXRpb24nKTsKCi8vIEl0ZW0gbWV0YWRhdGEgKG5hbWUsIHNob3AsIHRodW1ibmFpbCwgdGFncywgY2F0ZWdvcnksIHdpc2gtbGlzdCBjb3VudCkgaXMKLy8gY29sbGVjdGVkIGJ5IGEgU0VQQVJBVEUgam9iIGZyb20gdGhlIHByaWNlIHNjcmFwZXIgb24gcHVycG9zZTogdGhlIGRhaWx5Ci8vIHByaWNlIGN5Y2xlIGtlZXBzIGl0cyBlZmZpY2llbmN5LCBhbmQgdGhpcyBqb2Igc3BlbmRzIGl0cyBvd24gc21hbGwsCi8vIHNlcGFyYXRlbHkgcmVzZXJ2ZWQgcmVxdWVzdCBidWRnZXQgdW5kZXIgbWV0YS8uIFRoZSB0d28gam9icyB3cml0ZSB0bwovLyBkaXNqb2ludCBkaXJlY3RvcmllcyAoZGF0YS8gdnMgbWV0YS8pIHNvIHRoZWlyIHB1c2hlcyBuZXZlciBjb25mbGljdC4KLy8KLy8gU291cmNlIG9mIHRydXRoIHBlciBpdGVtOiBCT09USCdzIG93biBpdGVtIEpTT04sIGh0dHBzOi8vYm9vdGgucG0vamEvaXRlbXMvPGlkPi5qc29uCi8vIEl0IGNhcnJpZXMgZXZlcnl0aGluZyB0aGUgSFRNTCBwYWdlIHJlbmRlcnMgY2xpZW50LXNpZGUgKHRhZ3MsIGNhdGVnb3J5Ci8vIGJyZWFkY3J1bWJzLCBhbmQgdGhlIHdpc2gtbGlzdCBjb3VudCBzaG93biBhcyB0aGUgaGVhcnQgbnVtYmVyKSwgc28gb25lCi8vIHJlcXVlc3QgcGVyIGl0ZW0gaXMgZW5vdWdoIGFuZCBubyBIVE1MIHBhcnNpbmcgaXMgbmVlZGVkLgoKY29uc3QgREFUQV9ESVIgPSBwYXRoLmpvaW4oX19kaXJuYW1lLCAnLi4nLCAnZGF0YScpOwpjb25zdCBNRVRBX0RJUiA9IHBhdGguam9pbihfX2Rpcm5hbWUsICcuLicsICdtZXRhJyk7CmNvbnN0IERFRkFVTFRfUlVOX0NBUCA9IDEwMDAwOyAvLyBpdGVtcyBwZXIgcnVuOyB0aGUgZGFpbHkgcmVzZXJ2YXRpb24gaXMgdGhlIGhhcmQgY2VpbGluZwpjb25zdCBSRUZSRVNIX0RBWVMgPSAxNDsgLy8gcXVpZXQgaXRlbXM6IHJlLWZldGNoIG1ldGFkYXRhIG9sZGVyIHRoYW4gdGhpcwpjb25zdCBBQ1RJVkVfV0lORE9XX0RBWVMgPSAxNDsgLy8gaXRlbXMgd2l0aCBwcmljZSBhY3Rpdml0eSBpbnNpZGUgdGhpcyB3aW5kb3cgYXJlICJob3QiCmNvbnN0IFVOQVZBSUxBQkxFX1JFVFJZX0RBWVMgPSAzMDsgLy8gZGVsZXRlZCBpdGVtcyBhcmUgcmUtY2hlY2tlZCBtb250aGx5LCBub3QgZGFpbHkKY29uc3QgTElLRVNfSElTVE9SWV9DQVAgPSAxMjA7IC8vIHNuYXBzaG90cyBrZXB0IHBlciBpdGVtCmNvbnN0IEJBVENIX1NJWkUgPSA1OwovLyBTYW1lIGVudmVsb3BlIGFzIHRoZSBwcmljZSBzY3JhcGVyOiBvbmUgcnVuIG1heSBjb2xsZWN0IGZvciB1cCB0byBmaXZlCi8vIGhvdXJzICh0aGUgcnVudGltZSdzIE1BWF9FWEVDVVRJT05fVElNRV9NUyksIGluc2lkZSBhIDMwNS1taW51dGUgc3RlcC4KLy8gU3RvcHBpbmcgb3Vyc2VsdmVzIGF0IDI3MCBtaW51dGVzIHN0aWxsIGxlYXZlcyByb29tIGZvciBjbGllbnQuZmluaXNoKCkKLy8g4oCUIHdoaWNoIGNvbXBsZXRlcyB0aGUgZHVyYWJsZSByZXF1ZXN0IHJlc2VydmF0aW9uIOKAlCBhbmQgZm9yIHRoZSBzYXZlCi8vIHN0ZXAgdG8gcHVzaCB3aGF0IHdhcyBjb2xsZWN0ZWQuIEEgaGFyZCBraWxsIGJ5IHRoZSBzdGVwIHRpbWVvdXQgd291bGQKLy8gc3RyYW5kIGFuIHVucmVzb2x2ZWQgcmVzZXJ2YXRpb24gaW4gdGhlIGxlZGdlciBhbmQgYmxvY2sgZXZlcnkgbGF0ZXIKLy8gcnVuLCBzbyB0aGUgcnVuIG11c3QgYWx3YXlzIGVuZCBncmFjZWZ1bGx5Lgpjb25zdCBERUZBVUxUX01BWF9SVU5fTVMgPSAyNzAgKiA2MCAqIDEwMDA7Cgpjb25zdCB2YWxpZElkID0gaWQgPT4gdHlwZW9mIGlkID09PSAnc3RyaW5nJyAmJiAvXlsxLTldXGQqJC8udGVzdChpZCk7CmNvbnN0IHNsZWVwID0gbXMgPT4gbmV3IFByb21pc2UocmVzb2x2ZSA9PiBzZXRUaW1lb3V0KHJlc29sdmUsIG1zKSk7CmNvbnN0IHNoYXJkT2YgPSBpZCA9PiBpZC5zdWJzdHJpbmcoMCwgMyk7CgpmdW5jdGlvbiBkYXlzQmVmb3JlKGRhdGVTdHIsIGRheXMpIHsKICAgIGNvbnN0IHRpbWUgPSBEYXRlLnBhcnNlKGAke2RhdGVTdHJ9VDAwOjAwOjAwWmApOwogICAgaWYgKCFOdW1iZXIuaXNGaW5pdGUodGltZSkpIHRocm93IG5ldyBFcnJvcihgSW52YWxpZCBKU1QgZGF0ZTogJHtkYXRlU3RyfWApOwogICAgcmV0dXJuIG5ldyBEYXRlKHRpbWUgLSBkYXlzICogMjQgKiA2MCAqIDYwICogMTAwMCkudG9JU09TdHJpbmcoKS5zbGljZSgwLCAxMCk7Cn0KCi8vIHB4aW1nIG9yaWdpbmFscyBsb29rIGxpa2UgaHR0cHM6Ly9ib290aC5weGltZy5uZXQvPHV1aWQ+L2kvPGlkPi88ZmlsZT47Ci8vIHRoZSA2MjBweCBkaXNwbGF5IHZhcmlhbnQgaW5zZXJ0cyBjLzYyMHg2MjAvIGFmdGVyIHRoZSBob3N0LiBBbnl0aGluZyB0aGF0Ci8vIGRvZXMgbm90IG1hdGNoIHRoYXQgZXhhY3Qgc2hhcGUga2VlcHMgdGhlIG9yaWdpbmFsIFVSTC4KZnVuY3Rpb24gcmVzaXplZEltYWdlKHVybCkgewogICAgaWYgKHR5cGVvZiB1cmwgIT09ICdzdHJpbmcnKSByZXR1cm4gJyc7CiAgICBjb25zdCBtYXRjaCA9IHVybC5tYXRjaCgvXmh0dHBzOlwvXC9ib290aFwucHhpbWdcLm5ldFwvKFswLTlhLWYtXXszNn1cL2lcL1xkK1wvLispJC8pOwogICAgcmV0dXJuIG1hdGNoID8gYGh0dHBzOi8vYm9vdGgucHhpbWcubmV0L2MvNjIweDYyMC8ke21hdGNoWzFdfWAgOiB1cmw7Cn0KCmZ1bmN0aW9uIHBhcnNlSXRlbUpzb24ocHJvZHVjdElkLCBkYXRhKSB7CiAgICBpZiAoIWRhdGEgfHwgdHlwZW9mIGRhdGEgIT09ICdvYmplY3QnIHx8IEFycmF5LmlzQXJyYXkoZGF0YSkpIHsKICAgICAgICB0aHJvdyBuZXcgRXJyb3IoJ1VucmVjb2duaXplZCBpdGVtIEpTT04nKTsKICAgIH0KICAgIGlmIChTdHJpbmcoZGF0YS5pZCkgIT09IFN0cmluZyhwcm9kdWN0SWQpKSB7CiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBJdGVtIEpTT04gaWQgbWlzbWF0Y2g6IGV4cGVjdGVkICR7cHJvZHVjdElkfSwgZ290ICR7ZGF0YS5pZH1gKTsKICAgIH0KICAgIGNvbnN0IG5hbWUgPSB0eXBlb2YgZGF0YS5uYW1lID09PSAnc3RyaW5nJyA/IGRhdGEubmFtZS50cmltKCkgOiAnJzsKICAgIGlmICghbmFtZSkgdGhyb3cgbmV3IEVycm9yKCdJdGVtIEpTT04gaXMgbWlzc2luZyBhIG5hbWUnKTsKICAgIGNvbnN0IHNob3AgPSBkYXRhLnNob3AgJiYgdHlwZW9mIGRhdGEuc2hvcCA9PT0gJ29iamVjdCcgPyB7CiAgICAgICAgbmFtZTogdHlwZW9mIGRhdGEuc2hvcC5uYW1lID09PSAnc3RyaW5nJyA/IGRhdGEuc2hvcC5uYW1lIDogJycsCiAgICAgICAgc3ViZG9tYWluOiB0eXBlb2YgZGF0YS5zaG9wLnN1YmRvbWFpbiA9PT0gJ3N0cmluZycgPyBkYXRhLnNob3Auc3ViZG9tYWluIDogJycsCiAgICAgICAgdXJsOiB0eXBlb2YgZGF0YS5zaG9wLnVybCA9PT0gJ3N0cmluZycgPyBkYXRhLnNob3AudXJsIDogJycKICAgIH0gOiBudWxsOwogICAgY29uc3QgZmlyc3RJbWFnZSA9IEFycmF5LmlzQXJyYXkoZGF0YS5pbWFnZXMpICYmIGRhdGEuaW1hZ2VzWzBdICYmIHR5cGVvZiBkYXRhLmltYWdlc1swXSA9PT0gJ29iamVjdCcKICAgICAgICA/IGRhdGEuaW1hZ2VzWzBdIDogbnVsbDsKICAgIGNvbnN0IGltYWdlID0gZmlyc3RJbWFnZSAmJiB0eXBlb2YgZmlyc3RJbWFnZS5vcmlnaW5hbCA9PT0gJ3N0cmluZycgPyBmaXJzdEltYWdlLm9yaWdpbmFsIDogJyc7CiAgICBjb25zdCB0YWdzID0gQXJyYXkuaXNBcnJheShkYXRhLnRhZ3MpCiAgICAgICAgPyBkYXRhLnRhZ3MubWFwKHRhZyA9PiB0YWcgJiYgdHlwZW9mIHRhZy5uYW1lID09PSAnc3RyaW5nJyA/IHRhZy5uYW1lIDogJycpLmZpbHRlcihCb29sZWFuKQogICAgICAgIDogW107CiAgICBjb25zdCBjYXRlZ29yeSA9IGRhdGEuY2F0ZWdvcnkgJiYgdHlwZW9mIGRhdGEuY2F0ZWdvcnkgPT09ICdvYmplY3QnID8gewogICAgICAgIGlkOiBOdW1iZXIuaXNTYWZlSW50ZWdlcihkYXRhLmNhdGVnb3J5LmlkKSA/IGRhdGEuY2F0ZWdvcnkuaWQgOiBudWxsLAogICAgICAgIG5hbWU6IHR5cGVvZiBkYXRhLmNhdGVnb3J5Lm5hbWUgPT09ICdzdHJpbmcnID8gZGF0YS5jYXRlZ29yeS5uYW1lIDogJycsCiAgICAgICAgcGFyZW50OiBkYXRhLmNhdGVnb3J5LnBhcmVudCAmJiB0eXBlb2YgZGF0YS5jYXRlZ29yeS5wYXJlbnQubmFtZSA9PT0gJ3N0cmluZycKICAgICAgICAgICAgPyBkYXRhLmNhdGVnb3J5LnBhcmVudC5uYW1lIDogJycKICAgIH0gOiBudWxsOwogICAgY29uc3QgbGlrZXMgPSBOdW1iZXIuaXNTYWZlSW50ZWdlcihkYXRhLndpc2hfbGlzdHNfY291bnQpICYmIGRhdGEud2lzaF9saXN0c19jb3VudCA+PSAwCiAgICAgICAgPyBkYXRhLndpc2hfbGlzdHNfY291bnQgOiBudWxsOwogICAgcmV0dXJuIHsKICAgICAgICBpZDogU3RyaW5nKHByb2R1Y3RJZCksCiAgICAgICAgbmFtZSwKICAgICAgICBzaG9wLAogICAgICAgIGltYWdlLAogICAgICAgIGltYWdlX3Jlc2l6ZWQ6IHJlc2l6ZWRJbWFnZShpbWFnZSksCiAgICAgICAgdGFncywKICAgICAgICBjYXRlZ29yeSwKICAgICAgICBsaWtlcywKICAgICAgICBhZHVsdDogZGF0YS5pc19hZHVsdCA9PT0gdHJ1ZSwKICAgICAgICBzb2xkX291dDogZGF0YS5pc19zb2xkX291dCA9PT0gdHJ1ZSwKICAgICAgICBlbmRfb2Zfc2FsZTogZGF0YS5pc19lbmRfb2Zfc2FsZSA9PT0gdHJ1ZSwKICAgICAgICBwdWJsaXNoZWRfYXQ6IHR5cGVvZiBkYXRhLnB1Ymxpc2hlZF9hdCA9PT0gJ3N0cmluZycgPyBkYXRhLnB1Ymxpc2hlZF9hdCA6IG51bGwKICAgIH07Cn0KCmZ1bmN0aW9uIGJ1aWxkUmVjb3JkKHBhcnNlZCwgeyB0b2RheSwgcHJldmlvdXMgPSBudWxsIH0gPSB7fSkgewogICAgY29uc3QgaGlzdG9yeSA9IEFycmF5LmlzQXJyYXkocHJldmlvdXM/Lmxpa2VzX2hpc3RvcnkpCiAgICAgICAgPyBwcmV2aW91cy5saWtlc19oaXN0b3J5LmZpbHRlcihlbnRyeSA9PiBlbnRyeSAmJiB0eXBlb2YgZW50cnkuZGF0ZSA9PT0gJ3N0cmluZycgJiYKICAgICAgICAgICAgL15cZHs0fS1cZHsyfS1cZHsyfSQvLnRlc3QoZW50cnkuZGF0ZSkgJiYgTnVtYmVyLmlzU2FmZUludGVnZXIoZW50cnkuY291bnQpICYmIGVudHJ5LmNvdW50ID49IDApCiAgICAgICAgOiBbXTsKICAgIGlmIChwYXJzZWQubGlrZXMgIT09IG51bGwpIHsKICAgICAgICBjb25zdCBlbnRyeSA9IHsgZGF0ZTogdG9kYXksIGNvdW50OiBwYXJzZWQubGlrZXMgfTsKICAgICAgICBjb25zdCBpbmRleCA9IGhpc3RvcnkuZmluZEluZGV4KGUgPT4gZS5kYXRlID09PSB0b2RheSk7CiAgICAgICAgaWYgKGluZGV4ID49IDApIGhpc3RvcnlbaW5kZXhdID0gZW50cnk7CiAgICAgICAgZWxzZSBoaXN0b3J5LnB1c2goZW50cnkpOwogICAgICAgIGhpc3Rvcnkuc29ydCgoYSwgYikgPT4gYS5kYXRlLmxvY2FsZUNvbXBhcmUoYi5kYXRlKSk7CiAgICB9CiAgICByZXR1cm4geyAuLi5wYXJzZWQsIGxpa2VzX2hpc3Rvcnk6IGhpc3Rvcnkuc2xpY2UoLUxJS0VTX0hJU1RPUllfQ0FQKSwgZmV0Y2hlZF9hdDogdG9kYXkgfTsKfQoKYXN5bmMgZnVuY3Rpb24gZmV0Y2hJdGVtTWV0YShwcm9kdWN0SWQsIGNsaWVudCkgewogICAgY29uc3QgdXJsID0gYGh0dHBzOi8vYm9vdGgucG0vamEvaXRlbXMvJHtwcm9kdWN0SWR9Lmpzb25gOwogICAgdHJ5IHsKICAgICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGNsaWVudC5nZXQodXJsLCB7IHByb2R1Y3RJZDogU3RyaW5nKHByb2R1Y3RJZCkgfSk7CiAgICAgICAgaWYgKHJlc3BvbnNlLnN0YXR1cyA9PT0gNDA0IHx8IHJlc3BvbnNlLnN0YXR1cyA9PT0gNDEwKSB7CiAgICAgICAgICAgIHJldHVybiB7IGtpbmQ6ICd1bmF2YWlsYWJsZScsIGlkOiBwcm9kdWN0SWQsIHN0YXR1czogcmVzcG9uc2Uuc3RhdHVzIH07CiAgICAgICAgfQogICAgICAgIGlmIChyZXNwb25zZS5zdGF0dXMgIT09IDIwMCkgdGhyb3cgbmV3IEVycm9yKGBJdGVtIEpTT04gcmV0dXJuZWQgSFRUUCAke3Jlc3BvbnNlLnN0YXR1c31gKTsKICAgICAgICBjb25zdCBkYXRhID0gdHlwZW9mIHJlc3BvbnNlLmRhdGEgPT09ICdzdHJpbmcnID8gSlNPTi5wYXJzZShyZXNwb25zZS5kYXRhKSA6IHJlc3BvbnNlLmRhdGE7CiAgICAgICAgcmV0dXJuIHsga2luZDogJ3N1Y2Nlc3MnLCBtZXRhOiBwYXJzZUl0ZW1Kc29uKHByb2R1Y3RJZCwgZGF0YSkgfTsKICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgICAgLy8gVGhlIHJlcXVlc3QgY2xpZW50IGFscmVhZHkgdHVybnMgNDA0LzQxMCBpbnRvIHJlc3BvbnNlcywgYnV0IGFuCiAgICAgICAgLy8gaW5qZWN0ZWQgdHJhbnNwb3J0ICh0ZXN0cywgZnV0dXJlIGNsaWVudHMpIG1heSByZWplY3QgaW5zdGVhZC4KICAgICAgICBjb25zdCBzdGF0dXMgPSBlcnJvcj8ucmVzcG9uc2U/LnN0YXR1czsKICAgICAgICBpZiAoc3RhdHVzID09PSA0MDQgfHwgc3RhdHVzID09PSA0MTApIHJldHVybiB7IGtpbmQ6ICd1bmF2YWlsYWJsZScsIGlkOiBwcm9kdWN0SWQsIHN0YXR1cyB9OwogICAgICAgIHJldHVybiB7IGtpbmQ6ICdmYWlsdXJlJywgZXJyb3IgfTsKICAgIH0KfQoKZnVuY3Rpb24gbWV0YUZpbGVQYXRoKG1ldGFEaXIsIGlkKSB7CiAgICByZXR1cm4gcGF0aC5qb2luKG1ldGFEaXIsIHNoYXJkT2YoaWQpLCBgJHtpZH0uanNvbmApOwp9CgpmdW5jdGlvbiByZWFkUHJldmlvdXNNZXRhKG1ldGFEaXIsIGlkKSB7CiAgICB0cnkgewogICAgICAgIGNvbnN0IHBhcnNlZCA9IEpTT04ucGFyc2UoZnMucmVhZEZpbGVTeW5jKG1ldGFGaWxlUGF0aChtZXRhRGlyLCBpZCksICd1dGY4JykpOwogICAgICAgIHJldHVybiBwYXJzZWQgJiYgdHlwZW9mIHBhcnNlZCA9PT0gJ29iamVjdCcgJiYgIUFycmF5LmlzQXJyYXkocGFyc2VkKSA/IHBhcnNlZCA6IG51bGw7CiAgICB9IGNhdGNoIHsKICAgICAgICAvLyBNZXRhZGF0YSBpcyBmdWxseSByZWdlbmVyYWJsZSBmcm9tIEJPT1RILCBzbyBhbiB1bnJlYWRhYmxlIGZpbGUgaXMKICAgICAgICAvLyB0cmVhdGVkIGFzIG1pc3NpbmcgYW5kIHNpbXBseSBjb2xsZWN0ZWQgYWdhaW4gKHVubGlrZSBwcmljZSBoaXN0b3J5KS4KICAgICAgICByZXR1cm4gbnVsbDsKICAgIH0KfQoKZnVuY3Rpb24gbGlzdFByb2R1Y3RJZHMoZGF0YURpcikgewogICAgaWYgKCFmcy5leGlzdHNTeW5jKGRhdGFEaXIpKSByZXR1cm4gW107CiAgICBjb25zdCBpZHMgPSBbXTsKICAgIGZvciAoY29uc3Qgc2hhcmQgb2YgZnMucmVhZGRpclN5bmMoZGF0YURpcikpIHsKICAgICAgICBpZiAoIS9eXGR7M30kLy50ZXN0KHNoYXJkKSkgY29udGludWU7CiAgICAgICAgY29uc3QgZGlyID0gcGF0aC5qb2luKGRhdGFEaXIsIHNoYXJkKTsKICAgICAgICBpZiAoIWZzLnN0YXRTeW5jKGRpcikuaXNEaXJlY3RvcnkoKSkgY29udGludWU7CiAgICAgICAgZm9yIChjb25zdCBmaWxlIG9mIGZzLnJlYWRkaXJTeW5jKGRpcikpIHsKICAgICAgICAgICAgY29uc3QgbWF0Y2ggPSBmaWxlLm1hdGNoKC9eKFsxLTldXGQqKVwuanNvbiQvKTsKICAgICAgICAgICAgaWYgKG1hdGNoKSBpZHMucHVzaChtYXRjaFsxXSk7CiAgICAgICAgfQogICAgfQogICAgcmV0dXJuIGlkczsKfQoKLy8gIkhvdCIgaXRlbXMgYXJlIHRoZSBvbmVzIHRoYXQgY2FuIHBsYXVzaWJseSBzdXJmYWNlIG9uIHRoZSBzaXRlJ3MKLy8gZmVhdHVyZWQvdHJlbmRpbmcgc3VyZmFjZXMsIHNvIHRoZXkgZ2V0IGEgZnJlc2ggbGlrZXMgc25hcHNob3QgZXZlcnkgZGF5Ci8vIChsaWtlc19oaXN0b3J5IGlzIGRhdGUta2V5ZWQsIGV4YWN0bHkgbGlrZSBwcmljZSBoaXN0b3J5OiBvbmUgcG9pbnQgcGVyCi8vIGRheSBpcyB0aGUgbWF0Y2hpbmcgcmVzb2x1dGlvbikuIEFjdGl2aXR5IGlzIHJlYWQgZnJvbSB0aGUgcHJpY2UgZGF0YQovLyBpdHNlbGY6IG9uIHNhbGUgYXQgdGhlIGxhdGVzdCBvYnNlcnZhdGlvbiwgYSBwcmljZSBjaGFuZ2UgaW5zaWRlIHRoZQovLyB3aW5kb3csIG9yIGZpcnN0IHRyYWNrZWQgaW5zaWRlIHRoZSB3aW5kb3cuIEhpc3RvcmllcyBpbiBkYXRhLyBhcmUgc3RvcmVkCi8vIGRhdGUtc29ydGVkLCBzbyBmaXJzdC9sYXN0IGVudHJpZXMgYXJlIHRoZSBib3VuZHMuCmZ1bmN0aW9uIHJlYWRBY3Rpdml0eShkYXRhRGlyLCBpZCwgY3V0b2ZmKSB7CiAgICB0cnkgewogICAgICAgIGNvbnN0IHBhcnNlZCA9IEpTT04ucGFyc2UoZnMucmVhZEZpbGVTeW5jKHBhdGguam9pbihkYXRhRGlyLCBzaGFyZE9mKGlkKSwgYCR7aWR9Lmpzb25gKSwgJ3V0ZjgnKSk7CiAgICAgICAgY29uc3QgaGlzdG9yaWVzID0gcGFyc2VkICYmIHBhcnNlZC52YXJpYXRpb25zICYmIHR5cGVvZiBwYXJzZWQudmFyaWF0aW9ucyA9PT0gJ29iamVjdCcKICAgICAgICAgICAgPyBPYmplY3QudmFsdWVzKHBhcnNlZC52YXJpYXRpb25zKSA6IFtdOwogICAgICAgIGZvciAoY29uc3QgaGlzdG9yeSBvZiBoaXN0b3JpZXMpIHsKICAgICAgICAgICAgaWYgKCFBcnJheS5pc0FycmF5KGhpc3RvcnkpIHx8ICFoaXN0b3J5Lmxlbmd0aCkgY29udGludWU7CiAgICAgICAgICAgIGNvbnN0IGZpcnN0ID0gaGlzdG9yeVswXTsKICAgICAgICAgICAgY29uc3QgbGFzdCA9IGhpc3RvcnlbaGlzdG9yeS5sZW5ndGggLSAxXTsKICAgICAgICAgICAgaWYgKHR5cGVvZiBmaXJzdD8uZGF0ZSA9PT0gJ3N0cmluZycgJiYgZmlyc3QuZGF0ZSA+PSBjdXRvZmYpIHJldHVybiB0cnVlOyAvLyBuZXdseSB0cmFja2VkCiAgICAgICAgICAgIGlmIChsYXN0Py5pc19zYWxlID09PSB0cnVlICYmIHR5cGVvZiBsYXN0LmRhdGUgPT09ICdzdHJpbmcnICYmIGxhc3QuZGF0ZSA+PSBjdXRvZmYpIHJldHVybiB0cnVlOwogICAgICAgICAgICBmb3IgKGxldCBpID0gMTsgaSA8IGhpc3RvcnkubGVuZ3RoOyBpKyspIHsKICAgICAgICAgICAgICAgIGNvbnN0IGVudHJ5ID0gaGlzdG9yeVtpXTsKICAgICAgICAgICAgICAgIGlmICh0eXBlb2YgZW50cnk/LmRhdGUgPT09ICdzdHJpbmcnICYmIGVudHJ5LmRhdGUgPj0gY3V0b2ZmICYmCiAgICAgICAgICAgICAgICAgICAgZW50cnkucHJpY2UgIT09IGhpc3RvcnlbaSAtIDFdLnByaWNlKSByZXR1cm4gdHJ1ZTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICByZXR1cm4gZmFsc2U7CiAgICB9IGNhdGNoIHsKICAgICAgICByZXR1cm4gZmFsc2U7CiAgICB9Cn0KCmZ1bmN0aW9uIGJ1aWxkV29ya0xpc3QoeyBkYXRhRGlyLCBtZXRhRGlyLCB0b2RheSwgcnVuQ2FwID0gREVGQVVMVF9SVU5fQ0FQLAogICAgcmVmcmVzaERheXMgPSBSRUZSRVNIX0RBWVMsIHVuYXZhaWxhYmxlUmV0cnlEYXlzID0gVU5BVkFJTEFCTEVfUkVUUllfREFZUywKICAgIGFjdGl2ZVdpbmRvd0RheXMgPSBBQ1RJVkVfV0lORE9XX0RBWVMgfSA9IHt9KSB7CiAgICBjb25zdCByZWZyZXNoQ3V0b2ZmID0gZGF5c0JlZm9yZSh0b2RheSwgcmVmcmVzaERheXMpOwogICAgY29uc3QgdW5hdmFpbGFibGVDdXRvZmYgPSBkYXlzQmVmb3JlKHRvZGF5LCB1bmF2YWlsYWJsZVJldHJ5RGF5cyk7CiAgICBjb25zdCBhY3RpdmVDdXRvZmYgPSBkYXlzQmVmb3JlKHRvZGF5LCBhY3RpdmVXaW5kb3dEYXlzKTsKICAgIGNvbnN0IG1pc3NpbmcgPSBbXTsKICAgIGNvbnN0IGhvdCA9IFtdOwogICAgY29uc3Qgc3RhbGUgPSBbXTsKICAgIGZvciAoY29uc3QgaWQgb2YgbGlzdFByb2R1Y3RJZHMoZGF0YURpcikpIHsKICAgICAgICBjb25zdCBwcmV2aW91cyA9IHJlYWRQcmV2aW91c01ldGEobWV0YURpciwgaWQpOwogICAgICAgIGlmICghcHJldmlvdXMpIHsKICAgICAgICAgICAgbWlzc2luZy5wdXNoKHsgaWQsIHByZXZpb3VzOiBudWxsIH0pOwogICAgICAgICAgICBjb250aW51ZTsKICAgICAgICB9CiAgICAgICAgY29uc3QgZmV0Y2hlZEF0ID0gdHlwZW9mIHByZXZpb3VzLmZldGNoZWRfYXQgPT09ICdzdHJpbmcnID8gcHJldmlvdXMuZmV0Y2hlZF9hdCA6ICcnOwogICAgICAgIGlmIChwcmV2aW91cy51bmF2YWlsYWJsZSA9PT0gdHJ1ZSkgewogICAgICAgICAgICBpZiAoIWZldGNoZWRBdCB8fCBmZXRjaGVkQXQgPD0gdW5hdmFpbGFibGVDdXRvZmYpIHN0YWxlLnB1c2goeyBpZCwgcHJldmlvdXMsIGZldGNoZWRBdCB9KTsKICAgICAgICAgICAgY29udGludWU7CiAgICAgICAgfQogICAgICAgIGlmIChmZXRjaGVkQXQgPj0gdG9kYXkpIGNvbnRpbnVlOyAvLyBhbHJlYWR5IGNvbGxlY3RlZCB0b2RheQogICAgICAgIGlmIChyZWFkQWN0aXZpdHkoZGF0YURpciwgaWQsIGFjdGl2ZUN1dG9mZikpIHsKICAgICAgICAgICAgaG90LnB1c2goeyBpZCwgcHJldmlvdXMsIGZldGNoZWRBdCB9KTsKICAgICAgICB9IGVsc2UgaWYgKCFmZXRjaGVkQXQgfHwgZmV0Y2hlZEF0IDw9IHJlZnJlc2hDdXRvZmYpIHsKICAgICAgICAgICAgc3RhbGUucHVzaCh7IGlkLCBwcmV2aW91cywgZmV0Y2hlZEF0IH0pOwogICAgICAgIH0KICAgIH0KICAgIC8vIE5ldyBpdGVtcyBmaXJzdCAoaGlnaGVyIElEcyBhcmUgbmV3ZXIgZGlzY292ZXJpZXMpLCB0aGVuIGhvdCBpdGVtcwogICAgLy8gKHN0YWxlc3Qgc25hcHNob3QgZmlyc3QpIGZvciB0aGUgZGFpbHkgbGlrZXMgZGVsdGEsIHRoZW4gdGhlIHF1aWV0CiAgICAvLyByZWZyZXNoIGN5Y2xlIHNvIGl0IHN0aWxsIHJlYWNoZXMgZXZlcnl0aGluZyBldmVubHkuCiAgICBtaXNzaW5nLnNvcnQoKGEsIGIpID0+IE51bWJlcihiLmlkKSAtIE51bWJlcihhLmlkKSk7CiAgICBob3Quc29ydCgoYSwgYikgPT4gYS5mZXRjaGVkQXQubG9jYWxlQ29tcGFyZShiLmZldGNoZWRBdCkgfHwgTnVtYmVyKGIuaWQpIC0gTnVtYmVyKGEuaWQpKTsKICAgIHN0YWxlLnNvcnQoKGEsIGIpID0+IGEuZmV0Y2hlZEF0LmxvY2FsZUNvbXBhcmUoYi5mZXRjaGVkQXQpIHx8IE51bWJlcihhLmlkKSAtIE51bWJlcihiLmlkKSk7CiAgICByZXR1cm4gWy4uLm1pc3NpbmcsIC4uLmhvdCwgLi4uc3RhbGVdLnNsaWNlKDAsIHJ1bkNhcCk7Cn0KCmZ1bmN0aW9uIHNhdmVNZXRhKHBhcnNlZCwgeyBtZXRhRGlyLCB0b2RheSwgcHJldmlvdXMgPSBudWxsIH0pIHsKICAgIGNvbnN0IHJlY29yZCA9IGJ1aWxkUmVjb3JkKHBhcnNlZCwgeyB0b2RheSwgcHJldmlvdXMgfSk7CiAgICB3cml0ZUpzb24obWV0YUZpbGVQYXRoKG1ldGFEaXIsIHBhcnNlZC5pZCksIHJlY29yZCk7CiAgICByZXR1cm4gcmVjb3JkOwp9CgpmdW5jdGlvbiBzYXZlVW5hdmFpbGFibGUoaWQsIHN0YXR1cywgeyBtZXRhRGlyLCB0b2RheSB9KSB7CiAgICB3cml0ZUpzb24obWV0YUZpbGVQYXRoKG1ldGFEaXIsIGlkKSwgeyBpZDogU3RyaW5nKGlkKSwgdW5hdmFpbGFibGU6IHRydWUsIHN0YXR1cywgZmV0Y2hlZF9hdDogdG9kYXkgfSk7Cn0KCmFzeW5jIGZ1bmN0aW9uIG1haW4oewogICAgZGF0YURpciA9IERBVEFfRElSLCBtZXRhRGlyID0gTUVUQV9ESVIsIHJ1bkNhcCA9IERFRkFVTFRfUlVOX0NBUCwKICAgIG1heFJ1bk1zID0gREVGQVVMVF9NQVhfUlVOX01TLAogICAgZ2V0ID0gYXhpb3MuZ2V0LCBmZXRjaE1ldGEgPSBmZXRjaEl0ZW1NZXRhLCBub3cgPSBEYXRlLm5vdywgd2FpdCA9IHNsZWVwLAogICAgY2xpZW50OiBzdXBwbGllZENsaWVudCwgam9iU3RhcnRlZEF0ID0gcHJvY2Vzcy5lbnYuTUVUQV9KT0JfU1RBUlRFRF9BVCwKICAgIHJlc2VydmF0aW9uSWQgPSBwcm9jZXNzLmVudi5NRVRBX1JFU0VSVkFUSU9OX0lELAogICAgbG9nID0gY29uc29sZS5sb2csIGxvZ0Vycm9yID0gY29uc29sZS5lcnJvcgp9ID0ge30pIHsKICAgIGNvbnN0IHN0YXJ0ZWRBdCA9IG5vdygpOwogICAgY29uc3QgZGVhZGxpbmUgPSBNYXRoLm1pbigKICAgICAgICBnZXRTdG9wVGFyZ2V0VGltZShzdGFydGVkQXQsIGpvYlN0YXJ0ZWRBdCA/PyBzdGFydGVkQXQpLmdldFRpbWUoKSwKICAgICAgICBzdGFydGVkQXQgKyBtYXhSdW5Ncyk7CiAgICBjb25zdCB0b2RheSA9IGpzdERhdGUoc3RhcnRlZEF0KTsKICAgIGNvbnN0IHdvcmsgPSBidWlsZFdvcmtMaXN0KHsgZGF0YURpciwgbWV0YURpciwgdG9kYXksIHJ1bkNhcCB9KTsKICAgIGZzLm1rZGlyU3luYyhtZXRhRGlyLCB7IHJlY3Vyc2l2ZTogdHJ1ZSB9KTsKICAgIGNvbnN0IGNsaWVudCA9IHN1cHBsaWVkQ2xpZW50IHx8IGNyZWF0ZVJlcXVlc3RDbGllbnQoewogICAgICAgIGdldCwgYnVkZ2V0RmlsZTogcGF0aC5qb2luKG1ldGFEaXIsICdyZXF1ZXN0X2J1ZGdldC5qc29uJyksIGRlYWRsaW5lLCBub3csIHdhaXQsIHJlc2VydmF0aW9uSWQKICAgIH0pOwogICAgY29uc3QgbWV0cmljcyA9IHsgcGxhbm5lZDogd29yay5sZW5ndGgsIHN1Y2Nlc3M6IDAsIHVuYXZhaWxhYmxlOiAwLCBmYWlsdXJlczogMCB9OwogICAgbGV0IGhhbHRFcnJvcjsKCiAgICBmdW5jdGlvbiBjaGVjaygpIHsKICAgICAgICBpZiAoaGFsdEVycm9yKSB0aHJvdyBoYWx0RXJyb3I7CiAgICAgICAgaWYgKG5vdygpID49IGRlYWRsaW5lKSB0aHJvdyBuZXcgQ29sbGVjdGlvblN0b3AoJ2RlYWRsaW5lJywgJ0NvbGxlY3Rpb24gdGltZSBidWRnZXQgcmVhY2hlZCcpOwogICAgICAgIGNsaWVudC5jaGVjaz8uKCk7CiAgICB9CiAgICBhc3luYyBmdW5jdGlvbiBwYXVzZShtcykgewogICAgICAgIGNoZWNrKCk7CiAgICAgICAgaWYgKG5vdygpICsgbXMgPj0gZGVhZGxpbmUpIHRocm93IG5ldyBDb2xsZWN0aW9uU3RvcCgnZGVhZGxpbmUnLCAnTm90IGVub3VnaCBjb2xsZWN0aW9uIHRpbWUgZm9yIG1ldGFkYXRhIGRlbGF5Jyk7CiAgICAgICAgYXdhaXQgd2FpdChtcyk7CiAgICAgICAgY2hlY2soKTsKICAgIH0KCiAgICBsZXQgcmVzdWx0OwogICAgbGV0IGZpbmFsQnVkZ2V0OwogICAgdHJ5IHsKICAgICAgICBmb3IgKGxldCBpbmRleCA9IDA7IGluZGV4IDwgd29yay5sZW5ndGg7IGluZGV4ICs9IEJBVENIX1NJWkUpIHsKICAgICAgICAgICAgY2hlY2soKTsKICAgICAgICAgICAgY29uc3QgYmF0Y2ggPSB3b3JrLnNsaWNlKGluZGV4LCBpbmRleCArIEJBVENIX1NJWkUpOwogICAgICAgICAgICBjb25zdCBvdXRjb21lcyA9IGF3YWl0IFByb21pc2UuYWxsKGJhdGNoLm1hcChhc3luYyBlbnRyeSA9PiB7CiAgICAgICAgICAgICAgICB0cnkgewogICAgICAgICAgICAgICAgICAgIGNoZWNrKCk7CiAgICAgICAgICAgICAgICAgICAgY29uc3Qgb3V0Y29tZSA9IGF3YWl0IGZldGNoTWV0YShlbnRyeS5pZCwgY2xpZW50KTsKICAgICAgICAgICAgICAgICAgICBpZiAob3V0Y29tZT8ua2luZCA9PT0gJ3N1Y2Nlc3MnKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIHNhdmVNZXRhKG91dGNvbWUubWV0YSwgeyBtZXRhRGlyLCB0b2RheSwgcHJldmlvdXM6IGVudHJ5LnByZXZpb3VzIH0pOwogICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gJ3N1Y2Nlc3MnOwogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICBpZiAob3V0Y29tZT8ua2luZCA9PT0gJ3VuYXZhaWxhYmxlJykgewogICAgICAgICAgICAgICAgICAgICAgICBzYXZlVW5hdmFpbGFibGUoZW50cnkuaWQsIG91dGNvbWUuc3RhdHVzLCB7IG1ldGFEaXIsIHRvZGF5IH0pOwogICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gJ3VuYXZhaWxhYmxlJzsKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgdGhyb3cgb3V0Y29tZT8uZXJyb3IgfHwgbmV3IEVycm9yKCdJbnZhbGlkIG1ldGFkYXRhIG91dGNvbWUnKTsKICAgICAgICAgICAgICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgICAgICAgICAgICAgICAgaWYgKGVycm9yIGluc3RhbmNlb2YgQ29sbGVjdGlvblN0b3AgfHwgaGFsdEVycm9yKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIGlmICghaGFsdEVycm9yKSBoYWx0RXJyb3IgPSBlcnJvcjsKICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuICdzdG9wcGVkJzsKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgbG9nRXJyb3IoYEl0ZW0gJHtlbnRyeS5pZH06ICR7ZXJyb3IubWVzc2FnZX1gKTsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gJ2ZhaWx1cmUnOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9KSk7CiAgICAgICAgICAgIGZvciAoY29uc3Qgb3V0Y29tZSBvZiBvdXRjb21lcykgewogICAgICAgICAgICAgICAgaWYgKG91dGNvbWUgPT09ICdzdWNjZXNzJykgbWV0cmljcy5zdWNjZXNzKys7CiAgICAgICAgICAgICAgICBlbHNlIGlmIChvdXRjb21lID09PSAndW5hdmFpbGFibGUnKSBtZXRyaWNzLnVuYXZhaWxhYmxlKys7CiAgICAgICAgICAgICAgICBlbHNlIGlmIChvdXRjb21lID09PSAnZmFpbHVyZScpIG1ldHJpY3MuZmFpbHVyZXMrKzsKICAgICAgICAgICAgfQogICAgICAgICAgICBpZiAoaGFsdEVycm9yKSB0aHJvdyBoYWx0RXJyb3I7CiAgICAgICAgICAgIGlmIChpbmRleCArIEJBVENIX1NJWkUgPCB3b3JrLmxlbmd0aCkgYXdhaXQgcGF1c2UoMTAwMCk7CiAgICAgICAgfQogICAgICAgIHJlc3VsdCA9IHsgc3RhdHVzOiBtZXRyaWNzLmZhaWx1cmVzID8gJ3BhcnRpYWwnIDogJ2NvbXBsZXRlZCcsIGZhaWxlZDogbWV0cmljcy5mYWlsdXJlcyA+IDAgfTsKICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgICAgaGFsdEVycm9yID0gaGFsdEVycm9yIHx8IGVycm9yOwogICAgICAgIGxvZ0Vycm9yKGVycm9yLm1lc3NhZ2UpOwogICAgICAgIHJlc3VsdCA9IGVycm9yIGluc3RhbmNlb2YgQ29sbGVjdGlvblN0b3AKICAgICAgICAgICAgPyB7IHN0YXR1czogZXJyb3IuZmFpbGVkID8gJ3BhcnRpYWwnIDogJ3BhdXNlZCcsIHJlYXNvbjogZXJyb3IucmVhc29uLCBmYWlsZWQ6IGVycm9yLmZhaWxlZCB9CiAgICAgICAgICAgIDogeyBzdGF0dXM6ICdmYWlsZWQnLCByZWFzb246ICdzdG9yYWdlJywgZmFpbGVkOiB0cnVlIH07CiAgICB9IGZpbmFsbHkgewogICAgICAgIHRyeSB7CiAgICAgICAgICAgIHdyaXRlSnNvbihwYXRoLmpvaW4obWV0YURpciwgJ21ldGFfc3RhdGUuanNvbicpLCB7CiAgICAgICAgICAgICAgICBsYXN0X3J1bl9hdDogbmV3IERhdGUobm93KCkpLnRvSVNPU3RyaW5nKCksCiAgICAgICAgICAgICAgICBsYXN0X3J1bl9kYXRlOiB0b2RheSwKICAgICAgICAgICAgICAgIHN0YXR1czogcmVzdWx0Py5zdGF0dXMgPz8gJ3Vua25vd24nLAogICAgICAgICAgICAgICAgcGxhbm5lZDogbWV0cmljcy5wbGFubmVkLAogICAgICAgICAgICAgICAgc3VjY2VzczogbWV0cmljcy5zdWNjZXNzLAogICAgICAgICAgICAgICAgdW5hdmFpbGFibGU6IG1ldHJpY3MudW5hdmFpbGFibGUsCiAgICAgICAgICAgICAgICBmYWlsdXJlczogbWV0cmljcy5mYWlsdXJlcywKICAgICAgICAgICAgICAgIGNoYXJnZWRfaHR0cF9hdHRlbXB0czogY2xpZW50LmdldEF0dGVtcHRDb3VudD8uKCkgPz8gbnVsbAogICAgICAgICAgICB9KTsKICAgICAgICB9IGNhdGNoIChlcnJvcikgewogICAgICAgICAgICBsb2dFcnJvcihgQ2Fubm90IHNhdmUgbWV0YWRhdGEgcnVuIHN0YXRlOiAke2Vycm9yLm1lc3NhZ2V9YCk7CiAgICAgICAgfQogICAgICAgIHRyeSB7IGZpbmFsQnVkZ2V0ID0gY2xpZW50LmdldEJ1ZGdldD8uKCk7IH0gY2F0Y2ggeyAvKiBDb250aW51YXRpb24gZGVmYXVsdHMgdG8gb2ZmLiAqLyB9CiAgICAgICAgdHJ5IHsgY2xpZW50LmZpbmlzaD8uKCk7IH0KICAgICAgICBjYXRjaCAoZXJyb3IpIHsgbG9nRXJyb3IoYENhbm5vdCBmaW5pc2ggcmVxdWVzdCBidWRnZXQ6ICR7ZXJyb3IubWVzc2FnZX1gKTsgfQogICAgfQogICAgbWV0cmljcy5wcm9jZXNzZWQgPSBtZXRyaWNzLnN1Y2Nlc3MgKyBtZXRyaWNzLnVuYXZhaWxhYmxlICsgbWV0cmljcy5mYWlsdXJlczsKICAgIG1ldHJpY3MuY2hhcmdlZEh0dHBBdHRlbXB0cyA9IGNsaWVudC5nZXRBdHRlbXB0Q291bnQ/LigpID8/IDA7CiAgICBjb25zdCBjb250aW51ZUNvbGxlY3Rpb24gPSBzaG91bGRDb250aW51ZU1ldGEoewogICAgICAgIHJlc3VsdCwgbWV0cmljcywgc3RhcnRlZEF0LCBzdG9wcGVkQXQ6IG5vdygpLCBkZWFkbGluZSwKICAgICAgICBibG9ja2VkVW50aWw6IGZpbmFsQnVkZ2V0Py5ibG9ja2VkVW50aWwgPz8gMCwKICAgICAgICBjYXBSZWFjaGVkOiB3b3JrLmxlbmd0aCA+PSBydW5DYXAKICAgIH0pOwogICAgbG9nKGBNZXRhZGF0YSBjb2xsZWN0aW9uICR7cmVzdWx0LnN0YXR1c307IHBsYW5uZWQgJHttZXRyaWNzLnBsYW5uZWR9LCBzYXZlZCAke21ldHJpY3Muc3VjY2Vzc30sIGAgKwogICAgICAgIGB1bmF2YWlsYWJsZSAke21ldHJpY3MudW5hdmFpbGFibGV9LCBmYWlsdXJlcyAke21ldHJpY3MuZmFpbHVyZXN9YCArCiAgICAgICAgKGNvbnRpbnVlQ29sbGVjdGlvbiA/ICc7IGNvbnRpbnVhdGlvbiByZXF1ZXN0ZWQnIDogJycpKTsKICAgIHJldHVybiB7IC4uLnJlc3VsdCwgbWV0cmljcywgY29udGludWVDb2xsZWN0aW9uIH07Cn0KCi8vIEltcG9ydGluZyB0aGUgbW9kdWxlIGZvciBvZmZsaW5lIHRlc3RzIG5ldmVyIHN0YXJ0cyBuZXR3b3JrIGNvbGxlY3Rpb24uCmlmIChyZXF1aXJlLm1haW4gPT09IG1vZHVsZSkgewogICAgLy8gVGhlIHdvcmtmbG93IHB1c2hlcyBpdHMgYWN0aXZlIHJlcXVlc3Qgc2Vzc2lvbiBiZWZvcmUgc3RhcnRpbmcuIFJlZnVzZQogICAgLy8gYW4gYWNjaWRlbnRhbCB1bnRyYWNrZWQgQ0xJIGNvbGxlY3Rpb247IHRlc3RzIHVzZSB0aGUgaW5qZWN0ZWQgbWFpbigpLgogICAgY29uc3QgcnVuID0gcHJvY2Vzcy5lbnYuTUVUQV9SRVNFUlZBVElPTl9JRAogICAgICAgID8gbWFpbigpCiAgICAgICAgOiBQcm9taXNlLnJlamVjdChuZXcgRXJyb3IoJ1J1biB0aHJvdWdoIHRoZSB3b3JrZmxvdyB3aXRoIGEgY29tbWl0dGVkIHJlcXVlc3QgcmVzZXJ2YXRpb24nKSk7CiAgICBydW4udGhlbihyZXN1bHQgPT4gewogICAgICAgIGNvbnNvbGUubG9nKGBNZXRhZGF0YSBjb2xsZWN0aW9uIHJlc3VsdDogJHtyZXN1bHQuc3RhdHVzfSR7cmVzdWx0LnJlYXNvbiA/IGAgKCR7cmVzdWx0LnJlYXNvbn0pYCA6ICcnfWApOwogICAgICAgIGlmIChwcm9jZXNzLmVudi5HSVRIVUJfT1VUUFVUKSB7CiAgICAgICAgICAgIGZzLmFwcGVuZEZpbGVTeW5jKHByb2Nlc3MuZW52LkdJVEhVQl9PVVRQVVQsIGBjb250aW51ZV9jb2xsZWN0aW9uPSR7cmVzdWx0LmNvbnRpbnVlQ29sbGVjdGlvbiA9PT0gdHJ1ZX1cbmApOwogICAgICAgIH0KICAgICAgICBpZiAocmVzdWx0LmZhaWxlZCB8fCByZXN1bHQuc3RhdHVzID09PSAnZmFpbGVkJykgcHJvY2Vzcy5leGl0Q29kZSA9IDE7CiAgICB9KS5jYXRjaChlcnJvciA9PiB7CiAgICAgICAgY29uc29sZS5lcnJvcignTWV0YWRhdGEgc2NyYXBlciBmYWlsZWQ6JywgZXJyb3IpOwogICAgICAgIHByb2Nlc3MuZXhpdENvZGUgPSAxOwogICAgfSk7Cn0KCm1vZHVsZS5leHBvcnRzID0gewogICAgREVGQVVMVF9SVU5fQ0FQLCBERUZBVUxUX01BWF9SVU5fTVMsIFJFRlJFU0hfREFZUywgQUNUSVZFX1dJTkRPV19EQVlTLCBVTkFWQUlMQUJMRV9SRVRSWV9EQVlTLAogICAgcmVzaXplZEltYWdlLCBwYXJzZUl0ZW1Kc29uLCBidWlsZFJlY29yZCwgZmV0Y2hJdGVtTWV0YSwgcmVhZEFjdGl2aXR5LAogICAgYnVpbGRXb3JrTGlzdCwgc2F2ZU1ldGEsIHNhdmVVbmF2YWlsYWJsZSwgbWFpbgp9Owo=
+const axios = require('axios');
+const fs = require('fs');
+const path = require('path');
+
+const {
+    CollectionStop, createRequestClient, getStopTargetTime, jstDate, writeJson
+} = require('./collection-runtime');
+const { shouldContinueMeta } = require('./meta-continuation');
+
+// Item metadata (name, shop, thumbnail, tags, category, wish-list count) is
+// collected by a SEPARATE job from the price scraper on purpose: the daily
+// price cycle keeps its efficiency, and this job spends its own small,
+// separately reserved request budget under meta/. The two jobs write to
+// disjoint directories (data/ vs meta/) so their pushes never conflict.
+//
+// Source of truth per item: BOOTH's own item JSON, https://booth.pm/ja/items/<id>.json
+// It carries everything the HTML page renders client-side (tags, category
+// breadcrumbs, and the wish-list count shown as the heart number), so one
+// request per item is enough and no HTML parsing is needed.
+
+const DATA_DIR = path.join(__dirname, '..', 'data');
+const META_DIR = path.join(__dirname, '..', 'meta');
+const DEFAULT_RUN_CAP = 10000; // items per run; the daily reservation is the hard ceiling
+const REFRESH_DAYS = 14; // quiet items: re-fetch metadata older than this
+const ACTIVE_WINDOW_DAYS = 14; // items with price activity inside this window are "hot"
+const UNAVAILABLE_RETRY_DAYS = 30; // deleted items are re-checked monthly, not daily
+const LIKES_HISTORY_CAP = 120; // snapshots kept per item
+const BATCH_SIZE = 5;
+// Same envelope as the price scraper: one run may collect for up to five
+// hours (the runtime's MAX_EXECUTION_TIME_MS), inside a 305-minute step.
+// Stopping ourselves at 270 minutes still leaves room for client.finish()
+// — which completes the durable request reservation — and for the save
+// step to push what was collected. A hard kill by the step timeout would
+// strand an unresolved reservation in the ledger and block every later
+// run, so the run must always end gracefully.
+const DEFAULT_MAX_RUN_MS = 270 * 60 * 1000;
+
+const validId = id => typeof id === 'string' && /^[1-9]\d*$/.test(id);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const shardOf = id => id.substring(0, 3);
+
+function daysBefore(dateStr, days) {
+    const time = Date.parse(`${dateStr}T00:00:00Z`);
+    if (!Number.isFinite(time)) throw new Error(`Invalid JST date: ${dateStr}`);
+    return new Date(time - days * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+}
+
+// pximg originals look like https://booth.pximg.net/<uuid>/i/<id>/<file>;
+// the 620px display variant inserts c/620x620/ after the host. Anything that
+// does not match that exact shape keeps the original URL.
+function resizedImage(url) {
+    if (typeof url !== 'string') return '';
+    const match = url.match(/^https:\/\/booth\.pximg\.net\/([0-9a-f-]{36}\/i\/\d+\/.+)$/);
+    return match ? `https://booth.pximg.net/c/620x620/${match[1]}` : url;
+}
+
+function parseItemJson(productId, data) {
+    if (!data || typeof data !== 'object' || Array.isArray(data)) {
+        throw new Error('Unrecognized item JSON');
+    }
+    if (String(data.id) !== String(productId)) {
+        throw new Error(`Item JSON id mismatch: expected ${productId}, got ${data.id}`);
+    }
+    const name = typeof data.name === 'string' ? data.name.trim() : '';
+    if (!name) throw new Error('Item JSON is missing a name');
+    const shop = data.shop && typeof data.shop === 'object' ? {
+        name: typeof data.shop.name === 'string' ? data.shop.name : '',
+        subdomain: typeof data.shop.subdomain === 'string' ? data.shop.subdomain : '',
+        url: typeof data.shop.url === 'string' ? data.shop.url : ''
+    } : null;
+    const firstImage = Array.isArray(data.images) && data.images[0] && typeof data.images[0] === 'object'
+        ? data.images[0] : null;
+    const image = firstImage && typeof firstImage.original === 'string' ? firstImage.original : '';
+    const tags = Array.isArray(data.tags)
+        ? data.tags.map(tag => tag && typeof tag.name === 'string' ? tag.name : '').filter(Boolean)
+        : [];
+    const category = data.category && typeof data.category === 'object' ? {
+        id: Number.isSafeInteger(data.category.id) ? data.category.id : null,
+        name: typeof data.category.name === 'string' ? data.category.name : '',
+        parent: data.category.parent && typeof data.category.parent.name === 'string'
+            ? data.category.parent.name : ''
+    } : null;
+    const likes = Number.isSafeInteger(data.wish_lists_count) && data.wish_lists_count >= 0
+        ? data.wish_lists_count : null;
+    return {
+        id: String(productId),
+        name,
+        shop,
+        image,
+        image_resized: resizedImage(image),
+        tags,
+        category,
+        likes,
+        adult: data.is_adult === true,
+        sold_out: data.is_sold_out === true,
+        end_of_sale: data.is_end_of_sale === true,
+        published_at: typeof data.published_at === 'string' ? data.published_at : null
+    };
+}
+
+function buildRecord(parsed, { today, previous = null } = {}) {
+    const history = Array.isArray(previous?.likes_history)
+        ? previous.likes_history.filter(entry => entry && typeof entry.date === 'string' &&
+            /^\d{4}-\d{2}-\d{2}$/.test(entry.date) && Number.isSafeInteger(entry.count) && entry.count >= 0)
+        : [];
+    if (parsed.likes !== null) {
+        const entry = { date: today, count: parsed.likes };
+        const index = history.findIndex(e => e.date === today);
+        if (index >= 0) history[index] = entry;
+        else history.push(entry);
+        history.sort((a, b) => a.date.localeCompare(b.date));
+    }
+    return { ...parsed, likes_history: history.slice(-LIKES_HISTORY_CAP), fetched_at: today };
+}
+
+async function fetchItemMeta(productId, client) {
+    const url = `https://booth.pm/ja/items/${productId}.json`;
+    try {
+        const response = await client.get(url, { productId: String(productId) });
+        if (response.status === 404 || response.status === 410) {
+            return { kind: 'unavailable', id: productId, status: response.status };
+        }
+        if (response.status !== 200) throw new Error(`Item JSON returned HTTP ${response.status}`);
+        const data = typeof response.data === 'string' ? JSON.parse(response.data) : response.data;
+        return { kind: 'success', meta: parseItemJson(productId, data) };
+    } catch (error) {
+        // The request client already turns 404/410 into responses, but an
+        // injected transport (tests, future clients) may reject instead.
+        const status = error?.response?.status;
+        if (status === 404 || status === 410) return { kind: 'unavailable', id: productId, status };
+        return { kind: 'failure', error };
+    }
+}
+
+function metaFilePath(metaDir, id) {
+    return path.join(metaDir, shardOf(id), `${id}.json`);
+}
+
+function readPreviousMeta(metaDir, id) {
+    try {
+        const parsed = JSON.parse(fs.readFileSync(metaFilePath(metaDir, id), 'utf8'));
+        return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : null;
+    } catch {
+        // Metadata is fully regenerable from BOOTH, so an unreadable file is
+        // treated as missing and simply collected again (unlike price history).
+        return null;
+    }
+}
+
+function listProductIds(dataDir) {
+    if (!fs.existsSync(dataDir)) return [];
+    const ids = [];
+    for (const shard of fs.readdirSync(dataDir)) {
+        if (!/^\d{3}$/.test(shard)) continue;
+        const dir = path.join(dataDir, shard);
+        if (!fs.statSync(dir).isDirectory()) continue;
+        for (const file of fs.readdirSync(dir)) {
+            const match = file.match(/^([1-9]\d*)\.json$/);
+            if (match) ids.push(match[1]);
+        }
+    }
+    return ids;
+}
+
+// "Hot" items are the ones that can plausibly surface on the site's
+// featured/trending surfaces, so they get a fresh likes snapshot every day
+// (likes_history is date-keyed, exactly like price history: one point per
+// day is the matching resolution). Activity is read from the price data
+// itself: on sale at the latest observation, a price change inside the
+// window, or first tracked inside the window. Histories in data/ are stored
+// date-sorted, so first/last entries are the bounds.
+function readActivity(dataDir, id, cutoff) {
+    try {
+        const parsed = JSON.parse(fs.readFileSync(path.join(dataDir, shardOf(id), `${id}.json`), 'utf8'));
+        const histories = parsed && parsed.variations && typeof parsed.variations === 'object'
+            ? Object.values(parsed.variations) : [];
+        for (const history of histories) {
+            if (!Array.isArray(history) || !history.length) continue;
+            const first = history[0];
+            const last = history[history.length - 1];
+            if (typeof first?.date === 'string' && first.date >= cutoff) return true; // newly tracked
+            if (last?.is_sale === true && typeof last.date === 'string' && last.date >= cutoff) return true;
+            for (let i = 1; i < history.length; i++) {
+                const entry = history[i];
+                if (typeof entry?.date === 'string' && entry.date >= cutoff &&
+                    entry.price !== history[i - 1].price) return true;
+            }
+        }
+        return false;
+    } catch {
+        return false;
+    }
+}
+
+function buildWorkList({ dataDir, metaDir, today, runCap = DEFAULT_RUN_CAP,
+    refreshDays = REFRESH_DAYS, unavailableRetryDays = UNAVAILABLE_RETRY_DAYS,
+    activeWindowDays = ACTIVE_WINDOW_DAYS } = {}) {
+    const refreshCutoff = daysBefore(today, refreshDays);
+    const unavailableCutoff = daysBefore(today, unavailableRetryDays);
+    const activeCutoff = daysBefore(today, activeWindowDays);
+    const missing = [];
+    const hot = [];
+    const stale = [];
+    for (const id of listProductIds(dataDir)) {
+        const previous = readPreviousMeta(metaDir, id);
+        if (!previous) {
+            missing.push({ id, previous: null });
+            continue;
+        }
+        const fetchedAt = typeof previous.fetched_at === 'string' ? previous.fetched_at : '';
+        if (previous.unavailable === true) {
+            if (!fetchedAt || fetchedAt <= unavailableCutoff) stale.push({ id, previous, fetchedAt });
+            continue;
+        }
+        if (fetchedAt >= today) continue; // already collected today
+        if (readActivity(dataDir, id, activeCutoff)) {
+            hot.push({ id, previous, fetchedAt });
+        } else if (!fetchedAt || fetchedAt <= refreshCutoff) {
+            stale.push({ id, previous, fetchedAt });
+        }
+    }
+    // New items first (higher IDs are newer discoveries), then hot items
+    // (stalest snapshot first) for the daily likes delta, then the quiet
+    // refresh cycle so it still reaches everything evenly.
+    missing.sort((a, b) => Number(b.id) - Number(a.id));
+    hot.sort((a, b) => a.fetchedAt.localeCompare(b.fetchedAt) || Number(b.id) - Number(a.id));
+    stale.sort((a, b) => a.fetchedAt.localeCompare(b.fetchedAt) || Number(a.id) - Number(b.id));
+    return [...missing, ...hot, ...stale].slice(0, runCap);
+}
+
+function saveMeta(parsed, { metaDir, today, previous = null }) {
+    const record = buildRecord(parsed, { today, previous });
+    writeJson(metaFilePath(metaDir, parsed.id), record);
+    return record;
+}
+
+function saveUnavailable(id, status, { metaDir, today }) {
+    writeJson(metaFilePath(metaDir, id), { id: String(id), unavailable: true, status, fetched_at: today });
+}
+
+async function main({
+    dataDir = DATA_DIR, metaDir = META_DIR, runCap = DEFAULT_RUN_CAP,
+    maxRunMs = DEFAULT_MAX_RUN_MS,
+    get = axios.get, fetchMeta = fetchItemMeta, now = Date.now, wait = sleep,
+    client: suppliedClient, jobStartedAt = process.env.META_JOB_STARTED_AT,
+    reservationId = process.env.META_RESERVATION_ID,
+    log = console.log, logError = console.error
+} = {}) {
+    const startedAt = now();
+    const deadline = Math.min(
+        getStopTargetTime(startedAt, jobStartedAt ?? startedAt).getTime(),
+        startedAt + maxRunMs);
+    const today = jstDate(startedAt);
+    const work = buildWorkList({ dataDir, metaDir, today, runCap });
+    fs.mkdirSync(metaDir, { recursive: true });
+    const client = suppliedClient || createRequestClient({
+        get, budgetFile: path.join(metaDir, 'request_budget.json'), deadline, now, wait, reservationId
+    });
+    const metrics = { planned: work.length, success: 0, unavailable: 0, failures: 0 };
+    let haltError;
+
+    function check() {
+        if (haltError) throw haltError;
+        if (now() >= deadline) throw new CollectionStop('deadline', 'Collection time budget reached');
+        client.check?.();
+    }
+    async function pause(ms) {
+        check();
+        if (now() + ms >= deadline) throw new CollectionStop('deadline', 'Not enough collection time for metadata delay');
+        await wait(ms);
+        check();
+    }
+
+    let result;
+    let finalBudget;
+    try {
+        for (let index = 0; index < work.length; index += BATCH_SIZE) {
+            check();
+            const batch = work.slice(index, index + BATCH_SIZE);
+            const outcomes = await Promise.all(batch.map(async entry => {
+                try {
+                    check();
+                    const outcome = await fetchMeta(entry.id, client);
+                    if (outcome?.kind === 'success') {
+                        saveMeta(outcome.meta, { metaDir, today, previous: entry.previous });
+                        return 'success';
+                    }
+                    if (outcome?.kind === 'unavailable') {
+                        saveUnavailable(entry.id, outcome.status, { metaDir, today });
+                        return 'unavailable';
+                    }
+                    throw outcome?.error || new Error('Invalid metadata outcome');
+                } catch (error) {
+                    if (error instanceof CollectionStop || haltError) {
+                        if (!haltError) haltError = error;
+                        return 'stopped';
+                    }
+                    logError(`Item ${entry.id}: ${error.message}`);
+                    return 'failure';
+                }
+            }));
+            for (const outcome of outcomes) {
+                if (outcome === 'success') metrics.success++;
+                else if (outcome === 'unavailable') metrics.unavailable++;
+                else if (outcome === 'failure') metrics.failures++;
+            }
+            if (haltError) throw haltError;
+            if (index + BATCH_SIZE < work.length) await pause(1000);
+        }
+        result = { status: metrics.failures ? 'partial' : 'completed', failed: metrics.failures > 0 };
+    } catch (error) {
+        haltError = haltError || error;
+        logError(error.message);
+        result = error instanceof CollectionStop
+            ? { status: error.failed ? 'partial' : 'paused', reason: error.reason, failed: error.failed }
+            : { status: 'failed', reason: 'storage', failed: true };
+    } finally {
+        try {
+            writeJson(path.join(metaDir, 'meta_state.json'), {
+                last_run_at: new Date(now()).toISOString(),
+                last_run_date: today,
+                status: result?.status ?? 'unknown',
+                planned: metrics.planned,
+                success: metrics.success,
+                unavailable: metrics.unavailable,
+                failures: metrics.failures,
+                charged_http_attempts: client.getAttemptCount?.() ?? null
+            });
+        } catch (error) {
+            logError(`Cannot save metadata run state: ${error.message}`);
+        }
+        try { finalBudget = client.getBudget?.(); } catch { /* Continuation defaults to off. */ }
+        try { client.finish?.(); }
+        catch (error) { logError(`Cannot finish request budget: ${error.message}`); }
+    }
+    metrics.processed = metrics.success + metrics.unavailable + metrics.failures;
+    metrics.chargedHttpAttempts = client.getAttemptCount?.() ?? 0;
+    const continueCollection = shouldContinueMeta({
+        result, metrics, startedAt, stoppedAt: now(), deadline,
+        blockedUntil: finalBudget?.blockedUntil ?? 0,
+        capReached: work.length >= runCap
+    });
+    log(`Metadata collection ${result.status}; planned ${metrics.planned}, saved ${metrics.success}, ` +
+        `unavailable ${metrics.unavailable}, failures ${metrics.failures}` +
+        (continueCollection ? '; continuation requested' : ''));
+    return { ...result, metrics, continueCollection };
+}
+
+// Importing the module for offline tests never starts network collection.
+if (require.main === module) {
+    // The workflow pushes its active request session before starting. Refuse
+    // an accidental untracked CLI collection; tests use the injected main().
+    const run = process.env.META_RESERVATION_ID
+        ? main()
+        : Promise.reject(new Error('Run through the workflow with a committed request reservation'));
+    run.then(result => {
+        console.log(`Metadata collection result: ${result.status}${result.reason ? ` (${result.reason})` : ''}`);
+        if (process.env.GITHUB_OUTPUT) {
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, `continue_collection=${result.continueCollection === true}\n`);
+        }
+        if (result.failed || result.status === 'failed') process.exitCode = 1;
+    }).catch(error => {
+        console.error('Metadata scraper failed:', error);
+        process.exitCode = 1;
+    });
+}
+
+module.exports = {
+    DEFAULT_RUN_CAP, DEFAULT_MAX_RUN_MS, REFRESH_DAYS, ACTIVE_WINDOW_DAYS, UNAVAILABLE_RETRY_DAYS,
+    resizedImage, parseItemJson, buildRecord, fetchItemMeta, readActivity,
+    buildWorkList, saveMeta, saveUnavailable, main
+};

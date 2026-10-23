@@ -1,1 +1,27 @@
-Y29uc3QgcGF0aCA9IHJlcXVpcmUoJ25vZGU6cGF0aCcpOwpjb25zdCB7IHJlc2VydmVEYWlseUFsbG93YW5jZSB9ID0gcmVxdWlyZSgnLi9jb2xsZWN0aW9uLXJ1bnRpbWUnKTsKCi8vIFRoZSBtZXRhZGF0YSBqb2Iga2VlcHMgaXRzIE9XTiByZXF1ZXN0IGxlZGdlciB1bmRlciBtZXRhLy4gU2hhcmluZyB0aGUKLy8gcHJpY2Ugc2NyYXBlcidzIGRhdGEvcmVxdWVzdF9idWRnZXQuanNvbiB3b3VsZCBsZXQgdHdvIHdvcmtmbG93cyByZXNlcnZlCi8vIGFnYWluc3Qgb25lIGZpbGUgKGl0cyBwdXNoIHNjcmlwdCByaWdodGx5IHJlZnVzZXMgdG8gbWVyZ2UgYSBjaGFuZ2VkCi8vIGxlZGdlciksIGFuZCBCT09USC1mYWNpbmcgcG9saXRlbmVzcyBuZWVkcyB0aGUgY29tYmluZWQgdm9sdW1lIHZpc2libGUKLy8gcGVyIGpvYiwgbm90IGhpZGRlbiBpbnNpZGUgdGhlIHByaWNlIGNyYXdsJ3MgYWNjb3VudGluZy4KaWYgKHJlcXVpcmUubWFpbiA9PT0gbW9kdWxlKSB7CiAgICB0cnkgewogICAgICAgIGlmICghcHJvY2Vzcy5lbnYuTUVUQV9SRVNFUlZBVElPTl9JRCkgdGhyb3cgbmV3IEVycm9yKCdNRVRBX1JFU0VSVkFUSU9OX0lEIGlzIHJlcXVpcmVkJyk7CiAgICAgICAgY29uc3QgZGFpbHlMaW1pdCA9IHByb2Nlc3MuZW52Lk1FVEFfREFJTFlfTElNSVQgPT09IHVuZGVmaW5lZAogICAgICAgICAgICA/IDEyMDAwIDogTnVtYmVyKHByb2Nlc3MuZW52Lk1FVEFfREFJTFlfTElNSVQpOwogICAgICAgIGlmICghTnVtYmVyLmlzU2FmZUludGVnZXIoZGFpbHlMaW1pdCkgfHwgZGFpbHlMaW1pdCA8IDApIHsKICAgICAgICAgICAgdGhyb3cgbmV3IEVycm9yKCdNRVRBX0RBSUxZX0xJTUlUIG11c3QgYmUgYSBub24tbmVnYXRpdmUgaW50ZWdlcicpOwogICAgICAgIH0KICAgICAgICBjb25zdCByZXNlcnZhdGlvbiA9IHJlc2VydmVEYWlseUFsbG93YW5jZSh7CiAgICAgICAgICAgIGJ1ZGdldEZpbGU6IHBhdGguam9pbihfX2Rpcm5hbWUsICcuLicsICdtZXRhJywgJ3JlcXVlc3RfYnVkZ2V0Lmpzb24nKSwKICAgICAgICAgICAgcmVzZXJ2YXRpb25JZDogcHJvY2Vzcy5lbnYuTUVUQV9SRVNFUlZBVElPTl9JRCwKICAgICAgICAgICAgZGFpbHlMaW1pdAogICAgICAgIH0pOwogICAgICAgIGNvbnNvbGUubG9nKGBSZXNlcnZlZCBhdCBtb3N0ICR7cmVzZXJ2YXRpb24ubGltaXR9IGl0ZW0tbWV0YWRhdGEgcmVxdWVzdHMgZm9yIHRoaXMgcnVuLCBpbmNsdWRpbmcgcmV0cmllcyBhbmQgcmVkaXJlY3RzLmApOwogICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgICBjb25zb2xlLmVycm9yKGBDYW5ub3QgcmVzZXJ2ZSBtZXRhZGF0YSByZXF1ZXN0IGJ1ZGdldDogJHtlcnJvci5tZXNzYWdlfWApOwogICAgICAgIHByb2Nlc3MuZXhpdENvZGUgPSAxOwogICAgfQp9Cg==
+const path = require('node:path');
+const { reserveDailyAllowance } = require('./collection-runtime');
+
+// The metadata job keeps its OWN request ledger under meta/. Sharing the
+// price scraper's data/request_budget.json would let two workflows reserve
+// against one file (its push script rightly refuses to merge a changed
+// ledger), and BOOTH-facing politeness needs the combined volume visible
+// per job, not hidden inside the price crawl's accounting.
+if (require.main === module) {
+    try {
+        if (!process.env.META_RESERVATION_ID) throw new Error('META_RESERVATION_ID is required');
+        const dailyLimit = process.env.META_DAILY_LIMIT === undefined
+            ? 12000 : Number(process.env.META_DAILY_LIMIT);
+        if (!Number.isSafeInteger(dailyLimit) || dailyLimit < 0) {
+            throw new Error('META_DAILY_LIMIT must be a non-negative integer');
+        }
+        const reservation = reserveDailyAllowance({
+            budgetFile: path.join(__dirname, '..', 'meta', 'request_budget.json'),
+            reservationId: process.env.META_RESERVATION_ID,
+            dailyLimit
+        });
+        console.log(`Reserved at most ${reservation.limit} item-metadata requests for this run, including retries and redirects.`);
+    } catch (error) {
+        console.error(`Cannot reserve metadata request budget: ${error.message}`);
+        process.exitCode = 1;
+    }
+}

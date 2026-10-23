@@ -1,1 +1,232 @@
-Y29uc3QgYXNzZXJ0ID0gcmVxdWlyZSgnbm9kZTphc3NlcnQvc3RyaWN0Jyk7CmNvbnN0IHsgZXhlY0ZpbGVTeW5jLCBzcGF3blN5bmMgfSA9IHJlcXVpcmUoJ25vZGU6Y2hpbGRfcHJvY2VzcycpOwpjb25zdCBmcyA9IHJlcXVpcmUoJ25vZGU6ZnMnKTsKY29uc3Qgb3MgPSByZXF1aXJlKCdub2RlOm9zJyk7CmNvbnN0IHBhdGggPSByZXF1aXJlKCdub2RlOnBhdGgnKTsKY29uc3QgeyBwYXRoVG9GaWxlVVJMIH0gPSByZXF1aXJlKCdub2RlOnVybCcpOwpjb25zdCB0ZXN0ID0gcmVxdWlyZSgnbm9kZTp0ZXN0Jyk7CgovLyBNaXJyb3JzIHRlc3Qvd29ya2Zsb3cudGVzdC5qcyAodGhlIHByaWNlIHBpcGVsaW5lKSBmb3IgdGhlIG1ldGFkYXRhIGpvYiwgc28KLy8gYm90aCBwaXBlbGluZXMgYXJlIGhlbGQgdG8gdGhlIHNhbWUgc3RhbmRhcmQ6IGR1cmFibGUgcmVzZXJ2YXRpb24gZmlyc3QsCi8vIG1ldGEtb25seSBjb21taXRzLCByZWJhc2UgcmVwbGF5IG92ZXIgYW4gYWR2YW5jaW5nIHVwc3RyZWFtLCBhIGhhcmQgcmVmdXNhbAovLyB0byBtZXJnZSBzdGFsZSBidWRnZXQgYWNjb3VudGluZywgYW5kIGJvdW5kZWQgcHVzaCByZXRyaWVzLgoKY29uc3Qgd29ya2Zsb3cgPSBmcy5yZWFkRmlsZVN5bmMocGF0aC5qb2luKF9fZGlybmFtZSwgJy4uLy5naXRodWIvd29ya2Zsb3dzL21ldGFfc2NyYXBlLnltbCcpLCAndXRmOCcpOwpjb25zdCBwdXNoU2NyaXB0UGF0aCA9IHBhdGguam9pbihfX2Rpcm5hbWUsICcuLi9zY3JpcHRzL3B1c2gtbWV0YS5zaCcpOwpjb25zdCBwdXNoU2NyaXB0ID0gZnMucmVhZEZpbGVTeW5jKHB1c2hTY3JpcHRQYXRoLCAndXRmOCcpOwoKZnVuY3Rpb24gc3RlcChuYW1lKSB7CiAgICBjb25zdCBzdGFydCA9IHdvcmtmbG93LmluZGV4T2YoYCAgICAgIC0gbmFtZTogJHtuYW1lfVxuYCk7CiAgICBhc3NlcnQubm90RXF1YWwoc3RhcnQsIC0xLCBgTWlzc2luZyB3b3JrZmxvdyBzdGVwOiAke25hbWV9YCk7CiAgICBjb25zdCBlbmQgPSB3b3JrZmxvdy5pbmRleE9mKCdcbiAgICAgIC0gbmFtZTonLCBzdGFydCArIDEpOwogICAgcmV0dXJuIHdvcmtmbG93LnNsaWNlKHN0YXJ0LCBlbmQgPT09IC0xID8gdW5kZWZpbmVkIDogZW5kKTsKfQoKZnVuY3Rpb24gc2NyaXB0KG5hbWUpIHsKICAgIGNvbnN0IGxpbmVzID0gc3RlcChuYW1lKS5zcGxpdCgnXG4nKTsKICAgIGNvbnN0IHN0YXJ0ID0gbGluZXMuaW5kZXhPZignICAgICAgICBydW46IHwnKTsKICAgIGFzc2VydC5ub3RFcXVhbChzdGFydCwgLTEsIGBNaXNzaW5nIHNoZWxsIHNjcmlwdDogJHtuYW1lfWApOwogICAgcmV0dXJuIGxpbmVzLnNsaWNlKHN0YXJ0ICsgMSkubWFwKChsaW5lKSA9PiBsaW5lLnJlcGxhY2UoL14gICAgICAgICAgLywgJycpKS5qb2luKCdcbicpOwp9Cgpjb25zdCBnaXRFbnYgPSB7CiAgICAuLi5wcm9jZXNzLmVudiwKICAgIEdJVF9DT05GSUdfTk9TWVNURU06ICcxJywKICAgIEdJVF9DT05GSUdfR0xPQkFMOiBvcy5kZXZOdWxsLAogICAgR0lUX1RFUk1JTkFMX1BST01QVDogJzAnLAp9OwoKZnVuY3Rpb24gZ2l0KGN3ZCwgLi4uYXJncykgewogICAgcmV0dXJuIGV4ZWNGaWxlU3luYygnZ2l0JywgYXJncywgeyBjd2QsIGVudjogZ2l0RW52LCBlbmNvZGluZzogJ3V0ZjgnLCBzdGRpbzogWydpZ25vcmUnLCAncGlwZScsICdwaXBlJ10gfSkudHJpbSgpOwp9CgpmdW5jdGlvbiB3cml0ZShjd2QsIGZpbGUsIHZhbHVlKSB7CiAgICBjb25zdCBkZXN0aW5hdGlvbiA9IHBhdGguam9pbihjd2QsIGZpbGUpOwogICAgZnMubWtkaXJTeW5jKHBhdGguZGlybmFtZShkZXN0aW5hdGlvbiksIHsgcmVjdXJzaXZlOiB0cnVlIH0pOwogICAgZnMud3JpdGVGaWxlU3luYyhkZXN0aW5hdGlvbiwgdmFsdWUpOwp9CgpmdW5jdGlvbiBjb21taXQoY3dkLCBtZXNzYWdlKSB7CiAgICBnaXQoY3dkLCAnYWRkJywgJy4nKTsKICAgIGdpdChjd2QsICdjb21taXQnLCAnLW0nLCBtZXNzYWdlKTsKfQoKZnVuY3Rpb24gZml4dHVyZSh0LCBicmFuY2ggPSAnbWFpbicpIHsKICAgIGNvbnN0IHJvb3QgPSBmcy5ta2R0ZW1wU3luYyhwYXRoLmpvaW4ob3MudG1wZGlyKCksICdib29wYS1tZXRhLXdvcmtmbG93LScpKTsKICAgIHQuYWZ0ZXIoKCkgPT4gZnMucm1TeW5jKHJvb3QsIHsgcmVjdXJzaXZlOiB0cnVlLCBmb3JjZTogdHJ1ZSB9KSk7CiAgICBjb25zdCByZW1vdGUgPSBwYXRoLmpvaW4ocm9vdCwgJ3JlbW90ZS5naXQnKTsKICAgIGNvbnN0IHNlZWQgPSBwYXRoLmpvaW4ocm9vdCwgJ3NlZWQnKTsKICAgIGNvbnN0IHdvcmtlciA9IHBhdGguam9pbihyb290LCAnd29ya2VyJyk7CiAgICBnaXQocm9vdCwgJ2luaXQnLCAnLS1iYXJlJywgJy0taW5pdGlhbC1icmFuY2g9bWFpbicsIHJlbW90ZSk7CiAgICBnaXQocm9vdCwgJ2luaXQnLCAnLS1pbml0aWFsLWJyYW5jaD1tYWluJywgc2VlZCk7CiAgICBnaXQoc2VlZCwgJ2NvbmZpZycsICd1c2VyLm5hbWUnLCAnV29ya2Zsb3cgVGVzdCcpOwogICAgZ2l0KHNlZWQsICdjb25maWcnLCAndXNlci5lbWFpbCcsICd3b3JrZmxvd0BleGFtcGxlLmludmFsaWQnKTsKICAgIHdyaXRlKHNlZWQsICdtZXRhLzc5MS83OTE4MzA4Lmpzb24nLCAneyJpZCI6Ijc5MTgzMDgifVxuJyk7CiAgICB3cml0ZShzZWVkLCAnUkVBRE1FLm1kJywgJ29yaWdpbmFsXG4nKTsKICAgIGNvbW1pdChzZWVkLCAnSW5pdGlhbCBtZXRhZGF0YScpOwogICAgd3JpdGUoc2VlZCwgJ2hpc3RvcnkudHh0JywgJ09sZGVyIGhpc3Rvcnkgc2hvdWxkIG5vdCBiZSBmZXRjaGVkXG4nKTsKICAgIGNvbW1pdChzZWVkLCAnT2xkZXIgaGlzdG9yeScpOwogICAgaWYgKGJyYW5jaCAhPT0gJ21haW4nKSBnaXQoc2VlZCwgJ2NoZWNrb3V0JywgJy1iJywgYnJhbmNoKTsKICAgIGdpdChzZWVkLCAncmVtb3RlJywgJ2FkZCcsICdvcmlnaW4nLCBwYXRoVG9GaWxlVVJMKHJlbW90ZSkuaHJlZik7CiAgICBnaXQoc2VlZCwgJ3B1c2gnLCAnb3JpZ2luJywgLi4ubmV3IFNldChbJ21haW4nLCBicmFuY2hdKSk7CiAgICBnaXQocm9vdCwgJ2Nsb25lJywgJy0tZGVwdGg9MScsICctLWJyYW5jaCcsIGJyYW5jaCwgcGF0aFRvRmlsZVVSTChyZW1vdGUpLmhyZWYsIHdvcmtlcik7CiAgICBhc3NlcnQuZXF1YWwoZ2l0KHdvcmtlciwgJ3Jldi1wYXJzZScsICctLWlzLXNoYWxsb3ctcmVwb3NpdG9yeScpLCAndHJ1ZScpOwogICAgLy8gUmV0cnkgYmFja29mZiBzbGVlcHMgbXVzdCBub3Qgc2xvdyB0aGUgc3VpdGUgZG93bi4KICAgIGNvbnN0IHN0dWJCaW4gPSBwYXRoLmpvaW4ocm9vdCwgJ2JpbicpOwogICAgZnMubWtkaXJTeW5jKHN0dWJCaW4pOwogICAgZnMud3JpdGVGaWxlU3luYyhwYXRoLmpvaW4oc3R1YkJpbiwgJ3NsZWVwJyksICcjIS9iaW4vc2hcbmV4aXQgMFxuJyk7CiAgICBmcy5jaG1vZFN5bmMocGF0aC5qb2luKHN0dWJCaW4sICdzbGVlcCcpLCAwbzc1NSk7CiAgICByZXR1cm4geyByb290LCByZW1vdGUsIHNlZWQsIHdvcmtlciwgYnJhbmNoLCBzdHViQmluIH07Cn0KCmZ1bmN0aW9uIHJ1blNhdmUoZiwgbWVzc2FnZSkgewogICAgcmV0dXJuIHNwYXduU3luYygnYmFzaCcsIFtwdXNoU2NyaXB0UGF0aCwgLi4uKG1lc3NhZ2UgPyBbbWVzc2FnZV0gOiBbXSldLCB7CiAgICAgICAgY3dkOiBmLndvcmtlciwKICAgICAgICBlbnY6IHsKICAgICAgICAgICAgLi4uZ2l0RW52LAogICAgICAgICAgICBQQVRIOiBgJHtmLnN0dWJCaW59OiR7cHJvY2Vzcy5lbnYuUEFUSH1gLAogICAgICAgICAgICBHSVRIVUJfUkVGOiBgcmVmcy9oZWFkcy8ke2YuYnJhbmNofWAsCiAgICAgICAgICAgIERFRkFVTFRfQlJBTkNIOiAnbWFpbicsCiAgICAgICAgfSwKICAgICAgICBlbmNvZGluZzogJ3V0ZjgnLAogICAgICAgIHRpbWVvdXQ6IDMwMDAwLAogICAgfSk7Cn0KCmZ1bmN0aW9uIGFzc2VydFN1Y2Nlc3MocmVzdWx0KSB7CiAgICBhc3NlcnQuZXF1YWwocmVzdWx0LmVycm9yLCB1bmRlZmluZWQpOwogICAgYXNzZXJ0LmVxdWFsKHJlc3VsdC5zdGF0dXMsIDAsIGAke3Jlc3VsdC5zdGRvdXR9XG4ke3Jlc3VsdC5zdGRlcnJ9YCk7Cn0KCnRlc3QoJ21ldGFkYXRhIHdvcmtmbG93IG1pcnJvcnMgdGhlIHByaWNlIHdvcmtmbG93IGRpc2NpcGxpbmUnLCAoKSA9PiB7CiAgICBhc3NlcnQubWF0Y2god29ya2Zsb3csIC9uYW1lOiBNZXRhZGF0YSBTY3JhcGUvKTsKICAgIGFzc2VydC5tYXRjaCh3b3JrZmxvdywgL2Nyb246ICczNSAxOSBcKiBcKiBcKicvKTsKICAgIGFzc2VydC5tYXRjaCh3b3JrZmxvdywgL2dyb3VwOiBtZXRhLXNjcmFwZS1ncm91cFxzK2NhbmNlbC1pbi1wcm9ncmVzczogZmFsc2UvKTsKICAgIGFzc2VydC5tYXRjaCh3b3JrZmxvdywgLyAgICB0aW1lb3V0LW1pbnV0ZXM6IDM2MFxuLyk7CiAgICBhc3NlcnQubWF0Y2god29ya2Zsb3csIC9NRVRBX1JFU0VSVkFUSU9OX0lEOiBcJFx7XHsgZ2l0aHViXC5ydW5faWQgXH1cfS1cJFx7XHsgZ2l0aHViXC5ydW5fYXR0ZW1wdCBcfVx9Lyk7CiAgICBhc3NlcnQubWF0Y2goc3RlcCgnUmVjb3JkIGpvYiBzdGFydCcpLCAvTUVUQV9KT0JfU1RBUlRFRF9BVD0uKkdJVEhVQl9FTlYvKTsKICAgIGFzc2VydC5tYXRjaChzdGVwKCdSZWNvcmQgam9iIHN0YXJ0JyksIC9HSVRIVUJfUkVGLipyZWZzXC9oZWFkc1wvXCRERUZBVUxUX0JSQU5DSC8pOwogICAgYXNzZXJ0Lm9rKHdvcmtmbG93LmluZGV4T2YoJy0gbmFtZTogUmVjb3JkIGpvYiBzdGFydCcpIDwgd29ya2Zsb3cuaW5kZXhPZignLSBuYW1lOiBDaGVja291dCcpKTsKICAgIGFzc2VydC5vayh3b3JrZmxvdy5pbmRleE9mKCctIG5hbWU6IFJ1biB0ZXN0cycpIDwgd29ya2Zsb3cuaW5kZXhPZignLSBuYW1lOiBSZXNlcnZlIHJlcXVlc3QgYnVkZ2V0JykpOwogICAgYXNzZXJ0Lm9rKHdvcmtmbG93LmluZGV4T2YoJy0gbmFtZTogUmVzZXJ2ZSByZXF1ZXN0IGJ1ZGdldCcpIDwgd29ya2Zsb3cuaW5kZXhPZignLSBuYW1lOiBDb21taXQgcmVzZXJ2YXRpb24nKSk7CiAgICBhc3NlcnQub2sod29ya2Zsb3cuaW5kZXhPZignLSBuYW1lOiBDb21taXQgcmVzZXJ2YXRpb24nKSA8IHdvcmtmbG93LmluZGV4T2YoJy0gbmFtZTogUnVuIG1ldGFkYXRhIHNjcmFwZXInKSk7CiAgICBhc3NlcnQubWF0Y2goc3RlcCgnUnVuIHRlc3RzJyksIC9ydW46IG5wbSB0ZXN0Lyk7CiAgICBhc3NlcnQubWF0Y2goc3RlcCgnUmVzZXJ2ZSByZXF1ZXN0IGJ1ZGdldCcpLCAvcnVuOiBub2RlIHNyY1wvcmVzZXJ2ZS1tZXRhLWJ1ZGdldFwuanMvKTsKICAgIGFzc2VydC5tYXRjaChzY3JpcHQoJ0NvbW1pdCByZXNlcnZhdGlvbicpLCAvYmFzaCBzY3JpcHRzXC9wdXNoLW1ldGFcLnNoICJjaG9yZTogcmVzZXJ2ZSBtZXRhZGF0YSByZXF1ZXN0IGJ1ZGdldCIvKTsKICAgIGFzc2VydC5kb2VzTm90TWF0Y2goc3RlcCgnUmVzZXJ2ZSByZXF1ZXN0IGJ1ZGdldCcpICsgc3RlcCgnQ29tbWl0IHJlc2VydmF0aW9uJyksIC9jb250aW51ZS1vbi1lcnJvcnxpZjovKTsKICAgIGFzc2VydC5tYXRjaChzdGVwKCdSdW4gbWV0YWRhdGEgc2NyYXBlcicpLCAvaWQ6IG1ldGEvKTsKICAgIGFzc2VydC5tYXRjaChzdGVwKCdSdW4gbWV0YWRhdGEgc2NyYXBlcicpLCAvdGltZW91dC1taW51dGVzOiAzMDUvKTsKICAgIGFzc2VydC5tYXRjaChzdGVwKCdSdW4gbWV0YWRhdGEgc2NyYXBlcicpLCAvY29udGludWUtb24tZXJyb3I6IHRydWUvKTsKICAgIGFzc2VydC5tYXRjaChzdGVwKCdDb21taXQgYW5kIFB1c2gnKSwgLyFjYW5jZWxsZWRcKFwpLipzdGVwc1wubWV0YVwub3V0Y29tZSA9PSAnc3VjY2VzcycuKnN0ZXBzXC5tZXRhXC5vdXRjb21lID09ICdmYWlsdXJlJy8pOwogICAgYXNzZXJ0Lm1hdGNoKHN0ZXAoJ0NvbW1pdCBhbmQgUHVzaCcpLCAvcnVuOiBiYXNoIHNjcmlwdHNcL3B1c2gtbWV0YVwuc2gvKTsKICAgIGFzc2VydC5tYXRjaChzdGVwKCdSZXBvcnQgbWV0YWRhdGEgc2NyYXBlciBmYWlsdXJlJyksIC9hbHdheXNcKFwpLipzdGVwc1wubWV0YVwub3V0Y29tZSA9PSAnZmFpbHVyZScvKTsKICAgIGFzc2VydC5tYXRjaChzY3JpcHQoJ1JlcG9ydCBtZXRhZGF0YSBzY3JhcGVyIGZhaWx1cmUnKSwgL2V4aXQgMS8pOwogICAgYXNzZXJ0LmRvZXNOb3RNYXRjaChwdXNoU2NyaXB0LCAvKD86LS1mb3JjZXxnaXQgcHVsbHwtLXVuc2hhbGxvdykvKTsKICAgIGFzc2VydC5tYXRjaChwdXNoU2NyaXB0LCAvZm9yIGF0dGVtcHQgaW4gMSAyIDMgNCA1IDYvKTsKfSk7Cgp0ZXN0KCdtZXRhZGF0YSB3b3JrZmxvdyBjaGFpbnMgY29udGludWF0aW9ucyBsaWtlIHRoZSBwcmljZSB3b3JrZmxvdycsICgpID0+IHsKICAgIGFzc2VydC5tYXRjaCh3b3JrZmxvdywgL3JlcG9zaXRvcnlfZGlzcGF0Y2g6XHMrdHlwZXM6IFxbY29udGludWUtbWV0YVxdLyk7CiAgICBhc3NlcnQub2sod29ya2Zsb3cuaW5kZXhPZignLSBuYW1lOiBSZXBvcnQgbWV0YWRhdGEgc2NyYXBlciBmYWlsdXJlJykgPAogICAgICAgIHdvcmtmbG93LmluZGV4T2YoJy0gbmFtZTogQ29udGludWUgY29sbGVjdGlvbicpKTsKICAgIGNvbnN0IGNvbnRpbnVhdGlvbiA9IHN0ZXAoJ0NvbnRpbnVlIGNvbGxlY3Rpb24nKTsKICAgIGFzc2VydC5tYXRjaChjb250aW51YXRpb24sIC9zdWNjZXNzXChcKS4qc3RlcHNcLm1ldGFcLm91dGNvbWUgPT0gJ3N1Y2Nlc3MnLipzdGVwc1wuc2F2ZVwub3V0Y29tZSA9PSAnc3VjY2VzcycuKnN0ZXBzXC5tZXRhXC5vdXRwdXRzXC5jb250aW51ZV9jb2xsZWN0aW9uID09ICd0cnVlJy8pOwogICAgYXNzZXJ0Lm1hdGNoKGNvbnRpbnVhdGlvbiwgL3J1bjogbm9kZSBzcmNcL21ldGEtY29udGludWF0aW9uXC5qcy8pOwogICAgYXNzZXJ0Lm1hdGNoKGNvbnRpbnVhdGlvbiwgL0dJVEhVQl9UT0tFTjogXCRce1x7IGdpdGh1YlwudG9rZW4gXH1cfS8pOwogICAgYXNzZXJ0Lm1hdGNoKHdvcmtmbG93LCAvcGVybWlzc2lvbnM6XHMrY29udGVudHM6IHdyaXRlLyk7CiAgICBhc3NlcnQuZG9lc05vdE1hdGNoKHdvcmtmbG93LCAvYWN0aW9uczogd3JpdGV8c2VjcmV0c1wuLyk7Cn0pOwoKdGVzdCgndW5jaGFuZ2VkIG1ldGFkYXRhIGV4aXRzIHN1Y2Nlc3NmdWxseSB3aXRob3V0IG1ha2luZyBhIGNvbW1pdCcsICh0KSA9PiB7CiAgICBjb25zdCBmID0gZml4dHVyZSh0KTsKICAgIGNvbnN0IGJlZm9yZSA9IGdpdChmLnJlbW90ZSwgJ3Jldi1wYXJzZScsICdtYWluJyk7CiAgICBjb25zdCByZXN1bHQgPSBydW5TYXZlKGYpOwogICAgYXNzZXJ0U3VjY2VzcyhyZXN1bHQpOwogICAgYXNzZXJ0Lm1hdGNoKHJlc3VsdC5zdGRvdXQsIC9ObyBtZXRhZGF0YSBvciBjaGVja3BvaW50IGNoYW5nZXMvKTsKICAgIGFzc2VydC5lcXVhbChnaXQoZi5yZW1vdGUsICdyZXYtcGFyc2UnLCAnbWFpbicpLCBiZWZvcmUpOwogICAgYXNzZXJ0LmVxdWFsKGdpdChmLndvcmtlciwgJ3Jldi1wYXJzZScsICdIRUFEJyksIGJlZm9yZSk7Cn0pOwoKdGVzdCgnc2F2ZXMgb25seSBtZXRhZGF0YSwgZXhjbHVkaW5nIHVucmVsYXRlZCBzdGFnZWQgZmlsZXMnLCAodCkgPT4gewogICAgY29uc3QgZiA9IGZpeHR1cmUodCk7CiAgICB3cml0ZShmLndvcmtlciwgJ21ldGEvNzkxLzc5MTgzMDguanNvbicsICd7ImlkIjoiNzkxODMwOCIsImxpa2VzIjozOX1cbicpOwogICAgd3JpdGUoZi53b3JrZXIsICdtZXRhL21ldGFfc3RhdGUuanNvbicsICd7InN0YXR1cyI6ImNvbXBsZXRlZCJ9XG4nKTsKICAgIHdyaXRlKGYud29ya2VyLCAnUkVBRE1FLm1kJywgJ3VucmVsYXRlZCBzdGFnZWQgY2hhbmdlXG4nKTsKICAgIGdpdChmLndvcmtlciwgJ2FkZCcsICdSRUFETUUubWQnKTsKICAgIGFzc2VydFN1Y2Nlc3MocnVuU2F2ZShmKSk7CiAgICBhc3NlcnQuZXF1YWwoZ2l0KGYucmVtb3RlLCAnc2hvdycsICdtYWluOm1ldGEvNzkxLzc5MTgzMDguanNvbicpLCAneyJpZCI6Ijc5MTgzMDgiLCJsaWtlcyI6Mzl9Jyk7CiAgICBhc3NlcnQuZXF1YWwoZ2l0KGYucmVtb3RlLCAnc2hvdycsICdtYWluOm1ldGEvbWV0YV9zdGF0ZS5qc29uJyksICd7InN0YXR1cyI6ImNvbXBsZXRlZCJ9Jyk7CiAgICBhc3NlcnQuZXF1YWwoZ2l0KGYucmVtb3RlLCAnc2hvdycsICdtYWluOlJFQURNRS5tZCcpLCAnb3JpZ2luYWwnKTsKfSk7Cgp0ZXN0KCd0aGUgcHVzaCBzY3JpcHQgcmVmdXNlcyBub24tZGVmYXVsdCBicmFuY2hlcyBldmVuIG91dHNpZGUgdGhlIHdvcmtmbG93JywgKHQpID0+IHsKICAgIGNvbnN0IGYgPSBmaXh0dXJlKHQsICd0ZXN0L21ldGEnKTsKICAgIGNvbnN0IG1haW4gPSBnaXQoZi5yZW1vdGUsICdyZXYtcGFyc2UnLCAnbWFpbicpOwogICAgY29uc3QgYnJhbmNoID0gZ2l0KGYucmVtb3RlLCAncmV2LXBhcnNlJywgZi5icmFuY2gpOwogICAgd3JpdGUoZi53b3JrZXIsICdtZXRhL3JlcXVlc3RfYnVkZ2V0Lmpzb24nLCAneyJyZXNlcnZlZCI6MTIwMDB9XG4nKTsKICAgIGNvbnN0IHJlc3VsdCA9IHJ1blNhdmUoZik7CiAgICBhc3NlcnQuZXF1YWwocmVzdWx0LnN0YXR1cywgMSk7CiAgICBhc3NlcnQubWF0Y2gocmVzdWx0LnN0ZG91dCwgL211c3QgdXNlIHRoZSByZXBvc2l0b3J5J3MgZGVmYXVsdCBicmFuY2gvKTsKICAgIGFzc2VydC5lcXVhbChnaXQoZi5yZW1vdGUsICdyZXYtcGFyc2UnLCAnbWFpbicpLCBtYWluKTsKICAgIGFzc2VydC5lcXVhbChnaXQoZi5yZW1vdGUsICdyZXYtcGFyc2UnLCBmLmJyYW5jaCksIGJyYW5jaCk7Cn0pOwoKdGVzdCgnYSByZXNlcnZhdGlvbiBpcyBkdXJhYmxlIGJlZm9yZSBzdWJzZXF1ZW50IGNvbGxlY3Rpb24gcmVzdWx0cyBhcmUgc2F2ZWQnLCAodCkgPT4gewogICAgY29uc3QgZiA9IGZpeHR1cmUodCk7CiAgICB3cml0ZShmLndvcmtlciwgJ21ldGEvcmVxdWVzdF9idWRnZXQuanNvbicsICd7InJlc2VydmVkIjoxMjAwMH1cbicpOwogICAgYXNzZXJ0U3VjY2VzcyhydW5TYXZlKGYsICdjaG9yZTogcmVzZXJ2ZSBtZXRhZGF0YSByZXF1ZXN0IGJ1ZGdldCcpKTsKICAgIGNvbnN0IHJlc2VydmF0aW9uID0gZ2l0KGYucmVtb3RlLCAncmV2LXBhcnNlJywgJ21haW4nKTsKICAgIGFzc2VydC5lcXVhbChnaXQoZi5yZW1vdGUsICdzaG93JywgJ21haW46bWV0YS9yZXF1ZXN0X2J1ZGdldC5qc29uJyksICd7InJlc2VydmVkIjoxMjAwMH0nKTsKICAgIGFzc2VydC5lcXVhbChnaXQoZi5yZW1vdGUsICdsb2cnLCAnLTEnLCAnLS1mb3JtYXQ9JXMnLCAnbWFpbicpLCAnY2hvcmU6IHJlc2VydmUgbWV0YWRhdGEgcmVxdWVzdCBidWRnZXQnKTsKICAgIHdyaXRlKGYud29ya2VyLCAnbWV0YS83OTEvNzkxODMwOC5qc29uJywgJ3siaWQiOiI3OTE4MzA4IiwibGlrZXMiOjM5fVxuJyk7CiAgICB3cml0ZShmLndvcmtlciwgJ21ldGEvcmVxdWVzdF9idWRnZXQuanNvbicsICd7InJlc2VydmVkIjoxMjAwMCwiYXR0ZW1wdHMiOjV9XG4nKTsKICAgIGFzc2VydFN1Y2Nlc3MocnVuU2F2ZShmKSk7CiAgICBhc3NlcnQuZXF1YWwoZ2l0KGYucmVtb3RlLCAncmV2LXBhcnNlJywgJ21haW5eJyksIHJlc2VydmF0aW9uKTsKICAgIGFzc2VydC5lcXVhbChnaXQoZi5yZW1vdGUsICdzaG93JywgJ21haW46bWV0YS83OTEvNzkxODMwOC5qc29uJyksICd7ImlkIjoiNzkxODMwOCIsImxpa2VzIjozOX0nKTsKfSk7Cgp0ZXN0KCdyZXBsYXlzIHRoZSBzaW5nbGUgbWV0YSBjb21taXQgYWZ0ZXIgdXBzdHJlYW0gYWR2YW5jZXMgYmV5b25kIHNoYWxsb3cgaGlzdG9yeScsICh0KSA9PiB7CiAgICBjb25zdCBmID0gZml4dHVyZSh0KTsKICAgIHdyaXRlKGYud29ya2VyLCAnbWV0YS83OTEvNzkxODMwOC5qc29uJywgJ3siaWQiOiI3OTE4MzA4IiwibGlrZXMiOjM5fVxuJyk7CiAgICBmb3IgKGxldCBpbmRleCA9IDA7IGluZGV4IDwgMzsgaW5kZXgrKykgewogICAgICAgIHdyaXRlKGYuc2VlZCwgJ1JFQURNRS5tZCcsIGB1cHN0cmVhbSAke2luZGV4fVxuYCk7CiAgICAgICAgY29tbWl0KGYuc2VlZCwgYFVwc3RyZWFtIHVwZGF0ZSAke2luZGV4fWApOwogICAgfQogICAgZ2l0KGYuc2VlZCwgJ3B1c2gnLCAnb3JpZ2luJywgJ21haW4nKTsKICAgIGNvbnN0IHVwc3RyZWFtID0gZ2l0KGYucmVtb3RlLCAncmV2LXBhcnNlJywgJ21haW4nKTsKICAgIGFzc2VydFN1Y2Nlc3MocnVuU2F2ZShmKSk7CiAgICBhc3NlcnQuZXF1YWwoZ2l0KGYucmVtb3RlLCAncmV2LXBhcnNlJywgJ21haW5eJyksIHVwc3RyZWFtKTsKICAgIGFzc2VydC5lcXVhbChnaXQoZi5yZW1vdGUsICdzaG93JywgJ21haW46bWV0YS83OTEvNzkxODMwOC5qc29uJyksICd7ImlkIjoiNzkxODMwOCIsImxpa2VzIjozOX0nKTsKICAgIGFzc2VydC5lcXVhbChnaXQoZi5yZW1vdGUsICdzaG93JywgJ21haW46UkVBRE1FLm1kJyksICd1cHN0cmVhbSAyJyk7Cn0pOwoKdGVzdCgndXBzdHJlYW0gYnVkZ2V0LWxlZGdlciBjaGFuZ2VzIGNhbm5vdCBiZSBtZXJnZWQgd2l0aCBzdGFsZSBhY2NvdW50aW5nJywgKHQpID0+IHsKICAgIGNvbnN0IGYgPSBmaXh0dXJlKHQpOwogICAgd3JpdGUoZi5zZWVkLCAnbWV0YS9yZXF1ZXN0X2J1ZGdldC5qc29uJywgJ3sicmVzZXJ2ZWQiOjk5OTksInVwc3RyZWFtIjp0cnVlfVxuJyk7CiAgICBjb21taXQoZi5zZWVkLCAnVXBzdHJlYW0gbGVkZ2VyJyk7CiAgICBnaXQoZi5zZWVkLCAncHVzaCcsICdvcmlnaW4nLCAnbWFpbicpOwogICAgY29uc3QgdXBzdHJlYW0gPSBnaXQoZi5yZW1vdGUsICdyZXYtcGFyc2UnLCAnbWFpbicpOwogICAgd3JpdGUoZi53b3JrZXIsICdtZXRhL3JlcXVlc3RfYnVkZ2V0Lmpzb24nLCAneyJyZXNlcnZlZCI6MTIwMDB9XG4nKTsKICAgIHdyaXRlKGYud29ya2VyLCAnbWV0YS83OTEvNzkxODMwOC5qc29uJywgJ3siaWQiOiI3OTE4MzA4IiwibGlrZXMiOjM5fVxuJyk7CiAgICBjb25zdCByZXN1bHQgPSBydW5TYXZlKGYpOwogICAgYXNzZXJ0LmVxdWFsKHJlc3VsdC5zdGF0dXMsIDEpOwogICAgYXNzZXJ0Lm1hdGNoKHJlc3VsdC5zdGRvdXQsIC9yZWZ1c2luZyB0byBtZXJnZSBzdGFsZSByZXNlcnZhdGlvbiBhY2NvdW50aW5nLyk7CiAgICBhc3NlcnQuZXF1YWwoZ2l0KGYucmVtb3RlLCAncmV2LXBhcnNlJywgJ21haW4nKSwgdXBzdHJlYW0pOwogICAgYXNzZXJ0LmVxdWFsKGdpdChmLnJlbW90ZSwgJ3Nob3cnLCAnbWFpbjptZXRhL3JlcXVlc3RfYnVkZ2V0Lmpzb24nKSwgJ3sicmVzZXJ2ZWQiOjk5OTksInVwc3RyZWFtIjp0cnVlfScpOwp9KTsKCnRlc3QoJ3BlcnNpc3RlbnQgcHVzaCByZWplY3Rpb24gZmFpbHMgYWZ0ZXIgc2l4IGF0dGVtcHRzIGFuZCBrZWVwcyB0aGUgcmVzZXJ2YXRpb24gZHVyYWJsZScsICh0KSA9PiB7CiAgICBjb25zdCBmID0gZml4dHVyZSh0KTsKICAgIHdyaXRlKGYud29ya2VyLCAnbWV0YS9yZXF1ZXN0X2J1ZGdldC5qc29uJywgJ3sicmVzZXJ2ZWQiOjEyMDAwfVxuJyk7CiAgICBhc3NlcnRTdWNjZXNzKHJ1blNhdmUoZiwgJ2Nob3JlOiByZXNlcnZlIG1ldGFkYXRhIHJlcXVlc3QgYnVkZ2V0JykpOwogICAgY29uc3QgcmVzZXJ2YXRpb24gPSBnaXQoZi5yZW1vdGUsICdyZXYtcGFyc2UnLCAnbWFpbicpOwogICAgd3JpdGUoZi53b3JrZXIsICdtZXRhLzc5MS83OTE4MzA4Lmpzb24nLCAneyJpZCI6Ijc5MTgzMDgiLCJsaWtlcyI6Mzl9XG4nKTsKICAgIGNvbnN0IGhvb2sgPSBwYXRoLmpvaW4oZi5yZW1vdGUsICdob29rcy9wcmUtcmVjZWl2ZScpOwogICAgZnMud3JpdGVGaWxlU3luYyhob29rLCAnIyEvYmluL3NoXG5leGl0IDFcbicpOwogICAgZnMuY2htb2RTeW5jKGhvb2ssIDBvNzU1KTsKICAgIGNvbnN0IHJlc3VsdCA9IHJ1blNhdmUoZik7CiAgICBhc3NlcnQuZXF1YWwocmVzdWx0LnN0YXR1cywgMSk7CiAgICBhc3NlcnQubWF0Y2gocmVzdWx0LnN0ZG91dCwgL2FmdGVyIHNpeCBhdHRlbXB0cy8pOwogICAgYXNzZXJ0LmVxdWFsKGdpdChmLnJlbW90ZSwgJ3Jldi1wYXJzZScsICdtYWluJyksIHJlc2VydmF0aW9uKTsKICAgIGFzc2VydC5lcXVhbChnaXQoZi5yZW1vdGUsICdzaG93JywgJ21haW46bWV0YS83OTEvNzkxODMwOC5qc29uJyksICd7ImlkIjoiNzkxODMwOCJ9Jyk7Cn0pOwo=
+const assert = require('node:assert/strict');
+const { execFileSync, spawnSync } = require('node:child_process');
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
+const { pathToFileURL } = require('node:url');
+const test = require('node:test');
+
+// Mirrors test/workflow.test.js (the price pipeline) for the metadata job, so
+// both pipelines are held to the same standard: durable reservation first,
+// meta-only commits, rebase replay over an advancing upstream, a hard refusal
+// to merge stale budget accounting, and bounded push retries.
+
+const workflow = fs.readFileSync(path.join(__dirname, '../.github/workflows/meta_scrape.yml'), 'utf8');
+const pushScriptPath = path.join(__dirname, '../scripts/push-meta.sh');
+const pushScript = fs.readFileSync(pushScriptPath, 'utf8');
+
+function step(name) {
+    const start = workflow.indexOf(`      - name: ${name}\n`);
+    assert.notEqual(start, -1, `Missing workflow step: ${name}`);
+    const end = workflow.indexOf('\n      - name:', start + 1);
+    return workflow.slice(start, end === -1 ? undefined : end);
+}
+
+function script(name) {
+    const lines = step(name).split('\n');
+    const start = lines.indexOf('        run: |');
+    assert.notEqual(start, -1, `Missing shell script: ${name}`);
+    return lines.slice(start + 1).map((line) => line.replace(/^          /, '')).join('\n');
+}
+
+const gitEnv = {
+    ...process.env,
+    GIT_CONFIG_NOSYSTEM: '1',
+    GIT_CONFIG_GLOBAL: os.devNull,
+    GIT_TERMINAL_PROMPT: '0',
+};
+
+function git(cwd, ...args) {
+    return execFileSync('git', args, { cwd, env: gitEnv, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
+}
+
+function write(cwd, file, value) {
+    const destination = path.join(cwd, file);
+    fs.mkdirSync(path.dirname(destination), { recursive: true });
+    fs.writeFileSync(destination, value);
+}
+
+function commit(cwd, message) {
+    git(cwd, 'add', '.');
+    git(cwd, 'commit', '-m', message);
+}
+
+function fixture(t, branch = 'main') {
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), 'boopa-meta-workflow-'));
+    t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+    const remote = path.join(root, 'remote.git');
+    const seed = path.join(root, 'seed');
+    const worker = path.join(root, 'worker');
+    git(root, 'init', '--bare', '--initial-branch=main', remote);
+    git(root, 'init', '--initial-branch=main', seed);
+    git(seed, 'config', 'user.name', 'Workflow Test');
+    git(seed, 'config', 'user.email', 'workflow@example.invalid');
+    write(seed, 'meta/791/7918308.json', '{"id":"7918308"}\n');
+    write(seed, 'README.md', 'original\n');
+    commit(seed, 'Initial metadata');
+    write(seed, 'history.txt', 'Older history should not be fetched\n');
+    commit(seed, 'Older history');
+    if (branch !== 'main') git(seed, 'checkout', '-b', branch);
+    git(seed, 'remote', 'add', 'origin', pathToFileURL(remote).href);
+    git(seed, 'push', 'origin', ...new Set(['main', branch]));
+    git(root, 'clone', '--depth=1', '--branch', branch, pathToFileURL(remote).href, worker);
+    assert.equal(git(worker, 'rev-parse', '--is-shallow-repository'), 'true');
+    // Retry backoff sleeps must not slow the suite down.
+    const stubBin = path.join(root, 'bin');
+    fs.mkdirSync(stubBin);
+    fs.writeFileSync(path.join(stubBin, 'sleep'), '#!/bin/sh\nexit 0\n');
+    fs.chmodSync(path.join(stubBin, 'sleep'), 0o755);
+    return { root, remote, seed, worker, branch, stubBin };
+}
+
+function runSave(f, message) {
+    return spawnSync('bash', [pushScriptPath, ...(message ? [message] : [])], {
+        cwd: f.worker,
+        env: {
+            ...gitEnv,
+            PATH: `${f.stubBin}:${process.env.PATH}`,
+            GITHUB_REF: `refs/heads/${f.branch}`,
+            DEFAULT_BRANCH: 'main',
+        },
+        encoding: 'utf8',
+        timeout: 30000,
+    });
+}
+
+function assertSuccess(result) {
+    assert.equal(result.error, undefined);
+    assert.equal(result.status, 0, `${result.stdout}\n${result.stderr}`);
+}
+
+test('metadata workflow mirrors the price workflow discipline', () => {
+    assert.match(workflow, /name: Metadata Scrape/);
+    assert.match(workflow, /cron: '35 19 \* \* \*'/);
+    assert.match(workflow, /group: meta-scrape-group\s+cancel-in-progress: false/);
+    assert.match(workflow, /    timeout-minutes: 360\n/);
+    assert.match(workflow, /META_RESERVATION_ID: \$\{\{ github\.run_id \}\}-\$\{\{ github\.run_attempt \}\}/);
+    assert.match(step('Record job start'), /META_JOB_STARTED_AT=.*GITHUB_ENV/);
+    assert.match(step('Record job start'), /GITHUB_REF.*refs\/heads\/\$DEFAULT_BRANCH/);
+    assert.ok(workflow.indexOf('- name: Record job start') < workflow.indexOf('- name: Checkout'));
+    assert.ok(workflow.indexOf('- name: Run tests') < workflow.indexOf('- name: Reserve request budget'));
+    assert.ok(workflow.indexOf('- name: Reserve request budget') < workflow.indexOf('- name: Commit reservation'));
+    assert.ok(workflow.indexOf('- name: Commit reservation') < workflow.indexOf('- name: Run metadata scraper'));
+    assert.match(step('Run tests'), /run: npm test/);
+    assert.match(step('Reserve request budget'), /run: node src\/reserve-meta-budget\.js/);
+    assert.match(script('Commit reservation'), /bash scripts\/push-meta\.sh "chore: reserve metadata request budget"/);
+    assert.doesNotMatch(step('Reserve request budget') + step('Commit reservation'), /continue-on-error|if:/);
+    assert.match(step('Run metadata scraper'), /id: meta/);
+    assert.match(step('Run metadata scraper'), /timeout-minutes: 305/);
+    assert.match(step('Run metadata scraper'), /continue-on-error: true/);
+    assert.match(step('Commit and Push'), /!cancelled\(\).*steps\.meta\.outcome == 'success'.*steps\.meta\.outcome == 'failure'/);
+    assert.match(step('Commit and Push'), /run: bash scripts\/push-meta\.sh/);
+    assert.match(step('Report metadata scraper failure'), /always\(\).*steps\.meta\.outcome == 'failure'/);
+    assert.match(script('Report metadata scraper failure'), /exit 1/);
+    assert.doesNotMatch(pushScript, /(?:--force|git pull|--unshallow)/);
+    assert.match(pushScript, /for attempt in 1 2 3 4 5 6/);
+});
+
+test('metadata workflow chains continuations like the price workflow', () => {
+    assert.match(workflow, /repository_dispatch:\s+types: \[continue-meta\]/);
+    assert.ok(workflow.indexOf('- name: Report metadata scraper failure') <
+        workflow.indexOf('- name: Continue collection'));
+    const continuation = step('Continue collection');
+    assert.match(continuation, /success\(\).*steps\.meta\.outcome == 'success'.*steps\.save\.outcome == 'success'.*steps\.meta\.outputs\.continue_collection == 'true'/);
+    assert.match(continuation, /run: node src\/meta-continuation\.js/);
+    assert.match(continuation, /GITHUB_TOKEN: \$\{\{ github\.token \}\}/);
+    assert.match(workflow, /permissions:\s+contents: write/);
+    assert.doesNotMatch(workflow, /actions: write|secrets\./);
+});
+
+test('unchanged metadata exits successfully without making a commit', (t) => {
+    const f = fixture(t);
+    const before = git(f.remote, 'rev-parse', 'main');
+    const result = runSave(f);
+    assertSuccess(result);
+    assert.match(result.stdout, /No metadata or checkpoint changes/);
+    assert.equal(git(f.remote, 'rev-parse', 'main'), before);
+    assert.equal(git(f.worker, 'rev-parse', 'HEAD'), before);
+});
+
+test('saves only metadata, excluding unrelated staged files', (t) => {
+    const f = fixture(t);
+    write(f.worker, 'meta/791/7918308.json', '{"id":"7918308","likes":39}\n');
+    write(f.worker, 'meta/meta_state.json', '{"status":"completed"}\n');
+    write(f.worker, 'README.md', 'unrelated staged change\n');
+    git(f.worker, 'add', 'README.md');
+    assertSuccess(runSave(f));
+    assert.equal(git(f.remote, 'show', 'main:meta/791/7918308.json'), '{"id":"7918308","likes":39}');
+    assert.equal(git(f.remote, 'show', 'main:meta/meta_state.json'), '{"status":"completed"}');
+    assert.equal(git(f.remote, 'show', 'main:README.md'), 'original');
+});
+
+test('the push script refuses non-default branches even outside the workflow', (t) => {
+    const f = fixture(t, 'test/meta');
+    const main = git(f.remote, 'rev-parse', 'main');
+    const branch = git(f.remote, 'rev-parse', f.branch);
+    write(f.worker, 'meta/request_budget.json', '{"reserved":12000}\n');
+    const result = runSave(f);
+    assert.equal(result.status, 1);
+    assert.match(result.stdout, /must use the repository's default branch/);
+    assert.equal(git(f.remote, 'rev-parse', 'main'), main);
+    assert.equal(git(f.remote, 'rev-parse', f.branch), branch);
+});
+
+test('a reservation is durable before subsequent collection results are saved', (t) => {
+    const f = fixture(t);
+    write(f.worker, 'meta/request_budget.json', '{"reserved":12000}\n');
+    assertSuccess(runSave(f, 'chore: reserve metadata request budget'));
+    const reservation = git(f.remote, 'rev-parse', 'main');
+    assert.equal(git(f.remote, 'show', 'main:meta/request_budget.json'), '{"reserved":12000}');
+    assert.equal(git(f.remote, 'log', '-1', '--format=%s', 'main'), 'chore: reserve metadata request budget');
+    write(f.worker, 'meta/791/7918308.json', '{"id":"7918308","likes":39}\n');
+    write(f.worker, 'meta/request_budget.json', '{"reserved":12000,"attempts":5}\n');
+    assertSuccess(runSave(f));
+    assert.equal(git(f.remote, 'rev-parse', 'main^'), reservation);
+    assert.equal(git(f.remote, 'show', 'main:meta/791/7918308.json'), '{"id":"7918308","likes":39}');
+});
+
+test('replays the single meta commit after upstream advances beyond shallow history', (t) => {
+    const f = fixture(t);
+    write(f.worker, 'meta/791/7918308.json', '{"id":"7918308","likes":39}\n');
+    for (let index = 0; index < 3; index++) {
+        write(f.seed, 'README.md', `upstream ${index}\n`);
+        commit(f.seed, `Upstream update ${index}`);
+    }
+    git(f.seed, 'push', 'origin', 'main');
+    const upstream = git(f.remote, 'rev-parse', 'main');
+    assertSuccess(runSave(f));
+    assert.equal(git(f.remote, 'rev-parse', 'main^'), upstream);
+    assert.equal(git(f.remote, 'show', 'main:meta/791/7918308.json'), '{"id":"7918308","likes":39}');
+    assert.equal(git(f.remote, 'show', 'main:README.md'), 'upstream 2');
+});
+
+test('upstream budget-ledger changes cannot be merged with stale accounting', (t) => {
+    const f = fixture(t);
+    write(f.seed, 'meta/request_budget.json', '{"reserved":9999,"upstream":true}\n');
+    commit(f.seed, 'Upstream ledger');
+    git(f.seed, 'push', 'origin', 'main');
+    const upstream = git(f.remote, 'rev-parse', 'main');
+    write(f.worker, 'meta/request_budget.json', '{"reserved":12000}\n');
+    write(f.worker, 'meta/791/7918308.json', '{"id":"7918308","likes":39}\n');
+    const result = runSave(f);
+    assert.equal(result.status, 1);
+    assert.match(result.stdout, /refusing to merge stale reservation accounting/);
+    assert.equal(git(f.remote, 'rev-parse', 'main'), upstream);
+    assert.equal(git(f.remote, 'show', 'main:meta/request_budget.json'), '{"reserved":9999,"upstream":true}');
+});
+
+test('persistent push rejection fails after six attempts and keeps the reservation durable', (t) => {
+    const f = fixture(t);
+    write(f.worker, 'meta/request_budget.json', '{"reserved":12000}\n');
+    assertSuccess(runSave(f, 'chore: reserve metadata request budget'));
+    const reservation = git(f.remote, 'rev-parse', 'main');
+    write(f.worker, 'meta/791/7918308.json', '{"id":"7918308","likes":39}\n');
+    const hook = path.join(f.remote, 'hooks/pre-receive');
+    fs.writeFileSync(hook, '#!/bin/sh\nexit 1\n');
+    fs.chmodSync(hook, 0o755);
+    const result = runSave(f);
+    assert.equal(result.status, 1);
+    assert.match(result.stdout, /after six attempts/);
+    assert.equal(git(f.remote, 'rev-parse', 'main'), reservation);
+    assert.equal(git(f.remote, 'show', 'main:meta/791/7918308.json'), '{"id":"7918308"}');
+});
