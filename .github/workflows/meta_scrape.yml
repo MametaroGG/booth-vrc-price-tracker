@@ -12,7 +12,7 @@ concurrency:
 jobs:
   meta:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 360
     env:
       TZ: Asia/Tokyo
       DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
@@ -64,7 +64,7 @@ jobs:
 
       - name: Run metadata scraper
         id: meta
-        timeout-minutes: 180
+        timeout-minutes: 305
         continue-on-error: true
         run: node src/meta-scraper.js
 
