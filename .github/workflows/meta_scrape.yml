@@ -1,0 +1,82 @@
+name: Metadata Scrape
+
+on:
+  schedule:
+    - cron: '35 19 * * *' # JST 04:35; staggered away from the price runs (JST 00:00, 06:00, 12:00, 18:00)
+  workflow_dispatch:
+
+concurrency:
+  group: meta-scrape-group
+  cancel-in-progress: false
+
+jobs:
+  meta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      TZ: Asia/Tokyo
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+      META_RESERVATION_ID: ${{ github.run_id }}-${{ github.run_attempt }}
+    permissions:
+      contents: write
+    steps:
+      - name: Record job start
+        timeout-minutes: 1
+        run: |
+          echo "META_JOB_STARTED_AT=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_ENV"
+          # All runs share the same durable request session and cooldown state.
+          if [[ -z "$DEFAULT_BRANCH" || "$GITHUB_REF" != "refs/heads/$DEFAULT_BRANCH" ]]; then
+            echo "::error::Metadata scraping is only allowed on the repository's default branch."
+            exit 1
+          fi
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        timeout-minutes: 20
+        with:
+          fetch-depth: 1
+          # A queued run's event SHA may predate the preceding reservation.
+          ref: ${{ env.DEFAULT_BRANCH }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        timeout-minutes: 5
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        timeout-minutes: 5
+        run: npm ci
+
+      - name: Run tests
+        timeout-minutes: 5
+        run: npm test
+
+      - name: Reserve request budget
+        timeout-minutes: 1
+        run: node src/reserve-meta-budget.js
+
+      - name: Commit reservation
+        timeout-minutes: 5
+        # No BOOTH request is permitted until this durable reservation is pushed.
+        run: |
+          bash scripts/push-meta.sh "chore: reserve metadata request budget"
+
+      - name: Run metadata scraper
+        id: meta
+        timeout-minutes: 180
+        continue-on-error: true
+        run: node src/meta-scraper.js
+
+      - name: Commit and Push
+        id: save
+        if: ${{ !cancelled() && (steps.meta.outcome == 'success' || steps.meta.outcome == 'failure') }}
+        timeout-minutes: 10
+        run: bash scripts/push-meta.sh
+
+      - name: Report metadata scraper failure
+        if: ${{ always() && steps.meta.outcome == 'failure' }}
+        timeout-minutes: 1
+        run: |
+          echo "::error::Metadata scraper failed. Saving any completed metadata and checkpoints was attempted above."
+          exit 1
