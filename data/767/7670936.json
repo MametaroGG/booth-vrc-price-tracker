@@ -822,10 +822,23 @@
         "date": "2026-10-23",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-24",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "法人利用ライセンス": [
+      {
+        "date": "2026-10-24",
+        "price": 8000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12848372": "default"
+    "12848372": "default",
+    "15083030": "法人利用ライセンス"
   }
 }
