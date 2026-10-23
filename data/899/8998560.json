@@ -39,6 +39,11 @@
         "date": "2026-10-22",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Nakao Filter 本体 (セール中)": [
@@ -56,8 +61,16 @@
         "date": "2026-10-22",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15033550": "Nakao Filter 本体 (セール中)",
+    "15039338": "エナドリ代（本体と一緒です）"
+  }
 }

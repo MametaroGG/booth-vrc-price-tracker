@@ -7,6 +7,11 @@
         "date": "2026-10-22",
         "price": 560,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-23",
+        "price": 560,
+        "is_sale": true
       }
     ],
     "おやつ代": [
@@ -14,8 +19,16 @@
         "date": "2026-10-22",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-23",
+        "price": 800,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14949870": "壁の中の目のタトゥーテクスチャ",
+    "14949880": "おやつ代"
+  }
 }

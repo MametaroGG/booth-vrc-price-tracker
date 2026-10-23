@@ -37,6 +37,11 @@
         "date": "2026-10-22",
         "price": 2400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 2400,
+        "is_sale": false
       }
     ],
     "ばつ-Batsu-": [
@@ -74,6 +79,11 @@
         "date": "2026-10-22",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "マヌカ-MANUKA-": [
@@ -84,6 +94,11 @@
       },
       {
         "date": "2026-10-22",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
         "price": 1200,
         "is_sale": false
       }
@@ -98,6 +113,11 @@
         "date": "2026-10-22",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "ミルフィ-Milfy-": [
@@ -108,6 +128,11 @@
       },
       {
         "date": "2026-10-22",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
         "price": 1200,
         "is_sale": false
       }
@@ -122,6 +147,11 @@
         "date": "2026-10-22",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "+Head": [
@@ -132,6 +162,11 @@
       },
       {
         "date": "2026-10-22",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
         "price": 1200,
         "is_sale": false
       }
@@ -146,6 +181,11 @@
         "date": "2026-10-22",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "ショコラ-Chocolat-": [
@@ -158,8 +198,23 @@
         "date": "2026-10-22",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 1200,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14933100": "Fullset",
+    "14978169": "ばつ-Batsu-",
+    "15067022": "マヌカ-MANUKA-",
+    "15067023": "輝夜-kaguya-",
+    "15067024": "ミルフィ-Milfy-",
+    "15067025": "真央-mao-",
+    "15067026": "+Head",
+    "15067027": "しなの-Shinano-",
+    "15067028": "ショコラ-Chocolat-"
+  }
 }

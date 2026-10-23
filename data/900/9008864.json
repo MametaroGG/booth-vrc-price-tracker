@@ -12,6 +12,11 @@
         "date": "2026-10-22",
         "price": 850,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-23",
+        "price": 850,
+        "is_sale": true
       }
     ],
     "支援版": [
@@ -24,8 +29,16 @@
         "date": "2026-10-22",
         "price": 1200,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-23",
+        "price": 1200,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15050666": "✦Sale 通常版",
+    "15063253": "支援版"
+  }
 }

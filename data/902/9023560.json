@@ -7,6 +7,11 @@
         "date": "2026-10-22",
         "price": 500,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-23",
+        "price": 500,
+        "is_sale": true
       }
     ],
     "応援🎁※通常版と同内容": [
@@ -14,8 +19,16 @@
         "date": "2026-10-22",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-23",
+        "price": 800,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15073946": "Nocturne Twintail",
+    "15074518": "応援🎁※通常版と同内容"
+  }
 }

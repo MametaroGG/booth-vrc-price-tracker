@@ -115,11 +115,21 @@
         "date": "2026-10-22",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 2500,
+        "is_sale": false
       }
     ],
     "【SALE】MI☆CA": [
       {
         "date": "2026-10-22",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
         "price": 1400,
         "is_sale": false
       }
@@ -129,6 +139,11 @@
         "date": "2026-10-22",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "【SALE】Sio": [
@@ -136,8 +151,18 @@
         "date": "2026-10-22",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-23",
+        "price": 1400,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15022521": "【SALE】FULL-SET",
+    "15028370": "【SALE】MI☆CA",
+    "15028371": "【SALE】Shinano",
+    "15028372": "【SALE】Sio"
+  }
 }
