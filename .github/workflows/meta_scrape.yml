@@ -2,7 +2,7 @@ name: Metadata Scrape
 
 on:
   schedule:
-    - cron: '35 19 * * *' # JST 04:35; staggered away from the price runs (JST 00:00, 06:00, 12:00, 18:00)
+    - cron: '35 1,7,13,19 * * *' # JST 04:35, 10:35, 16:35, 22:35; staggered away from the price runs (JST 00:00, 06:00, 12:00, 18:00); continuation chains fill the gaps
   workflow_dispatch:
   repository_dispatch:
     types: [continue-meta]
