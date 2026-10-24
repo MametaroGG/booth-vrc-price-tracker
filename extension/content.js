@@ -255,20 +255,34 @@
     }
 
     // Presentation-only upper-tail detection, independently for each variation.
-    // Require >=5 ordinary dates, >=80% ordinary observations, and a >=20x gap.
+    // Split rule: scanning the sorted positive prices from the 6th point on, the
+    // first >=20x jump whose ordinary side covers >=5 distinct dates marks every
+    // point from the jump on as separated. There is no minimum ordinary SHARE:
+    // a gag price held for months is still a gag price, so long stretches are
+    // caught as well as short ones. Gag-price rule: any point at >=1,000,000 in
+    // a variation that also has an ordinary (0 or <1,000,000) point is separated
+    // too — this covers variations whose only positive price is the gag price
+    // (e.g. 9,999,999 then free), which the split rule can never isolate.
     // Zeros remain visible and never form the denominator. A flag is NOT evidence
-    // of an invalid price or the duration of a sale. Sparse histories stay full-range.
+    // of an invalid price or the duration of a sale.
     function findSeparatedHighPoints(history) {
         const positive = history.filter(d => Number.isFinite(d.price) && d.price > 0)
             .slice().sort((a, b) => a.price - b.price);
-        for (let split = Math.max(5, Math.ceil(positive.length * 0.8)); split < positive.length; split++) {
+        const flagged = new Set();
+        for (let split = 5; split < positive.length; split++) {
             const ordinary = positive.slice(0, split);
             if (positive[split].price / positive[split - 1].price >= 20 &&
                 new Set(ordinary.map(d => d.date)).size >= 5) {
-                return new Set(positive.slice(split));
+                positive.slice(split).forEach(d => flagged.add(d));
+                break;
             }
         }
-        return new Set();
+        if (history.some(d => Number.isFinite(d.price) && d.price >= 0 && d.price < 1000000)) {
+            history.forEach(d => {
+                if (Number.isFinite(d.price) && d.price >= 1000000) flagged.add(d);
+            });
+        }
+        return flagged;
     }
 
     // ===== Optional, user-toggled feature: lowest recorded price per variation =====
@@ -571,17 +585,6 @@
             scaleControls.append(scaleToggle, scaleStatus);
             headingRow.append(scaleControls, overflowDetails);
 
-            // Link out to this product's page on BoopaDB (same catalog data).
-            const dbLink = document.createElement('a');
-            dbLink.className = 'booth-boopadb-link';
-            dbLink.href = `https://mametarogg.github.io/boopadb/item.html?id=${productId}`;
-            dbLink.target = '_blank';
-            dbLink.rel = 'noopener';
-            dbLink.innerHTML = '<span class="booth-boopadb-link-label"></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>';
-            const updateDbLink = () => { dbLink.querySelector('.booth-boopadb-link-label').textContent = t('viewOnBoopaDB'); };
-            updateDbLink();
-            localeUpdates.push(updateDbLink);
-            headingRow.append(dbLink);
 
             // Map to keep track of legend items to update styles
             const legendItems = {};
@@ -649,6 +652,25 @@
         }
         // Preserve the original order: chart, legend, lowest-price option, then heading/ranges.
         container.appendChild(titleArea);
+
+        // Link out to this product's page on BoopaDB (same catalog data). Kept in
+        // its own footer row: the heading row already carries the scale toggle and
+        // the outlier indicator, and the two collide on narrow item columns.
+        if (!isDemo) {
+            const dbRow = document.createElement('div');
+            dbRow.className = 'booth-boopadb-row';
+            const dbLink = document.createElement('a');
+            dbLink.className = 'booth-boopadb-link';
+            dbLink.href = `https://mametarogg.github.io/boopadb/item.html?id=${productId}`;
+            dbLink.target = '_blank';
+            dbLink.rel = 'noopener';
+            dbLink.innerHTML = '<span class="booth-boopadb-link-label"></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>';
+            const updateDbLink = () => { dbLink.querySelector('.booth-boopadb-link-label').textContent = t('viewOnBoopaDB'); };
+            updateDbLink();
+            localeUpdates.push(updateDbLink);
+            dbRow.appendChild(dbLink);
+            container.appendChild(dbRow);
+        }
 
         // Inject into the first variation or a prominent place
         const target = document.querySelector('.item-detail, .variations');

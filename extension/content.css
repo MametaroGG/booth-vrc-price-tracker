@@ -445,9 +445,14 @@
     }
 }
 
-/* BoopaDB link (heading row, real-data mode only) */
+/* BoopaDB link (own footer row under the panel, real-data mode only) */
+.booth-boopadb-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
 .booth-boopadb-link {
-    margin-left: auto;
     display: inline-flex;
     align-items: center;
     gap: 5px;

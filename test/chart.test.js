@@ -8,11 +8,18 @@ vm.runInNewContext(source.replace('    main();', '    globalThis.chart = { findS
 const { findSeparatedHighPoints, getLowestPriceInfo, mergeVariations, drawChart } = context.chart;
 const history = prices => prices.map((price, i) => ({ date: `2026-05-${String(i + 1).padStart(2, '0')}`, price }));
 
-test('separated high observations need five distinct ordinary dates and 80% support', () => {
+test('split rule needs five distinct ordinary dates; long gag stretches and lone gag prices are caught', () => {
     assert.equal(findSeparatedHighPoints(history([2000, 2000, 1600, 1600, 2000, 9999999])).size, 1);
-    assert.equal(findSeparatedHighPoints(history([2000, 2000, 1600, 2000, 9999999])).size, 0);
-    assert.equal(findSeparatedHighPoints(history([2000, 2000, 2000, 2000, 2000, 9999999, 9999999])).size, 0);
-    assert.equal(findSeparatedHighPoints(history([2000, 2000, 2000, 2000, 2000, 9999999]).map(d => ({...d, date: '2026-05-01'}))).size, 0);
+    // Split rule alone cannot fire on five points, but the gag-price rule can.
+    assert.equal(findSeparatedHighPoints(history([2000, 2000, 1600, 2000, 9999999])).size, 1);
+    // A gag stretch above the old 80% ordinary-share floor is still separated.
+    assert.equal(findSeparatedHighPoints(history([2000, 2000, 2000, 2000, 2000, 9999999, 9999999])).size, 2);
+    // The gag-price rule does not need distinct dates.
+    assert.equal(findSeparatedHighPoints(history([2000, 2000, 2000, 2000, 2000, 9999999]).map(d => ({...d, date: '2026-05-01'}))).size, 1);
+    // A variation whose only positive price is the gag price (9,999,999 then free).
+    assert.equal(findSeparatedHighPoints(history([9999999, 0, 0, 0])).size, 1);
+    // No ordinary company: a uniformly extreme history stays untouched.
+    assert.equal(findSeparatedHighPoints(history([9999999, 9999999, 9999999])).size, 0);
 });
 test('ordinary sales, legitimate tiers, and zero values remain intact', () => {
     for (const prices of [[1600, 2000, 3200, 4000, 1600, 4000], [0,0,0,0,0,2000], [2000], []]) {
