@@ -22,7 +22,7 @@
             lowest: '記録上の最安値', lowestNow: '最安値圏', today: '本日', daysAgo: '{n}日前', asOf: '{date}・{relative}時点',
             fullLabel: '全価格を表示', fullStatus: '全価格表示', zoomStatus: '通常範囲を拡大中・上限外 {n} 件（▲）',
             fullTitle: '全価格を表示（現在は通常範囲を拡大）', zoomTitle: '通常範囲を拡大（現在は全価格を表示）',
-            overflow: '▲ 規格外{n}件', outlier: '規格外', outside: '（表示上限外）', sale: 'セール', standard: '標準価格'
+            overflow: '▲ 規格外{n}件', outlier: '規格外', outside: '（表示上限外）', sale: 'セール', standard: '標準価格', viewOnBoopaDB: 'BoopaDBで確認'
         },
         en: {
             comparison: 'Compared with recorded price {price} (observed on multiple dates; not a current sale discount)',
@@ -33,7 +33,7 @@
             lowest: 'Lowest recorded price', lowestNow: 'At recorded low', today: 'Today', daysAgo: '{n} days ago', asOf: '{date} · {relative}',
             fullLabel: 'Show all prices', fullStatus: 'Showing all prices', zoomStatus: 'Normal range enlarged · {n} above range (▲)',
             fullTitle: 'Show all prices (normal range is enlarged)', zoomTitle: 'Enlarge normal range (showing all prices)',
-            overflow: '▲ Outliers: {n}', outlier: 'Outlier', outside: ' (above displayed range)', sale: 'SALE', standard: 'Standard price'
+            overflow: '▲ Outliers: {n}', outlier: 'Outlier', outside: ' (above displayed range)', sale: 'SALE', standard: 'Standard price', viewOnBoopaDB: 'View on BoopaDB'
         },
         ko: {
             comparison: '비교 기준 기록 가격 {price} (여러 날짜에 기록됨; 현재 판매 할인율이 아님)',
@@ -44,7 +44,7 @@
             lowest: '기록된 최저가', lowestNow: '최저가 수준', today: '오늘', daysAgo: '{n}일 전', asOf: '{date} · {relative} 기준',
             fullLabel: '전체 가격 표시', fullStatus: '전체 가격 표시 중', zoomStatus: '일반 범위 확대 중 · 상한 초과 {n}건 (▲)',
             fullTitle: '전체 가격 표시 (현재 일반 범위 확대 중)', zoomTitle: '일반 범위 확대 (현재 전체 가격 표시 중)',
-            overflow: '▲ 이상치 {n}건', outlier: '이상치', outside: ' (표시 상한 초과)', sale: '할인', standard: '기본 가격'
+            overflow: '▲ 이상치 {n}건', outlier: '이상치', outside: ' (표시 상한 초과)', sale: '할인', standard: '기본 가격', viewOnBoopaDB: 'BoopaDB에서 확인'
         },
         'zh-cn': {
             comparison: '对比记录价格 {price}（在多个日期记录；并非当前销售折扣）',
@@ -55,7 +55,7 @@
             lowest: '历史最低价', lowestNow: '处于历史低位', today: '今天', daysAgo: '{n}天前', asOf: '{date} · {relative}',
             fullLabel: '显示所有价格', fullStatus: '正在显示所有价格', zoomStatus: '已放大常规范围 · {n}条超出上限（▲）',
             fullTitle: '显示所有价格（当前已放大常规范围）', zoomTitle: '放大常规范围（当前显示所有价格）',
-            overflow: '▲ 离群值{n}条', outlier: '离群值', outside: '（超出显示上限）', sale: '促销', standard: '标准价格'
+            overflow: '▲ 离群值{n}条', outlier: '离群值', outside: '（超出显示上限）', sale: '促销', standard: '标准价格', viewOnBoopaDB: '在 BoopaDB 查看'
         },
         'zh-tw': {
             comparison: '比較記錄價格 {price}（於多個日期記錄；並非目前銷售折扣）',
@@ -66,7 +66,7 @@
             lowest: '歷史最低價', lowestNow: '處於歷史低點', today: '今天', daysAgo: '{n}天前', asOf: '{date} · {relative}',
             fullLabel: '顯示所有價格', fullStatus: '正在顯示所有價格', zoomStatus: '已放大一般範圍 · {n}筆超出上限（▲）',
             fullTitle: '顯示所有價格（目前已放大一般範圍）', zoomTitle: '放大一般範圍（目前顯示所有價格）',
-            overflow: '▲ 離群值{n}筆', outlier: '離群值', outside: '（超出顯示上限）', sale: '特價', standard: '標準價格'
+            overflow: '▲ 離群值{n}筆', outlier: '離群值', outside: '（超出顯示上限）', sale: '特價', standard: '標準價格', viewOnBoopaDB: '在 BoopaDB 查看'
         }
     };
     function normalizeLocale(value) {
@@ -570,6 +570,18 @@
             overflowDetails.hidden = true;
             scaleControls.append(scaleToggle, scaleStatus);
             headingRow.append(scaleControls, overflowDetails);
+
+            // Link out to this product's page on BoopaDB (same catalog data).
+            const dbLink = document.createElement('a');
+            dbLink.className = 'booth-boopadb-link';
+            dbLink.href = `https://mametarogg.github.io/boopadb/item.html?id=${productId}`;
+            dbLink.target = '_blank';
+            dbLink.rel = 'noopener';
+            dbLink.innerHTML = '<span class="booth-boopadb-link-label"></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>';
+            const updateDbLink = () => { dbLink.querySelector('.booth-boopadb-link-label').textContent = t('viewOnBoopaDB'); };
+            updateDbLink();
+            localeUpdates.push(updateDbLink);
+            headingRow.append(dbLink);
 
             // Map to keep track of legend items to update styles
             const legendItems = {};
