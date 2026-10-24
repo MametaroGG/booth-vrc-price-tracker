@@ -48,13 +48,15 @@ function commit(cwd, message) {
 
 function fixture(t, branch = 'main') {
     const root = fs.mkdtempSync(path.join(os.tmpdir(), 'boopa-workflow-'));
-    // Retry the teardown: a lingering git process can still be writing to the
-    // bare remote while it is deleted, which otherwise fails with ENOTEMPTY.
-    t.after(() => fs.rmSync(root, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }));
+    // Best-effort teardown: a lingering git process can still be writing to
+    // the bare remote while it is deleted (ENOTEMPTY). Retries help, but a
+    // leftover temp dir must never fail the run, so errors are swallowed.
+    t.after(() => { try { fs.rmSync(root, { recursive: true, force: true, maxRetries: 30, retryDelay: 200 }); } catch { /* best-effort: temp cleanup must never fail the run */ } });
     const remote = path.join(root, 'remote.git');
     const seed = path.join(root, 'seed');
     const worker = path.join(root, 'worker');
     git(root, 'init', '--bare', '--initial-branch=main', remote);
+    git(root, '-C', remote, 'config', 'gc.auto', '0'); // no detached auto-gc racing the teardown
     git(root, 'init', '--initial-branch=main', seed);
     git(seed, 'config', 'user.name', 'Workflow Test');
     git(seed, 'config', 'user.email', 'workflow@example.invalid');
@@ -131,7 +133,7 @@ test('continuation requires a successful scraper, final save and explicit safe o
 
 test('recording job start permits only the default branch', (t) => {
     const root = fs.mkdtempSync(path.join(os.tmpdir(), 'boopa-workflow-start-'));
-    t.after(() => fs.rmSync(root, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }));
+    t.after(() => { try { fs.rmSync(root, { recursive: true, force: true, maxRetries: 30, retryDelay: 200 }); } catch { /* best-effort: temp cleanup must never fail the run */ } });
     const envFile = path.join(root, 'env');
     for (const [ref, status] of [['refs/tags/v1', 1], ['refs/heads/test/scraper', 1], ['refs/heads/main', 0]]) {
         fs.writeFileSync(envFile, '');

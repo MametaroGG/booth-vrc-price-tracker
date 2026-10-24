@@ -70,7 +70,7 @@ test('fetchItemMeta maps statuses and parses string payloads', async () => {
 
 function tempTree(t) {
     const root = fs.mkdtempSync(path.join(os.tmpdir(), 'boopa-meta-'));
-    t.after(() => fs.rmSync(root, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }));
+    t.after(() => { try { fs.rmSync(root, { recursive: true, force: true, maxRetries: 30, retryDelay: 200 }); } catch { /* best-effort: temp cleanup must never fail the run */ } });
     const dataDir = path.join(root, 'data');
     const metaDir = path.join(root, 'meta');
     const product = id => {
