@@ -7,11 +7,21 @@
         "date": "2026-10-23",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-25",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Mens Pack（男性9アバター対応）【発売記念セール】": [
       {
         "date": "2026-10-23",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-25",
         "price": 2000,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-10-23",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-25",
+        "price": 2000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15082911": "Full Set（男女18アバター対応）【発売記念セール】",
+    "15083077": "Mens Pack（男性9アバター対応）【発売記念セール】",
+    "15083078": "Ladies Pack（女性8アバター対応）【発売記念セール】"
+  }
 }

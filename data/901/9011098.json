@@ -27,10 +27,79 @@
         "date": "2026-10-23",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-25",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "Full set": [
+      {
+        "date": "2026-10-25",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "for SiuSiu": [
+      {
+        "date": "2026-10-25",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "for Caprilina": [
+      {
+        "date": "2026-10-25",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "for Milltina": [
+      {
+        "date": "2026-10-25",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "for Mayo": [
+      {
+        "date": "2026-10-25",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "for Manuka": [
+      {
+        "date": "2026-10-25",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "for Lilfy": [
+      {
+        "date": "2026-10-25",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "for Milfy": [
+      {
+        "date": "2026-10-25",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15054206": "default"
+    "15054206": "default",
+    "15094189": "Full set",
+    "15094190": "for SiuSiu",
+    "15094191": "for Caprilina",
+    "15094192": "for Milltina",
+    "15094193": "for Mayo",
+    "15094194": "for Manuka",
+    "15094195": "for Lilfy",
+    "15094196": "for Milfy"
   }
 }
