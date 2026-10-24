@@ -102,7 +102,7 @@ function assertSuccess(result) {
 
 test('metadata workflow mirrors the price workflow discipline', () => {
     assert.match(workflow, /name: Metadata Scrape/);
-    assert.match(workflow, /cron: '35 19 \* \* \*'/);
+    assert.match(workflow, /cron: '35 1,7,13,19 \* \* \*'/);
     assert.match(workflow, /group: meta-scrape-group\s+cancel-in-progress: false/);
     assert.match(workflow, /    timeout-minutes: 360\n/);
     assert.match(workflow, /META_RESERVATION_ID: \$\{\{ github\.run_id \}\}-\$\{\{ github\.run_attempt \}\}/);

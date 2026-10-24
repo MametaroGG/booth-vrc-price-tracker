@@ -9,8 +9,8 @@ const { shouldContinueMeta } = require('./meta-continuation');
 
 // Item metadata (name, shop, thumbnail, tags, category, wish-list count) is
 // collected by a SEPARATE job from the price scraper on purpose: the daily
-// price cycle keeps its efficiency, and this job spends its own small,
-// separately reserved request budget under meta/. The two jobs write to
+// price cycle keeps its efficiency, and this job runs its own full-catalog
+// sweep under meta/ with its own request ledger. The two jobs write to
 // disjoint directories (data/ vs meta/) so their pushes never conflict.
 //
 // Source of truth per item: BOOTH's own item JSON, https://booth.pm/ja/items/<id>.json
@@ -20,8 +20,8 @@ const { shouldContinueMeta } = require('./meta-continuation');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const META_DIR = path.join(__dirname, '..', 'meta');
-const DEFAULT_RUN_CAP = 10000; // items per run; the daily reservation is the hard ceiling
-const REFRESH_DAYS = 14; // quiet items: re-fetch metadata older than this
+const DEFAULT_RUN_CAP = 250000; // items per run; sized to cover the whole catalog — the run envelope and the JST day boundary pace the sweep, like the price job
+const REFRESH_DAYS = 1; // every item is re-fetched daily, mirroring the price sweep
 const ACTIVE_WINDOW_DAYS = 14; // items with price activity inside this window are "hot"
 const UNAVAILABLE_RETRY_DAYS = 30; // deleted items are re-checked monthly, not daily
 const LIKES_HISTORY_CAP = 120; // snapshots kept per item

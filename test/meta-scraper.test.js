@@ -89,7 +89,7 @@ function tempTree(t) {
 test('buildWorkList prioritizes missing (newest first), then stalest refreshes', t => {
     const { dataDir, metaDir, product, meta } = tempTree(t);
     for (const id of ['1000001', '1000009', '1000005', '1000003', '1000007']) product(id);
-    meta('1000005', { id: '1000005', fetched_at: '2026-10-22' }); // fresh: skipped
+    meta('1000005', { id: '1000005', fetched_at: '2026-10-23' }); // collected today: skipped
     meta('1000003', { id: '1000003', fetched_at: '2026-09-01' }); // stale refresh
     meta('1000007', { id: '1000007', unavailable: true, fetched_at: '2026-10-01' }); // too soon to retry
     const work = buildWorkList({ dataDir, metaDir, today: '2026-10-23', runCap: 10 });
@@ -136,14 +136,14 @@ test('buildWorkList gives hot items a daily snapshot ahead of the quiet refresh'
     write('3000001', [{ date: '2026-08-01', price: 500, is_sale: false },
         { date: '2026-10-22', price: 500, is_sale: true }]); // hot, meta from yesterday
     write('3000002', [{ date: '2026-08-01', price: 500, is_sale: false },
-        { date: '2026-10-22', price: 500, is_sale: false }]); // quiet, meta 2 days old
+        { date: '2026-10-22', price: 500, is_sale: false }]); // quiet, meta 2 days old: due again under the daily refresh
     write('3000003', [{ date: '2026-08-01', price: 500, is_sale: false },
         { date: '2026-09-01', price: 500, is_sale: false }]); // quiet, meta 30 days old
     meta('3000001', { id: '3000001', fetched_at: '2026-10-22' });
     meta('3000002', { id: '3000002', fetched_at: '2026-10-21' });
     meta('3000003', { id: '3000003', fetched_at: '2026-09-23' });
     const work = buildWorkList({ dataDir, metaDir, today: '2026-10-23', runCap: 10 });
-    assert.deepEqual(work.map(w => w.id), ['3000001', '3000003']);
+    assert.deepEqual(work.map(w => w.id), ['3000001', '3000003', '3000002']);
 });
 
 test('main re-collects a hot item the next day so likes deltas accrue', async t => {
