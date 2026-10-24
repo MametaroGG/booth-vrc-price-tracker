@@ -25,6 +25,20 @@ test('parseItemJson extracts tags, category, and the wish-list count', () => {
     assert.equal(parsed.published_at, fixture.published_at);
 });
 
+test('parseItemJson extracts declared parent-work refs from description item URLs', () => {
+    const description = [
+        '【アバター】ポンデロニウム研究所様 [しなの]',
+        'https://ponderogen.booth.pm/items/6106863',
+        'mirror: https://booth.pm/ja/items/5650156 and http://booth.pm/en/items/5650156',
+        'self link https://booth.pm/ja/items/7918308 must be excluded',
+        'dup https://booth.pm/zh-cn/items/6106863',
+        'not an item: https://booth.pm/ja/browse/3Dモデル'
+    ].join('\n');
+    assert.deepEqual(parseItemJson('7918308', { ...fixture, description }).refs, ['6106863', '5650156']);
+    assert.deepEqual(parseItemJson('7918308', { ...fixture, description: '' }).refs, []);
+    assert.deepEqual(parseItemJson('7918308', { ...fixture, description: undefined }).refs, []);
+});
+
 test('parseItemJson rejects foreign or shapeless payloads', () => {
     assert.throws(() => parseItemJson('7918308', { ...fixture, id: 123 }), /id mismatch/);
     assert.throws(() => parseItemJson('7918308', null), /Unrecognized/);

@@ -82,6 +82,21 @@ function parseItemJson(productId, data) {
     } : null;
     const likes = Number.isSafeInteger(data.wish_lists_count) && data.wish_lists_count >= 0
         ? data.wish_lists_count : null;
+    // Declared relations: creators name the parent works (base avatars,
+    // required assets) in the description, as BOOTH item URLs. Collect the
+    // referenced item ids in first-appearance order, excluding self-links.
+    const refs = [];
+    if (typeof data.description === 'string') {
+        const seen = new Set();
+        const pattern = /(?:[a-z0-9-]+\.)?booth\.pm\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?items\/(\d+)/gi;
+        for (const match of data.description.matchAll(pattern)) {
+            if (match[1] !== String(productId) && !seen.has(match[1])) {
+                seen.add(match[1]);
+                refs.push(match[1]);
+                if (refs.length >= 100) break;
+            }
+        }
+    }
     return {
         id: String(productId),
         name,
@@ -91,6 +106,7 @@ function parseItemJson(productId, data) {
         tags,
         category,
         likes,
+        refs,
         adult: data.is_adult === true,
         sold_out: data.is_sold_out === true,
         end_of_sale: data.is_end_of_sale === true,
