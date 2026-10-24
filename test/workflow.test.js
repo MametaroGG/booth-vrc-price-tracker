@@ -131,7 +131,7 @@ test('continuation requires a successful scraper, final save and explicit safe o
 
 test('recording job start permits only the default branch', (t) => {
     const root = fs.mkdtempSync(path.join(os.tmpdir(), 'boopa-workflow-start-'));
-    t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+    t.after(() => fs.rmSync(root, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }));
     const envFile = path.join(root, 'env');
     for (const [ref, status] of [['refs/tags/v1', 1], ['refs/heads/test/scraper', 1], ['refs/heads/main', 0]]) {
         fs.writeFileSync(envFile, '');

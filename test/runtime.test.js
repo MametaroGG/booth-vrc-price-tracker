@@ -15,7 +15,7 @@ function httpError(status, headers = {}) {
 }
 function fixture(t, options = {}) {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'boopa-runtime-'));
-    t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+    t.after(() => fs.rmSync(dir, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }));
     let time = START;
     const waits = [];
     const calls = [];

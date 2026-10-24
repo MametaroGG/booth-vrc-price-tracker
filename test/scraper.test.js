@@ -25,7 +25,7 @@ function deferred() {
 const tick = () => new Promise(resolve => setImmediate(resolve));
 function fixture(t) {
     const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'boopa-minimal-scraper-'));
-    t.after(() => fs.rmSync(dataDir, { recursive: true, force: true }));
+    t.after(() => fs.rmSync(dataDir, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }));
     const stateFile = path.join(dataDir, 'crawl_state.json');
     const budgetFile = path.join(dataDir, 'request_budget.json');
     return {

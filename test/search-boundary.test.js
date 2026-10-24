@@ -117,7 +117,7 @@ test('missing or ambiguous search evidence, error pages and challenges remain fa
 
 test('the real terminal page advances to the original software filter and preserves prior history', async t => {
     const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'boopa-search-end-'));
-    t.after(() => fs.rmSync(dataDir, { recursive: true, force: true }));
+    t.after(() => fs.rmSync(dataDir, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }));
     const stateFile = path.join(dataDir, 'crawl_state.json');
     const budgetFile = path.join(dataDir, 'request_budget.json');
     writeJson(stateFile, { urlIndex: 0, page: 3055, retries: [] });
@@ -152,7 +152,7 @@ test('the real terminal page advances to the original software filter and preser
 
 test('unproven end-of-results preserves the current category, page and history without continuing', async t => {
     const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'boopa-search-unknown-'));
-    t.after(() => fs.rmSync(dataDir, { recursive: true, force: true }));
+    t.after(() => fs.rmSync(dataDir, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }));
     const stateFile = path.join(dataDir, 'crawl_state.json');
     const budgetFile = path.join(dataDir, 'request_budget.json');
     const state = { urlIndex: 0, page: 3055, retries: [] };
