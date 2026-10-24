@@ -53,7 +53,9 @@ function commit(cwd, message) {
 
 function fixture(t, branch = 'main') {
     const root = fs.mkdtempSync(path.join(os.tmpdir(), 'boopa-meta-workflow-'));
-    t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+    // Retry the teardown: a lingering git process can still be writing to the
+    // bare remote while it is deleted, which otherwise fails with ENOTEMPTY.
+    t.after(() => fs.rmSync(root, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 }));
     const remote = path.join(root, 'remote.git');
     const seed = path.join(root, 'seed');
     const worker = path.join(root, 'worker');
