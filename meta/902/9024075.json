@@ -1,6 +1,6 @@
 {
   "id": "9024075",
-  "name": "【VRChat】Tidebone エレメンタル FX コンプリート（6パック・プレハブ60個）| Tidebone Studio",
+  "name": "【VRChat】【VRCFury対応】Tidebone エレメンタル FX コンプリート（6パック・プレハブ60個）| Tidebone Studio",
   "shop": {
     "name": "Tidebone Studio",
     "subdomain": "tidebone",
@@ -11,11 +11,15 @@
   "tags": [
     "ブレス",
     "セット",
+    "メニュー",
     "エフェクト",
     "オーラ",
     "使い魔",
     "パーティクル",
     "VRChat",
+    "トグル",
+    "VRCFury",
+    "Expressionメニュー",
     "Tidebone"
   ],
   "category": {
@@ -24,6 +28,11 @@
     "parent": "3Dモデル"
   },
   "likes": 0,
+  "refs": [
+    "9024034",
+    "9024020",
+    "9024042"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -32,7 +41,11 @@
     {
       "date": "2026-10-24",
       "count": 0
+    },
+    {
+      "date": "2026-10-25",
+      "count": 0
     }
   ],
-  "fetched_at": "2026-10-24"
+  "fetched_at": "2026-10-25"
 }

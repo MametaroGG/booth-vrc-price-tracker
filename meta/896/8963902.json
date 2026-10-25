@@ -1,6 +1,6 @@
 {
   "id": "8963902",
-  "name": "【販売開始セール中】Yes Noヘイロー／Yes No Halo【ギミック付き】",
+  "name": "【ギミック付きヘイロー】Yes Noヘイロー／Yes No Halo",
   "shop": {
     "name": "Mushroom Gloom",
     "subdomain": "mushroomgloom",
@@ -30,6 +30,11 @@
     "parent": "3Dモデル"
   },
   "likes": 28,
+  "refs": [
+    "6538026",
+    "3443188",
+    "5957830"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -38,7 +43,11 @@
     {
       "date": "2026-10-24",
       "count": 28
+    },
+    {
+      "date": "2026-10-25",
+      "count": 28
     }
   ],
-  "fetched_at": "2026-10-24"
+  "fetched_at": "2026-10-25"
 }

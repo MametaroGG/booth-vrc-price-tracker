@@ -15,10 +15,6 @@
     "Lapwing",
     "Lapwing対応",
     "エク",
-    "マリシア",
-    "マリシア対応",
-    "マリシア専用",
-    "マリシア用",
     "Milfy対応",
     "Eku",
     "Eku対応"
@@ -28,7 +24,11 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 43,
+  "likes": 46,
+  "refs": [
+    "6571299",
+    "7328764"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -37,7 +37,11 @@
     {
       "date": "2026-10-24",
       "count": 43
+    },
+    {
+      "date": "2026-10-25",
+      "count": 46
     }
   ],
-  "fetched_at": "2026-10-24"
+  "fetched_at": "2026-10-25"
 }

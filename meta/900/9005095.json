@@ -1,6 +1,6 @@
 {
   "id": "9005095",
-  "name": "【MA・PB対応】断頭の絞首縄チョーカー / Severed Noose (2in1大型アップデート版)",
+  "name": "【MA・PB対応】断頭の解れ絞首縄 / Ripped Noose (2in1)",
   "shop": {
     "name": "headgearhq",
     "subdomain": "headgearhq",
@@ -17,6 +17,7 @@
     "3Dアクセサリ",
     "Choker",
     "Rope",
+    "PhysBone",
     "ModularAvatar",
     "MA対応",
     "HeadgearHQ",
@@ -27,7 +28,10 @@
     "name": "3D装飾品",
     "parent": "3Dモデル"
   },
-  "likes": 14,
+  "likes": 15,
+  "refs": [
+    "3087170"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -36,7 +40,11 @@
     {
       "date": "2026-10-24",
       "count": 14
+    },
+    {
+      "date": "2026-10-25",
+      "count": 15
     }
   ],
-  "fetched_at": "2026-10-24"
+  "fetched_at": "2026-10-25"
 }
