@@ -79,7 +79,7 @@ function parseItemJson(productId, data) {
         ? data.images.map(img => img && typeof img === 'object' && typeof img.original === 'string'
             ? resizedImage(img.original) : '').filter(Boolean)
         : [];
-    const images = allImages.length >= 2 ? allImages.slice(0, 30) : null;
+    const images = allImages.length >= 2 ? allImages : null;
     const tags = Array.isArray(data.tags)
         ? data.tags.map(tag => tag && typeof tag.name === 'string' ? tag.name : '').filter(Boolean)
         : [];
