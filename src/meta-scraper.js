@@ -96,9 +96,9 @@ function parseItemJson(productId, data) {
         const seen = new Set();
         const baseSeen = new Set();
         const pattern = /(?:[a-z0-9-]+\.)?booth\.pm\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?items\/(\d+)/gi;
-        const basePattern = /(対応(?:アバター|モデル|3Dモデル|素体|キャラクター|作品)|対象アバター|想定アバター|動作確認|共通素体|ベースアバター|専用(?:アバター|モデル|素体))/;
-        const relatedPattern = /(関連(?:作品|商品)|おすすめ|オススメ|コーデ|新バージョン|リメイク版|別バージョン|他の商品|セット(?:内容|商品))/;
-        const dependencyPattern = /(使用\s*(?:Shader|シェーダー|ツール)|Shader|シェーダー|lilToon|導入(?:方法|手順)|着せ替え|Auto Dresser|メッシュデリーター|下着を消す|アセットを導入)/i;
+        const basePattern = /(対応(?:アバター|モデル|3Dモデル|素体|キャラクター|作品)|対象アバター|想定アバター|動作確認|共通素体|ベースアバター|専用(?:アバター|モデル|素体)|こちらへ|베이스\s*(?:모델|아바타)|대응\s*(?:아바타|모델)|호환\s*(?:아바타|모델)|전용\s*(?:아바타|모델|소체)|대상\s*아바타|적용\s*아바타|对应(?:头像|模型|素体)|對應(?:頭像|模型|素體)|专用(?:头像|模型|素体)|專用(?:頭像|模型|素體)|基础模型|基礎模型|base\s*model|supported\s*(?:avatars?|models?)|compatible\s*(?:avatars?|models?|with)|made\s+for|designed\s+for|find\s+.{0,40}\s+here)/i;
+        const relatedPattern = /(関連(?:作品|商品)|おすすめ|オススメ|コーデ|新バージョン|リメイク版|別バージョン|他の商品|セット(?:内容|商品)|관련\s*(?:상품|작품)|추천\s*(?:상품|코디)|관련상품|推荐(?:商品|搭配)|推薦(?:商品|搭配)|相关(?:产品|作品)|相關(?:產品|作品)|related\s*(?:items?|products?|works?)|you\s+may\s+also\s+like|recommended)/i;
+        const dependencyPattern = /(使用\s*(?:Shader|シェーダー|ツール)|Shader|シェーダー|lilToon|導入(?:方法|手順)|着せ替え|Auto Dresser|メッシュデリーター|下着を消す|アセットを導入|쉐이더|셰이더|사용\s*(?:툴|도구)|설치\s*(?:방법|법)|着色器|使用的(?:工具|着色器)|安裝(?:方法|說明)|安装(?:方法|说明)|shader|requirements?|how\s+to\s+(?:install|use)|installation)/i;
         const contextOf = text => {
             if (dependencyPattern.test(text)) return 'dependency';
             if (relatedPattern.test(text)) return 'related';

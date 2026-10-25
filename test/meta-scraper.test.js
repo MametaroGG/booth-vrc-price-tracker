@@ -57,6 +57,31 @@ test('parseItemJson separates contextual parent refs from related works and depe
     assert.equal('base_refs' in ambiguous, false);
 });
 
+test('parseItemJson reads parent context in English, Korean and Chinese prose', () => {
+    const en = parseItemJson('7918308', { ...fixture, description: [
+        'Fiona is here',
+        'https://example.booth.pm/items/1111111',
+        'Base model ( Daria ) https://example.booth.pm/items/2222222',
+        'Shader:',
+        'https://example.booth.pm/items/3333333'
+    ].join('\n') });
+    assert.deepEqual(en.base_refs, ['1111111', '2222222']);
+    const ko = parseItemJson('7918308', { ...fixture, description: [
+        '대응 아바타',
+        'https://example.booth.pm/items/4444444',
+        '사용 쉐이더',
+        'https://example.booth.pm/items/5555555'
+    ].join('\n') });
+    assert.deepEqual(ko.base_refs, ['4444444']);
+    const zh = parseItemJson('7918308', { ...fixture, description: [
+        '对应头像',
+        'https://example.booth.pm/items/6666666',
+        '相关产品',
+        'https://example.booth.pm/items/7777777'
+    ].join('\n') });
+    assert.deepEqual(zh.base_refs, ['6666666']);
+});
+
 test('parseItemJson rejects foreign or shapeless payloads', () => {
     assert.throws(() => parseItemJson('7918308', { ...fixture, id: 123 }), /id mismatch/);
     assert.throws(() => parseItemJson('7918308', null), /Unrecognized/);
