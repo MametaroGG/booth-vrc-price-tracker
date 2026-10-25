@@ -25,6 +25,18 @@ test('parseItemJson extracts tags, category, and the wish-list count', () => {
     assert.equal(parsed.published_at, fixture.published_at);
 });
 
+test('parseItemJson stores the full image list, omitted when it adds nothing', () => {
+    const parsed = parseItemJson('7918308', fixture);
+    assert.equal(parsed.images.length, fixture.images.length);
+    assert.equal(parsed.images[0], parsed.image_resized);
+    assert.deepEqual(parsed.images, fixture.images.map(img => resizedImage(img.original)));
+    const single = parseItemJson('7918308', { ...fixture, images: fixture.images.slice(0, 1) });
+    assert.equal('images' in single, false);
+    const none = parseItemJson('7918308', { ...fixture, images: [] });
+    assert.equal('images' in none, false);
+    assert.equal(none.image, '');
+});
+
 test('parseItemJson extracts declared parent-work refs from description item URLs', () => {
     const description = [
         '【アバター】ポンデロニウム研究所様 [しなの]',

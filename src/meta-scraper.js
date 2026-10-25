@@ -71,6 +71,15 @@ function parseItemJson(productId, data) {
     const firstImage = Array.isArray(data.images) && data.images[0] && typeof data.images[0] === 'object'
         ? data.images[0] : null;
     const image = firstImage && typeof firstImage.original === 'string' ? firstImage.original : '';
+    // Full image list (resized URLs, source order): the product-page
+    // gallery and image-search indexing need every image, not just the
+    // main one. Like base_refs, the field is omitted when it adds
+    // nothing over image_resized (zero or one image).
+    const allImages = Array.isArray(data.images)
+        ? data.images.map(img => img && typeof img === 'object' && typeof img.original === 'string'
+            ? resizedImage(img.original) : '').filter(Boolean)
+        : [];
+    const images = allImages.length >= 2 ? allImages.slice(0, 30) : null;
     const tags = Array.isArray(data.tags)
         ? data.tags.map(tag => tag && typeof tag.name === 'string' ? tag.name : '').filter(Boolean)
         : [];
@@ -150,6 +159,7 @@ function parseItemJson(productId, data) {
         shop,
         image,
         image_resized: resizedImage(image),
+        ...(images ? { images } : {}),
         tags,
         category,
         likes,
