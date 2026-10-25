@@ -59,7 +59,9 @@ test('parseItemJson separates contextual parent refs from related works and depe
 
 test('parseItemJson reads parent context in English, Korean and Chinese prose', () => {
     const en = parseItemJson('7918308', { ...fixture, description: [
-        'Fiona is here',
+        'フィオナちゃんこちらへ',
+        'https://example.booth.pm/items/1111111',
+        'You can find Fiona here',
         'https://example.booth.pm/items/1111111',
         'Base model ( Daria ) https://example.booth.pm/items/2222222',
         'Shader:',
