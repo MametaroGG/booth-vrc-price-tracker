@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/1e610912-0561-4e0d-9259-14752fe17a59/i/8523254/3d9ad30c-e98a-4e01-9d88-d11e099245d9_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/1e610912-0561-4e0d-9259-14752fe17a59/i/8523254/3d9ad30c-e98a-4e01-9d88-d11e099245d9_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/1e610912-0561-4e0d-9259-14752fe17a59/i/8523254/3d9ad30c-e98a-4e01-9d88-d11e099245d9_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/1e610912-0561-4e0d-9259-14752fe17a59/i/8523254/cb98e25e-aef4-458a-a24e-2a9b34d43c65_base_resized.jpg"
+  ],
   "tags": [
     "アクセサリー",
     "チョーカー",
@@ -22,7 +26,14 @@
     "name": "3D小道具",
     "parent": "3Dモデル"
   },
-  "likes": 92,
+  "likes": 94,
+  "refs": [
+    "3087170",
+    "8346109"
+  ],
+  "base_refs": [
+    "8346109"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -31,7 +42,11 @@
     {
       "date": "2026-10-24",
       "count": 92
+    },
+    {
+      "date": "2026-10-25",
+      "count": 94
     }
   ],
-  "fetched_at": "2026-10-24"
+  "fetched_at": "2026-10-25"
 }

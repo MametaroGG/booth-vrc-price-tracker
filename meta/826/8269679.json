@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/b0dd891d-39b2-4794-8db5-9abdd69f3304/i/8269679/529d57bb-98f6-47ea-a8ca-f295999b472f_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/b0dd891d-39b2-4794-8db5-9abdd69f3304/i/8269679/529d57bb-98f6-47ea-a8ca-f295999b472f_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/b0dd891d-39b2-4794-8db5-9abdd69f3304/i/8269679/529d57bb-98f6-47ea-a8ca-f295999b472f_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/b0dd891d-39b2-4794-8db5-9abdd69f3304/i/8269679/c9ff3b3c-2e3f-4e58-921b-44c73549c93a_base_resized.jpg"
+  ],
   "tags": [
     "アニメーション",
     "表情",
@@ -33,7 +37,14 @@
     "name": "3Dモーション・アニメーション",
     "parent": "3Dモデル"
   },
-  "likes": 30,
+  "likes": 31,
+  "refs": [
+    "8289591",
+    "8147205"
+  ],
+  "base_refs": [
+    "8147205"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -42,7 +53,11 @@
     {
       "date": "2026-10-24",
       "count": 30
+    },
+    {
+      "date": "2026-10-25",
+      "count": 31
     }
   ],
-  "fetched_at": "2026-10-24"
+  "fetched_at": "2026-10-25"
 }

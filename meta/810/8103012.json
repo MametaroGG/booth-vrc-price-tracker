@@ -8,6 +8,11 @@
   },
   "image": "https://booth.pximg.net/ea309278-b190-470b-9c07-4d11b1b8d209/i/8103012/24a12a34-b7d5-4908-9fd4-4213c9921ae7_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/ea309278-b190-470b-9c07-4d11b1b8d209/i/8103012/24a12a34-b7d5-4908-9fd4-4213c9921ae7_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/ea309278-b190-470b-9c07-4d11b1b8d209/i/8103012/24a12a34-b7d5-4908-9fd4-4213c9921ae7_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/ea309278-b190-470b-9c07-4d11b1b8d209/i/8103012/3b385f5d-05b2-4839-be4e-ccb0117a4e93_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/ea309278-b190-470b-9c07-4d11b1b8d209/i/8103012/3a3fa534-fe5f-43db-ba56-8818550a5e82_base_resized.jpg"
+  ],
   "tags": [
     "Blender",
     "衣装",
@@ -34,7 +39,18 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 32,
+  "likes": 33,
+  "refs": [
+    "3087170",
+    "5813187",
+    "3550881",
+    "6328134"
+  ],
+  "base_refs": [
+    "5813187",
+    "3550881",
+    "6328134"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -43,7 +59,11 @@
     {
       "date": "2026-10-24",
       "count": 32
+    },
+    {
+      "date": "2026-10-25",
+      "count": 33
     }
   ],
-  "fetched_at": "2026-10-24"
+  "fetched_at": "2026-10-25"
 }

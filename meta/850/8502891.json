@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/11b4515c-6776-4ef7-9070-167759ad2c14/i/8502891/44b556b9-4636-4f7e-9a13-7447aa375e08_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/11b4515c-6776-4ef7-9070-167759ad2c14/i/8502891/44b556b9-4636-4f7e-9a13-7447aa375e08_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/11b4515c-6776-4ef7-9070-167759ad2c14/i/8502891/44b556b9-4636-4f7e-9a13-7447aa375e08_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/11b4515c-6776-4ef7-9070-167759ad2c14/i/8502891/b7ab9c41-092a-4fff-9e9d-e5e78f72fbb7_base_resized.jpg"
+  ],
   "tags": [
     "テクスチャ",
     "縫い目",
@@ -22,7 +26,13 @@
     "name": "3Dテクスチャ",
     "parent": "3Dモデル"
   },
-  "likes": 32,
+  "likes": 33,
+  "refs": [
+    "7691202"
+  ],
+  "base_refs": [
+    "7691202"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -31,7 +41,11 @@
     {
       "date": "2026-10-24",
       "count": 32
+    },
+    {
+      "date": "2026-10-25",
+      "count": 33
     }
   ],
-  "fetched_at": "2026-10-24"
+  "fetched_at": "2026-10-25"
 }

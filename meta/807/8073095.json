@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/383db3e4-820c-4d26-bd61-67a4c597d0ee/i/8073095/94958c11-c66d-4e52-be98-83e4bc6db401_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/383db3e4-820c-4d26-bd61-67a4c597d0ee/i/8073095/94958c11-c66d-4e52-be98-83e4bc6db401_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/383db3e4-820c-4d26-bd61-67a4c597d0ee/i/8073095/94958c11-c66d-4e52-be98-83e4bc6db401_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/383db3e4-820c-4d26-bd61-67a4c597d0ee/i/8073095/0faef959-1d8e-4719-9bbd-9c63a721c845_base_resized.jpg"
+  ],
   "tags": [
     "衣装",
     "ドレス",
@@ -21,7 +25,14 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 1230,
+  "likes": 1232,
+  "refs": [
+    "3087170",
+    "5058077"
+  ],
+  "base_refs": [
+    "5058077"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -30,7 +41,11 @@
     {
       "date": "2026-10-24",
       "count": 1230
+    },
+    {
+      "date": "2026-10-25",
+      "count": 1232
     }
   ],
-  "fetched_at": "2026-10-24"
+  "fetched_at": "2026-10-25"
 }

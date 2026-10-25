@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/1784a569-2979-4480-9ca1-9f3a83dd22ba/i/8339168/b1d199bf-50b0-4a95-a9bd-c61d9a099849_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/1784a569-2979-4480-9ca1-9f3a83dd22ba/i/8339168/b1d199bf-50b0-4a95-a9bd-c61d9a099849_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/1784a569-2979-4480-9ca1-9f3a83dd22ba/i/8339168/b1d199bf-50b0-4a95-a9bd-c61d9a099849_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/1784a569-2979-4480-9ca1-9f3a83dd22ba/i/8339168/29de33b3-4c83-4e49-9e43-779b8d97b483_base_resized.jpg"
+  ],
   "tags": [
     "水着",
     "衣装",
@@ -20,7 +24,13 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 24,
+  "likes": 25,
+  "refs": [
+    "6639794"
+  ],
+  "base_refs": [
+    "6639794"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -29,7 +39,11 @@
     {
       "date": "2026-10-24",
       "count": 24
+    },
+    {
+      "date": "2026-10-25",
+      "count": 25
     }
   ],
-  "fetched_at": "2026-10-24"
+  "fetched_at": "2026-10-25"
 }
