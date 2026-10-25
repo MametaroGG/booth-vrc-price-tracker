@@ -8,9 +8,24 @@
         "price": 300,
         "is_sale": false
       }
+    ],
+    "無料版": [
+      {
+        "date": "2026-10-26",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "支援版（中身は同じ）": [
+      {
+        "date": "2026-10-26",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "14393848": "default"
+    "14393848": "default",
+    "15097951": "支援版（中身は同じ）"
   }
 }
