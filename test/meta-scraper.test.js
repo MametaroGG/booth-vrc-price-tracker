@@ -39,6 +39,24 @@ test('parseItemJson extracts declared parent-work refs from description item URL
     assert.deepEqual(parseItemJson('7918308', { ...fixture, description: undefined }).refs, []);
 });
 
+test('parseItemJson separates contextual parent refs from related works and dependencies', () => {
+    const description = [
+        '■関連作品',
+        'https://example.booth.pm/items/1111111',
+        '■対応アバター',
+        '【A】作者：x',
+        'https://example.booth.pm/items/2222222',
+        '使用Shader：lilToon',
+        'https://example.booth.pm/items/3333333',
+        'VRChat想定アバター「B」(https://example.booth.pm/items/4444444)'
+    ].join('\n');
+    const parsed = parseItemJson('7918308', { ...fixture, description });
+    assert.deepEqual(parsed.refs, ['1111111', '2222222', '3333333', '4444444']);
+    assert.deepEqual(parsed.base_refs, ['2222222', '4444444']);
+    const ambiguous = parseItemJson('7918308', { ...fixture, description: 'https://example.booth.pm/items/1111111' });
+    assert.equal('base_refs' in ambiguous, false);
+});
+
 test('parseItemJson rejects foreign or shapeless payloads', () => {
     assert.throws(() => parseItemJson('7918308', { ...fixture, id: 123 }), /id mismatch/);
     assert.throws(() => parseItemJson('7918308', null), /Unrecognized/);
@@ -117,9 +135,19 @@ test('buildWorkList refreshes records without refs ahead of other stale records'
     for (const id of ['2000001', '2000002', '2000003']) product(id);
     meta('2000001', { id: '2000001', fetched_at: '2026-10-01', refs: [] });
     meta('2000002', { id: '2000002', fetched_at: '2026-10-10' });
-    meta('2000003', { id: '2000003', fetched_at: '2026-10-12', refs: ['5650156'] });
+    meta('2000003', { id: '2000003', fetched_at: '2026-10-12', refs: ['5650156'], base_refs: ['5650156'] });
     const work = buildWorkList({ dataDir, metaDir, today: '2026-10-23', runCap: 10 });
     assert.deepEqual(work.map(w => w.id), ['2000002', '2000001', '2000003']);
+});
+
+test('buildWorkList refreshes unjudged relation records ahead of judged ones', t => {
+    const { dataDir, metaDir, product, meta } = tempTree(t);
+    for (const id of ['3000001', '3000002', '3000003']) product(id);
+    meta('3000001', { id: '3000001', fetched_at: '2026-10-01', refs: [] });
+    meta('3000002', { id: '3000002', fetched_at: '2026-10-10', refs: ['5650156'] });
+    meta('3000003', { id: '3000003', fetched_at: '2026-10-12', refs: ['5650156'], base_refs: ['5650156'] });
+    const work = buildWorkList({ dataDir, metaDir, today: '2026-10-23', runCap: 10 });
+    assert.deepEqual(work.map(w => w.id), ['3000002', '3000001', '3000003']);
 });
 
 test('readActivity detects sale, price change, and newness inside the window', t => {

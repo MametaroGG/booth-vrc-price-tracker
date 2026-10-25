@@ -85,17 +85,64 @@ function parseItemJson(productId, data) {
     // Declared relations: creators name the parent works (base avatars,
     // required assets) in the description, as BOOTH item URLs. Collect the
     // referenced item ids in first-appearance order, excluding self-links.
+    // A bare link is not enough to prove parentage, though: descriptions
+    // also cross-sell related works and cite shaders/tools. When the prose
+    // gives an explicit context (a supported-avatar section, an inline
+    // "made for avatar X" line, a related-works section, a shader/tool
+    // note), record the confidently-parent ids separately as base_refs.
     const refs = [];
+    let baseRefs = null;
     if (typeof data.description === 'string') {
         const seen = new Set();
+        const baseSeen = new Set();
         const pattern = /(?:[a-z0-9-]+\.)?booth\.pm\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?items\/(\d+)/gi;
-        for (const match of data.description.matchAll(pattern)) {
-            if (match[1] !== String(productId) && !seen.has(match[1])) {
-                seen.add(match[1]);
-                refs.push(match[1]);
+        const basePattern = /(対応(?:アバター|モデル|3Dモデル|素体|キャラクター|作品)|対象アバター|想定アバター|動作確認|共通素体|ベースアバター|専用(?:アバター|モデル|素体))/;
+        const relatedPattern = /(関連(?:作品|商品)|おすすめ|オススメ|コーデ|新バージョン|リメイク版|別バージョン|他の商品|セット(?:内容|商品))/;
+        const dependencyPattern = /(使用\s*(?:Shader|シェーダー|ツール)|Shader|シェーダー|lilToon|導入(?:方法|手順)|着せ替え|Auto Dresser|メッシュデリーター|下着を消す|アセットを導入)/i;
+        const contextOf = text => {
+            if (dependencyPattern.test(text)) return 'dependency';
+            if (relatedPattern.test(text)) return 'related';
+            if (basePattern.test(text)) return 'base';
+            return null;
+        };
+        let section = 'plain';
+        let judged = false;
+        for (const line of data.description.split(/\r?\n/)) {
+            const ids = [...line.matchAll(pattern)].map(match => match[1]);
+            const text = line.replace(/https?:\/\/\S+/g, '').trim();
+            const lineContext = contextOf(text) || contextOf(line);
+            if (lineContext) {
+                section = lineContext;
+                judged = true;
+            } else if (!ids.length && text) {
+                // A new, unlabelled section or a long prose paragraph ends
+                // the previous labelled list. Short entry titles inside a
+                // labelled list do not.
+                const separator = /^[=━─┅⊹*・\s]+$/.test(text);
+                const genericHeading = text.length <= 60 && (/^[■◆●▶▷]/.test(text) || /[：:]$/.test(text));
+                if (separator || genericHeading || text.length > 100) section = 'plain';
+            }
+            const context = lineContext || section;
+            for (const id of ids) {
+                if (id === String(productId)) continue;
+                if (!seen.has(id)) {
+                    seen.add(id);
+                    refs.push(id);
+                }
+                if (context === 'base' && !baseSeen.has(id)) {
+                    baseSeen.add(id);
+                    (baseRefs ??= []).push(id);
+                }
                 if (refs.length >= 100) break;
             }
+            if (refs.length >= 100) break;
         }
+        // Only publish the stricter list when the description actually
+        // identified at least one parent in context. Otherwise the field
+        // stays absent and consumers fall back to refs, rather than a
+        // false claim that the item has no parents.
+        if (!baseRefs || !baseRefs.length) baseRefs = null;
+        void judged;
     }
     return {
         id: String(productId),
@@ -107,6 +154,7 @@ function parseItemJson(productId, data) {
         category,
         likes,
         refs,
+        ...(baseRefs ? { base_refs: baseRefs } : {}),
         adult: data.is_adult === true,
         sold_out: data.is_sold_out === true,
         end_of_sale: data.is_end_of_sale === true,
@@ -240,7 +288,8 @@ function buildWorkList({ dataDir, metaDir, today, runCap = DEFAULT_RUN_CAP,
     // refresh cycle so it still reaches everything evenly.
     // Records collected before refs extraction shipped have no refs key at
     // all; refresh those first so declared relations backfill fastest.
-    const lacksRefs = e => (e.previous && !('refs' in e.previous) ? 0 : 1);
+    const lacksRefs = e => (e.previous && (!('refs' in e.previous) ||
+        (Array.isArray(e.previous.refs) && e.previous.refs.length && !('base_refs' in e.previous))) ? 0 : 1);
     missing.sort((a, b) => Number(b.id) - Number(a.id));
     hot.sort((a, b) => lacksRefs(a) - lacksRefs(b) || a.fetchedAt.localeCompare(b.fetchedAt) || Number(b.id) - Number(a.id));
     stale.sort((a, b) => lacksRefs(a) - lacksRefs(b) || a.fetchedAt.localeCompare(b.fetchedAt) || Number(a.id) - Number(b.id));
