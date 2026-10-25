@@ -112,6 +112,16 @@ test('buildWorkList prioritizes missing (newest first), then stalest refreshes',
     assert.deepEqual(capped.map(w => w.id), ['1000009', '1000001']);
 });
 
+test('buildWorkList refreshes records without refs ahead of other stale records', t => {
+    const { dataDir, metaDir, product, meta } = tempTree(t);
+    for (const id of ['2000001', '2000002', '2000003']) product(id);
+    meta('2000001', { id: '2000001', fetched_at: '2026-10-01', refs: [] });
+    meta('2000002', { id: '2000002', fetched_at: '2026-10-10' });
+    meta('2000003', { id: '2000003', fetched_at: '2026-10-12', refs: ['5650156'] });
+    const work = buildWorkList({ dataDir, metaDir, today: '2026-10-23', runCap: 10 });
+    assert.deepEqual(work.map(w => w.id), ['2000002', '2000001', '2000003']);
+});
+
 test('readActivity detects sale, price change, and newness inside the window', t => {
     const { dataDir, product } = tempTree(t);
     const write = (id, entries) => {

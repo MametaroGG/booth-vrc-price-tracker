@@ -238,9 +238,12 @@ function buildWorkList({ dataDir, metaDir, today, runCap = DEFAULT_RUN_CAP,
     // New items first (higher IDs are newer discoveries), then hot items
     // (stalest snapshot first) for the daily likes delta, then the quiet
     // refresh cycle so it still reaches everything evenly.
+    // Records collected before refs extraction shipped have no refs key at
+    // all; refresh those first so declared relations backfill fastest.
+    const lacksRefs = e => (e.previous && !('refs' in e.previous) ? 0 : 1);
     missing.sort((a, b) => Number(b.id) - Number(a.id));
-    hot.sort((a, b) => a.fetchedAt.localeCompare(b.fetchedAt) || Number(b.id) - Number(a.id));
-    stale.sort((a, b) => a.fetchedAt.localeCompare(b.fetchedAt) || Number(a.id) - Number(b.id));
+    hot.sort((a, b) => lacksRefs(a) - lacksRefs(b) || a.fetchedAt.localeCompare(b.fetchedAt) || Number(b.id) - Number(a.id));
+    stale.sort((a, b) => lacksRefs(a) - lacksRefs(b) || a.fetchedAt.localeCompare(b.fetchedAt) || Number(a.id) - Number(b.id));
     return [...missing, ...hot, ...stale].slice(0, runCap);
 }
 
