@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/fc31038c-e2ba-44fa-b20d-7a1247fd45dc/i/6023715/3e3834ff-87a4-4eff-8ce0-99e883e9ead0_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/fc31038c-e2ba-44fa-b20d-7a1247fd45dc/i/6023715/3e3834ff-87a4-4eff-8ce0-99e883e9ead0_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/fc31038c-e2ba-44fa-b20d-7a1247fd45dc/i/6023715/3e3834ff-87a4-4eff-8ce0-99e883e9ead0_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/fc31038c-e2ba-44fa-b20d-7a1247fd45dc/i/6023715/ad3ffe31-548d-4fab-b264-207fb2cd8afb_base_resized.jpg"
+  ],
   "tags": [
     "アクセサリー",
     "衣装",
@@ -24,11 +28,14 @@
     "name": "3D装飾品",
     "parent": "3Dモデル"
   },
-  "likes": 1608,
+  "likes": 1609,
   "refs": [
     "3087170",
     "5813187",
     "8535138"
+  ],
+  "base_refs": [
+    "5813187"
   ],
   "adult": false,
   "sold_out": false,
@@ -42,7 +49,11 @@
     {
       "date": "2026-10-25",
       "count": 1608
+    },
+    {
+      "date": "2026-10-26",
+      "count": 1609
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

@@ -8,6 +8,12 @@
   },
   "image": "https://booth.pximg.net/dfddb0cd-2e29-41f0-a85f-99076810b2c4/i/7298386/db625b70-00d3-4b90-8ca0-3b5f9be1bece_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/dfddb0cd-2e29-41f0-a85f-99076810b2c4/i/7298386/db625b70-00d3-4b90-8ca0-3b5f9be1bece_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/dfddb0cd-2e29-41f0-a85f-99076810b2c4/i/7298386/db625b70-00d3-4b90-8ca0-3b5f9be1bece_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/dfddb0cd-2e29-41f0-a85f-99076810b2c4/i/7298386/5ec34c68-15e3-4398-9d3a-1dcfbf538e88_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/dfddb0cd-2e29-41f0-a85f-99076810b2c4/i/7298386/a3f713e6-5e8e-4f5a-a6c8-5d4a691b31e0_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/dfddb0cd-2e29-41f0-a85f-99076810b2c4/i/7298386/6132aede-081f-4d48-b435-c9d1f56db18e_base_resized.jpg"
+  ],
   "tags": [
     "ピアス",
     "衣装",
@@ -28,13 +34,16 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 1024,
+  "likes": 1025,
   "refs": [
     "5813187",
     "3087170",
     "6434701",
     "5921172",
     "1634088"
+  ],
+  "base_refs": [
+    "5813187"
   ],
   "adult": false,
   "sold_out": false,
@@ -48,7 +57,11 @@
     {
       "date": "2026-10-25",
       "count": 1024
+    },
+    {
+      "date": "2026-10-26",
+      "count": 1025
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

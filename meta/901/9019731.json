@@ -1,6 +1,6 @@
 {
   "id": "9019731",
-  "name": "【MA対応】南瓜怪異の兜 / Jack-O'-Lantern Helmet",
+  "name": "【MA・lilToon対応】南瓜怪異の兜 / Jack-O'-Lantern Helmet",
   "shop": {
     "name": "headgearhq",
     "subdomain": "headgearhq",
@@ -8,6 +8,12 @@
   },
   "image": "https://booth.pximg.net/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019731/54bb5755-443a-42dc-bcc2-17f39a927c24_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019731/54bb5755-443a-42dc-bcc2-17f39a927c24_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019731/54bb5755-443a-42dc-bcc2-17f39a927c24_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019731/7bd0e787-ac92-44af-89ff-99a194258229_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019731/02f09a34-4ca0-45e9-a9e5-708b09316088_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019731/489c3d2c-e278-4228-8d4d-de545a9f0195_base_resized.jpg"
+  ],
   "tags": [
     "ハロウィン",
     "カボチャ",
@@ -17,6 +23,7 @@
     "3Dアクセサリ",
     "Helmet",
     "Pumpkin",
+    "lilToon",
     "ModularAvatar",
     "MA対応",
     "HeadgearHQ"
@@ -27,7 +34,9 @@
     "parent": "3Dモデル"
   },
   "likes": 6,
-  "refs": [],
+  "refs": [
+    "3087170"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -40,7 +49,11 @@
     {
       "date": "2026-10-25",
       "count": 6
+    },
+    {
+      "date": "2026-10-26",
+      "count": 6
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

@@ -8,6 +8,12 @@
   },
   "image": "https://booth.pximg.net/f940d1c6-54ff-4668-b0ae-547ec842b851/i/5603917/1ea0f1e0-011d-412b-830a-668953696ce2_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/f940d1c6-54ff-4668-b0ae-547ec842b851/i/5603917/1ea0f1e0-011d-412b-830a-668953696ce2_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/f940d1c6-54ff-4668-b0ae-547ec842b851/i/5603917/1ea0f1e0-011d-412b-830a-668953696ce2_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/f940d1c6-54ff-4668-b0ae-547ec842b851/i/5603917/babcd273-07c4-4625-bd94-228c76ed526b_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/f940d1c6-54ff-4668-b0ae-547ec842b851/i/5603917/6fa4def3-ac47-4575-9d89-b5936d445b6b_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/f940d1c6-54ff-4668-b0ae-547ec842b851/i/5603917/ad719edd-05e4-41f8-b6ed-2d653daf450f_base_resized.jpg"
+  ],
   "tags": [
     "衣装",
     "3Dモデル",
@@ -22,11 +28,15 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 184,
+  "likes": 185,
   "refs": [
     "5496642",
     "4736496",
     "3087170"
+  ],
+  "base_refs": [
+    "5496642",
+    "4736496"
   ],
   "adult": false,
   "sold_out": false,
@@ -40,7 +50,11 @@
     {
       "date": "2026-10-25",
       "count": 184
+    },
+    {
+      "date": "2026-10-26",
+      "count": 185
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

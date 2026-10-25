@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/d44127e1-7016-4703-a5a6-d3141e16b65e/i/6980760/2c59e70c-fc14-42ce-be6c-597f892dd9a9_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/d44127e1-7016-4703-a5a6-d3141e16b65e/i/6980760/2c59e70c-fc14-42ce-be6c-597f892dd9a9_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/d44127e1-7016-4703-a5a6-d3141e16b65e/i/6980760/2c59e70c-fc14-42ce-be6c-597f892dd9a9_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/d44127e1-7016-4703-a5a6-d3141e16b65e/i/6980760/29d7d110-39e7-46e5-9ea1-a1d97fc49432_base_resized.jpg"
+  ],
   "tags": [
     "3D",
     "少年",
@@ -25,11 +29,15 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 1959,
+  "likes": 1964,
   "refs": [
     "5153266",
     "5203211",
     "3087170"
+  ],
+  "base_refs": [
+    "5153266",
+    "5203211"
   ],
   "adult": false,
   "sold_out": false,
@@ -43,7 +51,11 @@
     {
       "date": "2026-10-25",
       "count": 1959
+    },
+    {
+      "date": "2026-10-26",
+      "count": 1964
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

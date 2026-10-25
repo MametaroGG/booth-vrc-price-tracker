@@ -8,6 +8,13 @@
   },
   "image": "https://booth.pximg.net/c8ec00dd-0422-4ed3-afcf-3773306d13d7/i/6278249/bde4b0cf-1c8c-403c-8f95-668fc42d708d_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/c8ec00dd-0422-4ed3-afcf-3773306d13d7/i/6278249/bde4b0cf-1c8c-403c-8f95-668fc42d708d_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/c8ec00dd-0422-4ed3-afcf-3773306d13d7/i/6278249/bde4b0cf-1c8c-403c-8f95-668fc42d708d_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/c8ec00dd-0422-4ed3-afcf-3773306d13d7/i/6278249/27a4fc72-1374-4e92-bc77-70bdd603756f_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/c8ec00dd-0422-4ed3-afcf-3773306d13d7/i/6278249/3bbb6e5d-6415-482d-9f2f-fe0d2b75b4db_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/c8ec00dd-0422-4ed3-afcf-3773306d13d7/i/6278249/3ae9f841-2d13-45af-badc-e93be036c6c9_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/c8ec00dd-0422-4ed3-afcf-3773306d13d7/i/6278249/37074d0c-99ac-4d24-98f4-2662ef4224e1_base_resized.jpg"
+  ],
   "tags": [
     "パーカー",
     "コスチューム",
@@ -37,11 +44,15 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 860,
+  "likes": 861,
   "refs": [
     "4340548",
     "5813187",
     "3087170"
+  ],
+  "base_refs": [
+    "4340548",
+    "5813187"
   ],
   "adult": false,
   "sold_out": false,
@@ -55,7 +66,11 @@
     {
       "date": "2026-10-25",
       "count": 860
+    },
+    {
+      "date": "2026-10-26",
+      "count": 861
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

@@ -8,6 +8,11 @@
   },
   "image": "https://booth.pximg.net/2a6a91e6-adfb-43e3-92ce-af20e33a1741/i/4855235/c325eff0-a83b-41da-97a4-559291c204e5_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/2a6a91e6-adfb-43e3-92ce-af20e33a1741/i/4855235/c325eff0-a83b-41da-97a4-559291c204e5_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/2a6a91e6-adfb-43e3-92ce-af20e33a1741/i/4855235/c325eff0-a83b-41da-97a4-559291c204e5_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/2a6a91e6-adfb-43e3-92ce-af20e33a1741/i/4855235/ec24b1d5-7b41-4605-812c-23b3ba9ee687_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/2a6a91e6-adfb-43e3-92ce-af20e33a1741/i/4855235/b8134d84-f249-4fe7-a91c-a5c72beb30e9_base_resized.jpg"
+  ],
   "tags": [
     "Maya",
     "セレスティア",
@@ -28,10 +33,13 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 2406,
+  "likes": 2405,
   "refs": [
     "3087170",
     "1148311"
+  ],
+  "base_refs": [
+    "3087170"
   ],
   "adult": false,
   "sold_out": false,
@@ -41,7 +49,11 @@
     {
       "date": "2026-10-25",
       "count": 2406
+    },
+    {
+      "date": "2026-10-26",
+      "count": 2405
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

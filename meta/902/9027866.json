@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/3a6394b9-9414-4d6e-a750-bb112dc534f9/i/9027866/4ed56655-c1a0-415e-87fe-8db795365b45_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/3a6394b9-9414-4d6e-a750-bb112dc534f9/i/9027866/4ed56655-c1a0-415e-87fe-8db795365b45_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/3a6394b9-9414-4d6e-a750-bb112dc534f9/i/9027866/4ed56655-c1a0-415e-87fe-8db795365b45_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/3a6394b9-9414-4d6e-a750-bb112dc534f9/i/9027866/08bcb10a-44ff-476e-9de9-31ad8f5a13ab_base_resized.jpg"
+  ],
   "tags": [
     "ペット",
     "3DCG",
@@ -25,12 +29,15 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 13,
+  "likes": 14,
   "refs": [
     "5957830",
     "8863398",
     "8845775",
     "8916521"
+  ],
+  "base_refs": [
+    "5957830"
   ],
   "adult": false,
   "sold_out": false,
@@ -40,7 +47,11 @@
     {
       "date": "2026-10-25",
       "count": 13
+    },
+    {
+      "date": "2026-10-26",
+      "count": 14
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

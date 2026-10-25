@@ -1,6 +1,6 @@
 {
   "id": "9019648",
-  "name": "【MA対応】魔女の尖塔帽 / Sorceress Witch Hat",
+  "name": "【MA・lilToon対応】魔女の尖塔帽 / Sorceress Witch Hat",
   "shop": {
     "name": "headgearhq",
     "subdomain": "headgearhq",
@@ -8,6 +8,12 @@
   },
   "image": "https://booth.pximg.net/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019648/913ffeb0-4e79-4b23-a8ba-b20ac6fbd4f9_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019648/913ffeb0-4e79-4b23-a8ba-b20ac6fbd4f9_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019648/913ffeb0-4e79-4b23-a8ba-b20ac6fbd4f9_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019648/bc6729a3-d1d0-4531-bd49-a0798686ef41_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019648/cd355975-3386-417f-9306-0288a1cf22c8_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9019648/6c07e12b-fd78-42b6-b041-4602f141ce4b_base_resized.jpg"
+  ],
   "tags": [
     "ハロウィン",
     "帽子",
@@ -15,6 +21,7 @@
     "魔女帽",
     "3Dアクセサリ",
     "ウィッチハット",
+    "lilToon",
     "ModularAvatar",
     "MA対応",
     "WitchHat",
@@ -26,7 +33,9 @@
     "parent": "3Dモデル"
   },
   "likes": 1,
-  "refs": [],
+  "refs": [
+    "3087170"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -39,7 +48,11 @@
     {
       "date": "2026-10-25",
       "count": 1
+    },
+    {
+      "date": "2026-10-26",
+      "count": 1
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

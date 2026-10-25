@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/d44127e1-7016-4703-a5a6-d3141e16b65e/i/8993557/d944a5cc-ed20-4548-96f6-717a49d4f721_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/d44127e1-7016-4703-a5a6-d3141e16b65e/i/8993557/d944a5cc-ed20-4548-96f6-717a49d4f721_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/d44127e1-7016-4703-a5a6-d3141e16b65e/i/8993557/d944a5cc-ed20-4548-96f6-717a49d4f721_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/d44127e1-7016-4703-a5a6-d3141e16b65e/i/8993557/a9c7c709-da65-4576-9833-f1291c8e4b95_base_resized.jpg"
+  ],
   "tags": [
     "リボン",
     "魔法使い",
@@ -25,10 +29,13 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 147,
+  "likes": 150,
   "refs": [
     "6785336",
     "3087170"
+  ],
+  "base_refs": [
+    "6785336"
   ],
   "adult": false,
   "sold_out": false,
@@ -42,7 +49,11 @@
     {
       "date": "2026-10-25",
       "count": 147
+    },
+    {
+      "date": "2026-10-26",
+      "count": 150
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

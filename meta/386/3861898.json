@@ -8,6 +8,12 @@
   },
   "image": "https://booth.pximg.net/e5c181b9-3dc0-4298-bcbd-d2120c078383/i/3861898/a0c50366-41e1-4b06-8117-75045845a686_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/e5c181b9-3dc0-4298-bcbd-d2120c078383/i/3861898/a0c50366-41e1-4b06-8117-75045845a686_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/e5c181b9-3dc0-4298-bcbd-d2120c078383/i/3861898/a0c50366-41e1-4b06-8117-75045845a686_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/e5c181b9-3dc0-4298-bcbd-d2120c078383/i/3861898/8a9d7a59-2dd6-45a4-9815-a3f34338d926_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/e5c181b9-3dc0-4298-bcbd-d2120c078383/i/3861898/de8dd07c-a26f-4283-a344-bf3e2928c4d0_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/e5c181b9-3dc0-4298-bcbd-d2120c078383/i/3861898/b551c474-84c5-443b-98f5-087aeadb79f0_base_resized.jpg"
+  ],
   "tags": [
     "リボン",
     "アクセサリー",
@@ -29,13 +35,19 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 1216,
+  "likes": 1217,
   "refs": [
     "3681787",
     "3443188",
     "3390957",
     "3848725",
     "3087170"
+  ],
+  "base_refs": [
+    "3681787",
+    "3443188",
+    "3390957",
+    "3848725"
   ],
   "adult": false,
   "sold_out": false,
@@ -45,7 +57,11 @@
     {
       "date": "2026-10-25",
       "count": 1216
+    },
+    {
+      "date": "2026-10-26",
+      "count": 1217
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

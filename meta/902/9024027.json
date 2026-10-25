@@ -1,6 +1,6 @@
 {
   "id": "9024027",
-  "name": "【MA対応】喉穿ちの暗殺短剣 / Sticking Dagger",
+  "name": "【MA・lilToon対応】喉穿ちの暗殺短剣 / Sticking Dagger",
   "shop": {
     "name": "headgearhq",
     "subdomain": "headgearhq",
@@ -8,6 +8,12 @@
   },
   "image": "https://booth.pximg.net/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9024027/dc741c19-3dc7-4d0e-90f7-c57f2e7edf72_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9024027/dc741c19-3dc7-4d0e-90f7-c57f2e7edf72_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9024027/dc741c19-3dc7-4d0e-90f7-c57f2e7edf72_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9024027/812323b3-a83e-4866-a298-8e2392722d56_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9024027/75b3f3f6-faf3-4140-b0c4-6509c53c915e_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/6f593d1f-822f-400d-91ba-41a1594d33eb/i/9024027/e13ff973-a0b7-43ab-abc0-4501c1bf8dbf_base_resized.jpg"
+  ],
   "tags": [
     "ハロウィン",
     "ダガー",
@@ -17,6 +23,7 @@
     "3Dアクセサリ",
     "Knife",
     "Dagger",
+    "lilToon",
     "Stiletto",
     "ModularAvatar",
     "MA対応",
@@ -28,7 +35,9 @@
     "parent": "3Dモデル"
   },
   "likes": 1,
-  "refs": [],
+  "refs": [
+    "3087170"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -41,7 +50,11 @@
     {
       "date": "2026-10-25",
       "count": 1
+    },
+    {
+      "date": "2026-10-26",
+      "count": 1
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

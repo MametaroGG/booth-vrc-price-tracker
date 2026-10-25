@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/2660328d-cfe9-4e96-b372-ef21939e32df/i/5354306/3928bc17-10f7-4d80-a543-9ad9ddd65096_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/2660328d-cfe9-4e96-b372-ef21939e32df/i/5354306/3928bc17-10f7-4d80-a543-9ad9ddd65096_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/2660328d-cfe9-4e96-b372-ef21939e32df/i/5354306/3928bc17-10f7-4d80-a543-9ad9ddd65096_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/2660328d-cfe9-4e96-b372-ef21939e32df/i/5354306/39e85333-5377-49b3-a4aa-3291b509b1b8_base_resized.jpg"
+  ],
   "tags": [
     "マフラー",
     "衣装",
@@ -21,10 +25,13 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 5546,
+  "likes": 5549,
   "refs": [
     "5058077",
     "3087170"
+  ],
+  "base_refs": [
+    "5058077"
   ],
   "adult": false,
   "sold_out": false,
@@ -38,7 +45,11 @@
     {
       "date": "2026-10-25",
       "count": 5546
+    },
+    {
+      "date": "2026-10-26",
+      "count": 5549
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

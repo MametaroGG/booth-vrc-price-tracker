@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/8a66d385-f599-4225-8740-5950ccf5d5e9/i/7015876/171b12c0-8c90-47e7-8d1f-8bdfc1b06d13_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/8a66d385-f599-4225-8740-5950ccf5d5e9/i/7015876/171b12c0-8c90-47e7-8d1f-8bdfc1b06d13_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/8a66d385-f599-4225-8740-5950ccf5d5e9/i/7015876/171b12c0-8c90-47e7-8d1f-8bdfc1b06d13_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/8a66d385-f599-4225-8740-5950ccf5d5e9/i/7015876/2cdccb54-edb8-4bea-8e32-45ced311a843_base_resized.jpg"
+  ],
   "tags": [
     "鳥",
     "衣装",
@@ -23,11 +27,15 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 852,
+  "likes": 853,
   "refs": [
     "5927710",
     "6381344",
     "3087170"
+  ],
+  "base_refs": [
+    "5927710",
+    "6381344"
   ],
   "adult": false,
   "sold_out": false,
@@ -41,7 +49,11 @@
     {
       "date": "2026-10-25",
       "count": 852
+    },
+    {
+      "date": "2026-10-26",
+      "count": 853
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

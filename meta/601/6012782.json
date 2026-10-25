@@ -8,6 +8,11 @@
   },
   "image": "https://booth.pximg.net/c0107c0d-a373-461d-b365-671c053c6c9a/i/6012782/fb8347d5-f342-485d-a103-38be6040ff0e_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/c0107c0d-a373-461d-b365-671c053c6c9a/i/6012782/fb8347d5-f342-485d-a103-38be6040ff0e_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/c0107c0d-a373-461d-b365-671c053c6c9a/i/6012782/fb8347d5-f342-485d-a103-38be6040ff0e_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/c0107c0d-a373-461d-b365-671c053c6c9a/i/6012782/93727653-d942-4ca6-9896-5de8e41e50b2_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/c0107c0d-a373-461d-b365-671c053c6c9a/i/6012782/3ff8542c-48f8-4f8a-b904-f7d7728b10f0_base_resized.jpg"
+  ],
   "tags": [
     "レオタード",
     "衣装",
@@ -29,11 +34,16 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 738,
+  "likes": 739,
   "refs": [
     "5680904",
     "5646726",
     "5957830"
+  ],
+  "base_refs": [
+    "5957830",
+    "5680904",
+    "5646726"
   ],
   "adult": false,
   "sold_out": false,
@@ -47,7 +57,11 @@
     {
       "date": "2026-10-25",
       "count": 738
+    },
+    {
+      "date": "2026-10-26",
+      "count": 739
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

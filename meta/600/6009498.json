@@ -8,6 +8,11 @@
   },
   "image": "https://booth.pximg.net/c0107c0d-a373-461d-b365-671c053c6c9a/i/6009498/d3047b1e-1426-4a4e-a553-a007387f0589_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/c0107c0d-a373-461d-b365-671c053c6c9a/i/6009498/d3047b1e-1426-4a4e-a553-a007387f0589_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/c0107c0d-a373-461d-b365-671c053c6c9a/i/6009498/d3047b1e-1426-4a4e-a553-a007387f0589_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/c0107c0d-a373-461d-b365-671c053c6c9a/i/6009498/6c8d8f74-0dc2-4c8e-85d1-bc5fa0b32cfe_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/c0107c0d-a373-461d-b365-671c053c6c9a/i/6009498/25b234b9-1cd2-452a-8b77-0862a1e4d3fd_base_resized.jpg"
+  ],
   "tags": [
     "サイバー",
     "水着",
@@ -49,11 +54,14 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 1110,
+  "likes": 1112,
   "refs": [
     "5957830",
     "3610927",
     "3087170"
+  ],
+  "base_refs": [
+    "5957830"
   ],
   "adult": false,
   "sold_out": false,
@@ -67,7 +75,11 @@
     {
       "date": "2026-10-25",
       "count": 1110
+    },
+    {
+      "date": "2026-10-26",
+      "count": 1112
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }
