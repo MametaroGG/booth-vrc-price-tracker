@@ -32,10 +32,23 @@
         "date": "2026-10-25",
         "price": 699,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-26",
+        "price": 699,
+        "is_sale": false
+      }
+    ],
+    "Half": [
+      {
+        "date": "2026-10-26",
+        "price": 699,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15044023": "default"
+    "15044023": "default",
+    "15105861": "Half"
   }
 }

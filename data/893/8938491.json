@@ -77,10 +77,31 @@
         "date": "2026-10-25",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-26",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Standard set": [
+      {
+        "date": "2026-10-26",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Ex set 1": [
+      {
+        "date": "2026-10-26",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14937934": "default"
+    "14937934": "default",
+    "15104195": "Standard set",
+    "15104196": "Ex set 1"
   }
 }

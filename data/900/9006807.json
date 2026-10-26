@@ -17,6 +17,11 @@
         "date": "2026-10-25",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-26",
+        "price": 900,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-10-25",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-26",
         "price": 600,
         "is_sale": false
       }
@@ -51,12 +61,40 @@
         "date": "2026-10-25",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-26",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Eye Texture 1 Color (~10/31 free)": [
+      {
+        "date": "2026-10-26",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Milltina Eye Only": [
+      {
+        "date": "2026-10-26",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Mayo Eye Only": [
+      {
+        "date": "2026-10-26",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "15047031": "ALL",
     "15047117": "Milltina",
-    "15047118": "Mayo"
+    "15047118": "Mayo",
+    "15107425": "Milltina Eye Only",
+    "15107426": "Mayo Eye Only"
   }
 }
