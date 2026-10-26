@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/d44127e1-7016-4703-a5a6-d3141e16b65e/i/7763961/6a51081e-a3d6-4ff2-aa6e-08647439c925_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/d44127e1-7016-4703-a5a6-d3141e16b65e/i/7763961/6a51081e-a3d6-4ff2-aa6e-08647439c925_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/d44127e1-7016-4703-a5a6-d3141e16b65e/i/7763961/6a51081e-a3d6-4ff2-aa6e-08647439c925_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/d44127e1-7016-4703-a5a6-d3141e16b65e/i/7763961/3bd93cd9-5973-4d12-83b0-9b526f98f80e_base_resized.jpg"
+  ],
   "tags": [
     "クリスマス",
     "デフォルメ",
@@ -21,10 +25,13 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 310,
+  "likes": 311,
   "refs": [
     "6785336",
     "3087170"
+  ],
+  "base_refs": [
+    "6785336"
   ],
   "adult": false,
   "sold_out": false,
@@ -38,7 +45,11 @@
     {
       "date": "2026-10-25",
       "count": 310
+    },
+    {
+      "date": "2026-10-26",
+      "count": 311
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

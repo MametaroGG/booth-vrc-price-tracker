@@ -8,6 +8,11 @@
   },
   "image": "https://booth.pximg.net/c9bd6032-7b0c-45f0-9623-5e1200596509/i/7948493/9d3ce72c-d257-4c65-8a3d-40d3429cf0ad_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/c9bd6032-7b0c-45f0-9623-5e1200596509/i/7948493/9d3ce72c-d257-4c65-8a3d-40d3429cf0ad_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/c9bd6032-7b0c-45f0-9623-5e1200596509/i/7948493/9d3ce72c-d257-4c65-8a3d-40d3429cf0ad_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/c9bd6032-7b0c-45f0-9623-5e1200596509/i/7948493/348fb00d-0e47-47a7-bc91-1357d0379d9f_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/c9bd6032-7b0c-45f0-9623-5e1200596509/i/7948493/a61f8c4a-140d-4450-9ef3-bc371efb7463_base_resized.jpg"
+  ],
   "tags": [
     "アクセサリー",
     "ブーツ",
@@ -37,10 +42,13 @@
     "name": "3D靴",
     "parent": "3Dモデル"
   },
-  "likes": 172,
+  "likes": 173,
   "refs": [
     "6538026",
     "3087170"
+  ],
+  "base_refs": [
+    "6538026"
   ],
   "adult": false,
   "sold_out": false,
@@ -54,7 +62,11 @@
     {
       "date": "2026-10-25",
       "count": 172
+    },
+    {
+      "date": "2026-10-26",
+      "count": 173
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }

@@ -8,6 +8,10 @@
   },
   "image": "https://booth.pximg.net/931d4380-9bf6-470c-95c6-8d1bcb7fb2df/i/7337434/53438b2f-4bb5-4978-86b4-1f48b9ebfcd3_base_resized.jpg",
   "image_resized": "https://booth.pximg.net/c/620x620/931d4380-9bf6-470c-95c6-8d1bcb7fb2df/i/7337434/53438b2f-4bb5-4978-86b4-1f48b9ebfcd3_base_resized.jpg",
+  "images": [
+    "https://booth.pximg.net/c/620x620/931d4380-9bf6-470c-95c6-8d1bcb7fb2df/i/7337434/53438b2f-4bb5-4978-86b4-1f48b9ebfcd3_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/931d4380-9bf6-470c-95c6-8d1bcb7fb2df/i/7337434/0b18bf68-a7d3-4c34-a0a9-ddba483e3408_base_resized.jpg"
+  ],
   "tags": [
     "着ぐるみ",
     "エビフライ",
@@ -25,10 +29,13 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 80,
+  "likes": 81,
   "refs": [
     "4472191",
     "3087170"
+  ],
+  "base_refs": [
+    "4472191"
   ],
   "adult": false,
   "sold_out": false,
@@ -42,7 +49,11 @@
     {
       "date": "2026-10-25",
       "count": 80
+    },
+    {
+      "date": "2026-10-26",
+      "count": 81
     }
   ],
-  "fetched_at": "2026-10-25"
+  "fetched_at": "2026-10-26"
 }
