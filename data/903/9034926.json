@@ -8,7 +8,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "無料": [
+      {
+        "date": "2026-10-27",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "寄付版(無料版と違いは無いです)": [
+      {
+        "date": "2026-10-27",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15116108": "寄付版(無料版と違いは無いです)"
+  }
 }
