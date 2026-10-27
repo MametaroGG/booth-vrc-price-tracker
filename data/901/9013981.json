@@ -17,6 +17,11 @@
         "date": "2026-10-26",
         "price": 750,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-27",
+        "price": 750,
+        "is_sale": false
       }
     ],
     "【SALE!】Mamefriends Ver.": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-10-26",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-27",
         "price": 600,
         "is_sale": false
       }
@@ -51,8 +61,17 @@
         "date": "2026-10-26",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-27",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15058906": "【SALE!】Mamefriends Ver.",
+    "15073697": "【SALE!】Lina Ver.",
+    "15080945": "【SALE!】Full set"
+  }
 }

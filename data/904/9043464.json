@@ -7,6 +7,11 @@
         "date": "2026-10-26",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-27",
+        "price": 400,
+        "is_sale": true
       }
     ],
     "支援版（内容は同じです）": [
@@ -14,8 +19,16 @@
         "date": "2026-10-26",
         "price": 800,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-27",
+        "price": 800,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15104593": "【Sale！】通常版(予価500yen＞400yen)",
+    "15104726": "支援版（内容は同じです）"
+  }
 }
