@@ -7,12 +7,22 @@
         "date": "2026-10-27",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-28",
+        "price": 650,
+        "is_sale": false
       }
     ],
     "Fyuett": [
       {
         "date": "2026-10-27",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-28",
+        "price": 300,
         "is_sale": false
       }
     ],
@@ -21,12 +31,22 @@
         "date": "2026-10-27",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-28",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Yumeka": [
       {
         "date": "2026-10-27",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-28",
+        "price": 300,
         "is_sale": false
       }
     ],
@@ -35,8 +55,19 @@
         "date": "2026-10-27",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-28",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15103265": "Fyuett",
+    "15103266": "Shinano",
+    "15103267": "Yumeka",
+    "15103268": "Ellel",
+    "15108094": "Full Pack"
+  }
 }
