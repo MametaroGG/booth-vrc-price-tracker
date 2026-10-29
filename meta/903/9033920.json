@@ -32,11 +32,13 @@
     "黒",
     "青",
     "ピンク",
+    "lace",
     "下着",
     "ショコラ",
     "パンツ",
     "白",
     "お姉さん",
+    "衣装",
     "ドレス",
     "3Dモデル",
     "ライム",
@@ -66,6 +68,7 @@
     "beige",
     "プラム",
     "Shoes",
+    "urban",
     "streetwear",
     "Stylish",
     "luxury",
@@ -87,7 +90,7 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 50,
+  "likes": 52,
   "refs": [],
   "adult": false,
   "sold_out": false,
@@ -109,7 +112,11 @@
     {
       "date": "2026-10-28",
       "count": 50
+    },
+    {
+      "date": "2026-10-29",
+      "count": 52
     }
   ],
-  "fetched_at": "2026-10-28"
+  "fetched_at": "2026-10-29"
 }
