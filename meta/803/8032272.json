@@ -92,7 +92,7 @@
   ],
   "adult": false,
   "sold_out": false,
-  "end_of_sale": false,
+  "end_of_sale": true,
   "published_at": "2026-02-27T18:16:26.000+09:00",
   "likes_history": [
     {
@@ -114,7 +114,11 @@
     {
       "date": "2026-10-28",
       "count": 143
+    },
+    {
+      "date": "2026-10-30",
+      "count": 143
     }
   ],
-  "fetched_at": "2026-10-28"
+  "fetched_at": "2026-10-30"
 }
