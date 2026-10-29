@@ -14,10 +14,86 @@
         "date": "2026-10-28",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-29",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Free": [
+      {
+        "date": "2026-10-29",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Rurune": [
+      {
+        "date": "2026-10-29",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Marycia": [
+      {
+        "date": "2026-10-29",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Hanka": [
+      {
+        "date": "2026-10-29",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Rinasciita": [
+      {
+        "date": "2026-10-29",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Mevica": [
+      {
+        "date": "2026-10-29",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Caprilina": [
+      {
+        "date": "2026-10-29",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Komane": [
+      {
+        "date": "2026-10-29",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Selena": [
+      {
+        "date": "2026-10-29",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15117864": "FullPack(300円→150円)※現在はRuruneと内容変わらないです。"
+    "15117864": "FullPack(300円→150円)※現在はRuruneと内容変わらないです。",
+    "15117865": "Rurune",
+    "15130709": "Marycia",
+    "15130710": "Hanka",
+    "15130711": "Rinasciita",
+    "15130712": "Mevica",
+    "15130713": "Caprilina",
+    "15130714": "Komane",
+    "15130715": "Selena"
   }
 }

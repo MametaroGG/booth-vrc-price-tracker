@@ -37,10 +37,23 @@
         "date": "2026-10-28",
         "price": 890,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-29",
+        "price": 1200,
+        "is_sale": false
+      }
+    ],
+    "Only Launcher Ear": [
+      {
+        "date": "2026-10-29",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15059275": "default"
+    "15059275": "default",
+    "15135618": "Only Launcher Ear"
   }
 }

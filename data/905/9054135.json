@@ -7,6 +7,11 @@
         "date": "2026-10-28",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-29",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "【✨️24h限定無料配布✨️】Full set": [
@@ -15,9 +20,17 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "【✨️期間限定500円セール✨️】Full set": [
+      {
+        "date": "2026-10-29",
+        "price": 500,
+        "is_sale": true
+      }
     ]
   },
   "variation_keys": {
-    "15120716": "【支援版Full set※通常版と内包物は同じ】"
+    "15120716": "【支援版Full set※通常版と内包物は同じ】",
+    "15120835": "【✨️期間限定500円セール✨️】Full set"
   }
 }
