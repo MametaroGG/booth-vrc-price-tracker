@@ -7,11 +7,21 @@
         "date": "2026-10-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "【シャロ-Chalo-】用": [
       {
         "date": "2026-10-29",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
         "price": 1400,
         "is_sale": false
       }
@@ -21,6 +31,11 @@
         "date": "2026-10-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "【アンワル2-Anwar2-】用": [
@@ -28,8 +43,18 @@
         "date": "2026-10-29",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 1400,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15133907": "【リオ-Lio-】用",
+    "15133925": "【シャロ-Chalo-】用",
+    "15133926": "【KU_RE】用",
+    "15133927": "【アンワル2-Anwar2-】用"
+  }
 }

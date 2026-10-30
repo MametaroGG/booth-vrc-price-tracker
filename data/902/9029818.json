@@ -32,6 +32,11 @@
         "date": "2026-10-29",
         "price": 3100,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 3100,
+        "is_sale": false
       }
     ],
     "Quest版（フル機能付き）": [
@@ -62,6 +67,11 @@
       },
       {
         "date": "2026-10-29",
+        "price": 3100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
         "price": 3100,
         "is_sale": false
       }
@@ -96,8 +106,17 @@
         "date": "2026-10-29",
         "price": 5400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 5400,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15083485": "PC 版（フル機能付き）",
+    "15083537": "Quest版（フル機能付き）",
+    "15083538": "PC・Quest同梱版（フル機能付き）"
+  }
 }

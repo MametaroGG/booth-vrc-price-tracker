@@ -142,6 +142,11 @@
         "date": "2026-10-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "suzuya": [
@@ -284,6 +289,11 @@
         "date": "2026-10-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "yuri": [
@@ -416,12 +426,25 @@
         "date": "2026-10-29",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "chikage": [
+      {
+        "date": "2026-10-30",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14734527": "fullpackage",
     "14734540": "suzuya",
-    "14811355": "yuri"
+    "14811355": "yuri",
+    "15138661": "chikage"
   }
 }

@@ -12,6 +12,11 @@
         "date": "2026-10-29",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Misaki": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-10-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
         "price": 1200,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-10-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "shinano": [
@@ -46,6 +61,11 @@
       },
       {
         "date": "2026-10-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
         "price": 1200,
         "is_sale": false
       }
@@ -60,6 +80,11 @@
         "date": "2026-10-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "milltina": [
@@ -70,6 +95,11 @@
       },
       {
         "date": "2026-10-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
         "price": 1200,
         "is_sale": false
       }
@@ -84,6 +114,11 @@
         "date": "2026-10-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Eku": [
@@ -94,6 +129,11 @@
       },
       {
         "date": "2026-10-29",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
         "price": 1200,
         "is_sale": false
       }
@@ -108,6 +148,11 @@
         "date": "2026-10-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "Lumina": [
@@ -120,8 +165,31 @@
         "date": "2026-10-29",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 1200,
+        "is_sale": false
+      }
+    ],
+    "もちふぃった～で変換後にギミックを調整するtool(注を先に読んでください": [
+      {
+        "date": "2026-10-30",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15119418": "フルセット",
+    "15121482": "Misaki",
+    "15121984": "selestia",
+    "15121985": "shinano",
+    "15121986": "kikyo",
+    "15121987": "milltina",
+    "15121988": "Manuka",
+    "15121989": "Eku",
+    "15121990": "shinra",
+    "15121991": "Lumina"
+  }
 }

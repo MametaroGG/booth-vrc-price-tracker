@@ -7,11 +7,21 @@
         "date": "2026-10-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "Makeup Texture only": [
       {
         "date": "2026-10-29",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
         "price": 400,
         "is_sale": false
       }
@@ -21,6 +31,11 @@
         "date": "2026-10-29",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "慈悲 (Full Set)": [
@@ -28,8 +43,18 @@
         "date": "2026-10-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15134383": "EyeTexture only",
+    "15134418": "Makeup Texture only",
+    "15134419": "Full Set (Eye＋Makeup Texture ＋ SDF)",
+    "15134420": "慈悲 (Full Set)"
+  }
 }

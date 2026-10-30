@@ -12,6 +12,11 @@
         "date": "2026-10-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Lumiere Winter Date SINANO": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-10-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
         "price": 600,
         "is_sale": false
       }
@@ -36,8 +46,17 @@
         "date": "2026-10-29",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15106350": "Lumiere Winter Date SINANO",
+    "15106378": "Lumiere Winter Date MANUKA",
+    "15106379": "Lumiere Winter Date MANUKA&SINANO"
+  }
 }
