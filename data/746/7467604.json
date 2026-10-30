@@ -852,10 +852,23 @@
         "date": "2026-10-29",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-30",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "for Matsuri": [
+      {
+        "date": "2026-10-30",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12500487": "default"
+    "12500487": "default",
+    "15146895": "for Matsuri"
   }
 }
