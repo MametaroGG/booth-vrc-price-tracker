@@ -12,6 +12,11 @@
         "date": "2026-10-30",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-31",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "まよ -Mayo-": [
@@ -24,6 +29,11 @@
         "date": "2026-10-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "ルミナ -Lumina-": [
@@ -36,6 +46,11 @@
         "date": "2026-10-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "海咲 -Misaki-": [
@@ -48,6 +63,11 @@
         "date": "2026-10-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "森羅 -Shinra-": [
@@ -60,6 +80,11 @@
         "date": "2026-10-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "ミルティナ -Milltina-": [
@@ -72,6 +97,11 @@
         "date": "2026-10-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "アルエ -Alué-": [
@@ -84,6 +114,11 @@
         "date": "2026-10-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-31",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "くうた -Kuuta-": [
@@ -96,8 +131,22 @@
         "date": "2026-10-30",
         "price": 400,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-31",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14963924": "フルパック -Fullpack-",
+    "14964107": "ルミナ -Lumina-",
+    "14964108": "海咲 -Misaki-",
+    "14964109": "森羅 -Shinra-",
+    "14964110": "まよ -Mayo-",
+    "14964111": "アルエ -Alué-",
+    "14964112": "くうた -Kuuta-",
+    "14967096": "ミルティナ -Milltina-"
+  }
 }

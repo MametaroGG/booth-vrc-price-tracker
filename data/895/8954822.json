@@ -73,6 +73,11 @@
         "date": "2026-10-30",
         "price": 250,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-31",
+        "price": 250,
+        "is_sale": false
       }
     ],
     "50％OFF❣️Noélie — Eye Texture【Nakiya 通常版】": [
@@ -80,6 +85,11 @@
         "date": "2026-10-30",
         "price": 150,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-31",
+        "price": 150,
+        "is_sale": false
       }
     ],
     "🆓Noélie — Eye Texture【Nakiya FREE版1Color】": [
@@ -87,8 +97,16 @@
         "date": "2026-10-30",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-10-31",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14963760": "50％OFF❣️Noélie — Eye Texture【Nakiya FULL Pack】",
+    "15041778": "50％OFF❣️Noélie — Eye Texture【Nakiya 通常版】"
+  }
 }

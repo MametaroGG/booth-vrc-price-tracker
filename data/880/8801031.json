@@ -152,6 +152,11 @@
         "date": "2026-10-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Ribite": [
@@ -302,6 +307,11 @@
       },
       {
         "date": "2026-10-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
         "price": 200,
         "is_sale": false
       }
@@ -456,6 +466,11 @@
         "date": "2026-10-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Damien": [
@@ -606,6 +621,11 @@
       },
       {
         "date": "2026-10-30",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
         "price": 200,
         "is_sale": false
       }
@@ -760,6 +780,18 @@
         "date": "2026-10-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Shizune": [
+      {
+        "date": "2026-10-31",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
@@ -768,6 +800,7 @@
     "14700824": "Ribite",
     "14700825": "JAULA",
     "14700826": "Damien",
-    "14700827": "Baku"
+    "14700827": "Baku",
+    "15149611": "Shizune"
   }
 }

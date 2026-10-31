@@ -87,6 +87,11 @@
         "date": "2026-10-30",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "lapwing": [
@@ -172,6 +177,11 @@
       },
       {
         "date": "2026-10-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
         "price": 500,
         "is_sale": false
       }
@@ -261,6 +271,11 @@
         "date": "2026-10-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "sio": [
@@ -346,6 +361,11 @@
       },
       {
         "date": "2026-10-30",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
         "price": 500,
         "is_sale": false
       }
@@ -435,6 +455,18 @@
         "date": "2026-10-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "まつり其の弐": [
+      {
+        "date": "2026-10-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
@@ -443,6 +475,7 @@
     "15003437": "lapwing",
     "15003438": "marycia",
     "15003439": "sio",
-    "15003440": "mumus"
+    "15003440": "mumus",
+    "15146846": "まつり其の弐"
   }
 }

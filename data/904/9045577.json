@@ -12,6 +12,11 @@
         "date": "2026-10-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "love(内容物は同じです)": [
@@ -24,8 +29,16 @@
         "date": "2026-10-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-10-31",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15107768": "PostProcessing",
+    "15107797": "love(内容物は同じです)"
+  }
 }
