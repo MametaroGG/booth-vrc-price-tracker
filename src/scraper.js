@@ -187,8 +187,13 @@ async function scrapeProductDetails(productId, client) {
         }
 
         // Detect sale keywords in title
-        const saleKeywords = ['sale', 'セール', '割引', '期間限定', 'off'];
-        const hasSaleKeyword = saleKeywords.some(k => name.toLowerCase().includes(k));
+        // OFF inside Coffee/Office/Official or an off-shoulder label is not a
+        // discount. Require an explicit monetary/percentage discount expression.
+        // NFKC accepts full-width digits, Latin letters, and percent signs.
+        const title = name.normalize('NFKC').toLowerCase();
+        const saleKeywords = ['sale', 'セール', '割引', '期間限定'];
+        const offDiscount = /(?:\d+(?:[.,]\d+)?\s*(?:%|円)\s*off(?![a-z])|(?<![a-z])off\s*\d+(?:[.,]\d+)?\s*(?:%|円))/i.test(title);
+        const hasSaleKeyword = saleKeywords.some(k => name.toLowerCase().includes(k)) || offDiscount;
 
         if (!name || variations.length === 0) throw new Error('Unrecognized product page or missing price');
         return { kind: 'success', product: { id: productId, name, variations, hasSaleKeyword } };
@@ -279,7 +284,12 @@ async function saveProductData(product, { dataDir = DATA_DIR, today = jstDate(Da
 
         // Price drop heuristic
         const lastValidEntry = [...history].reverse().find(entry => entry.date !== today);
-        let isSaleFinal = v.isSale || product.hasSaleKeyword;
+        // A title promotion applies to the item, not automatically to every SKU.
+        // For multi-variant items require corroborating price history for this
+        // exact variant. Explicit variant badges/DOM remain independent evidence.
+        const titleApplies = product.hasSaleKeyword && (product.variations.length === 1 ||
+            history.some(entry => entry.date < today && entry.price > v.price));
+        let isSaleFinal = Boolean(v.isSale || titleApplies);
         if (!isSaleFinal && lastValidEntry && v.price < lastValidEntry.price) {
             isSaleFinal = true;
         }

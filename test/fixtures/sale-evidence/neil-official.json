@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "item_id": "1780665",
+  "source_url": "https://booth.pm/ja/items/1780665",
+  "observed_at": "2026-10-31T00:58:28Z",
+  "evidence_method": "supported cloud browser visible variation list + DOM data-product-variant/data-product-price attributes; free download link variation_id; no purchases/downloads",
+  "current_variations_complete": true,
+  "variations": [
+    {
+      "id": "13536956",
+      "name": "リメイク版（おすすめ）",
+      "price": 2500
+    },
+    {
+      "id": "13536957",
+      "name": "つぶ貝おいしい（お布施用、中身はリメイク版版と変わりません）",
+      "price": 6000
+    },
+    {
+      "id": "8526602",
+      "name": "利用規約",
+      "price": 0
+    },
+    {
+      "id": "9809306",
+      "name": "plus旧版",
+      "price": 2500
+    },
+    {
+      "id": "9810385",
+      "name": "つぶ貝おいしい（お布施用、中身はplus旧版と変わりません）",
+      "price": 6000
+    },
+    {
+      "id": "2832325",
+      "name": "旧版",
+      "price": 2500
+    },
+    {
+      "id": "8382445",
+      "name": "つぶ貝おいしい（お布施用、中身は旧版と変わりません）",
+      "price": 6000
+    }
+  ],
+  "sale_announcement": {
+    "start_jst": "2026-10-10T18:10:00+09:00",
+    "end_jst": "2026-11-10T23:59:00+09:00",
+    "regular_price": 5000,
+    "sale_price": 2500,
+    "scope_evidence": "official description explicitly says 5000 to2500; current priced2500 variants match; 6000 donations and0 terms do not"
+  },
+  "proposal": {
+    "free_label": "一部無料",
+    "free_target": "利用規約",
+    "free_variant_ids": [
+      "8526602"
+    ],
+    "do_not_change_catalog_price_or_sort": true,
+    "do_not_overwrite_historical_observations": true,
+    "no_publication_performed": true
+  }
+}
