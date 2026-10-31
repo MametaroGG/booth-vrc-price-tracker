@@ -857,10 +857,31 @@
         "date": "2026-10-30",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Standard": [
+      {
+        "date": "2026-11-01",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "MameFriends": [
+      {
+        "date": "2026-11-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12697680": "default"
+    "12697680": "default",
+    "15154384": "Standard",
+    "15154385": "MameFriends"
   }
 }
