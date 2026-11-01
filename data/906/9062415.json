@@ -12,6 +12,11 @@
         "date": "2026-10-31",
         "price": 3200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 3200,
+        "is_sale": false
       }
     ],
     "for ラシューシャ": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-10-31",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
         "price": 1600,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-10-31",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "for ミルティナ": [
@@ -46,6 +61,11 @@
       },
       {
         "date": "2026-10-31",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
         "price": 1600,
         "is_sale": false
       }
@@ -60,8 +80,19 @@
         "date": "2026-10-31",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1600,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15133493": "フルパック",
+    "15139220": "for ラシューシャ",
+    "15139221": "for ルミナ",
+    "15139222": "for ミルティナ",
+    "15139223": "for +Head"
+  }
 }

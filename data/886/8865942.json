@@ -132,10 +132,31 @@
         "date": "2026-10-31",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "ハーフチョークのみ": [
+      {
+        "date": "2026-11-01",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "long版のみ": [
+      {
+        "date": "2026-11-01",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14816399": "default"
+    "14816399": "default",
+    "15156250": "ハーフチョークのみ",
+    "15156251": "long版のみ"
   }
 }

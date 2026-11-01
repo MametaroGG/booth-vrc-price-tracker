@@ -7,6 +7,11 @@
         "date": "2026-10-31",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Happy Birthday!! (Donation)": [
@@ -14,8 +19,16 @@
         "date": "2026-10-31",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15153259": "Happy Birthday!! (Normal)",
+    "15153377": "Happy Birthday!! (Donation)"
+  }
 }

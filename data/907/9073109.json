@@ -7,11 +7,21 @@
         "date": "2026-10-31",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "凌岈 Ryouga": [
       {
         "date": "2026-10-31",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
         "price": 400,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-10-31",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15150081": "フルパック",
+    "15150193": "凌岈 Ryouga",
+    "15150194": "翠琉 Seiru"
+  }
 }

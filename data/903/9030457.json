@@ -22,6 +22,11 @@
         "date": "2026-10-31",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "アルエ": [
@@ -43,6 +48,11 @@
       {
         "date": "2026-10-31",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 100,
         "is_sale": false
       }
     ],
@@ -66,6 +76,11 @@
         "date": "2026-10-31",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "狛乃": [
@@ -87,6 +102,11 @@
       {
         "date": "2026-10-31",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 100,
         "is_sale": false
       }
     ],
@@ -110,6 +130,11 @@
         "date": "2026-10-31",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "斑霞": [
@@ -131,6 +156,11 @@
       {
         "date": "2026-10-31",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 100,
         "is_sale": false
       }
     ],
@@ -154,6 +184,11 @@
         "date": "2026-10-31",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "悠莉": [
@@ -176,8 +211,22 @@
         "date": "2026-10-31",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15084634": "full pack",
+    "15086275": "アルエ",
+    "15086276": "泣夜",
+    "15086277": "狛乃",
+    "15086278": "紗夜",
+    "15086279": "斑霞",
+    "15086280": "彼方",
+    "15086281": "悠莉"
+  }
 }

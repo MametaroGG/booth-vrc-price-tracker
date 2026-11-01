@@ -29,6 +29,11 @@
         "date": "2026-10-31",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "ミルティナ対応　（for Milltina）定価300円": [
@@ -46,6 +51,11 @@
         "date": "2026-10-31",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "マヌカ対応　（for MANUKA）定価300円": [
@@ -63,6 +73,11 @@
         "date": "2026-10-31",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "しなの対応　（for Shinano）　定価300円": [
@@ -80,6 +95,11 @@
         "date": "2026-10-31",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "エク＆ミルフィ対応　（for EKU＆Milfy）　定価300円": [
@@ -97,11 +117,21 @@
         "date": "2026-10-31",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "Liltoon拡張シェーダー「蜜つや肌・汗」付きフルセット　定価1200円": [
       {
         "date": "2026-10-31",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
         "price": 600,
         "is_sale": false
       }
@@ -111,8 +141,15 @@
         "date": "2026-10-31",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 0,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15121145": "Liltoon拡張シェーダー「蜜つや肌・汗」付きフルセット　定価1200円"
+  }
 }
