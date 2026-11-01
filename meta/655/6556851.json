@@ -39,7 +39,7 @@
   ],
   "adult": false,
   "sold_out": false,
-  "end_of_sale": true,
+  "end_of_sale": false,
   "published_at": "2025-02-04T19:30:12.000+09:00",
   "likes_history": [
     {
@@ -73,7 +73,11 @@
     {
       "date": "2026-10-31",
       "count": 48
+    },
+    {
+      "date": "2026-11-01",
+      "count": 48
     }
   ],
-  "fetched_at": "2026-10-31"
+  "fetched_at": "2026-11-01"
 }
