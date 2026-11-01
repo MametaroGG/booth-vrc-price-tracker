@@ -51,7 +51,7 @@
     "name": "3D衣装",
     "parent": "3Dモデル"
   },
-  "likes": 422,
+  "likes": 424,
   "refs": [
     "4993931",
     "6305948",
@@ -85,7 +85,7 @@
   ],
   "adult": false,
   "sold_out": false,
-  "end_of_sale": false,
+  "end_of_sale": true,
   "published_at": "2026-09-15T10:49:15.000+09:00",
   "likes_history": [
     {
@@ -111,7 +111,11 @@
     {
       "date": "2026-10-31",
       "count": 422
+    },
+    {
+      "date": "2026-11-01",
+      "count": 424
     }
   ],
-  "fetched_at": "2026-10-31"
+  "fetched_at": "2026-11-01"
 }
