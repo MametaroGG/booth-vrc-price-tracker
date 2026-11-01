@@ -437,6 +437,11 @@
         "date": "2026-05-29",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "+支援代(上の商品と内容物は変わりません)": [
@@ -872,6 +877,11 @@
       },
       {
         "date": "2026-05-29",
+        "price": 600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
         "price": 600,
         "is_sale": false
       }
@@ -1311,7 +1321,17 @@
         "date": "2026-05-29",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 300,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10218681": "MakeupTexture(Minase)＆EyeTexture(5アバター対応)",
+    "10218709": "+支援代(上の商品と内容物は変わりません)",
+    "10223501": "EyeTexture only(5アバター対応)"
   }
 }

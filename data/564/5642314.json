@@ -432,6 +432,11 @@
         "date": "2026-05-30",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "PNGonly": [
@@ -864,7 +869,16 @@
         "date": "2026-05-30",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-01",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "9527629": "psd、clip、pngセット",
+    "9527640": "PNGonly"
   }
 }
