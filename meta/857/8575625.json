@@ -57,11 +57,11 @@
     "name": "3Dテクスチャ",
     "parent": "3Dモデル"
   },
-  "likes": 652,
+  "likes": 655,
   "refs": [],
   "adult": false,
   "sold_out": false,
-  "end_of_sale": false,
+  "end_of_sale": true,
   "published_at": "2026-09-23T18:00:02.000+09:00",
   "likes_history": [
     {
@@ -91,7 +91,11 @@
     {
       "date": "2026-11-01",
       "count": 652
+    },
+    {
+      "date": "2026-11-02",
+      "count": 655
     }
   ],
-  "fetched_at": "2026-11-01"
+  "fetched_at": "2026-11-02"
 }
