@@ -837,10 +837,39 @@
         "date": "2026-11-01",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-02",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Andi": [
+      {
+        "date": "2026-11-02",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Shizuku": [
+      {
+        "date": "2026-11-02",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "C2300": [
+      {
+        "date": "2026-11-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "9782257": "default"
+    "9782257": "default",
+    "15165858": "Andi",
+    "15165859": "Shizuku",
+    "15165860": "C2300"
   }
 }
