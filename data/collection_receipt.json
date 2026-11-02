@@ -1,0 +1,31 @@
+{
+  "status": "paused",
+  "reason": "day-boundary",
+  "failed": false,
+  "metrics": {
+    "searchPages": 523,
+    "searchFailures": 0,
+    "itemSuccess": 31294,
+    "itemFailures": 0,
+    "unavailable": 0,
+    "retries": 2,
+    "duplicatesAvoided": 112,
+    "chargedHttpAttempts": 31817,
+    "dailyChargedRequests": 125143
+  },
+  "continueCollection": true,
+  "started_at_ms": 1793619216841,
+  "stopped_at_ms": 1793631600618,
+  "deadline_ms": 1793637216841,
+  "blocked_until_ms": 1793594689089,
+  "reservation_completed": true,
+  "pending_retry_count": 0,
+  "schema": "boopa-collection-receipt-v1",
+  "repository": "MametaroGG/booth-vrc-price-tracker",
+  "run_id": "41437225435",
+  "run_attempt": "1",
+  "source_commit": "924c5d532692b0044fe01d4fa1322b98b0fa74f8",
+  "reservation_id": "41437225435-1",
+  "scope": "bounded-filtered-search-observation",
+  "whole_catalog_complete": false
+}
