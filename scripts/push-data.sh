@@ -39,6 +39,11 @@ for attempt in 1 2 3; do
     base=$remote_tip
     # Update only the checked default branch, never force-push.
     if git push origin "HEAD:$GITHUB_REF"; then
+        # HEAD here is the final potentially rebased commit, NOT github.sha.
+        # No output on no-change, failed or ambiguous push paths.
+        if [[ -n "${GITHUB_OUTPUT:-}" ]]; then
+            printf 'saved_commit=%s\n' "$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+        fi
         exit 0
     fi
     echo "Push attempt $attempt failed; refreshing the branch before retrying."

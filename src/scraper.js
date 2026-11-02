@@ -12,6 +12,7 @@ const {
     CollectionStop, createRequestClient, getStopTargetTime, jstDate, writeJson
 } = require('./collection-runtime');
 const { shouldContinueCollection } = require('./continuation');
+const { makeReceipt, eligible } = require('./collection-receipt');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const MAX_PAGES = 3333; // BOOTH's search limit; keep both full categories.
@@ -540,9 +541,14 @@ async function main({
     metrics.dailyChargedRequests = client.getActualRequests?.() ?? (finalBudget ? actualRequests(finalBudget) : null);
     log(`Collection ${result.status}; saved ${metrics.itemSuccess}, queued retries ${state.retries.length}` +
         (metrics.chargedHttpAttempts === null ? '' : `; charged HTTP attempts ${metrics.chargedHttpAttempts}, daily charged total ${metrics.dailyChargedRequests}`));
-    const continueCollection = shouldContinueCollection({ result, metrics, startedAt, stoppedAt: now(), deadline,
+    const stoppedAt = now();
+    const continueCollection = shouldContinueCollection({ result, metrics, startedAt, stoppedAt, deadline,
         blockedUntil: finalBudget?.blockedUntil, startedMidSweep });
-    return { ...result, metrics, continueCollection };
+    return { ...result, metrics, continueCollection,
+        started_at_ms: startedAt, stopped_at_ms: stoppedAt, deadline_ms: deadline,
+        blocked_until_ms: finalBudget?.blockedUntil,
+        reservation_completed: finalBudget?.reservation?.completed === true,
+        pending_retry_count: state.retries.length };
 }
 
 // Importing the module for offline tests never starts network collection.
@@ -553,9 +559,13 @@ if (require.main === module) {
         ? main()
         : Promise.reject(new Error('Run through the workflow with a committed request reservation'));
     run.then(result => {
+        // Persist outcome, including failures, in the SAME data commit as histories.
+        // completed reservation alone only means accounting cleanup succeeded.
+        const receipt = makeReceipt(result);
+        writeJson(path.join(DATA_DIR, 'collection_receipt.json'), receipt);
         console.log(`Collection result: ${result.status}${result.reason ? ` (${result.reason})` : ''}`);
         if (process.env.GITHUB_OUTPUT) {
-            fs.appendFileSync(process.env.GITHUB_OUTPUT, `continue_collection=${result.continueCollection === true}\n`);
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, `continue_collection=${result.continueCollection === true}\nboopadb_eligible=${eligible(receipt)}\n`);
         }
         if (result.failed || result.status === 'failed') process.exitCode = 1;
     }).catch(error => {

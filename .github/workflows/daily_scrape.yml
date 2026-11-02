@@ -34,11 +34,34 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
-        timeout-minutes: 20
+        timeout-minutes: 15
         with:
           fetch-depth: 1
           # A queued run's event SHA may predate the preceding reservation.
           ref: ${{ env.DEFAULT_BRANCH }}
+
+      - name: Verify reviewed source before dependencies
+        timeout-minutes: 1
+        run: |
+          python3 -I - <<'PY'
+          import json, pathlib, subprocess
+          expected = {'.gitattributes': {'mode': '100644', 'type': 'blob', 'sha': 'dfe0770424b2a19faf507a501ebfc23be8f54e7b'}, '.gitignore': {'mode': '100644', 'type': 'blob', 'sha': '836703e46e7f5b62c4a338b6f436c6658467e454'}, 'Boopa - BOOTH Price Tracker for VRChat.zip': {'mode': '100644', 'type': 'blob', 'sha': '8c095a39310ed80ef4c45598c46cb70b8dc5ffd9'}, 'assets': {'mode': '040000', 'type': 'tree', 'sha': '47b48dc7bf27d979b35e03c52b7b2022673bce99'}, 'booth-vrc-price-tracker.code-workspace': {'mode': '100644', 'type': 'blob', 'sha': '362d7c25bb405a5cc76d0c7518cc240999a574f4'}, 'dist': {'mode': '040000', 'type': 'tree', 'sha': '01afd779feeac8df3a5a389fe323983884fb87d4'}, 'docs': {'mode': '040000', 'type': 'tree', 'sha': '443fe1722c5902d9a65ae61471396520debeec2d'}, 'extension.crx': {'mode': '100644', 'type': 'blob', 'sha': 'b978dcc922eae497deeca803ccfe8af5bf46ad05'}, 'extension': {'mode': '040000', 'type': 'tree', 'sha': 'da7dc038a4610239e0a612dd4f5918040ceb3785'}, 'index.html': {'mode': '100644', 'type': 'blob', 'sha': 'ce0a431c77fdf0d36e59e1ea17506fa1e8eb1e51'}, 'package-lock.json': {'mode': '100644', 'type': 'blob', 'sha': '43cc06c1bf40ed032d7704ca2e43c8caa2c93339'}, 'package.json': {'mode': '100644', 'type': 'blob', 'sha': 'b4a70f1c8f4faed1ffd3e843d3315f86c341bb15'}, 'scripts': {'mode': '040000', 'type': 'tree', 'sha': '8d25af313c5ce0e38068fb126832ffdcf6c893fe'}, 'src': {'mode': '040000', 'type': 'tree', 'sha': 'f87362be086663c18704f1dc88e730273b85283d'}, 'test': {'mode': '040000', 'type': 'tree', 'sha': '9fda80fc15cd5dde6f7ab42b6d0b2133777095dc'}, 'write-save-receipt.cjs': {'mode': '100644', 'type': 'blob', 'sha': '00d22b6a011c5667a5a48db7d973e1d2e9339863'}}
+          raw = subprocess.check_output(['git','ls-tree','-z','HEAD'])
+          actual = {}
+          for row in raw.split(b'\0'):
+              if not row: continue
+              info, name = row.decode().split('\t',1)
+              mode, kind, sha = info.split()
+              if name not in ('data','meta','.github'):
+                  actual[name] = dict(mode=mode,type=kind,sha=sha)
+          if actual != expected: raise SystemExit('Unreviewed collector source tree; stop before executing repository code')
+          subprocess.run(['git','diff','--exit-code','--quiet','HEAD','--','.',':!data',':!meta',':!.github'],check=True)
+          others = subprocess.check_output(['git','ls-files','--others','-z']).split(b'\0')
+          for entry in others:
+              if entry and entry.decode().split('/',1)[0] not in ('data','meta','.github','node_modules'):
+                  raise SystemExit('Untracked source/config file; stop before executing repository code')
+          if pathlib.Path('.npmrc').exists(): raise SystemExit('Unreviewed npm configuration')
+          PY
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -64,6 +87,30 @@ jobs:
         run: |
           bash scripts/push-data.sh "chore: reserve scrape request budget"
 
+      - name: Verify reviewed source before collection
+        timeout-minutes: 1
+        run: |
+          python3 -I - <<'PY'
+          import json, pathlib, subprocess
+          expected = {'.gitattributes': {'mode': '100644', 'type': 'blob', 'sha': 'dfe0770424b2a19faf507a501ebfc23be8f54e7b'}, '.gitignore': {'mode': '100644', 'type': 'blob', 'sha': '836703e46e7f5b62c4a338b6f436c6658467e454'}, 'Boopa - BOOTH Price Tracker for VRChat.zip': {'mode': '100644', 'type': 'blob', 'sha': '8c095a39310ed80ef4c45598c46cb70b8dc5ffd9'}, 'assets': {'mode': '040000', 'type': 'tree', 'sha': '47b48dc7bf27d979b35e03c52b7b2022673bce99'}, 'booth-vrc-price-tracker.code-workspace': {'mode': '100644', 'type': 'blob', 'sha': '362d7c25bb405a5cc76d0c7518cc240999a574f4'}, 'dist': {'mode': '040000', 'type': 'tree', 'sha': '01afd779feeac8df3a5a389fe323983884fb87d4'}, 'docs': {'mode': '040000', 'type': 'tree', 'sha': '443fe1722c5902d9a65ae61471396520debeec2d'}, 'extension.crx': {'mode': '100644', 'type': 'blob', 'sha': 'b978dcc922eae497deeca803ccfe8af5bf46ad05'}, 'extension': {'mode': '040000', 'type': 'tree', 'sha': 'da7dc038a4610239e0a612dd4f5918040ceb3785'}, 'index.html': {'mode': '100644', 'type': 'blob', 'sha': 'ce0a431c77fdf0d36e59e1ea17506fa1e8eb1e51'}, 'package-lock.json': {'mode': '100644', 'type': 'blob', 'sha': '43cc06c1bf40ed032d7704ca2e43c8caa2c93339'}, 'package.json': {'mode': '100644', 'type': 'blob', 'sha': 'b4a70f1c8f4faed1ffd3e843d3315f86c341bb15'}, 'scripts': {'mode': '040000', 'type': 'tree', 'sha': '8d25af313c5ce0e38068fb126832ffdcf6c893fe'}, 'src': {'mode': '040000', 'type': 'tree', 'sha': 'f87362be086663c18704f1dc88e730273b85283d'}, 'test': {'mode': '040000', 'type': 'tree', 'sha': '9fda80fc15cd5dde6f7ab42b6d0b2133777095dc'}, 'write-save-receipt.cjs': {'mode': '100644', 'type': 'blob', 'sha': '00d22b6a011c5667a5a48db7d973e1d2e9339863'}}
+          raw = subprocess.check_output(['git','ls-tree','-z','HEAD'])
+          actual = {}
+          for row in raw.split(b'\0'):
+              if not row: continue
+              info, name = row.decode().split('\t',1)
+              mode, kind, sha = info.split()
+              if name not in ('data','meta','.github'):
+                  actual[name] = dict(mode=mode,type=kind,sha=sha)
+          if actual != expected: raise SystemExit('Unreviewed collector source tree; stop before executing repository code')
+          subprocess.run(['git','diff','--exit-code','--quiet','HEAD','--','.',':!data',':!meta',':!.github'],check=True)
+          others = subprocess.check_output(['git','ls-files','--others','-z']).split(b'\0')
+          for entry in others:
+              if entry and entry.decode().split('/',1)[0] not in ('data','meta','.github','node_modules'):
+                  raise SystemExit('Untracked source/config file; stop before executing repository code')
+          if pathlib.Path('.npmrc').exists(): raise SystemExit('Unreviewed npm configuration')
+          PY
+          echo "COLLECTOR_SOURCE_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
       - name: Run Scraper
         id: scraper
         # The scraper has a five-hour cap and stops at job start + 5h30m,
@@ -77,6 +124,29 @@ jobs:
         if: ${{ !cancelled() && (steps.scraper.outcome == 'success' || steps.scraper.outcome == 'failure') }}
         timeout-minutes: 10
         run: bash scripts/push-data.sh
+
+      - name: Verify reviewed source after save
+        timeout-minutes: 1
+        run: |
+          python3 -I - <<'PY'
+          import json, pathlib, subprocess
+          expected = {'.gitattributes': {'mode': '100644', 'type': 'blob', 'sha': 'dfe0770424b2a19faf507a501ebfc23be8f54e7b'}, '.gitignore': {'mode': '100644', 'type': 'blob', 'sha': '836703e46e7f5b62c4a338b6f436c6658467e454'}, 'Boopa - BOOTH Price Tracker for VRChat.zip': {'mode': '100644', 'type': 'blob', 'sha': '8c095a39310ed80ef4c45598c46cb70b8dc5ffd9'}, 'assets': {'mode': '040000', 'type': 'tree', 'sha': '47b48dc7bf27d979b35e03c52b7b2022673bce99'}, 'booth-vrc-price-tracker.code-workspace': {'mode': '100644', 'type': 'blob', 'sha': '362d7c25bb405a5cc76d0c7518cc240999a574f4'}, 'dist': {'mode': '040000', 'type': 'tree', 'sha': '01afd779feeac8df3a5a389fe323983884fb87d4'}, 'docs': {'mode': '040000', 'type': 'tree', 'sha': '443fe1722c5902d9a65ae61471396520debeec2d'}, 'extension.crx': {'mode': '100644', 'type': 'blob', 'sha': 'b978dcc922eae497deeca803ccfe8af5bf46ad05'}, 'extension': {'mode': '040000', 'type': 'tree', 'sha': 'da7dc038a4610239e0a612dd4f5918040ceb3785'}, 'index.html': {'mode': '100644', 'type': 'blob', 'sha': 'ce0a431c77fdf0d36e59e1ea17506fa1e8eb1e51'}, 'package-lock.json': {'mode': '100644', 'type': 'blob', 'sha': '43cc06c1bf40ed032d7704ca2e43c8caa2c93339'}, 'package.json': {'mode': '100644', 'type': 'blob', 'sha': 'b4a70f1c8f4faed1ffd3e843d3315f86c341bb15'}, 'scripts': {'mode': '040000', 'type': 'tree', 'sha': '8d25af313c5ce0e38068fb126832ffdcf6c893fe'}, 'src': {'mode': '040000', 'type': 'tree', 'sha': 'f87362be086663c18704f1dc88e730273b85283d'}, 'test': {'mode': '040000', 'type': 'tree', 'sha': '9fda80fc15cd5dde6f7ab42b6d0b2133777095dc'}, 'write-save-receipt.cjs': {'mode': '100644', 'type': 'blob', 'sha': '00d22b6a011c5667a5a48db7d973e1d2e9339863'}}
+          raw = subprocess.check_output(['git','ls-tree','-z','HEAD'])
+          actual = {}
+          for row in raw.split(b'\0'):
+              if not row: continue
+              info, name = row.decode().split('\t',1)
+              mode, kind, sha = info.split()
+              if name not in ('data','meta','.github'):
+                  actual[name] = dict(mode=mode,type=kind,sha=sha)
+          if actual != expected: raise SystemExit('Unreviewed collector source tree; stop before executing repository code')
+          subprocess.run(['git','diff','--exit-code','--quiet','HEAD','--','.',':!data',':!meta',':!.github'],check=True)
+          others = subprocess.check_output(['git','ls-files','--others','-z']).split(b'\0')
+          for entry in others:
+              if entry and entry.decode().split('/',1)[0] not in ('data','meta','.github','node_modules'):
+                  raise SystemExit('Untracked source/config file; stop before executing repository code')
+          if pathlib.Path('.npmrc').exists(): raise SystemExit('Unreviewed npm configuration')
+          PY
 
       - name: Report scraper failure
         if: ${{ always() && steps.scraper.outcome == 'failure' }}
@@ -94,3 +164,23 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         # One dispatch, no retries after an uncertain response. Cron is fallback.
         run: node src/continuation.js
+
+      - name: Record immutable saved collection
+        if: ${{ success() && steps.scraper.outcome == 'success' && steps.save.outcome == 'success' && steps.scraper.outputs.boopadb_eligible == 'true' }}
+        timeout-minutes: 1
+        env:
+          SCRAPER_OUTCOME: ${{ steps.scraper.outcome }}
+          SAVE_OUTCOME: ${{ steps.save.outcome }}
+          SAVED_COMMIT: ${{ steps.save.outputs.saved_commit }}
+        run: node write-save-receipt.cjs
+
+      - name: Retain immutable saved collection
+        timeout-minutes: 1
+        if: ${{ success() && steps.scraper.outcome == 'success' && steps.save.outcome == 'success' && steps.scraper.outputs.boopadb_eligible == 'true' }}
+        # Upstream upload-artifact v4.6.2 commit verified read-only; local proposal.
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: boopadb-collector-${{ github.run_id }}-${{ github.run_attempt }}
+          path: saved-collection.json
+          if-no-files-found: error
+          overwrite: false

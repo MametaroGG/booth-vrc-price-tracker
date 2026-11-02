@@ -112,7 +112,14 @@ test('workflow budgets setup and saving, tests first, and exposes scraper failur
     assert.match(step('Report scraper failure'), /always\(\).*steps\.scraper\.outcome == 'failure'/);
     assert.match(script('Report scraper failure'), /exit 1/);
     const timeouts = [...workflow.matchAll(/^        timeout-minutes: (\d+)$/gm)].map((match) => Number(match[1]));
-    assert.equal(timeouts.length, 11);
+    assert.equal(timeouts.length, 16);
+    assert.match(step('Checkout'), /timeout-minutes: 15/);
+    assert.ok(workflow.indexOf('- name: Verify reviewed source before dependencies') < workflow.indexOf('- name: Install dependencies'));
+    assert.ok(workflow.indexOf('- name: Commit reservation') < workflow.indexOf('- name: Verify reviewed source before collection'));
+    assert.ok(workflow.indexOf('- name: Verify reviewed source before collection') < workflow.indexOf('- name: Run Scraper'));
+    assert.ok(workflow.indexOf('- name: Commit and Push') < workflow.indexOf('- name: Verify reviewed source after save'));
+    assert.ok(workflow.indexOf('- name: Verify reviewed source after save') < workflow.indexOf('- name: Continue collection'));
+    assert.match(step('Retain immutable saved collection'), /timeout-minutes: 1/);
     assert.equal(timeouts.reduce((sum, minutes) => sum + minutes, 0), 359);
     assert.ok(timeouts.reduce((sum, minutes) => sum + minutes, 0) < 360);
     assert.doesNotMatch(commitScript, /(?:--force|git pull|--unshallow)/);
