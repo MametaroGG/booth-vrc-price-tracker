@@ -852,10 +852,39 @@
         "date": "2026-11-01",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-02",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Milltina": [
+      {
+        "date": "2026-11-02",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Murumuru": [
+      {
+        "date": "2026-11-02",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Airina": [
+      {
+        "date": "2026-11-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "11374117": "default"
+    "11374117": "default",
+    "15164828": "Milltina",
+    "15164829": "Murumuru",
+    "15164830": "Airina"
   }
 }

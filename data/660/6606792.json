@@ -852,10 +852,39 @@
         "date": "2026-11-01",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-02",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Chiyu": [
+      {
+        "date": "2026-11-02",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Mafuyu": [
+      {
+        "date": "2026-11-02",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Ellel": [
+      {
+        "date": "2026-11-02",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "11127548": "default"
+    "11127548": "default",
+    "15164530": "Chiyu",
+    "15164531": "Mafuyu",
+    "15164532": "Ellel"
   }
 }
