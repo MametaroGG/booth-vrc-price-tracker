@@ -22,10 +22,63 @@
         "date": "2026-11-01",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "SIGNAL 単品 / single": [
+      {
+        "date": "2026-11-03",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "SEGMENT 単品 / single": [
+      {
+        "date": "2026-11-03",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "CIPHER 単品 / single": [
+      {
+        "date": "2026-11-03",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "FRACTURE 単品 / single": [
+      {
+        "date": "2026-11-03",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "GIMBAL 単品 / single": [
+      {
+        "date": "2026-11-03",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "VANE 単品 / single": [
+      {
+        "date": "2026-11-03",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15135026": "default"
+    "15135026": "default",
+    "15164429": "SIGNAL 単品 / single",
+    "15164430": "SEGMENT 単品 / single",
+    "15164431": "CIPHER 単品 / single",
+    "15164432": "FRACTURE 単品 / single",
+    "15164433": "GIMBAL 単品 / single",
+    "15164434": "VANE 単品 / single"
   }
 }

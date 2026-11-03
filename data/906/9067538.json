@@ -17,6 +17,11 @@
         "date": "2026-11-01",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "よわよわPCご支援版": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-11-01",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
         "price": 500,
         "is_sale": false
       }
@@ -51,8 +61,16 @@
         "date": "2026-11-01",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15141379": "通常版",
+    "15141405": "よわよわPCご支援版"
+  }
 }

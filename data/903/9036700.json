@@ -42,6 +42,11 @@
         "date": "2026-11-01",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "ワールド用お茶セット☕": [
@@ -84,8 +89,16 @@
         "date": "2026-11-01",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15094462": "おばけのお茶会ヘイロー🍬☕",
+    "15095045": "ワールド用お茶セット☕"
+  }
 }

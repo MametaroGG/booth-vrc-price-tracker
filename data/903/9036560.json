@@ -42,6 +42,11 @@
         "date": "2026-11-01",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "IroKae Studio": [
@@ -82,6 +87,11 @@
       },
       {
         "date": "2026-11-01",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
         "price": 800,
         "is_sale": false
       }
@@ -126,12 +136,25 @@
         "date": "2026-11-01",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "試験版 IroKaeStuDioPro Ver1.7.0": [
+      {
+        "date": "2026-11-03",
+        "price": 1200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "15094206": "IroKae Studio",
     "15094671": "フルパックセール！！！",
-    "15094672": "拡張パック"
+    "15094672": "拡張パック",
+    "15172624": "試験版 IroKaeStuDioPro Ver1.7.0"
   }
 }

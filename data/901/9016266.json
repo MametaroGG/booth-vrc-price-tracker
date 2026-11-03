@@ -62,10 +62,23 @@
         "date": "2026-11-01",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Lapwing用": [
+      {
+        "date": "2026-11-03",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15062438": "default"
+    "15062438": "default",
+    "15168585": "Lapwing用"
   }
 }

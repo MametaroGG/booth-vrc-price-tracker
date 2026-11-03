@@ -307,10 +307,31 @@
         "date": "2026-11-01",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Chiyu対応": [
+      {
+        "date": "2026-11-03",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "輝夜対応": [
+      {
+        "date": "2026-11-03",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14384116": "default"
+    "14384116": "default",
+    "15168512": "Chiyu対応",
+    "15168513": "輝夜対応"
   }
 }

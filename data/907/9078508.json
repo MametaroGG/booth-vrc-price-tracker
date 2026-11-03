@@ -7,11 +7,21 @@
         "date": "2026-11-01",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "お酒代（お布施 / Donation）": [
       {
         "date": "2026-11-01",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
         "price": 200,
         "is_sale": false
       }
@@ -21,8 +31,16 @@
         "date": "2026-11-01",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15158906": "お酒代（お布施 / Donation）",
+    "15158907": "ケーキ代（お布施 / Donation）"
+  }
 }
