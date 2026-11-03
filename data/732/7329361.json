@@ -862,10 +862,47 @@
         "date": "2026-11-02",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-03",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Full": [
+      {
+        "date": "2026-11-03",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "イチゴ": [
+      {
+        "date": "2026-11-03",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "泣夜※+Head版は同梱されていません": [
+      {
+        "date": "2026-11-03",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "+Head": [
+      {
+        "date": "2026-11-03",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12273261": "default"
+    "12273261": "default",
+    "15170113": "イチゴ",
+    "15170114": "泣夜※+Head版は同梱されていません",
+    "15170136": "+Head",
+    "15170197": "Full"
   }
 }
