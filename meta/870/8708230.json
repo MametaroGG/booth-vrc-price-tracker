@@ -1,6 +1,6 @@
 {
   "id": "8708230",
-  "name": "Lumi -Simple eye texture- for Kaguya",
+  "name": "Lumi -Simple eye texture- （複数アバター対応予定）",
   "shop": {
     "name": "ネムルネコ本舗",
     "subdomain": "hasetarosan0612",
@@ -19,8 +19,12 @@
     "https://booth.pximg.net/c/620x620/ace38829-c499-4be7-b4f0-3561b2b3db31/i/8708230/3d90d5e3-2ca4-40d9-82cb-cc4af49d4d62_base_resized.jpg"
   ],
   "tags": [
+    "テクスチャ",
+    "眼",
     "VRChat",
     "textures",
+    "eyetexture",
+    "アイテクスチャ",
     "vrchat アバター",
     "輝夜対応",
     "kaguya3D"
@@ -31,7 +35,19 @@
     "parent": "3Dモデル"
   },
   "likes": 29,
-  "refs": [],
+  "refs": [
+    "8562330",
+    "6571299",
+    "6106863",
+    "6082686",
+    "6831821",
+    "8942824",
+    "8922381",
+    "5813187"
+  ],
+  "base_refs": [
+    "8562330"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -68,7 +84,11 @@
     {
       "date": "2026-11-03",
       "count": 29
+    },
+    {
+      "date": "2026-11-04",
+      "count": 29
     }
   ],
-  "fetched_at": "2026-11-03"
+  "fetched_at": "2026-11-04"
 }
