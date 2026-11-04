@@ -12,10 +12,23 @@
         "date": "2026-11-03",
         "price": 2500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-04",
+        "price": 2500,
+        "is_sale": false
+      }
+    ],
+    "Pro": [
+      {
+        "date": "2026-11-04",
+        "price": 3800,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15158976": "default"
+    "15158976": "default",
+    "15182203": "Pro"
   }
 }

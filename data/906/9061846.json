@@ -27,10 +27,31 @@
         "date": "2026-11-03",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-04",
+        "price": 1200,
+        "is_sale": false
+      }
+    ],
+    "【All Avatars/すべてのアバター】": [
+      {
+        "date": "2026-11-04",
+        "price": 2500,
+        "is_sale": false
+      }
+    ],
+    "【Shinano / しなの】": [
+      {
+        "date": "2026-11-04",
+        "price": 1200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15132648": "default"
+    "15132648": "default",
+    "15176070": "【All Avatars/すべてのアバター】",
+    "15176071": "【Shinano / しなの】"
   }
 }

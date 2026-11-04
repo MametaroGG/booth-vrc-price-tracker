@@ -27,6 +27,11 @@
         "date": "2026-11-03",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-04",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "PINO_Wolf_2t_箱": [
@@ -54,11 +59,24 @@
         "date": "2026-11-03",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-04",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "PINO_Wolf_照明車": [
+      {
+        "date": "2026-11-04",
+        "price": 150,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "15108948": "PINO_Roger_4t_箱",
-    "15109066": "PINO_Wolf_2t_箱"
+    "15109066": "PINO_Wolf_2t_箱",
+    "15181216": "PINO_Wolf_照明車"
   }
 }
