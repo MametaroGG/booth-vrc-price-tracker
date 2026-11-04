@@ -3,7 +3,9 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const test = require('node:test');
-const {hasNewerPriceObservation, buildWorkList, main, parseItemJson} = require('../src/meta-scraper');
+const {hasNewerPriceObservation, buildWorkList, main: runMain, parseItemJson} = require('../src/meta-scraper');
+// Test clocks/reservations are local fixtures, never inherited from a live CI job.
+const main = options => runMain({ jobStartedAt: null, reservationId: null, ...options });
 const fixture = require('./fixtures/booth-item-7918308.json');
 const id='7918308', today='2026-11-03';
 const marker=()=>({id, unavailable:true,status:404,fetched_at:'2026-11-01'});
