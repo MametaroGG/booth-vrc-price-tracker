@@ -6,6 +6,7 @@ const {
     CollectionStop, createRequestClient, getStopTargetTime, jstDate, writeJson
 } = require('./collection-runtime');
 const { shouldContinueMeta } = require('./meta-continuation');
+const { canonicalDate, readRecheckState, saveRecheckState, cooldownActive, fairWork, recordOutcome } = require('./recheck-policy');
 
 // Item metadata (name, shop, thumbnail, tags, category, wish-list count) is
 // collected by a SEPARATE job from the price scraper on purpose: the daily
@@ -266,12 +267,34 @@ function readActivity(dataDir, id, cutoff) {
     }
 }
 
+// A newer saved price observation requests metadata revalidation only. It is
+// never sufficient to clear an unavailable marker or restore frontend visibility.
+// Date-only storage cannot establish ordering within one JST day.
+function hasNewerPriceObservation(dataDir, id, previous, today) {
+    if (!validId(id) || previous?.id !== id || previous?.unavailable !== true ||
+        ![404, 410].includes(previous.status) || previous.name ||
+        !canonicalDate(previous.fetched_at) || !canonicalDate(today) ||
+        previous.fetched_at >= today) return false;
+    try {
+        const parsed = JSON.parse(fs.readFileSync(path.join(dataDir, shardOf(id), `${id}.json`), 'utf8'));
+        if (!parsed || parsed.id !== id || !parsed.variations ||
+            typeof parsed.variations !== 'object' || Array.isArray(parsed.variations)) return false;
+        return Object.values(parsed.variations).some(history => Array.isArray(history) &&
+            history.some(entry => entry && canonicalDate(entry.date) &&
+                entry.date > previous.fetched_at && entry.date <= today &&
+                Number.isSafeInteger(entry.price) && entry.price >= 0));
+    } catch {
+        return false;
+    }
+}
+
 function buildWorkList({ dataDir, metaDir, today, runCap = DEFAULT_RUN_CAP,
     refreshDays = REFRESH_DAYS, unavailableRetryDays = UNAVAILABLE_RETRY_DAYS,
-    activeWindowDays = ACTIVE_WINDOW_DAYS } = {}) {
+    activeWindowDays = ACTIVE_WINDOW_DAYS, recheckState = readRecheckState(metaDir, today) } = {}) {
     const refreshCutoff = daysBefore(today, refreshDays);
     const unavailableCutoff = daysBefore(today, unavailableRetryDays);
     const activeCutoff = daysBefore(today, activeWindowDays);
+    const reappeared = [];
     const missing = [];
     const hot = [];
     const stale = [];
@@ -283,6 +306,11 @@ function buildWorkList({ dataDir, metaDir, today, runCap = DEFAULT_RUN_CAP,
         }
         const fetchedAt = typeof previous.fetched_at === 'string' ? previous.fetched_at : '';
         if (previous.unavailable === true) {
+            if (cooldownActive(recheckState, id, today)) continue;
+            if (hasNewerPriceObservation(dataDir, id, previous, today)) {
+                reappeared.push({ id, previous, fetchedAt, recheck: true });
+                continue;
+            }
             if (!fetchedAt || fetchedAt <= unavailableCutoff) stale.push({ id, previous, fetchedAt });
             continue;
         }
@@ -293,17 +321,18 @@ function buildWorkList({ dataDir, metaDir, today, runCap = DEFAULT_RUN_CAP,
             stale.push({ id, previous, fetchedAt });
         }
     }
-    // New items first (higher IDs are newer discoveries), then hot items
+    // Within ordinary work: new items (higher IDs are newer discoveries), then hot items
     // (stalest snapshot first) for the daily likes delta, then the quiet
     // refresh cycle so it still reaches everything evenly.
     // Records collected before refs extraction shipped have no refs key at
     // all; refresh those first so declared relations backfill fastest.
     const lacksRefs = e => (e.previous && (!('refs' in e.previous) ||
         (Array.isArray(e.previous.refs) && e.previous.refs.length && !('base_refs' in e.previous))) ? 0 : 1);
+    reappeared.sort((a, b) => a.fetchedAt.localeCompare(b.fetchedAt) || Number(a.id) - Number(b.id));
     missing.sort((a, b) => Number(b.id) - Number(a.id));
     hot.sort((a, b) => lacksRefs(a) - lacksRefs(b) || a.fetchedAt.localeCompare(b.fetchedAt) || Number(b.id) - Number(a.id));
     stale.sort((a, b) => lacksRefs(a) - lacksRefs(b) || a.fetchedAt.localeCompare(b.fetchedAt) || Number(a.id) - Number(b.id));
-    return [...missing, ...hot, ...stale].slice(0, runCap);
+    return fairWork(reappeared, [...missing, ...hot, ...stale], runCap, recheckState.next_group);
 }
 
 function saveMeta(parsed, { metaDir, today, previous = null }) {
@@ -329,11 +358,21 @@ async function main({
         getStopTargetTime(startedAt, jobStartedAt ?? startedAt).getTime(),
         startedAt + maxRunMs);
     const today = jstDate(startedAt);
-    const work = buildWorkList({ dataDir, metaDir, today, runCap });
-    fs.mkdirSync(metaDir, { recursive: true });
     const client = suppliedClient || createRequestClient({
         get, budgetFile: path.join(metaDir, 'request_budget.json'), deadline, now, wait, reservationId
     });
+    let recheckState, work;
+    try {
+        recheckState = readRecheckState(metaDir, today);
+        work = buildWorkList({ dataDir, metaDir, today, runCap, recheckState });
+        fs.mkdirSync(metaDir, { recursive: true });
+    } catch (error) {
+        // Workflow already committed a request reservation. Close it with zero
+        // attempts on preflight failure, without discarding the corrupt state.
+        try { client.finish?.(); }
+        catch (finishError) { throw new AggregateError([error, finishError], 'Metadata preflight and reservation finalization failed'); }
+        throw error;
+    }
     const metrics = { planned: work.length, success: 0, unavailable: 0, failures: 0 };
     let haltError;
 
@@ -356,8 +395,10 @@ async function main({
             check();
             const batch = work.slice(index, index + BATCH_SIZE);
             const outcomes = await Promise.all(batch.map(async entry => {
+                let fetchStarted = false;
                 try {
                     check();
+                    fetchStarted = true;
                     const outcome = await fetchMeta(entry.id, client);
                     if (outcome?.kind === 'success') {
                         saveMeta(outcome.meta, { metaDir, today, previous: entry.previous });
@@ -371,17 +412,19 @@ async function main({
                 } catch (error) {
                     if (error instanceof CollectionStop || haltError) {
                         if (!haltError) haltError = error;
-                        return 'stopped';
+                        return fetchStarted ? 'interrupted' : 'stopped';
                     }
                     logError(`Item ${entry.id}: ${error.message}`);
                     return 'failure';
                 }
             }));
-            for (const outcome of outcomes) {
+            for (const [offset, outcome] of outcomes.entries()) {
+                recordOutcome(recheckState, batch[offset], outcome, today);
                 if (outcome === 'success') metrics.success++;
                 else if (outcome === 'unavailable') metrics.unavailable++;
                 else if (outcome === 'failure') metrics.failures++;
             }
+            if (outcomes.some(outcome => outcome !== 'stopped')) saveRecheckState(metaDir, recheckState);
             if (haltError) throw haltError;
             if (index + BATCH_SIZE < work.length) await pause(1000);
         }
@@ -446,5 +489,5 @@ if (require.main === module) {
 module.exports = {
     DEFAULT_RUN_CAP, DEFAULT_MAX_RUN_MS, REFRESH_DAYS, ACTIVE_WINDOW_DAYS, UNAVAILABLE_RETRY_DAYS,
     resizedImage, parseItemJson, buildRecord, fetchItemMeta, readActivity,
-    buildWorkList, saveMeta, saveUnavailable, main
+    hasNewerPriceObservation, buildWorkList, saveMeta, saveUnavailable, main
 };
