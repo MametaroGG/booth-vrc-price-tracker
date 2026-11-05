@@ -744,6 +744,10 @@ test('an observer crossing the deadline cannot start HTTP after it', async t => 
     await assert.rejects(client.get('https://booth.pm/a', { onAttempt: () => f.setTime(START + 2) }),
         error => error.reason === 'deadline');
     assert.equal(f.calls.length, 0);
+    assert.equal(client.getAttemptCount(), 1);
+    const persisted = JSON.parse(fs.readFileSync(f.budgetFile, 'utf8'));
+    assert.equal(persisted.requests, 1);
+    assert.equal(persisted.blockedUntil, 0);
 });
 
 
@@ -1147,31 +1151,47 @@ test('an own ordinary timeout signal still fails when its timeout was not shorte
     assert.equal(client.getAttemptCount(), 1);
 });
 
-test('real deadline timers drain five simultaneous mock requests without creating a cooldown', async t => {
+test('real deadline timers drain five already-started mock requests without creating a cooldown', async t => {
     for (let trial = 0; trial < 6; trial++) {
         const f = fixture(t);
-        const start = Date.now();
-        writeJson(f.budgetFile, { date: jstDate(start), requests: 0, blockedUntil: 0 });
+        const deadline = START + 15;
         let starts = 0;
-        // Leave enough startup time for five atomic accounting writes on a
-        // busy runner; the separate injected-signal test covers the 1ms edge.
-        const client = f.makeClient({ deadline: start + 500, now: Date.now, intervalMs: undefined,
+        const signals = [];
+        let resolveStarted;
+        const allStarted = new Promise(resolve => { resolveStarted = resolve; });
+        // Keep the logical clock fixed while accounting starts all five calls.
+        // Native timeout signals still fire; disk speed is not a precondition.
+        const client = f.makeClient({ deadline, intervalMs: undefined,
             get: (url, { signal }) => {
-                starts++;
-                return new Promise((resolve, reject) => signal.addEventListener('abort', () => {
+                assert.equal(signal.aborted, false);
+                signals.push(signal);
+                const pending = new Promise((resolve, reject) => signal.addEventListener('abort', () => {
                     reject(Object.assign(new Error('Timed out'), { code: 'ERR_CANCELED' }));
                 }, { once: true }));
+                if (++starts === 5) resolveStarted();
+                return pending;
             } });
-        const keepAlive = setTimeout(() => {}, 5000);
+        let watchdog;
+        const timedOut = new Promise((resolve, reject) => {
+            watchdog = setTimeout(() => reject(new Error('Deadline drain did not settle')), 5000);
+        });
         try {
-            const results = await Promise.allSettled(Array.from({ length: 5 }, () => client.get('https://booth.pm/a')));
+            const settled = Promise.allSettled(Array.from({ length: 5 }, () => client.get('https://booth.pm/a')));
+            await Promise.race([allStarted, timedOut, settled.then(() => assert.fail('Requests settled before all five mocks started'))]);
             assert.equal(starts, 5);
+            f.setTime(deadline);
+            const results = await Promise.race([settled, timedOut]);
+            assert.equal(signals.length, 5);
+            assert.ok(signals.every(signal => signal.aborted && signal.reason?.name === 'TimeoutError'));
             assert.ok(results.every(result => result.status === 'rejected' && result.reason.reason === 'deadline' && !result.reason.failed));
             assert.equal(client.getBudget().blockedUntil, 0);
             assert.equal(client.getAttemptCount(), 5);
+            const persisted = JSON.parse(fs.readFileSync(f.budgetFile, 'utf8'));
+            assert.equal(persisted.requests, 5);
+            assert.equal(persisted.blockedUntil, 0);
             assert.deepEqual(f.waits, []);
         } finally {
-            clearTimeout(keepAlive);
+            clearTimeout(watchdog);
         }
     }
 });
