@@ -1,6 +1,6 @@
 {
   "id": "9068057",
-  "name": "Expressionメニューヘルスチェッカー — VRChatアバターのメニュー崩壊・参照切れをUnityで診断、安全な範囲だけ即修復（Undo対応）",
+  "name": "Expressionメニューヘルスチェッカー — VRChatアバターのメニュー崩壊・参照切れ・Modular Avatar重複をUnityで診断、安全な範囲だけ即修復（Undo対応）",
   "shop": {
     "name": "ccstudio",
     "subdomain": "ccstudiojp",
@@ -17,13 +17,13 @@
   "tags": [
     "Unity",
     "VRChat",
+    "エディタ拡張",
     "アバター改変",
     "MA",
     "Modular Avatar",
     "ExpressionMenu",
     "診断ツール",
     "表情メニュー",
-    "ギミック競合",
     "CCStudio"
   ],
   "category": {
@@ -63,7 +63,11 @@
     {
       "date": "2026-11-05",
       "count": 2
+    },
+    {
+      "date": "2026-11-06",
+      "count": 2
     }
   ],
-  "fetched_at": "2026-11-05"
+  "fetched_at": "2026-11-06"
 }
