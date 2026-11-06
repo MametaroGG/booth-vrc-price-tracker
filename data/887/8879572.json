@@ -147,6 +147,11 @@
         "date": "2026-11-04",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "NyaNyamaru": [
@@ -294,6 +299,11 @@
         "date": "2026-11-04",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "胴長パグ": [
@@ -441,6 +451,11 @@
         "date": "2026-11-04",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "Qunyan": [
@@ -588,6 +603,18 @@
         "date": "2026-11-04",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 100,
+        "is_sale": true
+      }
+    ],
+    "NYAHPO": [
+      {
+        "date": "2026-11-06",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
@@ -595,6 +622,7 @@
     "14838658": "fullpack",
     "14838865": "NyaNyamaru",
     "14838866": "胴長パグ",
-    "14838867": "Qunyan"
+    "14838867": "Qunyan",
+    "15186175": "NYAHPO"
   }
 }

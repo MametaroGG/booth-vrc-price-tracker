@@ -13,9 +13,24 @@
         "price": 1980,
         "is_sale": true
       }
+    ],
+    "無料版": [
+      {
+        "date": "2026-11-06",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "商用ライセンス": [
+      {
+        "date": "2026-11-06",
+        "price": 2980,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "15173351": "default"
+    "15173351": "default",
+    "15188110": "商用ライセンス"
   }
 }

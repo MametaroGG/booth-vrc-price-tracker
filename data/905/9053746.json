@@ -34,6 +34,11 @@
         "date": "2026-11-04",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "make up": [
@@ -51,11 +56,24 @@
         "date": "2026-11-04",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "eyes": [
+      {
+        "date": "2026-11-06",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "15120063": "FULL PACK(makeup+eyes+blend shape+PSD)",
+    "15120430": "eyes",
     "15120431": "make up"
   }
 }

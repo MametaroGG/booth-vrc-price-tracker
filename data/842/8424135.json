@@ -387,6 +387,11 @@
         "date": "2026-11-04",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 100,
+        "is_sale": true
       }
     ],
     "Bird/鳥": [
@@ -772,6 +777,11 @@
       },
       {
         "date": "2026-11-04",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
         "price": 100,
         "is_sale": false
       }
@@ -1161,6 +1171,11 @@
         "date": "2026-11-04",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "ネコチヤン": [
@@ -1546,6 +1561,11 @@
       },
       {
         "date": "2026-11-04",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
         "price": 100,
         "is_sale": false
       }
@@ -1935,6 +1955,11 @@
         "date": "2026-11-04",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "patoto": [
@@ -2320,6 +2345,11 @@
       },
       {
         "date": "2026-11-04",
+        "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
         "price": 100,
         "is_sale": false
       }
@@ -2709,6 +2739,11 @@
         "date": "2026-11-04",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "Qunyan": [
@@ -3096,6 +3131,18 @@
         "date": "2026-11-04",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "NYAHPO": [
+      {
+        "date": "2026-11-06",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
@@ -3107,6 +3154,7 @@
     "14066486": "胴長パグ",
     "14066487": "patoto",
     "14066488": "もちおじさん",
-    "14066489": "Qunyan"
+    "14066489": "Qunyan",
+    "15186253": "NYAHPO"
   }
 }
