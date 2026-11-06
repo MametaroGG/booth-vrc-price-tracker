@@ -877,6 +877,11 @@
         "date": "2026-11-05",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "eye texture only": [
@@ -1752,6 +1757,11 @@
       },
       {
         "date": "2026-11-05",
+        "price": 150,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
         "price": 150,
         "is_sale": false
       }
@@ -2631,12 +2641,25 @@
         "date": "2026-11-05",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-06",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "【支援】ドーナツをおごる【内容フルと同じ】": [
+      {
+        "date": "2026-11-06",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "12650586": "full set（Eye texture＋Make texture）",
     "12650912": "eye texture only",
-    "12650913": "make texture only"
+    "12650913": "make texture only",
+    "15189761": "【支援】ドーナツをおごる【内容フルと同じ】"
   }
 }
