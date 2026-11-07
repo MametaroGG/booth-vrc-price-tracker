@@ -1,6 +1,6 @@
 {
   "id": "8484493",
-  "name": "衣装ウェイト転送アシスタント｜改変事故を防ぐ 診断＆自動修復アシスタント（Blender 4.2+/5.0対応）",
+  "name": "衣装ウェイト転送アシスタント｜非対応衣装の着せ替えを診断＆自動修復・揺れボーン対応【Blender 4.2〜5.2・VRChat】",
   "shop": {
     "name": "aksk-studio",
     "subdomain": "aksk-studio",
@@ -10,6 +10,7 @@
   "image_resized": "https://booth.pximg.net/c/620x620/ea92af8f-d408-48f2-9d40-3129da636bbe/i/8484493/5956d4df-0291-4586-88da-b6e5a6bacf5f_base_resized.jpg",
   "images": [
     "https://booth.pximg.net/c/620x620/ea92af8f-d408-48f2-9d40-3129da636bbe/i/8484493/5956d4df-0291-4586-88da-b6e5a6bacf5f_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/ea92af8f-d408-48f2-9d40-3129da636bbe/i/8484493/1857d3a3-4dc5-4eaa-a0c9-eca79228b9e4_base_resized.jpg",
     "https://booth.pximg.net/c/620x620/ea92af8f-d408-48f2-9d40-3129da636bbe/i/8484493/0dfed365-18d6-4081-b7c3-92fa0d0d5a27_base_resized.jpg",
     "https://booth.pximg.net/c/620x620/ea92af8f-d408-48f2-9d40-3129da636bbe/i/8484493/a89ad40f-7020-4416-9810-524e3abbfb53_base_resized.jpg",
     "https://booth.pximg.net/c/620x620/ea92af8f-d408-48f2-9d40-3129da636bbe/i/8484493/ff21a419-a77a-4716-8507-5e30b511f2c2_base_resized.jpg"
@@ -18,10 +19,15 @@
     "3DCG",
     "Blender",
     "着せ替え",
+    "スカート",
     "衣装",
     "VRChat",
+    "ウェイト",
+    "揺れもの",
     "Blenderアドオン",
+    "非対応衣装",
     "ウェイト転送",
+    "衣装改変",
     "AKSKSTUDIO"
   ],
   "category": {
@@ -30,7 +36,10 @@
     "parent": "3Dモデル"
   },
   "likes": 307,
-  "refs": [],
+  "refs": [
+    "8583084",
+    "9110256"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -79,7 +88,11 @@
     {
       "date": "2026-11-06",
       "count": 307
+    },
+    {
+      "date": "2026-11-07",
+      "count": 307
     }
   ],
-  "fetched_at": "2026-11-06"
+  "fetched_at": "2026-11-07"
 }
