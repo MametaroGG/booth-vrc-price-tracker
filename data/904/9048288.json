@@ -7,11 +7,21 @@
         "date": "2026-11-06",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "Full SET": [
       {
         "date": "2026-11-06",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
         "price": 400,
         "is_sale": false
       }
@@ -21,8 +31,16 @@
         "date": "2026-11-06",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15111767": "Full SET",
+    "15111870": "テクスチャのみ版(ご自身で色設定できる方用)"
+  }
 }

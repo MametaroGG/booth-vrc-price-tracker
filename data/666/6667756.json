@@ -17,6 +17,11 @@
         "date": "2026-11-06",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "【SALE】おちびちゃんズ Chiyu (Sister\"Z\")": [
@@ -32,6 +37,11 @@
       },
       {
         "date": "2026-11-06",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
         "price": 800,
         "is_sale": false
       }
@@ -51,8 +61,17 @@
         "date": "2026-11-06",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 1500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "11222020": "【SALE】おちびちゃんズ Chiyu (normal)",
+    "15163964": "【SALE】おちびちゃんズ Chiyu (Sister\"Z\")",
+    "15163965": "【SALE】おちびちゃんズ Chiyu FullSet"
+  }
 }

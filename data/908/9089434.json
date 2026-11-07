@@ -7,6 +7,11 @@
         "date": "2026-11-06",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "支援版-通常版に加え、髪用も含む-": [
@@ -14,8 +19,16 @@
         "date": "2026-11-06",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15175020": "通常版",
+    "15175063": "支援版-通常版に加え、髪用も含む-"
+  }
 }

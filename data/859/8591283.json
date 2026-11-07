@@ -27,6 +27,11 @@
         "date": "2026-11-06",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 5000,
+        "is_sale": false
       }
     ],
     "ぷにぷにはるか": [
@@ -55,7 +60,17 @@
         "price": 100,
         "is_sale": false
       }
+    ],
+    "ぷにぷにはるか＆ぶーぷすたんぷ": [
+      {
+        "date": "2026-11-07",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14337555": "はるか-Haruka- 発売記念SALE",
+    "15127232": "ぷにぷにはるか＆ぶーぷすたんぷ"
+  }
 }

@@ -177,6 +177,11 @@
         "date": "2026-11-06",
         "price": 1000,
         "is_sale": true
+      },
+      {
+        "date": "2026-11-07",
+        "price": 1000,
+        "is_sale": true
       }
     ],
     "Marycia": [
@@ -352,6 +357,11 @@
       },
       {
         "date": "2026-11-06",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
         "price": 800,
         "is_sale": false
       }
@@ -531,6 +541,11 @@
         "date": "2026-11-06",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Mafuyu / Cian": [
@@ -706,6 +721,11 @@
       },
       {
         "date": "2026-11-06",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
         "price": 800,
         "is_sale": false
       }
@@ -885,6 +905,11 @@
         "date": "2026-11-06",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Chiyu / Mao / Ririka": [
@@ -907,6 +932,18 @@
         "date": "2026-11-06",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Miredo": [
+      {
+        "date": "2026-11-07",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
@@ -916,6 +953,7 @@
     "14698095": "Mafuyu / Cian",
     "14698096": "Ramune",
     "14716439": "FullPack",
-    "15158860": "Chiyu / Mao / Ririka"
+    "15158860": "Chiyu / Mao / Ririka",
+    "15200835": "Miredo"
   }
 }

@@ -7,11 +7,21 @@
         "date": "2026-11-06",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "For Sio": [
       {
         "date": "2026-11-06",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
         "price": 300,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-11-06",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15061317": "Fullpack",
+    "15078126": "For Sio",
+    "15078127": "For Mayo"
+  }
 }

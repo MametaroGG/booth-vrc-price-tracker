@@ -19,6 +19,11 @@
         "date": "2026-11-06",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "【期間限定 ～11/7】通常版/Regular version 100￥off": [
@@ -27,9 +32,17 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "通常版/Regular version": [
+      {
+        "date": "2026-11-07",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "15176079": "応援版/Support version (中身は同じです)"
+    "15176079": "応援版/Support version (中身は同じです)",
+    "15181650": "通常版/Regular version"
   }
 }

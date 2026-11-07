@@ -162,6 +162,11 @@
         "date": "2026-11-06",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "Rinsyu対応": [
@@ -179,11 +184,48 @@
         "date": "2026-11-06",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Full Pack": [
+      {
+        "date": "2026-11-07",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Haruka対応": [
+      {
+        "date": "2026-11-07",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Minase対応": [
+      {
+        "date": "2026-11-07",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Hanka": [
+      {
+        "date": "2026-11-07",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14755069": "default",
-    "15166149": "Rinsyu対応"
+    "15166149": "Rinsyu対応",
+    "15200277": "Full Pack",
+    "15200278": "Haruka対応",
+    "15200279": "Minase対応",
+    "15200280": "Hanka"
   }
 }

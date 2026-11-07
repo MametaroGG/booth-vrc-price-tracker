@@ -14,6 +14,11 @@
         "date": "2026-11-06",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 300,
+        "is_sale": true
       }
     ],
     "上記＋PSD": [
@@ -21,8 +26,16 @@
         "date": "2026-11-06",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 800,
+        "is_sale": true
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15185849": "メイク+アイPNG＋Blendshape etc.",
+    "15186220": "上記＋PSD"
+  }
 }

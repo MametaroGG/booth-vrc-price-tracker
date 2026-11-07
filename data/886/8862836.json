@@ -157,10 +157,31 @@
         "date": "2026-11-06",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "Haruka": [
+      {
+        "date": "2026-11-07",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "Snow": [
+      {
+        "date": "2026-11-07",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14811143": "default"
+    "14811143": "default",
+    "15200698": "Haruka",
+    "15200699": "Snow"
   }
 }

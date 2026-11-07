@@ -177,6 +177,11 @@
         "date": "2026-11-06",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "LG-S02-ROKUSHOUGE": [
@@ -269,11 +274,24 @@
         "date": "2026-11-06",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-07",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "R/LAW-39-HIRUKO (EN-BladeRifle)": [
+      {
+        "date": "2026-11-07",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14697987": "default",
-    "15032957": "LG-S02-ROKUSHOUGE"
+    "15032957": "LG-S02-ROKUSHOUGE",
+    "15200516": "R/LAW-39-HIRUKO (EN-BladeRifle)"
   }
 }
