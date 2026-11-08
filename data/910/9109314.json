@@ -7,11 +7,21 @@
         "date": "2026-11-07",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "eyetexture only": [
       {
         "date": "2026-11-07",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
         "price": 300,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-11-07",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15205296": "✨セール中✨fullset おまけblendshape設定付",
+    "15205864": "makeup only",
+    "15205865": "eyetexture only"
+  }
 }

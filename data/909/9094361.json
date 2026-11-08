@@ -7,11 +7,21 @@
         "date": "2026-11-07",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "しらつめ - Shiratsume": [
       {
         "date": "2026-11-07",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
         "price": 1400,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-11-07",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "マヌカ - MANUKA": [
       {
         "date": "2026-11-07",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
         "price": 1400,
         "is_sale": false
       }
@@ -35,6 +55,11 @@
         "date": "2026-11-07",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "エク - Eku": [
@@ -42,8 +67,20 @@
         "date": "2026-11-07",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
+        "price": 1400,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15182302": "フルパック - Full Pack",
+    "15185968": "しらつめ - Shiratsume",
+    "15185969": "Lapwing",
+    "15185970": "マヌカ - MANUKA",
+    "15185971": "しなの - Shinano",
+    "15185972": "エク - Eku"
+  }
 }

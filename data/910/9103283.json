@@ -7,10 +7,23 @@
         "date": "2026-11-07",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "SPランダムギフト版": [
+      {
+        "date": "2026-11-08",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15195844": "default"
+    "15195844": "default",
+    "15212030": "SPランダムギフト版"
   }
 }

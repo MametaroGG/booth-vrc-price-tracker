@@ -12,6 +12,11 @@
         "date": "2026-11-07",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "make up only": [
@@ -24,10 +29,16 @@
         "date": "2026-11-07",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-08",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15182091": "【all】rurune makeup + face blendshape"
+    "15182091": "【all】rurune makeup + face blendshape",
+    "15186022": "make up only"
   }
 }

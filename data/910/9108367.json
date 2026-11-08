@@ -29,7 +29,32 @@
         "price": 5100,
         "is_sale": false
       }
+    ],
+    "PC版": [
+      {
+        "date": "2026-11-08",
+        "price": 3100,
+        "is_sale": false
+      }
+    ],
+    "Quest版": [
+      {
+        "date": "2026-11-08",
+        "price": 3100,
+        "is_sale": false
+      }
+    ],
+    "PC Quest 同梱版": [
+      {
+        "date": "2026-11-08",
+        "price": 5800,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15203931": "PC版",
+    "15204037": "Quest版",
+    "15204038": "PC Quest 同梱版"
+  }
 }

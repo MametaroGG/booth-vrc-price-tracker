@@ -688,7 +688,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "支援版 | Supporter Version (same as free)": [
+      {
+        "date": "2026-11-08",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "This tool is FREE for all": [
+      {
+        "date": "2026-11-08",
+        "price": 0,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "13504231": "支援版 | Supporter Version (same as free)"
+  }
 }
