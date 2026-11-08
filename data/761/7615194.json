@@ -877,10 +877,31 @@
         "date": "2026-11-05",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 4500,
+        "is_sale": false
+      }
+    ],
+    "ワールド用（UdonSharp対応）": [
+      {
+        "date": "2026-11-09",
+        "price": 3000,
+        "is_sale": false
+      }
+    ],
+    "アバター用（Modular Avatar対応）": [
+      {
+        "date": "2026-11-09",
+        "price": 3000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "12752325": "default"
+    "12752325": "default",
+    "15191979": "ワールド用（UdonSharp対応）",
+    "15191980": "アバター用（Modular Avatar対応）"
   }
 }
