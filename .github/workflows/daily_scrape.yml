@@ -15,6 +15,11 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     timeout-minutes: 360
+    outputs:
+      # Empty unless the eligible same-job receipt artifact was uploaded.
+      boopadb_saved_commit: ${{ steps.saved_collection_artifact.outcome == 'success' && steps.save.outputs.saved_commit || '' }}
+      boopadb_artifact_id: ${{ steps.saved_collection_artifact.outputs.artifact-id }}
+      boopadb_artifact_digest: ${{ steps.saved_collection_artifact.outputs.artifact-digest }}
     env:
       TZ: Asia/Tokyo
       DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
@@ -175,6 +180,7 @@ jobs:
         run: node write-save-receipt.cjs
 
       - name: Retain immutable saved collection
+        id: saved_collection_artifact
         timeout-minutes: 1
         if: ${{ success() && steps.scraper.outcome == 'success' && steps.save.outcome == 'success' && steps.scraper.outputs.boopadb_eligible == 'true' }}
         # Upstream upload-artifact v4.6.2 commit verified read-only; local proposal.
@@ -184,3 +190,40 @@ jobs:
           path: saved-collection.json
           if-no-files-found: error
           overwrite: false
+          retention-days: 7
+
+  boopadb_handoff:
+    name: Verify saved BoopaDB handoff
+    needs: scrape
+    if: ${{ needs.scrape.result == 'success' && needs.scrape.outputs.boopadb_artifact_id != '' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: read
+      contents: read
+    steps:
+      - name: Checkout reviewed workflow code, not moving main
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.workflow_sha }}
+          fetch-depth: 1
+          persist-credentials: false
+          sparse-checkout: |
+            .github/boopa
+            .github/workflows
+      - name: Acquire exact saved handoff
+        timeout-minutes: 2
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          BOOPA_SCRAPE_RESULT: ${{ needs.scrape.result }}
+          BOOPA_SAVED_COMMIT: ${{ needs.scrape.outputs.boopadb_saved_commit }}
+          BOOPA_ARTIFACT_ID: ${{ needs.scrape.outputs.boopadb_artifact_id }}
+          BOOPA_ARTIFACT_DIGEST: ${{ needs.scrape.outputs.boopadb_artifact_digest }}
+        run: |
+          python3 -I - <<'PY_BOOT'
+          import hashlib, os, pathlib, subprocess, sys
+          entry = pathlib.Path('.github/boopa/run_acquisition.py')
+          if entry.is_symlink() or hashlib.sha256(entry.read_bytes()).hexdigest() != 'f79e4c1d410d0f6a50e9c0b31e0f652771bbe6a6b9aea7b22364a294abf7753c':
+              raise SystemExit('Unreviewed handoff entry; stop')
+          subprocess.run([sys.executable, '-I', str(entry), '.github/boopa', '.github/workflows/daily_scrape.yml', os.path.join(os.environ['RUNNER_TEMP'], 'boopa-acquired')], check=True)
+          PY_BOOT
