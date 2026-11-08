@@ -1,0 +1,55 @@
+/* Header/footer rules sourced from index.html at 354020b7; no home layout changes. */
+  header{background:linear-gradient(180deg,#1f1f23,#151517);border-bottom:1px solid var(--border);padding:12px 0}
+  .hwrap{max-width:1080px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .hwrap .logo{order:1}
+  .hwrap .badge{order:2}
+  .hwrap nav{order:3}
+  .hwrap .langsw{order:4}
+  .hwrap .themebtn{order:5}
+  .logo{font-family:"Orbitron","Hiragino Kaku Gothic ProN",sans-serif;font-size:21px;font-weight:900;letter-spacing:.5px}
+  .logo span{color:var(--accent)}
+  .langsw{position:relative;margin-left:auto;flex:none}
+  #langBtn{display:inline-flex;align-items:center;gap:6px;background:#1b1b1f;border:1px solid var(--border2);color:var(--text);font-size:12.5px;font-weight:700;padding:6px 10px;border-radius:99px;cursor:pointer;font-family:inherit}
+  #langBtn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  #langBtn .lchev{width:12px;height:12px}
+  .langmenu{position:absolute;right:0;top:calc(100% + 8px);background:#1b1b1f;border:1px solid var(--border2);border-radius:12px;padding:5px;min-width:158px;display:none;box-shadow:0 14px 34px rgba(0,0,0,.5);z-index:300}
+  .langmenu.open{display:block}
+  .langmenu button{display:flex;width:100%;align-items:center;justify-content:space-between;gap:8px;background:none;border:none;color:var(--sub);font-size:13.5px;font-weight:600;padding:8px 10px;border-radius:8px;cursor:pointer;font-family:inherit;text-align:left}
+  .langmenu button:hover{background:#26262c;color:var(--text)}
+  .langmenu button.on{color:#fff}
+  .langmenu button.on::after{content:"\2713";color:#c8ec6e;font-weight:800}
+  .badge{font-size:10.5px;background:#26262c;color:var(--sub);border:1px solid var(--border2);padding:2px 8px;border-radius:99px;font-weight:700;letter-spacing:.08em}
+  footer{color:var(--faint);font-size:12px;max-width:1080px;margin:24px auto 0;padding:20px 20px 44px;border-top:1px solid var(--border);line-height:1.7}
+  .flegal{margin-top:12px}
+  .flink{color:#4fb3a5}  .flink:hover{color:#4fb3a5;text-decoration:underline}
+  header nav{display:flex;gap:16px;margin-left:10px}
+  @media (max-width:899px){
+    .hwrap{gap:8px;row-gap:10px;padding:0 14px}
+    .hwrap .logo{order:1;font-size:18px;letter-spacing:0;flex:none}
+    .hwrap .badge{order:2;flex:none;font-size:9px;padding:1px 6px;letter-spacing:.04em}
+    .hwrap .langsw{order:3;margin-left:auto;min-width:0}
+    .hwrap .themebtn{order:4;width:32px;height:32px;flex:none}
+    #langBtn{padding:5px 8px;font-size:12px;gap:5px;max-width:100%}
+    #langCur{display:inline-block;max-width:72px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom}
+    .hwrap nav{order:5;flex-basis:100%;margin-left:0}
+  }
+  @media (max-width:359px){.hwrap .badge{display:none}}
+  nav a{font-size:13px;color:var(--sub)}
+  nav a:hover{color:#fff;text-decoration:none}
+  @media (max-width:640px){header nav{display:none}}
+  .themebtn{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--card);border:1px solid var(--border2);color:var(--text);cursor:pointer;flex:none;padding:0}
+  .themebtn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .themebtn .ic-moon{display:none}
+  html[data-theme="light"] .themebtn .ic-sun{display:none}
+  html[data-theme="light"] .themebtn .ic-moon{display:block}
+  html[data-theme="light"] header{background:linear-gradient(180deg,#fdfdfd,#f0f0f3)}
+  html[data-theme="light"] body{background:radial-gradient(1200px 520px at 50% -120px,#e3e3ea 0%,rgba(227,227,234,0) 60%),var(--bg)}
+
+header a{text-decoration:none}
+html[data-theme="light"] #langBtn,html[data-theme="light"] .langmenu{background:#ffffff}
+html[data-theme="light"] .badge{background:#e7e7ec}
+html[data-theme="light"] .langmenu button:hover{background:#eef0f2}
+html[data-theme="light"] .langmenu button.on::after{color:#4c7a1f}
+html[data-theme="light"] .langmenu button.on{color:var(--text)}
+html[data-theme="light"] .langmenu{box-shadow:0 10px 28px rgba(0,0,0,.16)}
+footer a{text-decoration:none}

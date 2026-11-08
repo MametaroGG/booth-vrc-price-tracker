@@ -1,0 +1,17 @@
+{
+  "deployment_inventory": true,
+  "derived_from_freeze_sha256": "019846616b6457d62ac4557bdcbb842b9a14c1e9454156bebb45436914fce6e3",
+  "external_install": false,
+  "files": {
+    "acquire_git_identities.py": {
+      "bytes": 10523,
+      "sha256": "1ae5831a1e433b1cb2fe4da86737616f9bca09ef4f08c81c18f22d219462cf75"
+    },
+    "observation_validation.py": {
+      "bytes": 8303,
+      "sha256": "74975344603f63757333831431a9ccad6e9fcb3751258480d0e8650743d73d83"
+    }
+  },
+  "independent_review_accepted": false,
+  "schema": "boopa-identity-acquisition-local-freeze-r1"
+}

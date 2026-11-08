@@ -1,0 +1,74 @@
+  .image-drop{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:92px;margin:16px 0;padding:20px;border:1px solid var(--border2);border-radius:14px;background:var(--bg);color:var(--sub);font:inherit;cursor:pointer;transition:border-color .15s,background .15s}
+  .image-drop:hover,.image-drop:focus-visible,.image-drop.is-dragging{border-color:var(--accent,#f0444b);background:rgba(240,68,75,.07);outline-offset:4px}
+
+  #imageSearchPage{position:fixed;inset:0;z-index:110;overflow-y:auto;overscroll-behavior:contain;background:var(--bg);padding:24px max(20px,env(safe-area-inset-right)) max(32px,env(safe-area-inset-bottom));box-sizing:border-box}
+  #imageSearchPage[hidden]{display:none}
+  .image-search-shell{width:100%;max-width:1100px;margin:0 auto;min-width:0}
+  .image-search-head{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .image-search-brand{font-size:18px;font-weight:800;letter-spacing:-.03em}
+  .image-search-head button{border:1px solid var(--border2);border-radius:999px;background:var(--panel);color:var(--text);padding:10px 16px;font:inherit;cursor:pointer}
+  .image-search-intro{text-align:center;margin:64px auto 44px;max-width:700px}
+  .image-search-intro h1{font-size:clamp(32px,5vw,56px);line-height:1.2;letter-spacing:-.04em;margin:0 0 22px;color:var(--text)}
+  .image-search-intro p{font-size:16px;line-height:1.9;color:var(--sub);margin:0;overflow-wrap:anywhere}
+  .image-upload-card{background:var(--panel);border:1px solid var(--border2);border-radius:24px;padding:16px 24px 28px;text-align:center}
+  .image-upload-card .image-drop{flex-direction:column;gap:18px;min-height:300px;margin:0;padding:40px 24px;background:transparent;border:1px solid transparent;color:var(--text);border-radius:18px;box-sizing:border-box}
+  .image-upload-card .image-drop:hover,.image-upload-card .image-drop:focus-visible,.image-upload-card .image-drop.is-dragging{border-color:var(--accent,#f0444b);background:rgba(240,68,75,.07)}
+  .image-upload-icon{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:rgba(240,68,75,.12);color:var(--accent,#f0444b)}
+  .image-upload-icon svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .image-upload-title{font-size:clamp(22px,3vw,30px);font-weight:700}
+  .image-upload-hint{font-size:15px;line-height:1.7;color:var(--sub)}
+  .image-upload-formats{font-size:13px;color:var(--sub);line-height:1.7}
+  .image-search-legal{margin:16px 0 0;color:var(--sub);font-size:12px;line-height:1.8}
+  .image-search-legal a{color:inherit;text-underline-offset:3px}
+  @media(max-width:600px){#imageSearchPage{padding-top:16px}.image-search-intro{margin:40px auto 28px}.image-search-intro p{font-size:14px}.image-upload-card{padding:10px 12px 22px;border-radius:20px}.image-upload-card .image-drop{min-height:280px;padding:28px 12px}.image-upload-hint{font-size:14px}}
+  .image-drop-error{position:fixed;z-index:1000;bottom:24px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:16px;width:max-content;max-width:calc(100vw - 32px);padding:14px 18px;border:1px solid var(--border2);border-radius:12px;background:var(--bg);color:var(--text);font-size:14px;box-shadow:0 4px 24px #0005}
+  .image-drop-error[hidden]{display:none}
+  .image-drop-error button{flex:none;background:none;color:inherit;border:0;font-size:22px;cursor:pointer}
+  #spImgNote{margin:0 0 12px;padding:10px 14px;border:1px solid var(--border2);border-radius:10px;color:var(--sub);font-size:13px;text-align:center}
+  #spImgNote[hidden]{display:none}
+  .igs-x{width:36px;height:36px;border-radius:50%;background:none;border:none;color:var(--sub);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;flex:none}
+  .igs-x svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .igs-btn{background:none;border:1px solid var(--border2);color:var(--text);border-radius:999px;padding:9px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+  #lensView{position:fixed;inset:0;z-index:120;background:var(--bg);overflow:hidden;display:flex;flex-direction:column}
+  #lensView[hidden]{display:none}
+  .lv-head{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--bg);border-bottom:1px solid var(--border2)}
+  .lv-head img{width:30px;height:30px;border-radius:7px;object-fit:cover;background:#2a2a30}
+  .lv-title{font-weight:800;font-size:15px}
+  .lv-count{margin-left:auto;color:var(--sub);font-size:12.5px;text-align:right}
+  .lv-stage{position:relative;display:flex;justify-content:center;align-items:center;padding:0;overflow:hidden;flex:1 1 auto;min-height:180px}
+  .lv-hint{position:absolute;top:10px;left:50%;transform:translateX(-50%);z-index:5;background:rgba(0,0,0,.55);color:#fff;font-size:12px;padding:5px 12px;border-radius:99px;pointer-events:none;max-width:92%;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .lv-fitbtn{position:absolute;right:10px;bottom:10px;z-index:6;background:rgba(20,20,24,.82);backdrop-filter:blur(4px)}
+  .lv-fitbtn[hidden]{display:none}
+  .lv-wrap{position:relative;display:inline-block;touch-action:none;max-width:100%;will-change:transform}
+  .lv-wrap img{display:block;border-radius:10px}
+  .lv-wrap svg,.lv-wrap canvas{position:absolute;inset:0;width:100%;height:100%}
+  .lv-wrap svg{z-index:3}
+  .lv-wrap canvas{pointer-events:none;z-index:4}
+  .lv-border{filter:drop-shadow(0 0 5px rgba(255,255,255,.35))}
+  .lv-bracket{fill:none;stroke:#fff;stroke-linecap:round;filter:drop-shadow(0 1px 2px rgba(0,0,0,.55))}
+  .lv-tick{fill:#fff;filter:drop-shadow(0 1px 2px rgba(0,0,0,.5))}
+  .lv-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 14px;flex:none}
+  .lv-tbtns{display:flex;gap:8px}
+  .lv-note{margin:14px;padding:12px 14px;border:1px solid var(--border2);border-radius:10px;color:var(--sub);font-size:13px;text-align:center}
+  .lv-note[hidden]{display:none}
+  .lv-results{padding:10px 12px 28px}
+  #lvResults{grid-template-columns:repeat(2,1fr);gap:10px}
+  @media (min-width:900px){#lvResults{grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:12px}}
+  .lv-sheet{position:absolute;left:0;right:0;bottom:0;height:34px;background:var(--panel);border-top:1px solid var(--border2);border-radius:16px 16px 0 0;display:flex;flex-direction:column;z-index:8;box-shadow:0 -6px 24px rgba(0,0,0,.35)}
+  .lv-sheet.anim{transition:height .3s cubic-bezier(.2,.8,.25,1)}
+  .lv-grab{flex:none;height:26px;display:flex;align-items:center;justify-content:center;cursor:grab;touch-action:none}
+  .lv-grabbar{width:38px;height:4.5px;border-radius:99px;background:var(--sub);opacity:.55}
+  .lv-sheetbody{flex:1;overflow-y:auto;overscroll-behavior:contain}
+  .lv-skel{border-radius:12px;background:linear-gradient(100deg,#1d1d22 40%,#26262c 50%,#1d1d22 60%);background-size:200% 100%;animation:lvsh 1.2s infinite;min-height:190px}
+  @keyframes lvsh{to{background-position:-200% 0}}
+
+/* Explicit viewport-sized modal surfaces avoid retaining an old portrait-sized layer.
+   Dynamic viewport units remain CSS-owned: no visualViewport pixel sizes or zoom lock. */
+.spage.open,#lensView{width:100%;height:100%}
+@supports (width:100dvw) and (height:100dvh){.spage.open,#lensView{width:100dvw;height:100dvh}}
+.image-result-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}.image-result{display:flex;flex-direction:column;min-width:0;border:1px solid var(--border2);border-radius:12px;background:var(--card);overflow:hidden}.image-result img{width:100%;aspect-ratio:1;object-fit:cover;display:block}.image-result-body{display:flex;flex-direction:column;flex:1;min-width:0;padding:12px}.image-result h3{font-size:14px;line-height:1.5;margin:0 0 8px;overflow-wrap:anywhere}.image-result p{font-size:12px;color:var(--sub);margin:6px 0}.image-result button{font:inherit;background:var(--panel);color:var(--text);border:1px solid var(--border2);border-radius:8px;padding:8px;cursor:pointer}.image-result button[aria-pressed=true]{color:var(--accent)}.image-result-price{margin-top:auto;font-weight:700;font-size:16px}.image-result a{text-decoration:none}
+@media(max-width:650px){.image-result-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.image-result-price del{font-size:12px;font-weight:400;color:var(--sub)}.image-result-price small{color:var(--accent)}
+/* Grid rows stretch cards; keep metadata intact and anchor actions to the bottom. */
+.image-result > a{flex:none}
+.image-result-body > button{width:100%;min-height:44px}

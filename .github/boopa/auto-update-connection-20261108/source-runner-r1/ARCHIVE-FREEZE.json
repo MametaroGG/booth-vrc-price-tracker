@@ -1,0 +1,35 @@
+{
+  "files": {
+    "ARCHIVE-TEST-normal.log": {
+      "bytes": 3010,
+      "sha256": "5f253806e4f397abd92635b9b34e193c2ee5cdcb08c814ab062b29dd6d6d3f46"
+    },
+    "ARCHIVE-TEST-optimized.log": {
+      "bytes": 3010,
+      "sha256": "969b73c140889ac743a4400471dd16b990903916eae79fcb91f90c1bae69311f"
+    },
+    "archive_adapter.py": {
+      "bytes": 9980,
+      "sha256": "f31d63c8674b870d6b6104b2e40f1e05ff967535fac6b3399e9b3c90bd0935e5"
+    },
+    "archive_core.py": {
+      "bytes": 12724,
+      "sha256": "daf2d7402f6c5bdb43465de4336629f50a8ebde0a8c007fdc3a2be23933323b0"
+    },
+    "test_archive_adapter.py": {
+      "bytes": 6020,
+      "sha256": "72501031ecfb258ecf4ecc190974da6b753b9ca93d0bc1e853782d9963e7e63f"
+    },
+    "test_archive_core.py": {
+      "bytes": 8540,
+      "sha256": "64f1c118347ad9dd97a6863f0531ecf11621ccda8a0cde60306bab33560b9c5b"
+    }
+  },
+  "independent_review_passed": false,
+  "network_executed": false,
+  "publication_acceptance": false,
+  "real_source_scanned": false,
+  "schema": "boopa-source-runner-archive-local-freeze-r1",
+  "tests_normal": 39,
+  "tests_optimized": 39
+}

@@ -1,0 +1,185 @@
+{
+  "deployment_inventory": true,
+  "derived_from_freeze_sha256": "77897dca06e4dc702b25b66330ed5b40ccd34eefa64ae755230f5e990e76e520",
+  "external_install": false,
+  "files": {
+    "attest_snapshot.py": {
+      "bytes": 959,
+      "sha256": "7b278883d99120d1bd24120bbcbaae5a02e56ec78e317b2fd20155457c61447b"
+    },
+    "build_embed.py": {
+      "bytes": 1337,
+      "sha256": "2c410c798cca66a92ccfe1321a04de111f094da0e94b2de15004feda6e2ec9b6"
+    },
+    "build_full.py": {
+      "bytes": 33109,
+      "sha256": "907eedf1944295eea882dba32ebace5551d02be48093ff80db55ea78d5550bca"
+    },
+    "build_item.py": {
+      "bytes": 3517,
+      "sha256": "3ce116074dfbd0bd5520f757c08e5862a65a205a9e2c85d0181545bf4cacce3d"
+    },
+    "build_pages_extra.py": {
+      "bytes": 92915,
+      "sha256": "e706e6649fdc5c36acfa99e31a4d71ab6940351c85a6c3019df76dbcc0e12053"
+    },
+    "build_preview_site.py": {
+      "bytes": 1572,
+      "sha256": "1c3d6c876cd8138fbbbdb4aa1068061e466f45c712701f85646e19befc898779"
+    },
+    "build_prod.py": {
+      "bytes": 3710,
+      "sha256": "d6874352fd4f5d60d79ce0795db951fb7430fad9dade61d35e142293b6a17fc7"
+    },
+    "build_prototype.py": {
+      "bytes": 350390,
+      "sha256": "460b8d5d16698996d08dc021acce0fc0f2c41fb16d13b588246d968d517d05b0"
+    },
+    "build_sale.py": {
+      "bytes": 48527,
+      "sha256": "ce1ee9edf1d60ad03fd3fd124af18f134951c42cd23d3952f8c9562c92e80f7e"
+    },
+    "build_site.py": {
+      "bytes": 27133,
+      "sha256": "3c21bfe698f0e90ede93288858fa914bff02b22a92a6b266a604cd619d47668c"
+    },
+    "charts_contract.py": {
+      "bytes": 6907,
+      "sha256": "ebb65e3d38fa1b2e3df274704397373f4621e8f4d9adcfa3c0b88b782ad0f81a"
+    },
+    "current_price_projection.py": {
+      "bytes": 6565,
+      "sha256": "e46fa290c95e11484c2fb88264e3c4bd6e4d895a9d083f20623f1f0ddac30598"
+    },
+    "inventory_snapshot.py": {
+      "bytes": 522,
+      "sha256": "ec4af91ddcb66835e0f527f69e6e953153831bc4ada7c7e304891d90dc34c502"
+    },
+    "observation_validation.py": {
+      "bytes": 8303,
+      "sha256": "74975344603f63757333831431a9ccad6e9fcb3751258480d0e8650743d73d83"
+    },
+    "plan_connector_handoff.py": {
+      "bytes": 5890,
+      "sha256": "cb035b07ecb2d4f304b536ddf12948150e145675706de0428d792c722308ea1b"
+    },
+    "prepare_deployment.py": {
+      "bytes": 13041,
+      "sha256": "37891e900578db85fd513337702861e6e7182a1594e1151131655b19c8d24865"
+    },
+    "prepare_inputs.py": {
+      "bytes": 799,
+      "sha256": "14a33b63515f679f5e23b4e8a6d22fca606394116ab816877afc8d9eab046b2f"
+    },
+    "preserve_relation_search.py": {
+      "bytes": 6598,
+      "sha256": "eecfc1008c3e0db8af5805d652c94f586ff2f48a4dcf4149e1182747f474b37c"
+    },
+    "preserve_relation_supplement.py": {
+      "bytes": 8915,
+      "sha256": "2d327b9760abaac3568239a1e250f888ba661ef5e86066bad2782861080e2d44"
+    },
+    "preserve_relations.py": {
+      "bytes": 3763,
+      "sha256": "2c24c94be37f3649f34726ea2a95e734c2feb70aca0238615f7920893cee0e56"
+    },
+    "projection_integration.py": {
+      "bytes": 4150,
+      "sha256": "ffc572dc265008cf0feeecdef7e060206e290125400687474493df804e89c5c5"
+    },
+    "publication_journal.py": {
+      "bytes": 2275,
+      "sha256": "90ada4bf0d41fea06d5592cd7bcb9decc8c66bbc9f607a8484236b216e18d1d5"
+    },
+    "publish_snapshot.py": {
+      "bytes": 7538,
+      "sha256": "0dd4b30f3a83ef62c929d4457530bf3e88c3747d5cbcfcc7062aaa44c00ddceb"
+    },
+    "reconcile_publication.py": {
+      "bytes": 511,
+      "sha256": "201982137545a06051a5557e8e8657a878bba642aef4cf856ca487ef2bd7bb60"
+    },
+    "rerender_candidate.py": {
+      "bytes": 20542,
+      "sha256": "302a23f58cd2140662e98fa65492f0a2fe98a69221eb81cf44722b8d394f701f"
+    },
+    "rerender_projection.py": {
+      "bytes": 4998,
+      "sha256": "bc6a6b3948864e2ea4e1e404db196b5bfaec030a2a4948e95fbf248c58a153bb"
+    },
+    "saved_snapshot_policy.py": {
+      "bytes": 14171,
+      "sha256": "15cd850c80e3525a71f1c9a6ae4df2f82d6a04e4e31a618f1332c2114089e761"
+    },
+    "scripts/apply_price_presentation.py": {
+      "bytes": 9785,
+      "sha256": "ccfd76e4f20e91342723e9d59315ea12715ebe929d9e8fbb9fc264c30c9ef55d"
+    },
+    "scripts/apply_sale_card_labels.py": {
+      "bytes": 3006,
+      "sha256": "2d6f61b6af4267474a470b273006b7a598d62c5cc665fc76b144e768ce6315ba"
+    },
+    "scripts/build-search-core.py": {
+      "bytes": 10518,
+      "sha256": "5d2d8ffde391591a82b9fd3e3cb1403cddc29a6bcec823e6b09d3d63f4a2c12b"
+    },
+    "scripts/build_search_catalog.py": {
+      "bytes": 3168,
+      "sha256": "45ec5db74aec180a8b08c52ece769465cd5fdc15792b3d94720e3b95a9c9c8f4"
+    },
+    "scripts/compact_codec.py": {
+      "bytes": 3140,
+      "sha256": "d5ebf4c4fa1003c5f544f3da71fece6db527e7f8669ca03dc77b8bc6f3438aa2"
+    },
+    "scripts/guard_discount_display.py": {
+      "bytes": 3718,
+      "sha256": "5bf33974a3bb46ec5495a4f2c71c54c74cf9d4e4bd06c18487dc9d918870a0a3"
+    },
+    "scripts/validate_search_core.py": {
+      "bytes": 4519,
+      "sha256": "6b49182886ca302a6ea89e0c73746add7cd251361fb95553295ec9904cade3f8"
+    },
+    "scripts/validate_snapshot.py": {
+      "bytes": 5969,
+      "sha256": "ad684c797e00cd9e0eddeb60f0304b0d095989c368d5f588636f5e1a5ed5cc27"
+    },
+    "selected_price_selector.py": {
+      "bytes": 2323,
+      "sha256": "512e14fd57fb8ed6547c6af5574324f4e54d2e8e8e670da2b019aac15ec1249a"
+    },
+    "snapshot_contract.py": {
+      "bytes": 13866,
+      "sha256": "fe90612f3453cd61dcab45f34434cc43120aa734353d911efe68ad26d7f0eb72"
+    },
+    "static_assets.py": {
+      "bytes": 2209,
+      "sha256": "fa405bf58ebb121919a419b1a7450ef98a146f574f5faf9c761bdf01d56f168f"
+    },
+    "varutil.py": {
+      "bytes": 4442,
+      "sha256": "ea900c3de864c631e675cd0020be99bb7c77f0f9c71dbf8bc6fa56b69ff18003"
+    },
+    "verified_source.py": {
+      "bytes": 15418,
+      "sha256": "feeb0ae1717a0883484ec013131f4fec45ebed08a6d5882118b5057ce35dd9e5"
+    },
+    "verify_published_manifest.py": {
+      "bytes": 2014,
+      "sha256": "05f307371873a62524ee1e674032d9be18d2ea505581c0fe750ebb604f368893"
+    },
+    "visibility_contract.py": {
+      "bytes": 11967,
+      "sha256": "9035081ca2648313def723353d4bd1af4b96e9da9059038d42be044c840c2c0b"
+    },
+    "visibility_overlay.py": {
+      "bytes": 3527,
+      "sha256": "eddab9bf4cf0b4c92bdedbaf4813dbb4d886068ed8f5bc412bd0bb3d8ceca365"
+    },
+    "visibility_policy.py": {
+      "bytes": 17041,
+      "sha256": "71af5d65bdf4f0ff7ce7ea214b641f56a7c134ddaf6d06392256e1746da97227"
+    }
+  },
+  "independent_review_accepted": false,
+  "schema": "boopa-consumer-crossday-freeze-r3"
+}

@@ -193,16 +193,16 @@ jobs:
           retention-days: 7
 
   boopadb_handoff:
-    name: Verify saved BoopaDB handoff
+    name: Verify and generate BoopaDB candidate (publication off)
     needs: scrape
     if: ${{ needs.scrape.result == 'success' && needs.scrape.outputs.boopadb_artifact_id != '' && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 75
     permissions:
       actions: read
       contents: read
     steps:
-      - name: Checkout reviewed workflow code, not moving main
+      - name: Checkout pinned workflow code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           ref: ${{ github.workflow_sha }}
@@ -211,8 +211,8 @@ jobs:
           sparse-checkout: |
             .github/boopa
             .github/workflows
-      - name: Acquire exact saved handoff
-        timeout-minutes: 2
+      - name: Acquire, generate and validate privately on runner
+        timeout-minutes: 70
         env:
           GITHUB_TOKEN: ${{ github.token }}
           BOOPA_SCRAPE_RESULT: ${{ needs.scrape.result }}
@@ -221,9 +221,27 @@ jobs:
           BOOPA_ARTIFACT_DIGEST: ${{ needs.scrape.outputs.boopadb_artifact_digest }}
         run: |
           python3 -I - <<'PY_BOOT'
-          import hashlib, os, pathlib, subprocess, sys
-          entry = pathlib.Path('.github/boopa/run_acquisition.py')
-          if entry.is_symlink() or hashlib.sha256(entry.read_bytes()).hexdigest() != 'f79e4c1d410d0f6a50e9c0b31e0f652771bbe6a6b9aea7b22364a294abf7753c':
-              raise SystemExit('Unreviewed handoff entry; stop')
-          subprocess.run([sys.executable, '-I', str(entry), '.github/boopa', '.github/workflows/daily_scrape.yml', os.path.join(os.environ['RUNNER_TEMP'], 'boopa-acquired')], check=True)
+          import hashlib, importlib.util, json, os, pathlib, shutil, subprocess, sys
+          root = pathlib.Path('.github/boopa').resolve(strict=True)
+          manifest = root / 'DEPLOYMENT-CODE-INVENTORY.json'
+          if manifest.is_symlink() or hashlib.sha256(manifest.read_bytes()).hexdigest() != '94f1d9be87fb8be4fab64b3b899f035041f66b16a3639460026cc64f27ba29a4':
+              raise SystemExit('Deployment inventory differs; stop')
+          for name, entry in json.loads(manifest.read_bytes())['files'].items():
+              path = root / name
+              if path.is_symlink() or not path.resolve().is_relative_to(root) or not path.is_file():
+                  raise SystemExit('Invalid deployment member; stop')
+              raw = path.read_bytes()
+              if len(raw) != entry['bytes'] or hashlib.sha256(raw).hexdigest() != entry['sha256']:
+                  raise SystemExit('Deployment code differs; stop')
+          temp = pathlib.Path(os.environ['RUNNER_TEMP']).resolve(strict=True)
+          if shutil.disk_usage(temp).free < 20 * 1024**3:
+              raise SystemExit('Need 20 GiB free for private source preparation; stop without cleanup')
+          maker = root / 'make_runtime_plan.py'
+          spec = importlib.util.spec_from_file_location('make_generation_plan', maker)
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          plan = module.make(pathlib.Path('.github/workflows/daily_scrape.yml').resolve(strict=True), temp / 'boopa-generation-plan')
+          entry = root / 'auto-update-connection-20261108/runtime-entry-r1/run_generation_entry.py'
+          subprocess.run([sys.executable, '-I', str(entry), '--plan', plan['path'], '--plan-sha256', plan['sha256'], '--output', str(temp / 'boopa-generated')], check=True)
+          print('Saved input and local candidate validated. Publication remains OFF; no publishing token used.')
           PY_BOOT
