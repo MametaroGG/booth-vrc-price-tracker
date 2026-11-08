@@ -8,6 +8,14 @@ const test = require('node:test');
 
 const workflow = fs.readFileSync(path.join(__dirname, '../.github/workflows/daily_scrape.yml'), 'utf8');
 
+function job(name, source = workflow) {
+    const start = source.indexOf(`\n  ${name}:\n`);
+    assert.notEqual(start, -1, `Missing workflow job: ${name}`);
+    const rest = source.slice(start + 1);
+    const nextJob = /\n  [A-Za-z_][\w-]*:\n/.exec(rest);
+    return rest.slice(0, nextJob ? nextJob.index : undefined);
+}
+
 function step(name) {
     const start = workflow.indexOf(`      - name: ${name}\n`);
     assert.notEqual(start, -1, `Missing workflow step: ${name}`);
@@ -88,6 +96,13 @@ function assertSuccess(result) {
     assert.equal(result.status, 0, `${result.stdout}\n${result.stderr}`);
 }
 
+test('scrape job budget excludes timeouts from separate jobs', () => {
+    const fixture = 'jobs:\n  before:\n        timeout-minutes: 99\n  scrape:\n        timeout-minutes: 5\n  after:\n        timeout-minutes: 70\n';
+    assert.equal(job('scrape', fixture), '  scrape:\n        timeout-minutes: 5');
+    assert.equal(job('after', fixture), '  after:\n        timeout-minutes: 70\n');
+    assert.throws(() => job('missing', fixture), /Missing workflow job/);
+});
+
 test('workflow budgets setup and saving, tests first, and exposes scraper failures', () => {
     assert.match(workflow, /    timeout-minutes: 360\n/);
     assert.ok(workflow.indexOf('- name: Record job start') < workflow.indexOf('- name: Checkout'));
@@ -111,7 +126,7 @@ test('workflow budgets setup and saving, tests first, and exposes scraper failur
     assert.match(step('Commit and Push'), /run: bash scripts\/push-data\.sh/);
     assert.match(step('Report scraper failure'), /always\(\).*steps\.scraper\.outcome == 'failure'/);
     assert.match(script('Report scraper failure'), /exit 1/);
-    const timeouts = [...workflow.matchAll(/^        timeout-minutes: (\d+)$/gm)].map((match) => Number(match[1]));
+    const timeouts = [...job('scrape').matchAll(/^        timeout-minutes: (\d+)$/gm)].map((match) => Number(match[1]));
     assert.equal(timeouts.length, 16);
     assert.match(step('Checkout'), /timeout-minutes: 15/);
     assert.ok(workflow.indexOf('- name: Verify reviewed source before dependencies') < workflow.indexOf('- name: Install dependencies'));
