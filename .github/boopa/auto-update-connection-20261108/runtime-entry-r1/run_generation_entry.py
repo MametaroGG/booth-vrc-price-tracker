@@ -3,7 +3,7 @@ Caller verifies this entry SHA and portable dependency closure before invoking i
 """
 import argparse,copy,datetime,hashlib,importlib.util,json,os,re,sys
 from pathlib import Path
-ACQUISITION_ENTRY_PIN='f79e4c1d410d0f6a50e9c0b31e0f652771bbe6a6b9aea7b22364a294abf7753c'
+ACQUISITION_ENTRY_PIN='7601f188b0e003637cd4f330bb7ebb1786b777ce004a7acc5d33034c4fa3a4fe'
 SELECTOR_PIN='de5d1929249e92ebc8949448a5f839bb2893c5067b2484c916a7ba38c94fece5'
 
 def need(v,m):

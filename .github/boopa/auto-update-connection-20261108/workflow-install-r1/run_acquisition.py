@@ -3,6 +3,9 @@
 Installed workflow must verify this script's SHA before execution. Dependency
 hashes are checked before importing any project module. Token never persisted.
 """
+import io
+import stat
+import zipfile
 import hashlib
 import json
 import os
@@ -45,8 +48,24 @@ def prepare(code_dir, workflow_path, output, env):
 def persist(out, result):
     """Private runner-local evidence only. Signed redirect and token absent."""
     need(set(result['inputs']) == {'context.json', 'artifact.json', 'receipt.zip', 'collection_receipt.json', 'saved-commit.json', 'workflow.yml'}, 'Input closure')
+    inputs = dict(result['inputs'])
+    wrapper = inputs['receipt.zip']
+    need(type(wrapper) is bytes and 0 < len(wrapper) <= 65536, 'Bounded receipt ZIP required')
+    with zipfile.ZipFile(io.BytesIO(wrapper)) as archive:
+        rows = archive.infolist()
+        need(len(rows) == 1 and rows[0].filename == 'saved-collection.json' and not rows[0].is_dir(), 'Exact flat receipt ZIP closure required')
+        member = rows[0]
+        need(not member.flag_bits & 1 and stat.S_IFMT(member.external_attr >> 16) in (0, stat.S_IFREG) and 0 < member.file_size <= 65536, 'Ordinary bounded unencrypted receipt required')
+        saved_raw = archive.read(member)
+    evidence = result['selection']['evidence']
+    need(set(evidence) == set(inputs) | {'saved-collection.json'}, 'Selection evidence closure')
+    inputs['saved-collection.json'] = saved_raw
+    for name, raw in inputs.items():
+        need(type(raw) is bytes and type(evidence[name]) is dict and set(evidence[name]) == {'bytes', 'sha256'}, 'Exact selection evidence required')
+        need(type(evidence[name]['bytes']) is int and len(raw) == evidence[name]['bytes'] and hashlib.sha256(raw).hexdigest() == evidence[name]['sha256'], 'Selection evidence bytes differ')
+    need(hashlib.sha256(saved_raw).hexdigest() == result['selection']['saved_collection_sha256'], 'Saved receipt commitment differs')
     out.mkdir(mode=0o700)
-    for name, raw in result['inputs'].items():
+    for name, raw in inputs.items():
         need(type(raw) is bytes, 'Expected byte evidence')
         with (out / name).open('xb') as f:
             f.write(raw)

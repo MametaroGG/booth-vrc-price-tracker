@@ -30,11 +30,13 @@ def load(name,path):
 
 def acquisition(v,selector):
  need(set(v)=={'directory','complete'},'Closed acquisition ref required');root=Path(v['directory']);c=ref(v['complete']);need(c['schema']=='boopa-runner-acquisition-output-r1','Unsupported acquisition completion')
- expected={'context.json','artifact.json','receipt.zip','collection_receipt.json','saved-commit.json','workflow.yml','SELECTION.json','ACQUISITION.json'};need(set(c['files'])==expected,'Acquisition closure differs');raw={}
+ expected={'context.json','artifact.json','receipt.zip','collection_receipt.json','saved-commit.json','workflow.yml','saved-collection.json','SELECTION.json','ACQUISITION.json'};need(set(c['files'])==expected,'Acquisition closure differs');raw={}
  for n,e in c['files'].items():
   p=root/n;need(p.is_file() and not p.is_symlink(),'Acquisition file invalid');raw[n]=p.read_bytes();need(len(raw[n])==e['bytes'] and sha(raw[n])==e['sha256'],'Acquisition member differs')
  selected=selector.verify(raw['context.json'],raw['artifact.json'],raw['receipt.zip'],raw['collection_receipt.json'],raw['saved-commit.json'],raw['workflow.yml'],sha(raw['workflow.yml']))
  need(selected==strict(raw['SELECTION.json']),'Selection differs from actual acquisition inputs')
+ for n,e in selected['evidence'].items():
+  need(n in raw and len(raw[n])==e['bytes'] and sha(raw[n])==e['sha256'],'Actual selector evidence differs')
  need(strict(raw['ACQUISITION.json'])['schema']=='boopa-actions-read-acquisition-r1','Acquisition schema differs')
  return selected,reference(root/'SELECTION.json')
 
