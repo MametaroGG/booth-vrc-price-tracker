@@ -303,7 +303,7 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
         require(all(str(row[0]) not in hidden for entries in obj.values() for row in entries),'Hidden item in shop index')
     # Verify actual emitted visibility program before executing its bounded
     # policy test. The VM has no network, filesystem or browser capabilities.
-    prototype=(HERE.parent/'generator-r2/build_prototype.py').read_text()
+    prototype=(HERE.parent/'generator-r3/build_prototype.py').read_text()
     composition=snapshot.get('publication_composition')
     require(not require_runtime_guard or composition is not None,'Final publication runtime guard required')
     runtime_guard=None
