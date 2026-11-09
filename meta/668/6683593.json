@@ -1,6 +1,6 @@
 {
   "id": "6683593",
-  "name": "Breast Size Changer / 複数アバター",
+  "name": "Breast Size Changer / 販売停止",
   "shop": {
     "name": "sassy",
     "subdomain": "sassy",
@@ -37,7 +37,9 @@
     "parent": "3Dモデル"
   },
   "likes": 450,
-  "refs": [],
+  "refs": [
+    "9119721"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -98,7 +100,11 @@
     {
       "date": "2026-11-08",
       "count": 450
+    },
+    {
+      "date": "2026-11-09",
+      "count": 450
     }
   ],
-  "fetched_at": "2026-11-08"
+  "fetched_at": "2026-11-09"
 }
