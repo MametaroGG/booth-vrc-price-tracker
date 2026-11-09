@@ -39,6 +39,11 @@
         "date": "2026-11-08",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "フルセット": [
@@ -54,6 +59,11 @@
       },
       {
         "date": "2026-11-08",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
         "price": 300,
         "is_sale": false
       }
@@ -73,6 +83,11 @@
         "date": "2026-11-08",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "コマネ_komane": [
@@ -88,6 +103,11 @@
       },
       {
         "date": "2026-11-08",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
         "price": 200,
         "is_sale": false
       }
@@ -107,6 +127,11 @@
         "date": "2026-11-08",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "ルルネ_rurune": [
@@ -122,6 +147,11 @@
       },
       {
         "date": "2026-11-08",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
         "price": 200,
         "is_sale": false
       }
@@ -141,6 +171,11 @@
         "date": "2026-11-08",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "しお_sio": [
@@ -158,6 +193,11 @@
         "date": "2026-11-08",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "【はるかくん対応記念】🎉2日間無料🎉": [
@@ -171,6 +211,13 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "はるか_haruka": [
+      {
+        "date": "2026-11-09",
+        "price": 200,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
@@ -181,6 +228,7 @@
     "15187835": "狛乃_komano",
     "15187836": "ルルネ_rurune",
     "15187837": "雫峰_shizune",
-    "15187838": "しお_sio"
+    "15187838": "しお_sio",
+    "15201274": "はるか_haruka"
   }
 }

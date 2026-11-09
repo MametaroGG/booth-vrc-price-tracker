@@ -12,6 +12,11 @@
         "date": "2026-11-08",
         "price": 1050,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 1050,
+        "is_sale": false
       }
     ],
     "フィユエ_Fyuett": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-11-08",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
         "price": 700,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-11-08",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "りこりす_Licolis": [
@@ -46,6 +61,11 @@
       },
       {
         "date": "2026-11-08",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
         "price": 700,
         "is_sale": false
       }
@@ -60,6 +80,11 @@
         "date": "2026-11-08",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "レピ_Repi": [
@@ -72,8 +97,20 @@
         "date": "2026-11-08",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15121842": "フルパック_Fullpack",
+    "15143826": "フィユエ_Fyuett",
+    "15143827": "キプフェル_kipfel",
+    "15143828": "りこりす_Licolis",
+    "15143829": "ミレド_Miredo",
+    "15202128": "レピ_Repi"
+  }
 }

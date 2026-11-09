@@ -87,10 +87,39 @@
         "date": "2026-11-08",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "フェリス用 / Felis": [
+      {
+        "date": "2026-11-09",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "RadDoll V3用 / RadDoll V3": [
+      {
+        "date": "2026-11-09",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "HAOLAN用 / HAOLAN": [
+      {
+        "date": "2026-11-09",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15057973": "default"
+    "15057973": "default",
+    "15224849": "フェリス用 / Felis",
+    "15224850": "RadDoll V3用 / RadDoll V3",
+    "15224851": "HAOLAN用 / HAOLAN"
   }
 }

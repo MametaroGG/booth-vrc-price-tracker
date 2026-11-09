@@ -1,0 +1,31 @@
+{
+  "id": "8966901",
+  "name": "ShapePeek",
+  "variations": {
+    "ShapePeek Lite": [
+      {
+        "date": "2026-11-09",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "ShapePeek Pro": [
+      {
+        "date": "2026-11-09",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "支援版(中身はPro版と同じです)": [
+      {
+        "date": "2026-11-09",
+        "price": 500,
+        "is_sale": false
+      }
+    ]
+  },
+  "variation_keys": {
+    "15060030": "ShapePeek Pro",
+    "15060031": "支援版(中身はPro版と同じです)"
+  }
+}

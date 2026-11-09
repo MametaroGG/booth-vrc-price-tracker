@@ -12,6 +12,11 @@
         "date": "2026-11-08",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "MAKE UP ♥": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-11-08",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
         "price": 500,
         "is_sale": false
       }
@@ -36,8 +46,17 @@
         "date": "2026-11-08",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-09",
+        "price": 1200,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15204903": "EYE ♥",
+    "15204916": "MAKE UP ♥",
+    "15204917": "FULL ♥ ( + Face Blendshape )"
+  }
 }

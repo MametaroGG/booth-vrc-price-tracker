@@ -33,7 +33,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "通常": [
+      {
+        "date": "2026-11-09",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "おやつ代 (中身は一緒)": [
+      {
+        "date": "2026-11-09",
+        "price": 100,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15215979": "おやつ代 (中身は一緒)"
+  }
 }
