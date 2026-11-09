@@ -135,7 +135,9 @@ class LatestNegativeOverlay:
     def __init__(self,path,pin,retained,*,run_bindings=None):
         v=read_pinned(path,pin)
         fields={'schema','source_commit','metadata_tree','prior_snapshot_sha256','prior_lists_sha256','prior_ids_sha256','impact_receipt_sha256','entries'}
-        observed_mode=v.get('schema')=='boopa-latest-negative-overlay-r3'
+        pending_mode=v.get('schema')=='boopa-latest-negative-overlay-r4'
+        observed_mode=v.get('schema') in ('boopa-latest-negative-overlay-r3','boopa-latest-negative-overlay-r4')
+        if pending_mode:fields=fields|{'pending_metadata'}
         fail(set(v)==(fields|{'observation'} if observed_mode else fields),'Closed latest negative overlay required')
         self.observation_binding=None
         self.observation_upper_day=None
@@ -143,7 +145,7 @@ class LatestNegativeOverlay:
             fail(v['schema']=='boopa-latest-negative-overlay-r1' and v['source_commit']==LATEST_COMMIT and v['metadata_tree']==LATEST_META,'Fixed legacy latest overlay required')
         else:
             b=checked_bindings(run_bindings)
-            fail(v['schema'] in ('boopa-latest-negative-overlay-r2','boopa-latest-negative-overlay-r3') and v['source_commit']==b['latest_negative_source_commit'] and v['metadata_tree']==b['latest_negative_metadata_tree'] and pin==b['latest_negative_overlay_sha256'] and v['impact_receipt_sha256']==b['latest_negative_impact_sha256'],'Latest negative run binding mismatch')
+            fail(v['schema'] in ('boopa-latest-negative-overlay-r2','boopa-latest-negative-overlay-r3','boopa-latest-negative-overlay-r4') and v['source_commit']==b['latest_negative_source_commit'] and v['metadata_tree']==b['latest_negative_metadata_tree'] and pin==b['latest_negative_overlay_sha256'] and v['impact_receipt_sha256']==b['latest_negative_impact_sha256'],'Latest negative run binding mismatch')
         floor_check(v,retained,run_bindings);fail(digest(v['impact_receipt_sha256']),'Latest impact pin required')
         if observed_mode:
             fail(run_bindings is not None,'Observed overlay requires explicit run binding')
@@ -166,8 +168,36 @@ class LatestNegativeOverlay:
             fail(row['path']=='meta/'+ident[:3]+'/'+ident+'.json','Latest marker path differs')
             fail(digest(row['sha256']) and digest(row['git_blob'],40) and type(row['bytes']) is int and row['bytes']>0,'Latest marker identity invalid')
         self.retained=retained;self.pin=pin;self.ids=frozenset(self.entries);self.source_commit=v['source_commit'];self.metadata_tree=v['metadata_tree']
+        self.pending_metadata=None;self.pending_ids=frozenset()
+        if pending_mode:
+            obj=v['pending_metadata']
+            required={'schema','source_commit','source_root','source_archive_receipt_sha256','prior_backend_receipt_sha256','prior_backend_ids_sha256','prior_pending_ids_sha256','missing_ids','pending_ids','resolved_pending_ids'}
+            fail(type(obj) is dict and set(obj)==required and obj['schema']=='boopa-pending-metadata-r1','Closed pending metadata proof required')
+            for k,bk in [('source_commit','price_source_commit'),('source_root','source_root_tree'),('source_archive_receipt_sha256','source_archive_receipt_sha256'),('prior_backend_receipt_sha256','prior_backend_receipt_sha256'),('prior_backend_ids_sha256','prior_backend_ids_sha256')]:
+                fail(obj[k]==b[bk],'Pending source binding differs: '+k)
+            from visibility_policy import json_bytes,canonical_id
+            previous=retained.get('pending_ids',frozenset())
+            fail(type(previous) is frozenset and all(canonical_id(i) for i in previous),'Prior pending set')
+            expected=hashlib.sha256(json_bytes(sorted(previous))).hexdigest()
+            fail(obj['prior_pending_ids_sha256']==expected and retained.get('pending_ids_sha256',expected)==expected,'Prior pending commitment differs')
+            for k in ('missing_ids','pending_ids','resolved_pending_ids'):
+                ids=obj[k];fail(type(ids) is list and all(canonical_id(i) for i in ids) and ids==sorted(set(ids)),'Canonical pending sets')
+            fail(set(obj['pending_ids'])<=set(obj['missing_ids']) and not(set(obj['pending_ids'])&(set(retained['ids'])|set(self.ids))),'Pending is separate from HTTP/floor')
+            fail(set(obj['resolved_pending_ids'])<=set(previous) and not(set(obj['resolved_pending_ids'])&set(obj['missing_ids'])),'Pending resolution partition')
+            self.pending_metadata=dict(obj);self.pending_ids=frozenset(obj['pending_ids'])
+    def validate_population(self,backend,metadata,success_ids,http_and_retained,current_marker_ids=()):
+        if self.pending_metadata is None:return
+        backend=set(backend);metadata=set(metadata);h=set(http_and_retained);previous=set(self.retained.get('pending_ids',()))
+        obj=self.pending_metadata;missing=backend-metadata
+        fail(metadata<=backend and missing==set(obj['missing_ids']),'Actual missing metadata differs')
+        fail(self.pending_ids==missing-h and not(self.pending_ids&h),'Actual pending partition differs')
+        fail((previous&metadata)<=set(success_ids)|set(current_marker_ids),'Unknown metadata cannot resolve prior pending')
+        resolved=(previous&metadata)-h
+        fail(resolved==set(obj['resolved_pending_ids']) and resolved<=set(success_ids),'Pending resolution requires success')
+
     def binding(self):
         result={'proof_sha256':self.pin,'source_commit':self.source_commit,'metadata_tree':self.metadata_tree,'ids':sorted(self.ids),'scope':'separate-latest-negative-overlay-not-display-metadata'}
         if self.observation_binding is not None:
             result['negative_observation']={k:self.observation_binding[k] for k in ('observation_sha256','provider_observation_upper_utc','upper_jst_date','provider_authenticated')}
+        if self.pending_metadata is not None:result['pending_metadata']=self.pending_metadata
         return result

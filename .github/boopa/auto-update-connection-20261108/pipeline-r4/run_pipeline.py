@@ -71,14 +71,14 @@ def run(handoff_path,handoff_pin,prior,bindings_path,bindings_pin,approval_dir,o
     overlay=LatestNegativeOverlay(ov,b['latest_negative_overlay_sha256'],retained,run_bindings=b)
     with VerifiedSource(source,h['completion_sha256'],run_bindings=b) as v:
         need(v.saved_snapshot_composition['source_receipt_sha256']==h['source_receipt_sha256'],'Completion/source receipt differs')
-        proof,raw,presentation=derive(v,set(retained['ids'])|overlay.ids)
+        proof,raw,presentation=derive(v,set(retained['ids'])|overlay.ids|overlay.pending_ids)
     with (output/'PRESENTATION.json').open('xb') as stream:stream.write(raw)
     emit(output/'PRESENTATION-READS.json',presentation)
     emit(output/'INPUT-PINS.json',{'handoff_sha256':handoff_pin,'run_bindings_sha256':bindings_pin,'pipeline_freeze_sha256':pipeline_pin,'prior_snapshot_sha256':b['retained_snapshot_sha256'],'completion_sha256':h['completion_sha256'],'source_receipt_sha256':h['source_receipt_sha256'],'presentation_file_sha256':presentation['file_sha256'],'presentation_canonical_sha256':presentation['canonical_sha256'],'external_write':False})
     result=build_site.build(source,source/'completion.json',ASSETS/'pinned-static',output/'base-candidate',verified_completion_sha256=h['completion_sha256'],retained_exclusions_candidate=prior,retained_exclusions_snapshot_sha256=b['retained_snapshot_sha256'],run_bindings_path=bindings_path,run_bindings_sha256=bindings_pin,quarantine_proof=q,latest_negative_proof=ov,relations_bundle=ASSETS/'relation-bundle',relations_approval=approval_dir/'relation.json',relation_search_bundle=ASSETS/'relation-search-bundle',relation_search_approval=approval_dir/'relation-search.json',supplement_bundle=ASSETS/'relation-supplement-bundle',supplement_approval=approval_dir/'supplement.json',presentation_proof=proof,presentation_sha256=presentation['canonical_sha256'])
     emit(output/'BASE-RESULT.json',result);base_pin=sha((output/'base-candidate/snapshot-manifest.json').read_bytes())
     assembled=assemble(output/'base-candidate',base_pin,prior,b['retained_snapshot_sha256'],output/'final-candidate');emit(output/'ASSEMBLY.json',assembled)
-    semantic=audit(source,h['completion_sha256'],output/'final-candidate',prior,b['retained_snapshot_sha256'],True,q,ov,bindings_path,bindings_pin);emit(output/'SEMANTIC.json',semantic)
+    semantic=audit(source,h['completion_sha256'],output/'final-candidate',prior,b['retained_snapshot_sha256'],True,q,ov,bindings_path,bindings_pin,h['source_receipt_path']);emit(output/'SEMANTIC.json',semantic)
     subprocess.run(['node',str(HERE/'verify_runtime_final_r2.cjs'),str(output/'final-candidate'),assembled['candidate_snapshot_sha256'],str(output/'RUNTIME.json')],check=True,timeout=180)
     emit(output/'LOCAL-RESULT.json',{'snapshot_sha256':assembled['candidate_snapshot_sha256'],'semantic_sha256':sha((output/'SEMANTIC.json').read_bytes()),'runtime_sha256':sha((output/'RUNTIME.json').read_bytes()),'external_write':False,'independent_acceptance':False})
 if __name__=='__main__':

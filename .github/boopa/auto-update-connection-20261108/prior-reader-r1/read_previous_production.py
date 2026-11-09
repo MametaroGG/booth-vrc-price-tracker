@@ -30,6 +30,19 @@ def object_bytes(g,repo,kind,oid,cap):
  b=g.git_bytes(repo,'cat-file',kind,oid);need(len(b)==int(size),'Git object truncated')
  need(hashlib.sha1(kind.encode()+b' '+str(len(b)).encode()+b'\0'+b).hexdigest()==oid,'Git object hash');return b
 
+def visibility_partition(lists,manifest):
+ """Separate transient metadata-pending suppression from the retained floor."""
+ v=lists.get('visibility');need(type(v) is dict and set(v) in ({'schema','hidden_ids'},{'schema','hidden_ids','pending_metadata_ids'}) and type(v.get('schema')) is int and v['schema']==1,'closed public visibility')
+ def ids(values):
+  need(type(values) is list and all(type(x) is str and re.fullmatch('[1-9][0-9]*',x) for x in values) and len(values)==len(set(values)),'unique canonical visibility IDs')
+  return set(values)
+ hidden=ids(v['hidden_ids']);pending=ids(v.get('pending_metadata_ids',[]))
+ need(pending<=hidden,'pending outside suppressed IDs')
+ need(type(manifest.get('visibility')) is dict and type(manifest['visibility'].get('effective_hidden_total')) is int and manifest['visibility']['effective_hidden_total']==len(hidden),'suppression count')
+ if 'pending_metadata_ids' in v:
+  need(type(manifest['visibility'].get('pending_metadata_total')) is int and manifest['visibility']['pending_metadata_total']==len(pending),'pending count')
+ return hidden-pending,pending,hidden
+
 def inspect_local(repo,expected_parent,g=None):
  """Consume a locally fetched immutable commit, not an assertion of live main."""
  g=g or load_git();g.inspect_repo(repo);g.oid(expected_parent)
@@ -60,11 +73,9 @@ def inspect_local(repo,expected_parent,g=None):
   g.safe_name(n);need(not n.startswith(('.git/','.github/')) and n not in ('.git','.github'),'management cannot be site')
   need(leaves[n]['mode']=='100644','public mode');b=manifest_raw if n=='snapshot-manifest.json' else object_bytes(g,repo,'blob',leaves[n]['git_blob'],128*1024*1024)
   total+=len(b);need(total<=256*1024*1024 and sha(b)==h,'bounded site bytes/hash');blobs[n]=b
- lists=g.json_strict(blobs['lists_full.json']);hidden=lists['visibility']['hidden_ids']
- need(type(hidden) is list and len(hidden)==len(set(hidden)) and all(type(x) is str and re.fullmatch('[1-9][0-9]*',x) for x in hidden),'unique canonical floor IDs')
- need(manifest['visibility']['effective_hidden_total']==len(hidden),'floor count')
- ids=sorted(hidden);management={n:entry for n,entry in leaves.items() if n not in expected};need(len(management)==19,'management count')
- result={'schema':'boopa-previous-production-input-r1','repository':'MametaroGG/boopadb','branch':'main','expected_public_parent_commit':expected_parent,'public_root_tree':root,'prior_snapshot_sha256':sha(manifest_raw),'prior_lists_sha256':sha(blobs['lists_full.json']),'retained_ids_sha256':sha(enc(ids)),'retained_ids_count':len(ids),'previous_price_source_commit':source['price_source_commit'],'previous_source_receipt_sha256':source['source_receipt_sha256'],'management_inventory_sha256':sha(enc(management)),'site_files':724,'site_bytes':total,'tree_count':treecount,'commit_object_sha256':sha(commit),'provider_authenticated':False,'deployment_verified':False}
+ lists=g.json_strict(blobs['lists_full.json']);retained,pending,hidden=visibility_partition(lists,manifest)
+ ids=sorted(retained);management={n:entry for n,entry in leaves.items() if n not in expected};need(len(management)==19,'management count')
+ result={'schema':'boopa-previous-production-input-r1','repository':'MametaroGG/boopadb','branch':'main','expected_public_parent_commit':expected_parent,'public_root_tree':root,'prior_snapshot_sha256':sha(manifest_raw),'prior_lists_sha256':sha(blobs['lists_full.json']),'retained_ids_sha256':sha(enc(ids)),'retained_ids_count':len(ids),'pending_metadata_ids_sha256':sha(enc(sorted(pending))),'pending_metadata_ids_count':len(pending),'public_hidden_ids_sha256':sha(enc(sorted(hidden))),'public_hidden_ids_count':len(hidden),'previous_price_source_commit':source['price_source_commit'],'previous_source_receipt_sha256':source['source_receipt_sha256'],'management_inventory_sha256':sha(enc(management)),'site_files':724,'site_bytes':total,'tree_count':treecount,'commit_object_sha256':sha(commit),'provider_authenticated':False,'deployment_verified':False}
  return result,blobs,management
 
 def materialize(result,blobs,management,destination,g=None):

@@ -263,6 +263,34 @@ def validate_selection_scope(selection, receipt_sha256):
     for name,key in [('receipt.zip','artifact_wrapper_sha256'),('saved-collection.json','saved_collection_sha256'),('collection_receipt.json','collection_receipt_sha256')]:
         need(evidence[name]['sha256']==selection[key],'Same-run evidence linkage differs')
 
+def prior_partition(prior_visible, retained, prior_ids):
+    hidden=set(retained['ids']);pending=set(retained.get('pending_ids',()))
+    need(not(hidden&pending or prior_visible&hidden or prior_visible&pending),'Prior public, permanent hidden and pending must be disjoint')
+    need(prior_visible|hidden|pending==prior_ids,'Prior public plus permanent hidden plus pending differs from independent prior backend')
+    return pending
+
+def pending_population(backend,metadata,prior_ids,prior_pending,permanent,success_ids,marker_ids,overlay,bindings,retained):
+    need(metadata<=backend,'Metadata-only product forbidden')
+    missing=backend-metadata
+    need(missing<=permanent|(backend-prior_ids)|prior_pending,'Previously known product missing metadata without retained/pending authority')
+    pending=missing-permanent;resolved=(prior_pending&metadata)-permanent
+    need(not(permanent&pending),'Permanent and pending exclusions overlap')
+    need(prior_pending&metadata<=success_ids|marker_ids,'Prior pending metadata is neither successful nor an unavailable marker')
+    proof=getattr(overlay,'pending_metadata',None)
+    if proof is None:
+        need(not missing and not prior_pending,'Missing/prior pending metadata requires explicit proof')
+    else:
+        fields={'schema','source_commit','source_root','source_archive_receipt_sha256','prior_backend_receipt_sha256','prior_backend_ids_sha256','prior_pending_ids_sha256','missing_ids','pending_ids','resolved_pending_ids'}
+        need(type(proof) is dict and set(proof)==fields and proof['schema']=='boopa-pending-metadata-r1','Closed pending metadata proof required')
+        pairs={'source_commit':'price_source_commit','source_root':'source_root_tree','source_archive_receipt_sha256':'source_archive_receipt_sha256','prior_backend_receipt_sha256':'prior_backend_receipt_sha256','prior_backend_ids_sha256':'prior_backend_ids_sha256'}
+        need(all(proof[k]==bindings[v] for k,v in pairs.items()),'Pending metadata proof source/prior commitments differ')
+        prior_digest=digest(json.dumps(sorted(prior_pending),separators=(',',':')).encode())
+        need(proof['prior_pending_ids_sha256']==prior_digest and retained.get('pending_ids_sha256',prior_digest)==prior_digest,'Actual prior pending commitment differs')
+        for key,expected in [('missing_ids',missing),('pending_ids',pending),('resolved_pending_ids',resolved)]:need(id_list(proof[key])==expected,'Pending metadata proof actual '+key+' differs')
+        need(set(overlay.pending_ids)==pending,'Overlay pending set differs')
+        overlay.validate_population(backend,metadata,success_ids,permanent,current_marker_ids=marker_ids)
+    return missing,pending,resolved
+
 def run(args):
     source=args.source.absolute();helpers=args.helpers.absolute();candidate=args.prior_candidate.absolute();output=args.output.absolute()
     need(not output.exists() and not output.is_symlink(),'New preparation destination required')
@@ -291,7 +319,7 @@ def run(args):
     source_root=source/'selected';assert_closure(source_root,inventory)
     backend={product_id(n,'data') for n in inventory if product_id(n,'data') is not None}
     metadata={product_id(n,'meta') for n in inventory if product_id(n,'meta') is not None}
-    need(backend==metadata,'Saved backend/metadata exact coverage differs')
+    need(metadata<=backend,'Metadata-only product forbidden')
     need(len(backend)==receipt['backend_product_count'] and len(metadata)==receipt['metadata_product_count'],'Archive product counts differ from exact inventory')
     for key,ids in [('backend-product-ids.private.json',backend),('metadata-product-ids.private.json',metadata)]:
         array=pinned(source/key,receipt['outputs'][key]['sha256']);need(id_list(array)==ids,'Archive ID membership mismatch')
@@ -299,7 +327,7 @@ def run(args):
     need(prior_ids<=backend,'Prior backend products disappeared')
     retained=vp.read_retained_exclusions(candidate,SNAPSHOT);manifest=pinned(candidate/'snapshot-manifest.json',SNAPSHOT)
     prior_visible,prior_search_pins=prior_public(candidate,manifest,vs.exact_read,vs.open_directory)
-    need(not(prior_visible&retained['ids']) and prior_visible|retained['ids']==prior_ids,'Prior public plus hidden set differs from independently proven prior backend')
+    prior_pending=prior_partition(prior_visible,retained,prior_ids)
     qraw=pinned(args.quarantine,QUARANTINE);diag=pinned(args.diagnostic,DIAGNOSTIC)
     need(qraw['diagnostic_receipt_sha256']==DIAGNOSTIC and diag['source_commit']==COMMIT and diag['outside_floor_conflicts']==0,'Quarantine diagnostic differs')
     need(qraw['entries']==[{k:v for k,v in row.items() if k!='prior_floor_member'} for row in diag['conflicts']],'Quarantine entries differ from new diagnostic')
@@ -331,16 +359,27 @@ def run(args):
             else:
                 need('latest_negative_observation_sha256' not in impact and 'latest_negative_observation_upper_jst_day' not in impact,'Observation claim requires observed overlay')
             policy=vp.VisibilityPolicy(prepared/'tracker_meta',expected_hashes=metadata_hashes,generation_time=stopped,retained_exclusions=retained,quarantine=quarantine,latest_negative_overlay=overlay)
-            count=sum(1 for _ in policy.iter_metadata());need(count==len(metadata),'Policy metadata coverage mismatch')
+            success_ids=set();count=0
+            for ident,record in policy.iter_metadata():
+                count+=1
+                if vp.metadata_success(record,ident):success_ids.add(ident)
+            need(count==len(metadata),'Policy metadata coverage mismatch')
             expected_markers=pinned(source/'current-negative-markers.private.json',receipt['outputs']['current-negative-markers.private.json']['sha256'])
             need(set(policy.markers)=={m['id'] for m in expected_markers},'Current saved marker set differs')
+            permanent=set(retained['ids'])|set(policy.markers)|set(overlay.ids)
+            missing,pending,resolved=pending_population(backend,metadata,prior_ids,prior_pending,permanent,success_ids,set(policy.markers),overlay,b,retained)
+            need(impact.get('pending_metadata')==getattr(overlay,'pending_metadata',None),'Impact pending proof differs from overlay')
+            if getattr(overlay,'pending_metadata',None) is not None:
+                need(impact.get('missing_metadata_count')==len(missing) and impact.get('pending_metadata_count')==len(pending) and impact.get('public_hidden_count')==len(permanent|pending),'Impact pending/public counts differ')
+                need(impact.get('public_hidden_ids_sha256')==digest(vp.json_bytes(sorted(permanent|pending))),'Impact public hidden IDs commitment differs')
+            public_hidden=permanent|pending
             adapter=ChartReadAdapter(source_root,fd,inventory,prepared,vs.exact_read,policy,as_of)
             chart_rows=charts.generate_charts(source_root,verified_source=adapter)
             wanted={n for n in inventory if product_id(n,'data') is not None};need(adapter.consumed==wanted and policy.backend_ids==backend,'Full saved product pass incomplete')
-            qresult=quarantine.finish();need(set(policy.hidden_ids)==backend&policy.excluded_ids(),'Hidden backend partition mismatch')
-            need(policy.excluded_ids()==set(retained['ids'])|set(policy.markers)|set(overlay.ids),'Exclusion union mismatch')
-            need(len(policy.excluded_ids())==impact['exclusion_union_count'],'Latest impact union differs')
-            need(digest(vp.json_bytes(sorted(policy.excluded_ids())))==impact['exclusion_union_ids_sha256'],'Latest impact exact union commitment differs')
+            qresult=quarantine.finish();need(set(policy.hidden_ids)==backend&public_hidden,'Hidden backend partition mismatch')
+            need(policy.excluded_ids()==public_hidden,'Public hidden union mismatch')
+            need(len(permanent)==impact['exclusion_union_count'],'Latest impact union differs')
+            need(digest(vp.json_bytes(sorted(permanent)))==impact['exclusion_union_ids_sha256'],'Latest impact exact union commitment differs')
             need(set(overlay.ids)<=backend,'Unexpected metadata-only latest exclusions')
             for name in wanted:hashes[name]=inventory[name]['sha256']
             charts.validate_charts(chart_rows,source_root,verified_source=adapter)
@@ -351,10 +390,10 @@ def run(args):
             need(adapter.maximum is not None and adapter.maximum<=as_of.isoformat(),'Saved source date range absent/future')
             ledger_summary=policy.write_evidence(evidence,adapter.minimum,adapter.maximum)
             new_ids=backend-prior_ids;visible=backend-policy.hidden_ids
-            facts={'schema':'boopa-saved-source-preparation-facts-r1','backend_ids':sorted(backend),'metadata_ids':sorted(metadata),'prior_backend_ids':sorted(prior_ids),'new_backend_ids':sorted(new_ids),'saved_negative_ids':sorted(policy.markers),'retained_ids':sorted(retained['ids']),'latest_overlay_ids':sorted(overlay.ids),'exclusion_union_ids':sorted(policy.excluded_ids()),'visible_ids':sorted(visible),'new_visible_ids':sorted(new_ids&visible),'new_hidden_ids':sorted(new_ids&policy.hidden_ids),'source_date_counts':dict(adapter.date_counts),'product_date_counts':dict(adapter.product_dates),'new_product_first_dates':{i:adapter.first_dates[i] for i in sorted(new_ids)},'quarantine':qresult}
+            facts={'schema':'boopa-saved-source-preparation-facts-r1','backend_ids':sorted(backend),'metadata_ids':sorted(metadata),'prior_backend_ids':sorted(prior_ids),'new_backend_ids':sorted(new_ids),'saved_negative_ids':sorted(policy.markers),'retained_ids':sorted(retained['ids']),'latest_overlay_ids':sorted(overlay.ids),'exclusion_union_ids':sorted(permanent),'public_hidden_ids':sorted(public_hidden),'metadata_missing_ids':sorted(missing),'pending_metadata_ids':sorted(pending),'pending_metadata_availability_confirmed':False,'prior_pending_metadata_ids':sorted(prior_pending),'resolved_pending_metadata_ids':sorted(resolved),'visible_ids':sorted(visible),'new_visible_ids':sorted(new_ids&visible),'new_hidden_ids':sorted(new_ids&policy.hidden_ids),'source_date_counts':dict(adapter.date_counts),'product_date_counts':dict(adapter.product_dates),'new_product_first_dates':{i:adapter.first_dates[i] for i in sorted(new_ids)},'quarantine':qresult}
             facts_raw=encoded(facts);(evidence/'composition-facts.private.json').write_bytes(facts_raw)
             hashes=dict(sorted(hashes.items()));inventory_raw=encoded(hashes);(evidence/'prepared-inventory.json').write_bytes(inventory_raw)
-            source_receipt={'schema':'boopa-new-saved-source-preparation-r2','run_bindings_sha256':b.sha256,'bindings_authority':'caller-pinned-inputs-not-provider-authentication','authenticated_context_verified':False,'workflow_run_completion_claimed':False,'publication_authorized':False,'status':'prepared-input-verified','source_commit':COMMIT,'source_root':ROOT,'metadata_tree':META,'archive_receipt_sha256':ARCHIVE_RECEIPT,'selection_receipt_sha256':SELECTION,'prior_backend_receipt_sha256':args.prior_backend_receipt_sha256,'prior_backend_ids_sha256':args.prior_backend_ids_sha256,'prior_snapshot_sha256':SNAPSHOT,'prior_search_shard_pins':prior_search_pins,'quarantine_proof_sha256':QUARANTINE,'quarantine_diagnostic_sha256':DIAGNOSTIC,'latest_negative_overlay_sha256':OVERLAY,'latest_negative_impact_sha256':IMPACT,'helper_freeze_sha256':HELPER_FREEZE,'helper_hashes':helper_hashes,'sourceprep_sha256':hash_file(Path(__file__)),'prepared_inventory_sha256':digest(inventory_raw),'composition_facts_sha256':digest(facts_raw),'visibility_ledger_sha256':ledger_summary['ledger_sha256'],'charts_sha256':digest(chart_raw),'prepared_files':len(hashes),'backend_products':len(backend),'metadata_products':len(metadata),'metadata_only_products':len(metadata-backend),'prior_backend_products':len(prior_ids),'new_backend_products':len(new_ids),'saved_negative_products':len(policy.markers),'retained_products':len(retained['ids']),'latest_additional_exclusions':len(overlay.ids),'exclusion_union':len(policy.excluded_ids()),'visible_products':len(visible),'new_visible_products':len(new_ids&visible),'source_min_date':adapter.minimum,'source_max_date':adapter.maximum,'history_observations':sum(adapter.date_counts.values()),'source_date_counts':dict(adapter.date_counts),'products_by_observation_date':dict(adapter.product_dates),'quarantine':qresult,'restored_products':0,'collection_completion_verified':False,'whole_catalog_complete':False,'price_source_is_latest':False,'independent_source_acceptance':False,'publication_acceptance':False,'old_ad021_restored':False}
+            source_receipt={'schema':'boopa-new-saved-source-preparation-r2','run_bindings_sha256':b.sha256,'bindings_authority':'caller-pinned-inputs-not-provider-authentication','authenticated_context_verified':False,'workflow_run_completion_claimed':False,'publication_authorized':False,'status':'prepared-input-verified','source_commit':COMMIT,'source_root':ROOT,'metadata_tree':META,'archive_receipt_sha256':ARCHIVE_RECEIPT,'selection_receipt_sha256':SELECTION,'prior_backend_receipt_sha256':args.prior_backend_receipt_sha256,'prior_backend_ids_sha256':args.prior_backend_ids_sha256,'prior_snapshot_sha256':SNAPSHOT,'prior_search_shard_pins':prior_search_pins,'quarantine_proof_sha256':QUARANTINE,'quarantine_diagnostic_sha256':DIAGNOSTIC,'latest_negative_overlay_sha256':OVERLAY,'latest_negative_impact_sha256':IMPACT,'helper_freeze_sha256':HELPER_FREEZE,'helper_hashes':helper_hashes,'sourceprep_sha256':hash_file(Path(__file__)),'prepared_inventory_sha256':digest(inventory_raw),'composition_facts_sha256':digest(facts_raw),'visibility_ledger_sha256':ledger_summary['ledger_sha256'],'charts_sha256':digest(chart_raw),'prepared_files':len(hashes),'backend_products':len(backend),'metadata_products':len(metadata),'metadata_only_products':len(metadata-backend),'prior_backend_products':len(prior_ids),'new_backend_products':len(new_ids),'saved_negative_products':len(policy.markers),'retained_products':len(retained['ids']),'latest_additional_exclusions':len(overlay.ids),'exclusion_union':len(permanent),'pending_metadata_products':len(pending),'pending_metadata_availability_confirmed':False,'prior_pending_metadata_products':len(prior_pending),'missing_metadata_products':len(missing),'public_hidden_products':len(public_hidden),'resolved_pending_metadata_products':len(resolved),'visible_products':len(visible),'new_visible_products':len(new_ids&visible),'source_min_date':adapter.minimum,'source_max_date':adapter.maximum,'history_observations':sum(adapter.date_counts.values()),'source_date_counts':dict(adapter.date_counts),'products_by_observation_date':dict(adapter.product_dates),'quarantine':qresult,'restored_products':0,'collection_completion_verified':False,'whole_catalog_complete':False,'price_source_is_latest':False,'independent_source_acceptance':False,'publication_acceptance':False,'old_ad021_restored':False}
             source_receipt['schema']='boopa-new-saved-source-preparation-r3'
             source_receipt['price_history_validation_as_of_date']=as_of.isoformat()
             source_receipt['latest_negative_observation']=None if observed is None else dict(observed)

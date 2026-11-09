@@ -20,7 +20,8 @@ HERE = Path(__file__).resolve().parent
 ASSETS = HERE.parents[1]/'rebuild-saved6126-20261108/current-generator-r1'
 sys.path.insert(0, str(HERE.parent/'generator-r3'))
 from verified_source import VerifiedSource, strict_json, open_directory, verify_artifact_directory
-from visibility_policy import read_retained_exclusions
+from visibility_policy import read_retained_exclusions, metadata_success, canonical_date
+from visibility_contract import validate_public_visibility
 
 def require(value, message):
     if not value: raise ValueError(message)
@@ -33,7 +34,32 @@ def average_check_status(sample_record, hidden):
     if sample_record is not None:return {'status':'PASS','id':'5826600'}
     return {'status':'NOT-APPLICABLE','reason':'sample-hidden' if '5826600' in hidden else 'sample-absent-or-no-history'}
 
-def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runtime_guard=False, quarantine_proof=None, latest_negative_proof=None, run_bindings_path=None, run_bindings_sha256=None):
+def validate_pending_history(record, upper_day):
+    variations=record.get('variations')
+    require(type(variations) is dict,'Pending history object required')
+    for key,series in variations.items():
+        require(type(key) is str and type(series) is list,'Pending variation shape')
+        for point in series:
+            require(type(point) is dict,'Pending observation shape')
+            stamp=canonical_date(point.get('date'));price=point.get('price')
+            require(stamp<=upper_day,'Future pending price')
+            require(type(price) in (int,float) and math.isfinite(price) and price>=0,'Invalid pending price')
+
+def verify_pending_partition(backend,metadata,prior_backend,retained,negative,overlay,success_ids,hidden,facts,receipt):
+    backend=set(backend);metadata=set(metadata);prior_backend=set(prior_backend)
+    previous=set(retained.get('pending_ids',()));h=set(retained['ids'])|set(negative)|set(overlay.ids)
+    missing=backend-metadata;u=missing-h;resolved=(previous&metadata)-h
+    require(metadata<=backend and prior_backend<=backend,'Source/prior membership differs')
+    require(missing<=h|(backend-prior_backend)|previous,'Unknown old metadata missing')
+    require(hidden==h|u and set(overlay.pending_ids)==u,'Public pending partition differs')
+    overlay.validate_population(backend,metadata,success_ids,h,negative)
+    expected={'backend_ids':backend,'metadata_ids':metadata,'prior_backend_ids':prior_backend,'new_backend_ids':backend-prior_backend,'saved_negative_ids':set(negative),'retained_ids':set(retained['ids']),'latest_overlay_ids':set(overlay.ids),'exclusion_union_ids':h,'public_hidden_ids':h|u,'metadata_missing_ids':missing,'pending_metadata_ids':u,'prior_pending_metadata_ids':previous,'resolved_pending_metadata_ids':resolved,'visible_ids':backend-hidden}
+    for key,ids in expected.items():require(facts.get(key)==sorted(ids),'Prepared facts differ: '+key)
+    require(facts.get('pending_metadata_availability_confirmed') is False and receipt.get('pending_metadata_availability_confirmed') is False,'Pending is not availability proof')
+    for key,count in [('backend_products',len(backend)),('metadata_products',len(metadata)),('missing_metadata_products',len(missing)),('pending_metadata_products',len(u)),('prior_pending_metadata_products',len(previous)),('resolved_pending_metadata_products',len(resolved)),('public_hidden_products',len(hidden)),('exclusion_union',len(h))]:require(type(receipt.get(key)) is int and receipt[key]==count,'Prepared count differs: '+key)
+    return u
+
+def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runtime_guard=False, quarantine_proof=None, latest_negative_proof=None, run_bindings_path=None, run_bindings_sha256=None, source_receipt_path=None):
     from saved_snapshot_policy import RunBindings
     require(run_bindings_path is not None and run_bindings_sha256 is not None,'Explicit r2 bindings required')
     bindings=RunBindings(run_bindings_path,run_bindings_sha256)
@@ -50,13 +76,13 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
     prior_manifest=strict_json((prior/'snapshot-manifest.json').read_bytes())
     require(set(snapshot['files'])==set(prior_manifest['files']),'Unexpected public file namespace: no raw/source exports allowed')
     lists=strict_json((site/'lists_full.json').read_bytes())
-    hidden=set(lists['visibility']['hidden_ids'])
+    hidden=validate_public_visibility(lists['visibility'])
     rows={}
     for n in range(24):
         for row in strict_json((site/f'search_index_{n}.json').read_bytes()):
             require(isinstance(row,list) and len(row)==14 and row[0] not in rows, 'Search row shape or duplicate')
             rows[row[0]]=row
-    before_source={};counts=Counter();metadata={};negative=set();markers={};backend=set()
+    before_source={};counts=Counter();metadata={};negative=set();markers={};backend=set();success_ids=set()
     expected_stats={'total':0,'sale_now':0,'free_now':0,'changed':0,'min_date':None,'max_date':''}
     expected_members={'on_sale':set(),'free':set(),'active':set(),'newest':set(),'drops':set()}
     metrics={};sample=None;sample_record=None;variation_starts={}
@@ -85,12 +111,20 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
                 negative.add(ident)
                 require(date.fromisoformat(record['fetched_at']).isoformat()==record['fetched_at'],'Canonical marker date required')
                 markers[ident]={'sha256':digest(raw),'status':record['status'],'fetched_at':record['fetched_at']}
+            if metadata_success(record,ident):success_ids.add(ident)
             metadata[ident]={'name':record.get('name'), 'negative':is_negative,'likes':record.get('likes'),'likes_history':record.get('likes_history') or [],'image':record.get('image_resized') or record.get('image') or None,'shop':(record.get('shop') or {}).get('name') or None}
-        require(hidden==retained['ids']|negative|overlay.ids,'Effective union is not exact floor plus source negatives plus latest overlay')
+        pending=set(overlay.pending_ids)
+        require(hidden==retained['ids']|negative|overlay.ids|pending,'Effective H/U union differs')
+        require(set(lists['visibility'].get('pending_metadata_ids',[]))==pending,'Public pending IDs differ')
+        from datetime import datetime,timezone
+        collection=strict_json(source.read_bytes(source.root/'data/collection_receipt.json'))
+        stopped=collection['stopped_at_ms'];require(type(stopped) is int and stopped>0,'Saved price cutoff timestamp')
+        price_day=datetime.fromtimestamp(stopped/1000,timezone(timedelta(hours=9))).date()
         for path in source.paths('data',products_only=True):
             raw_price=source.read_bytes(path);record=strict_json(raw_price);ident=record.get('id')
             require(ident==path.stem and ident not in backend,'Backend ID mismatch')
             backend.add(ident)
+            if ident in pending:validate_pending_history(record,price_day)
             variations=record.get('variations') or {}
             if ident in markers or ident in overlay.ids:
                 require(type(record.get('variations')) is dict,'Negative source variation object required')
@@ -154,7 +188,23 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
                 sample={'id':ident,'variants_full_observation_statistics':means,'source_sha256':source.hashes[path.relative_to(source.root).as_posix()]}
         require(quarantine.finish()==snapshot['saved_conflict_quarantine'],'Actual quarantine consumption differs')
         require(set(rows)==backend-hidden,'Public search population is not exact visible backend')
-        require(set(metadata)>=backend,'Backend lacks current metadata')
+        if overlay.pending_metadata is None:
+            require(set(metadata)==backend and not retained.get('pending_ids'),'Legacy source metadata coverage differs')
+        else:
+            require(source_receipt_path is not None,'Pinned sourceprep receipt path required for pending audit')
+            rp=Path(source_receipt_path);require(rp.is_file() and not rp.is_symlink(),'Regular source receipt')
+            rr=rp.read_bytes();require(digest(rr)==provenance['source_receipt_sha256'],'Actual sourceprep receipt pin differs');receipt=strict_json(rr)
+            require(receipt['run_bindings_sha256']==bindings.sha256 and receipt['source_commit']==bindings['price_source_commit'] and receipt['archive_receipt_sha256']==bindings['source_archive_receipt_sha256'],'Sourceprep identity differs')
+            require(receipt['source_root']==bindings['source_root_tree'] and receipt['metadata_tree']==bindings['source_metadata_tree'] and receipt['prior_backend_receipt_sha256']==bindings['prior_backend_receipt_sha256'] and receipt['prior_backend_ids_sha256']==bindings['prior_backend_ids_sha256'],'Sourceprep source/prior evidence differs')
+            fp=rp.parent/'composition-facts.private.json';require(fp.is_file() and not fp.is_symlink(),'Regular source facts');fr=fp.read_bytes();require(digest(fr)==receipt['composition_facts_sha256'],'Actual sourceprep facts pin differs');facts=strict_json(fr)
+            prior_public=set()
+            for i in range(24):
+                name=f'search_index_{i}.json';raw=(prior/name).read_bytes();require(digest(raw)==prior_manifest['files'][name],'Actual prior search pin differs')
+                for row in strict_json(raw):
+                    require(type(row) is list and len(row)==14 and row[0] not in prior_public,'Prior search row/duplicate');prior_public.add(row[0])
+            previous=set(retained.get('pending_ids',()));require(not(prior_public&(set(retained['ids'])|previous)) and not(set(retained['ids'])&previous),'Prior H/U partition')
+            prior_backend=prior_public|set(retained['ids'])|previous
+            verify_pending_partition(backend,set(metadata),prior_backend,retained,negative,overlay,success_ids,hidden,facts,receipt)
         day=date.fromisoformat(expected_stats['max_date']);w21=(day-timedelta(days=21)).isoformat();w30=(day-timedelta(days=30)).isoformat()
         list_fields={key:{} for key in expected_members}
         order={key:[] for key in expected_members}
@@ -229,7 +279,7 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
         daily=lists['stats']['price_changes']['daily']
         require(daily['status']=='unavailable' and daily['reason']=='missing-coverage' and daily['unique_products'] is None,'Historical data made a daily-completion claim')
         require(lists['stats']['price_changes']['cumulative']['unique_products']==expected_stats['changed'],'Cumulative statistic differs')
-        counts.update(backend=len(backend),metadata_products=len(metadata),current_negative=len(negative),retained_floor=len(retained['ids']),effective_hidden=len(hidden),visible=len(rows),metadata_only_success=sum(1 for x in set(metadata)-backend if not metadata[x]['negative']),retained_now_not_negative=len(retained['ids']-negative))
+        counts.update(backend=len(backend),metadata_products=len(metadata),current_negative=len(negative),retained_floor=len(retained['ids']),effective_hidden=len(hidden),pending_metadata=len(pending),visible=len(rows),metadata_only_success=sum(1 for x in set(metadata)-backend if not metadata[x]['negative']),retained_now_not_negative=len(retained['ids']-negative))
         source.finish()
     # The previously approved relation assets are a narrow byte-identical
     # exception; IDs/relations are not new raw product-body exports.
@@ -330,10 +380,10 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
     try:verify_artifact_directory(fd,inventory)
     finally:os.close(fd)
     require(read_retained_exclusions(prior,prior_sha)==retained,'Prior candidate changed')
-    return {'schema':'boopa-new-saved-semantic-audit-r1','status':'passed-declared-semantic-scope','fixture':snapshot['fixture'],'candidate_snapshot_sha256':snapshot_sha,'completion_sha256':completion_sha,'script_sha256':digest(Path(__file__).read_bytes()),'counts':dict(counts),'statistics':expected_stats,'checks':['exact_final_output_closure','source_per_read_hashes_and_final_inventory','exact_source_negative_plus_prior_floor_plus_latest_overlay_union','no_retained_success_reclassified_as_current_negative','exact_quarantine_actual_price_metadata_counts_and_consumption','latest_negative_vs_saved_history_consistency','all_backend_search_prices_against_fixed_source','representative_variation_and_lowest_semantics','five_complete_list_populations_prices_dates_and_order','three_curated_list_populations_fields_and_order','all_list_metadata_against_exact_cutoff','aggregate_statistics_from_source','daily_unavailable_no_completion_claim','all_15_initial_page_unions','all_15_actual_runtime_programs','runtime_addition_no_restoration_and_frozen_stats','generated_list_shop_bootstrap_exclusion','89_inherited_relation_assets_exact_prior_bytes','prior_pin_unchanged'],'runtime_guard_bound':runtime_guard is not None,'runtime_pages':runtime_pages,'inherited_asset_count':len(inherited),'sample_5826600_check':average_status,'sample_5826600_source_averages':sample,'sample_5826600_emitted_js_and_display_averages':average_result,'full_legacy_17_supplement_reproduced':False,'browser_qa_accepted':False,'authenticated_transport_verified':False,'publication_eligible':False}
+    return {'schema':'boopa-new-saved-semantic-audit-r1','status':'passed-declared-semantic-scope','fixture':snapshot['fixture'],'candidate_snapshot_sha256':snapshot_sha,'completion_sha256':completion_sha,'script_sha256':digest(Path(__file__).read_bytes()),'counts':dict(counts),'statistics':expected_stats,'checks':['exact_final_output_closure','source_per_read_hashes_and_final_inventory','exact_source_negative_prior_floor_latest_overlay_and_pending_partition','no_retained_success_reclassified_as_current_negative','exact_quarantine_actual_price_metadata_counts_and_consumption','latest_negative_vs_saved_history_consistency','all_backend_search_prices_against_fixed_source','representative_variation_and_lowest_semantics','five_complete_list_populations_prices_dates_and_order','three_curated_list_populations_fields_and_order','all_list_metadata_against_exact_cutoff','aggregate_statistics_from_source','daily_unavailable_no_completion_claim','all_15_initial_page_unions','all_15_actual_runtime_programs','runtime_addition_no_restoration_and_frozen_stats','generated_list_shop_bootstrap_exclusion','89_inherited_relation_assets_exact_prior_bytes','prior_pin_unchanged'],'runtime_guard_bound':runtime_guard is not None,'runtime_pages':runtime_pages,'inherited_asset_count':len(inherited),'sample_5826600_check':average_status,'sample_5826600_source_averages':sample,'sample_5826600_emitted_js_and_display_averages':average_result,'full_legacy_17_supplement_reproduced':False,'browser_qa_accepted':False,'authenticated_transport_verified':False,'publication_eligible':False}
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--source',required=True);p.add_argument('--completion-sha256',required=True);p.add_argument('--candidate',required=True);p.add_argument('--prior',required=True);p.add_argument('--prior-sha256',required=True);p.add_argument('--output',required=True);p.add_argument('--require-runtime-guard',action='store_true');p.add_argument('--quarantine-proof',required=True);p.add_argument('--latest-negative-proof',required=True);p.add_argument('--run-bindings',required=True);p.add_argument('--run-bindings-sha256',required=True);a=p.parse_args()
-    result=audit(a.source,a.completion_sha256,a.candidate,a.prior,a.prior_sha256,a.require_runtime_guard,a.quarantine_proof,a.latest_negative_proof,a.run_bindings,a.run_bindings_sha256)
+    p=argparse.ArgumentParser();p.add_argument('--source',required=True);p.add_argument('--completion-sha256',required=True);p.add_argument('--candidate',required=True);p.add_argument('--prior',required=True);p.add_argument('--prior-sha256',required=True);p.add_argument('--output',required=True);p.add_argument('--require-runtime-guard',action='store_true');p.add_argument('--quarantine-proof',required=True);p.add_argument('--latest-negative-proof',required=True);p.add_argument('--run-bindings',required=True);p.add_argument('--run-bindings-sha256',required=True);p.add_argument('--source-receipt');a=p.parse_args()
+    result=audit(a.source,a.completion_sha256,a.candidate,a.prior,a.prior_sha256,a.require_runtime_guard,a.quarantine_proof,a.latest_negative_proof,a.run_bindings,a.run_bindings_sha256,a.source_receipt)
     with open(a.output,'x') as f:json.dump(result,f,sort_keys=True,indent=2);f.write('\n')
     print(json.dumps({'status':result['status'],'candidate_snapshot_sha256':result['candidate_snapshot_sha256'],'counts':result['counts']},sort_keys=True))

@@ -50,6 +50,12 @@ def json_bytes(value):
                       separators=(',', ':'), allow_nan=False).encode('utf-8')
 
 
+def metadata_success(record, ident):
+    if not isinstance(record, dict):return False
+    status=record.get('status')
+    return (record.get('id')==ident and isinstance(record.get('name'),str) and bool(record['name'].strip()) and record.get('unavailable',False) is False and ('status' not in record or type(status) is int and 200<=status<300))
+
+
 def read_retained_exclusions(candidate, snapshot_sha256):
     """Read a pinned prior candidate only as the no-restoration set oracle.
 
@@ -76,8 +82,13 @@ def read_retained_exclusions(candidate, snapshot_sha256):
             raise ValueError('Prior candidate lists commitment mismatch')
         lists = strict_json(lists_raw)
         from visibility_contract import validate_public_visibility
-        ids = validate_public_visibility(lists.get('visibility'))
-        return {'ids': frozenset(ids), 'snapshot_sha256': snapshot_sha256,
+        hidden = validate_public_visibility(lists.get('visibility'))
+        pending = set(lists['visibility'].get('pending_metadata_ids', []))
+        ids = hidden - pending
+        return {'ids': frozenset(ids), 'pending_ids': frozenset(pending),
+                'pending_ids_sha256': hashlib.sha256(json_bytes(sorted(pending))).hexdigest(),
+                'public_hidden_ids_sha256': hashlib.sha256(json_bytes(sorted(hidden))).hexdigest(),
+                'snapshot_sha256': snapshot_sha256,
                 'lists_sha256': expected,
                 'ids_sha256': hashlib.sha256(json_bytes(sorted(ids))).hexdigest()}
     finally:
@@ -95,6 +106,8 @@ class VisibilityPolicy:
         self.verified_source = verified_source
         self.quarantine = quarantine
         self.latest_negative_overlay = latest_negative_overlay
+        self.pending_ids = frozenset() if latest_negative_overlay is None else getattr(latest_negative_overlay, 'pending_ids', frozenset())
+        self.success_metadata_ids = set()
         self.overlay_ids = frozenset() if latest_negative_overlay is None else latest_negative_overlay.ids
         self.root = Path(meta_root)
         self.now = generation_time or datetime.now(timezone.utc)
@@ -120,10 +133,12 @@ class VisibilityPolicy:
         for proof in (quarantine, latest_negative_overlay):
             if proof is not None and (retained_exclusions is None or proof.retained != retained_exclusions):
                 raise ValueError('Saved policy and retained floor differ')
+        if retained_exclusions is not None and retained_exclusions.get('pending_ids') and (latest_negative_overlay is None or getattr(latest_negative_overlay, 'pending_metadata', None) is None):
+            raise ValueError('Prior pending requires explicit pending proof')
         self._loaded = False
 
     def excluded_ids(self):
-        return set(self.markers) | self.retained_ids | self.overlay_ids
+        return set(self.markers) | self.retained_ids | self.overlay_ids | self.pending_ids
 
     def iter_metadata(self):
         if self._loaded:
@@ -188,6 +203,8 @@ class VisibilityPolicy:
                 raise ValueError('Conflicting unavailable flag/status: ' + name)
             if record.get('name') and record.get('id') != ident:
                 raise ValueError('Missing canonical metadata ID: ' + name)
+            if metadata_success(record, ident):
+                self.success_metadata_ids.add(ident)
             yield ident, record
         if self.expected_hashes is not None and set(self.metadata_hashes) != set(self.expected_hashes):
             raise ValueError('Pinned metadata inventory differs from consumed input')
@@ -232,7 +249,7 @@ class VisibilityPolicy:
                 if self.quarantine is None:
                     raise ValueError('Newer price observation conflicts with unavailable marker: ' + ident)
                 self.quarantine.check(record, raw, marker, total, after)
-        if marker is not None or ident in self.retained_ids or ident in self.overlay_ids:
+        if marker is not None or ident in self.retained_ids or ident in self.overlay_ids or ident in self.pending_ids:
             self.hidden_ids.add(ident)
             return False
         return True
@@ -240,10 +257,15 @@ class VisibilityPolicy:
     def public_payload(self):
         # A metadata-only tombstone must also suppress stale bookmark/history
         # and remote fallback entries. Backend partition counts stay separate.
-        return dict(schema=1, hidden_ids=sorted(self.excluded_ids()))
+        value = dict(schema=1, hidden_ids=sorted(self.excluded_ids()))
+        if self.latest_negative_overlay is not None and getattr(self.latest_negative_overlay, 'pending_metadata', None) is not None:
+            value['pending_metadata_ids'] = sorted(self.pending_ids)
+        return value
 
     def write_evidence(self, directory, source_min_date, source_max_date):
         """Private exact-set ledger; no names or source records are serialized."""
+        if self.latest_negative_overlay is not None and getattr(self.latest_negative_overlay, 'pending_metadata', None) is not None:
+            self.latest_negative_overlay.validate_population(self.backend_ids, self.metadata_ids, self.success_metadata_ids, set(self.markers) | self.retained_ids | self.overlay_ids, set(self.markers))
         visible = self.backend_ids - self.hidden_ids
         inventory_sha = hashlib.sha256(json_bytes(self.metadata_hashes)).hexdigest()
         counts = dict(backend_total=len(self.backend_ids), visible_total=len(visible),
@@ -266,7 +288,7 @@ class VisibilityPolicy:
             # status claim. Never manufacture a marker for a successful record.
             ledger['policy'] = 'current-negative-plus-retained-exclusions-v1'
             ledger['evidence_scope'] = 'current-pinned-metadata-backend-and-prior-exclusion-membership'
-            ledger['retained_exclusion_binding'] = {k: v for k, v in self.retained_exclusions.items() if k != 'ids'}
+            ledger['retained_exclusion_binding'] = {k: v for k, v in self.retained_exclusions.items() if k not in ('ids', 'pending_ids')}
             ledger['retained_exclusion_ids'] = sorted(self.retained_ids)
             ledger['effective_exclusion_ids'] = sorted(self.excluded_ids())
             ledger['confirmed_hidden_ids'] = sorted(self.backend_ids & set(self.markers))
@@ -286,6 +308,10 @@ class VisibilityPolicy:
             counts['confirmed_hidden_total'] = len(confirmed)
         if self.latest_negative_overlay is not None:
             ledger['latest_negative_overlay'] = self.latest_negative_overlay.binding()
+        if self.latest_negative_overlay is not None and getattr(self.latest_negative_overlay, 'pending_metadata', None) is not None:
+            counts['pending_metadata_total'] = len(self.pending_ids)
+            ledger['pending_metadata_ids'] = sorted(self.pending_ids)
+            ledger['pending_metadata_binding'] = self.latest_negative_overlay.pending_metadata
         raw = json_bytes(ledger)
         directory = Path(directory)
         directory.mkdir(parents=True, exist_ok=True)

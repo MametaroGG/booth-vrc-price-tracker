@@ -294,12 +294,12 @@ def build(source, completion, baseline_repo, output, compact=False, relations_bu
             result['collection_completion'] = 'historical-prepared-inventory-only'
             result['historical_composition'] = dict(verified.historical_composition)
             result.update(collection_completion_verified=False, whole_catalog_complete=False, price_source_is_latest=False)
-            result['retained_exclusion_lineage'] = {k:v for k,v in retained.items() if k != 'ids'}
+            result['retained_exclusion_lineage'] = {k:v for k,v in retained.items() if k not in ('ids','pending_ids')}
         if verified is not None and verified.saved_snapshot_composition is not None:
             result['collection_completion'] = 'bounded-saved-snapshot-inventory-only'
             result['saved_snapshot_composition'] = dict(verified.saved_snapshot_composition)
             result.update(collection_completion_verified=False, whole_catalog_complete=False, price_source_is_latest=False)
-            result['retained_exclusion_lineage'] = {k:v for k,v in retained.items() if k != 'ids'}
+            result['retained_exclusion_lineage'] = {k:v for k,v in retained.items() if k not in ('ids','pending_ids')}
             result['latest_negative_overlay'] = latest_overlay.binding()
             result['saved_conflict_quarantine'] = quarantine.finish()
         if presentation_proof is not None:

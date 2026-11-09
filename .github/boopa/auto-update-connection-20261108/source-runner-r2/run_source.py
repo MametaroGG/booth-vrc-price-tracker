@@ -92,6 +92,21 @@ def scan_markers(root,receipt,p,metadata_only=False):
         need(p.inventory_data_tree(tree)==receipt['metadata_tree'],'Latest metadata Git tree differs')
     return mapped
 
+def check_previous_production(retained,parent):
+    need(retained['lists_sha256']==parent['prior_lists_sha256'] and retained['ids_sha256']==parent['retained_ids_sha256'] and len(retained['ids'])==parent['retained_ids_count'],'Actual production retained floor differs')
+    need(retained['pending_ids_sha256']==parent.get('pending_metadata_ids_sha256',sha(b'[]')) and len(retained['pending_ids'])==parent.get('pending_metadata_ids_count',0),'Actual production pending metadata differs')
+    need(retained['public_hidden_ids_sha256']==parent.get('public_hidden_ids_sha256',parent['retained_ids_sha256']) and len(retained['ids']|retained['pending_ids'])==parent.get('public_hidden_ids_count',parent['retained_ids_count']),'Actual production public hidden partition differs')
+
+def pending_partition(backend,metadata,prior_backend,http_and_retained,previous_pending):
+    """Unknown old gaps fail; new/previous pending gaps never become HTTP negatives."""
+    need(metadata<=backend,'Metadata-only source products are not accepted')
+    need(prior_backend<=backend,'Prior backend missing from saved source')
+    need(http_and_retained<=backend and previous_pending<=prior_backend,'Policy/prior pending membership differs')
+    missing=backend-metadata
+    need(missing<=http_and_retained|(backend-prior_backend)|previous_pending,'Unknown existing backend metadata gap')
+    pending=missing-http_and_retained
+    return missing,pending,(previous_pending&metadata)-http_and_retained
+
 def issue_policy(source,sr,sourcepin,latest,lr,latestpin,prior,candidate,selection,selectionpin,helpers,helper_pins,stage,p,observation):
     vs,vp,sp,charts,hashes=p.load_helpers(helpers,helper_pins)
     retained=vp.read_retained_exclusions(candidate,prior['snapshot_sha256'])
@@ -104,15 +119,20 @@ def issue_policy(source,sr,sourcepin,latest,lr,latestpin,prior,candidate,selecti
     pa=SimpleNamespace(prior_backend_ids=Path(prior['ids']['path']),prior_backend_ids_sha256=prior['ids']['sha256'],prior_backend_receipt=Path(prior['receipt']['path']),prior_backend_receipt_sha256=prior['receipt']['sha256'],prior_backend_inventory=Path(prior['inventory']['path']) if prior['inventory'] is not None else None)
     if prior['inventory'] is not None:ref(prior['inventory'])
     priorids=p.validate_prior_backend(pa,bprior)
-    need(not visible&retained['ids'] and visible|retained['ids']==priorids,'Actual prior public/floor differs from backend')
+    prior_pending=retained['pending_ids']
+    need(not retained['ids']&prior_pending and not visible&(retained['ids']|prior_pending) and visible|retained['ids']|prior_pending==priorids,'Actual prior public/floor/pending differs from backend')
     inventory=p.read_inventory(source/'selected-inventory.jsonl',sr['outputs']['selected-inventory.jsonl']['sha256'])
     p.assert_closure(source/'selected',inventory)
     backend={p.product_id(n,'data') for n in inventory if p.product_id(n,'data') is not None}
-    need(priorids<=backend,'Prior backend missing from saved source')
+    metadata={p.product_id(n,'meta') for n in inventory if p.product_id(n,'meta') is not None}
+    need(metadata<=backend and priorids<=backend,'Saved metadata coverage/prior backend differs')
+    need(len(backend)==sr['backend_product_count'] and len(metadata)==sr['metadata_product_count'],'Source inventory counts differ')
     saved=scan_markers(source,sr,p);current=scan_markers(latest,lr,p,True)
-    need(set(saved)<=backend,'Saved markers lack backend')
+    need(set(saved)<=metadata,'Saved markers lack actual source metadata')
     additional=(set(current)&backend)-retained['ids']
     outside_backend=set(current)-backend
+    union=set(retained['ids'])|set(saved)|additional
+    missing,pending,resolved=pending_partition(backend,metadata,priorids,union,prior_pending)
     fd=vs.open_directory(source/'selected');conflicts=[]
     try:
         raw=p.exact_source(vs.exact_read,fd,inventory['data/collection_receipt.json'])
@@ -131,14 +151,18 @@ def issue_policy(source,sr,sourcepin,latest,lr,latestpin,prior,candidate,selecti
             if after:
                 need(ident in retained['ids'],'Contradiction outside actual previous floor')
                 conflicts.append({'id':ident,'price_sha256':row['sha256'],'metadata_sha256':m['sha256'],'status':m['status'],'fetched_at':m['fetched_at'],'observations_total':sum(counts.values()),'observations_after_marker':after,'prior_floor_member':True})
+        for ident in sorted(prior_pending&metadata):
+            raw=p.exact_source(vs.exact_read,fd,inventory['meta/'+ident[:3]+'/'+ident+'.json'])
+            record=p.strict(raw)
+            need(vp.metadata_success(record,ident) or ident in saved,'Previous pending metadata remains unknown')
     finally:os.close(fd)
     floor={'prior_snapshot_sha256':retained['snapshot_sha256'],'prior_lists_sha256':retained['lists_sha256'],'prior_ids_sha256':retained['ids_sha256']}
     diag={'schema':'boopa-saved-source-conflict-diagnostic-runner-r1','source_commit':sr['source_commit'],'source_root':sr['git_root'],'metadata_tree':sr['metadata_tree'],'archive_receipt_sha256':sourcepin,'selection_receipt_sha256':selectionpin,**floor,'conflicts':conflicts,'outside_floor_conflicts':0,'exception_applied':False,'publication_acceptance':False}
     dp=stage/'diagnostic.private.json';dsha=put(dp,diag)
     qp=stage/'quarantine.private.json';qsha=put(qp,{'schema':'boopa-saved-conflict-quarantine-r2','source_commit':sr['source_commit'],**floor,'diagnostic_receipt_sha256':dsha,'entries':[{k:v for k,v in e.items() if k!='prior_floor_member'} for e in conflicts]})
-    union=set(retained['ids'])|set(saved)|additional
-    ip=stage/'impact.private.json';isha=put(ip,{'schema':'boopa-latest-negative-impact-runner-r1','source_commit':lr['source_commit'],'source_metadata_tree':lr['metadata_tree'],'latest_scan_receipt_sha256':latestpin,'latest_negative_observation_sha256':observation['observation_sha256'],'latest_negative_observation_upper_jst_day':observation['upper_jst_date'],'latest_negative_ids_outside_saved_backend':sorted(outside_backend),'latest_negative_count':len(current),'additional_exclusion_ids':sorted(additional),'exclusion_union_count':len(union),'exclusion_union_ids_sha256':p.digest(vp.json_bytes(sorted(union))),'publication_acceptance':False})
-    op=stage/'overlay.private.json';osha=put(op,{'schema':'boopa-latest-negative-overlay-r3','observation':{'path':'observation/latest-observation.json','sha256':observation['observation_sha256']},'source_commit':lr['source_commit'],'metadata_tree':lr['metadata_tree'],**floor,'impact_receipt_sha256':isha,'entries':[current[i] for i in sorted(additional)]})
+    pending_proof={'schema':'boopa-pending-metadata-r1','source_commit':sr['source_commit'],'source_root':sr['git_root'],'source_archive_receipt_sha256':sourcepin,'prior_backend_receipt_sha256':bprior['prior_backend_receipt_sha256'],'prior_backend_ids_sha256':bprior['prior_backend_ids_sha256'],'prior_pending_ids_sha256':retained['pending_ids_sha256'],'missing_ids':sorted(missing),'pending_ids':sorted(pending),'resolved_pending_ids':sorted(resolved)}
+    ip=stage/'impact.private.json';isha=put(ip,{'schema':'boopa-latest-negative-impact-runner-r1','source_commit':lr['source_commit'],'source_metadata_tree':lr['metadata_tree'],'latest_scan_receipt_sha256':latestpin,'latest_negative_observation_sha256':observation['observation_sha256'],'latest_negative_observation_upper_jst_day':observation['upper_jst_date'],'latest_negative_ids_outside_saved_backend':sorted(outside_backend),'latest_negative_count':len(current),'additional_exclusion_ids':sorted(additional),'exclusion_union_count':len(union),'exclusion_union_ids_sha256':p.digest(vp.json_bytes(sorted(union))),'pending_metadata':pending_proof,'missing_metadata_count':len(missing),'pending_metadata_count':len(pending),'public_hidden_count':len(union|pending),'public_hidden_ids_sha256':p.digest(vp.json_bytes(sorted(union|pending))),'publication_acceptance':False})
+    op=stage/'overlay.private.json';osha=put(op,{'schema':'boopa-latest-negative-overlay-r4','pending_metadata':pending_proof,'observation':{'path':'observation/latest-observation.json','sha256':observation['observation_sha256']},'source_commit':lr['source_commit'],'metadata_tree':lr['metadata_tree'],**floor,'impact_receipt_sha256':isha,'entries':[current[i] for i in sorted(additional)]})
     return {'retained':retained,'prior_args':pa,'prior_bindings':bprior,'diagnostic':dp,'diagnostic_sha256':dsha,'quarantine':qp,'quarantine_sha256':qsha,'impact':ip,'impact_sha256':isha,'overlay':op,'overlay_sha256':osha}
 
 def bind_latest_observation(latest,proofs,validator):
@@ -209,7 +233,7 @@ def run(plan_path,plan_sha256,output):
             need(set(prior)=={'candidate_path','snapshot_sha256','prior_backend_receipt_kind','prior_backend_source_commit','prior_backend_root_tree','prior_backend_data_tree','receipt','ids','inventory'},'Closed prior local descriptor required')
         need(prior['prior_backend_source_commit']==parent['previous_price_source_commit'],'Prior backend source differs from actual published provenance')
         issued=issue_policy(source,sr,sourcepin,latest,lr,latestpin,prior,candidate,selection,plan['selection']['sha256'],helpers,helper_pins,proofs,p,observation)
-        retained=issued['retained'];need(retained['lists_sha256']==parent['prior_lists_sha256'] and retained['ids_sha256']==parent['retained_ids_sha256'] and len(retained['ids'])==parent['retained_ids_count'],'Actual production retained floor differs')
+        retained=issued['retained'];check_previous_production(retained,parent)
         b={'schema':'boopa-saved-run-bindings-r2','source_repository':'MametaroGG/booth-vrc-price-tracker','publication_repository':'MametaroGG/boopadb','expected_public_parent_commit':parent['expected_public_parent_commit'],'price_source_commit':sr['source_commit'],'metadata_source_commit':sr['source_commit'],'source_root_tree':sr['git_root'],'source_metadata_tree':sr['metadata_tree'],'source_archive_receipt_sha256':sourcepin,'source_archive_sha256':sr['archive_sha256'],'selection_receipt_sha256':plan['selection']['sha256'],'retained_snapshot_sha256':retained['snapshot_sha256'],'retained_lists_sha256':retained['lists_sha256'],'retained_ids_sha256':retained['ids_sha256'],'latest_negative_source_commit':lr['source_commit'],'latest_negative_metadata_tree':lr['metadata_tree'],'latest_negative_impact_sha256':issued['impact_sha256'],'quarantine_proof_sha256':issued['quarantine_sha256'],'quarantine_diagnostic_sha256':issued['diagnostic_sha256'],'latest_negative_overlay_sha256':issued['overlay_sha256'],'authority':'caller-pinned-inputs-not-provider-authentication','collection_completion_verified':False,'whole_catalog_complete':False,'price_source_is_latest':False,**issued['prior_bindings'],**helper_pins}
         bp=proofs/'run-bindings.json';bsha=put(bp,b)
         args=issued['prior_args'];args.source=source;args.helpers=helpers;args.prior_candidate=candidate;args.output=stage/'prepared-run';args.selection_receipt=Path(plan['selection']['path']);args.quarantine=issued['quarantine'];args.diagnostic=issued['diagnostic'];args.overlay=issued['overlay'];args.impact=issued['impact'];args.run_bindings=bp;args.run_bindings_sha256=bsha

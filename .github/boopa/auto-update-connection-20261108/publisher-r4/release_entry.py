@@ -70,7 +70,10 @@ def validate_release(candidate,candidate_pin,prior_pin,expected,binding_path,bin
     need(sem['completion_sha256']==inputs['completion_sha256'],'Source completion differs')
     validate_chain(inputs,comp,assembly,m['publication_composition'],freeze,prior_pin)
     population=validate_saved_population(handoff_path,source_archive_receipt_path,inputs,comp,b,binding_pin)
-    public=catalog_ids(site);hidden=json_strict(site['lists_full.json'])['visibility']['hidden_ids']
+    public=catalog_ids(site);visibility=json_strict(site['lists_full.json'])['visibility'];hidden=visibility['hidden_ids']
+    expected_visibility={'schema','hidden_ids'}|({'pending_metadata_ids'} if population['pending_mode'] else set())
+    need(type(visibility) is dict and set(visibility)==expected_visibility and type(visibility['schema']) is int and visibility['schema']==1,'Candidate pending visibility schema differs')
+    need(canonical_ids(visibility.get('pending_metadata_ids',[]),'candidate pending')==population['pending'],'Candidate pending partition differs')
     validate_negative_scan(negative_scan_path,negative_scan_pin,b,hidden,population['backend'],public)
     need(canonical_ids(hidden,'candidate hidden')==population['hidden'] and public==population['visible'],'Candidate differs from actual source preparation partition')
 
@@ -103,7 +106,7 @@ def catalog_ids(site):
             result.add(ident)
     return frozenset(result)
 
-def complete_backend_membership(archive,archive_dir,facts,inventory,completion,receipt):
+def complete_backend_membership(archive,archive_dir,facts,inventory,completion,receipt,*,binding=None,overlay=None):
     """Read all saved-snapshot IDs/maps, never infer membership from public output.
     No price bodies are reread. Accepted full source preparation/semantic checks
     remain prerequisites; this additional check does not authenticate receipts.
@@ -127,15 +130,51 @@ def complete_backend_membership(archive,archive_dir,facts,inventory,completion,r
         if len(parts)==2 and parts[1] in (data_admin if parts[0]=='data' else meta_admin):continue
         need(len(parts)==3 and re.fullmatch('[1-9][0-9]*[.]json',parts[2]) and parts[1]==parts[2][:-5][:3],'Invalid prepared product path')
         target=data if parts[0]=='data' else meta;ident=parts[2][:-5];need(ident not in target,'Duplicate prepared product ID');target.add(ident)
-    need(data==meta==backend,'Complete prepared source/backend membership differs')
+    need(data==backend and meta<=backend,'Complete prepared source/backend membership differs')
+    me=archive['outputs']['metadata-product-ids.private.json']
+    need(canonical_ids(bound_json(Path(archive_dir)/'metadata-product-ids.private.json',me['sha256'],me['bytes']),'archive metadata')==meta and archive['metadata_product_count']==len(meta),'Complete archive metadata membership differs')
     need(type(receipt['prepared_files']) is int and len(inventory)==receipt['prepared_files'] and type(receipt['backend_products']) is int and receipt['backend_products']==len(backend) and type(receipt['metadata_products']) is int and receipt['metadata_products']==len(meta),'Prepared source counts differ')
     need(facts['schema']=='boopa-saved-source-preparation-facts-r1','Unsupported complete facts')
-    need(canonical_ids(facts['backend_ids'],'facts backend')==canonical_ids(facts['metadata_ids'],'facts metadata')==backend,'Facts backend membership differs')
+    need(canonical_ids(facts['backend_ids'],'facts backend')==backend and canonical_ids(facts['metadata_ids'],'facts metadata')==meta,'Facts backend/metadata membership differs')
     hidden=canonical_ids(facts['exclusion_union_ids'],'facts exclusion');visible=canonical_ids(facts['visible_ids'],'facts visible')
     saved=canonical_ids(facts['saved_negative_ids'],'facts saved negatives');retained=canonical_ids(facts['retained_ids'],'facts retained');latest=canonical_ids(facts['latest_overlay_ids'],'facts latest overlay')
-    need(hidden==saved|retained|latest and hidden<=backend and visible==backend-hidden,'Complete facts partition differs')
+    need(hidden==saved|retained|latest and hidden<=backend,'Complete permanent facts partition differs')
+    pending_keys={'metadata_missing_ids','pending_metadata_ids','prior_pending_metadata_ids','resolved_pending_metadata_ids','public_hidden_ids'}
+    pending_mode=bool(pending_keys&set(facts))
+    pending=frozenset();public_hidden=hidden
+    if pending_mode:
+        need(pending_keys<=set(facts) and binding is not None and overlay is not None,'Complete explicit pending provenance required')
+        need(facts.get('pending_metadata_availability_confirmed') is False and receipt.get('pending_metadata_availability_confirmed') is False,'Pending availability must remain unconfirmed')
+        need(overlay.get('schema')=='boopa-latest-negative-overlay-r4','Pending proof cannot downgrade to a legacy overlay')
+        markers_entry=archive['outputs']['current-negative-markers.private.json']
+        markers=bound_json(Path(archive_dir)/'current-negative-markers.private.json',markers_entry['sha256'],markers_entry['bytes'])
+        need(type(markers) is list and all(type(x) is dict and type(x.get('status')) is int and x['status'] in (404,410) for x in markers),'Saved negative marker evidence required')
+        need(canonical_ids([x['id'] for x in markers],'archive saved negatives')==saved and saved<=meta,'Saved negative facts lack actual metadata markers')
+        need(canonical_ids([x['id'] for x in overlay['entries']],'actual latest negatives')==latest,'Latest negative facts differ from actual overlay')
+        proof=overlay['pending_metadata'];fields={'schema','source_commit','source_root','source_archive_receipt_sha256','prior_backend_receipt_sha256','prior_backend_ids_sha256','prior_pending_ids_sha256','missing_ids','pending_ids','resolved_pending_ids'}
+        need(type(proof) is dict and set(proof)==fields and proof['schema']=='boopa-pending-metadata-r1','Closed pending proof required')
+        for key,bkey in [('source_commit','price_source_commit'),('source_root','source_root_tree'),('source_archive_receipt_sha256','source_archive_receipt_sha256'),('prior_backend_receipt_sha256','prior_backend_receipt_sha256'),('prior_backend_ids_sha256','prior_backend_ids_sha256')]:
+            need(proof[key]==binding[bkey],'Pending proof identity differs')
+        missing=canonical_ids(facts['metadata_missing_ids'],'facts missing');pending=canonical_ids(facts['pending_metadata_ids'],'facts pending')
+        previous=canonical_ids(facts['prior_backend_ids'],'facts previous backend');previous_pending=canonical_ids(facts['prior_pending_metadata_ids'],'facts previous pending')
+        resolved=canonical_ids(facts['resolved_pending_metadata_ids'],'facts resolved pending');public_hidden=canonical_ids(facts['public_hidden_ids'],'facts public hidden')
+        def set_sha(ids,newline=False):return digest((json.dumps(sorted(ids),separators=(',',':'))+('\n' if newline else '')).encode())
+        need(set_sha(previous,True)==binding['prior_backend_ids_sha256']==receipt['prior_backend_ids_sha256'],'Actual previous backend commitment differs')
+        need(set_sha(retained)==binding['retained_ids_sha256'],'Retained floor commitment differs')
+        need(set_sha(previous_pending)==proof['prior_pending_ids_sha256'],'Previous pending commitment differs')
+        need(previous<=backend and previous_pending<=previous and not(previous_pending&retained),'Previous backend/pending membership differs')
+        need(missing==backend-meta and missing<=hidden|(backend-previous)|previous_pending,'Unknown old product lost metadata')
+        need(pending==missing-hidden and not(pending&hidden) and public_hidden==hidden|pending,'Pending suppression partition differs')
+        need(resolved==(previous_pending&meta)-hidden,'Resolved pending partition differs')
+        for key,actual in [('missing_ids',missing),('pending_ids',pending),('resolved_pending_ids',resolved)]:
+            need(canonical_ids(proof[key],'proof '+key)==actual and proof[key]==sorted(actual),'Proof differs from actual source sets')
+        for key,actual in [('missing_metadata_products',missing),('pending_metadata_products',pending),('prior_pending_metadata_products',previous_pending),('resolved_pending_metadata_products',resolved),('public_hidden_products',public_hidden)]:
+            need(type(receipt.get(key)) is int and receipt[key]==len(actual),'Pending source count differs')
+    else:
+        need(meta==backend,'Missing metadata requires explicit pending proof')
+    need(visible==backend-public_hidden,'Complete public facts partition differs')
     need(type(receipt['exclusion_union']) is int and receipt['exclusion_union']==len(hidden) and type(receipt['visible_products']) is int and receipt['visible_products']==len(visible),'Source partition count differs')
-    return {'backend':backend,'hidden':hidden,'visible':visible}
+    return {'backend':backend,'hidden':public_hidden,'permanent_hidden':hidden,'pending':pending,'pending_mode':pending_mode,'visible':visible}
 
 def validate_saved_population(handoff_path,source_archive_receipt_path,inputs,composition,binding,binding_pin):
     handoff=bound_json(handoff_path,inputs['handoff_sha256'])
@@ -159,7 +198,8 @@ def validate_saved_population(handoff_path,source_archive_receipt_path,inputs,co
     need(handoff['facts_sha256']==receipt['composition_facts_sha256'] and handoff['prepared_inventory_sha256']==receipt['prepared_inventory_sha256'],'Handoff complete facts/inventory commitments differ')
     facts=bound_json(evidence/'composition-facts.private.json',receipt['composition_facts_sha256'])
     inventory=bound_json(evidence/'prepared-inventory.json',receipt['prepared_inventory_sha256'])
-    return complete_backend_membership(archive,Path(source_archive_receipt_path).parent,facts,inventory,completion,receipt)
+    overlay=bound_json(handoff['overlay_path'],binding['latest_negative_overlay_sha256'])
+    return complete_backend_membership(archive,Path(source_archive_receipt_path).parent,facts,inventory,completion,receipt,binding=binding,overlay=overlay)
 
 def validate_negative_scan(path,pin,binding,hidden,backend,public_ids):
     scan=pinned(path,pin)
