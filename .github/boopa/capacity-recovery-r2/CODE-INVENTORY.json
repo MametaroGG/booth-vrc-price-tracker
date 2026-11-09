@@ -1,0 +1,31 @@
+{
+  "files": {
+    "capacity_preflight.py": {
+      "bytes": 4712,
+      "sha256": "93ea50ba14096ec3cfba17c8f1a61b114053a0a7ddf6c5f5b92d6641430de899"
+    },
+    "make_replay_plan.py": {
+      "bytes": 1608,
+      "sha256": "e5f9d38006c5a402ce8b4e083a555a51bc34c80baa2bab20b5ff150ecfb4b998"
+    },
+    "replay_adapter/FREEZE.json": {
+      "bytes": 192,
+      "sha256": "c736a7e18d6f776ef1586e4991e7636862dac2f7712207165b73ffe913c3f5b0"
+    },
+    "replay_adapter/replay_saved.py": {
+      "bytes": 10948,
+      "sha256": "524b52c5e38dbe929fd1b17d32e362b01e90058a35f317304497b8e890f88c9e"
+    },
+    "replay_entry/acquire_selected.py": {
+      "bytes": 2104,
+      "sha256": "4467638cb27b44770e41c0f6de96357e9bdc4549b2fd895873c404f250fb9c53"
+    },
+    "replay_entry/run_replay_entry.py": {
+      "bytes": 10376,
+      "sha256": "8129720d5136c399ecfd10db2627995f344ed1946b651d975afd4d181bbee528"
+    }
+  },
+  "schema": "boopa-capacity-recovery-code-r2",
+  "scope": "Read-only saved recovery; collection restart and site publication OFF",
+  "source_runner_independent_review": "NOT-ACCEPTED-CONTENT-FLAG"
+}

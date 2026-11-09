@@ -221,7 +221,7 @@ jobs:
           BOOPA_ARTIFACT_DIGEST: ${{ needs.scrape.outputs.boopadb_artifact_digest }}
         run: |
           python3 -I - <<'PY_BOOT'
-          import hashlib, importlib.util, json, os, pathlib, shutil, subprocess, sys
+          import hashlib, importlib.util, json, os, pathlib, re, shutil, subprocess, sys
           root = pathlib.Path('.github/boopa').resolve(strict=True)
           manifest = root / 'DEPLOYMENT-CODE-INVENTORY.json'
           if manifest.is_symlink() or hashlib.sha256(manifest.read_bytes()).hexdigest() != '94f1d9be87fb8be4fab64b3b899f035041f66b16a3639460026cc64f27ba29a4':
@@ -233,9 +233,32 @@ jobs:
               raw = path.read_bytes()
               if len(raw) != entry['bytes'] or hashlib.sha256(raw).hexdigest() != entry['sha256']:
                   raise SystemExit('Deployment code differs; stop')
+          recovery_root = root / 'capacity-recovery-r2'
+          recovery_manifest = recovery_root / 'CODE-INVENTORY.json'
+          if recovery_manifest.is_symlink() or hashlib.sha256(recovery_manifest.read_bytes()).hexdigest() != 'eddff02a56eb875b8dcdfc71f734fb4a187c45731d442a4cd383244f0b84b2d8':
+              raise SystemExit('Recovery code inventory differs; stop')
+          for name, entry in json.loads(recovery_manifest.read_bytes())['files'].items():
+              path = recovery_root / name
+              if path.is_symlink() or not path.resolve().is_relative_to(recovery_root) or not path.is_file():
+                  raise SystemExit('Invalid recovery code member; stop')
+              raw = path.read_bytes()
+              if len(raw) != entry['bytes'] or hashlib.sha256(raw).hexdigest() != entry['sha256']:
+                  raise SystemExit('Recovery code differs; stop')
           temp = pathlib.Path(os.environ['RUNNER_TEMP']).resolve(strict=True)
-          if shutil.disk_usage(temp).free < 20 * 1024**3:
-              raise SystemExit('Need 20 GiB free for private source preparation; stop without cleanup')
+          available = shutil.disk_usage(temp).free
+          print(json.dumps({'capacity_free_bytes': available, 'capacity_required_free_bytes': 20 * 1024**3}), flush=True)
+          if available < 20 * 1024**3:
+              names = ('GITHUB_ACTIONS','RUNNER_ENVIRONMENT','RUNNER_OS','GITHUB_REPOSITORY','ImageOS','ImageVersion','RUNNER_TEMP','GITHUB_WORKSPACE')
+              subprocess.run(['sudo','env',*[name+'='+os.environ[name] for name in names],sys.executable,'-I',str(recovery_root/'capacity_preflight.py'),'--cleanup-preinstalled-sdks'],check=True,timeout=310)
+              available = shutil.disk_usage(temp).free
+              print('capacity_free_bytes_after_cleanup=' + str(available), flush=True)
+          if available < 20 * 1024**3:
+              raise SystemExit('Need 20 GiB free after allowlisted SDK cleanup; stop')
+          digest = os.environ['BOOPA_ARTIFACT_DIGEST']
+          if re.fullmatch(r'[0-9a-f]{64}', digest):
+              os.environ['BOOPA_ARTIFACT_DIGEST'] = 'sha256:' + digest
+          elif not re.fullmatch(r'sha256:[0-9a-f]{64}', digest):
+              raise SystemExit('Invalid upload-artifact SHA-256 output; stop')
           maker = root / 'make_runtime_plan.py'
           spec = importlib.util.spec_from_file_location('make_generation_plan', maker)
           module = importlib.util.module_from_spec(spec)
