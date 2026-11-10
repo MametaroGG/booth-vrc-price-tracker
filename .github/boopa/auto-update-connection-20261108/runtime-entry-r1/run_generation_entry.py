@@ -78,7 +78,11 @@ def connect(plan,output,env,modules,*,execution_kind):
  ip=emit(evidence/'INTEGRATION-PLAN.json',integration_plan)
  request=integration.run(ip['path'],ip['sha256'],output/'generated')
  need(request['publication_performed'] is False,'publication must remain off')
- receipt={'schema':'boopa-actions-generation-entry-result-r1','execution_kind':execution_kind,'acquisition_complete':reference(acquisition_out/'COMPLETE.json'),'prior_observation':prior_ref,'latest_observation':reference(evidence/identities['latest_observation']['path']),'integration_plan':ip,'publish_request':reference(output/'generated/PUBLISH-REQUEST.json'),'publication_performed':False,'publish_token_read':False,'provider_authenticated':False,'source_runner_independent_review':'NOT-ACCEPTED-CONTENT-FLAG','scope':'Concrete read entry call sequence returned; no independent provider authentication, full runtime deployment or release acceptance inferred.'}
+ # Validate the actual generated request with the existing frozen publisher,
+ # then export only exact public candidate bytes. No publication credential.
+ retention=load('generation_candidate_retention',Path(__file__).parent/'retain_validated_candidate.py')
+ retained=retention.run(reference(output/'generated/PUBLISH-REQUEST.json'),plan['integration_code_groups']['publisher'],output/'retained-candidate')
+ receipt={'schema':'boopa-actions-generation-entry-result-r1','execution_kind':execution_kind,'acquisition_complete':reference(acquisition_out/'COMPLETE.json'),'prior_observation':prior_ref,'latest_observation':reference(evidence/identities['latest_observation']['path']),'integration_plan':ip,'publish_request':reference(output/'generated/PUBLISH-REQUEST.json'),'retained_candidate':retained,'publication_performed':False,'publish_token_read':False,'provider_authenticated':False,'source_runner_independent_review':'NOT-ACCEPTED-CONTENT-FLAG','scope':'Concrete read entry call sequence returned; no independent provider authentication, full runtime deployment or release acceptance inferred.'}
  emit(output/'COMPLETE.json',receipt);return receipt
 
 READ_ENV_NAMES=('GITHUB_SERVER_URL','GITHUB_ACTIONS','GITHUB_REPOSITORY','GITHUB_REPOSITORY_ID','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT','GITHUB_WORKFLOW_REF','GITHUB_WORKFLOW_SHA','GITHUB_TOKEN','BOOPA_SCRAPE_RESULT','BOOPA_SAVED_COMMIT','BOOPA_ARTIFACT_ID','BOOPA_ARTIFACT_DIGEST')

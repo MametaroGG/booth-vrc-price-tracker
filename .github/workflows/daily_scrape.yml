@@ -224,7 +224,7 @@ jobs:
           import hashlib, importlib.util, json, os, pathlib, re, shutil, subprocess, sys
           root = pathlib.Path('.github/boopa').resolve(strict=True)
           manifest = root / 'DEPLOYMENT-CODE-INVENTORY.json'
-          if manifest.is_symlink() or hashlib.sha256(manifest.read_bytes()).hexdigest() != '981b6ad86897227bd9a2ac18a41cc5ec342f6e5238c066533bc0108cdb6208fb':
+          if manifest.is_symlink() or hashlib.sha256(manifest.read_bytes()).hexdigest() != '663a8a4969e7252a8b7202a987d7350be7f511e97e0632651a7608009a31c899':
               raise SystemExit('Deployment inventory differs; stop')
           for name, entry in json.loads(manifest.read_bytes())['files'].items():
               path = root / name
@@ -268,3 +268,18 @@ jobs:
           subprocess.run([sys.executable, '-I', str(entry), '--plan', plan['path'], '--plan-sha256', plan['sha256'], '--output', str(temp / 'boopa-generated')], check=True)
           print('Saved input and local candidate validated. Publication remains OFF; no publishing token used.')
           PY_BOOT
+
+      - name: Retain validated candidate for read-only inspection (publication off)
+        if: ${{ success() }}
+        timeout-minutes: 5
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: boopadb-candidate-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/boopa-generated/retained-candidate/
+          # The exporter only allows the existing 724 public paths and safe receipts.
+          # This is necessary for the existing public .nojekyll marker.
+          include-hidden-files: true
+          if-no-files-found: error
+          overwrite: false
+          retention-days: 7
+          compression-level: 6

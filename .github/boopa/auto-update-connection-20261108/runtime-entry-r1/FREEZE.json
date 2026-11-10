@@ -2,9 +2,21 @@
   "deployment_inventory": true,
   "derived_from_freeze_sha256": "e71c2619603d82b5ba16eda1998ae1189f112d32765b631a53b7bf0f336472a5",
   "files": {
+    "PUBLIC-PATHS.json": {
+      "bytes": 24440,
+      "sha256": "3bc58d76e1315e9821184df31b301bb971fecfed70a2ba987701e22699eca081"
+    },
+    "release_connection.py": {
+      "bytes": 7450,
+      "sha256": "f66c541a3990dafe8c0cbf927dc3ca88f1e23cb8f8344ac743257a9449cf5dfd"
+    },
+    "retain_validated_candidate.py": {
+      "bytes": 7086,
+      "sha256": "900edcd7f8398197c001b7af22145c498eebb40105aaf5910007a430d28e7bc2"
+    },
     "run_generation_entry.py": {
-      "bytes": 11317,
-      "sha256": "e4d73f22b4806751eadbc04ec2fa9d1c1be27085ee6ee6c8b3e4e81438d31c8c"
+      "bytes": 11754,
+      "sha256": "ea4116391c5177a4740093c4fb0fe6a9d28c908a97a34a577d798af59136df16"
     }
   },
   "independent_review_accepted": false,
