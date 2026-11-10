@@ -867,10 +867,23 @@
         "date": "2026-11-09",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-10",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "法人向け追加ライセンス｜Business Commercial License": [
+      {
+        "date": "2026-11-10",
+        "price": 3500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "10374348": "default"
+    "10374348": "default",
+    "15226053": "法人向け追加ライセンス｜Business Commercial License"
   }
 }
