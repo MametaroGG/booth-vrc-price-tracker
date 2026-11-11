@@ -887,6 +887,11 @@
         "date": "2026-11-10",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Milltina": [
@@ -922,6 +927,11 @@
       },
       {
         "date": "2026-11-10",
+        "price": 200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
         "price": 200,
         "is_sale": false
       }
@@ -961,6 +971,11 @@
         "date": "2026-11-10",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Airina": [
@@ -998,12 +1013,29 @@
         "date": "2026-11-10",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Chiyu": [
       {
         "date": "2026-11-10",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "C2300": [
+      {
+        "date": "2026-11-11",
+        "price": 200,
         "is_sale": false
       }
     ]
@@ -1012,6 +1044,8 @@
     "11374117": "default",
     "15164828": "Milltina",
     "15164829": "Murumuru",
-    "15164830": "Airina"
+    "15164830": "Airina",
+    "15229447": "Chiyu",
+    "15230519": "C2300"
   }
 }
