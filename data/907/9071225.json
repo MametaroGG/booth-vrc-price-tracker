@@ -7,11 +7,21 @@
         "date": "2026-11-09",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "A衣装のみ": [
       {
         "date": "2026-11-09",
+        "price": 1000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
         "price": 1000,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-11-09",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15147059": "A・Bの2着セット（特典付き）",
+    "15176686": "A衣装のみ",
+    "15176687": "B衣装のみ"
+  }
 }

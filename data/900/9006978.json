@@ -97,6 +97,11 @@
         "date": "2026-11-09",
         "price": 450,
         "is_sale": true
+      },
+      {
+        "date": "2026-11-11",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "#2 HalfTwinTail": [
@@ -193,6 +198,11 @@
       {
         "date": "2026-11-09",
         "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 500,
         "is_sale": false
       }
     ],
@@ -291,6 +301,11 @@
         "date": "2026-11-09",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "#4 HairBob": [
@@ -388,6 +403,18 @@
         "date": "2026-11-09",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "#1Mochi Buns Hair": [
+      {
+        "date": "2026-11-11",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
@@ -395,6 +422,7 @@
     "15047339": "fullset",
     "15050956": "#2 HalfTwinTail",
     "15050957": "#3 HairBobPerm",
-    "15050958": "#4 HairBob"
+    "15050958": "#4 HairBob",
+    "15233475": "#1Mochi Buns Hair"
   }
 }

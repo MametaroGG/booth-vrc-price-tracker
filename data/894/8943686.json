@@ -152,6 +152,11 @@
         "date": "2026-11-10",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "SiuSiu": [
@@ -204,11 +209,32 @@
         "date": "2026-11-10",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "ALL": [
+      {
+        "date": "2026-11-11",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "斑霞 -Hanka-": [
+      {
+        "date": "2026-11-11",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14946177": "default",
-    "15133313": "SiuSiu"
+    "15133313": "SiuSiu",
+    "15231337": "斑霞 -Hanka-",
+    "15231514": "ALL"
   }
 }

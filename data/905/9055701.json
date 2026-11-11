@@ -57,10 +57,30 @@
         "date": "2026-11-09",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-11",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "1分版": [
+      {
+        "date": "2026-11-11",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "お試し版": [
+      {
+        "date": "2026-11-11",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15123696": "default"
+    "15123696": "default",
+    "15233965": "1分版"
   }
 }
