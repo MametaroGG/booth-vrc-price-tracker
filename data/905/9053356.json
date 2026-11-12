@@ -105,9 +105,17 @@
         "price": 500,
         "is_sale": false
       }
+    ],
+    "default": [
+      {
+        "date": "2026-11-12",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
+    "15119444": "default",
     "15119510": "支援版"
   }
 }
