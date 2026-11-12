@@ -269,6 +269,11 @@
         "date": "2026-02-28",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-12",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "✧通常版 / Normal version✧": [
@@ -336,7 +341,16 @@
         "date": "2026-02-28",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-12",
+        "price": 200,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "12280694": "✧通常版 / Normal version✧",
+    "12280886": "✧おやつ代（中身は通常版と同じです）✧"
   }
 }
