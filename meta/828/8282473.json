@@ -41,7 +41,7 @@
   "refs": [],
   "adult": false,
   "sold_out": false,
-  "end_of_sale": false,
+  "end_of_sale": true,
   "published_at": "2026-04-29T19:50:22.000+09:00",
   "likes_history": [
     {
@@ -107,7 +107,11 @@
     {
       "date": "2026-11-11",
       "count": 28
+    },
+    {
+      "date": "2026-11-13",
+      "count": 28
     }
   ],
-  "fetched_at": "2026-11-11"
+  "fetched_at": "2026-11-13"
 }
