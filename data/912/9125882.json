@@ -12,6 +12,11 @@
         "date": "2026-11-12",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-13",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "支援代": [
@@ -24,8 +29,16 @@
         "date": "2026-11-12",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-13",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15229393": "ハートの蛇のテクスチャ",
+    "15229415": "支援代"
+  }
 }

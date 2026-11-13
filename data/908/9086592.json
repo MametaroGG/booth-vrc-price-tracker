@@ -7,11 +7,21 @@
         "date": "2026-11-12",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-13",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "通常版": [
       {
         "date": "2026-11-12",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-13",
         "price": 300,
         "is_sale": false
       }
@@ -21,8 +31,16 @@
         "date": "2026-11-12",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-13",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15170920": "おやつ代(中身は変わりません)",
+    "15242262": "通常版"
+  }
 }
