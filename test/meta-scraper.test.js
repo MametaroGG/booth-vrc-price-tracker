@@ -322,3 +322,61 @@ test('main collects into meta/ through an injected transport', async t => {
     assert.equal(state.success, 1);
     assert.equal(state.unavailable, 1);
 });
+
+
+for (const failure of ['finish', 'getBudget', 'state-write']) {
+    test(`metadata finalization ${failure} failure disables continuation after productive work`, async t => {
+        const { dataDir, metaDir, product } = tempTree(t);
+        product('7918308'); product('8328795'); product('8639887');
+        const parsed = parseItemJson('7918308', fixture);
+        const client = {
+            check() {},
+            finish() { if (failure === 'finish') throw new Error('session release EROFS fixture'); },
+            getAttemptCount: () => 2,
+            getBudget() { if (failure === 'getBudget') throw new Error('budget unavailable fixture'); return {blockedUntil:0}; }
+        };
+        if (failure === 'state-write') {
+            const original = fs.writeFileSync;
+            t.mock.method(fs, 'writeFileSync', function(file,...args) {
+                if (file === path.join(metaDir,'meta_state.json.tmp')) throw new Error('state EROFS fixture');
+                return original.call(this,file,...args);
+            });
+        }
+        const result = await main({dataDir,metaDir,client,runCap:2,
+            fetchMeta:async id=>({kind:'success',meta:{...parsed,id}}),wait:async()=>{},log:()=>{},logError:()=>{}});
+        assert.equal(result.metrics.success,2);
+        assert.equal(result.status,'failed');assert.equal(result.failed,true);
+        assert.equal(result.reason,'storage');assert.equal(result.continueCollection,false);
+        if (failure !== 'state-write') assert.equal(JSON.parse(fs.readFileSync(path.join(metaDir,'meta_state.json'))).status,'failed');
+    });
+}
+
+for (const failure of ['checkpoint-write','session-release']) {
+    test(`real metadata client ${failure} failure returns failed and retains ownership`, async t => {
+        const {dataDir,metaDir,product}=tempTree(t);product('7918308');product('8328795');product('8639887');
+        const {reserveDailyAllowance}=require('../src/collection-runtime');
+        const budgetFile=path.join(metaDir,'request_budget.json');
+        const now=Date.now();
+        reserveDailyAllowance({budgetFile,reservationId:'finalization-fixture',now});
+        if(failure==='checkpoint-write') {
+            const original=fs.writeFileSync;
+            t.mock.method(fs,'writeFileSync',function(file,value,...args){
+                if(file===budgetFile+'.tmp' && JSON.parse(value).reservation.completed===true) throw new Error('checkpoint EROFS fixture');
+                return original.call(this,file,value,...args);
+            });
+        } else {
+            const original=fs.rmdirSync;
+            t.mock.method(fs,'rmdirSync',function(file,...args){
+                if(file===budgetFile+'.session-lock') throw new Error('session release EROFS fixture');
+                return original.call(this,file,...args);
+            });
+        }
+        const result=await main({dataDir,metaDir,reservationId:'finalization-fixture',now:()=>now,runCap:2,
+            get:async url=>({status:200,data:{...fixture,id:Number(url.match(/items\/(\d+)/)[1])},headers:{}}),wait:async()=>{},log:()=>{},logError:()=>{}});
+        assert.equal(result.metrics.success,2);assert.equal(result.failed,true);
+        assert.equal(result.status,'failed');assert.equal(result.continueCollection,false);
+        assert.equal(JSON.parse(fs.readFileSync(path.join(metaDir,'meta_state.json'))).status,'failed');
+        assert.ok(fs.existsSync(budgetFile+'.session-lock'));
+        assert.throws(()=>reserveDailyAllowance({budgetFile,reservationId:'next',now}),/owner/);
+    });
+}

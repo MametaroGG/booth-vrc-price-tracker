@@ -436,6 +436,18 @@ async function main({
             ? { status: error.failed ? 'partial' : 'paused', reason: error.reason, failed: error.failed }
             : { status: 'failed', reason: 'storage', failed: true };
     } finally {
+        // Drain is complete above. Never advertise success or continuation if
+        // final accounting or session release fails, even after useful work.
+        try { client.finish?.(); }
+        catch (error) {
+            logError(`Cannot finish request budget: ${error.message}`);
+            result = { status: 'failed', reason: 'storage', failed: true };
+        }
+        try { finalBudget = client.getBudget?.(); }
+        catch (error) {
+            logError(`Cannot read final request budget: ${error.message}`);
+            result = { status: 'failed', reason: 'storage', failed: true };
+        }
         try {
             writeJson(path.join(metaDir, 'meta_state.json'), {
                 last_run_at: new Date(now()).toISOString(),
@@ -449,10 +461,8 @@ async function main({
             });
         } catch (error) {
             logError(`Cannot save metadata run state: ${error.message}`);
+            result = { status: 'failed', reason: 'storage', failed: true };
         }
-        try { finalBudget = client.getBudget?.(); } catch { /* Continuation defaults to off. */ }
-        try { client.finish?.(); }
-        catch (error) { logError(`Cannot finish request budget: ${error.message}`); }
     }
     metrics.processed = metrics.success + metrics.unavailable + metrics.failures;
     metrics.chargedHttpAttempts = client.getAttemptCount?.() ?? 0;
@@ -491,3 +501,4 @@ module.exports = {
     resizedImage, parseItemJson, buildRecord, fetchItemMeta, readActivity,
     hasNewerPriceObservation, buildWorkList, saveMeta, saveUnavailable, main
 };
+

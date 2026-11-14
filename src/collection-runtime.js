@@ -113,9 +113,29 @@ function validateDailyLimit(dailyLimit) {
     }
 }
 
-function reserveDailyAllowance({ budgetFile, reservationId, now = Date.now(), dailyLimit = null }) {
+// Cooperative, process-independent local writer exclusion. Never steal a
+// pre-existing lock: a killed owner requires explicit inspection, not timeout.
+function withBudgetLock(budgetFile, action) {
+    fs.mkdirSync(path.dirname(budgetFile), { recursive: true });
+    const lock = `${budgetFile}.writer-lock`;
+    fs.mkdirSync(lock); // EEXIST fails closed; do not remove another owner's lock.
+    try { return action(); }
+    finally { fs.rmdirSync(lock); }
+}
+
+function budgetBytes(budgetFile) {
+    try { return fs.readFileSync(budgetFile, 'utf8'); }
+    catch (error) { if (error.code === 'ENOENT') return null; throw error; }
+}
+
+function reserveDailyAllowance(options) {
+    return withBudgetLock(options.budgetFile, () => reserveDailyAllowanceLocked(options));
+}
+
+function reserveDailyAllowanceLocked({ budgetFile, reservationId, now = Date.now(), dailyLimit = null }) {
     if (!reservationId) throw new Error('SCRAPER_RESERVATION_ID is required');
     validateDailyLimit(dailyLimit);
+    if (fs.existsSync(`${budgetFile}.session-lock`)) throw new Error('Request session has a live or unresolved owner');
     // Existing same-day traffic predates this ledger and cannot be measured here.
     // An optional finite mode starts conservatively. Unlimited sessions can start
     // immediately; their count records only traffic observed by this ledger.
@@ -153,13 +173,28 @@ function createRequestClient({
     if (!Number.isFinite(intervalMs) || intervalMs < 0 || !Number.isSafeInteger(maxAttempts) || maxAttempts < 1 || maxAttempts > 3) {
         throw new Error('Invalid request pacing or retry limit');
     }
-    const budget = validateBudget(readJson(budgetFile, { date: jstDate(now()), requests: 0, blockedUntil: 0 }));
+    let expectedBudgetBytes = budgetBytes(budgetFile);
+    const budget = validateBudget(expectedBudgetBytes === null
+        ? { date: jstDate(now()), requests: 0, blockedUntil: 0 } : JSON.parse(expectedBudgetBytes));
     if (reservationId && (budget.reservation?.id !== reservationId || budget.reservation.completed)) {
         throw new Error('Missing active request reservation for this run');
     }
     if (!reservationId && budget.reservation && !budget.reservation.completed) {
         throw new Error('Active request reservation requires its reservation ID');
     }
+    if (!reservationId && fs.existsSync(`${budgetFile}.session-lock`)) throw new Error('Request session has a live or unresolved owner');
+    // Every client owns the entire session, including legacy unreserved mode.
+    // A crash leaves this lock deliberately unreclaimed. Never infer owner death
+    // or permission to resume from age/PID; recovery needs explicit evidence.
+    const sessionLock = `${budgetFile}.session-lock`;
+    if (sessionLock) {
+        withBudgetLock(budgetFile, () => {
+            if (budgetBytes(budgetFile) !== expectedBudgetBytes) throw new Error('Request budget changed before session ownership');
+            fs.mkdirSync(sessionLock);
+        });
+    }
+    let sessionReleased = false;
+    let activeRequests = 0;
     let nextStart = 0;
     let gate = Promise.resolve();
     let consecutiveFailures = 0;
@@ -196,9 +231,15 @@ function createRequestClient({
         return stopped;
     }
 
-    function persistBudget() {
+    function persistBudget(value = budget) {
         try {
-            writeJson(budgetFile, budget);
+            withBudgetLock(budgetFile, () => {
+                if (budgetBytes(budgetFile) !== expectedBudgetBytes) {
+                    throw new Error('Request budget changed since this client read it; refusing stale overwrite');
+                }
+                writeJson(budgetFile, value);
+                expectedBudgetBytes = JSON.stringify(value, null, 2);
+            });
         } catch (error) {
             throw stop('budget-write', `Cannot persist request budget: ${error.message}`);
         }
@@ -409,16 +450,40 @@ function createRequestClient({
         }
     }
 
+    async function trackedRequest(...args) {
+        // Includes queued starts, retries, redirects and response observation.
+        // Increment synchronously so an immediate finish cannot race the gate.
+        activeRequests++;
+        try { return await request(...args); }
+        finally { activeRequests--; }
+    }
+
     function finish() {
         finished = true;
+        if (activeRequests !== 0) {
+            throw new CollectionStop('drain-pending', 'Cannot finish before all request outcomes have drained', true);
+        }
         if (reservationId && !budget.reservation.completed) {
-            if (budget.reservation.limit !== null) budget.requests -= budget.reservation.limit - budget.reservation.used;
-            budget.reservation.completed = true;
-            persistBudget();
+            // Publish completion to readers only after the checkpoint write
+            // succeeds. On EROFS/rename failure, retain the unresolved state
+            // and conservative precharge; a repeated finish must not silently
+            // succeed or refund the same allowance twice.
+            const completedBudget = structuredClone(budget);
+            if (completedBudget.reservation.limit !== null) {
+                completedBudget.requests -= completedBudget.reservation.limit - completedBudget.reservation.used;
+            }
+            completedBudget.reservation.completed = true;
+            persistBudget(completedBudget);
+            Object.assign(budget, completedBudget);
+        }
+        if (!reservationId && !sessionReleased) persistBudget();
+        if (sessionLock && !sessionReleased) {
+            fs.rmdirSync(sessionLock);
+            sessionReleased = true;
         }
     }
 
-    return { get: request, check, remaining, stop, finish, getBudget: () => structuredClone(budget),
+    return { get: trackedRequest, check, remaining, stop, finish, getBudget: () => structuredClone(budget),
         getAttemptCount: () => attemptCount, getActualRequests: () => actualRequests(budget) };
 }
 
