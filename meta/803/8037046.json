@@ -28,8 +28,13 @@
     "獏専用",
     "獏対応",
     "baku対応",
+    "아이텍스처",
     "Baku makeup",
-    "Baku eye texture"
+    "Baku eye texture",
+    "메이크업텍스처",
+    "바쿠메이크업",
+    "남캐메이크업",
+    "male avatar makeup"
   ],
   "category": {
     "id": 214,
@@ -38,7 +43,11 @@
   },
   "likes": 9,
   "refs": [
-    "8017433"
+    "8017433",
+    "7528003"
+  ],
+  "base_refs": [
+    "7528003"
   ],
   "adult": false,
   "sold_out": false,
@@ -132,7 +141,11 @@
     {
       "date": "2026-11-14",
       "count": 9
+    },
+    {
+      "date": "2026-11-15",
+      "count": 9
     }
   ],
-  "fetched_at": "2026-11-14"
+  "fetched_at": "2026-11-15"
 }
