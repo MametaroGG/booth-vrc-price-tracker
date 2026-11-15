@@ -7,12 +7,22 @@
         "date": "2026-11-13",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "通常版(make&body)": [
       {
         "date": "2026-11-13",
         "price": 100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 200,
         "is_sale": false
       }
     ],
@@ -21,6 +31,11 @@
         "date": "2026-11-13",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "支援版(フルセットと同様のもの)": [
@@ -28,10 +43,16 @@
         "date": "2026-11-13",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "15148727": "通常版(eye)",
     "15249072": "通常版(make&body)",
     "15249073": "フルセット",
     "15249074": "支援版(フルセットと同様のもの)"

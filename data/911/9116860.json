@@ -22,6 +22,11 @@
         "date": "2026-11-13",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "まめふれんず": [
@@ -42,6 +47,11 @@
       },
       {
         "date": "2026-11-13",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
         "price": 500,
         "is_sale": false
       }
@@ -66,8 +76,17 @@
         "date": "2026-11-13",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15216387": "フルセット",
+    "15216568": "まめふれんず",
+    "15216569": "えも研共通素体"
+  }
 }

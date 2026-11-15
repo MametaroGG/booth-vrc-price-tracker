@@ -7,11 +7,21 @@
         "date": "2026-11-13",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "あずき対応版": [
       {
         "date": "2026-11-13",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
         "price": 700,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-11-13",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "まめひなた対応版": [
       {
         "date": "2026-11-13",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
         "price": 700,
         "is_sale": false
       }
@@ -35,8 +55,19 @@
         "date": "2026-11-13",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15216764": "オールパッケージ版",
+    "15216945": "あずき対応版",
+    "15216946": "キプフェル対応版",
+    "15216947": "まめひなた対応版",
+    "15254645": "ししゅか対応版"
+  }
 }

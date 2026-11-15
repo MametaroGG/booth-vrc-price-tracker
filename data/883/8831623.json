@@ -192,6 +192,11 @@
         "date": "2026-11-13",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 900,
+        "is_sale": true
       }
     ],
     "キプフェル": [
@@ -357,6 +362,11 @@
       },
       {
         "date": "2026-11-13",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
         "price": 800,
         "is_sale": false
       }
@@ -526,12 +536,25 @@
         "date": "2026-11-13",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "【SALE】スクロル": [
+      {
+        "date": "2026-11-16",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14752033": "default",
     "14945309": "キプフェル",
-    "14945310": "【SALE】えも研"
+    "14945310": "【SALE】えも研",
+    "15264081": "【SALE】スクロル"
   }
 }

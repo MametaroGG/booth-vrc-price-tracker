@@ -564,6 +564,11 @@
         "date": "2026-11-13",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "エク/Eku": [
@@ -1101,6 +1106,11 @@
         "date": "2026-11-13",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "フルセット-Full set": [
@@ -1613,12 +1623,25 @@
         "date": "2026-11-13",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 400,
+        "is_sale": true
+      }
+    ],
+    "レピ/Repi 🎈300→200": [
+      {
+        "date": "2026-11-16",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13840634": "フルセット-Full set",
     "13841096": "ショコラ/ Chocolat",
-    "13841097": "エク/Eku"
+    "13841097": "エク/Eku",
+    "15270161": "レピ/Repi 🎈300→200"
   }
 }

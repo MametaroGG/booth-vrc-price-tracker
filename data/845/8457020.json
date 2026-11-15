@@ -437,6 +437,11 @@
         "date": "2026-11-13",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Tips ( SPS Quick Fit )": [
@@ -874,11 +879,24 @@
         "date": "2026-11-13",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Sound DLC": [
+      {
+        "date": "2026-11-16",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14117130": "SPS Quick Fit",
-    "14117141": "Tips ( SPS Quick Fit )"
+    "14117141": "Tips ( SPS Quick Fit )",
+    "15270787": "Sound DLC"
   }
 }

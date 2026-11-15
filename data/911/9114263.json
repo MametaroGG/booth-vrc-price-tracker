@@ -27,6 +27,11 @@
         "date": "2026-11-13",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "English Swish and Twitch": [
@@ -54,8 +59,22 @@
         "date": "2026-11-13",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "サポート/Support": [
+      {
+        "date": "2026-11-16",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15260743": "サポート/Support"
+  }
 }

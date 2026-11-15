@@ -17,6 +17,11 @@
         "date": "2026-11-13",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "SIT_PALETTE_Basic+Full.Ver": [
@@ -36,8 +41,16 @@
         "date": "2026-11-13",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-16",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15212224": "SIT_PALETTE_Basic.Ver",
+    "15214807": "SIT_PALETTE_Basic+Full.Ver「ゆらゆら付き版（基本版の内容＋揺れ2種）」"
+  }
 }
