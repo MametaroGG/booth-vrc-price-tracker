@@ -212,6 +212,7 @@ jobs:
             .github/boopa
             .github/workflows
       - name: Acquire, generate and validate privately on runner
+        id: generate_candidate
         timeout-minutes: 70
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -268,6 +269,57 @@ jobs:
           subprocess.run([sys.executable, '-I', str(entry), '--plan', plan['path'], '--plan-sha256', plan['sha256'], '--output', str(temp / 'boopa-generated')], check=True)
           print('Saved input and local candidate validated. Publication remains OFF; no publishing token used.')
           PY_BOOT
+
+      - name: Preserve failed candidate context (not a validated candidate)
+        id: failure_context
+        if: ${{ failure() && steps.generate_candidate.outcome == 'failure' }}
+        timeout-minutes: 1
+        env:
+          BOOPA_WORKFLOW_COMMIT: ${{ github.workflow_sha }}
+          BOOPA_SAVED_COMMIT: ${{ needs.scrape.outputs.boopadb_saved_commit }}
+          BOOPA_ARTIFACT_ID: ${{ needs.scrape.outputs.boopadb_artifact_id }}
+        run: |
+          python3 -I - <<'PY_CONTEXT'
+          import json, os, pathlib, re
+          fields = {
+              'run_id': ('GITHUB_RUN_ID', r'[1-9][0-9]{0,19}'),
+              'run_attempt': ('GITHUB_RUN_ATTEMPT', r'[1-9][0-9]{0,9}'),
+              'workflow_commit': ('BOOPA_WORKFLOW_COMMIT', r'[0-9a-f]{40}'),
+              'saved_commit': ('BOOPA_SAVED_COMMIT', r'[0-9a-f]{40}'),
+              'collector_artifact_id': ('BOOPA_ARTIFACT_ID', r'[1-9][0-9]{0,19}'),
+          }
+          report = {'schema': 'boopa-candidate-failure-context-v1',
+                    'stage': 'acquire-generate-validate',
+                    'outcome': 'failure', 'diagnosis': None,
+                    'publication_accepted': False}
+          for key, (name, pattern) in fields.items():
+              value = os.environ.get(name, '')
+              if not re.fullmatch(pattern, value):
+                  raise SystemExit('Invalid failure context; refusing artifact')
+              report[key] = value
+          # No raw logs, runtime inputs, environment dump or candidate files are copied.
+          root = pathlib.Path(os.environ['RUNNER_TEMP']).resolve(strict=True)
+          folder = root / 'boopa-failure-context'
+          folder.mkdir(mode=0o700, exist_ok=False)
+          raw = (json.dumps(report, sort_keys=True) + '\n').encode()
+          if len(raw) > 2048: raise SystemExit('Failure context too large')
+          fd = os.open(folder / 'failure-context.json', os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, 0o600)
+          with os.fdopen(fd, 'wb') as out:
+              out.write(raw)
+              out.flush()
+              os.fsync(out.fileno())
+          PY_CONTEXT
+
+      - name: Retain failed candidate context only
+        if: ${{ failure() && steps.failure_context.outcome == 'success' }}
+        timeout-minutes: 2
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: boopadb-failure-context-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/boopa-failure-context/failure-context.json
+          if-no-files-found: error
+          overwrite: false
+          retention-days: 7
 
       - name: Retain validated candidate for read-only inspection (publication off)
         if: ${{ success() }}
