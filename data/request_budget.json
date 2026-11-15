@@ -11,6 +11,44 @@
     "mode": "unlimited",
     "limit": null,
     "used": 0,
-    "completed": false
-  }
+    "completed": true
+  },
+  "recoveryHistory": [
+    {
+      "type": "abandoned-reservation-closed",
+      "originalBudgetSha256": "7a3c57fa5fea0f406c44e7807a3f795e2100bf39c063682e2f6b7570d8a403d6",
+      "originalReservation": {
+        "id": "43541811924-1",
+        "mode": "unlimited",
+        "limit": null,
+        "used": 0,
+        "completed": false
+      },
+      "originalDate": "2026-11-14",
+      "originalRequests": 90870,
+      "originalBlockedUntil": 1793594689089,
+      "review": {
+        "reservationId": "43541811924-1",
+        "expectedBudgetSha256": "7a3c57fa5fea0f406c44e7807a3f795e2100bf39c063682e2f6b7570d8a403d6",
+        "priorRunStatus": "completed",
+        "activeWriters": 0,
+        "responseEvidence": "unknown",
+        "decision": "close-abandoned-reservation-with-unknown-outcome",
+        "acknowledgeLostResponseRisk": true,
+        "preserveAccounting": true,
+        "approvedBy": "repository owner",
+        "approvedAt": "2026-11-15T04:01:48.115Z",
+        "approvalTimestampMeaning": "time the prior owner approval was recorded for application, not original message time",
+        "evidenceRefs": [
+          "https://github.com/MametaroGG/booth-vrc-price-tracker/actions/runs/43541811924",
+          "https://github.com/MametaroGG/booth-vrc-price-tracker/actions/runs/43652549109",
+          "https://github.com/MametaroGG/booth-vrc-price-tracker/commit/92579bdf3e5517030d97bfa5073b9b6a7e7e7b27"
+        ],
+        "maximumKnownBlockedUntil": 1793594689089,
+        "note": "Close only the abandoned price reservation under owner-approved maintenance. Final responses remain unknown. Metadata run saved successfully. Both collector workflows disabled during repair; old queued run has no jobs. No collection or publication is initiated by this repair."
+      },
+      "accounting": "incomplete-observation-no-refund",
+      "collectionSucceeded": false
+    }
+  ]
 }
