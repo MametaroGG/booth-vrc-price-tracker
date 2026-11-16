@@ -107,6 +107,17 @@ def pending_partition(backend,metadata,prior_backend,http_and_retained,previous_
     pending=missing-http_and_retained
     return missing,pending,(previous_pending&metadata)-http_and_retained
 
+def conflict_evidence(ident,row,marker,counts,scope,upper_day,prior_floor):
+    """Describe ambiguity without changing price bytes or asserting availability."""
+    need(scope in ('saved','latest'),'Unknown conflict evidence scope')
+    need(date.fromisoformat(marker['fetched_at']).isoformat()==marker['fetched_at'] and marker['fetched_at']<=upper_day,'Negative marker after observation boundary')
+    need(type(marker['status']) is int and marker['status'] in (404,410),'Negative status required')
+    need(isinstance(counts,dict) and all(type(c) is int and c>0 and date.fromisoformat(d).isoformat()==d for d,c in counts.items()),'Invalid history counts')
+    after=sum(c for d,c in counts.items() if d>marker['fetched_at'])
+    equal=counts.get(marker['fetched_at'],0)
+    if not after+equal:return None
+    return {'id':ident,'price_sha256':row['sha256'],'metadata_sha256':marker['sha256'],'status':marker['status'],'fetched_at':marker['fetched_at'],'observations_total':sum(counts.values()),'observations_after_marker':after,'observations_equal_marker':equal,'evidence_scope':scope,'prior_floor_member':ident in prior_floor}
+
 def issue_policy(source,sr,sourcepin,latest,lr,latestpin,prior,candidate,selection,selectionpin,helpers,helper_pins,stage,p,observation):
     vs,vp,sp,charts,hashes=p.load_helpers(helpers,helper_pins)
     retained=vp.read_retained_exclusions(candidate,prior['snapshot_sha256'])
@@ -142,27 +153,28 @@ def issue_policy(source,sr,sourcepin,latest,lr,latestpin,prior,candidate,selecti
         for ident in sorted(set(saved)|additional):
             row=inventory['data/'+ident[:3]+'/'+ident+'.json'];raw=p.exact_source(vs.exact_read,fd,row)
             counts,_,_=p.inspect_history(p.strict(raw),ident,asof)
-            if ident in additional:need(current[ident]['fetched_at']<=observation['upper_jst_date'] and not any(d>current[ident]['fetched_at'] for d in counts),'Latest negative conflicts with saved history/date')
+            if ident in additional:
+                entry=conflict_evidence(ident,row,current[ident],counts,'latest',observation['upper_jst_date'],retained['ids'])
+                if entry:conflicts.append(entry)
             if ident not in saved:continue
             m=saved[ident];mraw=p.exact_source(vs.exact_read,fd,inventory[m['path']])
             need(len(mraw)==m['bytes'] and p.digest(mraw)==m['sha256'] and p.git_blob(mraw)==m['git_blob'],'Saved marker bytes differ')
-            v=p.strict(mraw);need(v.get('id')==ident and v.get('unavailable') is True and v.get('status')==m['status'] and v.get('fetched_at')==m['fetched_at'] and not v.get('name'),'Saved marker semantics differ')
-            after=sum(c for d,c in counts.items() if d>m['fetched_at'])
-            if after:
-                need(ident in retained['ids'],'Contradiction outside actual previous floor')
-                conflicts.append({'id':ident,'price_sha256':row['sha256'],'metadata_sha256':m['sha256'],'status':m['status'],'fetched_at':m['fetched_at'],'observations_total':sum(counts.values()),'observations_after_marker':after,'prior_floor_member':True})
+            v=p.strict(mraw);need(v.get('id')==ident and v.get('unavailable') is True and type(v.get('status')) is int and v.get('status')==m['status'] and v.get('fetched_at')==m['fetched_at'] and not v.get('name'),'Saved marker semantics differ')
+            entry=conflict_evidence(ident,row,m,counts,'saved',asof.isoformat(),retained['ids'])
+            if entry:conflicts.append(entry)
         for ident in sorted(prior_pending&metadata):
             raw=p.exact_source(vs.exact_read,fd,inventory['meta/'+ident[:3]+'/'+ident+'.json'])
             record=p.strict(raw)
             need(vp.metadata_success(record,ident) or ident in saved,'Previous pending metadata remains unknown')
     finally:os.close(fd)
+    conflicts.sort(key=lambda e:(e['evidence_scope'],e['id']))
     floor={'prior_snapshot_sha256':retained['snapshot_sha256'],'prior_lists_sha256':retained['lists_sha256'],'prior_ids_sha256':retained['ids_sha256']}
-    diag={'schema':'boopa-saved-source-conflict-diagnostic-runner-r1','source_commit':sr['source_commit'],'source_root':sr['git_root'],'metadata_tree':sr['metadata_tree'],'archive_receipt_sha256':sourcepin,'selection_receipt_sha256':selectionpin,**floor,'conflicts':conflicts,'outside_floor_conflicts':0,'exception_applied':False,'publication_acceptance':False}
+    diag={'schema':'boopa-saved-source-conflict-diagnostic-runner-r2','latest_source_commit':lr['source_commit'],'latest_metadata_tree':lr['metadata_tree'],'source_commit':sr['source_commit'],'source_root':sr['git_root'],'metadata_tree':sr['metadata_tree'],'archive_receipt_sha256':sourcepin,'selection_receipt_sha256':selectionpin,**floor,'conflicts':conflicts,'outside_floor_conflicts':sum(not e['prior_floor_member'] for e in conflicts),'exception_applied':False,'publication_acceptance':False}
     dp=stage/'diagnostic.private.json';dsha=put(dp,diag)
-    qp=stage/'quarantine.private.json';qsha=put(qp,{'schema':'boopa-saved-conflict-quarantine-r2','source_commit':sr['source_commit'],**floor,'diagnostic_receipt_sha256':dsha,'entries':[{k:v for k,v in e.items() if k!='prior_floor_member'} for e in conflicts]})
+    qp=stage/'quarantine.private.json';qsha=put(qp,{'schema':'boopa-saved-conflict-quarantine-r3','latest_source_commit':lr['source_commit'],'latest_metadata_tree':lr['metadata_tree'],'source_commit':sr['source_commit'],**floor,'diagnostic_receipt_sha256':dsha,'entries':[{k:v for k,v in e.items() if k!='prior_floor_member'} for e in conflicts]})
     pending_proof={'schema':'boopa-pending-metadata-r1','source_commit':sr['source_commit'],'source_root':sr['git_root'],'source_archive_receipt_sha256':sourcepin,'prior_backend_receipt_sha256':bprior['prior_backend_receipt_sha256'],'prior_backend_ids_sha256':bprior['prior_backend_ids_sha256'],'prior_pending_ids_sha256':retained['pending_ids_sha256'],'missing_ids':sorted(missing),'pending_ids':sorted(pending),'resolved_pending_ids':sorted(resolved)}
     ip=stage/'impact.private.json';isha=put(ip,{'schema':'boopa-latest-negative-impact-runner-r1','source_commit':lr['source_commit'],'source_metadata_tree':lr['metadata_tree'],'latest_scan_receipt_sha256':latestpin,'latest_negative_observation_sha256':observation['observation_sha256'],'latest_negative_observation_upper_jst_day':observation['upper_jst_date'],'latest_negative_ids_outside_saved_backend':sorted(outside_backend),'latest_negative_count':len(current),'additional_exclusion_ids':sorted(additional),'exclusion_union_count':len(union),'exclusion_union_ids_sha256':p.digest(vp.json_bytes(sorted(union))),'pending_metadata':pending_proof,'missing_metadata_count':len(missing),'pending_metadata_count':len(pending),'public_hidden_count':len(union|pending),'public_hidden_ids_sha256':p.digest(vp.json_bytes(sorted(union|pending))),'publication_acceptance':False})
-    op=stage/'overlay.private.json';osha=put(op,{'schema':'boopa-latest-negative-overlay-r4','pending_metadata':pending_proof,'observation':{'path':'observation/latest-observation.json','sha256':observation['observation_sha256']},'source_commit':lr['source_commit'],'metadata_tree':lr['metadata_tree'],**floor,'impact_receipt_sha256':isha,'entries':[current[i] for i in sorted(additional)]})
+    op=stage/'overlay.private.json';osha=put(op,{'schema':'boopa-latest-negative-overlay-r5','pending_metadata':pending_proof,'observation':{'path':'observation/latest-observation.json','sha256':observation['observation_sha256']},'source_commit':lr['source_commit'],'metadata_tree':lr['metadata_tree'],**floor,'impact_receipt_sha256':isha,'entries':[current[i] for i in sorted(additional)]})
     return {'retained':retained,'prior_args':pa,'prior_bindings':bprior,'diagnostic':dp,'diagnostic_sha256':dsha,'quarantine':qp,'quarantine_sha256':qsha,'impact':ip,'impact_sha256':isha,'overlay':op,'overlay_sha256':osha}
 
 def bind_latest_observation(latest,proofs,validator):
@@ -254,3 +266,4 @@ def run(plan_path,plan_sha256,output):
 if __name__=='__main__':
     ap=argparse.ArgumentParser();ap.add_argument('--inputs',type=Path,required=True);ap.add_argument('--inputs-sha256',required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args()
     print(json.dumps(run(a.inputs,a.inputs_sha256,a.output),sort_keys=True))
+

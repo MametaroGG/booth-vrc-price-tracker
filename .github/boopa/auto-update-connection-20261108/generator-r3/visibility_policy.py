@@ -2,7 +2,8 @@
 
 Only a last-known HTTP 404/410 marker is exclusion evidence. This is not proof
 that an item is permanently private. Missing metadata and transient failures do
-not imply withdrawal. Invalid or conflicting withdrawal evidence stops a build.
+not imply withdrawal. Invalid evidence stops a build. Explicitly pinned r3/r5
+state conflicts remain hidden without discarding valid price histories.
 """
 import hashlib
 import json
@@ -218,7 +219,10 @@ class VisibilityPolicy:
         marker = self.markers.get(ident)
         overlay = None if self.latest_negative_overlay is None else self.latest_negative_overlay.entries.get(ident)
         saved_mode = self.quarantine is not None or self.latest_negative_overlay is not None
-        total = after = overlay_after = 0
+        total = after = overlay_after = equal = overlay_equal = 0
+        separated = self.quarantine is not None and getattr(self.quarantine, 'state_separated', False)
+        if separated != bool(self.latest_negative_overlay is not None and getattr(self.latest_negative_overlay, 'state_separated', False)):
+            raise ValueError('State quarantine/overlay modes differ')
         if marker is not None or saved_mode:
             variations = record.get('variations')
             if not isinstance(variations, dict):
@@ -238,17 +242,22 @@ class VisibilityPolicy:
                     total += 1
                     after += int(marker is not None and observed_day.isoformat() > marker['fetched_at'])
                     overlay_after += int(overlay is not None and observed_day.isoformat() > overlay['fetched_at'])
+                    equal += int(marker is not None and observed_day.isoformat() == marker['fetched_at'])
+                    overlay_equal += int(overlay is not None and observed_day.isoformat() == overlay['fetched_at'])
             # Price and saved-metadata dates retain self.today. Only a separately
             # validated observed overlay may use a later negative observation day.
             overlay_upper_day=self.today
             if overlay is not None and self.latest_negative_overlay.observation_upper_day is not None:
                 overlay_upper_day=self.latest_negative_overlay.observation_upper_day
-            if overlay is not None and (canonical_date(overlay['fetched_at']) > overlay_upper_day or overlay_after):
-                raise ValueError('Latest negative conflicts with saved history: ' + ident)
-            if after:
+            if overlay is not None and canonical_date(overlay['fetched_at']) > overlay_upper_day:
+                raise ValueError('Future latest negative: ' + ident)
+            if overlay is not None and (overlay_after or (separated and overlay_equal)):
+                if not separated:raise ValueError('Latest negative conflicts with saved history: ' + ident)
+                self.quarantine.check(record, raw, overlay, total, overlay_after, overlay_equal, 'latest')
+            if after or (separated and equal):
                 if self.quarantine is None:
                     raise ValueError('Newer price observation conflicts with unavailable marker: ' + ident)
-                self.quarantine.check(record, raw, marker, total, after)
+                self.quarantine.check(record, raw, marker, total, after, equal)
         if marker is not None or ident in self.retained_ids or ident in self.overlay_ids or ident in self.pending_ids:
             self.hidden_ids.add(ident)
             return False
@@ -301,8 +310,11 @@ class VisibilityPolicy:
             ledger['restoration_allowed'] = False
         if self.quarantine is not None:
             ledger['saved_conflict_quarantine'] = self.quarantine.finish()
+            if getattr(self.quarantine, 'state_separated', False):
+                ledger['unresolved_state_ids'] = sorted(self.quarantine.unresolved_ids)
+                ledger['counts']['unresolved_state_total'] = len(self.quarantine.unresolved_ids)
             # A conflicting old marker is not a confirmed current availability decision.
-            confirmed = (self.backend_ids & set(self.markers)) - self.quarantine.consumed
+            confirmed = (self.backend_ids & set(self.markers)) - self.quarantine.unresolved_ids
             ledger['confirmed_hidden_ids'] = sorted(confirmed)
             ledger['confirmed_hidden_evidence'] = [self.markers[i] for i in sorted(confirmed)]
             counts['confirmed_hidden_total'] = len(confirmed)
@@ -321,3 +333,4 @@ class VisibilityPolicy:
                     source_max_date=source_max_date,
                     ledger_sha256=hashlib.sha256(raw).hexdigest(),
                     metadata_inventory_sha256=inventory_sha)
+

@@ -106,6 +106,24 @@ def catalog_ids(site):
             result.add(ident)
     return frozenset(result)
 
+def validate_state_separation_summary(facts,receipt,binding,saved,latest):
+    """Closed scoped consumption receipt; not a replacement for semantic replay."""
+    q=receipt.get('quarantine')
+    fields={'schema','proof_sha256','ids','availability_confirmed','evidence_keys'}
+    need(type(q) is dict and set(q)==fields and q['schema']=='boopa-consumed-state-conflicts-r1','State separation consumption receipt required')
+    need(q['availability_confirmed'] is False and q['proof_sha256']==binding['quarantine_proof_sha256'],'State separation authority/pin differs')
+    need(facts.get('quarantine')==q,'State separation facts/receipt differ')
+    ids=canonical_ids(q['ids'],'state unresolved IDs')
+    need(q['ids']==sorted(ids),'Canonical unresolved order required')
+    keys=q['evidence_keys'];need(type(keys) is list,'Scoped consumption keys required')
+    pairs=[]
+    for key in keys:
+        need(type(key) is dict and set(key)=={'evidence_scope','id'} and key['evidence_scope'] in ('saved','latest'),'Closed consumption key required')
+        ident=key['id'];need(type(ident) is str and re.fullmatch('[1-9][0-9]*',ident),'Canonical consumption ID required')
+        need(ident in (saved if key['evidence_scope']=='saved' else latest),'Consumption scope not represented by actual negative partition')
+        pairs.append((key['evidence_scope'],ident))
+    need(pairs==sorted(set(pairs)) and ids=={ident for _,ident in pairs},'Scoped consumption ID union differs')
+
 def complete_backend_membership(archive,archive_dir,facts,inventory,completion,receipt,*,binding=None,overlay=None):
     """Read all saved-snapshot IDs/maps, never infer membership from public output.
     No price bodies are reread. Accepted full source preparation/semantic checks
@@ -145,7 +163,9 @@ def complete_backend_membership(archive,archive_dir,facts,inventory,completion,r
     if pending_mode:
         need(pending_keys<=set(facts) and binding is not None and overlay is not None,'Complete explicit pending provenance required')
         need(facts.get('pending_metadata_availability_confirmed') is False and receipt.get('pending_metadata_availability_confirmed') is False,'Pending availability must remain unconfirmed')
-        need(overlay.get('schema')=='boopa-latest-negative-overlay-r4','Pending proof cannot downgrade to a legacy overlay')
+        need(overlay.get('schema') in ('boopa-latest-negative-overlay-r4','boopa-latest-negative-overlay-r5'),'Pending proof cannot downgrade to a legacy overlay')
+        if overlay['schema']=='boopa-latest-negative-overlay-r5':
+            validate_state_separation_summary(facts,receipt,binding,saved,latest)
         markers_entry=archive['outputs']['current-negative-markers.private.json']
         markers=bound_json(Path(archive_dir)/'current-negative-markers.private.json',markers_entry['sha256'],markers_entry['bytes'])
         need(type(markers) is list and all(type(x) is dict and type(x.get('status')) is int and x['status'] in (404,410) for x in markers),'Saved negative marker evidence required')
@@ -245,3 +265,4 @@ def publish(*,repo,candidate,candidate_pin,prior,prior_pin,expected,binding_path
     except RuntimeError:pass
     # One readback only; error propagates as uncertain, never implicit retry.
     actual=head();return {**record,'status':'exact-commit-observed' if actual==commit else 'unchanged' if actual==expected else 'conflict','remote_head':actual,'pages_live_verified':False,'publication_accepted':False}
+

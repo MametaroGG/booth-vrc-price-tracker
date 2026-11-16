@@ -103,40 +103,67 @@ def entries(value,fields):
 class Quarantine:
     def __init__(self,path,pin,retained,*,run_bindings=None):
         v=read_pinned(path,pin)
+        self.state_separated=v.get('schema')=='boopa-saved-conflict-quarantine-r3'
         fields={'schema','source_commit','prior_snapshot_sha256','prior_lists_sha256','prior_ids_sha256','diagnostic_receipt_sha256','entries'}
+        if self.state_separated:fields|={'latest_source_commit','latest_metadata_tree'}
         fail(set(v)==fields,'Closed quarantine required')
         if run_bindings is None:
             fail(v['schema']=='boopa-saved-conflict-quarantine-r1' and v['source_commit']==PRICE_COMMIT,'Closed saved quarantine required')
         else:
             b=checked_bindings(run_bindings)
-            fail(v['schema']=='boopa-saved-conflict-quarantine-r2' and v['source_commit']==b['price_source_commit'] and pin==b['quarantine_proof_sha256'] and v['diagnostic_receipt_sha256']==b['quarantine_diagnostic_sha256'],'Quarantine run binding mismatch')
+            fail(v['schema'] in ('boopa-saved-conflict-quarantine-r2','boopa-saved-conflict-quarantine-r3') and v['source_commit']==b['price_source_commit'] and pin==b['quarantine_proof_sha256'] and v['diagnostic_receipt_sha256']==b['quarantine_diagnostic_sha256'],'Quarantine run binding mismatch')
+            if self.state_separated:
+                fail(v['latest_source_commit']==b['latest_negative_source_commit'] and v['latest_metadata_tree']==b['latest_negative_metadata_tree'],'Latest quarantine binding differs')
         floor_check(v,retained,run_bindings);fail(digest(v['diagnostic_receipt_sha256']),'Diagnostic pin required')
-        self.entries=entries(v['entries'],{'id','price_sha256','metadata_sha256','status','fetched_at','observations_total','observations_after_marker'})
-        for ident,row in self.entries.items():
-            fail(ident in retained['ids'],'Quarantine outside prior floor')
+        fields={'id','price_sha256','metadata_sha256','status','fetched_at','observations_total','observations_after_marker'}
+        self.entries={}
+        if self.state_separated:
+            from visibility_policy import canonical_id,canonical_date
+            fail(type(v['entries']) is list,'Quarantine entries required')
+            for row in v['entries']:
+                fail(type(row) is dict and set(row)==fields|{'evidence_scope','observations_equal_marker'},'Closed state conflict entry')
+                fail(row['evidence_scope'] in ('saved','latest') and canonical_id(row['id']),'State conflict scope/ID')
+                canonical_date(row['fetched_at'])
+                fail(type(row['status']) is int and row['status'] in (404,410),'State conflict status')
+                key=(row['evidence_scope'],row['id']);fail(key not in self.entries,'Duplicate state conflict')
+                self.entries[key]=dict(row)
+            fail(list(self.entries)==sorted(self.entries),'Canonical state conflict order')
+        else:self.entries=entries(v['entries'],fields)
+        for key,row in self.entries.items():
+            if not self.state_separated:fail(key in retained['ids'],'Quarantine outside prior floor')
             fail(digest(row['price_sha256']) and digest(row['metadata_sha256']),'Quarantine leaf pins required')
-            fail(type(row['observations_total']) is int and type(row['observations_after_marker']) is int and 0<row['observations_after_marker']<=row['observations_total'],'Quarantine counts invalid')
+            total=row['observations_total'];after=row['observations_after_marker'];equal=row.get('observations_equal_marker',0)
+            fail(type(total) is int and type(after) is int and type(equal) is int and total>0 and after>=0 and equal>=0 and 0<after+equal<=total,'Quarantine counts invalid')
         self.pin=pin;self.consumed=set();self.path=path;self.retained=retained;self.run_bindings=run_bindings
-    def check(self,record,raw,marker,total,after):
-        ident=record['id'];row=self.entries.get(ident)
-        fail(row is not None and ident not in self.consumed,'Unknown or duplicate quarantine conflict')
+    def check(self,record,raw,marker,total,after,equal=0,scope='saved'):
+        ident=record['id'];key=(scope,ident) if self.state_separated else ident;row=self.entries.get(key)
+        fail(scope in ('saved','latest') and (self.state_separated or scope=='saved'),'Invalid quarantine scope')
+        fail(row is not None and key not in self.consumed,'Unknown or duplicate quarantine conflict')
         fail(type(raw) is bytes and hashlib.sha256(raw).hexdigest()==row['price_sha256'],'Quarantine actual price hash differs')
-        from visibility_policy import strict_json, json_bytes
+        from visibility_policy import strict_json,json_bytes
         fail(json_bytes(strict_json(raw))==json_bytes(record),'Quarantine parsed record differs from actual bytes')
         fail(marker['sha256']==row['metadata_sha256'] and marker['status']==row['status'] and marker['fetched_at']==row['fetched_at'],'Quarantine marker differs')
-        fail(total==row['observations_total'] and after==row['observations_after_marker'],'Quarantine observation counts differ')
-        self.consumed.add(ident)
+        fail(total==row['observations_total'] and after==row['observations_after_marker'] and (not self.state_separated or equal==row['observations_equal_marker']),'Quarantine observation counts differ')
+        self.consumed.add(key)
+    @property
+    def unresolved_ids(self):
+        return {key[1] for key in self.consumed} if self.state_separated else set(self.consumed)
     def finish(self):
         fail(self.consumed==set(self.entries),'Unconsumed quarantine entries')
-        return {'proof_sha256':self.pin,'ids':sorted(self.consumed),'availability_confirmed':False}
+        result={'proof_sha256':self.pin,'ids':sorted(self.unresolved_ids),'availability_confirmed':False}
+        if self.state_separated:
+            result['schema']='boopa-consumed-state-conflicts-r1'
+            result['evidence_keys']=[{'evidence_scope':scope,'id':ident} for scope,ident in sorted(self.consumed)]
+        return result
     def fresh(self):return Quarantine(self.path,self.pin,self.retained,run_bindings=self.run_bindings)
 
 class LatestNegativeOverlay:
     def __init__(self,path,pin,retained,*,run_bindings=None):
         v=read_pinned(path,pin)
         fields={'schema','source_commit','metadata_tree','prior_snapshot_sha256','prior_lists_sha256','prior_ids_sha256','impact_receipt_sha256','entries'}
-        pending_mode=v.get('schema')=='boopa-latest-negative-overlay-r4'
-        observed_mode=v.get('schema') in ('boopa-latest-negative-overlay-r3','boopa-latest-negative-overlay-r4')
+        pending_mode=v.get('schema') in ('boopa-latest-negative-overlay-r4','boopa-latest-negative-overlay-r5')
+        self.state_separated=v.get('schema')=='boopa-latest-negative-overlay-r5'
+        observed_mode=v.get('schema') in ('boopa-latest-negative-overlay-r3','boopa-latest-negative-overlay-r4','boopa-latest-negative-overlay-r5')
         if pending_mode:fields=fields|{'pending_metadata'}
         fail(set(v)==(fields|{'observation'} if observed_mode else fields),'Closed latest negative overlay required')
         self.observation_binding=None
@@ -145,7 +172,7 @@ class LatestNegativeOverlay:
             fail(v['schema']=='boopa-latest-negative-overlay-r1' and v['source_commit']==LATEST_COMMIT and v['metadata_tree']==LATEST_META,'Fixed legacy latest overlay required')
         else:
             b=checked_bindings(run_bindings)
-            fail(v['schema'] in ('boopa-latest-negative-overlay-r2','boopa-latest-negative-overlay-r3','boopa-latest-negative-overlay-r4') and v['source_commit']==b['latest_negative_source_commit'] and v['metadata_tree']==b['latest_negative_metadata_tree'] and pin==b['latest_negative_overlay_sha256'] and v['impact_receipt_sha256']==b['latest_negative_impact_sha256'],'Latest negative run binding mismatch')
+            fail(v['schema'] in ('boopa-latest-negative-overlay-r2','boopa-latest-negative-overlay-r3','boopa-latest-negative-overlay-r4','boopa-latest-negative-overlay-r5') and v['source_commit']==b['latest_negative_source_commit'] and v['metadata_tree']==b['latest_negative_metadata_tree'] and pin==b['latest_negative_overlay_sha256'] and v['impact_receipt_sha256']==b['latest_negative_impact_sha256'],'Latest negative run binding mismatch')
         floor_check(v,retained,run_bindings);fail(digest(v['impact_receipt_sha256']),'Latest impact pin required')
         if observed_mode:
             fail(run_bindings is not None,'Observed overlay requires explicit run binding')
@@ -201,3 +228,4 @@ class LatestNegativeOverlay:
             result['negative_observation']={k:self.observation_binding[k] for k in ('observation_sha256','provider_observation_upper_utc','upper_jst_date','provider_authenticated')}
         if self.pending_metadata is not None:result['pending_metadata']=self.pending_metadata
         return result
+

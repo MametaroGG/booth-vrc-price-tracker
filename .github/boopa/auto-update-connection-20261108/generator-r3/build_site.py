@@ -233,16 +233,27 @@ def build(source, completion, baseline_repo, output, compact=False, relations_bu
                          visibility_private_dir=run / 'visibility-private', verified_source=verified, retained_exclusions=retained, quarantine=quarantine, latest_negative_overlay=latest_overlay)
         charts = verified.read_json(inputs / 'charts.json') if verified else json.loads((inputs / 'charts.json').read_text())
         if not isinstance(charts, list): raise ValueError('charts.json must be an array')
-        if not charts and not manifest['fixture']:
+        separated = quarantine is not None and quarantine.state_separated
+        if not charts and not manifest['fixture'] and not separated:
             raise ValueError('Empty charts allowed only for an explicitly labeled fixture')
         from charts_contract import validate_charts, enrich_bootstrap
-        validate_charts(charts, inputs, manifest['fixture'], verified_source=verified)
         from visibility_contract import validate_public_visibility
+        chart_hidden=validate_public_visibility(json.loads((candidate/'lists_full.json').read_text())['visibility'])
+        eligible=None
+        if separated:
+            from charts_contract import eligible_visible_ids, validate_chart_population
+            eligible=eligible_visible_ids(inputs,verified,chart_hidden)
+            validate_chart_population(charts,eligible)
+        validate_charts(charts, inputs, manifest['fixture'], verified_source=verified,
+                        excluded_ids=chart_hidden if separated else None,
+                        allow_empty=separated and not eligible)
         chart_hidden=validate_public_visibility(json.loads((candidate/'lists_full.json').read_text())['visibility'])
         chart_visibility={'schema':1,'input_chart_ids':[c['id'] for c in charts],
                           'hidden_chart_ids':[c['id'] for c in charts if c['id'] in chart_hidden],
                           'visible_chart_ids':[c['id'] for c in charts if c['id'] not in chart_hidden],
                           'input_charts_sha256':manifest['files']['charts.json']}
+        if separated:
+            chart_visibility.update(schema=2,eligible_visible_ids=sorted(eligible))
         build_prod.build(candidate, charts, lambda payload: enrich_bootstrap(payload, inputs, manifest['fixture'], verified_source=verified))
         relation_status = 'withdrawn'
         if bool(relations_bundle) != bool(relations_approval):
@@ -402,3 +413,4 @@ def main():
 
 
 if __name__ == '__main__': main()
+

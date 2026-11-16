@@ -45,6 +45,51 @@ def validate_pending_history(record, upper_day):
             require(stamp<=upper_day,'Future pending price')
             require(type(price) in (int,float) and math.isfinite(price) and price>=0,'Invalid pending price')
 
+def expected_quarantine_binding(quarantine):
+    """Predict the closed receipt without marking any evidence as consumed."""
+    separated=quarantine.state_separated
+    keys=sorted(quarantine.entries)
+    ids=sorted({ident for scope,ident in keys}) if separated else keys
+    result={'proof_sha256':quarantine.pin,'ids':ids,'availability_confirmed':False}
+    if separated:
+        result.update(schema='boopa-consumed-state-conflicts-r1',evidence_keys=[{'evidence_scope':scope,'id':ident} for scope,ident in keys])
+    return result
+
+def audit_state_history(record,raw_price,marker,overlay,quarantine,price_day):
+    """Consume saved/latest ambiguity separately; inspect every saved price first.
+
+    Same-day ordering is unknown. Neither an ambiguous price nor a quarantined
+    tombstone proves availability. Legacy schemas keep their previous policy.
+    """
+    separated=quarantine.state_separated
+    require(separated==overlay.state_separated,'State quarantine/overlay modes differ')
+    variations=record.get('variations')
+    require(type(variations) is dict,'Saved source variation object required')
+    latest=overlay.entries.get(record['id'])
+    if marker is not None:
+        require(canonical_date(marker['fetched_at'])<=price_day,'Future saved negative marker')
+    if latest is not None:
+        latest_upper=overlay.observation_upper_day or price_day
+        require(canonical_date(latest['fetched_at'])<=latest_upper,'Future latest negative marker')
+    total=after=equal=latest_after=latest_equal=0
+    for key,series in variations.items():
+        require(type(key) is str and type(series) is list,'Saved source variation shape')
+        for observation in series:
+            require(type(observation) is dict,'Saved source observation object required')
+            observed=canonical_date(observation.get('date'));price=observation.get('price')
+            require(observed<=price_day,'Future saved price observation')
+            require(type(price) in (int,float) and math.isfinite(price) and price>=0,'Saved source finite nonnegative price required')
+            stamp=observed.isoformat();total+=1
+            after+=int(marker is not None and stamp>marker['fetched_at'])
+            equal+=int(marker is not None and stamp==marker['fetched_at'])
+            latest_after+=int(latest is not None and stamp>latest['fetched_at'])
+            latest_equal+=int(latest is not None and stamp==latest['fetched_at'])
+    if latest is not None and (latest_after or (separated and latest_equal)):
+        require(separated,'Saved observation newer than latest negative')
+        quarantine.check(record,raw_price,latest,total,latest_after,latest_equal,'latest')
+    if after or (separated and equal):
+        quarantine.check(record,raw_price,marker,total,after,equal,'saved')
+
 def verify_pending_partition(backend,metadata,prior_backend,retained,negative,overlay,success_ids,hidden,facts,receipt):
     backend=set(backend);metadata=set(metadata);prior_backend=set(prior_backend)
     previous=set(retained.get('pending_ids',()));h=set(retained['ids'])|set(negative)|set(overlay.ids)
@@ -95,11 +140,16 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
         quarantine=Quarantine(quarantine_proof,provenance['quarantine_proof_sha256'],retained,run_bindings=bindings)
         overlay=LatestNegativeOverlay(latest_negative_proof,provenance['latest_negative_overlay_sha256'],retained,run_bindings=bindings)
         require(snapshot.get('latest_negative_overlay')==overlay.binding(),'Latest overlay binding differs')
-        require(snapshot.get('saved_conflict_quarantine')=={'proof_sha256':quarantine.pin,'ids':sorted(quarantine.entries),'availability_confirmed':False},'Quarantine binding differs')
+        require(snapshot.get('saved_conflict_quarantine')==expected_quarantine_binding(quarantine),'Quarantine binding differs')
+        require(quarantine.state_separated==overlay.state_separated,'State quarantine/overlay modes differ')
         require(snapshot['input_manifest_sha256']==completion_sha,'Candidate/source commitment differs')
         require(snapshot.get('fixture') is source.manifest['fixture'],'Fixture/real scope differs')
         for key in ('collection_completion_verified','whole_catalog_complete','price_source_is_latest','deployed'):
             require(snapshot.get(key) is False,'False historical/publication flag changed: '+key)
+        from datetime import datetime,timezone
+        collection=strict_json(source.read_bytes(source.root/'data/collection_receipt.json'))
+        stopped=collection['stopped_at_ms'];require(type(stopped) is int and stopped>0,'Saved price cutoff timestamp')
+        price_day=datetime.fromtimestamp(stopped/1000,timezone(timedelta(hours=9))).date()
         # Independently inspect each actual metadata record, including nonbackend IDs.
         for path in source.paths('tracker_meta'):
             raw=source.read_bytes(path);local=path.relative_to(source.root/'tracker_meta')
@@ -109,38 +159,20 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
             is_negative=record.get('unavailable') is True and type(record.get('status')) is int and record['status'] in (404,410)
             if is_negative:
                 negative.add(ident)
-                require(date.fromisoformat(record['fetched_at']).isoformat()==record['fetched_at'],'Canonical marker date required')
+                require(canonical_date(record['fetched_at'])<=price_day and not record.get('name'),'Invalid saved negative date/body')
                 markers[ident]={'sha256':digest(raw),'status':record['status'],'fetched_at':record['fetched_at']}
             if metadata_success(record,ident):success_ids.add(ident)
             metadata[ident]={'name':record.get('name'), 'negative':is_negative,'likes':record.get('likes'),'likes_history':record.get('likes_history') or [],'image':record.get('image_resized') or record.get('image') or None,'shop':(record.get('shop') or {}).get('name') or None}
         pending=set(overlay.pending_ids)
         require(hidden==retained['ids']|negative|overlay.ids|pending,'Effective H/U union differs')
         require(set(lists['visibility'].get('pending_metadata_ids',[]))==pending,'Public pending IDs differ')
-        from datetime import datetime,timezone
-        collection=strict_json(source.read_bytes(source.root/'data/collection_receipt.json'))
-        stopped=collection['stopped_at_ms'];require(type(stopped) is int and stopped>0,'Saved price cutoff timestamp')
-        price_day=datetime.fromtimestamp(stopped/1000,timezone(timedelta(hours=9))).date()
         for path in source.paths('data',products_only=True):
             raw_price=source.read_bytes(path);record=strict_json(raw_price);ident=record.get('id')
             require(ident==path.stem and ident not in backend,'Backend ID mismatch')
             backend.add(ident)
             if ident in pending:validate_pending_history(record,price_day)
             variations=record.get('variations') or {}
-            if ident in markers or ident in overlay.ids:
-                require(type(record.get('variations')) is dict,'Negative source variation object required')
-                total=after=0
-                marker=markers.get(ident)
-                for series in record['variations'].values():
-                    require(type(series) is list,'Negative source series array required')
-                    for observation in series:
-                        require(type(observation) is dict,'Negative source observation object required')
-                        stamp=observation.get('date');price=observation.get('price')
-                        require(type(stamp) is str and date.fromisoformat(stamp).isoformat()==stamp,'Negative source canonical date required')
-                        require(type(price) in (int,float) and math.isfinite(price) and price>=0,'Negative source finite nonnegative price required')
-                        total+=1
-                        if marker is not None and stamp>marker['fetched_at']:after+=1
-                        if ident in overlay.ids:require(stamp<=overlay.entries[ident]['fetched_at'],'Saved observation newer than latest negative')
-                if after:quarantine.check(record,raw_price,marker,total,after)
+            audit_state_history(record,raw_price,markers.get(ident),overlay,quarantine,price_day)
             variation_starts[ident]=sorted((min(p['date'] for p in v),k) for k,v in variations.items() if isinstance(v,list) and v)
             histories=[v for v in variations.values() if isinstance(v,list) and v]
             representative=max(histories,key=len) if histories else []

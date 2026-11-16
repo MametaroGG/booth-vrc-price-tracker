@@ -4,8 +4,11 @@ import json
 import math
 
 
-def validate_charts(charts, inputs, fixture=False, verified_source=None):
-    if not isinstance(charts, list) or (not charts and not fixture):
+def validate_charts(charts, inputs, fixture=False, verified_source=None, excluded_ids=None, allow_empty=False):
+    if type(allow_empty) is not bool or (allow_empty and excluded_ids is None):
+        raise ValueError('Empty charts require explicit state exclusions')
+    excluded_ids = _exclusion_set(excluded_ids)
+    if not isinstance(charts, list) or (not charts and not fixture and not allow_empty):
         raise ValueError('Nonempty chart array required (empty only for explicit fixtures)')
     seen=set()
     for chart in charts:
@@ -14,6 +17,7 @@ def validate_charts(charts, inputs, fixture=False, verified_source=None):
         if not isinstance(ident,str) or not ident.isascii() or not ident.isdecimal() or ident.startswith('0') or ident in seen:
             raise ValueError('Invalid/duplicate chart ID')
         seen.add(ident)
+        if ident in excluded_ids:raise ValueError('Excluded product appears in chart: '+ident)
         path=inputs/'data'/ident[:3]/(ident+'.json')
         if verified_source:
             verified_source.relative(path)
@@ -70,13 +74,22 @@ def enrich_bootstrap(payload, inputs, fixture=False, verified_source=None):
     return payload
 
 
-def generate_charts(inputs, verified_source=None):
+def _exclusion_set(value):
+    if value is None:return frozenset()
+    if type(value) not in (set, frozenset) or any(type(i) is not str or not i.isascii() or not i.isdecimal() or i.startswith('0') for i in value):
+        raise ValueError('Explicit canonical chart exclusion set required')
+    return frozenset(value)
+
+def generate_charts(inputs, verified_source=None, excluded_ids=None):
     """Original prototype chart selection/scoring over frozen data, real varutil."""
     from varutil import thin_vars_from_item
+    excluded_ids = _exclusion_set(excluded_ids)
     candidates=[];records={}
     paths = verified_source.paths('data', products_only=True) if verified_source else (inputs/'data').glob('*/*.json')
     for path in paths:
         d=verified_source.read_json(path) if verified_source else json.loads(path.read_text());best=[]
+        # Full raw read/validation happens before this ranking-only exclusion.
+        if d.get('id') in excluded_ids:continue
         for series in (d.get('variations') or {}).values():
             if isinstance(series,list) and len(series)>len(best):best=series
         if not best:continue
@@ -107,3 +120,22 @@ def generate_charts(inputs, verified_source=None):
             variations=convert_raw_variations(raw)
         charts.append({'id':ident,'name':record.get('name',''),'variations':variations})
     return charts
+
+def eligible_visible_ids(inputs, verified_source, excluded_ids):
+    """Independent full-input selector eligibility, never only selected charts."""
+    excluded_ids = _exclusion_set(excluded_ids)
+    eligible=set()
+    paths=verified_source.paths('data',products_only=True) if verified_source else (inputs/'data').glob('*/*.json')
+    for path in paths:
+        record=verified_source.read_json(path) if verified_source else json.loads(path.read_text())
+        ident=record.get('id');best=[]
+        if ident in excluded_ids:continue
+        for rows in (record.get('variations') or {}).values():
+            if isinstance(rows,list) and len(rows)>len(best):best=rows
+        if len(best)>=60 and len({r['price'] for r in best})>=3:eligible.add(ident)
+    return eligible
+
+def validate_chart_population(charts, eligible):
+    ids=[c.get('id') for c in charts]
+    if len(ids)!=len(set(ids)) or not set(ids)<=eligible or len(ids)!=min(3,len(eligible)):
+        raise ValueError('Chart eligible population mismatch')

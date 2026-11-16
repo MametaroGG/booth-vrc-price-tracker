@@ -33,6 +33,8 @@ def verify_visibility_output(site, ledger_path, summary, frozen_root, input_hash
     quarantine = None if quarantine is None else quarantine.fresh()
     overlay_ids = set() if latest_negative_overlay is None else set(latest_negative_overlay.ids)
     pending_ids = set() if latest_negative_overlay is None else set(getattr(latest_negative_overlay, 'pending_ids', ()))
+    separated = quarantine is not None and quarantine.state_separated
+    if separated != bool(latest_negative_overlay is not None and latest_negative_overlay.state_separated):raise ValueError('Independent state contract mismatch')
     expected_policy = 'last-known-http-unavailable-v1' if retained is None else 'current-negative-plus-retained-exclusions-v1'
     if type(ledger.get('schema')) is not int or ledger.get('schema') != 1 or type(summary.get('schema')) is not int or summary.get('schema') != 1 or ledger.get('policy') != expected_policy or ledger.get('metadata_binding') != 'frozen-input-manifest':
         raise ValueError('Unbound visibility ledger schema')
@@ -84,7 +86,7 @@ def verify_visibility_output(site, ledger_path, summary, frozen_root, input_hash
                     from visibility_policy import canonical_date
                     variations=record.get('variations')
                     if not isinstance(variations,dict):raise ValueError('Invalid independent history')
-                    total=after=overlay_after=0
+                    total=after=equal=overlay_after=overlay_equal=0
                     for key,observations in variations.items():
                         if not isinstance(key,str) or not isinstance(observations,list):raise ValueError('Invalid independent variations')
                         for observation in observations:
@@ -95,14 +97,20 @@ def verify_visibility_output(site, ledger_path, summary, frozen_root, input_hash
                             if (quarantine is not None or ident in pending_ids) and observed>day:raise ValueError('Future independent observation')
                             total+=1
                             after+=int(marker is not None and observed.isoformat()>marker['fetched_at'])
+                            equal+=int(marker is not None and observed.isoformat()==marker['fetched_at'])
+                            overlay_equal+=int(overlay is not None and observed.isoformat()==overlay['fetched_at'])
                             overlay_after+=int(overlay is not None and observed.isoformat()>overlay['fetched_at'])
-                    if overlay is not None and (canonical_date(overlay['fetched_at'])>day or overlay_after):raise ValueError('Independent latest negative conflict')
-                    if after:
+                    if overlay is not None:
+                        if canonical_date(overlay['fetched_at'])>(getattr(latest_negative_overlay,'observation_upper_day',None) or day):raise ValueError('Future independent latest marker')
+                        if overlay_after or (separated and overlay_equal):
+                            if not separated:raise ValueError('Independent latest negative conflict')
+                            quarantine.check(record,raw_input,overlay,total,overlay_after,overlay_equal,scope='latest')
+                    if after or (separated and equal):
                         if quarantine is None:raise ValueError('Conflicting independent source history')
-                        quarantine.check(record,raw_input,marker,total,after)
+                        quarantine.check(record,raw_input,marker,total,after,equal if separated else 0)
     if actual_meta!=set(meta_hashes) or actual_data!={k for k in input_hashes if k.startswith('data/')}:
         raise ValueError('Visibility frozen source inventory differs')
-    quarantined=set() if quarantine is None else set(quarantine.consumed)
+    quarantined=set() if quarantine is None else quarantine.unresolved_ids
     if quarantine is not None and ledger.get('saved_conflict_quarantine')!=quarantine.finish():raise ValueError('Quarantine ledger differs')
     if latest_negative_overlay is not None and ledger.get('latest_negative_overlay')!=latest_negative_overlay.binding():raise ValueError('Latest negative binding differs')
     source_hidden=(backend_source & set(expected_markers)) - quarantined
@@ -129,6 +137,9 @@ def verify_visibility_output(site, ledger_path, summary, frozen_root, input_hash
         counts['retained_exclusion_total'] = len(retained_ids)
     if latest_negative_overlay is not None and getattr(latest_negative_overlay,'pending_metadata',None) is not None:
         counts['pending_metadata_total']=len(pending_ids)
+    if separated:
+        if ledger.get('unresolved_state_ids')!=sorted(quarantined):raise ValueError('Unresolved ledger differs')
+        counts['unresolved_state_total']=len(quarantined)
     if type(ledger.get('metadata_only_unavailable_total')) is not int or ledger['metadata_only_unavailable_total'] != len(set(expected_markers) - backend_source):
         raise ValueError('Metadata-only unavailable count differs')
     inventory_sha=hashlib.sha256(json_bytes(meta_hashes)).hexdigest()
@@ -163,3 +174,4 @@ def verify_visibility_output(site, ledger_path, summary, frozen_root, input_hash
         if any(str(row[0]) in hidden for products in obj.values() for row in products):
             raise ValueError('Hidden product leaked into shop index')
     return dict(summary, public_population_verified=True)
+

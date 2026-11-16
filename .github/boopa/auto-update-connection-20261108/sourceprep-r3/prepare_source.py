@@ -170,11 +170,24 @@ def prior_public(candidate, manifest, exact_read, open_directory):
     finally:os.close(fd)
     return visible,pins
 
+def chart_eligible(record):
+    """Independent selector admission check over already validated raw history."""
+    best=[]
+    for series in record['variations'].values():
+        if len(series)>len(best):best=series
+    return len(best)>=60 and len({row['price'] for row in best})>=3
+
+def verify_chart_population(chart_rows,eligible_ids,state_separated):
+    ids=[row['id'] for row in chart_rows]
+    need(len(ids)==len(set(ids)) and set(ids)<=eligible_ids,'Charts outside independently eligible visible population')
+    need(len(ids)==min(3,len(eligible_ids)),'Chart selector count differs from eligible visible population')
+    return state_separated and not eligible_ids
+
 class ChartReadAdapter:
     """Use the exact frozen selector while doing the one full history pass."""
     def __init__(self, source, fd, inventory, prepared, exact_read, policy, as_of):
         self.root=source;self.fd=fd;self.inventory=inventory;self.prepared=prepared;self.exact_read=exact_read;self.policy=policy;self.as_of=as_of
-        self.consumed=set();self.date_counts=Counter();self.product_dates=Counter();self.first_dates={};self.minimum=self.maximum=None
+        self.eligible_visible_ids=set();self.consumed=set();self.date_counts=Counter();self.product_dates=Counter();self.first_dates={};self.minimum=self.maximum=None
     def paths(self, namespace, products_only=False):
         need(namespace=='data' and products_only is True,'Unexpected chart source traversal')
         for name in sorted(self.inventory):
@@ -191,7 +204,8 @@ class ChartReadAdapter:
             self.date_counts.update(counts);self.product_dates.update(counts.keys());self.first_dates[ident]=first
             if first is not None:self.minimum=first if self.minimum is None else min(self.minimum,first)
             if last is not None:self.maximum=last if self.maximum is None else max(self.maximum,last)
-            self.policy.observe_product(record,raw=raw)
+            visible=self.policy.observe_product(record,raw=raw)
+            if visible and chart_eligible(record):self.eligible_visible_ids.add(ident)
             write_raw(self.prepared,name,raw);self.consumed.add(name)
         return record
 
@@ -291,6 +305,18 @@ def pending_population(backend,metadata,prior_ids,prior_pending,permanent,succes
         overlay.validate_population(backend,metadata,success_ids,permanent,current_marker_ids=marker_ids)
     return missing,pending,resolved
 
+def validate_conflict_diagnostic(qraw,diag,diagnostic_pin,commit,b,retained):
+    need(qraw['diagnostic_receipt_sha256']==diagnostic_pin and diag['source_commit']==commit,'Quarantine diagnostic differs')
+    if qraw.get('schema')=='boopa-saved-conflict-quarantine-r3':
+        need(diag.get('schema')=='boopa-saved-source-conflict-diagnostic-runner-r2','State separation diagnostic schema differs')
+        for key,binding in (('latest_source_commit','latest_negative_source_commit'),('latest_metadata_tree','latest_negative_metadata_tree')):
+            need(qraw.get(key)==diag.get(key)==b[binding],'State separation latest identity differs')
+        need(all(type(row.get('prior_floor_member')) is bool and row['prior_floor_member']==(row['id'] in retained['ids']) for row in diag['conflicts']),'Diagnostic prior membership differs')
+        need(type(diag['outside_floor_conflicts']) is int and diag['outside_floor_conflicts']==sum(not row['prior_floor_member'] for row in diag['conflicts']),'Diagnostic conflict count differs')
+    else:
+        need(diag['outside_floor_conflicts']==0,'Legacy quarantine outside floor')
+    need(qraw['entries']==[{k:v for k,v in row.items() if k!='prior_floor_member'} for row in diag['conflicts']],'Quarantine entries differ from new diagnostic')
+
 def run(args):
     source=args.source.absolute();helpers=args.helpers.absolute();candidate=args.prior_candidate.absolute();output=args.output.absolute()
     need(not output.exists() and not output.is_symlink(),'New preparation destination required')
@@ -329,8 +355,7 @@ def run(args):
     prior_visible,prior_search_pins=prior_public(candidate,manifest,vs.exact_read,vs.open_directory)
     prior_pending=prior_partition(prior_visible,retained,prior_ids)
     qraw=pinned(args.quarantine,QUARANTINE);diag=pinned(args.diagnostic,DIAGNOSTIC)
-    need(qraw['diagnostic_receipt_sha256']==DIAGNOSTIC and diag['source_commit']==COMMIT and diag['outside_floor_conflicts']==0,'Quarantine diagnostic differs')
-    need(qraw['entries']==[{k:v for k,v in row.items() if k!='prior_floor_member'} for row in diag['conflicts']],'Quarantine entries differ from new diagnostic')
+    validate_conflict_diagnostic(qraw,diag,DIAGNOSTIC,COMMIT,b,retained)
     oraw=pinned(args.overlay,OVERLAY);impact=pinned(args.impact,IMPACT)
     need(oraw['impact_receipt_sha256']==IMPACT and sorted(e['id'] for e in oraw['entries'])==impact['additional_exclusion_ids'],'Overlay differs from complete latest impact')
     need(oraw['source_commit']==impact['source_commit'] and oraw['metadata_tree']==impact['source_metadata_tree'],'Overlay source identity differs')
@@ -374,7 +399,8 @@ def run(args):
                 need(impact.get('public_hidden_ids_sha256')==digest(vp.json_bytes(sorted(permanent|pending))),'Impact public hidden IDs commitment differs')
             public_hidden=permanent|pending
             adapter=ChartReadAdapter(source_root,fd,inventory,prepared,vs.exact_read,policy,as_of)
-            chart_rows=charts.generate_charts(source_root,verified_source=adapter)
+            excluded=public_hidden if quarantine.state_separated else None
+            chart_rows=charts.generate_charts(source_root,verified_source=adapter,excluded_ids=excluded)
             wanted={n for n in inventory if product_id(n,'data') is not None};need(adapter.consumed==wanted and policy.backend_ids==backend,'Full saved product pass incomplete')
             qresult=quarantine.finish();need(set(policy.hidden_ids)==backend&public_hidden,'Hidden backend partition mismatch')
             need(policy.excluded_ids()==public_hidden,'Public hidden union mismatch')
@@ -382,7 +408,8 @@ def run(args):
             need(digest(vp.json_bytes(sorted(permanent)))==impact['exclusion_union_ids_sha256'],'Latest impact exact union commitment differs')
             need(set(overlay.ids)<=backend,'Unexpected metadata-only latest exclusions')
             for name in wanted:hashes[name]=inventory[name]['sha256']
-            charts.validate_charts(chart_rows,source_root,verified_source=adapter)
+            allow_empty=verify_chart_population(chart_rows,adapter.eligible_visible_ids,True) if quarantine.state_separated else False
+            charts.validate_charts(chart_rows,source_root,verified_source=adapter,excluded_ids=excluded,allow_empty=allow_empty)
             chart_raw=encoded(chart_rows);write_raw(prepared,'charts.json',chart_raw);hashes['charts.json']=digest(chart_raw)
             expected_hashes={('tracker_meta/'+name[5:] if name.startswith('meta/') else name):row['sha256'] for name,row in inventory.items()}
             expected_hashes['charts.json']=digest(chart_raw)
@@ -428,3 +455,4 @@ def arguments():
     return p.parse_args()
 
 if __name__=='__main__':print(json.dumps(run(arguments()),sort_keys=True))
+

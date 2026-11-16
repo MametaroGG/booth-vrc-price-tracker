@@ -86,14 +86,19 @@ def validate_payload(index_html, lists, ids, fixture, chart_visibility=None):
     if not isinstance(charts,list):raise ValueError('Invalid production charts')
     if chart_visibility is not None:
         proof=chart_visibility
-        if not isinstance(proof,dict) or set(proof)!={'schema','input_chart_ids','hidden_chart_ids','visible_chart_ids','input_charts_sha256'} or type(proof['schema']) is not int or proof['schema']!=1:raise ValueError('Invalid chart visibility proof')
+        fields={'schema','input_chart_ids','hidden_chart_ids','visible_chart_ids','input_charts_sha256'}
+        if not isinstance(proof,dict) or type(proof.get('schema')) is not int or proof['schema'] not in (1,2) or set(proof)!=(fields|({'eligible_visible_ids'} if proof['schema']==2 else set())):raise ValueError('Invalid chart visibility proof')
         for key in ('input_chart_ids','hidden_chart_ids','visible_chart_ids'):
             seq=proof[key]
             if not isinstance(seq,list) or any(not canonical_id(x) for x in seq) or len(seq)!=len(set(seq)):raise ValueError('Invalid chart visibility IDs')
         if not re.fullmatch('[0-9a-f]{64}',proof['input_charts_sha256']):raise ValueError('Invalid input chart digest')
         denied=validate_public_visibility(lists.get('visibility'))
+        if proof['schema']==2:
+            eligible=proof['eligible_visible_ids']
+            if type(eligible) is not list or any(not canonical_id(x) for x in eligible) or eligible!=sorted(set(eligible)) or not set(eligible)<=ids or set(eligible)&denied:raise ValueError('Invalid chart eligibility proof')
+            if proof['hidden_chart_ids'] or not set(proof['input_chart_ids'])<=set(eligible) or len(proof['input_chart_ids'])!=min(3,len(eligible)):raise ValueError('Chart eligible population mismatch')
         if proof['hidden_chart_ids']!=[x for x in proof['input_chart_ids'] if x in denied] or proof['visible_chart_ids']!=[x for x in proof['input_chart_ids'] if x not in denied] or proof['visible_chart_ids']!=[x.get('id') for x in charts]:raise ValueError('Chart visibility partition mismatch')
-    if not charts and not fixture and not (chart_visibility and chart_visibility['input_chart_ids'] and chart_visibility['hidden_chart_ids']==chart_visibility['input_chart_ids']):raise ValueError('Invalid/empty production charts')
+    if not charts and not fixture and not (chart_visibility and chart_visibility.get('schema')==2 and chart_visibility['eligible_visible_ids']==[]) and not (chart_visibility and chart_visibility['input_chart_ids'] and chart_visibility['hidden_chart_ids']==chart_visibility['input_chart_ids']):raise ValueError('Invalid/empty production charts')
     seen=set()
     for chart in charts:
         if not isinstance(chart,dict) or not canonical_id(chart.get('id')) or chart['id'] not in ids or chart['id'] in seen:
@@ -266,3 +271,4 @@ if __name__=='__main__':
     p.add_argument('--supplement-bundle',type=Path);p.add_argument('--supplement-approval',type=Path)
     a=p.parse_args();result=rerender(a.source_candidate,a.expected_source_manifest_sha256,a.output_dir,a.relations_bundle,a.relations_approval,a.allow_fixture,a.relation_search_bundle,a.relation_search_approval,a.supplement_bundle,a.supplement_approval)
     print(json.dumps({'status':result['status'],'rows':result['validation']['rows'],'raw_rebuild_performed':False,'output':str(a.output_dir)},indent=2))
+
