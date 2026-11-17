@@ -864,11 +864,32 @@
         "date": "2026-11-16",
         "price": 11000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-17",
+        "price": 1000,
+        "is_sale": true
+      }
+    ],
+    "Kikyo 【桔梗】": [
+      {
+        "date": "2026-11-17",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Manuka & Kikyo Full Pack【マヌカ ・ 桔梗 フルセット】": [
+      {
+        "date": "2026-11-17",
+        "price": 1700,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14175456": "Personal Use",
-    "14179636": "Commercial Use"
+    "14179636": "Commercial Use",
+    "15279392": "Kikyo 【桔梗】",
+    "15279393": "Manuka & Kikyo Full Pack【マヌカ ・ 桔梗 フルセット】"
   }
 }

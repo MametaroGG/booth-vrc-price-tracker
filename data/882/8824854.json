@@ -197,10 +197,39 @@
         "date": "2026-11-16",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-17",
+        "price": 350,
+        "is_sale": false
+      }
+    ],
+    "デフォルト": [
+      {
+        "date": "2026-11-17",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "lili": [
+      {
+        "date": "2026-11-17",
+        "price": 200,
+        "is_sale": false
+      }
+    ],
+    "sister": [
+      {
+        "date": "2026-11-17",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14741617": "default"
+    "14741617": "default",
+    "15282297": "デフォルト",
+    "15282298": "lili",
+    "15282299": "sister"
   }
 }

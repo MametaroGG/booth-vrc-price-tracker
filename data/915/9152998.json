@@ -7,6 +7,11 @@
         "date": "2026-11-16",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-17",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "全部 250円→0円": [
@@ -21,10 +26,23 @@
         "date": "2026-11-16",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-17",
+        "price": 350,
+        "is_sale": false
+      }
+    ],
+    "全部": [
+      {
+        "date": "2026-11-17",
+        "price": 250,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "15270289": "全部",
     "15270606": "おつまみ代"
   }
 }

@@ -15,9 +15,17 @@
         "price": 200,
         "is_sale": false
       }
+    ],
+    "default": [
+      {
+        "date": "2026-11-17",
+        "price": 200,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
+    "15262645": "default",
     "15262662": "通常価格"
   }
 }
