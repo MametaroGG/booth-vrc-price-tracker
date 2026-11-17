@@ -1,14 +1,15 @@
 {
   "id": "9068135",
-  "name": "肉球ネイル｜カフェの手もとにねこ【VRChat・6デザイン・MA対応】",
+  "name": "肉球ネイル｜6デザイン切替【VRChat・ネイル・MA対応】",
   "shop": {
     "name": "キラ工房 / KiraKobo",
     "subdomain": "kirakobo",
     "url": "https://kirakobo.booth.pm/"
   },
-  "image": "https://booth.pximg.net/dc33a5b5-f8f7-418f-8087-393ea802b496/i/9068135/d86f32db-b851-4e91-9041-6fd530dc4add_base_resized.jpg",
-  "image_resized": "https://booth.pximg.net/c/620x620/dc33a5b5-f8f7-418f-8087-393ea802b496/i/9068135/d86f32db-b851-4e91-9041-6fd530dc4add_base_resized.jpg",
+  "image": "https://booth.pximg.net/dc33a5b5-f8f7-418f-8087-393ea802b496/i/9068135/91a0d44a-34ac-4ce3-b28e-1ac29eda696e_base_resized.jpg",
+  "image_resized": "https://booth.pximg.net/c/620x620/dc33a5b5-f8f7-418f-8087-393ea802b496/i/9068135/91a0d44a-34ac-4ce3-b28e-1ac29eda696e_base_resized.jpg",
   "images": [
+    "https://booth.pximg.net/c/620x620/dc33a5b5-f8f7-418f-8087-393ea802b496/i/9068135/91a0d44a-34ac-4ce3-b28e-1ac29eda696e_base_resized.jpg",
     "https://booth.pximg.net/c/620x620/dc33a5b5-f8f7-418f-8087-393ea802b496/i/9068135/d86f32db-b851-4e91-9041-6fd530dc4add_base_resized.jpg",
     "https://booth.pximg.net/c/620x620/dc33a5b5-f8f7-418f-8087-393ea802b496/i/9068135/9e3d5cd4-087d-4ffa-b92f-93a031a9e4e4_base_resized.jpg",
     "https://booth.pximg.net/c/620x620/dc33a5b5-f8f7-418f-8087-393ea802b496/i/9068135/8cfec5e5-2d40-4a6b-ab04-5051ad855d9a_base_resized.jpg",
@@ -46,12 +47,18 @@
     "name": "3D装飾品",
     "parent": "3Dモデル"
   },
-  "likes": 26,
+  "likes": 25,
   "refs": [
-    "9063931",
-    "9057966",
     "9064047",
-    "9062848"
+    "9062848",
+    "9154353",
+    "9057966",
+    "9063931"
+  ],
+  "base_refs": [
+    "9154353",
+    "9057966",
+    "9063931"
   ],
   "adult": false,
   "sold_out": false,
@@ -77,7 +84,11 @@
     {
       "date": "2026-11-16",
       "count": 26
+    },
+    {
+      "date": "2026-11-17",
+      "count": 25
     }
   ],
-  "fetched_at": "2026-11-16"
+  "fetched_at": "2026-11-17"
 }
