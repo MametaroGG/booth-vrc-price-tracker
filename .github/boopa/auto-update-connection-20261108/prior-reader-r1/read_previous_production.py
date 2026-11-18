@@ -63,7 +63,7 @@ def inspect_local(repo,expected_parent,g=None):
    if mode==b'40000':walk(h,path+'/',depth+1)
    else:leaves[path]={'mode':mode.decode(),'git_blob':h}
   need(order==sorted(order),'canonical tree order')
- walk(root);need(len(leaves)==743 and 'snapshot-manifest.json' in leaves,'743 baseline blobs required')
+ walk(root);need(len(leaves)==749 and 'snapshot-manifest.json' in leaves,'749 baseline blobs required')
  manifest_raw=object_bytes(g,repo,'blob',leaves['snapshot-manifest.json']['git_blob'],1024*1024)
  manifest=g.json_strict(manifest_raw);source=provenance(manifest)
  files=manifest.get('files');need(type(files) is dict and len(files)==723 and 'snapshot-manifest.json' not in files,'724 manifest closure')
@@ -74,7 +74,7 @@ def inspect_local(repo,expected_parent,g=None):
   need(leaves[n]['mode']=='100644','public mode');b=manifest_raw if n=='snapshot-manifest.json' else object_bytes(g,repo,'blob',leaves[n]['git_blob'],128*1024*1024)
   total+=len(b);need(total<=256*1024*1024 and sha(b)==h,'bounded site bytes/hash');blobs[n]=b
  lists=g.json_strict(blobs['lists_full.json']);retained,pending,hidden=visibility_partition(lists,manifest)
- ids=sorted(retained);management={n:entry for n,entry in leaves.items() if n not in expected};need(len(management)==19,'management count')
+ ids=sorted(retained);management={n:entry for n,entry in leaves.items() if n not in expected};need(len(management)==25,'management count')
  result={'schema':'boopa-previous-production-input-r1','repository':'MametaroGG/boopadb','branch':'main','expected_public_parent_commit':expected_parent,'public_root_tree':root,'prior_snapshot_sha256':sha(manifest_raw),'prior_lists_sha256':sha(blobs['lists_full.json']),'retained_ids_sha256':sha(enc(ids)),'retained_ids_count':len(ids),'pending_metadata_ids_sha256':sha(enc(sorted(pending))),'pending_metadata_ids_count':len(pending),'public_hidden_ids_sha256':sha(enc(sorted(hidden))),'public_hidden_ids_count':len(hidden),'previous_price_source_commit':source['price_source_commit'],'previous_source_receipt_sha256':source['source_receipt_sha256'],'management_inventory_sha256':sha(enc(management)),'site_files':724,'site_bytes':total,'tree_count':treecount,'commit_object_sha256':sha(commit),'provider_authenticated':False,'deployment_verified':False}
  return result,blobs,management
 
