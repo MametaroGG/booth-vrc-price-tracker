@@ -78,9 +78,24 @@
         "price": 1000,
         "is_sale": false
       }
+    ],
+    "無料体験版[動作確認用に]": [
+      {
+        "date": "2026-11-18",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "YATA製品版": [
+      {
+        "date": "2026-11-18",
+        "price": 1000,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "15077476": "default"
+    "15077476": "default",
+    "15289741": "YATA製品版"
   }
 }
