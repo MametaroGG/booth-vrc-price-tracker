@@ -1,6 +1,6 @@
 {
   "id": "5116265",
-  "name": "VRChat ブレンドシェイプ/シェーダー アイ パラメータ - VRChat Blendshape/Shader Eye Parameters",
+  "name": "【VRChat向けギミック】Eye Parameters シェイプキー・シェーダーの目を視線に連動【OSC不要】",
   "shop": {
     "name": "Sam Dutter",
     "subdomain": "samdutter",
@@ -15,14 +15,19 @@
   ],
   "tags": [
     "目",
+    "Unity",
+    "視線",
+    "ギミック",
     "VRChat",
-    "parameter",
-    "phys bone",
-    "avatar dynamics"
+    "シェーダー",
+    "シェイプキー",
+    "アイトラッキング",
+    "Avatar Dynamics",
+    "eye tracking"
   ],
   "category": {
-    "id": 127,
-    "name": "3Dモデル（その他）",
+    "id": 215,
+    "name": "3Dツール・システム",
     "parent": "3Dモデル"
   },
   "likes": 24,
@@ -123,7 +128,11 @@
     {
       "date": "2026-11-17",
       "count": 24
+    },
+    {
+      "date": "2026-11-18",
+      "count": 24
     }
   ],
-  "fetched_at": "2026-11-17"
+  "fetched_at": "2026-11-18"
 }
