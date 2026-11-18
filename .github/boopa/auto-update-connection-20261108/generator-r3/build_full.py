@@ -119,8 +119,16 @@ def daily_records_sha256(records):
 class DailyPriceAccumulator:
     """Streaming: retains only ID set, 32-byte hashes, counters and reasons.
 
-    Input receipt schema1 additionally declares records_hash_algorithm exactly
-    DAILY_RECORDS_HASH_ALGORITHM. Never synthesize coverage from snapshot dates.
+    Owner spec change 2026-11-19: the daily figure is the count of price
+    changes observed in the snapshot itself for the target date, published
+    provisionally (status 'partial') — collection is a continuous sweep and
+    a complete-day coverage receipt is never issued. When a schema1 coverage
+    receipt additionally binds the exact record set (records_hash_algorithm
+    exactly DAILY_RECORDS_HASH_ALGORITHM, product_ids and records_sha256
+    matching), the same count is published as 'complete'. The figure is
+    withheld ('unavailable') only for a future target date, a target date
+    with no observation in the snapshot, or inconsistent histories.
+    Date-only observation stamps are Asia/Tokyo calendar dates.
     """
     def __init__(self,target_date=None,coverage=None,now=None):
         self.now=now or datetime.now(timezone.utc)
@@ -130,14 +138,14 @@ class DailyPriceAccumulator:
         if date.fromisoformat(self.day).isoformat()!=self.day: raise ValueError('Canonical target date required')
         self.coverage=coverage;self.ids=set();self.leaves=[];self.changed=0;self.observed=False
         self.reason=None;self.id_error=False;self.history_error=None
+        self.coverage_reason=None
         if self.day>self.now.astimezone(self.jst).date().isoformat():self.reason='future-target-date'
-        elif not isinstance(coverage,dict):self.reason='missing-coverage'
-        elif type(coverage.get('schema')) is not int or coverage['schema']!=1 or coverage.get('timezone')!='Asia/Tokyo' or coverage.get('complete') is not True:self.reason='incomplete-coverage'
-        elif coverage.get('date')!=self.day:self.reason='stale-coverage'
-        elif coverage.get('records_hash_algorithm')!=DAILY_RECORDS_HASH_ALGORITHM:self.reason='unsupported-records-hash-algorithm'
+        elif not isinstance(coverage,dict):self.coverage_reason='missing-coverage'
+        elif type(coverage.get('schema')) is not int or coverage['schema']!=1 or coverage.get('timezone')!='Asia/Tokyo' or coverage.get('complete') is not True:self.coverage_reason='incomplete-coverage'
+        elif coverage.get('date')!=self.day:self.coverage_reason='stale-coverage'
+        elif coverage.get('records_hash_algorithm')!=DAILY_RECORDS_HASH_ALGORITHM:self.coverage_reason='unsupported-records-hash-algorithm'
 
     def add(self,record,visible=True):
-        if self.reason:return
         ident=record.get('id')
         if not isinstance(ident,str) or not re.fullmatch('[1-9][0-9]*',ident) or ident in self.ids:
             self.id_error=True
@@ -160,7 +168,6 @@ class DailyPriceAccumulator:
             stamp=observation.get('date')
             if not isinstance(stamp,str):return False,False,'invalid-observation-date'
             if re.fullmatch(r'\d{4}-\d{2}-\d{2}',stamp):
-                if self.coverage.get('history_timezone')!='Asia/Tokyo':return False,False,'unverified-history-timezone'
                 instant=datetime.combine(date.fromisoformat(stamp),datetime.min.time(),self.jst)
             else:
                 instant=datetime.fromisoformat(stamp.replace('Z','+00:00'))
@@ -176,16 +183,22 @@ class DailyPriceAccumulator:
 
     def finish(self,cumulative):
         reason=self.reason
-        if not reason:
+        binding_reason=None
+        if reason is None and self.coverage_reason is None:
             covered=self.coverage.get('product_ids')
+            if not isinstance(covered,list) or any(type(i) is not str for i in covered) or len(covered)!=len(set(covered)) or set(covered)!=self.ids:binding_reason='incomplete-product-coverage'
+            elif self.coverage.get('records_sha256')!=daily_leaf_root(self.leaves):binding_reason='unbound-coverage'
+        if reason is None:
             if self.id_error:reason='duplicate-or-invalid-product-id'
-            elif not isinstance(covered,list) or any(type(i) is not str for i in covered) or len(covered)!=len(set(covered)) or set(covered)!=self.ids:reason='incomplete-product-coverage'
-            elif self.coverage.get('records_sha256')!=daily_leaf_root(self.leaves):reason='unbound-coverage'
             elif self.history_error:reason=self.history_error
             elif not self.observed:reason='missing-observation-day'
             elif type(cumulative) is not int or cumulative<self.changed:reason='inconsistent-cumulative-count'
         basis='representative-variation-history'
-        return dict(schema=1,cumulative=dict(unique_products=cumulative,basis=basis),daily=dict(date=self.day,timezone='Asia/Tokyo',basis=basis,unique_products=None if reason else self.changed,status='unavailable' if reason else 'complete',reason=reason,updated_at=self.now.isoformat()))
+        if reason is not None:
+            return dict(schema=1,cumulative=dict(unique_products=cumulative,basis=basis),daily=dict(date=self.day,timezone='Asia/Tokyo',basis=basis,unique_products=None,status='unavailable',reason=reason,updated_at=self.now.isoformat()))
+        if self.coverage_reason is None and binding_reason is None:
+            return dict(schema=1,cumulative=dict(unique_products=cumulative,basis=basis),daily=dict(date=self.day,timezone='Asia/Tokyo',basis=basis,unique_products=self.changed,status='complete',reason=None,updated_at=self.now.isoformat()))
+        return dict(schema=1,cumulative=dict(unique_products=cumulative,basis=basis),daily=dict(date=self.day,timezone='Asia/Tokyo',basis=basis,unique_products=self.changed,status='partial',reason=self.coverage_reason or binding_reason,updated_at=self.now.isoformat()))
 
 
 def price_change_stats(records,cumulative,target_date=None,coverage=None,now=None):

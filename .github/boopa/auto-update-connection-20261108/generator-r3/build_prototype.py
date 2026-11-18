@@ -1423,7 +1423,7 @@ ja: {
   pp_title: "商品詳細", sp_title: "商品検索", sp_ph: "商品名・ショップ名で検索", sp_shops: "カテゴリーから探す", sp_filter: "絞り込み", sp_price_t: "価格で絞り込む", sp_price_any: "価格は問わない", sp_reset: "リセット", sp_show_results: "結果を表示", sp_sort_rel: "適合性", sp_sort_pop: "人気順", sp_sort_rising: "急上昇", sp_sort_new: "新着順", sp_sort_price_asc: "価格の安い順", sp_sort_price_desc: "価格の高い順", sp_sort_pct: "割引率の高い順", sp_sort_name: "名前順", th_toggle: "テーマ切替", sp_price_upto: "¥{n} 以下",
   tab_home: "ホーム", tab_sale: "セール", tab_news: "ニュース", tab_ranking: "ランキング", tab_bm: "ブックマーク",
   al_back: "戻る", al_prev: "前へ", al_next: "次へ", al_expand: "拡大表示", al_close: "閉じる", cmp_more: "ほか{n}件", al_search: "検索", al_slide: "スライド",
-  st_total: "追跡中の商品", st_sale: "セール中（推定）", st_free: "現在無料", st_changed: "累計価格変更", st_changed_daily: "本日の価格変更", st_daily_date: "対象：{date}（JST・観測分）", st_daily_unknown: "未集計", st_daily_stale: "当日分は未集計（前回：{date}）", st_daily_updated: "集計更新：{time}（JST）", st_daily_update_unknown: "集計更新：未取得", st_change_basis: "価格変更は、各商品の記録数が最も多い代表バリエーションで判定。変更回数ではなく商品数です。", st_period: "観測開始日", st_stats_details: "集計条件・日付", st_daily_summary: "当日（{date} JST）：{state}", st_free_basis: "現在無料は、過去の価格が100円以上だった商品。",
+  st_total: "追跡中の商品", st_sale: "セール中（推定）", st_free: "現在無料", st_changed: "累計価格変更", st_changed_daily: "本日の価格変更", st_daily_date: "対象：{date}（JST・観測分）", st_daily_unknown: "未集計", st_daily_partial: "{count}（集計中・速報値）", st_daily_stale: "当日分は未集計（前回：{date}）", st_daily_updated: "集計更新：{time}（JST）", st_daily_update_unknown: "集計更新：未取得", st_change_basis: "価格変更は、各商品の記録数が最も多い代表バリエーションで判定。変更回数ではなく商品数です。", st_period: "観測開始日", st_stats_details: "集計条件・日付", st_daily_summary: "当日（{date} JST）：{state}", st_free_basis: "現在無料は、過去の価格が100円以上だった商品。",
   free: "無料", rib_sale: "セール",
   status_lowest: "過去最安値で販売中", save_note: "{v} お得",
   reason_lowest: "過去最安値を更新したためおすすめしています", reason_sale: "セール中の商品からおすすめしています",
@@ -1456,7 +1456,7 @@ en: {
   pp_title: "Product details", sp_title: "Search products", sp_ph: "Search by product or shop name", sp_shops: "Browse by category", sp_filter: "Filters", sp_price_t: "Filter by price", sp_price_any: "Any price", sp_reset: "Reset", sp_show_results: "Show results", sp_sort_rel: "Relevance", sp_sort_pop: "Popularity", sp_sort_rising: "Rising", sp_sort_new: "Newest", sp_sort_price_asc: "Price: low to high", sp_sort_price_desc: "Price: high to low", sp_sort_pct: "Biggest discount", sp_sort_name: "Name", th_toggle: "Toggle theme", sp_price_upto: "Up to ¥{n}",
   tab_home: "Home", tab_sale: "Sale", tab_news: "News", tab_ranking: "Rankings", tab_bm: "Bookmarks",
   al_back: "Back", al_prev: "Previous", al_next: "Next", al_expand: "Expand", al_close: "Close", cmp_more: "+{n} more", al_search: "Search", al_slide: "Slide",
-  st_total: "Tracked products", st_sale: "On sale (est.)", st_free: "Free now", st_changed: "Changes · total", st_changed_daily: "Changes · today", st_daily_date: "Date: {date} (JST observations)", st_daily_unknown: "Not available", st_daily_stale: "Today unavailable (last date: {date})", st_daily_updated: "Stats updated: {time} (JST)", st_daily_update_unknown: "Stats update time unavailable", st_change_basis: "Price changes use each product’s variation with the most observations. Counts are unique products, not change events.", st_period: "Tracking since", st_stats_details: "Dates & definitions", st_daily_summary: "Daily ({date} JST): {state}", st_free_basis: "Free now counts products previously priced at ¥100 or more.",
+  st_total: "Tracked products", st_sale: "On sale (est.)", st_free: "Free now", st_changed: "Changes · total", st_changed_daily: "Changes · today", st_daily_date: "Date: {date} (JST observations)", st_daily_unknown: "Not available", st_daily_partial: "{count} (provisional, still counting)", st_daily_stale: "Today unavailable (last date: {date})", st_daily_updated: "Stats updated: {time} (JST)", st_daily_update_unknown: "Stats update time unavailable", st_change_basis: "Price changes use each product’s variation with the most observations. Counts are unique products, not change events.", st_period: "Tracking since", st_stats_details: "Dates & definitions", st_daily_summary: "Daily ({date} JST): {state}", st_free_basis: "Free now counts products previously priced at ¥100 or more.",
   free: "Free", rib_sale: "Sale",
   status_lowest: "Now at its lowest price ever", save_note: "Save {v}",
   reason_lowest: "Recommended: it just hit a new all-time low", reason_sale: "Recommended from items on sale",
@@ -1489,7 +1489,7 @@ ko: {
   pp_title: "상품 상세", sp_title: "상품 검색", sp_ph: "상품명·샵 이름으로 검색", sp_shops: "카테고리로 찾기", sp_filter: "필터", sp_price_t: "가격으로 좁히기", sp_price_any: "가격 무관", sp_reset: "초기화", sp_show_results: "결과 표시", sp_sort_rel: "관련도", sp_sort_pop: "인기순", sp_sort_rising: "급상승", sp_sort_new: "최신순", sp_sort_price_asc: "가격 낮은 순", sp_sort_price_desc: "가격 높은 순", sp_sort_pct: "할인율 높은 순", sp_sort_name: "이름순", th_toggle: "테마 전환", sp_price_upto: "¥{n} 이하",
   tab_home: "홈", tab_sale: "세일", tab_news: "뉴스", tab_ranking: "랭킹", tab_bm: "북마크",
   al_back: "뒤로", al_prev: "이전", al_next: "다음", al_expand: "확대", al_close: "닫기", cmp_more: "외 {n}개", al_search: "검색", al_slide: "슬라이드",
-  st_total: "추적 상품", st_sale: "할인 중(추정)", st_free: "현재 무료", st_changed: "누적 변동 상품", st_changed_daily: "오늘 변동 상품", st_daily_date: "대상: {date} (JST 관측분)", st_daily_unknown: "미집계", st_daily_stale: "당일 미집계 (이전: {date})", st_daily_updated: "집계 갱신: {time} (JST)", st_daily_update_unknown: "집계 갱신 시각 없음", st_change_basis: "가격 변동은 상품별 기록이 가장 많은 대표 옵션을 기준으로 판정합니다. 변경 횟수가 아닌 상품 수입니다.", st_period: "관측 시작일", st_stats_details: "날짜·집계 기준", st_daily_summary: "당일 ({date} JST): {state}", st_free_basis: "현재 무료는 과거 가격이 100엔 이상이었던 상품입니다.",
+  st_total: "추적 상품", st_sale: "할인 중(추정)", st_free: "현재 무료", st_changed: "누적 변동 상품", st_changed_daily: "오늘 변동 상품", st_daily_date: "대상: {date} (JST 관측분)", st_daily_unknown: "미집계", st_daily_partial: "{count} (집계 중·속보치)", st_daily_stale: "당일 미집계 (이전: {date})", st_daily_updated: "집계 갱신: {time} (JST)", st_daily_update_unknown: "집계 갱신 시각 없음", st_change_basis: "가격 변동은 상품별 기록이 가장 많은 대표 옵션을 기준으로 판정합니다. 변경 횟수가 아닌 상품 수입니다.", st_period: "관측 시작일", st_stats_details: "날짜·집계 기준", st_daily_summary: "당일 ({date} JST): {state}", st_free_basis: "현재 무료는 과거 가격이 100엔 이상이었던 상품입니다.",
   free: "무료", rib_sale: "세일",
   status_lowest: "역대 최저가로 판매 중", save_note: "{v} 절약",
   reason_lowest: "역대 최저가를 갱신해 추천합니다", reason_sale: "할인 중인 상품에서 추천합니다",
@@ -1522,7 +1522,7 @@ ko: {
   pp_title: "商品详情", sp_title: "搜索商品", sp_ph: "按商品名或店铺名搜索", sp_shops: "按类别浏览", sp_filter: "筛选", sp_price_t: "按价格筛选", sp_price_any: "不限价格", sp_reset: "重置", sp_show_results: "显示结果", sp_sort_rel: "相关性", sp_sort_pop: "人气顺", sp_sort_rising: "急升", sp_sort_new: "最新上架", sp_sort_price_asc: "价格从低到高", sp_sort_price_desc: "价格从高到低", sp_sort_pct: "折扣率最高", sp_sort_name: "名称", th_toggle: "切换主题", sp_price_upto: "¥{n} 以下",
   tab_home: "首页", tab_sale: "促销", tab_news: "动态", tab_ranking: "排行榜", tab_bm: "收藏",
   al_back: "返回", al_prev: "上一个", al_next: "下一个", al_expand: "放大显示", al_close: "关闭", cmp_more: "还有{n}个", al_search: "搜索", al_slide: "幻灯片",
-  st_total: "追踪商品", st_sale: "促销中（估计）", st_free: "当前免费", st_changed: "累计价格变动", st_changed_daily: "今日价格变动", st_daily_date: "日期：{date}（JST 观测）", st_daily_unknown: "尚未统计", st_daily_stale: "当日尚未统计（上次：{date}）", st_daily_updated: "统计更新：{time}（JST）", st_daily_update_unknown: "统计更新时间未知", st_change_basis: "按每件商品记录最多的代表规格判断价格变动。统计商品数量，不是变动次数。", st_period: "观测开始日", st_stats_details: "日期与统计口径", st_daily_summary: "当日（{date} JST）：{state}", st_free_basis: "当前免费仅统计曾售价100日元及以上的商品。",
+  st_total: "追踪商品", st_sale: "促销中（估计）", st_free: "当前免费", st_changed: "累计价格变动", st_changed_daily: "今日价格变动", st_daily_date: "日期：{date}（JST 观测）", st_daily_unknown: "尚未统计", st_daily_partial: "{count}（统计中·速报值）", st_daily_stale: "当日尚未统计（上次：{date}）", st_daily_updated: "统计更新：{time}（JST）", st_daily_update_unknown: "统计更新时间未知", st_change_basis: "按每件商品记录最多的代表规格判断价格变动。统计商品数量，不是变动次数。", st_period: "观测开始日", st_stats_details: "日期与统计口径", st_daily_summary: "当日（{date} JST）：{state}", st_free_basis: "当前免费仅统计曾售价100日元及以上的商品。",
   free: "免费", rib_sale: "促销",
   status_lowest: "正以历史最低价销售", save_note: "省 {v}",
   reason_lowest: "推荐：刚刚刷新历史最低价", reason_sale: "从促销商品中推荐",
@@ -1555,7 +1555,7 @@ ko: {
   pp_title: "商品詳情", sp_title: "搜尋商品", sp_ph: "按商品名或店舖名搜尋", sp_shops: "按類別瀏覽", sp_filter: "篩選", sp_price_t: "按價格篩選", sp_price_any: "不限價格", sp_reset: "重置", sp_show_results: "顯示結果", sp_sort_rel: "相關性", sp_sort_pop: "人氣順", sp_sort_rising: "急升", sp_sort_new: "最新上架", sp_sort_price_asc: "價格從低到高", sp_sort_price_desc: "價格從高到低", sp_sort_pct: "折扣率最高", sp_sort_name: "名稱", th_toggle: "切換主題", sp_price_upto: "¥{n} 以下",
   tab_home: "首頁", tab_sale: "促銷", tab_news: "動態", tab_ranking: "排行榜", tab_bm: "收藏",
   al_back: "返回", al_prev: "上一個", al_next: "下一個", al_expand: "放大顯示", al_close: "關閉", cmp_more: "還有{n}個", al_search: "搜尋", al_slide: "投影片",
-  st_total: "追蹤商品", st_sale: "促銷中（估計）", st_free: "目前免費", st_changed: "累計價格變動", st_changed_daily: "今日價格變動", st_daily_date: "日期：{date}（JST 觀測）", st_daily_unknown: "尚未統計", st_daily_stale: "當日尚未統計（上次：{date}）", st_daily_updated: "統計更新：{time}（JST）", st_daily_update_unknown: "統計更新時間未知", st_change_basis: "依每件商品記錄最多的代表規格判定價格變動。統計商品數量，不是變動次數。", st_period: "觀測開始日", st_stats_details: "日期與統計方式", st_daily_summary: "當日（{date} JST）：{state}", st_free_basis: "目前免費僅統計曾售價100日圓以上的商品。",
+  st_total: "追蹤商品", st_sale: "促銷中（估計）", st_free: "目前免費", st_changed: "累計價格變動", st_changed_daily: "今日價格變動", st_daily_date: "日期：{date}（JST 觀測）", st_daily_unknown: "尚未統計", st_daily_partial: "{count}（統計中·速報值）", st_daily_stale: "當日尚未統計（上次：{date}）", st_daily_updated: "統計更新：{time}（JST）", st_daily_update_unknown: "統計更新時間未知", st_change_basis: "依每件商品記錄最多的代表規格判定價格變動。統計商品數量，不是變動次數。", st_period: "觀測開始日", st_stats_details: "日期與統計方式", st_daily_summary: "當日（{date} JST）：{state}", st_free_basis: "目前免費僅統計曾售價100日圓以上的商品。",
   free: "免費", rib_sale: "促銷",
   status_lowest: "正以歷史最低價銷售", save_note: "省 {v}",
   reason_lowest: "推薦：剛剛刷新歷史最低價", reason_sale: "從促銷商品中推薦",
@@ -1646,7 +1646,8 @@ function statsChangeSummary(st, now = new Date()){
   const stamp = daily && typeof daily.updated_at === 'string' && /(?:Z|[+-]\d{2}:\d{2})$/.test(daily.updated_at) ? Date.parse(daily.updated_at) : NaN;
   const knownUpdate = Number.isFinite(stamp) && stamp <= now.getTime()+300000;
   const complete = data && data.schema === 1 && daily && daily.status === 'complete' && daily.timezone === 'Asia/Tokyo' && daily.basis === 'representative-variation-history' && date === target && Number.isSafeInteger(daily.unique_products) && daily.unique_products >= 0 && daily.unique_products <= st.changed && knownUpdate && statsJstDate(new Date(stamp)) >= date;
-  return {target,date,count:complete ? daily.unique_products : null,status:date && date !== target ? 'stale' : complete ? 'complete' : 'unavailable',updated:knownUpdate ? new Intl.DateTimeFormat(LOCALE,{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(stamp)) : null};
+  const partial = data && data.schema === 1 && daily && daily.status === 'partial' && daily.timezone === 'Asia/Tokyo' && daily.basis === 'representative-variation-history' && date === target && Number.isSafeInteger(daily.unique_products) && daily.unique_products >= 0 && daily.unique_products <= st.changed && knownUpdate && statsJstDate(new Date(stamp)) >= date;
+  return {target,date,count:complete ? daily.unique_products : partial ? daily.unique_products : null,status:date && date !== target ? 'stale' : complete ? 'complete' : partial ? 'partial' : 'unavailable',updated:knownUpdate ? new Intl.DateTimeFormat(LOCALE,{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(stamp)) : null};
 }
 let STATS_LAST = null, STATS_TARGET_DAY = null;
 function renderStats(st){
@@ -1654,7 +1655,7 @@ function renderStats(st){
   STATS_LAST = st;
   const day = statsChangeSummary(st);
   STATS_TARGET_DAY = day.target;
-  const dailyState = day.status === 'stale' ? tr('st_daily_stale',{date:day.date}) : day.count === null ? tr('st_daily_unknown') : day.count.toLocaleString(LOCALE);
+  const dailyState = day.status === 'stale' ? tr('st_daily_stale',{date:day.date}) : day.status === 'partial' ? tr('st_daily_partial',{count:day.count.toLocaleString(LOCALE)}) : day.count === null ? tr('st_daily_unknown') : day.count.toLocaleString(LOCALE);
   document.getElementById("stats").innerHTML = [
     [st.total.toLocaleString(LOCALE), tr("st_total")],
     [st.sale_now.toLocaleString(LOCALE), tr("st_sale")],

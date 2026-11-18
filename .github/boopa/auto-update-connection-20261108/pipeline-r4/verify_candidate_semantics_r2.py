@@ -129,6 +129,7 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
             rows[row[0]]=row
     before_source={};counts=Counter();metadata={};negative=set();markers={};backend=set();success_ids=set()
     expected_stats={'total':0,'sale_now':0,'free_now':0,'changed':0,'min_date':None,'max_date':''}
+    daily_changed_counts={};daily_observed_dates=set()
     expected_members={'on_sale':set(),'free':set(),'active':set(),'newest':set(),'drops':set()}
     metrics={};sample=None;sample_record=None;variation_starts={}
     with VerifiedSource(source_root,completion_sha,run_bindings=bindings) as source:
@@ -199,6 +200,8 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
             expected_stats['sale_now']+=int(sale)
             expected_stats['free_now']+=int(cur==0 and base>=100)
             expected_stats['changed']+=int(bool(changes))
+            for change_date in set(changes):daily_changed_counts[change_date]=daily_changed_counts.get(change_date,0)+1
+            daily_observed_dates.update(p['date'] for p in ordered)
             last_change=None
             for i in range(len(ordered)-1,0,-1):
                     if prices[i]!=prices[i-1]:last_change=(ordered[i]['date'],prices[i-1],prices[i],bool(ordered[i].get('is_sale')));break
@@ -309,7 +312,10 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
         for key,value in expected_stats.items():require(lists['stats'][key]==value,'Aggregate statistic differs: '+key)
         require(lists['max_date']==expected_stats['max_date']==source.manifest['expected_date'],'Source date differs')
         daily=lists['stats']['price_changes']['daily']
-        require(daily['status']=='unavailable' and daily['reason']=='missing-coverage' and daily['unique_products'] is None,'Historical data made a daily-completion claim')
+        if daily['status']=='unavailable':
+            require(daily['unique_products'] is None,'Withheld daily figure carried a count')
+        else:
+            require(daily['status'] in ('partial','complete') and daily['unique_products']==daily_changed_counts.get(daily['date'],0) and daily['date'] in daily_observed_dates,'Daily provisional count differs')
         require(lists['stats']['price_changes']['cumulative']['unique_products']==expected_stats['changed'],'Cumulative statistic differs')
         counts.update(backend=len(backend),metadata_products=len(metadata),current_negative=len(negative),retained_floor=len(retained['ids']),effective_hidden=len(hidden),pending_metadata=len(pending),visible=len(rows),metadata_only_success=sum(1 for x in set(metadata)-backend if not metadata[x]['negative']),retained_now_not_negative=len(retained['ids']-negative))
         source.finish()
@@ -412,7 +418,7 @@ def audit(source_root, completion_sha, candidate, prior, prior_sha, require_runt
     try:verify_artifact_directory(fd,inventory)
     finally:os.close(fd)
     require(read_retained_exclusions(prior,prior_sha)==retained,'Prior candidate changed')
-    return {'schema':'boopa-new-saved-semantic-audit-r1','status':'passed-declared-semantic-scope','fixture':snapshot['fixture'],'candidate_snapshot_sha256':snapshot_sha,'completion_sha256':completion_sha,'script_sha256':digest(Path(__file__).read_bytes()),'counts':dict(counts),'statistics':expected_stats,'checks':['exact_final_output_closure','source_per_read_hashes_and_final_inventory','exact_source_negative_prior_floor_latest_overlay_and_pending_partition','no_retained_success_reclassified_as_current_negative','exact_quarantine_actual_price_metadata_counts_and_consumption','latest_negative_vs_saved_history_consistency','all_backend_search_prices_against_fixed_source','representative_variation_and_lowest_semantics','five_complete_list_populations_prices_dates_and_order','three_curated_list_populations_fields_and_order','all_list_metadata_against_exact_cutoff','aggregate_statistics_from_source','daily_unavailable_no_completion_claim','all_15_initial_page_unions','all_15_actual_runtime_programs','runtime_addition_no_restoration_and_frozen_stats','generated_list_shop_bootstrap_exclusion','89_inherited_relation_assets_exact_prior_bytes','prior_pin_unchanged'],'runtime_guard_bound':runtime_guard is not None,'runtime_pages':runtime_pages,'inherited_asset_count':len(inherited),'sample_5826600_check':average_status,'sample_5826600_source_averages':sample,'sample_5826600_emitted_js_and_display_averages':average_result,'full_legacy_17_supplement_reproduced':False,'browser_qa_accepted':False,'authenticated_transport_verified':False,'publication_eligible':False}
+    return {'schema':'boopa-new-saved-semantic-audit-r1','status':'passed-declared-semantic-scope','fixture':snapshot['fixture'],'candidate_snapshot_sha256':snapshot_sha,'completion_sha256':completion_sha,'script_sha256':digest(Path(__file__).read_bytes()),'counts':dict(counts),'statistics':expected_stats,'checks':['exact_final_output_closure','source_per_read_hashes_and_final_inventory','exact_source_negative_prior_floor_latest_overlay_and_pending_partition','no_retained_success_reclassified_as_current_negative','exact_quarantine_actual_price_metadata_counts_and_consumption','latest_negative_vs_saved_history_consistency','all_backend_search_prices_against_fixed_source','representative_variation_and_lowest_semantics','five_complete_list_populations_prices_dates_and_order','three_curated_list_populations_fields_and_order','all_list_metadata_against_exact_cutoff','aggregate_statistics_from_source','daily_provisional_count_from_source','all_15_initial_page_unions','all_15_actual_runtime_programs','runtime_addition_no_restoration_and_frozen_stats','generated_list_shop_bootstrap_exclusion','89_inherited_relation_assets_exact_prior_bytes','prior_pin_unchanged'],'runtime_guard_bound':runtime_guard is not None,'runtime_pages':runtime_pages,'inherited_asset_count':len(inherited),'sample_5826600_check':average_status,'sample_5826600_source_averages':sample,'sample_5826600_emitted_js_and_display_averages':average_result,'full_legacy_17_supplement_reproduced':False,'browser_qa_accepted':False,'authenticated_transport_verified':False,'publication_eligible':False}
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--source',required=True);p.add_argument('--completion-sha256',required=True);p.add_argument('--candidate',required=True);p.add_argument('--prior',required=True);p.add_argument('--prior-sha256',required=True);p.add_argument('--output',required=True);p.add_argument('--require-runtime-guard',action='store_true');p.add_argument('--quarantine-proof',required=True);p.add_argument('--latest-negative-proof',required=True);p.add_argument('--run-bindings',required=True);p.add_argument('--run-bindings-sha256',required=True);p.add_argument('--source-receipt');a=p.parse_args()
