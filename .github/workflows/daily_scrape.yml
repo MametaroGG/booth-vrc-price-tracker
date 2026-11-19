@@ -225,7 +225,7 @@ jobs:
           import hashlib, importlib.util, json, os, pathlib, re, shutil, subprocess, sys
           root = pathlib.Path('.github/boopa').resolve(strict=True)
           manifest = root / 'DEPLOYMENT-CODE-INVENTORY.json'
-          if manifest.is_symlink() or hashlib.sha256(manifest.read_bytes()).hexdigest() != 'f12fb80308bd95b01c2887faf4578209c9aa4e24cc740a903fbab3b8ff56b6e2':
+          if manifest.is_symlink() or hashlib.sha256(manifest.read_bytes()).hexdigest() != '1cd5d68e9aee2b2c704d5287e2339e056621995b22b7df59bcc362b8feb8f359':
               raise SystemExit('Deployment inventory differs; stop')
           for name, entry in json.loads(manifest.read_bytes())['files'].items():
               path = root / name
