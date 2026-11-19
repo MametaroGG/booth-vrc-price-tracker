@@ -1,6 +1,6 @@
 {
   "id": "8385426",
-  "name": "PoseMesh - PlayModeで使えるMesh Editor",
+  "name": "PoseMesh - 左右非対称姿勢でも使えるMesh Editor（PlayモードでAnimation再生も）",
   "shop": {
     "name": "猫ヶ洞",
     "subdomain": "nekogahora",
@@ -12,15 +12,18 @@
     "https://booth.pximg.net/c/620x620/fcb98081-e39d-40a5-897c-6da1942e90b0/i/8385426/4c33c651-26ac-45a1-b917-b403b140c341_base_resized.jpg",
     "https://booth.pximg.net/c/620x620/fcb98081-e39d-40a5-897c-6da1942e90b0/i/8385426/51959a41-1319-4d29-b029-75a28676445e_base_resized.jpg",
     "https://booth.pximg.net/c/620x620/fcb98081-e39d-40a5-897c-6da1942e90b0/i/8385426/a80c0e79-64ad-4d5d-a97e-b83c00799642_base_resized.jpg",
-    "https://booth.pximg.net/c/620x620/fcb98081-e39d-40a5-897c-6da1942e90b0/i/8385426/77e7abda-1db8-4b15-a01c-3dbce2f7a7f8_base_resized.jpg",
-    "https://booth.pximg.net/c/620x620/fcb98081-e39d-40a5-897c-6da1942e90b0/i/8385426/f30752e1-556c-4e2e-9e1e-02832a43004e_base_resized.jpg"
+    "https://booth.pximg.net/c/620x620/fcb98081-e39d-40a5-897c-6da1942e90b0/i/8385426/0e227975-2a8c-4001-9669-01f4deebbbef_base_resized.jpg",
+    "https://booth.pximg.net/c/620x620/fcb98081-e39d-40a5-897c-6da1942e90b0/i/8385426/bb8962a0-c234-4b6d-a92e-2d26b0ec2e9b_base_resized.jpg"
   ],
   "tags": [
     "ツール",
     "加工",
     "編集",
     "Unity",
+    "服",
     "エディター拡張",
+    "素体",
+    "体",
     "メッシュ",
     "VRChat",
     "改変",
@@ -28,14 +31,16 @@
     "BlendShape",
     "はみ出し",
     "メッシュエディター",
-    "Mesh Editor"
+    "Mesh Editor",
+    "MeshEditor",
+    "非対称ミラー"
   ],
   "category": {
     "id": 215,
     "name": "3Dツール・システム",
     "parent": "3Dモデル"
   },
-  "likes": 50,
+  "likes": 51,
   "refs": [],
   "adult": false,
   "sold_out": false,
@@ -125,7 +130,11 @@
     {
       "date": "2026-11-18",
       "count": 50
+    },
+    {
+      "date": "2026-11-19",
+      "count": 51
     }
   ],
-  "fetched_at": "2026-11-18"
+  "fetched_at": "2026-11-19"
 }
