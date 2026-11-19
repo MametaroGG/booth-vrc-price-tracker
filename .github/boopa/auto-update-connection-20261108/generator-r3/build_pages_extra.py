@@ -916,7 +916,7 @@ document.getElementById("pgH1").textContent = tr("free");
 document.getElementById("crumbHere").textContent = tr("free");
 """ + _ROW_COMMON + _PG_WIRE + """
 pgRowFn = x => listRow(x, "", clusterCB(0, x.base, x.on_sale !== false, true));
-pgItems = (P.on_sale || []).filter(s => s.cur === 0);
+pgItems = P.free || (P.on_sale || []).filter(s => s.cur === 0);
 document.getElementById("subStats").textContent = tr("pg_free_sub", {n: pgItems.length});
 pgRender();
 loadFull().then(f => { if (f && f.free) { pgItems = f.free; pgShown = 60; document.getElementById("subStats").textContent = tr("pg_free_sub", {n: pgItems.length}); pgRender(); } });
@@ -948,7 +948,8 @@ document.getElementById("crumbHere").textContent = tr("bt_rising");
 const fmtGain = v => { const n = Number(v) || 0; return n >= 10 ? Math.round(n).toLocaleString() : String(Math.round(n * 10) / 10); };
 """ + _PG_WIRE + """
 pgRowFn = x => listRow(x, HEART12 + tr("rising_note", {likes: (x.likes || 0).toLocaleString(), g: fmtGain(x.per_day)}), clusterCB(x.cur, x.base, !!x.on_sale, x.at_lowest));
-pgItems = [];
+pgItems = P.rising || [];
+document.getElementById("subStats").textContent = tr("pg_rising_sub", {n: pgItems.length});
 pgRender();
 loadFull().then(f => { if (f && f.rising) { pgItems = f.rising; pgShown = 60; document.getElementById("subStats").textContent = tr("pg_rising_sub", {n: pgItems.length}); pgRender(); } });
 """

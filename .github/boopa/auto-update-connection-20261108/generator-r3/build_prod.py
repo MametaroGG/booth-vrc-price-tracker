@@ -35,15 +35,31 @@ def build(out, charts=None, bootstrap_enricher=None):
     payload_json = script_json(payload)
     if 'data:image' in payload_json:
         raise ValueError('Production payload must reference images, not embed them')
+    # List pages are complete on their own: each embeds its full list, so the
+    # page never depends on the lazy multi-megabyte lists_full.json fetch
+    # (when that fetch was slow or failed, these pages stayed empty or showed
+    # only the capped sample). The loadFull refresh remains as a re-check.
+    # Every other page keeps the capped bootstrap payload above.
+    def pg_payload_json(key):
+        p2 = dict(payload)
+        p2[key] = lists.get(key, [])
+        s2 = script_json(p2)
+        if 'data:image' in s2:
+            raise ValueError('Production payload must reference images, not embed them')
+        return s2
+    pg_payloads = {name: pg_payload_json(key) for name, key in
+                   (('new', 'newest'), ('free', 'free'), ('drops', 'drops'), ('updates', 'updates'))}
     html = bp.TEMPLATE.replace('/*__PAYLOAD__*/', payload_json)
     html = bp.add_index_diagnostics(html).replace('/*__BANNER__*/', 'banner.jpg?v=20251028-6')
     (out / 'index.html').write_text(html, encoding='utf-8')
     css = bp.TEMPLATE.split('<style>', 1)[1].split('</style>', 1)[0]
     sale = bs.SALE_TEMPLATE.replace('/*__CSS__*/', css).replace('/*__PAYLOAD__*/', payload_json)
     (out / 'sale.html').write_text(sale, encoding='utf-8')
-    for name, fn in [('new', bx.build_newpg), ('free', bx.build_freepg), ('drops', bx.build_dropspg), ('updates', bx.build_updpg), ('bookmarks', bx.build_bookmarks), ('history', bx.build_history), ('ranking', bx.build_ranking)]:
+    for name, fn in [('new', bx.build_newpg), ('free', bx.build_freepg), ('drops', bx.build_dropspg), ('updates', bx.build_updpg)]:
+        fn(out / (name + '.html'), css, pg_payloads[name])
+    for name, fn in [('bookmarks', bx.build_bookmarks), ('history', bx.build_history), ('ranking', bx.build_ranking)]:
         fn(out / (name + '.html'), css, payload_json)
-    bx.build_risingpg(out / 'rising.html', out / 'active.html', css, payload_json)
+    bx.build_risingpg(out / 'rising.html', out / 'active.html', css, pg_payload_json('rising'))
     for name, fn in [('privacy', bx.build_privacy), ('terms', bx.build_terms), ('app', bx.build_app)]:
         page = out / (name + '.html')
         fn(page, css)
