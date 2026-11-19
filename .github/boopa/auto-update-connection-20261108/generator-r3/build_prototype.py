@@ -2041,7 +2041,7 @@ window.addEventListener("resize", syncOverlayViewport);
 window.addEventListener("orientationchange", syncOverlayViewport);
 window.addEventListener("pageshow", syncOverlayViewport);
 function openSearch(){
-  loadFullIndex();
+  if (!spSrvEnabled()) loadFullIndex();
   prodPage.classList.remove("open");
   spage.classList.add("open");
   veilSync();
@@ -2746,9 +2746,211 @@ function spRelSort(a, b){
   const ea = a._rank - 0.35 * spAffRatio(a._cat), eb = b._rank - 0.35 * spAffRatio(b._cat);
   return (ea - eb) || ((b._likes || 0) - (a._likes || 0));
 }
+// ---- Server-side catalog search (mini-PC API) ----
+// With SP_SERVER_SEARCH on, the search page is served by
+// POST /catalog-search on the image API: results arrive one page at
+// a time, so the catalog shards (tens of MB) never have to be
+// downloaded or parsed before searching. Any API failure (network,
+// timeout, HTTP error, quota) latches spSrvFailed and the page falls
+// back to the classic client-side catalog load for the session.
+const SP_SERVER_SEARCH = true;
+const SP_CATALOG_API = "https://nucbox-m7.tailb48431.ts.net:8443";
+let spSrvFailed = false;
+let spSrv = null;
+let spSrvTimer = null;
+function spSrvEnabled(){ return SP_SERVER_SEARCH && !spSrvFailed; }
+function spSrvActive(){
+  if (!spSrvEnabled() || spImgMode) return false;
+  if (!spage.classList.contains("open")) return false;
+  if (spRelId && spRelLoadState !== "ready") return false;
+  if (spRelIds && spRelIds.length > 10000) return false;
+  return true;
+}
+function spSrvIsLanding(q){
+  return !q && spFilter === "all" && spSort === "rel" && spMaxPrice == null && !spCatMode && !spShopMode && !spRelIds;
+}
+function spSrvIsTextRel(){
+  const q = document.getElementById("spQ").value.trim();
+  return !!q && spFilter === "all" && spSort === "rel" && !spCatMode && !spShopMode && !spRelIds;
+}
+function spSrvKey(q){
+  return [q, spFilter, spSort, spMaxPrice == null ? "" : spMaxPrice, spCatMode || "", spShopMode || "", spRelId || "", spRelIds ? spRelIds.length + ":" + (spRelIds[0] || "") + ":" + (spRelIds[spRelIds.length - 1] || "") : ""].join("|");
+}
+function spSrvConv(r){
+  return { id: String(r.id), name: r.name, shop: r.shop || "", image: r.image || null, cur: r.cur, base: r.base, lowest: r.lowest, sale: !!r.sale, pct: r.pct || 0, at_lowest: !!r.at_lowest, plain: r.cur === null || r.cur === undefined, likes: r.likes || 0, _likes: r.likes || 0, first_date: r.first_date || "", per_day: r.per_day || 0, _rank: typeof r._rank === "number" ? r._rank : 0, _cat: (r.cat || "").normalize("NFKC").toLowerCase() };
+}
+async function spSrvFetch(body){
+  const ctl = new AbortController();
+  const timer = setTimeout(() => ctl.abort(), 8000);
+  try {
+    const r = await fetch(SP_CATALOG_API + "/catalog-search", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body), signal: ctl.signal });
+    if (r.status === 409) return { conflict: true };
+    if (!r.ok) throw new Error("catalog-search HTTP " + r.status);
+    return { data: await r.json() };
+  } finally { clearTimeout(timer); }
+}
+function spSrvBody(page, extra){
+  const body = { q: document.getElementById("spQ").value.trim(), chip: spFilter, sort: spSort, page, max_price: spMaxPrice, category: spCatMode || null, shop: spShopMode || null, scope_ids: spRelIds ? spRelIds.map(String) : null, parent_id: null };
+  if (spSrv && spSrv.revision) body.catalog_revision = spSrv.revision;
+  return Object.assign(body, extra || {});
+}
+function spSrvLandingFront(pop, newest){
+  // Personal front section, woven like spLandingHits but only from
+  // data that needs no catalog download: browsing history (local),
+  // then the server's popularity and newest pages, round-robin.
+  const seen = new Set(), out = [];
+  const push = x => { if (x && visibleItem(x) && !seen.has(String(x.id))) { seen.add(String(x.id)); out.push(x); } };
+  const rich = new Map(spIndex.map(x => [String(x.id), x]));
+  visibleItems(HIST).slice(0, 12).forEach(h => push(rich.get(String(h.id)) || { id: h.id, name: h.name, shop: h.shop || "", image: h.image || null, cur: h.cur, base: h.cur, pct: 0, plain: true }));
+  const streams = [pop || [], newest || []];
+  const ptr = [0, 0];
+  let progressed = true;
+  while (progressed && out.length < 90) {
+    progressed = false;
+    for (let s = 0; s < streams.length && out.length < 90; s++) {
+      if (ptr[s] < streams[s].length) { push(streams[s][ptr[s]++]); progressed = true; }
+    }
+  }
+  return out;
+}
+function spSrvTakePage(S, data){
+  S.revision = data.catalog_revision || S.revision;
+  S.total = data.total;
+  const seen = new Set(S.hits.map(x => String(x.id)));
+  for (const raw of data.results || []) {
+    const x = spSrvConv(raw);
+    if (seen.has(String(x.id))) continue;
+    seen.add(String(x.id));
+    S.hits.push(x);
+  }
+  S.nextPage = data.page + 1;
+  if ((data.results || []).length < 30 || S.nextPage * 30 >= data.total) S.done = true;
+  // Affinity blend stays client-side: within the fetched window the
+  // relevance order is re-sorted exactly like the local text search.
+  if (spSrvIsTextRel()) { loadAff(); S.hits.sort(spRelSort); S.rebuild = true; }
+}
+async function spSrvEnsure(){
+  const S = spSrv;
+  if (!S || S.loading) return;
+  if (S.done && S.hits.length >= spShown) return;
+  S.loading = true;
+  try {
+    const q = document.getElementById("spQ").value.trim().normalize("NFKC").toLowerCase();
+    if (spSrvIsLanding(q) && !S.front) {
+      const [pop, nw] = await Promise.all([
+        spSrvFetch(spSrvBody(0, { q: "", chip: "all", sort: "pop", category: null, shop: null, scope_ids: null })),
+        spSrvFetch(spSrvBody(0, { q: "", chip: "new", sort: "rel", category: null, shop: null, scope_ids: null }))
+      ]);
+      if (spSrv !== S) return;
+      if (pop.conflict || nw.conflict || !pop.data || !nw.data) throw new Error("landing fetch failed");
+      S.revision = pop.data.catalog_revision || S.revision;
+      S.front = spSrvLandingFront((pop.data.results || []).map(spSrvConv), (nw.data.results || []).map(spSrvConv));
+      S.hits = [...S.front];
+      S.rebuild = true;
+    }
+    const scopeRel = !!(spRelIds && spSort === "rel");
+    while (spSrv === S && !S.done && (S.nextPage === 0 || S.hits.length < spShown || scopeRel)) {
+      const res = await spSrvFetch(spSrvBody(S.nextPage));
+      if (spSrv !== S) return;
+      if (res.conflict) {
+        // The catalog was republished mid-session: restart paging on
+        // the new revision instead of mixing two snapshots.
+        S.revision = null; S.hits = S.front ? [...S.front] : []; S.nextPage = 0; S.done = false; S.total = null; S.rebuild = true;
+        const retry = await spSrvFetch(spSrvBody(0));
+        if (spSrv !== S) return;
+        if (retry.conflict || !retry.data) throw new Error("revision conflict");
+        spSrvTakePage(S, retry.data);
+        continue;
+      }
+      spSrvTakePage(S, res.data);
+      if (scopeRel && S.nextPage > 40) break;
+    }
+    if (spSrv !== S) return;
+    if (scopeRel && S.done && !S.scopeOrdered) {
+      const order = new Map(spRelIds.map((id, i) => [String(id), i]));
+      S.hits.sort((a, b) => (order.has(String(a.id)) ? order.get(String(a.id)) : 1e9) - (order.has(String(b.id)) ? order.get(String(b.id)) : 1e9));
+      S.scopeOrdered = true; S.rebuild = true;
+    }
+    S.loading = false;
+    spSrvPaint(false);
+    requestAnimationFrame(() => { if (typeof spChainCheck === "function") spChainCheck(); });
+  } catch (e) {
+    if (spSrv !== S) return;
+    S.loading = false;
+    spSrvFail();
+  }
+}
+function spSrvPaint(reset){
+  const S = spSrv; if (!S) return;
+  const grid = document.getElementById("spGrid");
+  const q = document.getElementById("spQ").value.trim().normalize("NFKC").toLowerCase();
+  const hits = visibleItems(S.hits);
+  const loading = S.total === null;
+  grid.setAttribute("aria-busy", String(loading));
+  document.getElementById("spCount").textContent = loading ? "—" : (spSrvIsLanding(q) ? tr("sp_total", { n: S.total }) : tr("sp_count", { n: S.total }));
+  spTotal = loading ? 0 : S.total;
+  const cardOf = (x, i) => {
+    if (!x.image && verifiedThumbnail(x.id)) x = { ...x, image: verifiedThumbnail(x.id) };
+    return x.plain ? plainCard(x, i) : saleCard({ ...x, pct: x.pct }, i);
+  };
+  const show = Math.min(spShown, hits.length);
+  let fillFrom = -1;
+  if (reset || S.rebuild || spRendered > show) {
+    grid.innerHTML = hits.slice(0, show).map(cardOf).join("");
+    spRendered = show; fillFrom = 0; S.rebuild = false;
+  } else if (show > spRendered) {
+    fillFrom = spRendered;
+    grid.insertAdjacentHTML("beforeend", hits.slice(fillFrom, show).map((x, j) => cardOf(x, fillFrom + j)).join(""));
+    spRendered = show;
+  }
+  if (fillFrom >= 0) hits.slice(fillFrom, spRendered).forEach(x => { if (x.plain) fillPriceLazy(x.id); });
+  const cs = document.getElementById("spCatalogStatus"); if (cs) cs.hidden = true;
+  spModeSync(loading ? null : S.total);
+  if ((spCatMode || spShopMode || spRelIds) && !loading) {
+    const mt = document.getElementById("spModeT");
+    if (mt && mt.textContent && !mt.textContent.includes("\uFF08")) mt.textContent += "\uFF08" + S.total.toLocaleString(LOCALE) + "\uFF09";
+  }
+  spRelStatusSync();
+  if (spRelId && !loading) {
+    const el = document.getElementById("spRelStatus");
+    if (el) {
+      const c = spRelCopy();
+      el.hidden = false;
+      el.textContent = c[3] + ": " + spRelTotal.toLocaleString(LOCALE) + " / " + c[4] + ": " + S.total.toLocaleString(LOCALE) + (S.total < spRelTotal ? " / " + c[5] + ": " + (spRelTotal - S.total).toLocaleString(LOCALE) : "");
+    }
+  }
+  spPriceLabel(); spFilterBtnLabel(); spSortSync();
+  document.getElementById("spClear").hidden = !q;
+  document.getElementById("spQ").parentElement.classList.toggle("has-query", !!q);
+  document.getElementById("spEmpty").style.display = (!loading && S.done && hits.length === 0) ? "block" : "none";
+}
+function spRenderServer(reset){
+  const q = document.getElementById("spQ").value.trim().normalize("NFKC").toLowerCase();
+  const key = spSrvKey(q);
+  if (!spSrv || spSrv.key !== key) {
+    spSrv = { key, hits: [], total: null, nextPage: 0, done: false, loading: false, revision: null, front: null, rebuild: true, scopeOrdered: false };
+    spRendered = 0; spKey = "";
+    document.getElementById("spGrid").replaceChildren();
+    spSrvPaint(true);
+    // Debounce: rapid typing re-signs the search; only the latest
+    // signature is allowed to reach the API.
+    clearTimeout(spSrvTimer);
+    spSrvTimer = setTimeout(() => spSrvEnsure(), 160);
+    return;
+  }
+  spSrvPaint(reset);
+  spSrvEnsure();
+}
+function spSrvFail(){
+  spSrvFailed = true; spSrv = null;
+  if (!fullIndex) loadFullIndex();
+  spRender(true);
+}
+
 function spRender(reset = true){
   if (reset) spShown = 30;
   const q = document.getElementById("spQ").value.trim().normalize("NFKC").toLowerCase();
+  if (spSrvActive()) { spRenderServer(reset); return; }
   // Never paint the embedded sample as search results: its population, order
   // and prices differ from the verified full snapshot. Keep controls and the
   // explicit loading/error + retry region visible until one atomic commit.
@@ -3139,7 +3341,7 @@ function openSearchPreset(f){
   openSearch();
 }
 function openSearchShop(name){
-  if (!fullIndex) loadFullIndex();
+  if (!fullIndex && !spSrvEnabled()) loadFullIndex();
   spFilter = "all";
   document.getElementById("spChips").querySelectorAll(".chip").forEach(y => y.classList.toggle("on", y.dataset.f === "all"));
   spCatMode = null; spRelClear();
@@ -3150,7 +3352,7 @@ function openSearchShop(name){
   openSearch();
 }
 function openSearchTag(t){
-  if (!fullIndex) loadFullIndex();
+  if (!fullIndex && !spSrvEnabled()) loadFullIndex();
   spFilter = "all";
   document.getElementById("spChips").querySelectorAll(".chip").forEach(y => y.classList.toggle("on", y.dataset.f === "all"));
   spCatMode = null; spRelClear(); spShopMode = null; imgClearMode();
@@ -3160,7 +3362,7 @@ function openSearchTag(t){
   openSearch();
 }
 function openSearchCat(raw){
-  if (!fullIndex) loadFullIndex();
+  if (!fullIndex && !spSrvEnabled()) loadFullIndex();
   spFilter = "all";
   document.getElementById("spChips").querySelectorAll(".chip").forEach(y => y.classList.toggle("on", y.dataset.f === "all"));
   document.getElementById("spQ").value = "";
@@ -3452,7 +3654,7 @@ function spCatRender(){
   host.innerHTML = raws.map(raw => `<button class="kw" data-cat="${esc(raw)}">${esc(catLabelL(raw))}</button>`).join("");
   host.querySelectorAll(".kw").forEach(k => {
     k.onclick = () => {
-      if (!fullIndex) loadFullIndex();
+      if (!fullIndex && !spSrvEnabled()) loadFullIndex();
       spCatMode = spCatMode === k.dataset.cat ? null : k.dataset.cat;
       spCatSync();
       spRender();
