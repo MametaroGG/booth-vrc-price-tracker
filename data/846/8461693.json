@@ -457,10 +457,23 @@
         "date": "2026-11-18",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-19",
+        "price": 100,
+        "is_sale": true
+      }
+    ],
+    "Milche(ミルシェ)": [
+      {
+        "date": "2026-11-19",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14123484": "default"
+    "14123484": "default",
+    "15309748": "Milche(ミルシェ)"
   }
 }

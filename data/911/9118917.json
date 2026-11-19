@@ -7,11 +7,21 @@
         "date": "2026-11-18",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-19",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "フルパッケージ【11音源】": [
       {
         "date": "2026-11-18",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-19",
         "price": 2000,
         "is_sale": false
       }
@@ -21,8 +31,16 @@
         "date": "2026-11-18",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-19",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15219472": "基礎パッケージ【2音源】",
+    "15219494": "フルパッケージ【11音源】"
+  }
 }
