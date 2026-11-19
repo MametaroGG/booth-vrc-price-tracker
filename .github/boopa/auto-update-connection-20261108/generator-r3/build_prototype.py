@@ -2655,7 +2655,7 @@ async function openItemSmart(id){
 function plainCard(x, i){
   if (hiddenItem(x.id)) return "";
   return `<div class="card" data-pid="${x.id}">
-    <a class="thumbwrap" href="${itemUrl(x.id)}" target="_blank" rel="noopener"><span class="noimg">${PH_ICON}</span>${bmFlag(x.id)}</a>
+    <a class="thumbwrap" href="${itemUrl(x.id)}" target="_blank" rel="noopener">${x.image ? `<img decoding="async" src="${x.image}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="imgPh(this,'phcard')">` : `<span class="phcard" data-fill="${x.id}">${PH_ICON}</span>`}${bmFlag(x.id)}</a>
     <div class="cbody">
       <div class="cname"><a href="${itemUrl(x.id)}" target="_blank" rel="noopener">${esc(x.name)}</a></div>
       <div class="cshop"${x.shop ? ` data-shop="${esc(x.shop)}"` : ""}>${esc(x.shop || "")}</div>
