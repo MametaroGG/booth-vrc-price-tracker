@@ -344,11 +344,21 @@
         "date": "2026-11-19",
         "price": 3900,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-20",
+        "price": 3900,
+        "is_sale": false
       }
     ],
     "水瀬 - Minase": [
       {
         "date": "2026-11-19",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-20",
         "price": 2000,
         "is_sale": false
       }
@@ -358,11 +368,21 @@
         "date": "2026-11-19",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-20",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "斑霞 - Hanka": [
       {
         "date": "2026-11-19",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-20",
         "price": 2000,
         "is_sale": false
       }
@@ -372,11 +392,21 @@
         "date": "2026-11-19",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-20",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "泣夜 - Nakiya": [
       {
         "date": "2026-11-19",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-20",
         "price": 2000,
         "is_sale": false
       }
@@ -386,11 +416,21 @@
         "date": "2026-11-19",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-20",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "彼方 - Kanata": [
       {
         "date": "2026-11-19",
+        "price": 2000,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-20",
         "price": 2000,
         "is_sale": false
       }
@@ -400,6 +440,11 @@
         "date": "2026-11-19",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-20",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "ヴラウ - Vlau": [
@@ -407,8 +452,24 @@
         "date": "2026-11-19",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-20",
+        "price": 2000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "10266733": "フルセット - FullSet",
+    "15300184": "水瀬 - Minase",
+    "15300185": "狛乃 - Komano",
+    "15300186": "斑霞 - Hanka",
+    "15300187": "アルエ - Alué (+Head)",
+    "15300188": "泣夜 - Nakiya",
+    "15300189": "ゼヴ - Zev / (珍飯亭素体V3)",
+    "15300190": "彼方 - Kanata",
+    "15300191": "紗夜 - Suzuya",
+    "15300192": "ヴラウ - Vlau"
+  }
 }

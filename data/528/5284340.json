@@ -892,10 +892,31 @@
         "date": "2026-11-19",
         "price": 1180,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-20",
+        "price": 820,
+        "is_sale": true
+      }
+    ],
+    "-MameFriends- 定価 1,180 JPY": [
+      {
+        "date": "2026-11-20",
+        "price": 720,
+        "is_sale": false
+      }
+    ],
+    "-BAMi 1.0 & BAMi_Body2- 定価 1,180 JPY": [
+      {
+        "date": "2026-11-20",
+        "price": 720,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "8911439": "default"
+    "8911439": "default",
+    "15314062": "-MameFriends- 定価 1,180 JPY",
+    "15314063": "-BAMi 1.0 & BAMi_Body2- 定価 1,180 JPY"
   }
 }
