@@ -83,8 +83,9 @@ def connect(plan,output,env,modules,*,execution_kind):
  retention=load('generation_candidate_retention',Path(__file__).parent/'retain_validated_candidate.py')
  workflow_sha=env.get('GITHUB_WORKFLOW_SHA')
  if not (type(workflow_sha) is str and re.fullmatch(r'[0-9a-f]{40}',workflow_sha)):workflow_sha=None
- inventory_path=Path(plan['acquisition_code_directory'])/'DEPLOYMENT-CODE-INVENTORY.json'
- need(inventory_path.is_file() and not inventory_path.is_symlink(),'deployment inventory present')
+ inventory_candidates=[Path(plan['acquisition_code_directory'])/'DEPLOYMENT-CODE-INVENTORY.json',Path(plan['acquisition_code_directory']).parent/'DEPLOYMENT-CODE-INVENTORY.json']
+ inventory_path=next((p for p in inventory_candidates if p.is_file() and not p.is_symlink()),None)
+ need(inventory_path is not None,'deployment inventory present')
  generation_code={'schema':'boopa-generation-code-r1','workflow_sha':workflow_sha,'code_inventory_sha256':sha(inventory_path.read_bytes())}
  retained=retention.run(reference(output/'generated/PUBLISH-REQUEST.json'),plan['integration_code_groups']['publisher'],output/'retained-candidate',generation_code)
  receipt={'schema':'boopa-actions-generation-entry-result-r1','execution_kind':execution_kind,'acquisition_complete':reference(acquisition_out/'COMPLETE.json'),'prior_observation':prior_ref,'latest_observation':reference(evidence/identities['latest_observation']['path']),'integration_plan':ip,'publish_request':reference(output/'generated/PUBLISH-REQUEST.json'),'retained_candidate':retained,'publication_performed':False,'publish_token_read':False,'provider_authenticated':False,'source_runner_independent_review':'NOT-ACCEPTED-CONTENT-FLAG','scope':'Concrete read entry call sequence returned; no independent provider authentication, full runtime deployment or release acceptance inferred.'}
