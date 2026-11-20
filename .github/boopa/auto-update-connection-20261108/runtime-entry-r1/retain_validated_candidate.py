@@ -43,7 +43,7 @@ def public_paths():
     return set(names) | {'snapshot-manifest.json'}
 
 
-def prepare_export(request, publisher, summary, output):
+def prepare_export(request, publisher, summary, output, generation_code=None):
     """Serialization seam; production run() always invokes real preflight first."""
     output = Path(output)
     need(output.is_absolute() and output.parent.resolve() == output.parent
@@ -81,6 +81,16 @@ def prepare_export(request, publisher, summary, output):
                     'scope': 'Existing release validator returned for these exact candidate bytes; no source review, freshness, publication or coverage acceptance.'}
     payloads = {'candidate/' + name: raw for name, raw in site.items()}
     payloads['verification.json'] = (json.dumps(verification, sort_keys=True, indent=2) + '\n').encode()
+    if generation_code is not None:
+        need(type(generation_code) is dict and set(generation_code) == {'schema', 'workflow_sha', 'code_inventory_sha256'}
+             and generation_code['schema'] == 'boopa-generation-code-r1'
+             and (generation_code['workflow_sha'] is None
+                  or (type(generation_code['workflow_sha']) is str
+                      and re.fullmatch('[0-9a-f]{40}', generation_code['workflow_sha'])))
+             and type(generation_code['code_inventory_sha256']) is str
+             and re.fullmatch('[0-9a-f]{64}', generation_code['code_inventory_sha256']),
+             'generation code record differs')
+        payloads['GENERATION-CODE.json'] = (json.dumps(generation_code, sort_keys=True, indent=2) + '\n').encode()
     inventory = {'schema': 'boopa-retained-candidate-inventory-r1',
                  'files': {name: {'bytes': len(raw), 'sha256': sha(raw)} for name, raw in sorted(payloads.items())},
                  'candidate_snapshot_sha256': request['candidate_pin'], 'public_files': len(site),
@@ -101,14 +111,14 @@ def prepare_export(request, publisher, summary, output):
     return {'path': str(output / 'EXPORT.json'), 'sha256': sha(payloads['EXPORT.json'])}
 
 
-def run(request_ref, publisher_group, output):
+def run(request_ref, publisher_group, output, generation_code=None):
     # There is no injected publisher or success shortcut in the production entry.
     connection = load_verified('retention_existing_release_connection', ROOT / 'release_connection.py', CONNECTOR_PIN)
     publisher = connection.load_verified_publisher(Path(publisher_group['directory']), publisher_group['freeze'])
     request = connection.load_request(request_ref['path'], request_ref['sha256'])
     need(request['publisher_freeze'] == publisher_group['freeze'], 'request publisher differs')
     summary = connection.read_only_preflight(request_ref['path'], request_ref['sha256'], publisher)
-    result = prepare_export(request, publisher, summary, output)
+    result = prepare_export(request, publisher, summary, output, generation_code)
     print(json.dumps({'release_preflight': 'existing-publisher-validation-returned',
                       'candidate_snapshot_sha256': request['candidate_pin'],
                       'retained_export_sha256': result['sha256'],
