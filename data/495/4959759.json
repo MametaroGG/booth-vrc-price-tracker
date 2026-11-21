@@ -892,10 +892,23 @@
         "date": "2026-11-20",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 100,
+        "is_sale": false
+      }
+    ],
+    "V2.0": [
+      {
+        "date": "2026-11-22",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "8338615": "default"
+    "8338615": "default",
+    "15324039": "V2.0"
   }
 }
