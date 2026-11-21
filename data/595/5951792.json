@@ -902,10 +902,23 @@
         "date": "2026-11-20",
         "price": 990,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 720,
+        "is_sale": true
+      }
+    ],
+    "-MameFriends- 定価 980 JPY": [
+      {
+        "date": "2026-11-21",
+        "price": 680,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "10056591": "default"
+    "10056591": "default",
+    "15318771": "-MameFriends- 定価 980 JPY"
   }
 }
