@@ -897,6 +897,11 @@
         "date": "2026-11-20",
         "price": 3000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 3000,
+        "is_sale": false
       }
     ],
     "Sanatia": [
@@ -1827,6 +1832,11 @@
       },
       {
         "date": "2026-11-20",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 1400,
         "is_sale": false
       }
@@ -2761,6 +2771,11 @@
         "date": "2026-11-20",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "Lapwing": [
@@ -3691,6 +3706,11 @@
       },
       {
         "date": "2026-11-20",
+        "price": 1400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 1400,
         "is_sale": false
       }
@@ -4625,6 +4645,11 @@
         "date": "2026-11-20",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "MilkCoffee": [
@@ -5557,6 +5582,11 @@
         "date": "2026-11-20",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "Fullset+MilkCoffee≪Fullset BoothFesセール≫": [
@@ -5595,6 +5625,13 @@
         "price": 2400,
         "is_sale": true
       }
+    ],
+    "Comulu": [
+      {
+        "date": "2026-11-21",
+        "price": 1400,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
@@ -5603,6 +5640,7 @@
     "12413166": "Marycia",
     "12413167": "Lapwing",
     "12413168": "Rurune",
-    "12413169": "MilkCoffee"
+    "12413169": "MilkCoffee",
+    "15322149": "Comulu"
   }
 }
