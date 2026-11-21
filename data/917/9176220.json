@@ -7,11 +7,21 @@
         "date": "2026-11-19",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 350,
+        "is_sale": false
       }
     ],
     "Full Pack + 💖": [
       {
         "date": "2026-11-19",
+        "price": 450,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 450,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-11-19",
         "price": 7000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 7000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15304944": "Full Pack",
+    "15310620": "Full Pack + 💖",
+    "15310621": "Full Pack+Business Purposes"
+  }
 }

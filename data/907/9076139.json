@@ -52,10 +52,31 @@
         "date": "2026-11-19",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 1000,
+        "is_sale": false
+      }
+    ],
+    "Bracelet Parts": [
+      {
+        "date": "2026-11-21",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Acc Parts": [
+      {
+        "date": "2026-11-21",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15154600": "default"
+    "15154600": "default",
+    "15316467": "Bracelet Parts",
+    "15316468": "Acc Parts"
   }
 }

@@ -7,11 +7,21 @@
         "date": "2026-11-19",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "[マヌカ] Manuka": [
       {
         "date": "2026-11-19",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 700,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-11-19",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "[まよ] Mayo": [
       {
         "date": "2026-11-19",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 700,
         "is_sale": false
       }
@@ -35,11 +55,21 @@
         "date": "2026-11-19",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "[森羅] Shinra": [
       {
         "date": "2026-11-19",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 700,
         "is_sale": false
       }
@@ -56,8 +86,45 @@
         "date": "2026-11-19",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 1600,
+        "is_sale": false
+      }
+    ],
+    "[エク / ミルフィ ] Eku / Milfy": [
+      {
+        "date": "2026-11-21",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "[フィユエ ] Fyuett": [
+      {
+        "date": "2026-11-21",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "[ヴィヴィアン] Vivian": [
+      {
+        "date": "2026-11-21",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15305298": "[ルミナ] Lumina",
+    "15311363": "[マヌカ] Manuka",
+    "15311364": "[マリシア] Marycia",
+    "15311365": "[まよ] Mayo",
+    "15311366": "[しなの] Shinano",
+    "15311367": "[森羅] Shinra",
+    "15311368": "[ヴィヴィアン] Vivian",
+    "15311369": "[フルパック] Full package",
+    "15319422": "[エク / ミルフィ ] Eku / Milfy",
+    "15319423": "[フィユエ ] Fyuett"
+  }
 }

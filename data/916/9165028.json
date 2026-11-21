@@ -12,6 +12,11 @@
         "date": "2026-11-19",
         "price": 1400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 1400,
+        "is_sale": false
       }
     ],
     "ASH": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-11-19",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 800,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-11-19",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "マヌカ": [
@@ -46,6 +61,11 @@
       },
       {
         "date": "2026-11-19",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 800,
         "is_sale": false
       }
@@ -60,6 +80,11 @@
         "date": "2026-11-19",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "真冬": [
@@ -70,6 +95,11 @@
       },
       {
         "date": "2026-11-19",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 800,
         "is_sale": false
       }
@@ -84,6 +114,11 @@
         "date": "2026-11-19",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "しなの": [
@@ -96,8 +131,22 @@
         "date": "2026-11-19",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 800,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15288214": "フルパック",
+    "15289263": "ASH",
+    "15289264": "Lapwing",
+    "15289265": "マヌカ",
+    "15289266": "ルルネ",
+    "15289267": "真冬",
+    "15289268": "ミルフィ&エク",
+    "15289269": "しなの"
+  }
 }

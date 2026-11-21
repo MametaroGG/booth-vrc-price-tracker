@@ -7,11 +7,21 @@
         "date": "2026-11-19",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Dark Tones": [
       {
         "date": "2026-11-19",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 350,
         "is_sale": false
       }
@@ -21,8 +31,17 @@
         "date": "2026-11-19",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 350,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15305404": "FULLPACK",
+    "15305627": "Dark Tones",
+    "15305628": "Light Tones"
+  }
 }

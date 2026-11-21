@@ -7,11 +7,21 @@
         "date": "2026-11-19",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "ルミナ": [
       {
         "date": "2026-11-19",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 1600,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-11-19",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "しなの": [
       {
         "date": "2026-11-19",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 1600,
         "is_sale": false
       }
@@ -35,11 +55,21 @@
         "date": "2026-11-19",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "Mumus": [
       {
         "date": "2026-11-19",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 1600,
         "is_sale": false
       }
@@ -49,6 +79,11 @@
         "date": "2026-11-19",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "フルパック": [
@@ -56,8 +91,22 @@
         "date": "2026-11-19",
         "price": 3500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 3500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15288176": "森羅",
+    "15288188": "ルミナ",
+    "15288189": "海咲",
+    "15288190": "しなの",
+    "15288191": "Lapwing",
+    "15288192": "Mumus",
+    "15288193": "Marycia",
+    "15288197": "フルパック"
+  }
 }

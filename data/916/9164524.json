@@ -34,6 +34,11 @@
         "date": "2026-11-19",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "⯌MAKE UP only⯌": [
@@ -49,6 +54,11 @@
       },
       {
         "date": "2026-11-19",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
         "price": 300,
         "is_sale": false
       }
@@ -68,10 +78,23 @@
         "date": "2026-11-19",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "⯌Donation⯌": [
+      {
+        "date": "2026-11-21",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "15287459": "⯌Donation⯌",
     "15287532": "⯌EYE only⯌",
     "15287533": "⯌MAKE UP only⯌",
     "15287534": "⯌FULL⯌"

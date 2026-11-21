@@ -7,6 +7,11 @@
         "date": "2026-11-19",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "支援代（中身は変わりません）": [
@@ -14,8 +19,16 @@
         "date": "2026-11-19",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-21",
+        "price": 700,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15206314": "薔薇のテクスチャ",
+    "15206336": "支援代（中身は変わりません）"
+  }
 }
