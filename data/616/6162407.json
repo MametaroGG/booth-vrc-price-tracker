@@ -47,6 +47,11 @@
         "date": "2026-05-10",
         "price": 1650,
         "is_sale": true
+      },
+      {
+        "date": "2026-11-21",
+        "price": 1650,
+        "is_sale": false
       }
     ],
     "Unityパッケージのみ": [
@@ -94,6 +99,11 @@
         "date": "2026-05-10",
         "price": 1050,
         "is_sale": true
+      },
+      {
+        "date": "2026-11-21",
+        "price": 1050,
+        "is_sale": false
       }
     ],
     "Blenderファイルのみ": [
@@ -141,7 +151,17 @@
         "date": "2026-05-10",
         "price": 600,
         "is_sale": true
+      },
+      {
+        "date": "2026-11-21",
+        "price": 600,
+        "is_sale": false
       }
     ]
+  },
+  "variation_keys": {
+    "10407261": "Unityパッケージ+Blenderファイル",
+    "10629557": "Unityパッケージのみ",
+    "10629558": "Blenderファイルのみ"
   }
 }
