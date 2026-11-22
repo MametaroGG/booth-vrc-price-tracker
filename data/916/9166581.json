@@ -34,10 +34,23 @@
         "date": "2026-11-21",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "通常版": [
+      {
+        "date": "2026-11-22",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
+    "15290597": "通常版",
     "15290734": "支援版"
   }
 }

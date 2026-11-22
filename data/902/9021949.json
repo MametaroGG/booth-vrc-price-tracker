@@ -59,6 +59,11 @@
         "date": "2026-11-21",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "⟡ : Donate（おまけtexture付き）": [
@@ -106,12 +111,33 @@
         "date": "2026-11-21",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "✦ : BLACK FRIDAY（11/21～11/23）通常版": [
+      {
+        "date": "2026-11-22",
+        "price": 250,
+        "is_sale": false
+      }
+    ],
+    "✦ : BLACK FRIDAY（11/21～11/23）Donate": [
+      {
+        "date": "2026-11-22",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "15071205": "⟡ : 通常版",
     "15071229": "⟡ : Donate（おまけtexture付き）",
-    "15223930": "⟡ : SALE 通常版"
+    "15223930": "⟡ : SALE 通常版",
+    "15331682": "✦ : BLACK FRIDAY（11/21～11/23）通常版",
+    "15331757": "✦ : BLACK FRIDAY（11/21～11/23）Donate"
   }
 }

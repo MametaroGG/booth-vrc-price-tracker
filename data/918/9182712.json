@@ -7,10 +7,31 @@
         "date": "2026-11-21",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Miriam": [
+      {
+        "date": "2026-11-22",
+        "price": 350,
+        "is_sale": false
+      }
+    ],
+    "Vivian": [
+      {
+        "date": "2026-11-22",
+        "price": 350,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15314815": "default"
+    "15314815": "default",
+    "15332721": "Miriam",
+    "15332722": "Vivian"
   }
 }

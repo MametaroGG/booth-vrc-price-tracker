@@ -22,6 +22,11 @@
         "date": "2026-11-21",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "しなの対応　（for Shinano）　定価1000円": [
@@ -42,6 +47,11 @@
       },
       {
         "date": "2026-11-21",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
         "price": 500,
         "is_sale": false
       }
@@ -66,6 +76,11 @@
         "date": "2026-11-21",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "愛莉対応　(for Airi)　定価1000円": [
@@ -86,6 +101,11 @@
       },
       {
         "date": "2026-11-21",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
         "price": 500,
         "is_sale": false
       }
@@ -110,6 +130,11 @@
         "date": "2026-11-21",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "エク＆ミルフィ対応　（for EKU＆Milfy）　定価1000円": [
@@ -130,6 +155,11 @@
       },
       {
         "date": "2026-11-21",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
         "price": 500,
         "is_sale": false
       }
@@ -154,6 +184,11 @@
         "date": "2026-11-21",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "ルルネ・瑞希・輝夜対応（瑞希合わせ）　（for Rurune / Mizuki / Kaguya）　定価1000円": [
@@ -174,6 +209,11 @@
       },
       {
         "date": "2026-11-21",
+        "price": 500,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
         "price": 500,
         "is_sale": false
       }
@@ -198,8 +238,30 @@
         "date": "2026-11-21",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "利用規約": [
+      {
+        "date": "2026-11-22",
+        "price": 0,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15263105": "フルセット　定価2000円",
+    "15281921": "しなの対応　（for Shinano）　定価1000円",
+    "15281922": "ミルティナ対応　（for Milltina）定価1000円",
+    "15281923": "愛莉対応　(for Airi)　定価1000円",
+    "15281924": "マヌカ対応　（for MANUKA）定価1000円",
+    "15281925": "エク＆ミルフィ対応　（for EKU＆Milfy）　定価1000円",
+    "15281926": "Sio対応　（for Sio）　定価1000円",
+    "15281927": "ルルネ・瑞希・輝夜対応（瑞希合わせ）　（for Rurune / Mizuki / Kaguya）　定価1000円",
+    "15281928": "シフォン・ライム・ショコラ対応（ライム合わせ）　（for Chiffon / Lime / Chocolat）　定価1000円"
+  }
 }

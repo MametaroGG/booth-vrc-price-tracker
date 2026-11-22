@@ -159,6 +159,11 @@
         "date": "2026-11-21",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "⟡ : Donate（内容は変わりません）": [
@@ -306,11 +311,24 @@
         "date": "2026-11-21",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "✦ : BLACK FRIDAY（11/21～11/23）": [
+      {
+        "date": "2026-11-22",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "15033381": "⟡ : 通常版",
-    "15033546": "⟡ : Donate（内容は変わりません）"
+    "15033546": "⟡ : Donate（内容は変わりません）",
+    "15331703": "✦ : BLACK FRIDAY（11/21～11/23）"
   }
 }

@@ -7,12 +7,22 @@
         "date": "2026-11-21",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 1500,
+        "is_sale": false
       }
     ],
     "shinano": [
       {
         "date": "2026-11-21",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 600,
         "is_sale": false
       }
     ],
@@ -21,12 +31,22 @@
         "date": "2026-11-21",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "rurune": [
       {
         "date": "2026-11-21",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 600,
         "is_sale": false
       }
     ],
@@ -35,12 +55,22 @@
         "date": "2026-11-21",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "lapwing": [
       {
         "date": "2026-11-21",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 600,
         "is_sale": false
       }
     ],
@@ -49,12 +79,22 @@
         "date": "2026-11-21",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 600,
+        "is_sale": false
       }
     ],
     "SiuSiu": [
       {
         "date": "2026-11-21",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 600,
         "is_sale": false
       }
     ],
@@ -63,8 +103,23 @@
         "date": "2026-11-21",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15296214": "fullset",
+    "15296289": "shinano",
+    "15296290": "sio",
+    "15296291": "rurune",
+    "15296292": "まめフレ",
+    "15296293": "lapwing",
+    "15296294": "siroino",
+    "15296295": "SiuSiu",
+    "15296296": "シャンバラ"
+  }
 }

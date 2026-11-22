@@ -197,10 +197,23 @@
         "date": "2026-11-21",
         "price": 5000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 1660,
+        "is_sale": true
+      }
+    ],
+    "Developer Version": [
+      {
+        "date": "2026-11-22",
+        "price": 5000,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14877158": "default"
+    "14877158": "default",
+    "15334407": "Developer Version"
   }
 }

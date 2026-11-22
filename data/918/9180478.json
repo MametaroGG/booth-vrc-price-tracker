@@ -7,10 +7,23 @@
         "date": "2026-11-21",
         "price": 150,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 150,
+        "is_sale": false
+      }
+    ],
+    "お駄賃（内容物同一）": [
+      {
+        "date": "2026-11-22",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15311632": "default"
+    "15311632": "default",
+    "15327249": "お駄賃（内容物同一）"
   }
 }

@@ -57,6 +57,11 @@
         "date": "2026-11-21",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "マヌカ対応版": [
@@ -112,6 +117,11 @@
       },
       {
         "date": "2026-11-21",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
         "price": 400,
         "is_sale": false
       }
@@ -171,12 +181,49 @@
         "date": "2026-11-21",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "Shinano": [
+      {
+        "date": "2026-11-22",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "Marycia": [
+      {
+        "date": "2026-11-22",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "MameFriends": [
+      {
+        "date": "2026-11-22",
+        "price": 400,
+        "is_sale": false
+      }
+    ],
+    "+Head": [
+      {
+        "date": "2026-11-22",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "12309753": "汎用版",
     "15171875": "アバター対応版",
-    "15194851": "マヌカ対応版"
+    "15194851": "マヌカ対応版",
+    "15331828": "Shinano",
+    "15331829": "Marycia",
+    "15331830": "MameFriends",
+    "15331831": "+Head"
   }
 }

@@ -27,6 +27,11 @@
         "date": "2026-11-21",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Manuka": [
@@ -53,6 +58,11 @@
       {
         "date": "2026-11-21",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 200,
         "is_sale": false
       }
     ],
@@ -81,6 +91,11 @@
         "date": "2026-11-21",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Kaguya": [
@@ -107,6 +122,11 @@
       {
         "date": "2026-11-21",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 200,
         "is_sale": false
       }
     ],
@@ -135,6 +155,11 @@
         "date": "2026-11-21",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Milfy & Eku": [
@@ -161,6 +186,11 @@
       {
         "date": "2026-11-21",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 200,
         "is_sale": false
       }
     ],
@@ -189,6 +219,11 @@
         "date": "2026-11-21",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "Yumeka": [
@@ -215,6 +250,11 @@
       {
         "date": "2026-11-21",
         "price": 0,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 200,
         "is_sale": false
       }
     ],
@@ -243,8 +283,23 @@
         "date": "2026-11-21",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-22",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15263844": "Shinano",
+    "15263845": "Manuka",
+    "15263846": "Salt",
+    "15263847": "Kaguya",
+    "15263848": "Chocolat",
+    "15263849": "Milfy & Eku",
+    "15263850": "Lumina",
+    "15263851": "Yumeka",
+    "15263852": "Fullpack"
+  }
 }
