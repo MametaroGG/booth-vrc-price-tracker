@@ -7,11 +7,21 @@
         "date": "2026-11-22",
         "price": 3600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 3600,
+        "is_sale": false
       }
     ],
     "森羅：Shinra": [
       {
         "date": "2026-11-22",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
         "price": 1600,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-11-22",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 1600,
+        "is_sale": false
       }
     ],
     "ルミナ：Lumina": [
       {
         "date": "2026-11-22",
+        "price": 1600,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
         "price": 1600,
         "is_sale": false
       }
@@ -35,8 +55,19 @@
         "date": "2026-11-22",
         "price": 1600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 1600,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15329190": "Full Pack (4Avatars)",
+    "15329255": "森羅：Shinra",
+    "15329256": "しなの：Shinano",
+    "15329257": "ルミナ：Lumina",
+    "15329258": "海咲：Misaki"
+  }
 }

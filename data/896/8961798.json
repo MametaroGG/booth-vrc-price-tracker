@@ -188,9 +188,24 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "Free / 無料": [
+      {
+        "date": "2026-11-23",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "Free + Tip ¥300 / 無料＋投げ銭": [
+      {
+        "date": "2026-11-23",
+        "price": 300,
+        "is_sale": false
+      }
     ]
   },
   "variation_keys": {
-    "14974762": "default"
+    "14974762": "default",
+    "15339683": "Free + Tip ¥300 / 無料＋投げ銭"
   }
 }

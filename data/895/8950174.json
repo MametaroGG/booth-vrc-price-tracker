@@ -8,7 +8,24 @@
         "price": 700,
         "is_sale": false
       }
+    ],
+    "通常版": [
+      {
+        "date": "2026-11-23",
+        "price": 700,
+        "is_sale": false
+      }
+    ],
+    "応援版（中身は通常と同じ）": [
+      {
+        "date": "2026-11-23",
+        "price": 1400,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "14956241": "通常版",
+    "15335270": "応援版（中身は通常と同じ）"
+  }
 }

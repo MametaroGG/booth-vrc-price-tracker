@@ -159,6 +159,11 @@
         "date": "2026-11-01",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 0,
+        "is_sale": false
       }
     ],
     "使用説明": [
@@ -239,7 +244,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "BlendShapeExtension": [
+      {
+        "date": "2026-11-23",
+        "price": 500,
+        "is_sale": false
+      }
+    ],
+    "デモおよび使用説明書": [
+      {
+        "date": "2026-11-23",
+        "price": 0,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15044487": "BlendShapeExtension"
+  }
 }

@@ -8,7 +8,23 @@
         "price": 0,
         "is_sale": false
       }
+    ],
+    "無料版": [
+      {
+        "date": "2026-11-23",
+        "price": 0,
+        "is_sale": false
+      }
+    ],
+    "通常販売価格": [
+      {
+        "date": "2026-11-23",
+        "price": 500,
+        "is_sale": false
+      }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15343840": "通常販売価格"
+  }
 }

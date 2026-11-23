@@ -12,6 +12,11 @@
         "date": "2026-11-22",
         "price": 2000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 2000,
+        "is_sale": false
       }
     ],
     "Lasyusha": [
@@ -22,6 +27,11 @@
       },
       {
         "date": "2026-11-22",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
         "price": 1100,
         "is_sale": false
       }
@@ -36,6 +46,11 @@
         "date": "2026-11-22",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 1100,
+        "is_sale": false
       }
     ],
     "Lapwing": [
@@ -46,6 +61,11 @@
       },
       {
         "date": "2026-11-22",
+        "price": 1100,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
         "price": 1100,
         "is_sale": false
       }
@@ -60,8 +80,19 @@
         "date": "2026-11-22",
         "price": 1100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 1100,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15311183": "フルセット",
+    "15311960": "Lasyusha",
+    "15311961": "Shinano",
+    "15311962": "Lapwing",
+    "15311963": "Marycia"
+  }
 }

@@ -92,8 +92,15 @@
         "date": "2026-11-22",
         "price": 0,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15123812": "default"
+  }
 }

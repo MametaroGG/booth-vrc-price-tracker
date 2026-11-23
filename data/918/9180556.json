@@ -12,6 +12,11 @@
         "date": "2026-11-22",
         "price": 100,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 100,
+        "is_sale": false
       }
     ],
     "SAKURA": [
@@ -24,11 +29,32 @@
         "date": "2026-11-22",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "RAIN": [
+      {
+        "date": "2026-11-23",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "RIVER": [
+      {
+        "date": "2026-11-23",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "15311736": "CHRISTMAS",
-    "15311997": "SAKURA"
+    "15311997": "SAKURA",
+    "15339590": "RAIN",
+    "15339591": "RIVER"
   }
 }

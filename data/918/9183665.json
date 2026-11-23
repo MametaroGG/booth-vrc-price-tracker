@@ -12,10 +12,31 @@
         "date": "2026-11-22",
         "price": 2500,
         "is_sale": true
+      },
+      {
+        "date": "2026-11-23",
+        "price": 2500,
+        "is_sale": false
+      }
+    ],
+    "Mens": [
+      {
+        "date": "2026-11-23",
+        "price": 1500,
+        "is_sale": false
+      }
+    ],
+    "Ladies": [
+      {
+        "date": "2026-11-23",
+        "price": 1500,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15316306": "default"
+    "15316306": "default",
+    "15335598": "Mens",
+    "15335599": "Ladies"
   }
 }
