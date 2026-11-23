@@ -382,6 +382,11 @@
         "date": "2026-10-19",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "M-NAIL-01 : Adapted for Misaki": [
@@ -764,6 +769,11 @@
         "date": "2026-10-19",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 600,
+        "is_sale": true
       }
     ],
     "M-NAIL-01 : Complete Archive": [
@@ -1146,12 +1156,33 @@
         "date": "2026-10-19",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-23",
+        "price": 1200,
+        "is_sale": false
+      }
+    ],
+    "M-NAIL-01 : Adapted for Lumina": [
+      {
+        "date": "2026-11-23",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "M-NAIL-01 : Adapted for Shinano": [
+      {
+        "date": "2026-11-23",
+        "price": 600,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "13970926": "M-NAIL-01 : Adapted for Mao",
     "13971005": "M-NAIL-01 : Adapted for Misaki",
-    "13971006": "M-NAIL-01 : Complete Archive"
+    "13971006": "M-NAIL-01 : Complete Archive",
+    "15351441": "M-NAIL-01 : Adapted for Lumina",
+    "15351442": "M-NAIL-01 : Adapted for Shinano"
   }
 }
