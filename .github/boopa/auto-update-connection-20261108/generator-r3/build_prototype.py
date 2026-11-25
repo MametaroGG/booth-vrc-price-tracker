@@ -848,7 +848,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   .bmgrid>*{min-width:0}
   .bmgrid.frozen .bmcard:nth-child(n+5){display:none}
   .bmcard{display:block;text-decoration:none;color:var(--text);min-width:0}
-  .bmcard .bmimg{position:relative;display:block;border-radius:8px;overflow:hidden;background:#131316}
+  .bmcard .bmimg{position:relative;display:block;border-radius:8px 8px 0 0;overflow:hidden;background:#131316}
   .bmcard .bmimg img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
   .bmcard .bmimg .pph{display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1/1;background:#1b1b1f}
   .bmcard .bmimg .pph svg{width:34px;height:34px;stroke:#2c2c33;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
