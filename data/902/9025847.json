@@ -132,10 +132,23 @@
         "date": "2026-11-23",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-25",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Vinyl lounge_unbaked texture": [
+      {
+        "date": "2026-11-25",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15077390": "default"
+    "15077390": "default",
+    "15353868": "Vinyl lounge_unbaked texture"
   }
 }

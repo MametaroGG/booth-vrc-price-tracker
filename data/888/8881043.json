@@ -222,10 +222,23 @@
         "date": "2026-11-23",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-25",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "attic_room2_unbaked texture": [
+      {
+        "date": "2026-11-25",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14840934": "default"
+    "14840934": "default",
+    "15361414": "attic_room2_unbaked texture"
   }
 }

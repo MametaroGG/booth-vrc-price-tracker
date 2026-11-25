@@ -92,10 +92,23 @@
         "date": "2026-11-23",
         "price": 900,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-25",
+        "price": 900,
+        "is_sale": false
+      }
+    ],
+    "Observatory_unbaked_texture": [
+      {
+        "date": "2026-11-25",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15146258": "default"
+    "15146258": "default",
+    "15350817": "Observatory_unbaked_texture"
   }
 }
