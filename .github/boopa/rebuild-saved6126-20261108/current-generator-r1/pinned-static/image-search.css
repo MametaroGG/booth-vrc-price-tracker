@@ -44,9 +44,8 @@
   .lv-wrap svg,.lv-wrap canvas{position:absolute;inset:0;width:100%;height:100%}
   .lv-wrap svg{z-index:3}
   .lv-wrap canvas{pointer-events:none;z-index:4}
-  .lv-border{filter:drop-shadow(0 0 5px rgba(255,255,255,.35))}
-  .lv-bracket{fill:none;stroke:#fff;stroke-linecap:round;filter:drop-shadow(0 1px 2px rgba(0,0,0,.55))}
-  .lv-tick{fill:#fff;filter:drop-shadow(0 1px 2px rgba(0,0,0,.5))}
+    .lv-bracket{fill:none;stroke:#fff;stroke-linecap:round}
+  .lv-tick{fill:#fff}
   .lv-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 14px;flex:none}
   .lv-tbtns{display:flex;gap:8px}
   .lv-note{margin:14px;padding:12px 14px;border:1px solid var(--border2);border-radius:10px;color:var(--sub);font-size:13px;text-align:center}
