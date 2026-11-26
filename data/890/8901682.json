@@ -222,6 +222,11 @@
         "date": "2026-11-25",
         "price": 850,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-26",
+        "price": 1000,
+        "is_sale": false
       }
     ],
     "FORMA FOUR単品": [
@@ -337,6 +342,11 @@
       },
       {
         "date": "2026-11-25",
+        "price": 700,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-26",
         "price": 700,
         "is_sale": false
       }
@@ -456,12 +466,25 @@
         "date": "2026-11-25",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-26",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "GRAVITY FOUR（拡張単品）": [
+      {
+        "date": "2026-11-26",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "14878044": "default",
     "15115977": "FORMA FOUR単品",
-    "15115978": "RELAY FOUR（拡張モード）"
+    "15115978": "RELAY FOUR（拡張モード）",
+    "15382952": "GRAVITY FOUR（拡張単品）"
   }
 }

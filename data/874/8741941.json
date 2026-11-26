@@ -277,10 +277,23 @@
         "date": "2026-11-25",
         "price": 600,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-26",
+        "price": 600,
+        "is_sale": false
+      }
+    ],
+    "Afterschool_unbaked_texture": [
+      {
+        "date": "2026-11-26",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14597884": "default"
+    "14597884": "default",
+    "15369379": "Afterschool_unbaked_texture"
   }
 }

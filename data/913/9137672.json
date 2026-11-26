@@ -47,10 +47,23 @@
         "date": "2026-11-25",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-26",
+        "price": 300,
+        "is_sale": false
+      }
+    ],
+    "Cabin_unbaked_texture": [
+      {
+        "date": "2026-11-26",
+        "price": 150,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "15247765": "default"
+    "15247765": "default",
+    "15367952": "Cabin_unbaked_texture"
   }
 }
