@@ -332,10 +332,23 @@
         "date": "2026-11-25",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-27",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "Livehall_unbaked_texture": [
+      {
+        "date": "2026-11-27",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14506992": "default"
+    "14506992": "default",
+    "15372231": "Livehall_unbaked_texture"
   }
 }

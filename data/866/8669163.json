@@ -347,10 +347,23 @@
         "date": "2026-11-25",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-27",
+        "price": 800,
+        "is_sale": false
+      }
+    ],
+    "Schoolroof_unbaked_texture": [
+      {
+        "date": "2026-11-27",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
-    "14475582": "default"
+    "14475582": "default",
+    "15386825": "Schoolroof_unbaked_texture"
   }
 }
