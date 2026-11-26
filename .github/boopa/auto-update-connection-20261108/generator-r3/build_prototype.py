@@ -1166,7 +1166,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   html[data-theme="light"] .hero-dots button{background:rgba(29,29,32,.28)}
   html[data-theme="light"] .hero-dots button.on{background:#1d1d20}
 </style>
-<link rel="stylesheet" href="image-search.css?v=20261028-results-v3">
+<link rel="stylesheet" href="image-search.css?v=20261126-lensfix-v1">
 <script>
 // DISCOUNT_DISPLAY_GUARD_START
 // Presentation only: never alter sale classification, source prices or ranking pct.
