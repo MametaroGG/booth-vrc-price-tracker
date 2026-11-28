@@ -11,7 +11,7 @@
     "mode": "unlimited",
     "limit": null,
     "used": 0,
-    "completed": false
+    "completed": true
   },
   "recoveryHistory": [
     {
@@ -46,6 +46,41 @@
         ],
         "maximumKnownBlockedUntil": 1793594689089,
         "note": "Close only the abandoned price reservation under owner-approved maintenance. Final responses remain unknown. Metadata run saved successfully. Both collector workflows disabled during repair; old queued run has no jobs. No collection or publication is initiated by this repair."
+      },
+      "accounting": "incomplete-observation-no-refund",
+      "collectionSucceeded": false
+    },
+    {
+      "type": "abandoned-reservation-closed",
+      "originalBudgetSha256": "c51e422513b8cc1532ba411388f61fa747f500d9f06fbd3ba5718d7846764cce",
+      "originalReservation": {
+        "id": "46063402218-1",
+        "mode": "unlimited",
+        "limit": null,
+        "used": 0,
+        "completed": false
+      },
+      "originalDate": "2026-11-28",
+      "originalRequests": 43412,
+      "originalBlockedUntil": 1795754423934,
+      "review": {
+        "reservationId": "46063402218-1",
+        "expectedBudgetSha256": "c51e422513b8cc1532ba411388f61fa747f500d9f06fbd3ba5718d7846764cce",
+        "priorRunStatus": "completed",
+        "activeWriters": 0,
+        "responseEvidence": "unknown",
+        "decision": "close-abandoned-reservation-with-unknown-outcome",
+        "acknowledgeLostResponseRisk": true,
+        "preserveAccounting": true,
+        "approvedBy": "repository owner",
+        "approvedAt": "2026-11-28T01:57:16.250Z",
+        "approvalTimestampMeaning": "time the prior owner approval was recorded for application, not original message time",
+        "evidenceRefs": [
+          "https://github.com/MametaroGG/booth-vrc-price-tracker/actions/runs/46063402218",
+          "https://github.com/MametaroGG/booth-vrc-price-tracker/actions/runs/46081667503"
+        ],
+        "maximumKnownBlockedUntil": 1795754423934,
+        "note": "Close only the abandoned price reservation under owner-approved maintenance. Final responses remain unknown. Scraper died mid-run (runner boopa-sg-d-1-0 lost communication); no data was saved. No collection or publication is initiated by this repair."
       },
       "accounting": "incomplete-observation-no-refund",
       "collectionSucceeded": false
