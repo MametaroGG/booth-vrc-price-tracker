@@ -41,7 +41,7 @@ def bootstrap(pipeline_pin,bindings_path,bindings_pin):
     freeze=bootstrap_json(pinned(GEN/'CONSUMER-FREEZE.json',b['consumer_freeze_sha256']))
     need({'verified_source.py','saved_snapshot_policy.py','visibility_policy.py','build_site.py'} <= set(freeze['files']),'Incomplete consumer freeze')
     for name,entry in freeze['files'].items():pinned(local_member(GEN,name),entry['sha256'])
-    dependency=bootstrap_json(pinned(DEPENDENCIES,'5e5f821b073234f9934f10138568a2441420f0c5ad10af8eedf7e41ffa8acbb2'))['generator_inventory']
+    dependency=bootstrap_json(pinned(DEPENDENCIES,'16d5c13bc0b7cddbed6e7b19e350c10eefd2cc08da2f9a89ef7b5e552b3fbd41'))['generator_inventory']
     for name,pin in dependency.items():
         if name not in freeze['files'] and name!='scripts/apply_current_price_projection.py':pinned(local_member(ASSETS,name),pin)
     return bindings_pin
@@ -65,7 +65,7 @@ def run(handoff_path,handoff_pin,prior,bindings_path,bindings_pin,approval_dir,o
     q=Path(h['quarantine_path']);ov=Path(h['overlay_path'])
     pinned(q,b['quarantine_proof_sha256']);pinned(ov,b['latest_negative_overlay_sha256'])
     approval_dir=Path(approval_dir)
-    approvals={'relation.json':'d29ebf9ad8b46f954f8128bf80676813cb937adf9f701a840aaf4337c6e8bcc7','relation-search.json':'b8acdf5b300400aad351e6ef9e103b9b8d56f160a5cf23a47c169cf196222d59','supplement.json':'a93c65b591dd9fb2c01e4621f2d671228f695bb37d31fff83ee0cf6057e0f4cc'}
+    approvals={'relation.json':'e94bf6a08b311d736e5e93b91b11af2c6e509e08246b622de3a1487e8c727b10','relation-search.json':'fb52fa9266f425fcb078421513ff0baf5b4a3db02be59ac6f5963dcfeb020aaf','supplement.json':'19ced4e9375e89bb8001d3b3be3ed19cfece019b12da564b8598343bd09b22a9'}
     for n,p in approvals.items():pinned(approval_dir/n,p)
     output=destination(output,[source,prior,GEN,ASSETS,HERE,approval_dir,Path(handoff_path).parent,Path(bindings_path).parent,Path(h['source_receipt_path']).parent,q.parent,ov.parent]);output.mkdir(mode=0o700)
     overlay=LatestNegativeOverlay(ov,b['latest_negative_overlay_sha256'],retained,run_bindings=b)
