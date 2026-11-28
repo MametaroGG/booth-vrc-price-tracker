@@ -41,7 +41,7 @@ def bootstrap(pipeline_pin,bindings_path,bindings_pin):
     freeze=bootstrap_json(pinned(GEN/'CONSUMER-FREEZE.json',b['consumer_freeze_sha256']))
     need({'verified_source.py','saved_snapshot_policy.py','visibility_policy.py','build_site.py'} <= set(freeze['files']),'Incomplete consumer freeze')
     for name,entry in freeze['files'].items():pinned(local_member(GEN,name),entry['sha256'])
-    dependency=bootstrap_json(pinned(DEPENDENCIES,'dc8f23e7cb3327e31762a5e2d79423af59ef3c75d9cca5e4f81e147213444373'))['generator_inventory']
+    dependency=bootstrap_json(pinned(DEPENDENCIES,'5e5f821b073234f9934f10138568a2441420f0c5ad10af8eedf7e41ffa8acbb2'))['generator_inventory']
     for name,pin in dependency.items():
         if name not in freeze['files'] and name!='scripts/apply_current_price_projection.py':pinned(local_member(ASSETS,name),pin)
     return bindings_pin
