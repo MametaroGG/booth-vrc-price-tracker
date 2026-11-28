@@ -1,6 +1,6 @@
 {
   "id": "9123193",
-  "name": "【無料】和風行灯（あんどん）｜VRChatワールド向け 低ポリ・Quest想定",
+  "name": "【無料】VRChatワールド向け 和風行灯（あんどん）｜低ポリ・Quest想定",
   "shop": {
     "name": "shigoto-dougu",
     "subdomain": "shigoto-dougu",
@@ -18,6 +18,8 @@
     "和風",
     "小物",
     "モバイル",
+    "Unity",
+    "和室",
     "3Dモデル",
     "照明",
     "ワールド",
@@ -25,9 +27,11 @@
     "あかり",
     "行灯",
     "VRChat",
+    "ワールド小物",
     "Quest対応",
     "あんどん",
-    "低ポリ"
+    "低ポリ",
+    "和風ワールド"
   ],
   "category": {
     "id": 210,
@@ -35,7 +39,10 @@
     "parent": "3Dモデル"
   },
   "likes": 9,
-  "refs": [],
+  "refs": [
+    "9232007",
+    "9239946"
+  ],
   "adult": false,
   "sold_out": false,
   "end_of_sale": false,
@@ -104,7 +111,11 @@
     {
       "date": "2026-11-26",
       "count": 9
+    },
+    {
+      "date": "2026-11-28",
+      "count": 9
     }
   ],
-  "fetched_at": "2026-11-26"
+  "fetched_at": "2026-11-28"
 }
