@@ -27,8 +27,15 @@
         "date": "2026-11-26",
         "price": 0,
         "is_sale": true
+      },
+      {
+        "date": "2026-11-29",
+        "price": 100,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15324438": "default"
+  }
 }

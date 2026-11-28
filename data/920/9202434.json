@@ -12,6 +12,11 @@
         "date": "2026-11-26",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 200,
+        "is_sale": false
       }
     ],
     "さーもん代(内容物は同じです)": [
@@ -24,8 +29,16 @@
         "date": "2026-11-26",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 400,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15343859": "すあら対応",
+    "15344026": "さーもん代(内容物は同じです)"
+  }
 }

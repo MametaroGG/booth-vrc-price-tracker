@@ -12,6 +12,11 @@
         "date": "2026-11-26",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 0,
+        "is_sale": true
       }
     ],
     "Pixie's Gift": [
@@ -24,8 +29,15 @@
         "date": "2026-11-26",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15362968": "Pixie's Gift"
+  }
 }

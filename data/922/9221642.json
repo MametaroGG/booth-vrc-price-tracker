@@ -7,6 +7,11 @@
         "date": "2026-11-26",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "Makeup Only": [
@@ -14,8 +19,16 @@
         "date": "2026-11-26",
         "price": 200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 200,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15372007": "Makeup+FaceBlendShape",
+    "15372576": "Makeup Only"
+  }
 }

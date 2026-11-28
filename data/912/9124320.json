@@ -27,6 +27,11 @@
         "date": "2026-11-26",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "Tune（チューン）": [
@@ -52,6 +57,11 @@
       },
       {
         "date": "2026-11-26",
+        "price": 1200,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
         "price": 1200,
         "is_sale": false
       }
@@ -81,8 +91,17 @@
         "date": "2026-11-26",
         "price": 1500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 1500,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15227264": "Standard（スタンダード）",
+    "15227466": "Tune（チューン）",
+    "15227467": "FullSet（Standard＋Tune）"
+  }
 }

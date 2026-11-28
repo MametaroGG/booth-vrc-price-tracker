@@ -7,11 +7,21 @@
         "date": "2026-11-26",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 500,
+        "is_sale": false
       }
     ],
     "yellow pack": [
       {
         "date": "2026-11-26",
+        "price": 300,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
         "price": 300,
         "is_sale": false
       }
@@ -21,6 +31,11 @@
         "date": "2026-11-26",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 300,
+        "is_sale": false
       }
     ],
     "dark pack": [
@@ -28,8 +43,18 @@
         "date": "2026-11-26",
         "price": 300,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 300,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15380055": "fullpack",
+    "15380264": "yellow pack",
+    "15380265": "pink pack",
+    "15380266": "dark pack"
+  }
 }

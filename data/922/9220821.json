@@ -7,11 +7,21 @@
         "date": "2026-11-26",
         "price": 400,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 400,
+        "is_sale": false
       }
     ],
     "ひし形版": [
       {
         "date": "2026-11-26",
+        "price": 400,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
         "price": 400,
         "is_sale": false
       }
@@ -21,6 +31,11 @@
         "date": "2026-11-26",
         "price": 700,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "サポーター版": [
@@ -28,8 +43,18 @@
         "date": "2026-11-26",
         "price": 1000,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 1000,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15370863": "ハート版",
+    "15370898": "ひし形版",
+    "15370899": "ダブル版（ハート＋ひし形）",
+    "15370900": "サポーター版"
+  }
 }

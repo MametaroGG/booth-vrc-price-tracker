@@ -27,6 +27,11 @@
         "date": "2026-11-26",
         "price": 500,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 700,
+        "is_sale": false
       }
     ],
     "Miriam": [
@@ -47,6 +52,11 @@
       },
       {
         "date": "2026-11-26",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
         "price": 350,
         "is_sale": false
       }
@@ -71,12 +81,41 @@
         "date": "2026-11-26",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 350,
+        "is_sale": false
+      }
+    ],
+    "Suara": [
+      {
+        "date": "2026-11-29",
+        "price": 350,
+        "is_sale": false
+      }
+    ],
+    "Repi": [
+      {
+        "date": "2026-11-29",
+        "price": 350,
+        "is_sale": false
+      }
+    ],
+    "SIUSIU": [
+      {
+        "date": "2026-11-29",
+        "price": 350,
+        "is_sale": false
       }
     ]
   },
   "variation_keys": {
     "15314815": "default",
     "15332721": "Miriam",
-    "15332722": "Vivian"
+    "15332722": "Vivian",
+    "15394244": "Suara",
+    "15394245": "Repi",
+    "15394246": "SIUSIU"
   }
 }

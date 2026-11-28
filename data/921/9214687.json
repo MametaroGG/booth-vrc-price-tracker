@@ -7,11 +7,21 @@
         "date": "2026-11-26",
         "price": 1200,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 1200,
+        "is_sale": false
       }
     ],
     "make unitypackage": [
       {
         "date": "2026-11-26",
+        "price": 800,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
         "price": 800,
         "is_sale": false
       }
@@ -21,11 +31,21 @@
         "date": "2026-11-26",
         "price": 800,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 800,
+        "is_sale": false
       }
     ],
     "eyetexture only": [
       {
         "date": "2026-11-26",
+        "price": 350,
+        "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
         "price": 350,
         "is_sale": false
       }
@@ -35,8 +55,19 @@
         "date": "2026-11-26",
         "price": 350,
         "is_sale": false
+      },
+      {
+        "date": "2026-11-29",
+        "price": 350,
+        "is_sale": false
       }
     ]
   },
-  "variation_keys": {}
+  "variation_keys": {
+    "15361891": "フルパック＋PSDデータ",
+    "15362001": "make unitypackage",
+    "15362002": "Eye unitypackage",
+    "15362003": "eyetexture only",
+    "15362004": "maketexture only"
+  }
 }
